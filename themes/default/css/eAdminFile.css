@@ -1,0 +1,678 @@
+﻿body {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* non-prefixed version, currently */
+}
+
+.mTab .table_values input[type='text'] {
+    background-color: transparent;
+}
+
+.mainDiv {
+    border: none;
+    margin-top: 85px;
+}
+
+
+div.addtokenpanel {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+div.admininputinline {
+}
+
+.tokenExpire {
+    color: red
+}
+
+td.tokenExpire {
+    font-weight: bold
+}
+
+.mainDiv > .overflow-container {
+    height: 100%;
+    overflow: auto;
+}
+
+.trDropArea, .mTab tr.trDropArea {
+    height: 49px;
+}
+
+.divHeadInfo table {
+    margin-top: 0px;
+    background-color: #eeedee;
+}
+
+[icodisabled='1'].icon-is-disabled {
+    cursor: default;
+    color: #AEABAB;
+}
+
+.fieldsDropArea {
+    background-color: #eeedee;
+    color: #66686c;
+    border: 1px dashed #b5b7bb;
+    height: 49px;
+}
+
+    .fieldsDropArea p {
+        font-size: 10.5pt;
+        font-style: italic;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .fieldsDropArea td p {
+        margin: 0;
+    }
+
+#adminFields header {
+    padding: 10px;
+    border-bottom: 1px solid #d7d8da;
+}
+
+#adminFieldsContent {
+    padding: 0 10px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-bottom: 5px;
+}
+
+    #adminFieldsContent .rowForStyle {
+        height: 5px;
+    }
+
+        #adminFieldsContent .rowForStyle td {
+            border: 1px solid #66686C;
+            border-top: none;
+            background-color: #EEEDEE;
+            background-clip: padding-box; /* Pour FF */
+        }
+
+    #adminFieldsContent #ruleRow {
+        height: 20px;
+    }
+
+    #adminFieldsContent tr#ruleRow td {
+        position: relative;
+        border-top: 1px solid #66686C;
+        /*border-right: 1px solid #66686C;*/
+        /*border-left: 1px solid #66686C;*/
+        border-bottom: none;
+        text-align: center;
+        color: #66686C;
+        font-family: Verdana, 'Trebuchet MS';
+        font-size: 11px;
+        background-color: #EEEDEE;
+        background-clip: padding-box; /* Pour FF */
+    }
+
+    #adminFieldsContent #ruleRow .table_labels, #adminFieldsContent #ruleRow .table_values {
+        padding-right: 0;
+    }
+
+    #adminFieldsContent #ruleRow td .icon-caret-down {
+        position: absolute;
+        top: -7px;
+        font-size: 13pt;
+        cursor: default;
+        color: #66686C;
+        width: 100%;
+        left: 0;
+    }
+
+    #adminFieldsContent #ruleRow .table_labels {
+        border-left: 1px solid #66686C;
+    }
+
+    #adminFieldsContent #ruleRow td.btn {
+        border-right: 1px solid #66686C;
+    }
+
+/*
+.mTabFile .table_labels, .mTabFile .table_values, .mTabFile .btn,
+#tabAdminFileProp .table_labels, #tabAdminFileProp .table_values, #tabAdminFileProp .btn {
+    border-bottom: 7px double #d0d1d3;
+}
+*/
+.mTabFile {
+    /*width: auto;*/
+}
+
+    .mTabFile td {
+        /*border-top: 1px solid #d0d1d3;
+    border-bottom: 1px solid #d0d1d3;*/
+    }
+
+        .mTabFile td.fileHeaderCell td {
+            border: none;
+        }
+
+    .mTabFile tr.tableSep {
+        height: 4px;
+    }
+
+        .mTabFile tr.tableSep td {
+            border: none;
+        }
+
+    .mTabFile tr.emptyrow, .mTabFile tr.emptyrow td {
+        height: 0px !important;
+    }
+
+    .mTabFile .table_labels,
+    #tabAdminFileProp .table_labels {
+        /*border-left: 1px solid #d0d1d3;
+    border-top: 1px solid #d0d1d3;*/
+        height: 24px;
+        width: auto;
+        font-family: Verdana, 'Trebuchet MS';
+    }
+
+        .mTabFile .table_labels.selected,
+        #tabAdminFileProp .table_labels.selected {
+            /*border-top: 1px dashed #37a7de !important;
+        border-bottom: 1px dashed #37a7de !important;*/
+            /*border-left: 10px solid #37a7de !important;*/
+            background-color: #d7e3ea !important;
+        }
+
+        .mTabFile .table_labels.active, .mTabFile .table_values.active, .mTabFile .btn.active,
+        #tabAdminFileProp .table_labels.active, #tabAdminFileProp .table_values.active, #tabAdminFileProp .btn.active {
+            background-color: #d7e3ea !important;
+        }
+
+    .mTabFile .table_values:not(.selected),
+    #tabAdminFileProp .table_values:not(.selected) {
+        /*border-top: 1px solid #d0d1d3;*/
+        position: relative;
+    }
+
+    .mTabFile .table_values.selected, .mTabFile .table_labels.selected,
+    #tabAdminFileProp .table_values.selected, #tabAdminFileProp .table_labels.selected {
+        /*border-top: 1px dashed #37a7de !important;
+        border-bottom: 1px dashed #37a7de !important;*/
+        background-color: #d7e3ea !important;
+        position: relative !important;
+    }
+
+    .mTabFile .table_values div.dashedContent {
+        width: 100%;
+        height: 45%;
+        border-bottom: 1px dashed #acafb3;
+    }
+
+    .mTabFile .btn:not(.selected) {
+        /*border-right: 1px solid #d0d1d3;
+        border-top: 1px solid #d0d1d3;*/
+    }
+
+    .mTabFile .btn.selected {
+        /*border-right: 1px dashed #37a7de !important;
+        border-top: 1px dashed #37a7de !important;
+        border-bottom: 1px dashed #37a7de !important;*/
+        background-color: #d7e3ea !important;
+    }
+
+    .mTabFile td.free:hover, .mTabFile td.free.selected {
+        background-color: #d7e3ea !important;
+    }
+
+#adminFieldsContent .fieldsSep {
+    height: 4px;
+}
+
+#adminFieldsContent .tableSep {
+    height: 8px;
+}
+
+.fieldsDropArea.fieldsDropDetails {
+    height: 100px;
+}
+
+.fieldOptions {
+    position: absolute;
+    right: 2px;
+    background-color: black;
+    height: 24px;
+    top: 0;
+    background-color: #37a7de;
+    color: #fff;
+    display: none;
+}
+
+    .fieldOptions.selected, td.free:hover .fieldOptions {
+        display: block;
+    }
+
+    .fieldOptions li {
+        float: left;
+        width: 25px;
+        font-size: 9pt;
+        line-height: 23px;
+        text-align: center;
+    }
+
+        .fieldOptions li[class^='icon-'] {
+            color: #fff;
+        }
+
+            .fieldOptions li[class^='icon-'].active {
+                color: #636363;
+            }
+
+    .fieldOptions .deleteOption {
+        background-color: #bb2526;
+        color: #fff;
+        height: 100%;
+    }
+
+    .fieldOptions .configOption {
+        border-left: 1px dashed #fff;
+        background-color: #37a7de;
+        color: #fff;
+        height: 100%;
+    }
+
+.bkmBar .fieldOptions {
+    height: 100%;
+    right: 0px;
+}
+
+    .bkmBar .fieldOptions li {
+        line-height: 29px;
+    }
+
+.table_values .fieldOptionsOverflowed {
+    position: relative;
+}
+
+table[id^='ftm_'] .table_labels, table[id^='ftm_'] .title_sep_page, table[id^='ftdbkm_'] .table_labels, table[id^='ftdbkm_'] .title_sep_page {
+    cursor: move;
+}
+
+/* Pas de déplacement pour les champs de la table mail (ednType='3') */
+#mainDiv > .fileDiv[ednType='3'] table[id^='ftm_'] .table_labels,
+#mainDiv > .fileDiv[ednType='3'] table[id^='ftm_'] .table_labels,
+#mainDiv > .fileDiv[ednType='3'] table[id^='ftmbkm_'] .title_sep_page,
+#mainDiv > .fileDiv[ednType='3'] table[id^='ftmbkm_'] .title_sep_page {
+    cursor: default;
+}
+
+/*
+.mTabFile td {
+    border: solid 1px black;
+}
+    */
+
+/* GRIPS POUR RESIZE DE LA GRILLE */
+#ruleGrips {
+    height: 0px;
+    position: relative;
+    width: 100%;
+}
+
+    #ruleGrips .icon-title_sep {
+        color: #66686C !important;
+    }
+
+    #ruleGrips.selectedArea .icon-title_sep {
+        color: #47A7DC !important;
+    }
+
+.grip {
+    position: absolute;
+    margin-left: -8px;
+    top: -2px;
+    z-index: 1;
+    font-size: 11pt;
+}
+
+.icon-title_sep:hover, #ruleGrips.selectedArea .icon-title_sep:hover,
+.icon-title_sep.activeGrip {
+    color: #79BE0B !important;
+}
+
+#ruleGrips .grip:last-child {
+    display: none;
+}
+
+td.free {
+    /*border: 1px solid #d0d1d3;*/
+    position: relative;
+    height: 24px;
+    background-color: rgba(215, 227, 234, 0.4);
+    border-right: 2px solid white;
+}
+
+div.shadow {
+    background-color: #bcdcfb;
+    /*border-color: #37a7de;*/
+    opacity: 0.7;
+    cursor: move;
+    z-index: 99;
+    height: 2px;
+}
+
+    div.shadow.ok {
+        /*border: 1px solid #79BE0B;*/
+        background-color: #ABD625;
+    }
+
+div.fileDiv {
+    overflow-y: auto;
+}
+
+    div.fileDiv[edntype='0'] #bkmDtls, div.fileDiv[edntype='0'] #bkmDtls a {
+        cursor: move !important;
+    }
+
+    div.fileDiv[edntype='0'] table.bkmBar.hover, div.fileDiv[edntype='0'] table.bkmBar {
+        border-left: 10px solid #37a7de !important;
+    }
+
+.bkmHeadClean {
+    background-color: #F8F8F8;
+}
+
+.trBtnBkmPag {
+    border-top: none;
+}
+
+/* Au survol de la barre de signets */
+div.fileDiv[edntype='0'] table.bkmBar.hover {
+    border: 1px dashed #37a7de;
+}
+
+    div.fileDiv[edntype='0'] table.bkmBar.hover .trBtnBkmPag td,
+    div.fileDiv[edntype='0'] table.bkmBar.hover td#bkmHeadClean {
+        background-color: #d7e3ea !important;
+    }
+
+
+table.selectedArea {
+    border-left: 5px solid #37A7DE;
+}
+
+table#adminFieldsContent.selectedArea {
+    border-left: none;
+}
+
+    table#adminFieldsContent.selectedArea tr#ruleRow td {
+        border-color: #37a7de;
+        color: #37a7de;
+        background-color: #eaeef1;
+    }
+
+#adminFieldsContent.selectedArea #ruleRow td .icon-caret-down, #adminFieldsContent.selectedArea #ruleRow td .icon-refresh {
+    color: #37a7de;
+}
+
+#adminFieldsContent.selectedArea .rowForStyle td {
+    border: 1px solid #37a7de;
+    border-top: none;
+    background-color: #eaeef1;
+}
+
+/* Appartenance et traçabilité */
+#tabAdminFileProp {
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+    #tabAdminFileProp .table_lab_pty {
+        width: auto;
+    }
+
+    #tabAdminFileProp[data-active='1'] {
+        display: table;
+    }
+
+    #tabAdminFileProp[data-active='0'] {
+        display: none;
+    }
+
+/*input[type='text'], input[type='password'] {
+    text-indent: 2px;
+    height: 16px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px dashed #b6b6b6;
+    font-size: 8pt;
+    text-overflow: ellipsis;
+    padding: 1px;
+    margin: 0;
+    border-radius: 0;
+}*/
+
+input[type='text'].optionField, input[type='password'].optionField {
+    width: 250px;
+    height: 21px;
+    line-height: 21px;
+    border: 1px solid #b6b6b6;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+#ddlAuthenticationMethodLDAPVersion {
+    width: 254px;
+    height: 25px;
+}
+
+
+.fileOwner {
+    margin-top: 0;
+    line-height: 20px;
+}
+
+.file99Label {
+    color: #37A7DE;
+}
+
+#partBelonging .paramPartContent {
+    display: none;
+}
+
+/* ONGLETS WEB */
+#divFilePart1 header, #FlDtlsBkm header {
+    text-align: center;
+}
+
+/* Le sous-onglet 'Liste des fiches' est désactivé */
+.admin-webtabs #ulWebTabs > li:first-child[fid='0'] {
+    color: #A5A4A8;
+    background-color: #ebebeb;
+}
+
+.admin-webtabs #ulWebTabs li[active='1'] {
+    border: 1px dashed #37a7de;
+}
+
+.admin-webtabs #ulWebTabs li {
+    border: none;
+}
+
+
+    .admin-webtabs #ulWebTabs li:nth-last-child(2) {
+        margin-right: 0;
+    }
+
+.admin-webtabs #ulWebTabs > li:not(:first-child):hover {
+    color: #fff;
+    position: relative;
+    white-space: nowrap;
+}
+
+    .admin-webtabs #ulWebTabs > li:not(:first-child):hover span {
+        color: #37a7de;
+    }
+
+.admin-webtabs #ulWebTabs > li.lidroparea {
+    border: 1px dashed #37A7DE !important;
+    background-color: #d7e3ea;
+    margin-left: 10px;
+}
+
+    .admin-webtabs #ulWebTabs > li.lidroparea:not(.ondragwebtab) {
+        display: none;
+    }
+
+
+
+li.over {
+    border-right: 2px solid blue;
+}
+
+.divHeadInfo table td {
+    padding: 3px 7px;
+    height: 24px;
+}
+
+.divHeadInfo td.selected {
+    background-color: #d7e3ea !important;
+    cursor: move;
+}
+
+.divHeadInfo .icnFileBtn {
+    border-right: 1px solid #d0d1d3;
+}
+
+
+#divBkmCtner {
+    height: 1px;
+}
+
+.adminLDAPOptions {
+    margin-left: 10px;
+}
+
+    .adminLDAPOptions > .field > * {
+        font-size: 10pt;
+        font-weight: normal;
+    }
+
+    .adminLDAPOptions > .optionFieldLDAPAutoCreate {
+        margin-left: 200px;
+        margin-bottom: 5px;
+    }
+
+
+.divct {
+    width: 100%;
+}
+
+.bkmHeadClean.ondragbkm {
+    border: 1px dashed #37A7DE !important;
+    background-color: #d7e3ea;
+}
+
+.spanColWidth, .spanColAuto {
+    cursor: pointer;
+}
+
+#ruleRow .icon-refresh {
+    font-size: 9pt;
+    margin-left: 5px;
+}
+
+.spanColWidth:hover {
+    text-decoration: underline;
+}
+
+.txtColWidth {
+    width: 40px !important;
+    font-size: 9pt !important;
+    border-bottom: none !important;
+}
+
+.hidden {
+    display: none;
+}
+
+/*.bkmHead:not(.selected) {
+    position: relative;
+}*/
+
+.bkmHead.selected {
+    position: relative !important;
+    z-index: 1;
+    background-clip: padding-box; /* #53783 : pour IE */
+}
+
+.bkmHead .fieldOptions .configOption {
+    border-left: none;
+}
+
+/* Pour surligner le signet qu'on veut administrer*/
+.bkmHead.active a {
+    background-color: #42a7dc;
+}
+
+ul.grpTVToolAdd {
+    height: 21px;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+    ul.grpTVToolAdd li {
+        background-repeat: no-repeat;
+        cursor: pointer;
+        width: 22px;
+        height: 21px;
+        display: inline-block;
+        line-height: 21px;
+        margin: 0 10px 0 0;
+    }
+
+div.fileDiv[edntype='0'] .divBkmPaging {
+    cursor: move;
+}
+
+.divBkmPaging img[id^='swBkmPg'] {
+    cursor: pointer;
+}
+
+.iframeadmin {
+    background-color: #F0F0F0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#divFilePart1 {
+    overflow-x: hidden;
+}
+
+.xrm-widget-resize {
+    border-right-color: #37a7de;
+}
+
+    .xrm-widget-resize:hover {
+        border-right-color: #3092c1;
+    }
+
+#nbFreeFields {
+    text-align: right;
+}
+
+
+.currencyCodesList {
+    color: #42A7DC !important;
+}
+
+    .currencyCodesList:hover {
+        text-decoration: underline !important;
+    }
+
+    .currencyCodesList:active {
+        text-decoration: underline !important;
+    }

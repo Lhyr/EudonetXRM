@@ -1,0 +1,24 @@
+﻿.chooseDate.daterangepicker.date-above .calendar-table th,
+.chooseDate.daterangepicker.date-above .calendar-table td {
+    padding: 0 !important;
+    font-size: var(--size-10);
+}
+
+.daterangepicker.date-above .calendar-time {
+    line-height: 15px;
+}
+
+.daterangepicker.date-above .btn-sm,
+.daterangepicker.date-above .btn-group-sm > .btn {
+    line-height: 1;
+}
+
+#tabsBar .filterContent, 
+#tabsBar .xprss-filter__list{
+    list-style-type: none;
+    padding-left:0;
+}
+
+#tabsBar .xprss-filter__li{
+    font-size:var(--size-14) !important;
+}

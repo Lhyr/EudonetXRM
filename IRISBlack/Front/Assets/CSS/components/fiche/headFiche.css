@@ -1,0 +1,343 @@
+﻿/*
+
+ |\   \\\\__     o
+| \_/    o \    o 
+> _   (( <_  oo  
+| / \__+___/      
+|/     |/
+
+*/
+
+#headFiche{
+    border-top: 5px solid var(--background-main-color);  
+    width: calc(100% + 4px);
+    margin-right: -2px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    max-height: 450px;
+    transition: max-height 250ms;
+    overflow: initial;
+    box-shadow: none;
+    width:100%;
+}
+
+.isStickyHead + #headFiche.box.box-primary {
+    height: 4.125rem;
+    max-height: 4.125rem;
+}
+
+.isStickyHead + #headFiche.box.box-primary.catalog-infos {
+    max-height: 5.625rem;
+}
+
+.isStickyHead + #headFiche.box.box-primary {
+    max-height: 4.688rem;
+    border-radius: 0;
+    /* border-bottom: 10px solid var(--background-main-color); */
+    margin: 0;
+}
+
+/* Thème, couleurs */
+
+.boxResume,
+.grpTitleName{
+    background: var(--background-main-color);
+}
+
+.skin-red .box.box-primary#headFiche{
+    border-top-color: var(--background-main-color);
+}
+
+/* Thème, couleurs */
+
+.boxResume {
+    min-height: auto;
+    padding:0;
+    box-shadow: none;
+    border-radius: 3px;
+    position: relative;
+    height:100%;
+}
+
+.isStickyHead + #headFiche > .boxResume {
+    padding: 0;
+}
+
+.btn-modifier-header-fiche {
+    position: absolute;
+    right: 10px;
+    z-index: 20;
+    top: 0px;
+}
+
+.grpTitleName {
+    min-height: 50px;
+    padding: 0;
+    
+}
+
+/* pour l'écran qui plus que 1100 px */
+@media (min-width: 1101px) {
+    .btn-modifier-header-fiche {
+        max-width: min(45rem,calc(100% - 450px));
+    }
+    .grpTitleName {
+        width: max(calc(100% - 45rem), 450px);
+    }
+}
+
+/* pour l'écran qui moin que 1100 px */
+@media (max-width: 1100px) {
+    .grpTitleName {
+        padding-top: 36px;
+    }
+
+    #headFiche .boxResume .v-btn.v-size--default {
+        font-size: var(--size-10);
+    }
+
+    .isStickyHead + #headFiche .grpTitleName {
+        width: max(calc(100% - 45rem), 450px);
+    } 
+}
+
+.btn-modifier-header-fiche, .btn-modifier-header-fiche .row {
+    flex-wrap: unset;
+}
+
+.isStickyHead + #headFiche .boxResume .btn-modifier-header-fiche {
+    top: 0px;
+}
+
+.btn-group__container {
+    padding: 0 15px 0 0;
+}
+
+.btn-group__container:last-child {
+    padding: 0;
+}
+
+.btn-group__link  {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-group__desc {
+    color: var(--primary-font-color);
+}
+
+.file-edit__title{
+    font-size:var(--size-14);
+}
+
+/* Icone de partage */
+
+.share-icon {
+    padding: 7px 7.75px;
+    border: 1px solid var(--border-color);
+    background: var(--border-color);
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 0 0 5px;
+    font-size: var(--size-12);
+    cursor: pointer;
+}
+
+.share-icon:hover {
+    background: var(--dark-border-color);
+    color: var(--light-font-color);
+}
+
+/* Icone de partage */
+
+
+
+.isStickyHead + #headFiche .boxResume .grp-respon, #headFiche.inputsEmpty:not(.avatarEmpty) .boxResume .grp-respon {
+    padding: 0 0 0 60px;
+    margin: 0;
+}
+
+.contentImgResum {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contentImgResum.spaceBetweenElem {
+    padding: 0 0 var(--size-5) 0;
+}
+
+.profile-username-title {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 0;
+    color: var(--dark-border-color);
+    display: block;
+    cursor: pointer;
+    font-size: var(--size-24);
+}
+
+.file-header__sbtitle{
+    font-size: var(--size-14);
+}
+
+.modifIcoTitle {
+    padding: 0 5px;
+    opacity: 0;
+    transition: opacity .5s;
+    font-size: var(--size-13);
+}
+
+.grpTitleName:hover .modifIcoTitle {
+    opacity: 1;
+}
+
+.modifIcoTitle a.hover-pen {
+    color: var(--primary-font-color);
+}
+
+.sb-title {
+    margin: 0 5px 0 0;
+    background: var(--main-color);
+    padding: 0 10px;
+    color: #fff;
+    font-size: var(--size-12-5);
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.header-content{
+    height: calc(100% - var(--size-50));
+}
+
+.isStickyHead + div .header-content {
+    padding: 0;
+}
+
+.container--resume {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0 3rem;
+}
+
+.button--resume {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    padding: var(--size-10) 0;
+    text-align: left;
+    position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .button--resume {
+        padding: 10px 24px 10px 8px;
+    }
+}
+
+.isStickyHead + #headFiche .container--resume {
+    display: none;
+}
+
+.image-fiche {
+    max-width: 10.625rem;
+    padding: 0;
+    position: relative;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.isStickyHead + #headFiche .image-fiche {
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0 0 0 5px;
+    border: none;
+    float: left;
+    display: flex;
+    padding: 0;
+}
+
+.contactImg {
+    width: 50%;
+    padding-bottom: 50%;
+    margin: 0;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    padding: 0 8px;
+}
+
+.image-fiche-reduce .contactImg {
+    max-height: 55px;
+    width: 75%;
+    padding-bottom: 75%;
+}
+
+/*ZONE RESUME*/
+
+#headFiche .left {
+    margin: 0;
+    width: 100%;
+}
+
+    #headFiche .left span {
+        float: left;
+    }
+
+#headFiche .button--resume[format="11"] .group-inner {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    top: 10px;
+}
+
+    #headFiche .button--resume[format="11"] .group-inner .left-label {
+        padding-left: 5px !important;
+    }
+
+#headFiche .readOnlyComponent.button--resume[format="11"] .group-inner .left-label {
+    margin: -2px 0 0 0;
+}
+
+#headFiche .readOnlyComponent.button--resume[format="11"] .group-inner .left {
+    padding-left: 0px !important;
+}
+
+#headFiche .readOnlyComponent[format="11"] .left {
+    background: transparent;
+}
+
+.grpTitleName {
+    user-select: text;
+}
+
+.grpTitleName .text-muted {
+    color: #444;
+    line-height: 19px;
+    width: calc(100% - 240px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}

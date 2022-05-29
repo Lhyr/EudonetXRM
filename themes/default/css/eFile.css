@@ -1,0 +1,1943 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* INPUTS */
+.mTab .table_values input[type='text'] {
+    text-indent: 2px;
+    height: 14px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px dashed #b6b6b6;
+    font-size: 8pt;
+    text-overflow: ellipsis;
+    padding: 1px;
+    margin: 0;
+    border-radius: 0;
+}
+
+.fileDiv {
+    height: 100%;
+    max-height: 100%;
+}
+/* Mode fiche - champs personalisables - start */
+/* Outils */
+.blockBkms {
+    margin-top: 15px;
+    height: auto; /*for Request 71 436*/
+}
+
+.divDetailsBkms {
+    /*KHA - la position relative sert à fixer la position du eFieldEditor en tenant compte du déplacement du scrollbar*/
+    position: relative;
+    width: 99%;
+    border-collapse: collapse;
+    /*float: left;*/ /*kha : dans le signet mode fiche le float gene le calcul de la hauteur de la filediv. et du coup c'est moche*/
+    background-color: white;
+    min-height:600px;
+}
+
+    .divDetailsBkms .bkmFilePropsLink {
+        display: inline-block;
+        margin: 5px 10px;
+        color: #42A7DC;
+        cursor: pointer;
+    }
+
+        .divDetailsBkms .bkmFilePropsLink:hover {
+            text-decoration: underline;
+        }
+
+.divDetailsBkmsMail {
+    /*KHA - la position relative sert à fixer la position du eFieldEditor en tenant compte du déplacement du scrollbar*/
+    position: relative;
+    width: 500px;
+    border: none;
+    background-color: none;
+}
+
+.outils {
+    margin: 0px 0px 5px 0px;
+}
+
+.flTlsCell {
+    vertical-align: top;
+}
+
+td.toolBtn {
+    width: 300px;
+}
+
+.fileTools {
+    float: right;
+}
+
+    .fileTools a {
+        /* color: #FF0000; */
+        text-decoration: none;
+    }
+
+        .fileTools a:hover {
+            color: #2C2F36;
+            text-decoration: underline;
+        }
+
+    .fileTools ul li {
+        display: inline-block;
+        padding: 0px 5px;
+        border-left: 1px dotted #636363;
+    }
+
+        .fileTools ul li:first-child {
+            border: 0 none;
+        }
+
+.GlbPopDiv .btnCancelLastModif {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 50;
+    font-size: 13pt;
+}
+
+.fileTools ul li a {
+    display: inline-block;
+    height: 22px;
+    width: 26px;
+}
+
+/*Outils*/
+tr.emptyrow {
+    height: 1px;
+    line-height: 1px;
+}
+
+.mTabFile {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+}
+
+    .mTabFile tr.hidden {
+        display: none;
+    }
+
+.table_mandatory_Label {
+    color: red;
+    text-align: right;
+}
+
+.table_labels, .table_lab_pty {
+    font-size: 8pt;
+    vertical-align: middle;
+    padding: 0px;
+    padding-right: 8px;
+    color: #636363; /* #949494;*/
+}
+
+.table_labels {
+    text-align: right;
+    width: 8%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: default;
+    position: relative;
+}
+
+    .table_labels.mandatory_Label {
+        position: relative;
+    }
+
+.tabRight .table_labels {
+    width: 16%;
+}
+
+.table_lab_pty {
+    text-align: right;
+    width: 30%;
+    height: 25px;
+}
+
+.spanYAdjust {
+    vertical-align: 0px;
+    padding-left: 10px;
+}
+
+.MndAst {
+    color: #bb1515;
+    font-size: 8pt;
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+}
+
+div#dupliTreatSelectFields table td span.MndAst {
+    position: initial;
+}
+
+
+.table_values {
+    text-align: left;
+    font-size: 8pt;
+    overflow: hidden;
+    padding: 0px;
+    padding-right: 5px;
+}
+
+    .table_values a.chk {
+        vertical-align: middle;
+        padding: 0px;
+        padding-right: 8px;
+        color: #636363; /* #949494;*/
+    }
+
+td[ero='1'].table_values {
+    -webkit-user-select: text; /* Chrome/Safari */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* IE10+ */
+}
+
+td.table_values.LNKOPENIMG {
+    cursor: pointer;
+}
+
+td.table_values.readonly.LNKOPENIMG {
+    background-color: #F0F0F0;
+    cursor: not-allowed;
+}
+
+.divHeadCaption {
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* Mode fiche - champs personalisables - end */
+
+/* Détails contacte - Start */
+
+.title_sep {
+    /*color: #42A7DC;*/
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 16px;
+}
+
+.title_sep_page {
+    color: #636363;
+    text-align: left;
+    cursor: pointer;
+    /*width: 800px;*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+    /* Icône séparateur fermé */
+    .title_sep_page .icon-edn-next {
+        font-size: 10pt;
+    }
+
+    .title_sep_page .icon-title_sep {
+        font-size: 7pt;
+    }
+
+    .title_sep_page .icnFileBtn {
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        color: inherit;
+    }
+
+.title_sep_label {
+    border-bottom: 1px solid #b6b6b6;
+    overflow: hidden;
+    padding-bottom: 1px; /* Pour mettre un minimum de marge lorsque la taille de police est grande */
+}
+
+.title_sep .title_sep_label {
+    /*border-color: #42A7DC;*/
+}
+
+.title_sep_page_off {
+    color: #555;
+    opacity: 0.3;
+}
+
+.SysSepCompInfoPPPM > div {
+    display: inline-block;
+}
+
+.emptyValue {
+    font-style: italic;
+}
+
+.close img {
+    background-position: -75px -100px;
+}
+
+.separateur_glbl {
+    height: 1px;
+    background-repeat: no-repeat;
+    background-position: 243px 0px;
+    background-color: #b6b6b6;
+    width: 96%;
+    margin: 1px 12px 4px;
+}
+
+/*séparateur global*/
+
+.DivClosed {
+}
+
+    .DivClosed img {
+        height: 20px;
+        width: 20px;
+        vertical-align: -4px;
+        background-position: -25px -26px;
+    }
+
+    .DivClosed:hover {
+    }
+
+        .DivClosed:hover img {
+            cursor: pointer;
+        }
+
+.DivOpen {
+    background-repeat: no-repeat;
+    height: 20px;
+    cursor: pointer;
+    color: #636363;
+    font-weight: bold;
+    line-height: 12px;
+    padding-left: 2px;
+}
+
+    .DivOpen img {
+        height: 20px;
+        width: 20px;
+        vertical-align: -4px;
+        background-position: -51px -25px;
+    }
+
+    .DivOpen:hover img {
+    }
+
+    .DivOpen:hover {
+        cursor: pointer;
+        color: #42A7DC;
+    }
+
+.SeparatorAdvanced {
+    width: 100%;
+    height: 1px;
+    background-color: #B6B6B6;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.divHeadInfo .separateur_glbl {
+    margin: 10px 12px 4px;
+}
+
+.sub_sep {
+    width: 243px;
+    height: 1px;
+    padding-bottom: 16px;
+}
+
+.table_dtls table {
+}
+
+    .table_dtls table td {
+        /*padding:0;*/
+    }
+
+/* Détails contacte - End */
+
+/* Contacte Signet - Start*/
+
+/*.cntct_signet-head */
+.bkmTr {
+    /*background-image: url(../images/iFile/background_head.png);*/
+    background-repeat: repeat-x;
+    height: 12px;
+    background-color: #f6f6f6;
+    white-space: nowrap;
+}
+
+    .bkmTr td {
+        /*border-top: 1px solid #D3D4D5;*/
+        height: 27px;
+    }
+
+
+td.bkmHead {
+    cursor: pointer;
+}
+
+.bkmHeadClean {
+    border-top: 0 !important;
+    background-color: white;
+    width: 50%;
+}
+
+    .bkmHeadClean #opencloseall {
+        float: right;
+    }
+
+/* signet "tous" */
+/*cntct_signet-head_all*/
+.bkmAll {
+    font-weight: normal;
+    background-repeat: repeat-x;
+    height: 12px;
+    line-height: 12px;
+    background-color: #fefefe;
+    min-width: 90px;
+    text-transform: capitalize;
+}
+
+.bkmAllSel {
+    background-image: url(../images/iFile/background_head_select.png);
+    color: #074c87;
+    font-weight: bold;
+    background-repeat: repeat-x;
+    height: 12px;
+    line-height: 12px;
+    background-color: #ECF7FD;
+    min-width: 90px;
+}
+
+.bkmDtlsSel {
+    min-width: 106px;
+    border-bottom: 0 !important;
+    font-weight: bold !important;
+    font-size: 9pt !important;
+    border-right: 1px solid #d3d4d5;
+    text-align: left;
+    width: 180px;
+    background-image: url(../images/ifile/background_head_dtl_selected.png);
+    background-repeat: repeat-x;
+}
+
+    .bkmDtlsSel a {
+        color: #666 !important;
+        display: block;
+    }
+
+.bkmDtls a {
+    display: block;
+}
+
+.bkmDtls {
+    min-width: 106px;
+    font-size: 9pt !important;
+    border-right: 1px solid #d3d4d5;
+    text-align: left;
+    width: 180px;
+    background-image: url(../images/iFile/head_onglet.png);
+}
+
+.bkmHead {
+    font-weight: normal;
+    height: 12px;
+    line-height: 11px;
+    color: #666;
+    min-width: 90px;
+    background-color: #afabac;
+}
+
+    .bkmHead a {
+        display: block;
+        height: 27px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
+
+.bkmDtlsImg {
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: -8px;
+    /*  */
+    /* background-position: 39px -921px; */
+}
+
+.bkmDtlsImgSel {
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: -8px;
+    background-position: 39px -851px;
+}
+
+.bkmHeadSel {
+    height: 12px;
+    line-height: 11px;
+    background-color: #636363;
+    min-width: 90px;
+    font-weight: bold;
+    font-size: 8pt;
+    background-position: 0px 3px;
+}
+
+    .bkmHeadSel img {
+        display: inline-block;
+    }
+
+    .bkmHeadSel a {
+        display: block;
+        height: 27px;
+        line-height: 27px;
+        color: #ffffff;
+    }
+
+.txtDetails {
+    font-size: 9pt;
+    cursor: pointer;
+}
+
+.bkmDtls a:focus, .bkmDtlsSel a:focus, .bkmHead a:focus, .bkmHeadSel a:focus, .bkmHeadPlus a:focus {
+    background: none repeat scroll 0 0 #BCDCFB;
+}
+
+.bkmHeadPlus {
+    min-width: 30px;
+    border-right: 1px solid #D3D4D5;
+    background-color: #afabac;
+    height: 27px;
+    line-height: 27px;
+    /*background-image: url(../images/iFile/head_onglet.png);*/
+}
+
+    .bkmHeadPlus a {
+        display: block;
+        height: 27px;
+        line-height: 27px;
+        color: #ffffff;
+    }
+
+/*.cntct_signet-head_sep
+séparateur
+*/
+.bkmSep {
+    /*background-image: url(../images/iFile/background_head_sep.png);*/
+    height: 26px;
+    width: 1px;
+    /*line-height: 12px;
+    background-repeat: no-repeat;
+    background-position: 1px -2px;*/
+}
+
+/*.logo-all*/
+.bkmLogoAll {
+}
+
+/*txt-all*/
+.txtAll {
+    padding-top: 2px;
+    text-transform: capitalize;
+}
+
+/* cntct_signet*/
+.bkmBar {
+    width: 100%;
+    font-size: 8pt;
+    color: #666;
+}
+
+    /* cntct_signet table*/
+    .bkmBar table {
+        color: #666;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+.divBkmPres {
+    overflow-y: auto;
+    background-color: #dce1e4;
+}
+
+.FlDtlsBkm {
+    background-color: white;
+    padding-bottom: 10px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.14),0 2px 2px 0 rgba(0,0,0,.098),0 1px 5px 0 rgba(0,0,0,.084);
+}
+
+.divBkmCtner {
+    /*border-collapse: collapse;*/ /*Ajoute un border sous les emails au niveau des signets*/
+    width: 100%;
+    background-color: #dce1e4;
+    height: 94%; /* Attention, si on commente cette ligne, cela affecte la hauteur des signets web également */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    vertical-align: top;
+    /*padding-top: 15px;*/
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 15px; /*for Request 71 436*/
+}
+
+    .divBkmCtner .linkAddNewBkmFile {
+        height: 21px;
+        text-indent: 10px;
+        width: 100%;
+        margin-top: 5px;
+        display: block;
+        font-weight: bold;
+    }
+
+td.leftFold {
+    vertical-align: top;
+    padding: 0px;
+    text-align: right;
+    width: 10px;
+}
+
+/*.pli_gauche*/
+div.leftFold {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #C7C7C7;
+    top: 104%;
+    float: right;
+}
+
+td.contentFold {
+    padding: 0px;
+    vertical-align: top;
+}
+
+    td.contentFold table {
+        border-collapse: collapse;
+    }
+
+td.rightFold {
+    vertical-align: top;
+    padding: 0px;
+    text-align: right;
+    width: 10px;
+}
+
+.borderFill {
+    border-top: 1px solid #eee;
+}
+/*.pli_droit*/
+div.rightFold {
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #C7C7C7;
+    float: left;
+}
+
+.bkm_Content {
+}
+
+table.bkm_Content {
+    width: 100%;
+}
+
+/*.pli_middle*/
+/*design de la barre de titre pour un signet  */
+
+.bkmdiv {
+    /*border-bottom: 1px solid #afabac;
+    border-top: 1px solid #afabac;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 1px solid #AFABAC;
+    border-right: 1px solid #AFABAC;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;*/
+    margin-top: 15px;
+    min-height: 70px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.14),0 2px 2px 0 rgba(0,0,0,.098),0 1px 5px 0 rgba(0,0,0,.084);
+    /*box-shadow: 2px 2px 6px #d4d4d4;*/
+    height: auto;
+    padding-bottom: 5px;
+    background-color: white;
+    /*for Request 71 436*/
+    display: flex;
+    flex-direction: column;
+}
+
+.bkmdivCampaign {
+    border-bottom: 1px solid #afabac;
+    border-top: 1px solid #afabac;
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+    border-left: 1px solid #AFABAC;
+    border-right: 1px solid #AFABAC;
+    /*border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;*/
+    box-shadow: 2px 2px 6px #d4d4d4;
+    height: auto;
+    background-color: white;
+}
+
+.bkmLabel {
+    text-indent: 10px;
+    width: 42%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+    .bkmLabel span.icon-rem_filter {
+        font-size: 11pt;
+        vertical-align: middle;
+        /*position: absolute;*/
+        line-height: 25px;
+        margin-left: 15px;
+    }
+
+.bkmTitle {
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #afabac;*/
+    color: #000;
+    font-weight: bold;
+    font-size: 9pt;
+    vertical-align: middle;
+    background-color: #f4f4f4;
+    width: 100%;
+    text-align: left; /* MCR 39295: augmenter le zoom d un signet web */
+    line-height: 25px;
+    border-bottom: 1px solid #cccccc;
+}
+
+    .bkmTitle > ul, .bkmTitle > ul > li > ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .bkmTitle > ul > li, .bkmTitle > ul > li > ul > li {
+            list-style-type: none;
+            display: inline-block;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+/*signets_bar*/
+li.bkmButtonsBar {
+    float: right;
+}
+
+li.bkmPagingBar {
+    width: 12%;
+}
+
+div.bkmButtonsBar {
+    float: right;
+    /*margin-right: 10px;*/
+}
+
+.bkmButtonsBar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.bkmButtonsBar > ul > li {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.bkmButtonsBar .btnCancelLastModif {
+    font-size: 12pt;
+    width: 20px;
+    text-align: center;
+}
+/*signets_bar table */
+.bkmButtonsBar table {
+    margin-top: 0px;
+    height: 100%;
+    /* width: 150px; */
+    border: none;
+    border-collapse: collapse;
+}
+
+/*signets_bar td */
+.bkmButtonsBar td {
+    padding: 0 !important;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.bkmEmailing > div > img {
+    width: 24px;
+    height: 25px;
+    background-position: -71px -1px;
+}
+
+.bkmForm > div > img {
+    width: 24px;
+    height: 25px;
+    background-position: -145px -123px;
+}
+
+/* Gestion ACTIVATION BOUTONS - start*/
+/*.bt_modifier_inactif*/
+.bkmModif {
+    width: 30px;
+    height: 24px;
+    background-position: 4px -639px;
+}
+    /*bt_modifier_actif*/
+    .bkmModif:hover {
+        background-position: 4px -710px;
+    }
+
+/*bt_liste_inactif*/
+.bkmListMode {
+    width: 30px;
+    height: 24px;
+    background-position: -33px -283px;
+}
+    /*bt_liste_actif*/
+    .bkmListMode:hover {
+        background-position: -32px -353px;
+    }
+/*.bt_rubriques_inactif */
+.bkmFieldsSel > div > img {
+    width: 24px;
+    height: 25px;
+    background-position: -48px -47px;
+}
+
+/*.bt_paging_inactif */
+.bkmPaging > div > img {
+    width: 24px;
+    height: 25px;
+    background-position: -147px -25px;
+    background-color: #79BE0B;
+}
+/*.bt_nopaging_inactif */
+.bkmNoPaging > div > img {
+    width: 24px;
+    height: 25px;
+    background-position: -147px -25px;
+}
+
+.bkmTargetImport > div > img {
+    width: 24px;
+    height: 25px;
+    background-position: -94px -73px;
+}
+
+.bkmTargetExport > div > img {
+    width: 24px;
+    height: 25px;
+    background-position: -71px -240px;
+}
+
+/*bt_supprimer_inactif
+TODO: non utilisé pour le moment - cf eBookmarkRenderer.cs */
+.bkmDel {
+    width: 30px;
+    height: 24px;
+    background-position: -140px -94px;
+    cursor: pointer;
+}
+
+/*.bt_ajouter_inactif */
+.bkmAdd div, .bkmHisto div, .bkmFilterAdd div, .bkmFilterRem div, .bkmFieldsSel div, .bkmPaging div, .bkmNoPaging div,
+.bkmTargetImport div, .bkmTargetExport div, .bkmForm div, .bkmEmailing div, .StatsLoupe div, .StatsLoupePos div {
+    width: 24px;
+    height: 24px;
+}
+
+.bkmAdd > div > img {
+    background-position: -24px 0px;
+    width: 24px;
+    height: 25px;
+}
+/* Gestion ACTIVATION BOUTONS - end*/
+
+/*.bt_ajouter_inactif */
+.bkmHisto > div > img {
+    width: 24px;
+    height: 25px;
+    background-position: -121px -48px;
+}
+
+.bkmHisto[enabled='1'] {
+}
+
+.bkmHisto[enabled='0'] {
+}
+
+/* Bouton ajouter depuis un filtre START */
+.bkmFilterAdd > div > img {
+    width: 24px;
+    height: 24px;
+    background-position: -49px -73px;
+}
+
+/* Bouton ajouter depuis un filtre END */
+
+/* Bouton supprimer depuis un filtre START*/
+.bkmFilterRem > div > img {
+    width: 24px;
+    height: 25px;
+    background-position: -170px -72px;
+}
+/* Bouton supprimer depuis un filtre END*/
+
+/* Gestion ACTIVATION BOUTONS - end*/
+
+.noFileInBkm {
+    height: 21px;
+    text-indent: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.fileHeaderCell {
+    font-weight: bold;
+    height: 24px;
+    text-align: left;
+    border-bottom: 2px solid #C7C7C7;
+}
+
+/* Contacte Signet - End*/
+
+.fileCadre {
+    width: 100%;
+    height: 30px;
+    font-family: Verdana;
+    font-size: 9pt;
+    background-color: white;
+}
+
+.fileLogo {
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    float: left;
+    font-size: 13pt;
+    text-align: center;
+    line-height: 22px;
+}
+
+.iconDef {
+    background-position: 0px 3px; /*Le important décale les icone pochoir du mode fiche*/
+}
+
+.fileName {
+    float: left;
+    position: relative;
+    margin: 10px;
+    color: #42A7DC;
+    font-weight: bold;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position: 58px 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.fileLogoInf {
+    background-position: -75px -28px;
+    height: 16px;
+    width: 17px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    margin-left: 5px;
+    background-color: #636363;
+    display: inline-block;
+}
+
+    .fileLogoInf:hover {
+        cursor: pointer;
+    }
+
+.fileLogoCV {
+    background-position: -3px -122px;
+    height: 21px;
+    width: 22px;
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+    z-index: 2;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+    .fileLogoCV:hover {
+    }
+
+.file99 {
+    padding-top: 2px;
+    padding-left: 10px;
+    font-size: 8pt;
+    font-family: Verdana;
+    text-align: left;
+    font-weight: normal;
+    color: #949494;
+}
+
+    .file99 > span {
+        vertical-align: middle;
+    }
+
+.fileOwner {
+    float: left;
+    margin: 5px 10px 0 5px;
+    cursor: pointer;
+}
+
+.file99Label {
+    float: left;
+    color: #1155cc;
+}
+
+.file99Value {
+    color: #1155cc;
+    float: left;
+}
+
+.fileTools ul li.opencloseall {
+    height: 21px;
+    width: 24px;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 0px;
+}
+
+.hide_all {
+    background-position: -73px -121px;
+}
+
+.open_all {
+    background-position: -49px -121px;
+}
+
+.trBtnBkmPag {
+    border-top: 1px solid #D3D4D5;
+    background-color: #F8F8F8;
+    height: 20px;
+}
+
+/* Informations d'en-tête et pied de page */
+.divHeadInfo, .divFootInfo {
+    width: 100%;
+    display: inline; /*KHA le 17/02/2014 : cette pté est inutile avec le width : 100% et
+						provoque un bug : lorsqu'on masque le tableau principal contenant les données,
+						le bloc des signets est superposé avec le bloc des informations parentes*/
+}
+
+    .divHeadInfo table, .divFootInfo table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        table-layout: fixed;
+    }
+
+    .divHeadInfo table {
+        margin-bottom: 0;
+    }
+
+        .divHeadInfo table td {
+            line-height: 18px;
+        }
+
+    .divFootInfo table td {
+        padding-bottom: 3px;
+    }
+
+.lblHeadInfo {
+    text-align: right;
+    width: 15%;
+    color: #949494;
+    padding-bottom: 3px;
+}
+
+.valueHeadInfo {
+    padding-left: 15px;
+    width: 15%;
+    padding-bottom: 3px;
+}
+
+.midHeadInfo {
+    width: 2%;
+}
+
+.tdHideHead {
+    vertical-align: bottom;
+    text-align: right;
+    width: 20px;
+}
+
+.shownHead {
+    display: none;
+    width: 22px;
+    height: 20px;
+    background-image: url(../images/iFile/infos-deplier.png);
+}
+
+.hiddenHead {
+    width: 22px;
+    height: 20px;
+    background-image: url(../images/iFile/infos-plier.png);
+}
+
+/*Informations d'en-tête - Fin*/
+
+/*Mise en page en creation / modification*/
+
+/*version de la colonne des boutons en mode consultation*/
+td.btn {
+    width: 0px;
+}
+
+/*Mise en page en creation / modification - Fin*/
+
+/*Création fiche planning - début*/
+.md_pl_txt_imp {
+    color: red;
+    margin-left: 110px;
+    font-style: italic;
+}
+
+.md_pl-rad {
+    margin-left: 140px;
+}
+
+.md_pl-base {
+    border: 1px solid black;
+    background-color: white;
+    padding: 3px;
+}
+
+    .md_pl-base > div {
+        overflow: hidden;
+        position: inherit;
+    }
+
+    .md_pl-base table {
+        border-collapse: collapse;
+        font-size: 8pt;
+    }
+
+.md_pl-base-Vsep {
+    margin-top: 25px;
+    font-size: 1px;
+    width: 1px;
+    background-color: gray;
+    float: left;
+    height: 100px;
+    margin-left: 16px;
+}
+
+.PersColor {
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+    float: left;
+}
+
+.selectedColCell {
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+}
+
+.SndAlrt {
+    margin-top: 2px;
+    margin-right: 60%;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    float: right;
+}
+
+.md_pl-txtAr {
+    width: 96%;
+    height: 100%;
+}
+
+.mdFchAddBtn {
+    background-position: 0px -75px;
+    line-height: 14px;
+    height: 21px;
+    cursor: pointer;
+    color: #42A7DC;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+}
+
+.ToolBarMdPl {
+    display: block;
+    float: right;
+    padding: 0;
+}
+
+    .ToolBarMdPl li {
+        float: left;
+        list-style-type: none;
+        padding: 0;
+        height: 23px;
+        width: 23px;
+    }
+
+.AttachMdPl {
+    background-position: -72px -211px;
+    display: block;
+    margin-right: 5px;
+}
+
+    .AttachMdPl:hover {
+        background-position: -70px -356px;
+        display: block;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+.PrintMdPl {
+    background-position: 0px -283px;
+    display: block;
+    margin-right: 25px;
+}
+
+    .PrintMdPl:hover {
+        background-position: 0px -354px;
+        display: block;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+
+.TrashMdPl {
+    background-position: 0px -851px;
+    display: block;
+}
+
+    .TrashMdPl:hover {
+        background-position: 0px -922px;
+        cursor: pointer;
+    }
+/*Création fiche planning - fin*/
+
+.tabLeft {
+    margin-top: 10px;
+    float: left;
+    width: 49%;
+    height: 100%;
+}
+
+.separatorRight {
+    margin-top: 17px;
+}
+
+.tabRight {
+    margin-top: 10px;
+    float: right;
+    width: 47%;
+    margin-left: 2%;
+}
+
+.md_pl_txt_imp {
+    color: red;
+    margin-left: 110px;
+    font-style: italic;
+}
+
+.PeriodiciteInfo {
+    margin-top: 7px;
+    padding-top: 10px;
+    /*padding-left: 4%;*/
+    padding-bottom: 5px;
+}
+
+.md_pl-rad {
+    margin-left: 140px;
+}
+
+.colPicker {
+    height: 20px;
+    margin-top: 6px;
+    line-height: 17px;
+    /*margin-left: 4%;*/
+}
+
+div.colPicker span.table_labels {
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.md_pl-base table {
+    border-collapse: collapse;
+}
+
+.tdDatSep {
+    width: 36px;
+}
+
+#ConflictSpan {
+    z-index: 5;
+    background-color: lightGrey;
+    padding: 5px;
+    border: 1px solid;
+}
+
+.md_pl_txt-imp {
+    color: red;
+    font-style: italic;
+    float: right;
+}
+
+.conflict_free {
+    display: inline-block;
+    /*background: LightGray;*/
+}
+
+span.conflict_free {
+    padding: 2px;
+}
+
+.conflict_conflicted {
+    color: #D63301;
+    display: inline-block;
+    /*background-color: #FFCCBA;*/
+}
+
+span.conflict_conflicted {
+    padding: 2px;
+}
+
+.multiusers {
+    border: 1px solid #b6b6b6;
+    padding: 1px;
+    width: 100%;
+    height: 17px;
+    margin-top: 5px;
+}
+
+.HoursPopup {
+    height: 200px;
+    border: 1px solid gray;
+    overflow: auto;
+    background-color: white;
+    z-index: 1;
+}
+
+ul.HoursPopupSelect {
+    list-style: none outside none;
+    cursor: pointer;
+}
+
+    ul.HoursPopupSelect li {
+        padding: 2px;
+    }
+
+        ul.HoursPopupSelect li:hover {
+            background-color: silver;
+            color: white;
+        }
+
+.HoursPopupSelected {
+    border: 1px solid black;
+    background-color: gray;
+    color: white;
+}
+
+/*Création fiche planning - fin*/
+
+.hours_choice {
+    background-color: #f8f8f8;
+    width: 100px;
+    border: 1px solid #afabac;
+    text-align: right;
+    cursor: pointer;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: auto;
+    z-index: 100;
+}
+
+    .hours_choice div:hover {
+        background-color: #bcdefb;
+        cursor: pointer;
+    }
+
+/*VCARD IMAGE Fiche*/
+
+
+.vcCadreFile {
+    width: 59px;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.vcCadreGhost {
+    width: 69px;
+}
+/*VCARD IMAGE*/
+#vcImg {
+    width: 62px;
+    height: 62px;
+    border: 1px solid #b6b6b6;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 6px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vcImgPpFile {
+    /*height: 41px;
+    cursor: pointer;
+    border: 2px solid #b6b6b6;
+    margin-top: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 5px;*/
+}
+
+.vcImgPp {
+    /*background-image: url("../images/iVcard/unknown_pp.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 58px;
+    width: 60px;
+    cursor: pointer;*/
+    /*border: 6px solid #b9b9b9;*/
+}
+
+#vcImg img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.vcImgPm {
+    /*height: 52px;
+    width: 53px;
+    cursor: pointer;*/
+    /*border: 2px solid #b6b6b6;
+    margin-top: 5px;*/
+}
+
+.vcCadre {
+    height: 70px;
+    margin-left: 10px;
+    width: 70px;
+}
+
+.TypAdr > * > * {
+    margin-left: 10px;
+}
+
+.TypAdr {
+    color: #074c87;
+    height: 12px;
+    line-height: 12px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.TypAdrItm {
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.TypAdrItmLbl {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.sep_dates {
+    width: 113px;
+}
+
+.tabconfid {
+    width: 100%;
+}
+
+.filePty {
+    background-color: white;
+    width: 96%;
+    border: 1px solid Gray;
+    margin: 2%;
+    padding: 8px;
+}
+
+/******************Spécifique à la fiche campagne**************************/
+
+.recml {
+    float: right;
+    background-color: #B6B6B6;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-right: 18px;
+    padding: 0 !important;
+}
+
+.recml1 {
+    background-position: 42px -2597px;
+    display: inline-block;
+    width: 33px;
+    height: 26px;
+}
+
+.recml2 {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: inherit;
+    text-align: right;
+    width: 48px;
+}
+
+.recml3 {
+    display: inline-block;
+    width: 15px;
+}
+
+.pctopnml {
+    float: right;
+    background-color: #B6B6B6;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 10px;
+    color: #FFF;
+    font-weight: bold;
+    margin-right: 18px;
+    padding: 0 !important;
+}
+
+.pctopnml1 {
+    float: left;
+    background-position: 42px -2666px;
+    display: inline-block;
+    width: 29px;
+    height: 26px;
+}
+
+.pctopnml2 {
+    background-color: #B6B6B6;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 30px;
+    padding-right: 14px;
+    border-radius: 10px;
+    color: #FFF;
+    font-weight: bold;
+    text-indent: 5px;
+    width: 51px;
+}
+
+.pctopnml3 {
+    float: left;
+}
+
+table.camprep tr {
+    height: 30px;
+}
+
+table.camprep {
+    margin: 0px 10px;
+    width: 100%;
+}
+
+.campChartDiv {
+    height: 100%;
+}
+
+
+table.campStats {
+    width: 100%;
+    table-layout: fixed;
+    overflow-x: hidden;
+}
+
+    table.campStats td {
+        vertical-align: top;
+        padding: 10px;
+    }
+
+.StatsLoupePos.icon-search-plus,
+.StatsLoupePos.icon-search-minus {
+    font-size: 13pt;
+}
+
+.StatsRendBlock {
+    margin-bottom: 10px;
+    box-sizing: content-box;
+    overflow: auto;
+}
+
+.fileChartMainHeader {
+    background-color: red;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+
+/******************FIN - Spécifique à la fiche campagne**************************/
+
+/*Signet depuis page web*/
+.BkmWeb {
+    text-align: center;
+    align-content: center;
+}
+
+.BkmWebFrm {
+    width: 99%;
+    height: 95%;
+    border: none;
+}
+
+/* duplication de la classe dans emailling.css */
+.lineZoom, .fileChartMain {
+    background-color: #f7f6f6;
+    text-align: right;
+    vertical-align: middle;
+    /*BSE :#54 782*/
+    /*border-top: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-color: #b6b6b6;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;*/
+}
+
+.fileChartMain {
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #ccc;
+}
+
+.lineZoom {
+    height: 5px;
+    line-height: 5px;
+}
+/* TODO: Sprite */
+.divZoom {
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/Editors/Editors-Controls.png");
+    background-repeat: no-repeat;
+    background-position: center -167px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.divChart {
+    float: right;
+}
+/**Discussion/Forum*/
+.discComm {
+    margin: 10px 15px auto;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 13px;
+    position: relative;
+}
+
+.discUsrDate {
+    font-weight: bold;
+}
+
+.discNotes {
+    padding-left: 30px;
+}
+
+.discPen, .discDel {
+    position: absolute;
+    font-size: 9pt;
+}
+
+.discPen {
+    right: 25px;
+    top: 7px;
+}
+
+.discDel {
+    right: 7px;
+    top: 7px;
+}
+
+.bkmLabel:hover img.sorthid {
+    visibility: visible;
+}
+
+.bkmLabel img.sorthid {
+    visibility: hidden;
+}
+
+/**Discussion/Forum - FIN*/
+.fileCadre .icon-info-circle, span.actionBarLink {
+    font-size: 14pt;
+    text-align: center;
+    width: 27px;
+    display: inline-block;
+    line-height: 22px;
+}
+
+span.actionBarLink {
+    margin-right: 5px;
+}
+
+    span.actionBarLink:hover {
+        color: #47A7DC !important;
+    }
+
+.icon-edn-info.disabled, .icon-info-circle.disabled {
+    color: #383938;
+}
+
+tr.tableSep {
+    height: 0px;
+}
+
+    tr.tableSep td {
+        border: none;
+    }
+
+        tr.tableSep td.active {
+        }
+
+
+.icon-site_web {
+    font-size: 11pt;
+}
+
+
+/* Styles du champ */
+[fstyle='MAIN_TITLE'],
+[fstyle='MAIN_TITLE'] input[type=text] {
+    font-size: 14pt !important;
+}
+
+td[fstyle='MAIN_TITLE'] {
+    padding-top: 6pt;
+    padding-bottom: 6pt;
+}
+
+[fstyle='SECONDARY_TITLE'],
+[fstyle='SECONDARY_TITLE'] input[type=text] {
+    font-size: 12pt;
+}
+
+td.table_values[fstyle] *, td.table_values[fstyle] input[type=text] {
+    height: auto;
+}
+
+td[eaction='LNKOPENAVATAR'][efld='1'] {
+    text-align: center;
+}
+
+
+select.selectadmin {
+    font-size: 8pt;
+    height: 23px !important;
+}
+
+    select.selectadmin.treatmentLogs {
+        width: 100%;
+    }
+
+select.selectadminmulti {
+    font-size: 8pt;
+    height: auto;
+}
+
+/* Catalogues mode étape */
+.chevronCatalog {
+    list-style-type: none;
+    display: inline-table;
+    margin: 15px 10px 0 0;
+    padding: 0;
+    width: 98%;
+}
+
+.chevronCatalog li {
+    display: table-cell;
+}
+
+.chevronCatalog li:first-child a:before {
+    border: 0;
+}
+
+.chevronCatalog li a {
+    display: block;
+    position: relative;
+    height: 30px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 20px;
+    line-height: 30px;
+    background-color: #A5A4A8;
+    color: white;
+    margin-right: 5px;
+}
+
+
+.chevronCatalog li a:hover {
+    background-color: #BCDCFB;
+}
+
+.chevronCatalog li a:hover:after {
+    border-left-color: #BCDCFB;
+}
+
+.chevronCatalog li a:before {
+    content: "";
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+    .chevronCatalog li span {
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid #A5A4A8;
+        position: absolute;
+        right: -15px;
+        top: 0;
+        z-index: 1;
+    }
+
+.chevronCatalog li.selectedValue a {
+background-color: #79BE0B;
+}
+
+    .chevronCatalog li.selectedValue span {
+        border-left-color: #79BE0B;
+    }
+
+
+.chevronCatalog li.beforeSelectedValue a:after {
+    border-left-color: #636363;
+}
+
+.chevronCatalog li.disabledValue a {
+    cursor: not-allowed;
+}
+
+td[ero='1'] .chevronCatalog li a {
+    cursor: not-allowed;
+}
+
+p.catalogTooltip {
+    margin: 0;
+}
+
+.resumeBreakline {
+    /*height: 0;
+    display:none;*/
+    cursor: pointer;
+    /*height: 3px;
+    background-color: green;
+    width: 30px;*/
+    position: absolute;
+    bottom: -4px;
+}
+
+.resumeBreaklineShadow {
+    opacity: 0.4;
+}
+
+.avatar99 {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-top: -6px;
+}
+
+#COL_106000_106006 {
+    left: 10px;
+}
+
+div#divFilePart1 .LNKOPENIMG > img, div#divFilePart1 .LNKCATIMG > img {
+    height: 100% !important; /* Request 90 708*/
+    object-fit: contain;
+    width: auto;
+    max-height: 150px !important; /*Request 95 067*/
+}
+
+/*Request */
+div [id="fileDiv_200"] #divFilePart1 [class*="LNK"][tabindex="6"] {
+    height: auto !important; /* Request 90 708*/
+    vertical-align: inherit;
+}
+div#divFilePart1 [class*="LNK"][tabindex="13"] {
+    height: auto !important;
+    vertical-align: inherit;
+}
+div#divFilePart1 .table_labels, div#divFilePart1 .table_values {
+    vertical-align: middle;
+}
+/*Request */
+/*Request 89 597*/
+.LNKOPENAVATAR > img {
+    width: 150px !important;
+    object-fit:contain; /*Request 92 019 */
+}
+
+#fileDiv_300 .LNKOPENAVATAR > img {
+    height: auto !important;
+}
+/*Request 89 597*/
+
+/*Request 55 187*/
+.tabconfid .tdDatSep{
+    width: 15px;
+}
+
+#COL_1000_1084_0_0_0{
+    width: 250px;
+}
+
+.tabconfid .icon-catalog{
+    padding-left:5px;
+}
+
+#COL_1000_1084_0_0_0 a.chk, #COL_1000_1079_0_0_0 a.chk {
+    font-size: 12px;
+    color: rgb(99, 99, 99) !important;
+}
+/*Request 55 187*/
+
+/*Request 90 144*/
+.mTabFile td.LNKSTEPCAT.edit.table_values {
+    overflow: initial;
+}
+ /*Request 90 144*/
+
+
+/* Request 90 708*/
+/* Regression 93734 add :not() */
+div#divFilePart1 .table_values div:not(.inlineMemoEditor) img {
+    height: 20vh !important;
+}
+/* Request 90 708*/
+
+/*Request 71 436*/
+#blockBkms div.bkmdiv[memobkm="1"] div[id*="eBkmMemoEditorContainer"], div.bkmdiv[memobkm="1"] .cke_contents {
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+}
+/*Request 71 436*/

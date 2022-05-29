@@ -1,0 +1,7 @@
+﻿.dataTable td.td_3 {
+    padding: var(--size-5) var(--size-10) !important;
+}
+
+[class^="fs_"] #mainDiv #listContent{
+    height:auto;
+}

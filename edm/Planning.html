@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../themes/default/css/eAdmin.css" rel="stylesheet" />
+    <link href="../themes/default/css/eudoFont.css" rel="stylesheet" />
+    <title>Planning</title>
+</head>
+<body>
+    <div class="adminModal">
+        <div class="adminModalTitle">
+            <div class="icon-mes_options"></div>
+            <div>Mes options avancées</div>
+        </div>
+        <ul class="adminBreadCrumbs">
+            <li class="onClick">Administration</li>
+            <li>></li>
+            <li class="onClick">Mes préférences</li>
+            <li>></li>
+            <li>Planning</li>
+        </ul>
+        <div class="adminModalMiddleTitle">Affichage</div>
+        <div class="checkPart">
+            <input type="checkbox" />A chaque connexion, positionner le planning sur aujourd’hui.
+        </div>
+        <div class="adminPlanningCntnt">
+            <div class="panelCntnt">
+                <div class="titlePlanningCntnt">
+                    <div class="txtTitle">MODE SEMAINE</div>
+                    <div class="icon-agenda_clock"></div>
+                </div>
+                <div class="panelCntntBottom">
+                    <div class="panelCntntWeek">
+                        <div><span class="labelCntntTxt">Heure de début</span><select></select><span class="labelCntntTxt">:</span><select></select></div>
+                        <div><span class="labelCntntTxt">Heure de fin</span><select></select><span class="labelCntntTxt">:</span><select></select></div>
+                    </div>
+                </div>
+            </div>
+            <div class="panelCntnt">
+                <div class="titlePlanningCntnt">
+                    <div class="txtTitle">MODE MOIS</div>
+                    <div class="icon-agenda_clock"></div>
+                </div>
+                <div class="panelCntntBottom">
+                    <div class="panelCntntWeek">
+                        <div><span class="labelCntntTxt">Heure de début</span><select></select><span class="labelCntntTxt">:</span><select></select></div>
+                        <div><span class="labelCntntTxt">Heure de fin</span><select></select><span class="labelCntntTxt">:</span><select></select></div>
+                        <div class="timeRange">
+                            <span class="labelCntntTxt">Durée des plages </span>
+                            <select></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panelCntnt">
+                <div class="titlePlanningCntnt">
+                    <div class="txtTitle">AJUSTEMMENTS DU PLANNING</div>
+                    <div class="icon-agenda_admin"></div>
+                </div>
+                <div class="panelCntntBottom">
+                    <ul class="panelCntntLeft">
+                        <li>Durée par défaut d’un rendez-vous</li>
+                        <li>Nombre  maximal de chevauchement</li>
+                        <li>Durée des intervalles</li>
+                        <li>
+                            <input type="checkbox" /></li>
+                        <li>Hauteur d’un rendez-vous (lignes)</li>
+                    </ul>
+                    <ul class="panelCntntRight">
+                        <li>
+                            <select></select></li>
+                        <li>
+                            <select></select></li>
+                        <li>
+                            <select></select></li>
+                        <li>Afficher toutes les intervalles</li>
+                        <li>
+                            <select></select></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panelCntnt">
+                <div class="titlePlanningCntnt">
+                    <div class="txtTitle">Tâches</div>
+                    <div class="icon-all_select"></div>
+                </div>
+                <div class="panelCntntBottom">
+                    <ul class="taskChoice">
+                        <li>
+                            <input type="radio" /><span>Ne pas afficher les tâches</span></li>
+                        <li>
+                            <input type="radio" /><span>Afficher toutes les tâches</span></li>
+                        <li>
+                            <input type="radio" /><span>Afficher les tâches du jour</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="adminModalMiddleTitle">Semaine de travail</div>
+        <div class="adminPlanningCntnt">
+            <ul class="workingWeek">
+                <li>Dimanche</li>
+                <li class="selected">Lundi</li>
+                <li class="selected">Mardi</li>
+                <li class="selected">Mercredi</li>
+                <li class="selected">Jeudi</li>
+                <li class="selected">Vendredi</li>
+                <li>Samedi</li>
+            </ul>
+            <div class="panelCntntWeek">
+                <div class="dayChoice">
+                    <span>Premier jour de la semaine</span><select><option>Lundi</option>
+                    </select>
+                </div>
+                <div><span class="labelCntntTxt">Heure de début</span><select></select><span class="labelCntntTxt">:</span><select></select></div>
+                <div><span class="labelCntntTxt">Heure de fin</span><select></select><span class="labelCntntTxt">:</span><select></select></div>
+            </div>
+        </div>
+        <div class="adminModalMiddleTitle">Couleurs</div>
+        <div class="adminPlanningCntnt">
+            <div class="adminCntntTtl">Cliquez sur la couleur pour la modifier</div>
+            <div class="colorElemnt">
+                <div class="colorBlock"></div>
+                <span>Le rendez-vous m'appartient</span></div>
+            <div class="colorElemnt">
+                <div class="colorBlock"></div>
+                <span>Le rendez-vous m'appartient et est confidentiel</span></div>
+            <div class="colorElemnt">
+                <div class="colorBlock"></div>
+                <span>Le rendez-vous ne m'appartient pas mais me concerne</span></div>
+            <div class="colorElemnt">
+                <div class="colorBlock"></div>
+                <span>Le rendez-vous ne m'appartient pas et ne me concerne pas</span></div>
+            <div class="colorElemnt">
+                <div class="colorBlock"></div>
+                <span>Le rendez-vous ne m'appartient pas et est confidentiel</span></div>
+        </div>
+        <div class="adminModalMiddleTitle">Options</div>
+        <div class="adminPlanningCntnt"></div>
+        <div class="checkPart">
+            <input type="checkbox" />Activer les conflits</div>
+        <div class="adminBtnPart">
+            <input class="validBtn" type="button" value="Valider" /><input class="cancelBtn" type="button" value="Annuler" />
+        </div>
+    </div>
+    <div class="adminMenu">
+        <div class="adminBlock">
+            <div class="icon-administrafion"></div>
+            <div>Administrateur</div>
+        </div>
+        <ul class="adminSndBlock">
+            <li class="firstElmentMenu">
+                <div class="icon-mes_prefs"></div>
+                <div>Mes préférences</div>
+            </li>
+            <li>
+                <div class="icon-next"></div>
+                <div>Mon profil</div>
+            </li>
+            <li>
+                <div class="icon-next"></div>
+                <div>Affichage</div>
+            </li>
+            <li>
+                <div class="icon-next"></div>
+                <div>Onglets</div>
+            </li>
+            <li>
+                <div class="icon-next"></div>
+                <div>Modifier mon mot de passe</div>
+            </li>
+            <li>
+                <div class="icon-next"></div>
+                <div>Ajouter/modifier ma signature</div>
+            </li>
+            <li>
+                <div class="icon-next"></div>
+                <div>Ajouter/modifier un mémo</div>
+            </li>
+        </ul>
+        <ul class="adminThrdBlock">
+            <li class="firstElmentMenu">
+                <div class="icon-mes_options"></div>
+                <div>Mes options avancées</div>
+            </li>
+            <li>
+                <div class="icon-next"></div>
+                <div>Messagerie</div>
+            </li>
+            <li>
+                <div class="icon-next"></div>
+                <div>Planning</div>
+            </li>
+            <li>
+                <div class="icon-next"></div>
+                <div>Rapport d'exports</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

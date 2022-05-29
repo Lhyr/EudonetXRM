@@ -1,0 +1,101 @@
+﻿body
+{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 8pt;
+    text-align: left;
+    margin: 0;
+    padding: 15px;
+}
+input
+{
+    margin-left: 5px;
+    margin-right: 5px;
+	text-align: right;
+}
+li
+{
+    list-style-type: none;
+}
+.line {
+	margin-bottom: 1px;
+}
+.divFreq
+{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.selFreq
+{
+    font-weight: bold;
+}
+input[type="radio"]
+{
+    vertical-align: -4px;
+}
+.divPer span
+{
+    font-weight: bold;
+}
+
+.lnkdate
+{
+    /*background-image: url(../images/iFile/iFileSprite.png); */ /* TODO: EudoFont */
+    /*background-position: 7px -927px;*/
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-repeat: no-repeat;
+}
+    .lnkdate:hover
+    {
+        background-position: 7px -966px;
+    }
+.btn
+{
+	width: 30px !important;
+	height: 17px;
+	line-height: 16px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-position: 1px 1px;
+}
+
+.scheduleRadio
+{
+width: 1%; /*5%*/
+}
+
+.scheduleLabel
+{
+width: 7.5%; /*40%*/
+}
+
+.scheduleDate
+{
+width: 5px;
+}
+
+#hourDiv table{
+    padding-left: 20px;
+}
+
+#periodeDiv table{
+    padding-left: 15px;
+}
+
+.divFreq ul{
+    padding-left: 20px;
+}
+
+#hourDiv .scheduleLabel {
+    width: 2.5%;
+}
+
+#SchType{
+    margin-top: 10px;
+}
+
+.icon-agenda {
+    font-size: 11pt;
+    padding: 5px;
+    vertical-align: middle;
+}

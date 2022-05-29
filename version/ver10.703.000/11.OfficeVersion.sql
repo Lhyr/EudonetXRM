@@ -1,0 +1,1 @@
+update CONFIG set OfficeRelease=10 where OfficeRelease in (8,9)

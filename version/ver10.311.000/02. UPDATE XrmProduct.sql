@@ -1,0 +1,1 @@
+UPDATE [XrmProduct] SET RangeStart = 10000 WHERE ProductCode = 'BU_FEDE'

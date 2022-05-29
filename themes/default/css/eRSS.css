@@ -1,0 +1,54 @@
+﻿body {
+    color:#636363;
+}
+
+.widgetRSSItem {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.widgetRSSItem .itemImage {
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+    text-align: center;
+}
+.widgetRSSItem .itemImage img {
+  
+    max-width: 150px;
+    max-height: 84px;
+}
+.widgetRSSItem .itemContent {
+    overflow: hidden;
+}
+.widgetRSSItem h2 {
+    margin: 0;
+    margin-bottom: 3px;
+}
+#formWidgetContent .widgetRSSItem h2 a {
+    color: inherit;
+}
+.widgetRSSItem .categories {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+.widgetRSSItem .intro {
+    font-style: italic;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.widgetRSSItem .description {
+    margin: 0;
+    text-align: justify;
+    display: inline-block;  
+}
+.widgetRSSItem .description ul li {
+    list-style-type: none;
+
+}

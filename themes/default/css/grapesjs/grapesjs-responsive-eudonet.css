@@ -1,0 +1,268 @@
+/* PNO, KJE */
+
+/* Ajout des classes responsives GrapesJS */
+
+/* PNO */
+div.row {
+	display: flex;
+}
+
+div.cell {
+	min-height: 75px;
+	flex-grow: 1;
+	flex-basis: 100%;
+}
+
+div.c70 {
+	flex-basis: 70%;
+}
+
+div.c30 {
+	flex-basis: 30%;
+}
+
+div.c50 {
+	flex-basis: 50%;
+}
+
+div.transform-rotate-180::before {
+    transform: rotate(180deg);
+}
+
+
+@media only screen and (max-width: 768px) {
+	div.row {
+		flex-wrap: wrap;
+	}
+
+	div.c70 {
+		flex-basis: 100%;
+	}
+
+	div.c30, div.c50 {
+		flex-basis: 100%;
+	}
+}
+
+.eudonet-ImageEudo {
+	max-width: 100% !important;
+}
+
+/*t�che #2 684*/
+.formCanvas {
+	max-width: 800px ;
+	margin: 0 auto !important;
+	padding: 0 0 20px 0;
+}
+
+eudonet-extended-input {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+
+	eudonet-extended-input.eudonet-eudonet-extended-input,
+	eudonet-extended-input.eudonet-eudonet-email-input,
+	eudonet-extended-input.eudonet-eudonet-phone-input,
+	eudonet-extended-input.eudonet-eudonet-extended-input-num,
+	eudonet-extended-input.eudonet-eudonet-extended-input-date,
+	eudonet-extended-input.eudonet-eudonet-extended-input-memo,
+	eudonet-extended-input.champSaisie-dropdown {
+		font-family: Roboto, sans-serif;
+		color: rgba(0,0,0,0.87);
+		font-size: 16px;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		flex-wrap: wrap;
+		min-width: 0;
+		width: 100%;
+		position: relative;
+		margin: 0 0 1% 0;
+		border-collapse: none;
+		display: block;
+		text-align: left;
+	}
+
+	eudonet-extended-input.eudonet-eudonet-extended-input,
+	eudonet-extended-input.eudonet-eudonet-email-input,
+	eudonet-extended-input.eudonet-eudonet-phone-input,
+	eudonet-extended-input.eudonet-eudonet-extended-input-num,
+	eudonet-extended-input.eudonet-eudonet-extended-input-date {
+		/*max-height: 48px;
+		height: 48px;*/
+		margin-top: 10px !important;
+	}
+
+		eudonet-extended-input.eudonet-eudonet-extended-input:before,
+		eudonet-extended-input.eudonet-eudonet-email-input:before,
+		eudonet-extended-input.eudonet-eudonet-phone-input:before,
+		eudonet-extended-input.eudonet-eudonet-extended-input-num:before,
+		eudonet-extended-input.eudonet-eudonet-extended-input-date:before {
+			top: 53px;
+			content: '';
+			left: 10px;
+			position: absolute;
+			transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+			width: 95%;
+			border-style: solid;
+			border-width: thin 0 0;
+			border-color: rgba(0,0,0,0.31);
+		}
+
+		eudonet-extended-input.eudonet-eudonet-extended-input-memo:after {
+			bottom: 30px;
+			content: '';
+			left: 0;
+			position: absolute;
+			transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+			width: 100%;
+			border-style: solid;
+			border-width: thin 0 0;
+			border-color: rgba(0,0,0,0.31);
+		}
+
+		eudonet-extended-input.eudonet-eudonet-extended-input:focus-within div > div,
+		eudonet-extended-input.eudonet-eudonet-email-input:focus-within div > div,
+		eudonet-extended-input.eudonet-eudonet-phone-input:focus-within div > div,
+		eudonet-extended-input.eudonet-eudonet-extended-input-num:focus-within div > div,
+		eudonet-extended-input.eudonet-eudonet-extended-input-date:focus-within div > div,
+		eudonet-extended-input.eudonet-eudonet-extended-input-memo:focus-within div > div {
+			color: #bb1515;
+		}
+
+		eudonet-extended-input.eudonet-eudonet-extended-input:focus-within:before,
+		eudonet-extended-input.eudonet-eudonet-email-input:focus-within:before,
+		eudonet-extended-input.eudonet-eudonet-phone-input:focus-within:before,
+		eudonet-extended-input.eudonet-eudonet-extended-input-num:focus-within:before,
+		eudonet-extended-input.eudonet-eudonet-extended-input-date:focus-within:before {
+			border-color: #bb1515;
+		}
+
+		eudonet-extended-input.eudonet-eudonet-extended-input-memo:focus-within:after {
+			border-color: #bb1515;
+		}
+
+	eudonet-extended-input.eudonet-eudonet-extended-input .eudonet-extended-label,
+	eudonet-extended-input.eudonet-eudonet-email-input .eudonet-extended-label,
+	eudonet-extended-input.eudonet-eudonet-phone-input .eudonet-extended-label,
+	eudonet-extended-input.eudonet-eudonet-extended-input-num .eudonet-extended-label,
+	eudonet-extended-input.eudonet-eudonet-extended-input-date .eudonet-extended-label,
+	eudonet-extended-input.eudonet-eudonet-extended-input-memo .eudonet-extended-label{
+		display: block;
+		left: 0px;
+		right: auto;
+		position: absolute;
+		font-size: 12px;
+		line-height: 2;
+		color: rgba(0,0,0,0.4);
+		padding: 0 10px;
+		/*margin-top: 10px;*/
+	}
+
+	
+	eudonet-extended-input.champSaisie-dropdown .eudonet-extended-label {
+		display: block;
+		left: 0px;
+		font-size: 12px;
+		line-height: 2;
+		color: rgba(0,0,0,0.4);
+		padding: 0 10px;
+		margin-top: 10px;
+	}
+
+	.eudonet-extended-cat {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	eudonet-extended-input.eudonet-eudonet-checkbox-input .eudonet-extended-label {
+		display: block;
+		font-family: Roboto,sans-serif;
+		font-size: 16px;
+		color: rgba(0,0,0,0.6);
+		padding: 0 10px;
+	}
+
+	eudonet-extended-input.eudonet-eudonet-extended-input .input,
+	eudonet-extended-input.eudonet-eudonet-email-input .input,
+	eudonet-extended-input.eudonet-eudonet-phone-input .input,
+	eudonet-extended-input.eudonet-eudonet-extended-input-num .input,
+	eudonet-extended-input.eudonet-eudonet-extended-input-date .input,
+	eudonet-extended-input.eudonet-eudonet-extended-input-memo .input {
+		max-width: 100%;
+		min-width: 0;
+		width: 100%;
+		background-color: transparent;
+		border-radius: inherit;
+		border: inherit;
+		color: inherit;
+		margin-top:10px;
+		height:36px;
+		padding-top:28px;
+	}
+
+	eudonet-extended-input.inputCanvas, eudonet-extended-input.inputCanvas > input, eudonet-extended-input.inputCanvas > textarea, eudonet-extended-input.inputCanvas > div {
+		outline: 1px none rgba(170,170,170,0.7);
+	}
+
+
+
+/*.v-select__selections {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	color: rgba(0,0,0,.87);
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1;
+	flex: 1 1;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	line-height: 18px;
+	max-width: 100%;
+	min-width: 0;
+}*/
+
+.v-text-field > .v-input__control > .v-input__slot:after, .v-text-field > .v-input__control > .v-input__slot:before {
+	bottom: -1px;
+	content: "";
+	left: 0;
+	position: absolute;
+	transition: .3s cubic-bezier(.25,.8,.5,1);
+	width: 100%;
+}
+
+.v-select__slot:before {
+	bottom: -1px;
+	content: "";
+	left: 0;
+	position: absolute;
+	transition: .3s cubic-bezier(.25,.8,.5,1);
+	width: 100%;
+}
+
+.v-input__control:focus-within:before {
+	border-color: red;
+}
+.v-input__control:focus-within:after {
+	border-color: red;
+}
+.v-input__control:focus-within div > div {
+	color: red;
+}
+
+.v-application .primary--text {
+	color: var(--v-primary-base) !important;
+	/* caret-color: var(--v-primary-base) !important; */
+}
+
+.eudonet-extended-cat .v-text-field{
+	margin-top:0px;
+	padding-top:0px;
+}

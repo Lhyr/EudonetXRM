@@ -1,0 +1,52 @@
+﻿.eudo-modal .clsDetailIndex[open] .clsBtnWrap {
+    padding-top: 2px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.eudo-modal .clsDetailIndex[open] summary,
+.eudo-modal .clsDetailIndex[open] summary + div {
+    padding: 0 3px 0 3px;
+}
+
+.eudo-modal .readOnlyComponent .input-group .clsDetailIndex[open] .clsBtnWrap {
+    padding: 2px 0 0 0 !important;
+    margin: 0 0 0px 0px;
+    width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.eudo-modal .clsDetailIndex[open] .clsBtnWrap button {
+    margin: 0px 0px -1px 0px;
+    border-top: 1px solid var(--detail-clsBtnWrap) !important;
+}
+
+.eudo-modal .clsDetailIndex[open] {
+    background-color: var(--detail-foreground-btn);
+    z-index: 5;
+    border: 1px solid var(--detail-clsBtnWrap);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.eudo-modal .readOnlyComponent .clsDetailIndex[open] {
+    border: 1px solid var(--detail-clsBtnWrap);
+    background: var(--detail-Readonly-cpt);
+}
+
+#headFiche details.clsDetailIndex {
+    margin-top: 2px;
+    width: 100%;
+    border: 0px solid transparent;
+}
+
+#headFiche .hiddenCatValue .clsCatalogSummary {
+    margin-bottom: 2px;
+}

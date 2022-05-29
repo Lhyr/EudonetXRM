@@ -1,0 +1,33 @@
+﻿html {
+    overflow: inherit; /* for request 95 167, before was auto */
+}
+.edn--home--wrapper--temporary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.edn--home--dialog--header, .edn--home--dialog--footer {
+    height: 115px;
+}
+
+.edn--home--dialog--body {
+    border: none;
+    height: calc(100% - 115px - 115px); /* cf. #3620 - 100% - taille de l'entête et du pied */
+}
+
+.edn--home--dialog--logo {
+    -webkit-filter: grayscale(100%) brightness(2.5) contrast(2.5);
+    filter: grayscale(100%) brightness(2.5) contrast(2.5);
+    height: 48px;
+    width: 96px;
+}
+
+#ednHomeDialogCloseButton span i {
+	font-size: 28pt;
+}
+.edn--home--admin {
+    background:transparent !important;
+}

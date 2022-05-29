@@ -1,0 +1,181 @@
+body
+{
+    font-family: verdana;
+    font-size: 10pt;
+    background: #eeeeee;
+}
+
+.ednVisuPnl
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid;
+    display: table;
+}
+.ednUnsubValid {
+    background-image: url(../images/eTrackValid.png);
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    padding-bottom: 100px;
+}
+.ednUnsubClient
+{
+    color: #696969;
+}
+
+.dotHr
+{
+    border-bottom: 1px dashed #686868;
+}
+.btmText
+{
+    font-style:italic;
+    color: #696969;
+}
+.ednUnsubClient div
+{
+    margin-top: 15px;
+    padding: 10px;
+    background: #eeeeee;
+    border: 1px solid #000;
+    color: #696969;
+    font-weight: bold;
+}
+
+.ednErrPnl
+{
+    border: 1px solid #999;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: white;
+    color: #bb1515;
+    font-weight: bold;
+}
+
+.ednUnsubPnl
+{
+    border: #696969 1px solid;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    
+    background-color: #fff;
+    
+}
+
+.ednUnsubTitle
+{
+    background-repeat:no-repeat;
+    background-position:5px center;
+    background-image:url(../images/eTrackMail.png);
+    height: 50px;
+    line-height: 70px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18pt;
+    color: #636363;
+    text-indent: 75px;
+}
+
+.ednUnsubMail
+{
+    font-weight: bold;
+    color: #bb1515;
+}
+
+.ednUnsubCat
+{
+    font-weight: bold;
+}
+
+.ednUnsubClient p
+{
+    margin: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ednUnsubChoice p
+{
+    /* margin: 0px; */
+}
+
+.ednUnsubLang
+{
+    text-align:right;
+}
+
+p.ednUnsubRad
+{
+    margin-left: 20px;
+}
+
+p.ednUnsubAllRad
+{
+    margin-top: 15px;
+}
+
+.button-green-edn
+{
+    height: 22px;
+    font-family: verdana;
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    cursor: pointer;
+    display: table;
+    margin: 16px auto;
+}
+
+    .button-green-edn:hover .button-green-edn-left
+    {
+        background-image: url(../images/ui/buttons/bouton-vert_hover_left.png);
+    }
+
+    .button-green-edn:hover .button-green-edn-right
+    {
+        background-image: url(../images/ui/buttons/bouton-vert_hover_right.png);
+    }
+
+    .button-green-edn:hover .button-green-edn-mid
+    {
+        background-image: url(../images/ui/buttons/bouton-vert_hover_mid.png);
+    }
+
+.button-green-edn-left
+{
+    height: 22px;
+    width: 2px;
+    background-image: url(../images/ui/buttons/bouton-vert_left.png);
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.button-green-edn-mid
+{
+    line-height: 22px;
+    background-image: url(../images/ui/buttons/bouton-vert_mid.png);
+    float: left;
+    text-align: center;
+    min-width: 79px;
+    vertical-align: middle;
+    height: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.button-green-edn-right
+{
+    height: 22px;
+    width: 2px;
+    background-image: url(../images/ui/buttons/bouton-vert_right.png);
+    float: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+}

@@ -1,0 +1,14 @@
+﻿a.pinned-tab--btn {
+    font-size: var(--size-14);
+}
+
+.nav-tabs-custom .nav-tabs > li.pinnedFileBtnDrawer a.pinned-tab--btn {
+    border: none;
+    padding: 0;
+    background: #fff;
+    font-family: var(--ffamilyBold);
+}
+
+.nav-tabs-custom .nav-tabs > li.pinnedFileBtnDrawer.active a.pinned-tab--btn {
+    color: var(--main-color) !important;
+}

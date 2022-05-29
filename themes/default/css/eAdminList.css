@@ -1,0 +1,38 @@
+﻿.chkRootGroupAdm {
+    margin-left: 1px;
+}
+
+div[ednadmin='1'] div#eBtnSrch {
+    margin-right: 24px;
+    margin-top: -2px;
+    height: 21px;
+    border:0;
+}
+ 
+div[ednadmin='1']  span[id^='eTVBLV_']
+{
+    display:table;
+
+}
+
+
+div[ednadmin='1'] ul.eTVRoot span[id^='eTVBLV_']
+{
+    display:table;
+
+}
+
+
+div[ednadmin='1'] ul.eTVRoot span[id^='eTVBLV_'] a.chk
+{
+    display:table-cell;
+    vertical-align:top;
+
+}
+
+div[ednadmin='1'] ul.eTVRoot span[id^='eTVBLV_'] span.usr_Gval
+{
+    display:table-cell;
+    width:100%
+    
+}

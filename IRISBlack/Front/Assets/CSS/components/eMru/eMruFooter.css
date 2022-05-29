@@ -1,0 +1,4 @@
+﻿.mru-button-footer > .mru-li:hover {
+    /*background-color: #f7f7f7;*/
+    background: var(--xpressfilter-bgcolor);
+}

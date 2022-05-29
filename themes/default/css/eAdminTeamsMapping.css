@@ -1,0 +1,90 @@
+﻿body {
+    padding: 25px;
+    text-align: center;
+}
+
+#cbEnableTeams {
+    text-align: center;
+}
+
+div.dvDDLParam {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+    justify-content: center
+}
+
+    div.dvDDLParam div.label {
+        width: 250px;
+        text-align: right;
+        margin-right: 5px;
+    }
+
+    div.dvDDLParam select {
+        width: 300px;
+    }
+
+
+div.adminTeamsMappingTitle {
+    cursor: pointer;
+}
+
+    div.adminTeamsMappingTitle div.TitleText {
+        font-size: 10pt;
+        padding-bottom: 5px;
+        color: #37A7DE;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    div.adminTeamsMappingTitle div.Opener {
+        border-top: 1px solid #37A7DE;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+.adminTeamsMapping {
+    margin: 15px 100px;
+}
+
+    .adminTeamsMapping[isdisp='1'] .adminTeamsMappingContent {
+        display: block;
+    }
+
+    .adminTeamsMapping[isdisp='0'] .adminTeamsMappingContent {
+        display: none;
+    }
+
+
+    .adminTeamsMapping div.userFields {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .adminTeamsMapping #titleBlock,
+    .adminTeamsMapping #searchBlock {
+        width: 100%;
+    }
+
+    .adminTeamsMapping #searchBlock {
+        text-align: left;
+    }
+
+        .adminTeamsMapping #searchBlock #txtSearchField {
+            width: 45%;
+        }
+
+
+    .adminTeamsMapping .verticalArrows {
+        display: none;
+    }
+
+    .adminTeamsMapping .choiceTable {
+        display: flex;
+        flex-flow: column;
+        height: 300px
+    }
+
+.required {
+    color: red;
+}

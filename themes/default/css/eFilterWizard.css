@@ -1,0 +1,631 @@
+/* Filtre avancés */
+body {
+    font-family: Verdana;
+    font-size: 8pt;
+}
+
+select {
+    outline: none;
+}
+
+.window_iframe {
+    text-align: left;
+    width: 100%;
+    height: 600px;
+}
+
+.separateur {
+    width: 2px;
+    height: 22px;
+    background-image: url(../images/ui/sep-en-tete.png);
+    float: left;
+}
+
+.OptBlock {
+    background-color: #d6d6d6;
+    width: 100%;
+}
+
+.adv-opt-block {
+    position: fixed;
+    background-color: #f8f8f8;
+    bottom: 22px;
+    width: 100%;
+}
+
+.divGrp {
+    display: block;
+    text-indent: 20px;
+}
+
+div.divGrp select {
+    width: inherit;
+}
+
+div.divGrp * {
+    vertical-align: 2px;
+}
+
+.head-text {
+    margin-left: 80px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
+    /*font-weight: bold;*/
+    vertical-align: middle;
+    /*font-weight: bold;*/
+    min-height: 12px;
+}
+
+.head-table {
+    height: 29px;
+    font-weight: bold;
+    color: #636363;
+    /*float: left;      les champs disparaissent lors du dézoom demande 44 587 */
+    width: 100%;
+    line-height: 30px;
+    border-bottom: 1px solid #D6D6D6;
+    background-color: #EFEFEF;
+}
+
+    .head-table > div.icon-delete {
+        font-size: 13pt;
+        text-align: center;
+        display: block;
+        line-height: 28px;
+        width: 44px;
+    }
+
+.subHead-text {
+    font-weight: normal;
+}
+
+.table_filtres {
+    margin-left: 80px;
+    margin-right: 2%;
+    background-color: white;
+    border: 1px solid #D6D6D6; /*margin-top: 10px;*/
+    margin-bottom: 10px;
+}
+
+.head-contact {
+    /*width: 100px;*/
+    height: 28px;
+    padding-left: 15px;
+    padding-right: 8px;
+    padding-top: 2px;
+    border-right: 1px solid #D6D6D6;
+    float: left;
+    line-height: 30px;
+    vertical-align: middle;
+    width: 280px;
+    position: relative;
+}
+
+    .head-contact select {
+        border: none;
+        background-color: transparent;
+        font-weight: bold;
+        color: #636363;
+        width: 280px;
+        margin-top: 4px;
+        font-size: 9pt;
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+        .head-contact select::ms-expand {
+            display: none;
+        }
+
+    .head-contact span[class^="icon-"] {
+        position: absolute;
+        right: 10px;
+        top: 6px;
+        z-index: 1;
+        font-size: 12pt;
+        color: #636363;
+    }
+
+.OpenDiv {
+    width: 16px;
+    height: 16px;
+    padding-left: 5px;
+    float: left;
+    background-image: url(../images/iCatalog/TreeView/deplier.png);
+    background-repeat: no-repeat;
+}
+
+.CloseDiv {
+    width: 16px;
+    height: 16px;
+    padding-left: 5px;
+    float: left;
+    background-image: url(../images/iCatalog/TreeView/plier.png);
+    background-repeat: no-repeat;
+}
+
+.head-arrow {
+    background-image: url(../images/ui/bt-deroulant.png);
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: 2px;
+}
+
+.head-end {
+    height: 30px;
+    width: 44px;
+    float: right;
+    opacity: 0.7;
+    border-left: 1px solid #D6D6D6;
+}
+
+    .head-end:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+
+.choix_filtres {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.choix_filtres_first {
+    margin-top: 0px;
+}
+
+.choix_filtres select {
+    height: 14pt;
+    font-size: 8pt;
+    width: 100%;
+}
+
+.ligne {
+    width: inherit;
+    /*height: 22px;*/
+    display: block;
+    margin-top: 7px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.operateur {
+    /*margin-left: 20px;*/
+    width: 70px;
+    margin-right: 20px;
+    float: left;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.EndLineOperator {
+    /*margin-left: 20px;*/
+    /*width: 300px; height: 25px; float: left;*/
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-top: 7px;
+    margin-left: 20px;
+    padding-right: 17px;
+    /* float: left; */
+}
+
+    .EndLineOperator select {
+        width: 65px !important;
+    }
+
+.choix_filtres select.optr_ou {
+    width: 50px;
+}
+
+.options {
+    height: 23px;
+    display: inline-block;
+    width: 25%;
+    /*float: left;  GCH : fait planter l'affichage en page d'accueil sur les filtres formulaire*/
+    margin-right: 20px;
+}
+
+div.options select {
+    height: 18px;
+}
+
+.expressChartOp {
+    height: 20px;
+}
+
+.optionsValue {
+    width: 30%;
+    margin-right: 0;
+}
+
+.selectExpressFilter .eFilterOptionsValue {
+    margin-right: 0;
+    margin-top: 0;
+    width: 156px;
+    height: 20px;
+}
+
+div.optionsValue > span.icon-catalog, div.eFilterOptionsValue > span.icon-catalog {
+    font-size: 8pt;
+    text-align: center;
+    margin-left: 5px;
+}
+
+div.icnFltBtn {
+    display: inline-block;
+    font-size: 10pt;
+    text-align: center;
+    width: 29px;
+}
+
+.option_supprimer {
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: right;
+    padding-right: 9px;
+}
+
+    .option_supprimer:hover {
+        cursor: pointer;
+    }
+
+.operateur_principal {
+    float: left;
+    margin-top: 10px;
+}
+
+.separate_line {
+    margin-left: 2%;
+    margin-top: 3px;
+    width: 96%;
+    height: 1px;
+    background-color: #dedede;
+    border-bottom: 1px solid white;
+}
+
+.text-opt_av {
+    color: #636363;
+    font-size: 9pt;
+    margin-left: 73px;
+    margin-top: 5px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 21px;
+}
+
+.advanced-opt_hover:hover .text-opt_av {
+    color: #42A7DC;
+}
+
+.advanced-opt_hover:hover .arrow-opt-close {
+    background-position: -78px -1066px;
+}
+
+.advanced-opt_hover:hover, .arrow-opt-open {
+    background-position: -78px -925px;
+}
+
+.arrow-opt {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-left: 50px;
+}
+
+.border_top {
+    margin-top: 3px;
+    width: 450px;
+    height: 1px;
+    background-repeat: no-repeat;
+    /*background-image: url(../images/ui/top_border.png);*/
+    background-color: #dedede;
+    margin-left: 50px;
+    margin-bottom: 3px;
+}
+
+.option-list {
+    font-size: 8pt;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 60px;
+    margin-top: 10px;
+    padding-left: 10px;
+    line-height: 20px;
+}
+
+.default-filter-option {
+    display: inline-flex;
+}
+
+.default-filter-opt-apply {
+    margin-right: 30px;
+}
+
+div#FilterTabsContainer.default-filter-filtres {
+    height: 80%;
+}
+
+div.default-filter-option div.RadioDiv {
+    margin-left: 50px;
+    padding: 2px;
+}
+
+.operateur select {
+    width: 65px !important;
+}
+
+.options input {
+    /* width: 25%; */
+    border: 1px solid #CCCCCC;
+    cursor: default;
+    margin-top: 0px;
+    text-indent: 6px;
+    /*height: 13pt;*/
+    width: 75%;
+    font-size: 8pt;
+}
+
+.options select {
+    /* width: 25%; */
+    border: 1px solid #CCCCCC;
+    cursor: default;
+    margin-top: 0px;
+    text-indent: 6px;
+    height: 14px;
+    width: 90%;
+}
+
+.selectExpressFilter select.editor_select, .selectExpressFilter input {
+    font-size: 13px;
+}
+
+.fChartOptions select {
+    margin-right: 60px;
+    width: 150px;
+    font-size: 13px;
+}
+
+
+.fChartOptions {
+    display: inline-block;
+    width: 156px;
+    /*margin-top: 5px;*/
+}
+
+.operateur_principal select {
+    width: 61px !important;
+    margin-left: 8px;
+    margin-top: -9px;
+    font-size: 8pt;
+}
+
+.random {
+    width: 30px;
+}
+
+/*
+.MainWizard
+{
+	height: 550px;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}*/
+.MainWizard {
+    width: 100%;
+}
+
+.filtres {
+    height: 78%;
+    width: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.filtres-scroll {
+    height: 60%;
+    /*border: 1px solid #afabac;*/
+}
+
+.filtres-empty-scroll {
+    height: 350px;
+    /*border: 1px solid #afabac;*/
+    padding: 6px;
+}
+
+/*
+.LinkActionSimple
+{
+	background-image: url(../images/icatalog/cat_uni.gif);
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+*/
+/* classe à ajouter pour le select en  haut à gauche - Pierre
+border: none;
+background-color: transparent;
+width: 89px;
+font-weight: bold;
+color: black; */
+
+/*
+MAB/PNO : anciennes classes LinkActionMulti et LinkActionSimple
+.LNKCATPOPUPbtn
+{
+	background-image: url("../images/select.png");
+	cursor: pointer;
+	height: 20px;
+	margin-right: 3px;
+	padding-top: 5px;
+	width: 18px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: -1px 1px;
+	vertical-align: top;
+}
+*/
+#end_operator_tab_ {
+    margin-left: 8px;
+    margin-top: 1px;
+}
+
+.DateSelect {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+    .DateSelect span {
+        padding-bottom: 3px;
+    }
+/* Classes à ajouter par Jamel*/
+#dateValue {
+    margin-left: 6px;
+    border: 1px solid #D6D6D6;
+    margin-top: 5px;
+}
+
+#DivMove {
+    display: block;
+    margin-left: 8px;
+    margin-top: 1px;
+}
+
+.RadioDiv {
+    padding: 5px;
+}
+
+.tabOptions {
+    margin-left: 9px;
+    margin-top: 15px;
+}
+
+.LblMove {
+    display: inline-block;
+}
+
+#TxtRandom {
+    text-indent: 3px;
+    width: 35px;
+    margin-left: 5px;
+    height: 18px;
+    box-sizing: border-box;
+    font-size: 8pt;
+}
+
+.tbl_recap {
+    background-color: white;
+    /*width: 650px;*/
+    width: auto;
+    border: 1px solid #afabac;
+}
+
+.tbl_recap-head {
+    text-indent: 15px;
+    background-image: url('../images/iCatalog/bg_header.png');
+    height: 29px;
+    font-weight: bold;
+    color: #636363;
+    float: left;
+    width: 100%;
+    line-height: 30px;
+    background-position: 0 4px;
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #D6D6D6;
+    margin-bottom: 5px;
+    font-size: 9pt;
+}
+
+.tbl_txt-up {
+    margin-bottom: 25px;
+}
+
+.form_ligne {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.LinkActionSimple_form {
+    margin-left: -4px;
+    background-image: url("../images/select.png");
+    cursor: pointer;
+    height: 21px;
+    width: 18px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: -1px 1px;
+    vertical-align: -5px;
+}
+
+.form_down_recap {
+    height: 60px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #afabac;
+    background-color: white;
+    padding: 9px;
+    margin-left: 17px;
+    margin-right: 10px;
+    border: 1px solid #afabac;
+}
+
+.LinkFileResult {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+    .LinkFileResult div {
+        margin-top: auto;
+        margin-left: 2px;
+    }
+
+        .LinkFileResult div span {
+            padding-right: 10px;
+        }
+
+        .LinkFileResult div select {
+            width: 220px;
+            margin-top: 15px;
+        }
+
+.formularFilterWarning {
+    display: block;
+    color: Red;
+    font-size: 8pt;
+    font-weight: normal;
+}
+
+.endOperator {
+    font-size: 8pt;
+}
+
+input.readonly {
+    background-color: #F0F0F0;
+}
+
+/* Formulaire critères non renseignés */
+
+.divSelect {
+    height: 20px;
+    line-height: 20px;
+}
+
+    .divSelect label {
+        vertical-align: 3px;
+        margin-left: 5px;
+    }
+
+#editor_configurablelist {
+    width: 360px;
+    height: 250px;
+}
+

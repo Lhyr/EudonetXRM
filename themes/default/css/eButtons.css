@@ -1,0 +1,718 @@
+.ButtonModal {
+    text-decoration: none;
+    display: block;
+    vertical-align: middle;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    text-align: right;
+    background-color: #F8F8F8;
+}
+
+a[onclick] {
+    cursor: pointer;
+}
+
+.button-green-old a, .button-green-old a:visited, .button-green a:active {
+    width: 81px;
+    line-height: 22px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    background: url(../images/ui/bouton-vert.png) no-repeat;
+    color: white;
+    float: right;
+    margin: 5px;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+    .button-green-old a:hover {
+        background: url(../images/ui/bouton-vert_hover.png) no-repeat;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+.button-green {
+    /*SHA : bouton tronqué sur message d'erreur
+    height: 22px;*/
+    min-height: 22px;
+    font-family: verdana;
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    background-color: #79BE0B;
+    padding: 5px;
+}
+
+    .button-green:hover {
+        background-color: #B5B5B5;
+    }
+
+        .button-green:hover > div[class^="button"] {
+            background-image: none;
+        }
+
+    .button-green > * {
+        background-image: none;
+        height: inherit;
+    }
+
+/*.button-green:hover .button-green-left
+{
+    background-image: url(../images/ui/buttons/bouton-vert_hover_left.png);
+}
+.button-green:hover .button-green-right
+{
+    background-image: url(../images/ui/buttons/bouton-vert_hover_right.png);
+}
+.button-green:hover .button-green-mid
+{
+    background-image: url(../images/ui/buttons/bouton-vert_hover_mid.png);
+}*/
+.button-green-left {
+    height: 22px;
+    width: 2px;
+    /*background-image: url(../images/ui/buttons/bouton-vert_left.png);*/
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.button-green-mid {
+    line-height: 22px;
+    /*background-image: url(../images/ui/buttons/bouton-vert_mid.png);*/
+    float: left;
+    text-align: center;
+    min-width: 70px; /*79px;*/
+    vertical-align: middle;
+    height: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.button-green-right {
+    height: 22px;
+    width: 2px;
+    /*background-image: url(../images/ui/buttons/bouton-vert_right.png);*/
+    float: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+
+.button-gray {
+    min-height: 22px; /*ALISTER => Demande 83 537, car le bouton ne s'affiche pas en entier*/
+    font-family: verdana;
+    color: gray;
+    font-weight: bold;
+    font-size: 9pt;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    background-color: #DADADA;
+    padding: 5px;
+}
+
+    .button-gray:hover {
+        background-color: #E9EAEA;
+    }
+
+    .button-gray > div[class^="button"] {
+        background-image: none;
+    }
+
+.button-gray-old a, .button-gray-old a:visited, .button-gray-old a:active {
+    width: 81px;
+    line-height: 22px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    /*background: url(../images/ui/bouton-gris.png) no-repeat;*/
+    color: Gray;
+    float: right;
+    margin: 5px;
+    margin-right: 25px;
+    white-space: nowrap;
+}
+
+
+    .button-gray-old a:hover {
+        /*background: url(../images/ui/bouton-gris_hover.png) no-repeat;*/
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+.button-position-left {
+    float: left;
+}
+
+.button-position-mid {
+    float: none;
+}
+
+. /*button-gray:hover .button-gray-left
+{
+    background-image: url(../images/ui/buttons/bouton-gris_hover_left.png);
+}
+.button-gray:hover .button-gray-right
+{
+    background-image: url(../images/ui/buttons/bouton-gris_hover_right.png);
+}
+.button-gray:hover .button-gray-mid
+{
+    background-image: url(../images/ui/buttons/bouton-gris_hover_mid.png);
+}*/
+.button-gray-left {
+    height: 22px;
+    width: 2px;
+    /*background-image: url(../images/ui/buttons/bouton-gris_left.png);*/
+    float: left;
+    display: inline-block;
+}
+
+.button-gray-mid {
+    /*background-image: url(../images/ui/buttons/bouton-gris_mid.png);*/
+    float: left;
+    text-align: center;
+    min-width: 79px;
+    line-height: 22px;
+    height: 22px;
+    vertical-align: middle; /* padding-left: 10px;*/
+    padding-right: 3px;
+    display: inline-block;
+    text-indent: 5px;
+}
+
+.button-gray-right {
+    height: 22px;
+    width: 3px;
+    /*background-image: url(../images/ui/buttons/bouton-gris_right.png);*/
+    background-repeat: no-repeat;
+    float: left;
+    display: inline-block;
+}
+
+.button-red-old a, .button-red-old a:visited, .button-red a:active {
+    width: 81px;
+    line-height: 22px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    /*background: url(../images/ui/bouton-rouge.png) no-repeat;*/
+    color: white;
+    float: right;
+    margin: 5px;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+    .button-red-old a:hover {
+        /*background: url(../images/ui/bouton-rouge_hover.png) no-repeat;*/
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+.button-red {
+    min-height: 22px;
+    font-family: verdana;
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-left: 25px;
+    background-color: #BB1515;
+    padding: 5px;
+}
+
+    .button-red:hover {
+        background-color: #B5B5B5;
+    }
+
+        .button-red:hover > div[class^="button"] {
+            background-image: none;
+        }
+
+    .button-red > * {
+        background-image: none;
+        background-color: inherit;
+    }
+
+.button-red-left {
+    height: 22px;
+    width: 2px;
+    /*background-image: url(../images/ui/buttons/bouton-rouge_left.png);*/
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.button-red-mid {
+    line-height: 22px;
+    /*background-image: url(../images/ui/buttons/bouton-rouge_mid.png);*/
+    float: left;
+    text-align: center;
+    min-width: 79px;
+    vertical-align: middle;
+    height: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.button-red-right {
+    height: 22px;
+    width: 3px;
+    /*background-image: url(../images/ui/buttons/bouton-rouge_right.png);*/
+    float: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+
+/*BOUTON CALENDRIER (mini)*/
+
+.button-green-ltl {
+    height: 22px;
+    font-family: verdana;
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+}
+
+    .button-green-ltl:hover .button-green-ltl-left {
+        background-image: url(../images/ui/buttons/bouton-vert_hover_left.png);
+    }
+
+    .button-green-ltl:hover .button-green-ltl-right {
+        background-image: url(../images/ui/buttons/bouton-vert_hover_right.png);
+    }
+
+    .button-green-ltl:hover .button-green-ltl-mid {
+        background-image: url(../images/ui/buttons/bouton-vert_hover_mid.png);
+    }
+
+.button-green-ltl-left {
+    height: 22px;
+    width: 2px;
+    background-image: url(../images/ui/buttons/bouton-vert_left.png);
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.button-green-ltl-mid {
+    line-height: 22px;
+    background-image: url(../images/ui/buttons/bouton-vert_mid.png);
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    height: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.button-green-ltl-right {
+    height: 22px;
+    width: 2px;
+    background-image: url(../images/ui/buttons/bouton-vert_right.png);
+    float: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.button-gray-ltl {
+    height: 22px;
+    font-family: verdana;
+    color: gray;
+    font-weight: bold;
+    font-size: 9pt;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+}
+
+    .button-gray-ltl:hover .button-gray-ltl-left {
+        background-image: url(../images/ui/buttons/bouton-gris_hover_left.png);
+    }
+
+    .button-gray-ltl:hover .button-gray-ltl-right {
+        background-image: url(../images/ui/buttons/bouton-gris_hover_right.png);
+    }
+
+    .button-gray-ltl:hover .button-gray-ltl-mid {
+        background-image: url(../images/ui/buttons/bouton-gris_hover_mid.png);
+    }
+
+.button-gray-ltl-left {
+    height: 22px;
+    width: 2px;
+    background-image: url(../images/ui/buttons/bouton-gris_left.png);
+    float: left;
+    display: inline-block;
+}
+
+.button-gray-ltl-mid {
+    background-image: url(../images/ui/buttons/bouton-gris_mid.png);
+    float: left;
+    text-align: center;
+    line-height: 22px;
+    height: 22px;
+    vertical-align: middle; /* padding-left: 10px;*/
+    padding-right: 3px;
+    display: inline-block;
+    text-indent: 5px;
+}
+
+.button-gray-ltl-right {
+    height: 22px;
+    width: 3px;
+    background-image: url(../images/ui/buttons/bouton-gris_right.png);
+    background-repeat: no-repeat;
+    float: left;
+    display: inline-block;
+}
+
+
+.ButtonSeparator {
+    display: inline-block;
+    width: 15px;
+    float: right;
+}
+
+
+
+
+/***************************************/
+.button-back {
+    cursor: default;
+    height: 35px;
+    font-family: Verdana;
+    font-size: 10pt;
+    min-width: 130px;
+    float: left;
+}
+
+.logo_bt {
+    background-image: url(retour-liste.png);
+    height: 21px;
+    margin-top: 9px;
+    background-repeat: no-repeat;
+    background-position: -1px -3px;
+    float: left;
+    width: 24px;
+    padding-right: 8px;
+}
+
+.bt_back_left {
+    height: 35px;
+    width: 8px;
+    background-image: url(bt_left.png);
+    float: left;
+}
+
+.bt_back_mid {
+    line-height: 35px;
+    background-image: url(bt_middle.png);
+    float: left;
+    text-align: center;
+    min-width: 79px;
+    vertical-align: middle;
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bt_back_right {
+    height: 35px;
+    width: 8px;
+    background-image: url(bt_right.png);
+    float: left;
+    background-repeat: no-repeat;
+}
+
+/*Surcharge du float pour eButtonCtrl*/
+.eButtonCtrl {
+    float: none;
+}
+/***************************************/
+/*Bouton green & gray avec flèches gauche ou droite*/
+
+/*****Bouton Vert Suivant**********/
+.button-green-rightarrow {
+    height: 22px;
+    font-family: verdana;
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-left: 25px;
+}
+
+    .button-green-rightarrow > div[class^="button"] {
+        background-image: none;
+        height: inherit;
+        width: inherit;
+    }
+
+    .button-green-rightarrow:hover > div[class^="button"] {
+        background-image: none;
+    }
+
+    .button-green-rightarrow:hover .button-green-rightarrow-left {
+        background-image: url(../images/ui/buttons/bouton-vert_hover_left.png);
+    }
+
+    .button-green-rightarrow:hover .button-green-rightarrow-right {
+        background-image: url(../images/ui/buttons/next-wiz_right_hover.png);
+    }
+
+    .button-green-rightarrow:hover .button-green-rightarrow-mid {
+        background-image: url(../images/ui/buttons/bouton-vert_hover_mid.png);
+    }
+
+.button-green-rightarrow-left {
+    height: 22px;
+    width: 2px;
+    background-image: url(../images/ui/buttons/bouton-vert_left.png);
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.button-green-rightarrow-mid {
+    line-height: 22px;
+    background-image: url(../images/ui/buttons/bouton-vert_mid.png);
+    float: left;
+    text-align: center;
+    min-width: 69px;
+    vertical-align: middle;
+    height: 22px;
+    display: inline-block;
+    padding: 5px;
+    background: #79BE0B;
+    padding-left: 10px;
+}
+
+.button-green-rightarrow-right {
+    height: 22px;
+    width: 12px;
+    background-image: url(../images/ui/buttons/next-wiz_right.png);
+    float: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+/*****Bouton Vert Précédent**********/
+
+
+/*****Bouton Gris Suivant**********/
+
+/*****Bouton Gris Précédent**********/
+.button-gray-leftarrow {
+    height: 22px;
+    font-family: verdana;
+    color: gray;
+    font-weight: bold;
+    font-size: 9pt;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
+
+    .button-gray-leftarrow:hover .button-gray-leftarrow-left {
+        background-image: url(../images/ui/buttons/pre-wiz_left_hover.png);
+    }
+
+    .button-gray-leftarrow:hover .button-gray-leftarrow-right {
+        background-image: url(../images/ui/buttons/bouton-gris_hover_right.png);
+    }
+
+    .button-gray-leftarrow:hover .button-gray-leftarrow-mid {
+        background-image: url(../images/ui/buttons/bouton-gris_hover_mid.png);
+    }
+
+    .button-gray-leftarrow > div[class^="button"] {
+        background-image: none;
+        height: inherit;
+        width: inherit;
+    }
+
+    .button-gray-leftarrow:hover > div[class^="button"] {
+        background-image: none;
+    }
+
+.button-gray-leftarrow-left {
+    height: 22px;
+    width: 12px;
+    background-image: url(../images/ui/buttons/pre-wiz_left.png);
+    float: left;
+    display: inline-block;
+}
+
+.button-gray-leftarrow-mid {
+    background-image: url(../images/ui/buttons/bouton-gris_mid.png);
+    float: left;
+    text-align: center;
+    min-width: 69px;
+    line-height: 22px;
+    height: 22px;
+    vertical-align: middle; /* padding-left: 10px;*/
+    padding-right: 3px;
+    display: inline-block;
+    text-indent: 5px;
+    background: #DADADA;
+    padding: 5px;
+    padding-right: 10px;
+}
+
+.button-gray-leftarrow-right {
+    height: 22px;
+    width: 3px;
+    background-image: url(../images/ui/buttons/bouton-gris_right.png);
+    background-repeat: no-repeat;
+    float: left;
+    display: inline-block;
+}
+
+input[type="SUBMIT"] {
+    background-color: #7FBE23;
+    border: none;
+    padding: 5px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Bouton vert */
+.greenBtn {
+    text-align: center;
+    min-width: 79px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 22px;
+    font-weight: bold;
+    background-color: #79BE0B;
+    color: white;
+}
+
+    .greenBtn div {
+        padding: 5px 15px;
+        height: 22px;
+        cursor: pointer;
+    }
+
+    .greenBtn:hover {
+        background-color: #B5B5B5;
+    }
+/* From eudofont.css */
+.button-green-rightarrow-right:before {
+    font-family: 'eudoFonts';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 32px;
+    content: "\e628";
+    font-size: 31pt;
+    color: #79BE0B;
+    margin-left: -3px;
+}
+
+.button-gray-leftarrow-left:before {
+    font-family: 'eudoFonts';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 32px;
+    content: "\e62b";
+    font-size: 31pt;
+    color: #DADADA;
+    margin-right: -3px;
+}
+
+.ButtonModal #tdButtons #editReport[showbtnmodify="0"], .ButtonModal #tdButtons #editReport[showbtnmodify="0"]:hover {
+    background: #d0cece;
+    color: #969696;
+    cursor: not-allowed;
+    border-color: #969696;
+}
+
+/*demande 84 545 */
+
+div.ButtonModal.calButtonModal table,
+div.ButtonModal.calButtonModal tbody,
+div.ButtonModal.calButtonModal tr,
+div.ButtonModal.calButtonModal td {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.ButtonModal.calButtonModal #tdButtons {
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.ButtonModal.calButtonModal [class^="button-gray"],
+div.ButtonModal.calButtonModal [class^="button-green"] {
+    margin: 0;
+    overflow: hidden;
+}
+
+.ButtonModal.calButtonModal .button-gray-right,
+.ButtonModal.calButtonModal td#tdButtonsMid,
+.ButtonModal.calButtonModal td#tdButtonsLeft,
+.ButtonModal.calButtonModal td.actBtnLstCal,
+.ButtonModal.calButtonModal td.actBtnLst {
+    display: none;
+}
+
+/* Permet d'avoir un fallback pour les navigateurs comme Safari qui ne supporte pas la propriété gap*/
+
+@supports not (gap: 20px) {
+    div.ButtonModal.calButtonModal #tdButtons {
+        justify-content: space-around;
+    }
+}
+
+.ButtonModal.calButtonModal .button-gray-mid,
+.ButtonModal.calButtonModal .button-green-mid {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    max-width: 100%;
+}
+
+/*demande 84 545*/

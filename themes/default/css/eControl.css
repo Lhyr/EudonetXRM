@@ -1,0 +1,120 @@
+a.rChk
+{
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+    /*display: inline-flex;*/
+}
+
+    a.rChk [class^='icon-'] {
+        vertical-align: middle;
+        margin-right: 5px;
+        display: inline-block;
+    }
+    a.rChk img /* A retirer lorsqu'on sera sûr qu'il n'y ait plus de checkbox image nulle part */
+    {
+        width: 20px !important;
+        vertical-align: -4px;
+        background: url("../images/control/checkbox.png") no-repeat;
+    }
+    a.rChk span {
+        vertical-align: middle;
+    }
+.chk
+{
+    cursor: pointer;
+
+}
+
+
+.chk[dis='1']
+{
+    cursor: default;
+}
+
+.chk[chk='0'] img
+{
+    background-position: -1px -3px;
+    width: 20px;
+    height: 17px;
+}
+.chk[chk='0']:hover img
+{
+    background-position: -1px -25px;
+    width: 20px;
+    height: 17px;
+}
+.chk[chk='0']:focus img
+{
+    background-position: -1px -25px;
+    width: 20px;
+    height: 17px;
+    outline: rgb(204, 204, 204) dotted 1px;
+}
+
+.chk[chk='1'] img
+{
+    background-position: -1px -47px;
+    width: 20px;
+    height: 17px;
+}
+.chk[chk='1']:hover img
+{
+    background-position: -1px -68px;
+    width: 20px;
+    height: 17px;
+}
+.chk[chk='1']:focus img
+{
+    background-position: -1px -68px;
+    width: 20px;
+    height: 17px;
+    outline: rgb(204, 204, 204) dotted 1px;
+}
+
+.chk[chk='0'][dis='1'] img
+{
+    background-position: -1px -90px;
+    width: 20px;
+    height: 17px;
+}
+.chk[chk='1'][dis='1'] img
+{
+    background-position: -1px -110px;
+    width: 20px;
+    height: 17px;
+}
+
+/* Boutons BIT */
+
+a.btnBitField {
+    display: block;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+}
+a.btnBitField:not([dis='1']):hover {
+    background-color: #A5A4A8 !important;
+}
+
+a.btnBitField[chk='0'] {
+    /*box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,0.6);*/
+    opacity: 0.3;
+}
+    
+a.btnBitField[dis='1'] {
+    background-color: #EBEBEB;
+    color: #A5A4A8 !important;
+    cursor: not-allowed;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Safari only */
+    ::i-block-chrome, a.rChk .icon-square-o {
+        vertical-align: top;
+    }
+}

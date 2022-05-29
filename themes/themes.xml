@@ -1,0 +1,126 @@
+<themes>
+  <!--
+  <theme id="numero du skin">
+    <color>Code couleur html en général</color>
+    <name>Nom du skin</name>
+    <nameresid>Id correspondand dans eResources.xml pour les traductions</nameresid>
+    <databases>
+      <database>BASE1</database>
+      <database>BASEN</database>
+    </databases>
+  </theme>  
+  -->
+  <theme id="7">
+    <color>#00257A</color>
+    <name>KPMG</name>
+    <nameresid>8454</nameresid>
+    <databases>
+      <database>EUDO_00507T</database>
+      <database>EUDO_02076</database>
+      <database>EUDO_DEMO_GRC_KPMG_XRM</database>
+      <database>EUDO_HOTCOM_EUDOWEB</database>
+      <database>EUDO_RECETTE_BASE_NEW</database>
+    </databases>
+  </theme>
+  <theme id="0">
+    <color>#aeabab</color>
+    <name>Xrm</name>
+    <nameresid>8447</nameresid>
+    <foldername>default</foldername>
+  </theme>
+  <theme id="1">
+    <color>#03c7d7</color>
+    <name>Turquoise</name>
+    <nameresid>8448</nameresid>
+  </theme>
+  <theme id="2">
+    <color>#d93059</color>
+    <name>Fushia</name>
+    <nameresid>8449</nameresid>
+  </theme>
+  <theme id="3">
+    <color>#BB1515</color>
+    <name>Rouge</name>
+    <nameresid>8450</nameresid>
+  </theme>
+  <theme id="4">
+    <color>#79be0b</color>
+    <name>Vert</name>
+    <nameresid>8451</nameresid>
+  </theme>
+  <theme id="5">
+    <color>#f26522</color>
+    <name>Orange</name>
+    <nameresid>8452</nameresid>
+  </theme>
+  <theme id="6">
+    <color>#16a5d7</color>
+    <name>Bleu</name>
+    <nameresid>8453</nameresid>
+  </theme>
+  <!--7 : KPMG en haut de liste-->
+  <theme id="8">
+    <color>#000</color>
+    <name>Noir</name>
+    <nameresid>8455</nameresid>
+  </theme>
+  <theme id="9">
+    <color>#000</color>
+    <name>Contraste</name>
+    <nameresid>8456</nameresid>
+  </theme>
+  <theme id="10">
+    <color>#EA4708</color>
+    <name>SNSM</name>
+    <nameresid>8457</nameresid>
+    <databases>
+      <database>EUDO_02549_WEBSERVICE</database>
+      <database>EUDO_02549_ADFS</database>
+      <database>EUDO_02549_FORM</database>
+      <database>EUDO_02549</database>
+    </databases>
+  </theme>
+  <theme id="11">
+    <color>#BB1515</color>
+    <color2>#FFF</color2>
+    <name>BlancRouge</name>
+    <nameresid>8458</nameresid>
+  </theme>
+  <theme id="12">
+	<color>#BB1515</color>
+    <name>Rouge2019</name>
+    <nameresid>2397</nameresid>
+    <navigateurs>
+      <navigateur>chrome</navigateur>
+      <navigateur>firefox</navigateur>
+      <navigateur>safari</navigateur>
+    </navigateurs>
+    <defautthemeid>11</defautthemeid>
+	<version>2</version>
+	</theme>
+  <theme id="13">
+    <color>#35596E</color>
+    <name>Bleu2019</name>
+    <nameresid>8453</nameresid>
+    <navigateurs>
+      <navigateur>chrome</navigateur>
+      <navigateur>firefox</navigateur>
+      <navigateur>safari</navigateur>
+    </navigateurs>
+    <defautthemeid>11</defautthemeid>
+	<version>2</version>
+	</theme>
+	<theme id="14">
+		<color>#51754A</color>
+		<name>Vert2019</name>
+		<nameresid>8451</nameresid>
+		<navigateurs>
+		  <navigateur>chrome</navigateur>
+		  <navigateur>firefox</navigateur>
+		  <navigateur>safari</navigateur>
+		</navigateurs>
+		<defautthemeid>11</defautthemeid>
+		<version>2</version>
+	</theme>
+ 
+</themes>

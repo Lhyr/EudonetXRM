@@ -1,0 +1,1 @@
+update [DESC] set InterEventNum = (114200 / 100 -10) where DescId=114300

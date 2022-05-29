@@ -1,0 +1,1 @@
+UPDATE [PERMISSION] SET [USER] = NULL WHERE [USER] collate french_ci_ai  = 'null' collate french_ci_ai 

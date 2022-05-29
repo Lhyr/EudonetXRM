@@ -1,0 +1,59 @@
+﻿/* Pour surpasser les ombres gauche et droite */
+.stickyNavSignet {
+    border-top: 5px solid var(--bkmTab-clsBkmFooterPosition);
+    border: none;
+}
+
+.stickyNavSignet.tabs-nav--container {
+    z-index: 15;
+}
+
+.stickyNavSignet, .is-sticky:not(.p-hidden) {
+    top: 4.0625rem;
+    position: sticky;
+}
+
+.bkm-menu {
+    margin: 0 -0.3125rem 0 var(--size-10);
+    opacity: 0;
+}
+
+.tab-pane.bkm-tab .file-tab {
+    padding-bottom: 20px;
+}
+
+li.nav-tabs__li {
+    font-size: var(--size-14);
+}
+
+.box-title.dropdown {
+    position: absolute;
+    left: 5rem;
+    top: 0.0625rem;
+}
+
+.box-title.dropdown,
+.box-title.dropdown > a  {
+    width: var(--size-20);
+}
+
+.LocalEN .box-title.dropdown,
+.LocalNL .box-title.dropdown,
+.LocalDE .box-title.dropdown {
+    left: 6.5625rem;
+    top: 0.0625rem;
+}
+
+.LocalIT .box-title.dropdown {
+    left: 6.125rem;
+    top: 0.0625rem;
+}
+
+.box-title.dropdown > a {
+    left: 0px;
+}
+
+.dropdown-menu-icon{
+    font-size: var(--size-14);
+    line-height: 1.5;
+}

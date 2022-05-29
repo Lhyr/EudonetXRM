@@ -1,0 +1,21 @@
+﻿#MainWrapper input.navSearch.mru-search::placeholder,
+#MainWrapper input.navSearch.mru-search::-webkit-input-placeholder {
+    color: var(--placeholder-color);
+}
+
+/*Cible uniquement firefox car sur ce navigateur, l'opacité est plus légère que sur chrome */
+
+#MainWrapper input.navSearch.mru-search:-moz-placeholder,
+#MainWrapper input.navSearch.mru-search::-moz-placeholder {
+    opacity: 1;
+}
+
+#headFiche input.navSearch.mru-search,
+#details input.navSearch.mru-search {
+    width: 100%;
+    text-indent: 5px;
+    border: solid 0px var(--head-mru);
+    padding-right: 20px;
+    text-overflow: ellipsis;
+    font-size:var(--size-14);
+}

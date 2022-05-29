@@ -1,0 +1,1 @@
+update [desc] set [Format] = 1 where descid = 106021

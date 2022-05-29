@@ -1,0 +1,12 @@
+﻿div.bkm-tab #right_global_button .dropdown-content-action a,
+.steps-footer-button .edn-dropdown-btn a,
+div.bkm-tab #pinned_file_button .dropdown-content-action a {
+    color: var(--detail-multiRenderer-color) !important;
+    font-size: var(--size-11);
+    font-family: var(--ffamily);
+    text-decoration: none !important;
+}
+
+.steps-footer-button .edn-dropdown-btn > button, .steps-footer-button > button {
+    background-color: transparent !important;
+}Z

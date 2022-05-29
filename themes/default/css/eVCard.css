@@ -1,0 +1,229 @@
+
+.vCard
+{
+	overflow: hidden;
+}
+
+.vcGlbl
+{
+	text-align: center;
+    border: 2px solid #DCE1E4;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    padding: 15px;
+    padding-bottom: 7px;
+    background-color: white;
+}
+
+.vcGlbl ul
+{
+	margin: 0;
+}
+
+
+.VCardTT {
+    background-color: transparent;
+}
+    .VCardTT .icon-edn-cross {
+        font-size: 12pt;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    .VCardTT .vcCadre {
+        margin-left: 0;
+        margin-right: 10px;
+        float: left;
+    }
+    .VCardTT .vcImgPp {
+        border-width: 2px;
+    }
+
+.vcBorderTopStack
+{
+	background-image: url("../images/iVCard/background-top_stack.png");
+	background-repeat: repeat-y;
+	height: 26px;
+}
+
+
+.vcBorderTop
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	background-image: url("../images/iVCard/background-top_simple.png");
+	background-repeat: repeat-y;
+	height: 26px;
+}
+
+.vcMiddleStack
+{
+	background-image: url("../images/iVCard/middle-border-stack.png");
+	background-repeat: repeat-y; /*width: 422px;*/
+}
+
+.vcBorderBtmStack
+{
+	background-image: url("../images/iVCard/background-bottom_stack.png");
+	background-repeat: repeat-y;
+	height: 26px;
+}
+.vcSubMiddle
+{
+}
+/*.cntct_img*/
+.vcDtls
+{
+	margin-top: -90px;
+}
+.vcDtls ul
+{
+	/*width: 251px;*/
+	list-style-type: none;
+	padding-left: 0px;
+}
+.vcDtls li
+{
+	text-overflow: clip;
+	list-style-type: none;
+	text-align: left;
+}
+
+.noPhoto
+{
+	margin-top: auto;
+}
+
+
+.vcName
+{
+	color: #42A7DC;
+	font-size: 10pt;
+	font-weight: bold;
+    margin-bottom: 7px;
+}
+    .vcName .icon-avatar {
+        font-size: 11pt;
+        margin-right: 5px;
+    }
+.vcFunction
+{
+	padding-bottom: 5px;
+}
+.vcMail
+{
+	color: #42A7DC;
+	margin-bottom: 5px;
+}
+li.vcLogoPhone
+{
+	float: left;
+	margin-left: 2px;
+	font-size: 16pt;
+	height: 20px;
+}
+.vcPhone
+{
+	padding-top: 3px;
+	padding-bottom: 2px;
+	padding-left: 25px;
+}
+li.vcLogoPostal
+{
+	float: left;
+	font-size: 20pt;
+}
+.vcCorporate
+{
+	color: #42A7DC ;
+	font-weight: bold;
+	padding-bottom: 2px;
+	padding-left: 25px;
+	padding-top: 5px;
+}
+.vcAddress
+{
+	padding-bottom: 4px;
+	padding-left: 25px;
+}
+li.vcLogoSite
+{
+	float: left;
+	font-size: 30pt;
+    padding-top: 4px;
+}
+.vcSite
+{
+	line-height: 15px;
+	padding-left: 25px;
+	padding-top: 4px;
+	vertical-align: middle;
+}
+.vcSep
+{
+	background-color: #D7D6D6;
+	border-bottom: 1px solid white;
+	height: 1px;
+	font-size: 1pt;
+    margin-top: 5px;
+}
+.vcSepBtm
+{
+	margin-top: 5px;
+	background-color: #D7D6D6;
+	border-bottom: 1px solid white;
+	height: 1px;
+	font-size: 1pt;
+}
+
+#vcNav {
+    margin-top: 15px;
+}
+.vcNav div
+{
+	display: inline-block;
+}
+.vcNav ul
+{
+	height: 10px;
+	margin: 10px 40px 0 0;
+}
+.vcNav li
+{
+	display: inline;
+	list-style-type: none;
+	margin-bottom: 18px;
+}
+
+/*MODE EDITION*/
+
+.vcGlblEdt
+{
+	background-color: #DDD;
+	height: 200px;
+	margin-top: 25px;
+	margin-left: 10px;
+	background-image: url("../images/iVCard/stripes.png");
+	border-radius: 16px;
+}
+/*MODE EDITION - FIN*/
+
+/*MINI FICHES*/
+.vcMiniFileTitle
+{
+	color: #42A7DC ;
+	font-weight: bold;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-top: 5px;
+}
+
+.vcMiniFileField
+{
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-top: 5px;
+}
+
+/*MINI FICHES - FIN*/

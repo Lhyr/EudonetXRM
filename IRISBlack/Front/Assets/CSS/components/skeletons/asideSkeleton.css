@@ -1,0 +1,33 @@
+﻿/** design skeleton note */
+
+.aside-skeletons-wrapper {
+    background: var(--detail-foreground-btn);
+    height: calc(100vh - 315px);
+    border-radius: 5px;
+}
+
+.aside-skeletons-header-wrapper {
+    padding: 12px;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.skeleton.aside-skeletons-header,
+.skeleton.detail-skeletons-header {
+    width: 65px;
+    height: 25px;
+    margin: 0 15px 0 0;
+}
+
+.skeleton.note-skeleton {
+    height: 100%;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.skeleton.skeleton-btn {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+}
+
+/** design skeleton note */

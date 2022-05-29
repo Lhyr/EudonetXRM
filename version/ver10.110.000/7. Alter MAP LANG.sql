@@ -1,0 +1,1 @@
+alter table maplang alter column lang_label nvarchar(4000)

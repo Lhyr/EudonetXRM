@@ -1,0 +1,1463 @@
+﻿{
+	"$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eda.eAdminExtension, XRM]], mscorlib",
+  "$values": [
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionCarto, XRM",
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Cartographie",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "https://ww2.eudonet.com/xrm/datas/HOTCOM_EUDOWEBA5C046574753644E565C4C59586B5263535F6857555C046574753644E565C4C59586B5263535F685755/files/Eudo-map.png",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Avec l’extensions cartographie, positonnez les contacts, sociétés ou tout autre type d’éléments sur un plan et analysez, exploitez et modifiez les informations en un coup d’œil pour gagner en productivité.<br />\n&nbsp;",
+        "Description": "Affichage de points d’intérêts filtrés depuis une liste de fiches, sélection «&nbsp;dessin&nbsp;» d’une zone pour afficher les informations contenues dans votre Eudonet ou affichage «&nbsp;street view&nbsp;» d’une zone ou d’un quartier&nbsp;: l’extension cartographie rend votre quotidien plus simple.<br />\n&nbsp;<br />\nEn s’appuyant sur des coordonnées géographiques, la cartographie vous permet d’afficher, localiser, analyser et modifier toutes les données de votre base Eudonet rattachée à une adresse, en mode liste (sélection multipoints ou filtres pour afficher les données souhaitées) ou en mode fiche (informations sur la fiche ouverte). En mode liste une «&nbsp;mini-fiche&nbsp;» affiche au survol, les informations choisies, pour une analyse rapide.<br />\n&nbsp;<br />\nVous pourrez par exemple identifier les affaires en cours autour de votre société pour organiser une tournée de visite avec la sélection «&nbsp;dessin&nbsp;», visualiser les lieux d’habitation de vos donateurs pour organiser une opération de street marketing ou encore afficher les locaux disponibles et leur localisation en fonction des critères définis par une entreprise souhaitant s’intaller sur votre territoire.<br />\n&nbsp;<br />\nBref, la cartographie intégrée à Eudonet s’adapte à vos besoins et usages quotidiens et vous fait gagner en productivité sur la recherche, l’analyse et l’utilisation d’informations clés&nbsp;!",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Cartographie",
+        "InstallationInfos": "L’abonnement est signé pour une durée de 1 an. S’il est activé, ce module optionnel concerne obligatoirement l’ensemble des utilisateurs d’une base. Il est renouvelable annuellement par tacite reconduction, dans les mêmes conditions et pour la même durée que le contrat initial.<br />\n<br />\nPrérequis et formations liées :&nbsp;<br />\n-&nbsp;Disposer d’une base Eudonet en version XRM<br />\n- Avoir suivi une formation Administrateur Eudonet<br />\n- Disposer d'une base des données Eudonet hébergée<br />\n- Prévoir une journée de formation technique (900 € HT)",
+        "ExtensionNativeId": "CARTO",
+        "ExtensionFileId": 53,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 48,
+      "Title": "Cartographie",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "NeedsFullRefreshAfterEnable": false,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionFromStore, XRM",
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 5,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Dédoublonnage",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10€ par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "https://ww2.eudonet.com/xrm/datas/HOTCOM_EUDOWEBA5C046574753644E565C4C59586B5263535F6857555C046574753644E565C4C59586B5263535F685755/files/Dedoublonnage.png",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "La qualité des données de votre application est un enjeu clé pour votre activité. Notre module de dédoublonnage vous permettra d'avoir une gestion fine des doublons et de leur traitement, selon plusieurs critères que vous choisissez !",
+        "Description": "<strong>Description</strong> <em>Produit Dédoublonnage :</em><br />\n<br />\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br />\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum<br />\ndolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br />\n&nbsp;",
+        "Author": "Eudonet",
+        "AuthorUrl": "www.eudonet.fr",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 10,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Dédoublonnage",
+        "InstallationInfos": "Cliquer sur dédoublonner",
+        "ExtensionNativeId": "DOUBLON",
+        "ExtensionFileId": 28,
+        "IsEnabled": true,
+        "IsNativeExtension": false,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 42,
+      "Title": "Dédoublonnage",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "NeedsFullRefreshAfterEnable": false,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionEmailing, XRM",
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "E-Mailings",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": []
+        },
+        "Icon": "icon-envelope-o",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "1503": "Communication"
+        },
+        "Summary": null,
+        "Description": null,
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension E-Mailings",
+        "InstallationInfos": null,
+        "ExtensionNativeId": "EMAILING",
+        "ExtensionFileId": 55,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 36,
+      "Title": "E-Mailings",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "BtnActiveEnabled": false
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionFromStore, XRM",
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 6,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Enquête",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "et par utilisateur"
+          ]
+        },
+        "Icon": "https://ww2.eudonet.com/xrm/datas/HOTCOM_EUDOWEBA5C046574753644E565C4C59586B5263535F6857555C046574753644E565C4C59586B5263535F685755/files/enquetes.png",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Receuillez les besoins et les attentes de vos contacts et faites de ces indicateurs des vecteurs de croissance et d'innovation.",
+        "Description": "Niveau de satisfaction concernant le traitement d’une demande, utilisation de vos produits ou services, pertinence de votre offre, déroulé d’un projet, recueil des avis de vos contacts ou tout simplement enquête statistiques dans le cadre d’une étude… Donnez la parole à vos contacts et transformez cette source d’information en indicateurs utiles pour votre activité.<br />\n&nbsp;<br />\nSimple d’utilisation, cette extension vous permet de créer des enquêtes, sondages et autres observatoires en quelques clics. Les possibilités offertes sont nombreuses&nbsp;: questions ouvertes, à choix unique ou multiples, catalogues, cases à cocher, réponses obligatoires ou facultatives… Vos utilisateurs construisent l’enquête dont ils ont besoin, en fonction de leur domaine étudié.<br />\n&nbsp;<br />\nTous les retours peuvent être suivis en temps réel, avec la possibilité de créer et éditer automatiquement des rapports que ce soit sous forme de graphiques, de tableaux croisés dynamiques ou tout simplement, de donnés brutes. Ces rapports facilitent l’interprétation de vos données, pour en extraire toute la valeur ajoutée et vous aidez dans la prise de ddécisions eclairées.<br />\n&nbsp;",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Enquête",
+        "InstallationInfos": "Le déploiement technique de cette extension sur votre base requiert l'intervention des équipes Eudonet.<br />\n<br />\nTemps estimés : 0,5 jour",
+        "ExtensionNativeId": "ENQUETE",
+        "ExtensionFileId": 20,
+        "IsEnabled": false,
+        "IsNativeExtension": false,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 42,
+      "Title": "Enquête",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "NeedsFullRefreshAfterEnable": false,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionAPI, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": false,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Eudo API",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "",
+            ""
+          ]
+        },
+        "Icon": "https://ww2.eudonet.com/xrm/datas/HOTCOM_EUDOWEBA5C046574753644E565C4C59586B5263535F6857555C046574753644E565C4C59586B5263535F685755/files/api(2).png",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "<font face=\"Verdana\">Ouvrez votre base Eudonet à l'ensemble de votre écosytème !</font>",
+        "Description": "Votre système d’information est composé d’un ensemble d’applications qui ne communiquent pas forcément entre elles. L’<em>API Eudonet</em> a été spécialement conçue pour vous permettre de connecter votre base avec vos outils informatiques.<br />\n&nbsp;<br />\nGrâce à un ensemble cohérent de web services sécurisés, l’<em>API Eudonet</em> permet de rechercher, consulter et mettre à jour à distance toutes les infromations de votre base Eudonet, en respectant les règles de confidentialité et les droits d’accès définis.<br />\n&nbsp;<br />\nElle peut être utilisée pour&nbsp;:\n<ul>\n\t<li>afficher des informations contenues dans Eudonet sur des écrans additionnels et/ou des applications externes (ex&nbsp;: site internet, application iPhone, logiciel comptable ou&nbsp;ERP…)</li>\n\t<li>collecter des informations sur des plateformes externes pour les enregistrer directement dans Eudonet (ex&nbsp;: informations saisies dans un formulaire présent sur un site internet qui remontent dans Eudonet).</li>\n</ul>\nL’<em>API Eudonet</em> propose des méthodes d’authentification et de recherche, d’ajout, de modification et de suppression de fiches Eudonet. Elle utilise la syntaxe REST pour la construction des URLs d’appels et le format JSON pour les contenus éhcnagés.<br />\n&nbsp;<br />\nUne extension incontournable pour connecter Eudonet à votre écosystème, placer votre CRM au cœur du SI et ainsi, simplifier vos processus&nbsp;!",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Eudo API",
+        "InstallationInfos": "L’abonnement est signé pour une durée de 1 an. S’il est activé, ce module optionnel concerne obligatoirement l’ensemble des utilisateurs d’une base. Il est renouvelable annuellement par tacite reconduction, dans les mêmes conditions et pour la même durée que le contrat initial.<br />\n<br />\nPrérequis et formations liées :&nbsp;<br />\n-&nbsp;<span style=\"font-size:8pt\">Disposer d’une base Eudonet à partir de la version XRM<br />\n- Avoir suivi une formation Administrateur Eudonet<br />\n- Disposer d'une base des données Eudonet hébergée<br />\n- Prévoir une journée de formation technique (900 € HT)</span>",
+        "ExtensionNativeId": "API",
+        "ExtensionFileId": 4,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 32,
+      "Title": "Eudo API",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionFromStore, XRM",
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 0,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Eudo Drop",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "et par utilisateur"
+          ]
+        },
+        "Icon": "https://ww2.eudonet.com/xrm/datas/HOTCOM_EUDOWEBA5C046574753644E565C4C59586B5263535F6857555C046574753644E565C4C59586B5263535F685755/files/Eudodrop.png",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "1501": "Synchronisation"
+        },
+        "Summary": "Déposez un contact ou un email<br />\ndepuis Outlook directement dans Eudonet",
+        "Description": "Eudo-Drop permet l’import de contacts (au format vCard) et des email depuis Outlook local vers Eudonet.<br />\n&nbsp;<br />\nEudo-Drop est un programme Windows installé sur le poste d’un utilisateur.<br />\n&nbsp;<br />\nIl permet, depuis Microsoft Outlook 2010© et supérieure, de transférer simplement par un glisser-poser un ou plusieurs emails et/ou un ou plusieurs contacts vers Eudonet.<br />\n&nbsp;<br />\nLors du transfert d’un email, Eudo-Drop permet le rattachement de celui-ci à un contact en tant que destinataire et/ou émetteur. Il propose également d’importer individuellement chacune de ses pièces jointes.<br />\n&nbsp;<br />\nLors du transfert d’un contact, Eudo-Drop permet la modification des données issues d’Outlook avant intégration. S’il identifie plusieurs contacts et/ou plusieurs adresses pour un même contact, Eudo-Drop affiche la liste des doublons potentiels et propose la mise à jour de l’un d’entre eux ou la création d’une nouvelle fiche.",
+        "Author": "Eudonet",
+        "AuthorUrl": "www.eudonet.fr",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 137,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Eudo Drop",
+        "InstallationInfos": "Eudo-Drop est une application installée localement sur le poste de l’utilisateur. Pour transférer les données à importer, elle se connecte et accède à la base Eudonet via le protocole SOAP sur http combiné avec le SSL afin de garantir un canal de communication sécurisé avec le service Web (port https 443 ouvert).<br />\n&nbsp;<br />\nElle nécessite l’installation sur le serveur des web services permettant l’interaction avec la base de données.<br />\n<br />\nPré-requis&nbsp;: Pour s’exécuter, Eudo-Drop nécessite le .net framework 4.0 ou supérieur et les web services Eudo-Drop installés sur le serveur.<br />\n&nbsp;",
+        "ExtensionNativeId": "EUDODROP",
+        "ExtensionFileId": 12,
+        "IsEnabled": false,
+        "IsNativeExtension": false,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 42,
+      "Title": "Eudo Drop",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "NeedsFullRefreshAfterEnable": false,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionOutlookAddin, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Add-in Outlook",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-envelope-o",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Add-in Outlook",
+        "Description": "",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Add-in Outlook",
+        "InstallationInfos": "",
+        "ExtensionNativeId": "OUTLOOKADDIN",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 56,
+      "Title": "Add-in Outlook",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionMobile, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Eudo touch CRM",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "https://ww2.eudonet.com/xrm/datas/HOTCOM_EUDOWEBA5C046574753644E565C4C59586B5263535F6857555C046574753644E565C4C59586B5263535F685755/files/module-mobile.png",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Eudo touch, l’indispensable extension d’Eudonet. Tout votre CRM dans votre poche sur votre smartphone android ou iPhone",
+        "Description": "Prolongement indispensable d’Eudonet CRM, l’application Eudo touch met à portée de votre main&nbsp;:\n<ul>\n\t<li>Retrouvez instantanément l’un de vos contacts professionnels</li>\n\t<li>Organisez un rendez-vous dans votre agenda collaboratif</li>\n\t<li>Exploitez tous les canaux de communication qui s’offrent à vous</li>\n\t<li>Pilotez et suiviez l’intégralité de vos processus CRM et métiers</li>\n\t<li>Adoptez une vision 360° de votre activité et de votre base de données</li>\n</ul>\nTout cela entièrement intégré aux fonctionnalités natives de votre smartphone sous Android ou iOS (messagerie, sms, photos, cartographie, appels…).<br />\nEn mobilité comme au bureau, avec Eudonet, le CRM, c’est dans la poche&nbsp;!<br />\n&nbsp;",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Eudo touch CRM",
+        "InstallationInfos": "L’abonnement est signé pour une durée de 1 an. S’il est activé, ce module optionnel concerne obligatoirement l’ensemble des utilisateurs d’une base. Il est renouvelable annuellement par tacite reconduction, dans les mêmes conditions et pour la même durée que le contrat initial.<br />\n<br />\nPrérequis et formations liées :&nbsp;<br />\n-&nbsp;Disposer d’une base Eudonet en version XRM<br />\n- Avoir suivi une formation Administrateur Eudonet<br />\n- Disposer d'une base des données Eudonet hébergée<br />\n- Disposer d'un smartphone sous&nbsp;iOS (version 9 et supérieure) ou sous android (version 4.4.4 et supérieure)<br />\n&nbsp;<br />\nEudonet&nbsp;: nécessite la dernière version d’Eudonet XRM<br />\n&nbsp;",
+        "ExtensionNativeId": "MOBILE",
+        "ExtensionFileId": 17,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 28,
+      "Title": "Eudo touch CRM",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionGrid, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 4,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "EudoGrid",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 euros",
+            "par mois et par utilisateur"
+          ]
+        },
+        "Icon": "https://ww2.eudonet.com/xrm/datas/HOTCOM_EUDOWEBA5C046574753644E565C4C59586B5263535F6857555C046574753644E565C4C59586B5263535F685755/files/eudo-grid.png",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Résumé de Grid",
+        "Description": "",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension EudoGrid",
+        "InstallationInfos": "Installation de Grid",
+        "ExtensionNativeId": "GRID",
+        "ExtensionFileId": 51,
+        "IsEnabled": false,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 44,
+      "Title": "EudoGrid",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionExternalMailing, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 4,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Eudo-Mails TeraData",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": []
+        },
+        "Icon": "icon-database2",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "1503": "Communication"
+        },
+        "Summary": null,
+        "Description": null,
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Eudo-Mails TeraData",
+        "InstallationInfos": null,
+        "ExtensionNativeId": "EXTERNALMAILING",
+        "ExtensionFileId": 15,
+        "IsEnabled": false,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 33,
+      "Title": "Eudo-Mails TeraData",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionSynchro, XRM",
+      "NeedsFullRefreshAfterEnable": true,
+      "ShowParametersTab": true,
+      "PartiallyEnabledAgendasUserList": {
+        "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eda.eEudoSyncExchangeAgendasUser, XRM]], mscorlib",
+        "$values": []
+      },
+      "PartiallyEnabledContactsUserList": {
+        "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eda.eEudoSyncExchangeContactsUser, XRM]], mscorlib",
+        "$values": []
+      },
+      "FullyEnabledAgendasUserList": {
+        "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eda.eEudoSyncExchangeAgendasUser, XRM]], mscorlib",
+        "$values": []
+      },
+      "FullyEnabledContactsUserList": {
+        "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eda.eEudoSyncExchangeContactsUser, XRM]], mscorlib",
+        "$values": []
+      },
+      "FullyEnabledAgendasUserCount": 0,
+      "PartiallyEnabledAgendasUserCount": 0,
+      "FullyEnabledContactsUserCount": 0,
+      "PartiallyEnabledContactsUserCount": 0,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 4,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "EudoSync Exchange Agendas",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "",
+            ""
+          ]
+        },
+        "Icon": "icon-sync",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "1501": "Synchronisation"
+        },
+        "Summary": "EudoSync Exchange Agendas est un outil permettant de synchroniser les rendez-vous des calendriers Exchange avec les fiches agenda saisies sur un onglet Planning d’une base Eudonet.&nbsp;",
+        "Description": "EudoSync Exchange Agendas est un outil permettant de synchroniser les rendez-vous des calendriers Exchange avec les fiches agenda saisies sur un onglet Planning d’une base Eudonet.&nbsp;<br />\n<br />\nLa solution se compose de deux sous-modules, fonctionnant de façon symétrique&nbsp;:\n<ul>\n\t<li>Le module «&nbsp;EudoSync Exchange <strong>Agent</strong>&nbsp;», travaillant avec <strong>Eudonet</strong></li>\n\t<li>Le module «&nbsp;EudoSync Exchange <strong>Server</strong>&nbsp;», travaillant avec <strong>Exchange</strong>.</li>\n</ul>\n<br />\n<a href=\"http://microsoft.com\">http://www.microsoft.com</a>",
+        "Author": "Eudonet",
+        "AuthorUrl": "eudonet.fr",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 55,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension EudoSync Exchange Agendas",
+        "InstallationInfos": "Nous contacter",
+        "ExtensionNativeId": "SYNCHRO",
+        "ExtensionFileId": 9,
+        "IsEnabled": false,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 29,
+      "Title": "EudoSync Exchange Agendas",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionSynchroExchange, XRM",
+      "NeedsFullRefreshAfterEnable": true,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": false,
+        "Status": 4,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Eudo Synchro Exchange E2017",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "",
+            ""
+          ]
+        },
+        "Icon": "icon-sync",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "1501": "Synchronisation"
+        },
+        "Summary": "EudoSync Exchange 2017 summary",
+        "Description": "EudoSync Exchange 2017 desc",
+        "Author": "Eudonet",
+        "AuthorUrl": "eudonet.fr",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 55,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension EudoSync Exchange E2017",
+        "InstallationInfos": "Nous contacter",
+        "ExtensionNativeId": "SYNCHROEXCHANGE",
+        "ExtensionFileId": 70,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 52,
+      "Title": "EudoSync Exchange 2017",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionSMS, XRM",
+      "NeedsFullRefreshAfterEnable": true,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": false,
+        "Status": 4,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "SMS",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "",
+            ""
+          ]
+        },
+        "Icon": "icon-envelope-o",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "1503": "Communication"
+        },
+        "Summary": "SMSing",
+        "Description": "SMSing",
+        "Author": "Eudonet",
+        "AuthorUrl": "eudonet.fr",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 55,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension SMS",
+        "InstallationInfos": "Nous contacter",
+        "ExtensionNativeId": "SMS",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": false,
+      "Module": 30,
+      "Title": "SMS",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionSirene, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Référentiel Sirene",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "https://ww2.eudonet.com/xrm/datas/HOTCOM_EUDOWEBA5C046574753644E565C4C59586B5263535F6857555C046574753644E565C4C59586B5263535F685755/files/module-sirene.png",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Référentiel Sirene",
+        "Description": "Référentiel Sirene",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Référentiel Sirene",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "SIRENE",
+        "ExtensionFileId": 62,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.301.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 53,
+      "Title": "Référentiel Sirene",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionPowerBI, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Power BI",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-database2",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Power BI",
+        "Description": "Power BI",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Power BI",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "POWERBI",
+        "ExtensionFileId": 69,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.403.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 55,
+      "Title": "Power BI",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionAccountingBusinessSoft, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Interface comptable - Business Soft",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-stats",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Business Soft",
+        "Description": "Business Soft",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Interface comptable - Business Soft",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "COMPTA_BUSINESSSOFT",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 57,
+      "Title": "Interface comptable - Business Soft",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionAccountingCegid, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Interface comptable - Cegid",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-stats",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Cegid",
+        "Description": "Cegid",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Interface comptable - Cegid",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "COMPTA_CEGID",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 58,
+      "Title": "Interface comptable - Cegid",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionAccountingSage, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Interface comptable - Sage",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-stats",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Sage",
+        "Description": "Sage",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Interface comptable - Sage",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "COMPTA_SAGE",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 59,
+      "Title": "Interface comptable - Sage",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionAccountingEBP, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Interface comptable - EBP",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-stats",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "EBP",
+        "Description": "EBP",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Interface comptable - EBP",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "COMPTA_EBP",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 60,
+      "Title": "Interface comptable - EBP",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionAccountingSigma, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Interface comptable - Sigma",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-stats",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Sigma",
+        "Description": "Sigma",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Interface comptable - Sigma",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "COMPTA_SIGMA",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 61,
+      "Title": "Interface comptable - Sigma",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInUbiflow, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Demandes entrantes Ubiflow",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-arrow-circle-o-down",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Demandes entrantes Ubiflow",
+        "Description": "Demandes entrantes Ubiflow",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Demandes entrantes Ubiflow",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "UBIFLOW_IN",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 62,
+      "Title": "Demandes entrantes Ubiflow",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInHBS, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Demandes entrantes HBS",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-arrow-circle-o-down",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Demandes entrantes HBS",
+        "Description": "Demandes entrantes HBS",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Demandes entrantes HBS",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "HBS_IN",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 63,
+      "Title": "Demandes entrantes HBS",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionDocuSign, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Signature Electronique DocuSign",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-quill",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Signature Electronique DocuSign",
+        "Description": "Signature Electronique DocuSign",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Signature Electronique DocuSign",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "SIGN_ELEC_DOCUSIGN",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 64,
+      "Title": "Signature Electronique DocuSign",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionSMSNetMessage, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": false,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "SMS Netmessage",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-sms",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "SMS Netmessage",
+        "Description": "SMS Netmessage",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension SMS NetMessage",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "SMS_NETMESSAGE",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 65,
+      "Title": "SMS Netmessage",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionSynchroExchange2016OnPremise, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": false,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Synchronisation Exchange 2016 on Premise",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "10 € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "icon-exchange",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Synchronisation Exchange 2016 on Premise",
+        "Description": "Synchronisation Exchange 2016 on Premise",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Synchronisation Exchange 2016 on Premise",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "SYNCHROEXCHANGE2016_ONPREMISE",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.412.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 66,
+      "Title": "Synchronisation Exchange 2016 on Premise",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionExtranet, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": true,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": false,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Extranet",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "xx € par mois",
+            "par utilisateur"
+          ]
+        },
+        "Icon": "", //TODO
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "Extranet",
+        "Description": "Extranet",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Extranet",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "EXTRANET",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.506.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 67,
+      "Title": "Extranet",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    },
+    //SHA : tâche #1 873
+    {
+      "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionAdvancedForm, XRM",
+      "NeedsFullRefreshAfterEnable": false,
+      "ShowParametersTab": false,
+      "Infos": {
+        "$type": "Com.Eudonet.Xrm.eda.eAdminExtensionInfo, XRM",
+        "DelayedActivation": true,
+        "Status": 3,
+        "Screenshots": {
+          "$type": "System.Collections.Generic.List`1[[Com.Eudonet.Xrm.eAPIProductScreenshot, XRM]], mscorlib",
+          "$values": []
+        },
+        "Title": "Formulaire Avancé",
+        "Tarifs": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "",
+            ""
+          ]
+        },
+        "Icon": "icon-advanced-form",
+        "Categories": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib",
+          "-1": "-1"
+        },
+        "Summary": "ADVANCED FORM",
+        "Description": "ADVANCED FORM",
+        "Author": "EUDONET",
+        "AuthorUrl": "",
+        "Notation": {
+          "Key": null,
+          "Value": null
+        },
+        "NbInstallations": 0,
+        "LastUpdate": "0001-01-01T00:00:00",
+        "Version": "",
+        "IsNewExtension": false,
+        "Tooltip": "Cliquez ici pour administrer les paramètres de l'extension Formulaire Avancé",
+        "InstallationInfos": "Informations d'installation",
+        "ExtensionNativeId": "ADVANCED_FORM",
+        "ExtensionFileId": 0,
+        "IsEnabled": true,
+        "IsNativeExtension": true,
+        "MinEudoVersion": "10.504.000",
+        "IsCompatible": true
+      },
+      "IsNativeExtension": true,
+      "Module": 70,
+      "Title": "Formulaire avancé",
+      "Exception": null,
+      "AdditionalParameters": null,
+      "BtnActiveEnabled": true
+    }
+  ]
+}

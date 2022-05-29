@@ -1,0 +1,11 @@
+﻿div.bkm-tab .tbody_asso tr td > div.popover__wrapper {
+    min-height: unset;
+    max-height: var(--size-40);
+    max-width: 35px;
+    flex-wrap: wrap;
+}
+
+div.bkm-tab .tbody_asso tr td:hover > div.popover__wrapper {
+    max-width: unset;
+    flex-wrap: nowrap;
+}

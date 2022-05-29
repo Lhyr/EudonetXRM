@@ -1,0 +1,45 @@
+@font-face {
+    font-family: lato-bold;
+    src: url(../fonts/lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato-semi-bold;
+    src: url(../fonts/lato/Lato-Semibold.ttf);
+}
+
+@font-face {
+    font-family: lato-regular;
+    src: url(../fonts/lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato-light;
+    src: url(../fonts/lato/Lato-Light.ttf);
+}
+
+.lato .wrapper{
+    font-family: lato-regular!important;
+}
+
+.lato h3{
+    font-family: lato-bold!important;
+}
+
+.lato h1{
+    font-family: lato-bold!important;
+}
+
+.lato h4{
+    font-family: lato-semi-bold!important;
+}
+
+.lato .text-muted{
+    font-family: lato-light!important;
+}
+
+.lato .box-title > a {
+    font-family: lato-bold!important;
+}
+
+

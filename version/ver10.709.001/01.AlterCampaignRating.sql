@@ -1,0 +1,3 @@
+ALTER TABLE [CAMPAIGN] ALTER COLUMN Rating numeric(18,2)
+ 
+ 

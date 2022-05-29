@@ -1,0 +1,1330 @@
+﻿
+{
+
+}
+
+#BrowsingFirst[eenabled='0'] > span > img.rightMenuBrowsingFirst
+{
+
+}
+
+#BrowsingFirst[eenabled='1'] > span:hover > img.rightMenuBrowsingFirst, #BrowsingPrevious[eenabled='1'] > span:hover > img.rightMenuBrowsingPrevious, #BrowsingNext[eenabled='1'] > span:hover > img.rightMenuBrowsingNext, #BrowsingLast[eenabled='1'] > span:hover > img.rightMenuBrowsingLast
+{
+
+}
+
+#BrowsingLast[eenabled='0'] > span > img.rightMenuBrowsingLast
+{
+
+}
+
+#BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingFirst:hover
+{
+
+}
+
+#BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingLast:hover
+{
+
+}
+
+#BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingNext:hover
+{
+
+}
+
+#BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingPrevious:hover
+{
+
+}
+
+#BrowsingNext[eenabled='0'] > span > img.rightMenuBrowsingNext
+{
+
+}
+
+#BrowsingPrevious[eenabled='0'] > span > img.rightMenuBrowsingPrevious
+{
+
+}
+
+#BrowsingPrevious[eenabled='1'] > span > img.rightMenuBrowsingPrevious, #BrowsingNext[eenabled='1'] > span > img.rightMenuBrowsingNext, #BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingLast, #BrowsingFirst[eenabled='1'] > span > img.rightMenuBrowsingFirst
+{
+
+}
+
+#btnActionsTop
+{
+	background-color: #00267B;
+	color: #FB9900;
+}
+
+#btnActionsTop div#actionLeft
+{
+	background-color: #FB9A00;
+}
+
+#btnActionsTop:hover
+{
+	color: #01257B;
+	background-color: #F99A00;
+}
+
+#cardBlockAvatar .icon-photo
+{
+	color: #00257A;
+}
+
+#cardBlockAvatar.cardBlock
+{
+	border-color: #00257A;
+}
+
+#formWidgetContent .widgetRSSItem h2 a
+{
+	color: #00257A;
+}
+
+#kbColHeader .kbHeaderCol
+{
+	color: #00257A;
+}
+
+.Action_sMC li
+{
+	border-bottom: 1px solid #C1DDF8;
+}
+
+.AddButton, .lnkAddTxt img, .addLinkImg
+{
+	background-color: #636363;
+}
+
+.AddButton:hover, .lnkAddTxt:hover img, .addLinkImg:hover
+{
+	background-color: #42A7DC;
+}
+
+.background-hover-theme:hover, .background-theme, .static-background-theme
+{
+	background-color: #00257A;
+	color: #FFFFFF !important;
+}
+
+.background-theme:hover
+{
+	background-color: Black;
+	color: White White White;
+}
+
+.barre-outils ul li.impression a
+{
+	background-color: #636363;
+}
+
+.barre-outils ul li.impression a:hover
+{
+	background-color: #42A7DC;
+}
+
+.barre-outils ul li.zoom_moins a, .fileTools ul li.zoom_moins a
+{
+	background-color: #CCCCCC;
+}
+
+.barre-outils ul li.zoom_moins a:hover, .fileTools ul li.zoom_moins a:hover
+{
+	background-color: #42A7DC;
+}
+
+.barre-outils ul li.zoom_plus a, .fileTools ul li.zoom_plus a
+{
+	background-color: #CCCCCC;
+}
+
+.barre-outils ul li.zoom_plus a:hover, .fileTools ul li.zoom_plus a:hover
+{
+	background-color: #42A7DC;
+}
+
+.bkmButtonsBar > ul > li > div > img
+{
+	background-color: #636363;
+}
+
+.bkmButtonsBar > ul > li:hover > div > img
+{
+	background-color: #42A7DC;
+}
+
+.bkmdiv
+{
+	border-left: 5px solid #00257A;
+}
+
+.bkmHisto
+{
+
+}
+
+.bkmHisto[enabled='1'] div img
+{
+	background-color: #636363;
+}
+
+.bkmHisto[enabled='1']:hover div img
+{
+	background-color: #42A7DC;
+}
+
+.bkmNoPaging:hover div
+{
+	background-color: #42A7DC;
+}
+
+.bkmTr td
+{
+	background-image: none;
+	border: none;
+}
+
+.border-theme
+{
+	border-color: #00257A;
+}
+
+.btnEscMnu a
+{
+
+}
+
+.btnSelectUnselectAll > *
+{
+
+}
+
+.btnSelectUnselectAll:hover > *
+{
+
+}
+
+.buttonAdd span
+{
+	color: #00257A;
+}
+
+.button-green
+{
+	background-color: #00257A;
+	padding: 5px;
+}
+
+.button-green > *
+{
+	background-image: none;
+	height: inherit;
+}
+
+.button-green:hover
+{
+
+}
+
+.button-green:hover > div[class^="button"]
+{
+	background-image: none;
+}
+
+.button-green-rightarrow > div[class^="button"]
+{
+	background-image: none;
+	height: inherit;
+	width: inherit;
+}
+
+.button-green-rightarrow:hover > div[class^="button"]
+{
+	background-image: none;
+}
+
+.button-green-rightarrow-mid
+{
+	padding: 5px;
+	background: #79BE0B;
+	padding-left: 10px;
+}
+
+.calendarselect
+{
+
+}
+
+.cardBlock .cardTitle
+{
+	color: #00257A;
+}
+
+.catToolAddLib:hover span
+{
+	color: #42A7DC;
+}
+
+.catToolSync a
+{
+	background-color: #636363;
+}
+
+.catToolSync a:hover
+{
+	background-color: #42A7DC;
+}
+
+.cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a, .cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a
+{
+	background-color: #636363;
+}
+
+.cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a:hover, .cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a:hover
+{
+	background-color: #42A7DC;
+}
+
+.cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a
+{
+	background-color: Red;
+}
+
+.cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a, .cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a
+{
+	background-color: #636363;
+}
+
+.cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a:hover, .cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a:hover
+{
+	background-color: #42A7DC;
+}
+
+.color-hover-theme:hover
+{
+	color: White;
+}
+
+.color-theme
+{
+	color: #00257A;
+}
+
+.disable
+{
+	color: #EFEFEF !important;
+}
+
+.discComm
+{
+	border-color: #00257A;
+}
+
+.DivClosed
+{
+	color: #636363;
+}
+
+.DivClosed > *
+{
+	color: #636363;
+}
+
+.DivClosed img
+{
+	background-color: #636363;
+}
+
+.DivClosed span
+{
+
+}
+
+.DivClosed:hover
+{
+	color: #42A7DC;
+}
+
+.DivClosed:hover > *
+{
+	color: #42A7DC;
+}
+
+.DivClosed:hover img
+{
+	background-color: #42A7DC;
+}
+
+.DivClosed:hover span
+{
+
+}
+
+.DivOpen
+{
+
+}
+
+.DivOpen > *
+{
+	color: #636363;
+}
+
+.DivOpen img
+{
+	background-color: #636363;
+}
+
+.DivOpen:hover
+{
+	color: #42A7DC;
+}
+
+.DivOpen:hover > *
+{
+	color: #636363;
+}
+
+.DivOpen:hover img
+{
+	background-color: #42A7DC;
+}
+
+.DivOpen:hover span
+{
+	color: #42A7DC;
+}
+
+.DivSelectionListResult .cell2:hover, .DivSelectionListResult .cell:hover, .ItemList .cell:hover, .ItemList .cell2:hover
+{
+
+}
+
+.editor_formatoptions [class^="icon-"]
+{
+	color: #00257A;
+}
+
+.eMain_File
+{
+	background-color: #636363;
+}
+
+.fileLogo
+{
+	color: #636363;
+}
+
+.fileLogoCV
+{
+	background-color: #636363;
+}
+
+.fileLogoCV:hover
+{
+	background-color: #42A7DC;
+}
+
+.fileLogoInf, .logo_info, .catBtnTool a
+{
+	background-color: #636363;
+}
+
+.fileLogoInf:hover, .logo_info:hover, .catBtnTool a:hover
+{
+	background-color: #42A7DC;
+}
+
+.fileTools ul li.impression a, .catToolPrint a
+{
+	background-color: #636363;
+}
+
+.fileTools ul li.impression a:hover, .catToolPrint a:hover
+{
+	background-color: #42A7DC;
+}
+
+.fIOff:hover, div.control_contextmenu li.selected, div.control_contextmenu li.actionItem:hover, div.control_contextmenu li.advFltItem:hover, .bkmDtls a:focus, .bkmDtlsSel a:focus, .bkmHead a:focus, .bkmHeadSel a:focus
+{
+	border-left: 2px solid #00257A;
+	margin-left: 0;
+}
+
+.fldBtnModif a, .logo_pen, .catBtnModif a
+{
+	background-color: #636363;
+}
+
+.fldBtnModif a:hover, .logo_pen:hover, .catBtnModif a:hover
+{
+	background-color: #42A7DC;
+}
+
+.Gerard
+{
+
+}
+
+.hdName span
+{
+
+}
+
+.hide_all
+{
+	background-color: #636363;
+}
+
+.hide_all:hover
+{
+	background-color: #42A7DC;
+}
+
+.highlight
+{
+	background-color: #03C7D7;
+}
+
+.hUserBloc a
+{
+
+}
+
+.icnMnuChip
+{
+	font-size: 7pt;
+	vertical-align: 0px !important;
+}
+
+.icon-edn-history[enabled='1'], .bkmPaging.icon-edn-eye
+{
+	color: #79BE0B;
+}
+
+.iDel, .logo_trash, .fldBtnDel a, .pl_tt_opt_del
+{
+	background-color: #636363;
+}
+
+.iDel, .logo_trash, .fldBtnDel a, .pl_tt_opt_del, .catBtnDel a
+{
+	background-color: #636363;
+}
+
+.iDel:hover, .logo_trash:hover, .fldBtnDel a:hover, .catBtnDel a:hover
+{
+	background-color: #42A7DC;
+}
+
+.imgAct
+{
+	color: #00257A;
+}
+
+.iModPj img
+{
+	background-color: #636363;
+}
+
+.iModPj:hover img
+{
+	background-color: #42A7DC;
+}
+
+.ivtFieldsSel
+{
+
+}
+
+.ivtFieldsSel:hover
+{
+
+}
+
+.jOrgChart .node
+{
+	color: #00257A;
+}
+
+.kbAggr
+{
+	color: #00257A;
+}
+
+.kbButtonSL
+{
+	background-color: #00257A;
+}
+
+.kbListSL
+{
+	color: #00257A;
+}
+
+.kbListSL li:hover
+{
+	background-color: #00257A;
+}
+
+.kbListSL, .kbListSL li
+{
+	border-color: #00257A;
+}
+
+.kbSL, .kbSL .icon-caret-down, .kbSL .icon-caret-right
+{
+	color: #00257A;
+}
+
+.line1:hover > *, .line2:hover > *, .list_even:hover > *, .list_odd:hover > *, .line1:hover, .line2:hover, .highlight, .highlight > *, .highlight > [class*=" icon-"]
+{
+
+}
+
+.line1:hover div.inTDbtn, .line2:hover div.inTDbtn
+{
+	color: White;
+}
+
+.linkAddNewBkmFile.gofile
+{
+	color: #00257A;
+}
+
+.list_even:hover .logo_modifs > div, .list_odd:hover .logo_modifs > div
+{
+	color: White;
+}
+
+.list_even:hover .logo_modifs > div:hover, .list_odd:hover .logo_modifs > div:hover
+{
+
+}
+
+.listfiltres
+{
+	background-color: #E7ECF8;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #ccc;
+}
+
+.lnkAddTxt:hover a
+{
+	color: #42A7DC;
+}
+
+.lnkFieldsSel:hover img
+{
+	background-color: #42A7DC;
+}
+
+.lnkFieldsSelBtn
+{
+	background-color: #636363;
+}
+
+.LNKOPENMEMOPOPUPbtn img
+{
+	background-color: #636363;
+}
+
+.LNKOPENMEMOPOPUPbtn:hover img
+{
+	background-color: #42A7DC;
+}
+
+.logo_abc
+{
+	background-color: #636363;
+}
+
+.logo_abc:hover
+{
+	background-color: #42A7DC;
+}
+
+.memoAvatar
+{
+	background-color: #00257A;
+}
+
+.mTab .lnkIcon span
+{
+	color: #636363;
+}
+
+.mTab th.headActif
+{
+	color: #FFFFFF;
+}
+
+.navBar
+{
+	border-top: 2px solid white;
+}
+
+.navBar *:hover ul.sbMenu, .navBar *:hover ul.sbMenuActive
+{
+	display: block;
+	border-right: 1px solid #00257A;
+	border-left: 1px solid #00257A;
+	border-bottom: 1px solid #00257A;
+	border-top: 3px solid white;
+	left: -1px;
+}
+
+.navTitleActive
+{
+	background-color: #002664;
+	color: #FA9A00;
+	border-left: 1px solid #FA9A00;
+	border-right: 1px solid #FA9A00;
+}
+
+.open_all
+{
+	background-color: #636363;
+}
+
+.open_all:hover
+{
+	background-color: #42A7DC;
+}
+
+.pagFirst
+{
+	background-color: #636363;
+}
+
+.pagFirst:hover
+{
+	background-color: #42A7DC;
+}
+
+.pagFirstDis
+{
+	background-color: #EFEFEF;
+}
+
+.pagLast
+{
+	background-color: #636363;
+}
+
+.pagLast:hover
+{
+	background-color: #42A7DC;
+}
+
+.pagLastDis
+{
+	background-color: #EFEFEF;
+}
+
+.pagNext
+{
+	background-color: #636363;
+}
+
+.pagNext:hover
+{
+	background-color: #42A7DC;
+}
+
+.pagNextDis
+{
+	background-color: #EFEFEF;
+}
+
+.pagPrev
+{
+	background-color: #636363;
+}
+
+.pagPrev:hover
+{
+	background-color: #42A7DC;
+}
+
+.pagPrevDis
+{
+	background-color: #EFEFEF;
+}
+
+.phd:hover
+{
+	color: #00257A;
+}
+
+.plM-HESWL td:hover
+{
+	color: #00257A;
+}
+
+.rightMenu:hover span.icnMnuVerBtn:hover
+{
+	color: #47A7DC;
+}
+
+.rightMenuModFile
+{
+
+}
+
+.rightMenuModFile span
+{
+
+}
+
+.rightMenuModFile:hover
+{
+
+}
+
+.rightMenuModFile:hover span
+{
+
+}
+
+.rightMenuOption > ul > li > a > span > img
+{
+	background-color: #636363;
+}
+
+.rightMenuOption > ul > li > a:hover > span > img
+{
+
+}
+
+.rightMenuOption a, .rightMenuModFile a
+{
+
+}
+
+.rightMenuOption a:hover, .rightMenuOption a:focus, .rightMenuOption a:active, .rightMenuModFile a:hover, .rightMenuModFile a:focus, .rightMenuModFile a:active
+{
+	background-color: #BCDCFB;
+	color: #002664;
+}
+
+.rightMenuOption ul li:hover
+{
+	background-color: #E7ECF8;
+}
+
+.rightMenuOption ul li:hover a
+{
+	background-color: #E7ECF8;
+	color: #002664;
+}
+
+.rightMenuOption ul.hUserBloc li:hover span, .rightMenuOption ul.rightMenuSubMenuItem li:hover span, .rightMenuOption ul.rightMenuItem li:hover span
+{
+
+}
+
+.rightMenuSubMenuTitle:hover
+{
+
+}
+
+.SectedItem .iDel, .SectedItem .logo_trash, .SectedItem .fldBtnDel a
+{
+
+}
+
+.tbHtileModal *
+{
+	background-color: #00257A;
+	background-image: none;
+}
+
+.tdHeader
+{
+
+}
+
+.usrbt-all:hover *, .usrbt-none:hover *
+{
+	color: #42A7DC;
+}
+
+.VCardTT .vcImgPp
+{
+	border-color: #00257A;
+}
+
+.vcName, .vcCorporate, .vcMiniFileTitle
+{
+	color: #00257A;
+}
+
+.widget-page-title-container .widget-title
+{
+	color: #00257A;
+}
+
+.xrm-widget-title
+{
+	color: #00257A;
+}
+
+[class^="icon-"], [class*=" icon-"], div.contentMaster div.FavLnkOpen div.menuBar div.icon-menu_btn [class^="icon-"]:hover, div.contentMaster div.FavLnkOpen div.menuBar div.icon-menu_btn [class*=" icon-"]:hover, div.rightMenu:hover div.menuBar [class^="icon-"]:hover
+{
+	color: #636363;
+}
+
+[class^="icon-"]:hover, [class*=" icon-"]:hover
+{
+	color: #47A7DC;
+}
+
+a.btnBitField
+{
+	background-color: #00257A;
+	color: #FFFFFF;
+}
+
+a.btnBitField[chk='1']
+{
+	color: #FA9A00 !important;
+	background-color: #002664;
+}
+
+a.chk .icon-check-square
+{
+	color: #00257A !important;
+}
+
+a.historique span
+{
+
+}
+
+a.historique span.afficherHisto
+{
+
+}
+
+a.historique span.masquerHisto
+{
+
+}
+
+a.historique:hover span.afficherHisto
+{
+
+}
+
+catToolSync a
+{
+	catToolSync a;
+}
+
+catToolSync a:hover
+{
+	background-color: #42A7DC;
+}
+
+catToolSyncDis a
+{
+	background-color: #BEBEBE;
+}
+
+div.advFltActiv div.advFltBtn
+{
+
+}
+
+div.advFltActiv div.advFltLabel
+{
+
+}
+
+div.advFltActiv div.advFltLeft
+{
+
+}
+
+div.advFltBtn
+{
+
+}
+
+div.advFltLabel
+{
+
+}
+
+div.advFltLeft
+{
+
+}
+
+div.advFltMenu
+{
+	background-color: #01257B;
+	color: #FA9800;
+}
+
+div.advFltMenu div[class^="adv"]
+{
+
+}
+
+div.advFltMenu:hover
+{
+	background-color: #F99A00;
+	color: #01257B;
+}
+
+div.advFltMenu:hover div.advFltBtn
+{
+
+}
+
+div.advFltMenu:hover div.advFltLabel
+{
+
+}
+
+div.advFltMenu:hover div.advFltLeft
+{
+
+}
+
+div.advFltMenu:hover div[class^="adv"]
+{
+
+}
+
+div.ahistoFltDiv
+{
+
+}
+
+div.ahistoFltDiv .histoLeftBtn
+{
+
+}
+
+div.aHistoFltDiv > a
+{
+
+}
+
+div.ahistoFltDiv a.historique
+{
+
+}
+
+div.ahistoFltDiv a.historique span.masquerHisto
+{
+
+}
+
+div.ahistoFltDiv:hover
+{
+
+}
+
+div.ahistoFltDiv:hover a.historique span.masquerHisto
+{
+
+}
+
+div.bkmTitle > ul > li.bkmButtonsBar > div > ul > li.bkmNoPaging > div > img
+{
+	background-color: #79BE0B;
+}
+
+div.colGuide
+{
+	color: #00257A;
+}
+
+div.globalNav
+{
+	background-color: #00257A;
+	border-bottom: 1px solid #000000;
+}
+
+div.globalNav div.HomeFixed
+{
+
+}
+
+div.histoActive:hover
+{
+
+}
+
+div.histoFilter
+{
+	background-color: #01257B;
+	color: #F99A00;
+}
+
+div.histoFilter.histoActive
+{
+
+}
+
+div.histoFilter:hover, div.histoActive:hover
+{
+	background-color: #FB9900;
+	color: #00247A;
+}
+
+div.PlusFixed
+{
+	background-color: #00257A;
+}
+
+div.rightMenuModFile > ul > li > a > span > img
+{
+
+}
+
+div.rightMenuModFile:hover > ul > li
+{
+
+}
+
+div.rightMenuOption:hover > ul > li > a > span > [class^="icon-"]:hover, div.rightMenuOption:hover > ul > li > a > span > [class*=" icon-"]:hover
+{
+
+}
+
+div.rightMenuOption:hover > ul > li > a > span:hover > [class^="icon-"], div.rightMenuOption:hover > ul > li > a > span:hover > [class*=" icon-"]
+{
+	color: inherit;
+}
+
+div.rightMenuOption:hover > ul > li > span:hover > [class^="icon-"], div.rightMenuOption:hover > ul > li > span:hover > [class*=" icon-"]
+{
+	color: inherit;
+}
+
+div.subTabDiv span a.selected, div.subTabDiv span a:hover
+{
+	color: #00257A;
+	border-color: #00257A;
+}
+
+div.usr_top_srch div.icon-edn-cross
+{
+	position: absolute;
+}
+
+li.catToolAddLib span.catToolAddLibSp
+{
+	color: #42A7DC;
+}
+
+li.lnkFieldsAdd a, li.lnkFieldsSel a
+{
+
+}
+
+li.lnkFieldsAdd:hover *, li.lnkFieldsSel:hover *, li.catToolAddLib:hover *
+{
+
+}
+
+li.navAction
+{
+	color: #002664;
+	border-left: 2px solid #e0EEFB;
+	background-color: #E0EEFB;
+}
+
+li.navEntry
+{
+	border: 1px solid #00257A;
+	color: #FFFFFF;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+li.navEntry:hover, div.navEntry:hover, li.navEntryActive, div.navEntryActive
+{
+	background-color: #FDFEFE;
+	color: #FA9A00;
+	border: 1px solid #00257A;
+}
+
+li.navLst
+{
+	background-color: #FDFEFE;
+	color: #002664;
+	border-bottom: 1px solid #C1DDF8;
+	border-left: 2px solid white;
+}
+
+li.navLst:hover, li.navActiveElt, li.navAction:hover, l.rightMenuFavlnk li:hover a
+{
+	background-color: #E7ECF8;
+	color: #002664;
+	border-left: 2px solid #00257A;
+}
+
+li.sbmBottom
+{
+	background-color: #009FDA;
+	border-top: 1px solid #888888;
+}
+
+span.icnMnuVerBtn
+{
+	color: #00257A;
+}
+
+table.underCal td.icnListAct
+{
+
+}
+
+td.bkmHead
+{
+	background-color: #00257A;
+	background-image: none;
+	color: White;
+}
+
+td.bkmHead a
+{
+	color: White;
+}
+
+td.bkmHeadPlus
+{
+	background-color: #00257A;
+}
+
+td.bkmHeadPlus a
+{
+	background-color: #00257A;
+	color: White;
+}
+
+td.bkmHeadSel
+{
+	background-color: #00257A;
+	border-left: 1px solid #FA9A00;
+	border-right: 1px solid #FA9A00;
+}
+
+td.bkmHeadSel a
+{
+	color: #FA9A00;
+	font-weight: bold;
+}
+
+td.bkmSep
+{
+	display: none;
+}
+
+td.eCatalogEditorMenuItem:hover, td.eCatalogMenuItemAddNew:hover, tr.catEditVal:hover, tr.catEditVal2:hover, td.eCatalogEditorMenuItemAdv:hover, ul.catEditVal > li[id^='val']:hover, ul.catMultSelVal > li[id^='val']:hover
+{
+
+}
+
+td.LNKADVCATbtn, td.LNKCATbtn, td.LNKCATPOPUPbtn, td.LNKCATUSERbtn, td.LNKMNGFILEbtn, td.LNKSENDMAILbtn
+{
+	background-color: #636363;
+}
+
+td.LNKADVCATbtn:hover, td.LNKCATbtn:hover, td.LNKCATPOPUPbtn:hover, td.LNKCATUSERbtn:hover, td.LNKMNGFILEbtn:hover
+{
+	background-color: #42A7DC;
+}
+
+td.LNKCATFILEbtn
+{
+	background-color: #636363;
+}
+
+td.LNKCATFILEbtn:hover
+{
+	background-color: #42A7DC;
+}
+
+td.LNKCATHOURbtn
+{
+	background-color: #636363;
+}
+
+td.LNKCATHOURbtn:hover
+{
+
+}
+
+td.LNKDATEbtn
+{
+	background-color: #636363;
+}
+
+td.LNKDATEbtn:hover
+{
+	background-color: #42A7DC;
+}
+
+td.LNKOPENWEBbtn
+{
+	background-color: #636363;
+}
+
+td.LNKOPENWEBbtn:hover
+{
+	background-color: #42A7DC;
+}
+
+tr.catEditVal:hover > td.catBtn > div.catBtnVal > ul.catBtnUl > li.catBtnDel a
+{
+
+}
+
+tr.catEditVal:hover > td.catBtn > div.catBtnVal > ul.catBtnUl > li.catBtnModif a
+{
+
+}
+
+tr.catEditVal:hover > td.catBtn > div.catBtnVal > ul.catBtnUl > li.catBtnTool a
+{
+
+}
+
+tr.line2:hover > td > div.LNKSENDMAILbtn, tr.line1:hover > td > div.LNKSENDMAILbtn
+{
+
+}
+
+tr:hover > td > div.LNKSENDMAILbtn
+{
+
+}
+
+ul.sbMenu, ul.sbMenuActive
+{
+	background-color: #FDFEFE;
+}
+
+
+.xrm-widget-resize {
+    border-right-color: #636363;
+}
+
+    .xrm-widget-resize:hover {
+        border-right-color: #42A7DC;
+    }
+
+.mTab tr.hdBgCol * {
+	background-color: #dfdfdf;
+}

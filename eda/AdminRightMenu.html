@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Maquette Admin</title>
+    <meta charset="utf-8" />
+    <link href="../themes/default/css/eudoFont.css" rel="stylesheet" />
+    <link href="../themes/default/css/eMain.css" rel="stylesheet" />
+    <link href="../themes/default/css/eAdminMenu.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <div class="hLogo" onclick="About();">
+            </div>
+        </div>
+        <div id="adminNav">
+            <input type="text" />
+            <ul class="navLinks">
+                <li><span></span>Administrer la base</li>
+                <li><span></span>Quitter l'administration</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="rightMenu">
+        <div class="menuBar">
+            <div id="menuPin" class="icon-menu_btn myPin" userid="1"></div>
+        </div>
+        <aside id="menuContent">
+            <div id="userInfo">
+                <div id="userAvatar"><img width="30" height="30" alt="Photo" title="Avatar" src="../themes/default/images/eMain_logo.png" /></div>
+                <div class="helloMnu">Bonjour,</div>
+                <div class="nickMnu">Céline</div>
+            </div>
+
+
+            <ul id="navTabs">
+                <li class="navIcon"><span class="icon-menu_btn_acc" onclick="showBlock('paramTab1')"></span></li>
+                <li class="navIcon"><span class="icon-menu_btn_acc" onclick="showBlock('paramTab2')"></span></li>
+                <li class="navIcon"><span class="icon-menu_btn_acc" onclick="showBlock('paramTab3')"></span></li>
+            </ul>
+
+            <div id="slidingArrow"></div>
+
+            <div class="paramBlock" id="paramTab1">
+                <h3>Contenu de l'onglet</h3>
+            </div>
+
+            <div class="paramBlock" id="paramTab2">
+                <h3>Paramètres de l'onglet 2</h3>
+            </div>
+
+            <div id="paramTab3" class="paramBlock">
+                <h3>Paramètres de l'onglet</h3>
+
+                <div class="paramBlockContent">
+                    
+                    <article class="paramPart">
+                        <header>
+                            <div class="icon-arrow_down"></div>
+                            <h4>Caractéristiques</h4>
+                            <p class="info">Onglet principal</p>
+                        </header>
+                        <div class="paramPartContent">
+                            <div class="field">
+                                <input type="text" />
+                                <p class="info">Modifier le nom de l'onglet</p>
+                            </div>
+                            <div class="field">
+                                <textarea rows="5"></textarea>
+                                <p class="info">Infobulle visible au survol de l'onglet du signet</p>
+                            </div>
+                            <div class="field">
+                                <label>Pictogramme</label>
+                                <select>
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <input type="checkbox" id="chkDisplayInTab" /><label for="chkDisplayInTab">Afficher en onglet</label>
+                            </div>
+                            <div class="field">
+                                <input type="checkbox" id="chkAutoCreate" /><label for="chkAutoCreate">Créer automatiquement</label>
+                            </div>
+                            <div class="field">
+                                <input type="checkbox" id="chkAutoSave" /><label for="chkAutoSave">Sauvegarder automatiquement</label>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="paramPart">
+                        <header>
+                            <div class="icon-arrow_down"></div>
+                            <h4>Relations</h4>
+                        </header>
+                        <div class="paramPartContent">
+                        </div>
+                    </article>
+
+                    <article class="paramPart">
+                        <header>
+                            <div class="icon-arrow_down"></div>
+                            <h4>Performances</h4>
+                        </header>
+                        <div class="paramPartContent">
+                        </div>
+                    </article>
+
+                    <article class="paramPart">
+                        <header>
+                            <div class="icon-arrow_down"></div>
+                            <h4>Règles, droits et conditions</h4>
+                        </header>
+                        <div class="paramPartContent">
+                        </div>
+                    </article>
+
+                    <article class="paramPart">
+                        <header>
+                            <div class="icon-arrow_down"></div>
+                            <h4>Filtres, recherches, doublons</h4>
+                        </header>
+                        <div class="paramPartContent">
+                        </div>
+                    </article>
+
+                    <article class="paramPart">
+                        <header>
+                            <div class="icon-arrow_down"></div>
+                            <h4>Traçabilité</h4>
+                        </header>
+                        <div class="paramPartContent">
+                        </div>
+                    </article>
+
+                    <article class="paramPart">
+                        <header>
+                            <div class="icon-arrow_down"></div>
+                            <h4>Raccourcis et traitements spécifiques</h4>
+                        </header>
+                        <div class="paramPartContent">
+                        </div>
+                    </article>
+
+                    <article class="paramPart">
+                        <header>
+                            <div class="icon-arrow_down"></div>
+                            <h4>Langues et paramètres régionaux</h4>
+                        </header>
+                        <div class="paramPartContent">
+                        </div>
+                    </article>
+                </div>
+               
+            </div>
+
+            <footer>
+                <ul class="hLinks">
+                  <li class="decBtn" onclick="doDisco();" title=""><span class="icon-logout"></span>Déconnexion</li>
+                </ul>
+            </footer>
+        </aside>
+
+  
+    </div>
+    <script type="text/javascript">
+
+        var headers = document.querySelectorAll(".paramPart header");
+        for (var i = 0; i < headers.length; i++) {
+            headers[i].addEventListener("click", function () {
+                var elements = this.parentElement.getElementsByClassName("paramPartContent");
+                if (elements)
+                    showHidePart(elements[0]);
+            });
+        }
+
+        document.getElementById("paramTab3").style.display = "block";
+        resizeBlockContent("paramTab3");
+
+        function showHidePart(element) {
+            var parts = document.getElementsByClassName("paramPartContent");
+            for (var i = 0; i < parts.length; i++) {
+                if (parts[i] != element) {
+                    parts[i].setAttribute("data-active", "0");
+                    parts[i].setAttribute("eactive", "0");
+                }      
+            }
+
+            if (element.getAttribute("data-active") == "1") {
+                element.setAttribute("data-active", "0");
+                element.setAttribute("eactive", "0");
+            }
+            else {
+                element.setAttribute("data-active", "1");
+                element.setAttribute("eactive", "1");
+            }
+        }
+
+        // Affichage des blocs suivant l'icône
+        function showBlock(id) {
+
+            var blocks = document.getElementsByClassName("paramBlock");
+            for (var i = 0; i < blocks.length; i++) {
+                blocks[i].style.display = "none";
+            }
+
+            var destPosition = "5px";
+            var position = id[id.length - 1];
+
+            switch (position)
+            {
+                case "1": destPosition = "20px"; break;
+                case "2": destPosition = "89px"; break;
+                case "3": destPosition = "158px"; break;
+            }
+
+            animateLeft(document.getElementById("slidingArrow"), destPosition);
+
+            var block = document.getElementById(id);
+            block.style.display = "block";
+            resizeBlockContent(id);
+        }
+
+        // Redimensionnement du bloc par rapport à la résolution
+        function resizeBlockContent(blockId) {
+            var blockHeight = window.innerHeight - 140 - 40; // on enlève la partie user + navigation + titre + bouton déconnexion
+
+            var blockContent = document.querySelector("#" + blockId + " .paramBlockContent");
+            if (blockContent) {
+                blockContent.style.display = "block";
+                blockContent.style.height = blockHeight + "px";
+            }
+        }
+
+        // Animation gauche (pour la flèche)
+        function animateLeft(obj, leftPosition) {
+            obj.style.transition = "0.5s";
+            obj.style.left = leftPosition;
+        }
+    </script>
+</body>
+</html>

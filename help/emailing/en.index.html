@@ -1,0 +1,745 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/eudoFont.css">
+    </head>
+    <body>
+        <div class="main-content">
+            <header>
+                <div class="content-header">
+                    <h2>Creating an email campaign</h2>
+                    <h3>using the Eudonet Email Builder</h3>
+                </div>
+                <div class="callout-info">
+                    <p class="title">Good practices to get the most out of the email builder</p>
+                    <ul class="content-callout-info">
+                        <li>The maximum width of an email must be between 600px and 800px.  This will ensure a better display of your email on small screens and when previewing the email in mailboxes.</li>
+                        <li>Avoid complex HTML elements and use a grid structure rather than elements with fixed or relative positions as they may not position correctly on all email providers.</li>
+                        <li>Most email systems by default block the display of images.  It is therefore necessary to provide alternative texts for images ("Alt") and avoid using a background image for the email.</li>
+                        <li>To improve the deliverability and display of the email, it is advisable not to have only one image containing all the information or to have only images without text in the email.  The ideal ratio is 60% text and 40% image.</li>
+                        <li>When designing your email use fonts that are compatible with as many email providers as possible, such as Arial, Verdana, Georgia or Times New Roman.</li>
+
+                        <li>When constructing your email avoid content that requires Flash or Javascript as it is not that well supported by all email providers and opt for animated .gif instead.</li>
+                        <li>The use of media features helps to improve visibility and accessibility on small screens and mobiles, reorganising images and texts, increasing the size of text and buttons to make them easier to read and click from a mobile.  By building your email from the blocks we offer, you automatically benefit from these media features.</li>
+                        <li>
+                            Test your email before sending your campaign:
+                            <ul class="list-text-indent">
+                                <li>Using the "Send a Test Email" function to test the display and responsiveness of the email in different mailboxes / different screens sizes as well as via a mobile device.</li>
+                                <li>You can use services like <a href="www.mail-tester.com">www.mail-tester.com</a> to obtain a rating for your email.  These services take into account several parameters such as the validity of the links present, sending information and the proportion of the images/texts.</li>
+                                <li>Test your email, selecting yourself as the only recipient of your email campaign.</li>
+                            </ul>
+                        </li>
+
+                        <li>Always test your email one last time before sending it.</li>
+                    </ul>
+                </div>
+                <div class="callout callout-danger">
+                    <p class="title">Note</p>
+                    <p>To benefit from all the email creation features, we advise that you use one of the following browsers Chrome, Firefox or Safari.</p>
+                </div>
+                <div class="callout callout-danger">
+                    <p class="title">Note</p>
+                    <p>When entering a colour in hexcodes, make sure to prefix "#" so that your colour is correctly interpreted by all email providers.</p>
+                </div>
+            </header>
+            <div class="content-body">
+                <div class="steps">
+                    <h3>Step 1: Choosing the template</h3>
+                    <div class="content-image">
+                        <img src="lib/en/WizardStepline.png">
+                    </div>
+
+                    <ul class="list-body">
+                        <h4>You can choose a template from:</h4>
+                        <li>Your templates: This list contains the emails you have created and those that other users have shared with you.</li>
+                        <li>Customisable templates: Here you will find a list of responsive templates that have been made available to you in the hope that you will find some inspiration.</li>
+                    </ul>
+                    <div class="content-image-hidden">
+                        <img src="lib/en/TemplateList.png">
+                    </div>
+					<ul class="list-body">
+                        <li>Basic template: Choose this option if you want to create a simple email or if you want to start with a blank page.</li>
+                    </ul>
+                    <div class="callout callout-danger">
+                        <p class="title">Note</p>
+                        <p>The <span class="info">"Basic template" </span> has a width of <code>680px</code> and is left-aligned and the <span class="info"> "Centered Email" </span>   model has a body width of <code>680px</code> centered.</p>
+                    </div>
+
+                    <div class="callout callout-success">
+                        <p class="title">Top Tip</p>
+                        <p>To start creating a new centered email, choose <span class="info"> "Centered Email" </span> from the list of customisable templates.</p>
+                    </div>
+                </div>
+
+                <div class="steps">
+                    <h3>Step 2: Graphic design</h3>
+                    <div class="content-image">
+                        <img src="lib/en/WizardStep2.png">
+                    </div>
+                    <div id="content-little-img" class="content-image">
+                        <div class="content-image-center">
+                            <h4>
+                                At this step, you will be able to construct your responsive email by dragging and dropping the different content blocks.
+                                These blocks are available to you in the blocks tab of the menu on the right-hand side.
+                            </h4>
+                            <div class="desc-image">
+
+                                <div class="little-img">
+                                    <img src="lib/en/BlockText.png">
+                                    <span class="title-little-img">"Text" Block</span>
+                                    <!--<span class="desc-little-img">Déposer une zone de texte éditable</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/en/BlockImage.png">
+                                    <span class="title-little-img">"Image" Block</span>
+                                    <!--<span class="desc-little-img">Déposer une image</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/en/BlockButton.png">
+                                    <span class="title-little-img">"Button" Block</span>
+                                    <!--<span class="desc-little-img">Salut les amis ce bloc sert à ecrire du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/en/BlockSeparator.png">
+                                    <span class="title-little-img">"Separator" Block</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/en/Blockarticle.png">
+                                    <span class="title-little-img">"Article" Block</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/en/Block1Column.png">
+                                    <span class="title-little-img">"1 Column" Block</span>
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/en/Block2Columns.png">
+                                    <span class="title-little-img">"2 Columns" Block</span>                                    
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/en/Block2Columns3070.png">
+                                    <span class="title-little-img">"2 Columns 30% / 70%" Block</span>                                    
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/en/BlockHeader.png">
+                                    <span class="title-little-img">"Header" Block</span>
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/en/BlockBody.png">
+                                    <span class="title-little-img">"Body" Block</span>
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/en/BlockFooter.png">
+                                    <span class="title-little-img">"Footer" Block</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-image-double">
+                        <h4 class="titleH4">The "Text" block</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <h4>You can drag and drop a "Text" block directly into the email builder so that you can then edit it.</h4>
+                                <img src="lib/en/DragDropBlock.png">
+                            </div>
+                        </div>
+                        <div class="content-image ">
+                            <div class="content-image-double-left">
+                                <h4>You can then edit its content using the layout options that appear in the bar at the top of the builder.</h4>
+                                <img src="lib/en/TextEdit.png">
+                            </div>
+                        </div>
+                        <div class="callout callout-danger inner-info">
+                            <p class="title">Note</p>
+                            <p>To modify the height of the "Text" block, click in the empty space outside the Text but in the inside of the "Text" Block. The menu on the right-hand side will then display the properties of the block, open the Dimension and margins option and you can then modify the height property.</p>
+                        </div>
+                        <div class="callout callout-danger inner-info">
+                            <p class="title">Note </p>
+                            <p>To modify the inner margins of the text block, click in the text box.  The menu on the right-hand side will then display the properties of the block, in the Dimension and margins option.  You can then modify the inner margin property.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-image-double">
+                        <h4 class="titleH4">The "Image" block</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <h4>You can drag an "Image" block directly into the email builder so that you can then edit this element of the email.</h4>
+                                <img src="lib/en/DragDropImage.png">
+                            </div>
+                        </div>
+                        <div class="content-image ">
+                            <div class="content-image-double-left">
+                                <h4>You then can double click on the default image to open the editing menu and select your image to upload.</h4>
+                                <img src="lib/NouvelElement12.png">
+                            </div>
+                        </div>
+                        <div class="callout callout-success inner-info">
+                            <p class="title">Top Tip</p>
+                            <p>An alternative text can be defined in the image settings (Double-click on the image).  It is strongly recommended to define an alternative text ("Alt") on your images, this is a brief description of the images in your email that is displayed when the images are not accessible.  Some email providers disable images by default, so the alternative text indicates the value of the image to your recipient.  This alternative text is also useful for the accessibility of your email for recipients who use screen reading software.  Also, the presence of alternative text is part of good practices for the deliverability of your email.</p>
+                        </div>
+
+                        <div class="callout callout-success inner-info">
+                            <p class="title">Top Tip</p>
+                            <p class="txtInner">You can use the button below to view the rendering of your email when the images are not accessible by the email provider.</p>
+                            <img style="max-width: 110px;" src="lib/NouvelElement17.png" alt="">
+                        </div>
+
+                        <div class="callout callout-success inner-info">
+                            <p class="title">Top Tip</p>
+                            <p class="txtInner">It is <b>strongly</b> recommended to use images that already have the dimensions you want for your email.  You can force the width and height in the image settings (Double-click on the image) but some mailboxes do not take these settings into account.</p>
+                            <img style="max-width: 110px;" src="lib/en/ImageProperties.png" alt="">
+                        </div>
+                    </div>
+
+
+
+                    <div id="bloc_bouton" class="content-image-double">
+                        <h4 class="titleH4">The "Button" block</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <div class="blocTitle-callout">
+                                    <h4>The "Button" block allows you to add a call to action button to your email.  To add this feature, you can drag a "Button" block into your email.</h4>
+                                    <div class="callout callout-danger">
+                                        <p class="title">Note</p>
+                                        <p class="txtInner">Links are defined in step 3 - Content and links.</p>
+                                    </div>
+                                </div>
+                                <img src="lib/en/DragDropButton.png">
+                            </div>
+                        </div>
+                        <div class="content-image ">
+                            <div class="content-image-double-left">
+                                <h4>A button with a default formatting is displayed.</h4>
+                                <img src="lib/en/NewButton.png">
+                            </div>
+                        </div>
+                        <div class="content-image-50">
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Change the colour of the button</h4>
+                                    <p>Select the button by clicking in the white area inside the button.  The menu on the righthand side will then display the button properties.  In the option <span class="info">"Colour and border"</span>, the option <span class="info">"Background colour"</span> will allow you to change the background colour of the button.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/en/BlockButtonBackgroundColor.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">Border radius</p>
+                                    <p>This allows you to define the curvature of the button angles.  This feature is not compatible with Outlook email.</p>
+                                </div>
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">Border</p>
+                                    <p>This allows you to define the width, style, and colour of the borders. (Note: To remove the button borders, choose "none" Style).</p>
+                                </div>
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">Change the buttons text colour</p>
+                                    <p>Click in the text box inside the button to edit its content: a layout toolbar is displayed at the top of the email and allows you to change the layout of the text.</p>
+                                </div>
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">Change the width of the button</p>
+                                    <p>Select the button by clicking in the white area inside the button, the menu on the right-hand side will then display the button properties.  Open the Dimension and margins option and this will then allow you to modify the width.</p>
+                                </div>
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">Change the height of the button</p>
+                                    <p>Select the button by clicking in the white area inside the button, the menu on the right-hand side will then display the button properties.  Open the Dimension and margin option this will then allow you to change the High and Low margin properties.</p>
+                                </div>
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">Change the buttons block height</p>
+                                    <p>Select the button by clicking in the white area inside the button, the menu on the right-hand side will then display the button properties, in the Colour and border option, these options allow you to change the appearance of the button borders.</p>
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Change the button borders</h4>
+                                    <p>Select the button by clicking in the white area inside the button, the menu on the right-hand side will then display the button properties, in the Colour and border option, these options allow you to change the appearance of the button borders.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/en/BlockButtonBorder.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="separateur" class="content-image-double">
+                        <h4 class="titleH4">The "Separator" block</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <div class="blocTitle-callout">
+                                    <h4>The "Separator" block allows you to visually divide the content of your email.</h4>
+                                </div>
+                                <img src="lib/en/DragDropSeparator.png">
+                            </div>
+                        </div>
+                        <div class="content-image-50">
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Change the height of the separator</h4>
+                                    <p>Select the separator by clicking on it, the menu on the right-hand side will then display the properties of the separator. In the Dimension and margin option, the Height option (default 5px) allows you to change the height of the separator.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/en/DimensionMargin.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Change the colour of the separator</h4>
+                                    <p>Select the separator by clicking on it, the menu on the right-hand side will then display the properties of the separator. In the colour and border option, select the background colour option this will allow you to change the background colour of the button.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/en/ColourBorder.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Change the separator margins</h4>
+                                    <p>Select the separator by clicking on it, then open the Dimension and margin option. By then going up to the HTML element with a default top margin of 5px, you can modify the top and bottom margins of this HTML element.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/en/Margin.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article" class="content-image-double">
+                        <h4 class="titleH4">The "Article" block</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <div class="blocTitle-callout">
+                                    <h4>The Article block allows you to add to your email a block consisting of an image, a title, a text box, and a button, each element can be modified as if it were a single block.</h4>
+                                </div>
+                                <img src="lib/en/DragDropArticle.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="colonnes" class="content-image-double">
+                        <h4 class="titleH4">The "Column" blocks</h4>
+                        <div class="content-image">
+                            <div class="content-image-center">
+                                <div class="desc-image">
+                                    <div class="little-img">
+                                        <img src="lib/en/Block1Column.png">
+                                        <span class="title-little-img">Block "1 Column"</span>
+                                        <span class="desc-little-img">It allows you to create a free area in your email where you can define a background colour and then drop other blocks (Image, Text, Article...) into the email.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/en/Block2Columns.png">
+                                        <span class="title-little-img">Block "2 Columns"</span>
+                                        <span class="desc-little-img">It allows you to have two areas on the same line to then drop other blocks (Image, Text, Article...) into the email.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/en/Block2Columns3070.png">
+                                        <span class="title-little-img">Block "2 Columns 30% / 70%"</span>
+                                        <span class="desc-little-img">It allows you to have two areas on the same line to then drop other blocks into with a smaller column on the left-hand side compared to the right-hand side.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="callout callout-success">
+                            <p class="title">Top Tip</p>
+                            <p class="txtInner">For "2 column" blocks if you want your elements to be vertically aligned, you need to define each element to have an identical height corresponding to the largest of the 2 elements.</p>
+                        </div>
+                    </div>
+
+                    <div id="contentBlocs" class="content-image-double">
+                        <h4 class="titleH4">The "Layout" Blocks</h4>
+                        <div class="content-image">
+                            <div class="content-image-center">
+                                <div class="desc-image">
+                                    <div class="little-img">
+                                        <img src="lib/en/BlockHeader.png">
+                                        <span class="title-little-img">"Header" Block</span>
+                                        <span class="desc-little-img">This block contains a visualisation link, to view the email in a web browser.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/en/BlockBody.png">
+                                        <span class="title-little-img">"Body" Block</span>
+                                        <span class="desc-little-img">This block contains a "Text" block that can be modified.
+</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/en/BlockFooter.png">
+                                        <span class="title-little-img">"Footer" Block</span>
+                                        <span class="desc-little-img">This block contains, on the left-hand side, the contact details to customise.  The right-hand side contains information such as web links and social networks.  Below contains the link for managing subscriptions as well as your personalised links to social networks which are to be filled in at the "Content and links" step.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="callout callout-success inner-info">
+                            <p class="title">Top Tip</p>
+                            <p class="txtInner">Select the central cell and change the "Width" parameter within the "Dimensions and margins" option to change the width of the inner block from the builder’s default setting of "680px", to the size you have set for the email width.</p>
+                            <img style="width: auto;max-width: 1280px;" src="lib/en/BodyWidth.png" alt="">
+                        </div>
+                        <div class="callout callout-success">
+                            <p class="title">Top Tip</p>
+                            <p class="txtInner">Select the background cell and change the "Background colour" parameter of the "Colour and border" option to change the background colour of this block, this allows you to have a global background colour for the email and a different colour for the footer block only.</p>
+                        </div>
+
+                        <div class="callout callout-success inner-info">
+                            <p class="title">Top Tip</p>
+                            <p class="txtInner">In the "Footer" block you can also remove a social media network, by selecting the cell and clicking on the "Delete" button.</p>
+                            <img style="width: auto;max-width: 370px;" src="lib/NouvelElement98.png" alt="">
+                            <p class="txtInner">You can also replace the proposed social media networks by double-clicking on the image to replace it and then change the name of the link.</p>
+                        </div>
+                    </div>
+
+                    <div id="bodyBackground" class="content-image-double">
+                        <h4 class="titleH4">Change the background colour of the email</h4>
+                        <div class="content-image-50">
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Selection of the background</h4>
+                                    <p>Click in the empty area around your email to select the "Body" block (its name appears in the top left corner of the email editor).</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement59.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Change the background of the mail</h4>
+                                    <p>Select the background colour in the <span class="info">"Colour and border"</span> option within the menu on the right-hand side.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/en/EmailBackground.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="autreFonctionnalites" class="content-image-double">
+                        <h4 class="titleH4">Other features</h4>
+                        <div class="content-image-first">
+                            <img src="lib/NouvelElement43.png">
+                        </div>
+                        <div class="content-image">
+                            <div class="content-image-center">
+                                <div class="desc-image">
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/1.png">
+                                        <span class="title-little-img">Display the outlines</span>
+                                        <span class="desc-little-img">Display/Hide the outlines of the HTML elements.  This outllines are displayed by default to make it easier for you to position your blocks.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/2.png">
+                                        <span class="title-little-img">Back</span>
+                                        <span class="desc-little-img">Undo the last changes made.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/3.png">
+                                        <span class="title-little-img">Restore</span>
+                                        <span class="desc-little-img">Restore the last changes made.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/4.png">
+                                        <span class="title-little-img">View / Edit / Replace</span>
+                                        <span class="desc-little-img">You can use this button to view/edit/replace the source code of your email.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/5.png">
+                                        <span class="title-little-img">Delete</span>
+                                        <span class="desc-little-img">Deletes the content of the email editor.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/6.png">
+                                        <span class="title-little-img">Open preview</span>
+                                        <span class="desc-little-img">Allows you to preview your email in full screen.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/12.png">
+                                        <span class="title-little-img">Close preview</span>
+                                        <span class="desc-little-img">This button is located at the top left of the window to return you to edit mode.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/7.png">
+                                        <span class="title-little-img">Preview without image</span>
+                                        <span class="desc-little-img">Allows you to preview the rendering of your email when the images are not accessible.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/8.png">
+                                        <span class="title-little-img">Help</span>
+                                        <span class="desc-little-img">Allows you to access this documentation.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/9.png">
+                                        <span class="title-little-img">Computer Preview</span>
+                                        <span class="desc-little-img">Allows you to preview your email in desktop mode.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/10.png">
+                                        <span class="title-little-img">Tablet Preview</span>
+                                        <span class="desc-little-img">Allows you to preview your email in tablet mode.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/11.png">
+                                        <span class="title-little-img">Mobile preview</span>
+                                        <span class="desc-little-img">Allows you to preview your email in mobile mode.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="callout callout-danger">
+                            <p class="title">Note</p>
+                            <p class="txtInner">CSS properties on the body (body {}) are not supported by the email editor.</p>
+                        </div>
+
+                        <div class="callout callout-danger">
+                            <p class="title">Note</p>
+                            <p class="txtInner">
+                                 The CSS present in the source of your email is passed inline.  Some mailboxes do not take into account the CSS code defined in the &lt;style&gt; tags of your code, that is why Eudonet X transforms your CSS code into inline to make the display of your code more accurate in the different mailboxes and emailing providers.
+                            </p>
+                        </div>
+
+                        <div class="callout callout-danger">
+                            <p class="title">Note</p>
+                            <p class="txtInner">To modify the CSS style sheet, you can open the CSS code of your email via the "CSS" button in the "Contents and links" step.</p>
+                        </div>
+                    </div>
+
+
+                    <div id="selectHTML" class="content-image-double">
+                        <h4 class="titleH4">The options available on a selected HTML element</h4>
+                        <div class="content-image-first">
+                            <img src="lib/grapesJS/13.png">
+                        </div>
+                        <div class="content-image">
+                            <div class="content-image-center">
+                                <div class="desc-image">
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/14.png">
+                                        <span class="title-little-img">Hierarchy of elements</span>
+                                        <span class="desc-little-img">The hierarchy of elements goes up to the hierarchically superior HTML element.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/15.png">
+                                        <span class="title-little-img">Move</span>
+                                        <span class="desc-little-img">Moves the selected HTML element and its content (Warning, you must go back to the correct level of the HTML structure to move the table and not just the cell or line).</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/16.png">
+                                        <span class="title-little-img">Duplicate</span>
+                                        <span class="desc-little-img">Duplicates the selected HTML element and its content (Be careful, you must go back to the correct level of the HTML structure to duplicate the table and not just the cell or line).</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/17.png">
+                                        <span class="title-little-img">Delete</span>
+                                        <span class="desc-little-img">Deletes the selected HTML element and its content (Warning, you must go back to the correct level of the HTML structure to delete the table and not just the cell or line).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="traitement" class="content-image-double">
+                        <h4 class="titleH4">Other Options</h4>
+                        <div class="content-image-50">
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Send a test email</h4>
+                                    <p>This option is available in step "2: Graphic design" and step "3: Content and links".  It allows you to send a test email to your email address or to an email address of your choice to test the rendering of your email on different email providers and devices.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/en/SendTestEmail.png" alt="">
+                                </div>
+                                <div class="callout callout-danger">
+                                    <p class="title">Note</p>
+                                    <p class="txtInner">The view and unsubscribe/subscription management links are not functional in these test emails.</p>
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Save the email as a template</h4>
+                                    <p>This option is available in step "2: Graphic design" and step "3: Content and links".  It allows you to save the email you are constructing or modifying as a template.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/en/SaveTemplate.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="article" class="content-image-double">
+                        <h4 class="titleH4">Colour selection under Firefox</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <div class="blocTitle-callout">
+                                    <h4>Under Firefox, the colour selection window is set by default with an opacity of 0%.  For the colour to be displayed, move the transparency slider to the right.</h4>
+                                </div>
+                                <img src="lib/NouvelElement30.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="steps_3" class="steps">
+                    <h3>Step 3: Content and links</h3>
+                    <div class="content-image">
+                        <img src="lib/en/WizardStep3.png">
+                    </div>
+
+                    <ul class="list-body">
+                        <h4>This step allows you to use all the layout features within the builder to edit your email text, insert merge fields and define redirect links.</h4>
+                    </ul>
+                    <div class="content-image">
+                        <img src="lib/en/CkeToolbar.png">
+                    </div>
+                    <div class="callout callout-danger inner-info steps-3-callout">
+                        <p class="title">Note</p>
+                        <p class="txtInner">Inserting tables or images outside the graphic creation stage is not recommended because it no longer ensures the responsive design of the email you are constructing.</p>
+                        <img class="firstImg" src="lib/NouvelElement80.png" alt="">
+                        <img src="lib/NouvelElement81.png" alt="">
+                    </div>
+
+                    <div id="liens" class="content-image-double">
+                        <h4 class="titleH4">The links</h4>
+                        <div class="content-image-first">
+                            <img src="lib/NouvelElement101.jpg">
+                        </div>
+                        <div class="content-image">
+                            <div class="content-image-center">
+                                <h4>Before selecting one of these options, select the text on which the link will be placed.</h4>
+                                <div class="desc-image">
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/19.png">
+                                        <span class="title-little-img">Link to an attachment</span>
+                                        <span class="desc-little-img">This function allows you to upload an attachment from your computer to the server and place a download link in the email.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/20.png">
+                                        <span class="title-little-img">Link to a URL</span>
+                                        <span class="desc-little-img">This option allows you to place a link to an external URL in the email.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/21.png">
+                                        <span class="title-little-img">Unsubscribe link & subscription management</span>
+                                        <span class="desc-little-img">This option allows you to place a link that will allow the recipient to unsubscribe or manage their subscriptions according to the unsubscribe management mode. (Note: this link is not functional when sending test emails)</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/22.png">
+                                        <span class="title-little-img">Viewing link</span>
+                                        <span class="desc-little-img">This option allows you to place a link to open the email in a browser.  (Note: This link is not functional when sending test emails)</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/23.png">
+                                        <span class="title-little-img">Link to a form</span>
+                                        <span class="desc-little-img">This option allows you to place a link to a previously created Eudonet form.  (Note: This link is not functional when sending test emails)</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/NouvelElement102.jpg">
+                                        <span class="title-little-img">CSS display button</span>
+                                        <span class="desc-little-img">This option allows you to modify the style sheet.</span>
+                                    </div>
+                                    <div class="callout callout-success">
+                                        <p class="title">Top Tip</p>
+                                        <p class="txtInner">Blocks containing text (Blocks "Text", "Article", "Header"...) do not have a predefined font, the default font of the email is defined in the .css style sheet and can be modified in the step "Content and links" via the CSS display button.</p>
+                                        <br><img style="width:auto;max-width: 500px;" src="lib/NouvelElement104.png" alt="">
+                                    </div>
+
+                                    <div class="callout callout-danger">
+                                        <p class="title">Note</p>
+                                        <p class="txtInner">
+                                            This style sheet will be included in the &lt;HEAD&gt; tag of your email.
+                                        </p>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="traitement" class="content-image-double">
+                        <h4 class="titleH4">Link tracking</h4>
+                        <div class="content-image-50">
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Link</h4>
+                                    <p>When you place a link in your email, you can set up these tracking options.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/en/Tracking.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Tracking options</h4>
+                                    <ul>
+                                        <li>Disable tracking link: This option allows you not to track click statistics on this link.</li>
+                                        <li>Link name: Name the link to improve its accessibility and make it easier to find the associated statistics.</li>
+                                        <li>Link field: The "Link field" option allows you to define the field of the Target/Guest/Recipient form that will be updated when the email recipient clicks on that link.  Two types of fields are available:
+                                            <ul>
+                                                <li>Checkbox: The checkbox from the first click on the link.</li>
+                                                <li>Numerical: The value of the numerical field is incremented by 1 with each click.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--<div class="callout callout-danger">
+                                    <p class="title">Remarque</p>
+                                    <p class="txtInner"> </p>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="steps_4" class="steps">
+                    <div class="content-all">
+                        <h3>Step 4: Sending the email</h3>
+                        <div class="content-image">
+                            <img src="lib/en/WizardStep4.png">
+                        </div>
+                        <ul class="list-body">
+                            <h4>At this stage, you can:</h4>
+                            <li>Give a description of your emailing campaign.</li>
+                            <li>Count the number of recipients.</li>
+                            <li>Define the expiry and purge date of track links.</li>
+                            <li>Define the immediate or scheduled send options.</li>
+                            <li>Choose to duplicate search the sending on email addresses.</li>
+                        </ul>
+                    </div>
+                    <div class="callout callout-info">
+                        <p class="title">Click send and that is it the campaign is now sent.</p>
+                        <p class="txtInner">That's it, your campaign is sent! You can analyse the statistics of your campaign in the "E-mail Campaigns" tab within Eudonet.  This will allow you to follow the clicks on the tracking’s links and the answers to the Eudonet forms on the Recipients/Target/Guest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

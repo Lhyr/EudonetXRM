@@ -1,0 +1,32 @@
+{
+  "usermsg": {
+    "num": 33,
+    "url": [
+      {
+
+        "url": "https://fr.eudonet.com/version/eudonet-x/11/Pop-up/Nouveautes-Utilisateurs-FR.html",
+        "lang": "LANG_00"
+
+      }
+      ,
+      {
+        "url": "https://fr.eudonet.com/version/eudonet-x/11/Pop-up/Nouveautes-Utilisateurs-EN.html",
+        "lang": "LANG_01"
+
+      }
+    ]
+  },
+  "adminmsg": {
+    "num": 33,
+    "url": [
+      {
+        "url": "https://fr.eudonet.com/version/eudonet-x/11/Pop-up/Nouveautes-Administrateurs-FR.html",
+        "lang": "LANG_00"
+      },
+      {
+        "url": "https://fr.eudonet.com/version/eudonet-x/11/Pop-up/Nouveautes-Administrateurs-EN.html",
+        "lang": "LANG_01"
+      }
+    ]
+  }
+}

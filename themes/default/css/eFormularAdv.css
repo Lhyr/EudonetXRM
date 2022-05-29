@@ -1,0 +1,221 @@
+﻿.eudonet-extended-btn {
+    position: relative !important;
+}
+
+.eudonet-eudonet-phone-input > input, .email > input {
+    margin-bottom: 0px !important;
+}
+
+.eudonet-eudonet-email-input > input {
+    margin-bottom: 0px !important;
+}
+
+.eudonet-eudonet-checkbox-input > div {
+    border: 0;
+    width: auto !important;
+}
+
+
+.required {
+    color: red
+}
+
+.eudonet-extended-btn {
+    height: auto !important;
+}
+
+#g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -78px 0 0 0 !important;
+    width: 302px !important;
+    height: 76px !important;
+    z-index: -999999;
+    opacity: 0;
+}
+
+.eudonet-extended-btn > ul > li > button, .eudonet-extended-btn > ul > li > div > button {
+    display: flex;
+    margin: auto !important;
+    margin-top: 10px !important;
+}
+
+.v-text-field {
+    padding-top: 4px !important;
+    margin-top: 4px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.struct {
+    flex-wrap: unset !important;
+    flex: unset !important;
+}
+
+@media only screen and (max-width: 768px) {
+    div.row {
+        flex-wrap: wrap !important;
+    }
+}
+
+button.eudonet-extended-label {
+    font-size: .875rem;
+}
+
+html, body, .bodyFormular {
+    overflow-x: unset;
+    overflow-y: unset;
+    overflow: unset !important;
+}
+
+.TitleModal {
+    cursor: unset !important;
+}
+
+.eudonet-eudonet-checkbox-input {
+    padding-bottom: 10px;
+}
+
+
+#FormPanel {
+    margin: 0px;
+}
+
+
+.advformeudotm {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+#FormCopyrightAdv > .eudolink {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.advformeudo {
+    color: #bb1515 !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+#reCaptchContainer > div > div > iframe {
+    height: 90px !important;
+}
+
+.v-select__selections{
+    min-height:32px!important;
+}
+
+    .v-select__selections .v-chip{
+        height:20px!important;
+    }
+
+.btnWorldlinePayment, #g-recaptcha-error {
+    display: block !important;
+    text-align: center;
+    margin: auto;
+}
+
+.reCaptchContainer> div:first-child {
+    margin: auto;
+}
+
+.paddingModal {
+    padding: 10px 24px 10px 24px !important;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 30px;
+    font-size: 17px;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%); 
+}
+
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 5.6s;
+        animation: fadein 0.5s, fadeout 0.5s 5.6s;
+    }
+
+    #snackbar.messageSuccess {
+        background-color: #4CAF50;
+    }
+
+    #snackbar.messageError {
+        background-color: #FF5252;
+    }
+
+    #snackbar #messageIcon {
+        margin-right: 15px;
+    }
+
+    #snackbar #messageCloseIcon {
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    @-webkit-keyframes fadein {
+        from {
+        top: 0;
+        opacity: 0;
+    }
+
+    to {
+        top: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+
+    to {
+        top: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        top: 30px;
+        opacity: 1;
+    }
+
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        top: 30px;
+        opacity: 1;
+    }
+
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+.conflictTr {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,94 @@
+﻿.detailContent .closeSep .separator-field .fas.fa-chevron-down,
+#box-step .closeSep .separator-field .fas.fa-chevron-down,
+#headFiche .closeSep .separator-field .fas.fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.eudo-modal .closeSep .separator-field .fas.fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.fileInput[tp="16"]:not([fileid=""]) .form-group .separator-field span {
+    padding: 0 10px 0 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc(100% - 30px);
+    display: inherit;
+}
+
+    .fileInput[tp="16"]:not([fileid=""]) .form-group .separator-field span + i {
+        top: -7px;
+        position: relative;
+    }
+
+
+#mainContentWrap .detailContent .separator-field,
+#mainContentWrap .detailContent .separator-field:hover {
+    border-bottom: 0px solid var(--detail-label);
+    display: inline-block;
+}
+
+    #mainContentWrap .detailContent .separator-field,
+    #mainContentWrap #box-step .separator-field,
+    #mainContentWrap #headFiche .separator-field,
+    #mainContentWrap .detailContent .separator-field:hover,
+    #mainContentWrap #box-step .separator-field:hover,
+    #mainContentWrap #headFiche .separator-field:hover {
+        border-bottom: 1px solid var(--detail-label);
+    }
+
+
+.detailContent .separator-field span:first-of-type,
+#box-step .separator-field span:first-of-type,
+#headFiche .separator-field span:first-of-type {
+    font-family: var(--ffamilyBold);
+    padding: 0px 0 0px 0px;
+    color: var(--detail-label);
+    font-size: var(--size-17-5);
+    /*font-style: initial;*/
+    text-decoration: none;
+}
+
+.detailContent .separator-field .fas.fa-chevron-down,
+#box-step .separator-field .fas.fa-chevron-down,
+#headFiche .separator-field .fas.fa-chevron-down {
+    transform: rotate(0);
+    transition: 250ms all;
+    color: var(--detail-label);
+}
+
+.eudo-modal .separator-field span:first-of-type {
+    font-family: var(--ffamilyBold);
+    padding: 0px 0 0px 0px;
+    color: var(--detail-label) !important;
+    font-size: var(--size-17-5);
+    font-style: initial;
+    text-decoration: none;
+}
+
+.eudo-modal .separator-field .fas.fa-chevron-down {
+    transform: rotate(0);
+    transition: 250ms all;
+    color: var(--detail-label) !important;
+}
+
+.form-group.Separator {
+    display:flex;
+    overflow:hidden;
+}
+
+.isReloadUi{
+    width:100%;
+}
+
+/* Titre séparateur v2 */
+.fileInput[tp="16"]:not([fileid=""]) {
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+.fileInput[tp="16"]:not([fileid=""]) .form-group {
+    margin: 0 0 0 0;
+    padding: 0 0px 0 25px;
+    border-top: 1px solid #dadada;
+}

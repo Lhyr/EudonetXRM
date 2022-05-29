@@ -1,0 +1,59 @@
+﻿* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 8pt;
+    color: #636363;
+}
+#content {
+    overflow: hidden;
+}
+form {
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+}
+#leftPart {
+    float: left;
+    width: 25%;
+    padding: 15px 10px;
+}
+#leftPart p {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 8pt;
+    color: black;
+    font-weight: bold;
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+    font-size: 9pt;
+}
+#geolocMap {
+    float: right;
+    width: 70%;
+    height: 600px;
+}
+.field {
+    margin-bottom: 10px;
+}
+label {
+    display: inline-block;
+    width: 80px;
+    margin-right: 7px;
+    text-align: right;
+}
+input[type='text'] {
+    font-family: Verdana, 'Trebuchet MS', Arial, sans-serif;
+    height: 17px;
+    width: 120px;
+    font-size: 8pt;
+    border: none;
+    border-bottom: 1px dashed #b6b6b6;
+    outline: none;
+}
+input[type='text']:focus, input[type='text']:active {
+
+}
+input[readonly] {
+    background-color: #F0F0F0;
+}

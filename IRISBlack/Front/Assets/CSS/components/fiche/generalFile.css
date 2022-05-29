@@ -1,0 +1,162 @@
+﻿/* begin - .nav-tabs-custom */
+.nav-tabs-custom > .tab-content {
+    background: var(--box-body-color);
+}
+
+.nav-tabs-custom > .tab-content div.bkm-tab {
+    padding: 0 10px;
+}
+
+/* .nav-tabs-custom .nav-tabs > li.active > a,
+.nav-tabs-custom .nav-tabs > li.active:hover > a {
+    background-color: var(--box-body-color);
+} */
+
+/* .skin-red .nav-tabs-custom .nav-tabs > li.active > a:focus {
+    padding: 2px 2px 4px 4px;
+} */
+
+.nav-tabs-custom .nav-tabs {
+    font-family: var(--ffamily);
+    width: 100% !important;
+    border: none;
+    padding: 0;
+}
+
+/* #grid-container .nav-tabs-custom .nav-tabs > li.active > a:visited,
+#grid-container .nav-tabs-custom .nav-tabs > li.active > a:hover {
+    background-color: var(--box-body-color) !important;
+} */
+
+.nav-tabs-custom {
+    margin-bottom: 0;
+}
+
+#MainWrapper .nav-tabs-custom .nav-tabs > li:not(.dropdown) {
+    margin: 0;
+    border: none;
+    padding: var(--size-11) var(--size-10);
+}
+
+#MainWrapper .nav-tabs-custom .nav-tabs > li.active:not(.dropdown):not(.pinnedFileBtnDrawer)  a,
+#MainWrapper li.active:not(.dropdown) a.nav-tab--btn {
+    padding: 0.1875rem var(--size-20) !important;
+    margin: 0;
+    border: solid 1px var(--main-color-hover);
+    background: var(--main-color);
+    color: var(--light-font-color) !important;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+    #MainWrapper .nav-tabs-custom .nav-tabs > li.active:not(.dropdown):not(.pinnedFileBtnDrawer) a:hover,
+    .skin-red .nav-tabs-custom .nav-tabs > li.active:not(.dropdown):not(.pinnedFileBtnDrawer) > a:focus,
+    .skin-red .nav-tabs-custom .nav-tabs > li.active:not(.dropdown):not(.pinnedFileBtnDrawer) > a:visited,
+    #MainWrapper li.active:not(.dropdown):not(.pinnedFileBtnDrawer) a.nav-tab--btn {
+        background-color: var(--main-color-hover) !important;
+    }
+
+
+#MainWrapper .nav-tabs-custom .nav-tabs > li:not(.dropdown) {
+    margin: 0;
+    border: none;
+    margin-bottom: 0px !important;
+    white-space: nowrap;
+}
+
+#MainWrapper .nav-tabs-custom .nav-tabs > li:not(.dropdown):not(.pinnedFileBtnDrawer)  a,
+#MainWrapper a.nav-tab--btn {
+    margin: 0;
+    border: none;
+    background: transparent;
+    color: var(--main-color) !important;
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: var(--ffamilyBold);
+    padding: 0.1875rem var(--size-20) !important;
+    border-radius: 30px;
+    border: solid 1px #dadada;
+    display: inline-block;
+}
+
+#MainWrapper .nav-tabs-custom .nav-tabs > li:not(.dropdown):not(.pinnedFileBtnDrawer) a:hover {
+    border-color: #bb1515;
+    transition: border .3s ease-in;
+}
+
+#MainWrapper .nav-tabs-custom div.dropdown-content {
+    position: relative;
+    left: -80px;
+}
+
+#MainWrapper .LocalEN .nav-tabs-custom div.dropdown-content,
+#MainWrapper .LocalNL .nav-tabs-custom div.dropdown-content,
+#MainWrapper .LocalDE .nav-tabs-custom div.dropdown-content {
+    position: relative;
+    left: -105px;
+}
+
+#MainWrapper .LocalIT .nav-tabs-custom div.dropdown-content {
+    position: relative;
+    left: -98px;
+}
+
+#MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown {
+    margin: 0;
+    border: none;
+    padding: 0;
+    margin-bottom: 0px !important;
+}
+
+#MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown > a {
+    width: var(--size-35);
+    margin: 0;
+    border: none;
+    background: transparent;
+    color: var(--light-font-color) !important;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+div.fs_8pt #MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown > a {
+    padding: var(--size-11) 0.4375rem !important;
+}
+
+div.fs_10pt #MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown > a,
+div.fs_12pt #MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown > a,
+div.fs_14pt #MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown > a,
+div.fs_16pt #MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown > a,
+div.fs_18pt #MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown > a {
+    padding: var(--size-14) 0.4375rem !important;
+}
+
+#MainWrapper .nav-tabs-custom .nav-tabs > li.minWidthSignet:not(.active) ~ li.dropdown > a {
+    color: var(--main-color) !important;
+}
+
+#MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown .dropdown-content a {
+    padding: 11.8px 16px;
+    cursor: pointer;
+}
+
+    #MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown .dropdown-content a.item-bookmark {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #MainWrapper .nav-tabs-custom .nav-tabs > li.dropdown .dropdown-content a:hover {
+        text-decoration: none;
+    }
+
+.nav-tabs-custom > .tab-content {
+    background: #fbfbfb;
+}
+/* end - .nav-tabs-custom */
+
+/* begin - .tab-pane */
+.tab-pane.bkm-tab .file-tab {
+    padding-bottom: 20px;
+}
+
+/* end - .tab-pane */

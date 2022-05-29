@@ -1,0 +1,1919 @@
+* { font-size: 8pt; font-family: Trebuchet MS;}
+body { background-color: #ffffff; padding: 0;margin: 0;  }
+/* body { background-image: url(../images/motif.gif); padding: 0;margin: 0;  } */
+img { border: none; }
+table { padding: 0;margin: 0; }
+a {	text-decoration:none;	color:#333333; }
+a:hover  { 	text-decoration:underline; 	color:#333333; }
+textarea { border:1px solid #666666; }
+textarea {resize:none}
+/* Logo */
+#logo 
+{ 
+	position:absolute; 
+	top:2px; 
+	left:2px; 
+	text-align:center;
+}
+
+/* Accueil - Bas de page */
+.homebottomleft
+{
+}
+.homebottom
+
+{
+	margin:5px;
+	border:1px solid #CCCCCC;	
+	padding: 5px;
+    white-space:nowrap;
+}
+.homebottomright
+{
+}
+
+/* Haut du mode Liste et Planning */
+.pagecount
+{
+    height:25px;
+    text-align:right;
+	font-weight:bold;
+}	
+.listindex
+{
+	width:100%;
+	border-top: 1px solid #aaaaaa;
+	background-color: #dddddd;
+}	
+.listindex td
+{
+    text-align:center;
+	font-weight:bold;
+}	
+.listfilterinfo
+{
+	white-space:nowrap;
+	font-weight:bold;
+	cursor:pointer;	
+}
+.planningmode
+{
+	color:#666666;
+}
+
+/* Mode Liste */
+.columnheader
+{
+	font-weight:bold;
+	color:#666666;
+	padding-left:3px;
+	height:18px;
+}
+.listsortbutton
+{
+	margin-left: 1px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+.listfilterbutton
+{
+	margin-left: 2px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+.columnheaderdown
+{
+	background-color: #BB1515;
+	filter : alpha(opacity=40); 
+    -moz-opacity : 0.4; 
+    opacity : 0.4;
+}
+
+.columnheaderover
+{
+	cursor: move;
+}
+
+.ellipsis
+{
+   overflow-x:hidden;
+   text-overflow:ellipsis;
+   overflow:hidden;
+   white-space:nowrap;
+}
+.columnresizeover
+{
+	background-color: #003399;
+}
+.columnresizeout
+{
+	background-color: #DFDFDE;
+}
+
+table.mainlist
+{
+	margin-left:3px;
+}
+tr.row
+{
+}
+tr.alternaterow
+{
+	background-color: #F8F8F8;
+}
+tr.selectedrow
+{
+	background-color:#ccc7ce;
+}
+tr.markedrow
+{
+	background-color:#EBBCBC;
+}
+td.listcell
+{
+    height: 20px;
+    padding-right: 1px;
+    padding-left: 3px;
+	white-space:nowrap;
+}
+td.listcell.mainlistcell
+{
+    border-bottom: #cccccc 1px solid;
+}
+td.listcell.mainlistcell.mainlistcellrightalign
+{
+    text-align:right;
+    padding-right:5px
+}
+td.listcell.listcellrightalign
+{
+    text-align:right;
+    padding-right:40px
+}
+td.listcell.listcellimage /* td de la liste */
+{
+	width:20px;
+}
+td.listcell.listcellimageattachment /* td de l'entête de ligne à 2 icones possibles */
+{
+	width:40px;
+}
+td.listcell.listcellimageattachmentschedule /* td de l'entête de ligne à 3 icones possibles */
+{
+	width:58px;
+}
+
+/*MAXI SIGNET******/
+
+td.listcellz
+{
+    height: 82px;
+    padding-right: 1px;
+    padding-left: 3px;
+	white-space:normal;
+}
+
+td.listcellz.mainlistcell
+{
+    border-bottom: #cccccc 1px solid;
+}
+td.listcellz.mainlistcell.mainlistcellrightalign
+{
+    text-align:right;
+    padding-right:5px
+}
+td.listcellz.listcellrightalign
+{
+    text-align:right;
+    padding-right:40px
+}
+td.listcellz.listcellimage /* td de la liste */
+{
+	width:20px;
+}
+td.listcellz.listcellimageattachment /* td de l'entête de ligne à 2 icones possibles */
+{
+	width:40px;
+}
+td.listcellz.listcellimageattachmentschedule /* td de l'entête de ligne à 3 icones possibles */
+{
+	width:58px;
+}/******************/
+.lnkcat /* lien sur des catalogues (popup, menu) */
+{
+	text-decoration: underline; 
+}
+.lnkcat:hover
+{
+	text-decoration: underline; 
+}
+
+.LNK
+{
+	text-decoration: underline; 
+}
+a.LNKPLG
+{
+	text-decoration: underline;
+	color: #0000ff;
+}
+a.LNKPLG:hover
+{
+	color: #bb1515; 
+}
+
+.pagernav
+{
+	color:#000001;
+}
+.pagernav.currentpage
+{
+	font-weight:bold;
+}
+
+/* Détail en mode fiche */
+
+#FileDetailBody
+{
+	padding: 5px
+}
+.detailline /* ligne entre le haut de la fiche et les signets */
+{
+	height:32px;
+	vertical-align: bottom;
+}
+.detailline hr 
+{
+	height:1px;
+	border-width:0px 0px 0px 0px;
+	outline-width:0px;
+	color:#bb1515;					/* pour IE */
+	background-color:#bb1515;		/* pour FF */
+}
+table.detailbutton /* Bouton de signets entre le haut de la fiche et les signets */
+{
+	margin-top: 8px;
+	margin-bottom: 12px;
+}
+.detailbutton img
+{
+	padding-left:5px;
+	margin-bottom: 10px;
+}
+.bkmmiddle /* Signet */
+{
+    width: 40px; /* MAB V7 - 20080709 - taille adaptée au nowrap utilisé sur une cellule td */
+    height: 28px;
+    padding-right: 3px;
+    padding-left: 5px;
+	cursor:pointer;
+	background-position:left center;
+	background-image:url(../images/main/bkmmid.gif);
+	background-repeat:repeat-x;
+	color:#ffffff;
+	font-weight:bold
+}
+.bkmleft
+{
+    padding-left: 19px;
+    padding-top: 20px;
+	background-position:center left;
+	background-image:url(../images/main/bkmleft.gif);
+	background-repeat:no-repeat;
+}
+.bkmright
+{
+    padding-left: 28px;
+    padding-top: 23px;
+	background-position:center left;
+	background-image:url(../images/main/bkmright.gif);
+	background-repeat:no-repeat;
+}
+.bkmbutton /* bouton dans le signet (ajouter,...) */
+{
+	padding-right:5px
+}
+.bkmline /* ligne entre le signet et les infos du nombre de fiche */
+{
+	background-image:url(../images/main/bkmline.gif);
+	white-space: nowrap;
+	background-repeat:repeat-x;
+	padding-left:3px;
+	width:100%;
+}
+.bkminfo /* nombre de fiche du signet */
+{
+	color:#000001;
+	font-weight:bold;
+	white-space: nowrap;
+	text-align: right;
+}
+.memo
+{
+	background-color: #ffffff;
+	border:1px solid #666666;
+}
+.memo.memoreadonly
+{
+	background-color: #dddddd;
+}
+.wait
+{
+	border: 1px solid #BB1515;
+	width: 100px;
+	height: 100px;
+	background-color: #FFFFFF;
+	align: middle;
+	valign: middle;
+	z-index: 99;
+}
+.ihn
+{
+    color: #BB1515;
+}
+/* FraBottom - Menu du bas (à propos de...) */
+#FraBottomBody
+{ 
+	background-color: #ffffff;
+	margin-left: 17px;
+	margin-right: 17px;
+}
+#FraBottomBody table
+{ 
+	border-top: 1px #999999 solid;
+}
+#FraBottomBody *
+{ 
+	font-size: 10px;
+}
+
+/* FraRight - Bandeau de droite */
+#FraRightBody 
+{ 
+	background-color: #ffffff;
+	background-image:url(../images/main/menuright.jpg);
+	background-repeat:repeat-y;	
+}
+#FraRightTopCorner
+{
+}
+
+/* FraLeft - Menu Bandeau de gauche */
+#FraLeftBody 
+{ 
+	/* border-left:16px solid #ffffff; */
+	background-image:url(../images/main/menuleft2.gif);
+	background-position:left top;
+	background-repeat: repeat-x;
+	border-right:1px solid #cccccc;
+}
+#FraLeftTopBorder 
+{ 
+}
+.buttonlabel /*Légende en dessous de chaque bouton*/
+{
+	color:#666666;
+	font-size:10px;
+	margin-top: 0px;
+}
+.searchbutton 
+{
+	position:absolute;
+	left:10px;
+	top:35px;
+}
+.filterbutton 
+{
+	position:absolute; 
+	left:40px;
+	top:35px;
+}
+.unfilterbutton 
+{
+	position:absolute;
+	left:74px;
+	top:35px;
+}
+.printbutton 
+{
+	position:absolute; 
+	left:108px; 
+	top:35px;
+	
+}
+.adminbutton
+{
+	position:absolute;
+	left:53px;
+	top:35px;
+}
+.optionbutton
+{
+	position:absolute;
+	left:93px;
+	top:35px;
+}
+.prevlistbutton
+{   
+	position:absolute;
+	left:38px;
+	cursor: pointer;
+}
+.nextlistbutton
+{   
+    position:absolute;
+    left:58px;
+	cursor: pointer;
+}
+.prevlistbutton.prevlistbuttondis
+{   
+	cursor: default;
+}
+.nextlistbutton.nextlistbuttondis
+{   
+	cursor: default;
+}
+.pagerinfo
+{
+	position:absolute;
+	top:23px;
+	left:0px;
+	width:100%;
+	text-align:center;
+	font-size:7pt;
+}
+
+/* FraTop - Barre de navigation */
+#FraTopBody 
+{ 
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-color: white;
+}
+.tabbottom
+{
+	position:absolute; 
+	top:52px; 
+	width:100%; 
+	height:11px; 
+	background-color: #ffffff;
+	border-top: 1px solid #bb1515;
+/* 	background-position:left bottom;
+	background-image:url(../images/main/tabbottom.png);
+	background-repeat:repeat-x; */
+}
+.tabcorner
+{
+	position: absolute; 
+	top: 52px;
+	right: 12px;
+	height: 14px; 
+	width: 25px;
+	background-color: transparent;
+	background-position: left top;
+	background-image: url(../images/main/tabcorner.png);
+	background-repeat: no-repeat;
+}
+.tab
+{
+	width: 103px;
+	height: 43px;
+	font-weight: none;
+	font-family: arial;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	background-image: url(../images/main/tab_png.png); /*tab.gig*/
+	background-position: bottom left; 
+	background-repeat: no-repeat;
+}
+.tab_v7
+{
+	height: 40px;
+	font-weight: none;
+	font-family: arial;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	padding: 10px;
+	background: url(../images/main/tabm.gif) repeat-x 0 0; /*tab.gig*/
+}
+.tabcontent
+{
+	position:absolute;
+	left:10px;
+	top:-3px;
+}
+.tabcontent_v7
+{
+	position:absolute;
+	left:142px;
+	top:17px;
+}
+.tabsep
+{
+	height: 40px;
+	width: 1px;
+	font-family: arial;
+	font-size: 1px;
+	background: url(../images/main/tabsep.gif) repeat-x 0 0; /*tab.gig*/
+}
+.tabsepsel
+{
+	height: 40px;
+	width: 1px;
+	font-family: arial;
+	font-size: 1px;
+	background: url(../images/main/tabm.gif) repeat-x 0 0; /*tab.gig*/
+}
+.tabsepmain
+{
+	height: 40px;
+	width: 1px;
+	font-family: arial;
+	font-size: 1px;
+	background: url(../images/main/tabm.gif) repeat-x 0 0; /*tab.gig*/
+}
+.tabbegin
+{
+	height: 40px;
+	width: 8px;
+	font-family: arial;
+	font-size: 1px;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	background: url(../images/main/tabl.gif) no-repeat 0 0; /*tab.gig*/
+}
+.tabbeginsel
+{
+	height: 40px;
+	width: 8px;
+	font-family: arial;
+	font-size: 1px;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	background: url(../images/main/tablsel.gif) no-repeat 0 0; /*tab.gig*/
+}
+.tabendsel
+{
+	height: 40px;
+	width: 8px;
+	font-family: arial;
+	font-size: 1px;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	background: url(../images/main/tabrsel.gif) no-repeat 0 0; /*tab.gig*/
+}
+.tabend
+{
+	height: 40px;
+	width: 8px;
+	font-family: arial;
+	font-size: 1px;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	background: url(../images/main/tabr.gif) no-repeat 0 0; /*tab.gig*/
+}
+.tab.tabsel
+{
+	/* padding-top: 4px; */
+	cursor: default;
+    color: #ffffff;
+	font-family: arial;
+	font-weight: bold;
+	background-image: url(../images/main/tabsel_png.png); /*tabsel.gif*/
+}
+.tab_v7.tabsel_v7
+{
+	/* padding-top: 4px; */
+	cursor: default;
+    color: #FFFFFF;
+	font-family: arial;
+	background: url(../images/main/tabselm.gif) repeat-x 0 0; /*tabsel.gif*/
+}
+.tab.home
+{
+    width: 111px;
+	font-family: arial;
+	background-image: url(../images/main/tabhome_png.png); /*tabhome.gif*/
+}
+.tab.home.homesel
+{
+	/* padding-top: 4px; */
+	cursor: default;
+    color: #ffffff;
+	font-family: arial;
+	font-weight: bold;
+	background-image: url(../images/main/tabhomesel_png.png); /*tabhomesel.gif*/
+}
+.tab_v7.home_v7
+{
+	font-family: arial;
+	background-image: url(../images/main/tabm.gif); /*tabhome.gif*/
+}
+.tab_v7.home_v7.homesel_v7
+{
+	/* padding-top: 4px; */
+	cursor: default;
+    color: #ffffff;
+	font-family: arial;
+	font-weight: bold;
+	background: url(../images/main/tabselm.gif) repeat-x 0 0; /*tabsel.gif*/
+}
+.tabswitcherpanel /*Panel Suivant - Precedent*/
+{
+	color: #bb1515;
+	position:absolute; 
+	top:0px; 
+	right:20px; 
+	height:20px; 
+	text-align:center;
+}
+.tabswitcher /*Libelle Suivant Precedent*/
+{
+	color: #bb1515;
+	font-weight: bold;
+}
+
+/* Entête mode fiche */
+
+#FileHeaderBody
+{
+	padding: 5px;
+}
+.fileinfo
+{
+	background-position: top left; 
+	background-repeat: no-repeat;
+	height: 20px;
+	padding-left: 20px;
+	padding-top: 3px;
+	color: #bb1515;
+	white-space:nowrap;
+	cursor:pointer;
+	text-decoration:underline;
+	font-weight: bold;
+}
+.ihb_old
+{
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    color: #bb1515;
+    height: 22px;
+    text-align: center
+}
+.ihb
+{
+    font-weight: bold;
+    color: #bb1515;
+    height: 22px;
+}
+.ihbl
+{
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-weight: 600;
+    padding-bottom: 2px;
+    color: #494848;
+    height: 22px;
+    text-align: left
+}
+.iz
+{
+    width: 100%;	
+}
+
+input.iz
+{
+    width: 100%;
+}
+
+select[class="iz"][size], select[class="IZ"][size]
+{
+	height: 225px;
+}
+
+/* MAB V7 - 20080708 - application de propriétés spécifiques aux éléments select
+de classe IZ ayant un attribut size à 0 ou 1 - CSS 2.1 pour Firefox 3 */
+select[class="IZ"][size="0"], select[class="iz"][size="0"],
+select[class="IZ"][size="1"], select[class="iz"][size="1"]
+{
+  height: 20px;
+}
+
+.ih70
+{
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    width: 70px;
+    color: #243ca0;
+    height: 20px;
+}
+.ih
+{
+    color: #494848;
+    height: 20px;
+}
+.izg
+{
+    width: 100%;
+    background-color: #e6e6e6;
+}
+.izr
+{
+    width: 100%;
+    text-align: right;
+}
+.izgr
+{
+    width: 100%;
+    background-color: #e6e6e6;
+    text-align: right;
+}
+.ihro
+{
+    width: 70px;
+    color: #bb1515;
+    height: 15px;
+}
+.izro
+{
+    height: 18px;
+}
+.izo
+{
+    width: 100%;
+    background-color: #feead1;
+}
+.izor
+{
+    width: 100%;
+    background-color: #feead1;
+    text-align: right
+}
+.izglink
+{
+    width: 100%;
+    cursor: pointer;
+    color: #0000ff;
+    background-color: #e6e6e6;
+    text-decoration: underline
+}
+.izlink
+{
+    width: 100%;
+    color: #0000ff;
+	cursor: pointer;
+    background-color: #ffffff;
+    text-decoration: underline
+}
+.izolink
+{
+    width: 100%;
+    color: #0000ff;
+	cursor: pointer;
+    background-color: #feead1;
+    text-decoration: underline
+}
+.ihr
+{
+
+    height: 20px;
+    text-align: right
+}
+.image
+{
+    cursor: pointer;
+    text-align: center
+}
+
+/* Dialogue */
+
+.dlg
+{
+	padding-top:5px;
+	padding-left:70px;
+}
+.dlg2
+{
+}
+
+/* Recherche */
+
+.searchresults
+{
+    width: 100%;
+    border:1px solid #808080;
+    background-color:#ffffff;
+}
+.ch, .chsel
+{
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top: 4px;
+	height: 20px;
+    font-weight: 600;
+    background-color: #d1d1d1;
+	white-space: nowrap;
+}
+.searchresultline
+{
+    padding: 3px;
+	height: 20px;
+    background-color: #ffffff;
+}
+.searchresultline.srlalt
+{
+    background-color: #eeeeee;
+}
+
+/* ListView */
+
+.listview
+{
+    border: #716f64 1px solid;
+    background-color: #ffffff
+}
+.listviewcolumnheader
+{
+    border: 2px outset;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    overflow: auto;
+    color: #000000;
+    font-family: 'microsoft sans serif', verdana, arial;
+    height: 20px;
+    background-color: #e0dfe3
+}
+.listviewcell
+{
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 1px;
+    vertical-align: middle;
+    overflow: hidden;
+    color: #000000;
+    padding-top: 0px;
+    font-family: 'microsoft sans serif', verdana, arial;
+    height: 14px;
+	white-space: nowrap;
+}
+TR.listviewline
+{
+    background-color: #ffffff;
+}
+TR.listviewselectedline
+{
+    background-color: #cccccc;
+}
+
+/* info bulle */
+
+.tooltip
+{
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	padding: 5px;
+	overflow:hidden;
+}
+.tooltipWizard
+{
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	padding: 5px;
+	white-space:nowrap;
+}
+
+/* Admin */
+
+#AdminFraTopBody 
+{
+}
+.adminbgtopleft
+{
+}
+.adminbgtopright
+{
+}
+.adminmaintitle a
+{
+	font-size:20pt;
+	font-weight:600;
+	color:#bb1515;
+	text-decoration:none;
+}
+.adminmaintitle a:hover
+{
+    text-decoration: underline;
+	color:#bb1515;
+}
+div.adminmaintitle
+{
+	font-size:20pt;
+	font-weight:600;
+	color:#bb1515;
+}
+.adminlink
+{
+    padding-right: 3px;
+    padding-left: 3px;
+    height: 18px;
+    cursor: pointer;
+    color: #000000;
+    background-color: #eeeeed;
+	vertical-align: middle;
+}
+.admintitle
+{
+	font-weight: bold;
+    color: #bb1515;
+}
+.adminbackground
+{
+	position: absolute;
+	left: 65px;
+	top: 0px;
+    width: 340px;
+    height: 340px;
+    background-image: url(../images/admin/adminbgr.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.adminbdd
+{
+	position: absolute;
+	left: 125px;
+	top: 135px;
+    width: 240px;
+}
+.admintools
+{
+	position: absolute;
+	left: 125px;
+	top: 285px;
+    width: 240px;
+}
+.adminperso
+{
+	position: absolute;
+	left: 394px;
+	top: 10px;
+}
+a.adminfield /* lien sur des rubriques, fichier */
+{
+	vertical-align:middle;
+	height: 20px;
+    color: #000001;
+    text-decoration: none;
+}
+a.adminfield:hover
+{
+    text-decoration: underline
+}
+a.adminfieldtitle_old /* lien sur des rubriques, fichier */
+{
+	vertical-align:middle;
+	height: 20px;
+    color: #000001;
+    font-weight: bold;
+    text-decoration: none
+}
+a.adminfieldtitle
+{
+    font-weight: bold;
+    color: #bb1515;
+    height: 22px;
+    text-align: center;
+}
+a.adminfieldtitle:hover
+{
+    text-decoration: underline
+}
+.adminbkmline
+{
+	font-size:2px;
+	height:2px;
+	background-color:#000001
+}
+
+.admincelldownl
+{
+	background-color: #E6DBDB;
+	border-left: 1px dotted #BB1515;
+	border-bottom: 1px dotted #BB1515;
+	border-top: 1px dotted #BB1515;
+}
+
+.admincelldownv
+{
+	background-color: #E6DBDB;
+	border-bottom: 1px dotted #BB1515;
+	border-top: 1px dotted #BB1515;
+}
+
+.admincelldownp
+{
+	background-color: #E6DBDB;
+	border-right: 1px dotted #BB1515;
+	border-bottom: 1px dotted #BB1515;
+	border-top: 1px dotted #BB1515;
+}
+
+.admincellfrom
+{
+	background-color: #E6DBDB;
+	filter : alpha(opacity=65); 
+    -moz-opacity : 0.4; 
+    opacity : 0.4;
+}
+
+.admincelldown
+{
+	background-color: #E6DBDB;
+	border: 1px dotted #BB1515;
+}
+
+.admincellout
+{
+	background-color:;
+	border: 1px solid #FFFFFF;
+}
+
+.admincell
+{
+	border: 1px solid #FFFFFF;
+}
+
+
+.admincellover
+{
+	background-color: #DFDFDE;
+	border: 1px solid #DFDFDE;
+}
+
+/* Filtre */
+
+.filterdatas
+{
+	border: #666666 1px solid;
+	border-top:0px solid;
+	border-left:#000000 1px solid;
+}
+
+.filternavbar
+{
+    border-bottom: #aaaaaa 1px solid;
+    width: 112px;
+    height: 35px;
+    text-align: center
+}
+.filtertab
+{
+    border: #666666 1px solid;
+    border-bottom:0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    width: 112px;
+    cursor: pointer;
+    color: #000001;
+    padding-top: 1px;
+    height: 35px;
+    text-align: center
+}
+.filtertabdisabled
+{
+    border: #aaaaaa 1px solid;
+    font-weight: 600;
+    width: 112px;
+    cursor: pointer;
+    height: 35px;
+    background-color: #dddddd;
+    color: #000000;
+    text-align: center
+}
+
+/* Calendrier */
+
+#calendarbody
+{
+	padding: 2;
+	margin: 0;
+}
+input.calendarbutton
+{
+}
+div.calendarhourmin
+{
+	margin-top: 10px;
+	text-align:center
+}
+input.calendarhour
+{
+	width:30px;
+	text-align:center
+}
+input.calendarmin
+{
+	width:30px;
+	text-align:center
+}
+td.weekdayheader 
+{
+	text-align:center;
+	background-color:#d9d9d9;
+	padding:1px;
+	cursor:pointer;
+	border-left:1px solid #ffffff;
+}
+td.day
+{
+	cursor:pointer;
+	background-color:#ffffff;
+	width: 24px;
+	height: 18px;
+	text-align:center;
+	border-top:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+}
+td.day.selectedday
+{
+	background-color:#feead1;
+}
+
+td.day.preselectedday
+{
+	background-color:#770000;
+	color:white;
+}
+
+td.day.selectedday.selecteddayhover
+{
+	font-weight:bold;
+}
+td.day.today
+{
+	border:1px solid red;
+}
+td.day.today.todayhover
+{
+	font-weight:bold;
+}
+td.day.weekday
+{
+}
+td.day.weekday.weekdayhover
+{
+	font-weight:bold;
+}
+td.day.weekendday
+{
+	background-color:#dddddd;
+}
+td.day.weekendday.weekenddayhover
+{
+	font-weight:bold;
+}
+td.day.emptyday
+{
+	background-color: #eeeeee;
+}
+td.day.emptyday.emptydayhover
+{
+}
+td.emptydate
+{
+	border-top:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+	padding:2px;
+	background-color:#dddddd;
+	cursor:pointer;
+	text-align:center;
+}
+td.emptydate.emptydatehover
+{
+	font-weight:bold;
+}
+
+/* Planning Calendrier */
+tr.plgcalmonthyear /* calendrier du menu gauche du planning */
+{
+	height:18px;
+	padding:1px;
+	background-color:#d9d9d9;
+}
+td.plgcalweekdayheader 
+{
+	text-align:center;
+	background-color:#eeeeee;
+	padding:1px;
+	cursor:pointer;
+}
+td.plgcalday
+{
+	cursor:pointer;
+	background-color:#ffffff;
+	width: 24px;
+	height: 16px;
+	text-align:center;
+	white-space:nowrap;
+	padding: 1px;
+}
+td.plgcalday.plgcaltoday
+{
+	padding: 0px;
+	border:1px solid #bb1515;
+}
+td.plgcalday.plgcalselectedday
+{
+	background-color:#dddddd;
+}
+td.plgcalday.plgcaldayhover
+{
+	font-weight:bold;
+}
+td.plgcalday.plgcalemptyday
+{
+}
+.plgcalendar
+{
+	width: 121px;
+}
+
+/* Planning */
+.plgcellsep
+{
+	font-size: 1px;
+	padding-left: 4px;
+	background-color: #eeeeed;
+    border-right:1px solid #000000;
+    border-left:1px solid #000000;
+}
+.plgcell
+{
+	border-top: 1px solid #9eaaa8 ;
+	background-color: #eeeeed;/*ffffff*/
+}
+.plgcell.plgcellwork 
+{
+	background-color: #ffffff;/*eeeeed*/
+}
+.plgcell.plgcellinterval
+{
+	border-top: 1px solid #cccccc;
+}
+.plgcell.plgcellworkinterval
+{
+	border-top: 1px dashed #aecaef;
+}
+.plgcell.plgcellfocus
+{
+    background-color: #aecaef;
+}
+tr.plgheadrowweek
+{
+	text-align:left;
+    font-weight: bold;
+    padding-left: 2px;
+	height:20px;
+	padding-top: 5px;
+	background-color:#fbefc0;
+}
+tr.plgheadrowweekhour
+{
+	text-align:middle;
+    font-weight: bold;
+    padding-left: 2px;
+	height:20px;
+	padding-top: 5px;
+	background-color:#bb1515;
+	color:white;
+}
+.plgheadrowday
+{
+	text-align:right;
+	padding-right:5px;
+	border-right: 1px solid #cccccc;
+	background-color: #EEEEED;
+}
+.plgheadrowhour
+{
+	vertical-align:top;
+	text-align:left;
+	background-color:#ffffff;
+	border-top:1px solid #000001;
+    font-weight: bold;
+    font-size: 10pt;
+    width: 20px;
+    color: #000001;
+}
+.plgheadrowmin
+{
+    width: 18px;
+    color: #000001;
+	vertical-align:top;
+	text-align:right;
+	background-color:#ffffff;
+	padding-right:1px;
+	border-top:1px solid #000001;
+}
+.plgheadcolhour
+{
+	vertical-align:top;
+	text-align:right;
+	float: right;	
+}
+.plgheadcolmin
+{
+	vertical-align:top;
+	text-align:left;
+	float: left;
+}
+.plgcolumnheader
+{
+    height: 16px;
+    background-color: #eeeeed;/*ece9d8*/
+    text-align: center;
+	border-top: 1px solid #cccccc;
+	white-space:nowrap;
+}
+.plgemptyheader
+{
+    height: 5px;
+	background-color: #ffffff;
+}
+.plgitem
+{
+    border: #000000 1px solid;
+    padding-left: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    background-color: #ffffff;
+}
+.plgTTImgDiv
+{
+	position: relative;
+	right:2px;
+	top:2px;
+	float:right;
+}
+.plgTTImg
+{
+	visibility:hidden;
+	position:absolute;
+}
+.plgcellmonthday
+{
+	text-align:center;
+	background-color: #bb1515;
+    border-right:1px solid #cccccc;
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+	height:20px;
+	color: white;
+	cursor: auto;
+}
+.plgitem.plgitemfocus
+{
+    /*filter: progid:DXImageTransform.Microsoft.Gradient( GradientType=1, StartColorStr=#FDDB94, EndColorStr=#FDDB94 );*/
+	background-color: #aecaef;/*FDDB94*/
+}
+.plgitem.plgitemmove
+{
+	opacity:0.40;
+	-moz-opacity:0.40;
+    filter:alpha(opacity=40);
+}
+.plgitemgripleft
+{
+	border-left:#666666 5px solid;
+    /*border-right: #000000 1px solid;*/
+    font-size: 5px;
+    left: 0px;
+    width: 6px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+}
+.plgitemgriptop
+{
+    border-top: #000000 1px;
+    font-size: 0px;
+    z-index: 99;
+    left: 0px;
+    visibility: hidden;
+    margin: 0px;
+    width: 200%;
+    cursor: s-resize;
+    border-bottom: #000000 1px solid;
+    position: absolute;
+    top: 0px;
+    height: 6px;
+    background-color: #666666
+}
+.plgitemgripbottom
+{
+    border-top: #000000 1px solid;
+    font-size: 0px;
+    z-index: 99;
+    left: 0px;
+    visibility: hidden;
+    margin: 0px;
+    width: 200%;
+    cursor: s-resize;
+    border-bottom: #000001 6px;
+    position: absolute;
+    top: 100%;
+    height: 6px;
+    background-color: #666666
+}
+.plgnewitem
+{
+    /*border: #000000 1px dashed;*/
+    padding-left: 8px;
+    overflow: hidden;
+    position: absolute;
+    background-color: gray;
+	z-index: 2;
+	opacity:0.40;
+	-moz-opacity:0.40;
+    filter:alpha(opacity=40)
+}
+.plgnewitemgrip
+{
+    border-top: #000000 1px solid;
+    font-size: 0px;
+    z-index: 99;
+    left: 0px;
+    visibility: hidden;
+    margin: 0px;
+    width: 200%;
+    cursor: s-resize;
+    border-bottom: #000001 4px;
+    position: absolute;
+    top: 100%;
+    height: 4px;
+    background-color: #666666;
+}
+.plgnewitembutton
+{
+	float: right;
+    right: 10px;
+	top: 0px;
+    position: absolute;
+	
+}
+
+.userlistgroup
+{
+	background-color: #feead1;
+}
+
+select.lbz{
+	height: 200px;
+}
+
+select.chxrub{
+	height: 140px;
+}
+
+select.chxrub2{
+	height: 140px;
+}
+
+select.anx{
+	height: 160px;
+}
+/* Réduction de la hauteur des listes dans affichage conditionnel : AdminFieldRules.asp */
+select.admfieldrules{
+	height: 135px;
+}
+select.CielSelectField{
+	height : 135px;
+}
+
+.CielToolTip{
+	height:14px;
+	overflow:hidden;
+}
+
+/* réduction de la hauteur des listes dans la page "ajout d'un modèle d'export" : ReportWizard.asp (PAGE 1) */
+select.ReportWiz1{
+	height : 182px;
+}
+
+/* réduction de la hauteur de la liste dans la page 2 du ReportWizard  : ReportWizard.asp (PAGE 2) */ 
+select.ReportWiz2{
+	height : 210px;
+}
+
+select.CielSelectTab{
+	height :180px;
+}
+.aligntop{
+	vertical-align:top;
+}
+select.CielSelectBkm{
+	height:145px;
+}
+select.CielSelectBkmPrint{
+	height:205px;
+}
+td.WizardPrintP1{
+	font-weight:bold;
+	color:#bb1515;
+}
+select.WizardPrintP2{
+	height : 172px;
+}
+
+.plgmonthcellsep
+{
+	border-left: 1px solid #ece9d8;
+	border-right: 1px solid #ece9d8;
+}
+
+.plgmonthcell
+{
+	border-right:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+	cursor:pointer;
+	height: 25px;
+}
+.plgmonthcell div
+{
+	height: 100%;
+}
+.plgmonthcelloneuser
+{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	width:100%;
+	height:18px;
+}
+.plglibuser
+{
+	white-space:nowrap;
+	background-color: #eeeeed;
+}
+.plglibgroup
+{
+	white-space:nowrap;
+}
+.plgmonthcell table
+{
+	width:100%;
+	height:100%;
+}
+.plgmonthconflict
+{
+	background: transparent url(../images/FileIcon/conflict.jpg) repeat;
+}
+.plgmonthafterdel
+{
+	background: transparent url(../images/FileIcon/conflict_after.jpg) repeat;
+}
+.plgmonthcellhover
+{
+	background-color: #e6f7f8;
+}
+
+.plgcellgroup
+{
+	cursor:pointer;
+	background-color: #fbefc0;
+	border-top: 1px solid #cccccc;
+}
+
+.plgheadrowgroup
+{
+	background-color: #fbefc0;
+}
+
+.borderBottomSelectQuery
+{
+	border-bottom: 1px solid #bb1515;
+}
+.borderTopSelectQuery
+{
+	border-top: 1px solid #bb1515;
+}
+
+/********Bordures des champs Fiche************/
+
+.borderColor
+{
+	border: 1px solid #bb1515;
+}
+
+
+/********Couleur de fond des MRU ************/
+.mru_style
+{
+	background-color: #B0232A;
+}
+
+/******** Liste hierarchique utilisateurs ************/
+select option.group1{
+	background-color:#c00000;
+	color:#FFFFFF;
+}
+select option.group2{
+	background-color:#ef6f6f;
+	color:#FFFFFF;
+}
+select option.group3{
+	background-color:#ffc3c3;
+	color:#FFFFFF;
+}
+
+/******** JLA - Boutons de commande des fenêtres *************/
+/*******Modif JFL 12112008******/
+#command {
+	text-align:right;
+	padding:20px 15px 0 0;
+}
+#command a {
+	margin-right: 15px;
+}
+
+
+/******** JLA -  Somme  des colonnes *************/
+tr.HeaderBgColor {
+	background-color:#f6f6f5;
+}
+
+tr.ComputedRow td {
+	font-weight: bold;
+	text-align: right;
+	padding: 0 2px 0 0;
+}
+
+
+td.ComputedField div.ComputedFieldDialog {
+	width:100px;
+	position:absolute;
+	text-align:left;
+	background-color:#FFFFFF;
+	visibility:hidden;
+}
+
+td.CFWait {
+	background-image: url(../images/Icon/comptage.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.eudoSearchLeft {
+top: 2px;
+left: 5px;
+background-image: url(../images/main/eudoSearchLeft.png);
+width: 24px;
+height: 27px;
+position: absolute;
+}
+.eudoSearchButton {
+border: none;
+background-image: url(../images/main/eudoSearchRight.png);
+background-color: transparent;
+width: 22px;
+height: 27px;
+position: absolute;
+top: 2px;
+left: 121px;
+}
+.eudoSearch {
+color: #BB1515;
+text-align: left;
+vertical-align: middle;
+font-family: verdana;
+font-size: 9px;
+height: 27px;
+position: absolute;
+top: 2px;
+left: 25px;
+background-image: url(../images/main/eudoSearchMid.png);
+border: none;
+width: 96px;
+padding-left: 9px;
+padding-top: 7px;
+padding-bottom: 8px;
+}
+
+/***       LIBELLE DES ONGLETS SUR LA BARRE DE  DETAILBUTTON      ***/
+.detailbuttonbkmleft
+{	
+	height: 32px;
+	font-size: 1px;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	color: #FFFFFF;
+	background: url(../images/main/ongletleft_over.png) no-repeat 0 0;
+	padding-left:16px;
+}
+.detailbuttonbkm
+{
+	height: 32px;
+	cursor: pointer;
+	white-space:nowrap;
+	font-family: Trebuchet MS;
+	font-size: 8pt;
+	background: url(../images/main/ongletmid_over.png) repeat-x 0 0;
+}
+.detailbuttonbkmright
+{
+	height: 32px;
+	font-size: 1px;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	color: #FFFFFF;
+	background: url(../images/main/ongletright_over.png) no-repeat 0 0;
+	padding-left:16px;
+}
+
+.detailbuttonbkmleftsel
+{	
+	height: 32px;
+	font-size: 1px;
+	cursor: default;
+	vertical-align: middle;
+	text-align: center;
+	color: #bb1515;
+	background: url(../images/main/ongletleft.png) no-repeat 0 0;
+	padding-left:16px;
+}
+.detailbuttonbkmsel
+{
+	height: 32px;
+	cursor: default;
+	white-space:nowrap;
+	font-family: Trebuchet MS;
+	font-size: 8pt;
+	background: url(../images/main/ongletmid.png) repeat-x 0 0;
+}
+.detailbuttonbkmrightsel
+{
+	height: 32px;
+	font-size: 1px;
+	cursor: default;
+	vertical-align: middle;
+	text-align: center;
+	color: #bb1515;
+	background: url(../images/main/ongletright.png) no-repeat 0 0;
+	padding-left:16px;
+}
+.detailbuttonbkmsep
+{
+	height: 32px;
+	cursor: default;
+	white-space:nowrap;
+	font-family: Trebuchet MS;
+	font-size: 8pt;
+	background: url(../images/main/ongletmid_sep.png) repeat-x 0 0;
+}
+/**** SEPARATEUR *****/
+.detailsepleft
+{
+	height: 25px;
+	vertical-align: middle;
+	background-image: url(../images/main/separateurLeft.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-left: 14px;
+}
+.detailsep
+{
+	font-weight: bold;
+    color: #000000;
+	height: 25px;
+	cursor: pointer;
+	font-family: Trebuchet MS;
+	font-size: 9pt;
+	width: 100%;
+	background-image: url(../images/main/separateurMid.png);
+	background-repeat: repeat-x;
+	background-position:center center;
+}
+.detailsepright
+{
+	height: 25px;
+	vertical-align: middle;
+	background-image: url(../images/main/separateurRight.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-left: 14px;
+}
+/*****HORS ANTENNE*******/
+tr.HAetape td{
+	border-bottom:1px solid #bb1515;
+}
+td.HAetapelink
+{
+	cursor:pointer;
+	color:#6c6c6c;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:9px;
+	padding-bottom: 10px;
+	vertical-align:middle;
+}
+td.HAetapesel
+{
+	color:#bb1515;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:9px;
+	vertical-align:middle;
+	background-image: url(../images/icon/select.jpg);
+	padding-bottom: 10px;
+	background-position:bottom;
+	background-repeat:no-repeat;
+	background-position: 50% 100%;
+}
+td.HAetapedis
+{
+	background-color:#BBBBBB;
+	font-style:italic;
+}
+td.HAvalid
+{
+	background-color:#AAFFAA;
+}
+td.HAnovalid
+{
+	font-style:italic;
+	color:#ff0000;
+	font-weight:bold;
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	border-top:2px solid #ff0000;
+	border-right:2px solid #ff0000;
+	border-left:2px solid #ff0000;
+}
+/*****HORS ANTENNE INSTIT*******/
+tr.HAIetape td {
+	border-bottom:1px solid #bb1515;
+}
+td.HAIetapelink	{
+	cursor:pointer;
+	color:#6c6c6c;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:9px;
+	padding-bottom: 10px;
+	vertical-align:middle;
+}
+td.HAIetapesel {
+	color:#bb1515;
+	font-weight:bold;
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	vertical-align:middle;
+	background-image: url(../images/icon/select.jpg);
+	padding-bottom: 10px;
+	background-position:bottom;
+	background-repeat:no-repeat;
+	background-position: 50% 100%;
+}
+td.HAIetapedis
+{
+	background-color:#BBBBBB;
+	font-style:italic;
+}
+td.HAIvalid
+{
+	background-color:#AAFFAA;
+}
+#DivReport table{border-collapse:collapse;font-family:Trebuchet MS, Arial;font-size:10pt;margin:5px}.report-header-cell{background:#bb1515;color:#FFF;border-left:solid 2px silver;}.report-data-cell{background-color:#f8f8f8;text-align:right}.report-data-cell-alt{text-align:right;background-color:#FFF}.report-report-header-cell{background-color:#bb1515;color:#FFF}.report-title-cell{text-align:left} td.HAInovalid
+{
+	font-style:italic;
+	color:#ff0000;
+	font-weight:bold;
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	border-top:2px solid #ff0000;
+	border-right:2px solid #ff0000;
+	border-left:2px solid #ff0000;
+}

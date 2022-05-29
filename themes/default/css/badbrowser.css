@@ -1,0 +1,53 @@
+﻿body {
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 8pt;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 8px 32px;
+    box-shadow: 0 0 80px 8px #ddd;
+}
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+}
+
+
+
+
+
+.lstBrowser {
+    display: table;
+    width: 90%;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.msgtitle {
+    font-size: 12pt
+}
+
+
+.browserItem {
+    display: table-cell;
+    text-align: center;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+
+}
+
+img {
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8733/SynchroWCF/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" />
+  <xs:element name="CreateUpdateAppointment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="paramConnexion" nillable="true" type="q1:AuthentificationContract" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="paramEvt" nillable="true" type="q2:EventContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateUpdateAppointmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="CreateUpdateAppointmentResult" nillable="true" type="q3:ResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAppointment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="paramConnexion" nillable="true" type="q4:AuthentificationContract" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="paramEvt" nillable="true" type="q5:EventContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAppointmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="DeleteAppointmentResult" nillable="true" type="q6:ResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="listUsers" nillable="true" type="q7:ArrayOfAuthentificationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="ActivateUsersResult" nillable="true" type="q8:ArrayOfResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="paramConnexion" nillable="true" type="q9:AuthentificationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="ActivateUserResult" nillable="true" type="q10:ResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RenewSubscriptions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="listParamConnexion" nillable="true" type="q11:ArrayOfAuthentificationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RenewSubscriptionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="RenewSubscriptionsResult" nillable="true" type="q12:ArrayOfResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RenewSubscription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="paramConnexion" nillable="true" type="q13:AuthentificationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RenewSubscriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="RenewSubscriptionResult" nillable="true" type="q14:ResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="listUsers" nillable="true" type="q15:ArrayOfAuthentificationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="DeactivateUsersResult" nillable="true" type="q16:ResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="paramConnexion" nillable="true" type="q17:AuthentificationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" minOccurs="0" name="DeactivateUserResult" nillable="true" type="q18:ResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

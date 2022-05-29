@@ -1,0 +1,847 @@
+﻿#grid-stepline {
+    background: transparent;
+    padding: 0 10px 10px 10px;
+}
+
+#grid-stepline .grid-stack-item-content {
+    box-shadow: 0 0.3px 0.9px rgba(0,0,0 ,0.03), 0 0.5px 1.5px rgba(0,0,0,0.11);
+}
+
+.box_body_acc_20 {
+    background-color: var(--main-bg-color) !important;
+    padding: 0px !important;
+}
+
+#grid-stepline .box-profile {
+    height: auto;
+}
+
+.grid-stack-item-content .emptyDataInputContent {
+    padding-top: 0px !important;
+}
+
+#grid-stepline .box-profile {
+    height: auto;
+}
+
+/* Title  */
+
+.progressbar-title {
+    color: #2f3336;
+    font-family: var(--ffamily);
+    font-weight: normal;
+    padding: 10px;
+    font-size: var(--size-20);
+    margin: 0;
+    border-bottom: 1px solid var(--grey-border-color);
+    margin-bottom: 2px;
+}
+
+/* Title  */
+
+/* Header / steps ( bullets) */
+
+.steps-header {
+    background: var(--background-main-color-light);
+    height: auto;
+    padding: 0;
+}
+
+.progressbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    display: flex;
+    margin: 0;
+    border-bottom: 1px solid var(--background-main-color-light);
+}
+
+.progressbar, 
+.steps-footer-button {
+    height: 5.625rem;
+}
+
+.emptyDataInputContent .progressbar {
+    border-bottom: 0px solid var(--grey-border-color);
+}
+
+.previousButtonProgress.nextButtonProgress {
+    padding: 12px;
+    border-bottom: 1px solid var(--grey-border-color);
+    width: calc(100% - 360px);
+    left: auto;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nextButtonProgress:not(.previousButtonProgress),
+.previousButtonProgress:not(.nextButtonProgress){
+    width: calc(100% - 180px);
+    position: relative;
+}
+
+.nextButtonProgress:not(.previousButtonProgress) {
+    left: auto;
+}
+
+.previousButtonProgress:not(.nextButtonProgress) {
+    left: 180px;
+}
+
+.listStep {
+    list-style-type: none;
+    float: left;
+    font-size: var(--size-13);
+    position: relative;
+    text-align: center;
+    color: var(--stepbar-textcolor);
+    font-family: var(--ffamily);
+    font-weight: initial;
+    min-width: 75px;
+}
+
+.listStep.complete {
+    font-family: var(--ffamily);
+    color: var(--stepbar-completed-textcolor);
+    font-weight: 500;
+}
+
+.circle-container {
+    content: "";
+    width: 100%;
+    height: var(--size-40);
+    bottom: var(--size-18);
+    border-radius: 500px;
+    margin-bottom: 5px;
+    text-align: center;
+    z-index: 1;
+    position: sticky;
+}
+
+.progressbar.suite li.complete.active,
+.progressbar.suite li.inProgress.active {
+    color: var(--stepbar-completed-suite-selected-textcolor);
+    font-family: var(--ffamilyBold);
+}
+
+/* Header / steps ( bullets) */
+
+/* ligne stepline  */
+
+.listStep:after {
+    content: "";
+    height: 1px;
+    top: 19px;
+    background-color: #e2e2e2;
+    position: absolute;
+    z-index:0;
+}
+
+.progressbar li:first-child:after {
+    content: none;
+  }  
+
+/* 2 items */
+.progressbar li:first-child:nth-last-child(2) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(2) ~ li:after {
+    width: 90%;
+    left: -45%;
+}
+
+/* 3 items */
+.progressbar li:first-child:nth-last-child(3) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(3) ~ li:after {
+    width: 80%;
+    left: -40%;
+}
+
+/* 4 items */
+.progressbar li:first-child:nth-last-child(4) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(4) ~ li:after {
+    width: 80%;
+    left: -40%;
+}
+
+/* 5 items */
+.progressbar li:first-child:nth-last-child(5) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(5) ~ li:after {
+    width: 70%;
+    left: -35%;
+}
+
+/* 6 items */
+.progressbar li:first-child:nth-last-child(6) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(6) ~ li:after {
+    width: 65%;
+    left: -32.5%;
+}
+
+.progressbar li.complete:first-child:nth-last-child(5) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(6) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(7) ~ li:after {
+    width: 90%;
+    left: -45%;
+}
+
+
+/* 7, 8 items */
+.progressbar li:first-child:nth-last-child(7) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(7) ~ li:after,
+.progressbar li:first-child:nth-last-child(8) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(8) ~ li:after {
+    width: 60%;
+    left: -30%;
+}
+
+
+/* 9 - 14 items */
+.progressbar li:first-child:nth-last-child(9) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(9) ~ li:after,
+.progressbar li:first-child:nth-last-child(10) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(10) ~ li:after,
+.progressbar li:first-child:nth-last-child(11) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(11) ~ li:after,
+.progressbar li:first-child:nth-last-child(12) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(12) ~ li:after,
+.progressbar li:first-child:nth-last-child(13) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(13) ~ li:after,
+.progressbar li:first-child:nth-last-child(14) ~ li:after,
+.progressbar li.complete:first-child:nth-last-child(14) ~ li:after {
+    width: 50%;
+    left: -25%;
+}
+
+
+/* ligne stepline  */
+
+.circle-button {
+    background-color: transparent;
+    display: inline-block;
+    min-height: var(--size-40);
+    width: var(--size-40);
+    border-radius: 500px;
+}
+
+.circle-button:before {
+    font-family: "Font Awesome 5 Free";
+    line-height: var(--size-40);
+    background: var(--stepbar-hover-bgcolor);
+    color: var(--stepbar-hover-fgcolor);
+    border: 0px solid var(--stepbar-bordercolor);
+    font-weight: 100;
+    font-size: var(--size-13);
+    display: block;
+    border-radius: 50%;
+    padding: 0 0 0 3px;
+    content: "";
+    cursor: pointer;
+}
+
+.progressbar.suite .complete .circle-button.inactive:before{
+    cursor:auto;
+}
+
+.circle-button:hover:before {
+    line-height: var(--size-40);
+    border: 0 dotted var(--stepbar-hover-bordercolor);
+    background: var(--stepbar-bgcolor);
+    color: var(--stepbar-fgcolor);
+    font-size: var(--size-12);
+    content: "";
+    display: block;
+    border-radius: 50%;
+    padding: 0 0 0 3px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+}
+
+.progressbar.suite .complete .circle-button:hover:before,
+.progressbar .inProgress .circle-button:hover:before {
+    background: var(--stepbar-completed-suite-hover-bgcolor);
+    color: var(--stepbar-completed-suite-hover-fgcolor);
+}
+
+.progressbar .circle-button.inactive:hover {
+    cursor: default;
+}
+
+.progressbar .inProgress .circle-button:before, 
+.progressbar .complete .suite .circle-button:before {
+    font-weight: 600;
+    line-height: var(--size-40);
+    font-size: var(--size-12);
+    content: "\f00c";
+    display: block;
+    border-radius: 50%;
+    background: var(--stepbar-inprogress-bgcolor);
+    color: var(--stepbar-completed-suite-fgcolor);
+    border: 0 solid var(--stepbar-inprogress-bordercolor) !important;
+}
+
+.progressbar .complete .circle-button:before {
+    font-weight: 600;
+    font-size: var(--size-12);
+    content: "";
+    display: block;
+    border-radius: 50%;
+    line-height: var(--size-40);
+}
+
+.progressbar.suite .complete .circle-button:before, 
+.progressbar.suite .complete .circle-button.inactive:hover:before {
+    border: 0 solid var(--stepbar-completed-suite-bordercolor);
+    background: var(--stepbar-completed-suite-bgcolor);
+    color: var(--stepbar-completed-suite-fgcolor);
+}
+
+.progressbar.suite li.complete.active .circle-container .circle-button:before, 
+.progressbar li.complete.active .circle-container .circle-button:before {
+    border: 0px dashed var(--stepbar-completed-suite-selected-bordercolor) !important;
+    box-shadow: inset 0px 0px 7px 0px #000000;
+}
+
+.progressbar .active .circle-button:before {
+    border: 0px dashed var(--stepbar-selected-bordercolor) !important;
+    box-shadow: inset 0px 0px 7px 0px #000000;
+}
+
+.text--step {
+    margin: 0;
+    padding: 0 10px 0 10px;
+    line-height: var(--size-16);
+}
+
+/* Boutons suivant / précédent */
+
+.steps-footer-button {
+    background: white;
+}
+
+#box-step .steps-text .steps-footer-button {
+    padding: 22px 0;
+    width: 180px;
+    right: 0;
+    margin: 0;
+    border: 0;
+    border-top-color: #f4f4f4;
+    border-bottom: 1px solid #dadada;
+    background: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    overflow: visible;
+    top: 0;
+}
+
+.steps-footer-button.edn-group-left {
+    left: 0;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .modal-footer {
+      top: 70px;
+      right: calc(50% - 100px);
+    }
+  }
+
+.steps-footer-button button, 
+.steps-footer-button .edn-dropdown-btn > button {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: auto;
+    opacity: 1;
+    max-width: 250px;
+    width: 100% !important;
+    transition: background 250ms;
+    /* US #2 926 - Tâche #4 650 - Application de propriétés en surcharge pour imiter le style par défaut des boutons Vuetify */
+    background-color: #F5F5F5 !important; /* surcharge de .skin-XXX .dropdown>button dans skin.css */
+    font-size: var(--size-14) !important; /* surcharge de v-size--default qui utilise une taille relative au parent (.875rem) ne donnant donc pas satisfaction sur E17 */
+    background-color: transparent !important;
+}
+
+.steps-footer-button #btnPrevious {
+    justify-content: left;
+}
+
+.steps-footer-button #btnNext {
+    justify-content: right;
+}
+
+#box-step .steps-text .steps-footer-button i.steps-footer-button-left {
+    padding-right: 10px;
+    font-size: var(--size-14);
+}
+
+#box-step .steps-text .steps-footer-button i.steps-footer-button-right {
+    padding-left: 10px; /* icône à droite donc padding à sa gauche pour séparer le texte */
+}
+
+/* Boutons suivant / précédent */
+
+/* StepContent */
+
+#box-step .stepContent {
+    width: 100%;
+    font-family: var(--ffamily);
+}
+
+#box-step .stepContent > div:first-child {
+    padding-left: 0;
+}
+
+#box-step .stepContent > div:nth-last-child(2) {
+    padding-right: 0;
+}
+
+.grid-stack-item-content .emptyDataInputContent {
+    padding-top: 40px !important;
+}
+
+.grid-stack-item-content .emptyDataInputContent #box-step .steps-text {
+    height: 0;
+}
+
+.grid-stack-item-content .emptyDataInputContent #box-step .steps-text .steps-footer-button {
+    border-bottom: 0px solid #DADADA;
+}
+
+/* StepContent */
+
+/* Input Area */
+
+.steps-text,
+.step-content {
+  padding: var(--size-10);
+}
+
+#box-step .steps-text{
+    background: #fbfbfb;
+    overflow: inherit;
+    margin: 0;
+    height: auto;
+    display: flex;
+    width: 100%;
+    max-height: 15.625rem;
+}
+
+#box-step .stepContent > div:not(.modal-footer) {
+    height: auto;
+    min-height: 3.625rem;
+    padding: var(--size-6) var(--size-24);
+}
+
+.startTxtAssistant {
+    width: 100%;
+}
+
+/* Input Area */
+
+/* Zone assitant display grid */
+
+#box-step .note-steps {
+    margin-bottom: 0;
+    min-height: auto;
+    overflow: auto;
+    max-height: initial !important;
+}
+
+/* Contenue si aucun champs sauf l'aide */
+#box-step .stepContent.OnlyHelp {
+    grid-template-columns: repeat(3, 1fr); /* si aucune rubrique : l'aide doit pouvoir prendre de 1 à 3 colonnes (définie en fonction des classes .OnlyHelp-X .note-steps plus bas) */
+    grid-template-rows: repeat(2, 1fr);
+}
+    /* Définition de la taille de la zone d'aide ("notes") dans les cas où on a aucune rubrique */
+
+/* US #3977 - TK #6306 - La hauteur de l'aide si aucune rubrique affichée doit correspondre à la hauteur utilisée lorsque 2 rubriques sont présentes (cf. .stepContent.Help.input-2) */
+#box-step .stepContent.OnlyHelp .note-steps {
+    grid-column: 1/4; /* largeur par défaut : occupe les 3 dernières colonnes de droite, donc en partant de la première (soit toute la grille, en fait) */
+    grid-row: 1/3;
+    min-height: 116px !important;
+    max-height: 116px !important; /* US #3977 - TK #6306 - La hauteur de l'aide si aucune rubrique affichée doit correspondre à la hauteur utilisée lorsque 2 rubriques sont présentes (cf. .stepContent.Help.input-2) */
+}
+/* Puis la largeur varie selon si on a fixé l'aide sur 1 2 ou 3 colonnes. Définit également l'alignement de l'aide dans ce cas (à droite) */
+/* Aide fixée sur 1 colonne */
+#box-step .stepContent.OnlyHelp-1 .note-steps {
+    grid-column: 3/4; /* occupe la dernière colonne de droite, donc en partant de la troisième */
+}
+/* Aide fixée sur 2 colonnes */
+#box-step .stepContent.OnlyHelp-2 .note-steps {
+    grid-column: 2/4; /* occupe les 2 dernières colonnes de droite, donc en partant de la deuxième */
+}
+/* Aide fixée sur 3 colonnes (toute la grille) - Comportement par défaut, mais classe spécifique prévue au cas où */
+#box-step .stepContent.OnlyHelp-3 .note-steps {
+    grid-column: 1/4; /* occupe les 3 dernières colonnes de droite, donc en partant de la première (soit toute la grille, en fait) */
+}
+
+/* 1 Champs */
+/* Sans l'aide */
+#box-step .stepContent.input-1:not(.Help) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+/* Avec l'aide */
+#box-step .stepContent.Help.input-1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#box-step .stepContent.Help.input-1 .note-steps {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    max-height: 116px !important;
+}
+
+/* Si l'aide est en premier */
+#box-step .stepContent.Help.input-1 > .note-steps:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    max-height: 116px !important;
+}
+
+@media (max-width: 900px) {
+    #box-step .stepContent.Help.input-1 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #box-step .stepContent.Help.input-1 .note-steps {
+        grid-column: 1/4;
+        grid-row: 2/4;
+        max-height: 116px !important;
+    }
+
+    /* Si l'aide est en premier */
+    #box-step .stepContent.Help.input-1 > .note-steps:first-child {
+        grid-column: 1/4;
+        grid-row: auto;
+        max-height: 116px !important;
+    }
+}
+
+
+
+/* 2 Champs */
+/* Sans l'aide */
+#box-step .stepContent.input-2:not(.Help) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+/* Avec l'aide */
+#box-step .stepContent.Help.input-2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#box-step .stepContent.Help.input-2 .note-steps {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    max-height: 116px !important;
+}
+
+/* Si l'aide est en premier */
+#box-step .stepContent.Help.input-2 > .note-steps:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    max-height: 116px !important;
+}
+
+@media (max-width: 900px) {
+    #box-step .stepContent.Help.input-2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #box-step .stepContent.Help.input-2 .note-steps {
+        grid-column: 1/4;
+        grid-row: 3/5;
+        max-height: 116px !important;
+    }
+
+    /* Si l'aide est en premier */
+    #box-step .stepContent.Help.input-2 > .note-steps:first-child {
+        grid-column: 1/4;
+        grid-row: auto;
+        max-height: 116px !important;
+    }
+}
+
+/* 3 Champs */
+/* Sans l'aide */
+#box-step .stepContent.input-3:not(.Help) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+/* Avec l'aide */
+#box-step .stepContent.Help.input-3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#box-step .stepContent.Help.input-3 .note-steps {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    max-height: 116px !important;
+}
+
+/* Si l'aide est en premier */
+#box-step .stepContent.Help.input-3 > .note-steps:first-child {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    max-height: 116px !important;
+}
+
+@media (max-width: 900px) {
+    #box-step .stepContent.Help.input-3 .note-steps {
+        grid-column: 1/4;
+        grid-row: 4/4;
+        max-height: 116px !important;
+    }
+
+    /* Si l'aide est en premier */
+    #box-step .stepContent.Help.input-3 > .note-steps:first-child {
+        grid-column: 1/4;
+        grid-row: auto;
+        max-height: 116px !important;
+    }
+}
+
+
+
+/* 4 Champs */
+/* Sans l'aide */
+#box-step .stepContent.input-4:not(.Help) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* Avec l'aide */
+#box-step .stepContent.Help.input-4 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#box-step .stepContent.Help.input-4 .note-steps {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    max-height: 116px !important;
+}
+
+/* Si l'aide est en premier */
+#box-step .stepContent.Help.input-4 > .note-steps:first-child {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    max-height: 116px !important;
+}
+
+@media (max-width: 900px) {
+    #box-step .stepContent.Help.input-4 .note-steps {
+        grid-column: 1/4;
+        grid-row: 5/5;
+        max-height: 116px !important;
+    }
+
+    /* Si l'aide est en premier */
+    #box-step .stepContent.Help.input-4 > .note-steps:first-child {
+        grid-column: 1/4;
+        grid-row: auto;
+        max-height: 116px !important;
+    }
+}
+
+
+/* 5 Champs */
+/* Sans l'aide */
+#box-step .stepContent.input-5:not(.Help) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* Avec l'aide */
+#box-step .stepContent.Help.input-5 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#box-step .stepContent.Help.input-5 .note-steps {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    max-height: 174px !important;
+}
+
+/* Si l'aide est en premier */
+#box-step .stepContent.Help.input-5 > .note-steps:first-child {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    max-height: 174px !important;
+}
+
+@media (max-width: 900px) {
+    #box-step .stepContent.Help.input-5 .note-steps {
+        grid-column: 1/4;
+        grid-row: 6/6;
+        max-height: 116px !important;
+    }
+
+    /* Si l'aide est en premier */
+    #box-step .stepContent.Help.input-5 > .note-steps:first-child {
+        grid-column: 1/4;
+        grid-row: auto;
+        max-height: 116px !important;
+    }
+}
+
+/* 6 Champs */
+/* Sans l'aide */
+#box-step .stepContent.input-6:not(.Help) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* Avec l'aide */
+#box-step .stepContent.Help.input-6 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#box-step .stepContent.Help.input-6 .note-steps {
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+
+/* Si l'aide est en premier */
+#box-step .stepContent.Help.input-6 > .note-steps:first-child {
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+@media (max-width: 900px) {
+    #box-step .stepContent.Help.input-6 .note-steps {
+        grid-column: 1/4;
+        grid-row: 7/7;
+    }
+
+    /* Si l'aide est en premier */
+    #box-step .stepContent.Help.input-6 > .note-steps:first-child {
+        grid-column: 1/4;
+        grid-row: auto;
+    }
+}
+
+/* 7 Champs ou plus */
+#box-step .stepContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0;
+}
+
+/* 0 Champs */
+#box-step .stepContent.input-0 {
+    height: 0;
+    padding: 0;
+}
+
+/* Ajout des transitions */
+div#grid-tabs,div#aside-tabs {
+    transition: width 1.5s;
+}
+
+#grid-tabs, #aside-tabs {
+    padding: 0px 10px 0px 10px;
+    height: auto !important;
+}
+
+.box-body.note-steps {
+    position: relative;
+}
+
+    .box-body.note-steps .title-note {
+        position: absolute;
+        right: 7px;
+        width: auto;
+        top: 3px;
+        cursor: pointer;
+    }
+
+/* Zone assitant display grid */
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+
+    .progressbar {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) {
+  
+    .progressbar {
+      position: static;
+    }
+  }
+
+/* media queries */
+
+/* thème, couleurs */
+
+.progressbar,
+.progressbar-title,
+.emptyDataInputContent .steps-header,
+.previousButtonProgress.nextButtonProgress {
+    background: var(--light-font-color);
+}
+
+/* thème, couleurs */
+
+#grid-stepline #box-step div.fileInput:not([rowspan]) .form-group {
+    height: 52px;
+}
+
+/*Assistant stepline > Champs eLogic */
+
+.detailContent .form-group.reverse {
+    height: 100%;
+  }
+  
+  /*assistant stepline > Champs eLogic */
+  
+  /*Champs eLogic*/
+  
+  .steps-header .fileInput[tp="16"] .left {
+    width: 0px;
+  }
+  
+  .steps-header .left {
+    float: left;
+    margin-right: 5px !important;
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: var(--size-20);
+  }
+  
+  .steps-header .left-label {
+    float: left;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    width: auto;
+    font-size: 13px;
+    padding: 0 0 0 5px;
+  }

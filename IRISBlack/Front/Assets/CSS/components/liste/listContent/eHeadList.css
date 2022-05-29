@@ -1,0 +1,261 @@
+﻿/** On bloque le head des tables */
+thead.clsTHeadSticky {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.first_th {
+    border-top: 1px solid #f4f4f4;
+    margin: -1px 0 0 0;
+}
+
+.dataTable tr,
+.dataTable td,
+.dataTable th {
+    line-height: var(--size-22) !important;
+    padding: var(--size-9) var(--size-5) !important;
+    transition: background 250ms;
+    z-index: 0;
+}
+
+/** Pour Chrome, petite astuce, le sticky doit être sur le Head. */
+thead.clsTHeadSticky tr:first-child th {
+    z-index: 3;
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 0px;
+}
+
+div.bkm-tab .table-bordered > thead > tr > th,
+div.bkm-tab .table-bordered > tbody > tr > th,
+div.bkm-tab .table-bordered > tfoot > tr > th,
+div.bkm-tab .table-bordered > thead > tr > td,
+div.bkm-tab .table-bordered > tbody > tr > td,
+div.bkm-tab .table-bordered > tfoot > tr > td {
+    border: 0px solid #f4f4f4;
+}
+
+div.bkm-tab thead.clsTHeadSticky tr:first-child th {
+    z-index: 3;
+    background-color: var(--bkmTab-clsBkmFooterPosition);
+    position: sticky;
+    top: 0px;
+    color: #333;
+    padding: var(--size-9) 0.3125rem 0.5rem 0.3125rem !important;
+    height:2.6875rem;
+}
+
+    div.bkm-tab thead.clsTHeadSticky tr:first-child th.thead-icon {
+        left: 0;
+        z-index: 4;
+        border-right: 1px solid #e0e0e0;
+    }
+
+
+    div.bkm-tab thead.clsTHeadSticky tr:first-child th.is-computing {
+        padding: 0 5px 2px 5px !important;
+    }
+
+    div.bkm-tab thead.clsTHeadSticky tr:first-child th.thead-icon.IrisModeGuidDisabled {
+        border-right: 1px solid rgba(0,0,0,.12);
+    }
+
+    div.bkm-tab thead.clsTHeadSticky tr:first-child th.thead-icon + th.thead-icon {
+        left: 35px;
+        z-index: 4;
+        border-right: 1px solid rgba(0,0,0,.12);
+    }
+
+.headStyle {
+    padding: 0 10px;
+    float: left;
+    line-height: 15px;
+}
+
+span.headStyle {
+    padding: 0 5px 0 10px;
+}
+
+div.bkm-tab .headStyle {
+    font-family: var(--ffamilyBold);
+    font-size: var(--size-15);
+    line-height: 1.625rem;
+}
+
+    div.bkm-tab .headStyle.is-computing {
+        line-height: 1.3;
+        font-size: var(--size-14);
+    }
+
+        div.bkm-tab .headStyle.is-computing > .headcol-label {
+            color: var(--bkmTitleColor);
+            padding: 0 0 13px 0;
+            display: inline-block;
+        }
+
+/* menu filters */
+
+.menu-filters--container {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    right: 0.3125rem;
+    top: -0.8125rem;
+    z-index: 55;
+    height: 100%;
+    align-items: flex-end;
+    padding: 0 0.1875rem 0 0;
+}
+
+th.is-computing .menu-filters--container {
+    top: -2px;
+    line-height: 20px;
+}
+
+#MainWrapper div.bkm-tab table .menu-filters--container:hover .bkm-filters {
+    opacity: 1;
+    transform: translateY(-10px);
+    pointer-events: auto;
+}
+#MainWrapper div.bkm-tab table .menu-filters--container:hover i.fas.fa-ellipsis-v {
+    color: var(--ico-bkm);
+}
+
+.sum-elem {
+    font-size: var(--size-13);
+    font-family: var(--ffamily);
+    font-weight: 400;
+    animation: sumAppearing .3s ease-in;
+    padding: 0 10px 0 0;
+}
+    .sum-elem > i {
+        font-size: var(--size-12);
+        padding: 0 3px 0 0;
+    }
+    
+.sum-elem span {
+    white-space: nowrap;
+}
+@keyframes sumAppearing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dataTable i.i-table {
+    margin: 0 6px 0 0;
+    font-size: var(--size-15);
+}
+
+#MainWrapper .i-table {
+    color: var(--checkbox-color);
+}
+
+#MainWrapper div.bkm-tab table .bkm-filters i.i-table {
+    margin: 0;
+}
+
+#MainWrapper div.bkm-tab table .i-table {
+    float: left;
+    background: var(--detail-foreground-btn);
+    display: inherit;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 0 5px 0 0px;
+    font-size: var(--size-14);
+    border: 1px solid;
+    color: var(--ico-bkm);
+}
+
+#MainWrapper div.bkm-tab table .i-table:hover {
+    color: var(--ico-bkm-hover) !important;
+}
+
+#MainWrapper div.bkm-tab table .i-table.fa.fa-filter {
+    left: 5px;
+}
+
+/*US 3 110 - Tâche 5 016 */
+#MainWrapper div.bkm-tab table i.fas.fa-ellipsis-v.i-table.filter-menu {
+    opacity: 1;
+    border: none;
+    background: transparent;
+    color: var(--bkmTitleColor);
+    font-size: var(--size-13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    width: var(--size-26);
+}
+
+#MainWrapper div.bkm-tab table th.is-computing i.fas.fa-ellipsis-v.i-table.filter-menu {
+    font-size: var(--size-11);
+}
+#MainWrapper div.bkm-tab table i.fas.fa-ellipsis-v.i-table.filter-menu.filters-activated,
+#MainWrapper div.bkm-tab table .filters-activated {
+    color: var(--filters-activated-color);
+}
+
+#MainWrapper div.bkm-tab table .i-table.sortActivated,
+#MainWrapper div.bkm-tab table .i-table.FilterActivated,
+#MainWrapper div.bkm-tab table .i-table.ComputedColumnEnabled {
+    color: var(--ico-bkm-activated) !important;
+    cursor: pointer;
+}
+    #MainWrapper div.bkm-tab table .i-table.sortActivated:hover,
+    #MainWrapper div.bkm-tab table .i-table.FilterActivated:hover,
+    #MainWrapper div.bkm-tab table .i-table.ComputedColumnEnabled:hover,
+    th.is-computing .menu-filters--container {
+        color: var(--filters-activated-color) !important;
+        transition: color .2s ease-in;
+    }
+#MainWrapper div.bkm-tab table .i-table.ComputedColumn {
+    min-width: 26px;
+}
+div.bkm-tab .ComputedColumnValue {
+color: var(--ico-bkm-activated);
+text-align: right;
+font-family: var(--ffamilyBold);
+font-size: var(--size-14);
+}
+#MainWrapper div.bkm-tab table .i-table.ComputedColumnEnabled .ComputedColumnValue {
+padding-left: 5px;
+padding-right: 5px;
+}
+
+
+#MainWrapper div.bkm-tab table .menu-filters--container .bkm-filters {
+    top: -21px;
+    left: -30px;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: transform .3s ease-in;
+    transition-property: transform,opacity;
+    pointer-events: none;
+    column-gap: 5px;
+}
+
+/* resize column header */
+
+div.bkm-tab .resizeColumnHeader {
+    top: 0.625rem;
+    right: 0;
+    bottom: 0px;
+    position: absolute;
+    width: 2px;
+    height: var(--size-25);
+    cursor: e-resize;
+    background: #d3d3d3;
+    transition: background 350ms;
+}
+
+    div.bkm-tab .resizeColumnHeader:hover {
+        background: var(--main-color);
+    }

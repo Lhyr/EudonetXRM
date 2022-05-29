@@ -1,0 +1,48 @@
+﻿.detailContent .inp-cbx:checked + .cbx span:first-child,
+#box-step .inp-cbx:checked + .cbx span:first-child,
+#headFiche .inp-cbx:checked + .cbx span:first-child {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    animation: wave 0.4s ease;
+}
+
+div.bkm-tab .inp-cbx:checked + .cbx span:first-child {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    animation: wave 0.4s ease;
+}
+
+div.bkm-tab .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(2);
+    opacity: 0;
+    transition: 0.6s ease;
+    transition-property: transform, opacity;
+}
+
+.eudo-modal .inp-cbx:checked + .cbx span:first-child {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    animation: wave 0.4s ease;
+}
+
+.detailContent .logicCompo .checkBoxRubrique {
+    width: 100%;
+}
+
+.detailContent .cbx span:first-child:before,
+#box-step .cbx span:first-child:before,
+#headFiche .cbx span:first-child:before {
+    background: var(--main-color);
+}
+
+div.bkm-tab .cbx span:first-child:before {
+    background: var(--main-color);
+}
+
+.cbx:hover span:first-child {
+    border-color: var(--main-color);
+}
+
+.eudo-modal .cbx span:first-child:before {
+    background: var(--main-color);
+}

@@ -1,0 +1,69 @@
+﻿body
+{
+    background-color: #FFFFFF;
+    font-family: Verdana;
+    font-size: 8pt;
+}
+/* div contenant la carte  utilsé dans le js pour placer la carte*/
+.mapDiv
+{
+    position: relative;
+    width: 900px;
+    height: 650px;
+    border: 1px solid #AFABAC;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Carte en mode plein ecran*/
+.divglobale
+{
+    width: 450px;
+}
+.header img
+{   height: 40px;}
+.header
+{
+    position: relative;
+    width: 650px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgAgrandir
+{
+    height: 30px;
+    border: 0;
+    width:25px;
+}
+.imgcheck
+{
+    border: 0;
+}
+/***************************/
+
+/* Petite fenetre de resultat de recherche*/
+/*DIV contenant la roue crantée de recherche*/
+.loading
+{
+    text-align: center;
+}
+
+/* table*/
+table
+{
+    padding-top: 35px;
+    text-align: right;
+    width: 84%;
+}
+
+/* Carte en mode rubrique dans eudo*/
+.minimapDiv
+{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #AFABAC;
+    float: left;
+}
+/*******************************************/

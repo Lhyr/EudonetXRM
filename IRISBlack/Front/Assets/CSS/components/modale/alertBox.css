@@ -1,0 +1,33 @@
+﻿.eudo-modal .eAlertBox.alert-danger {
+    color: var(--main-color) !important;
+    background-color: transparent !important;
+    white-space: initial;
+    opacity: 1;
+}
+
+.detailContent .eAlertBox.alert-danger,
+#box-step .eAlertBox.alert-danger,
+#headFiche .eAlertBox.alert-danger {
+    color: var(--danger-color) !important;
+    background-color: transparent !important;
+    white-space: initial;
+    opacity: 1;
+    overflow: hidden;
+    height: auto;
+}
+
+.detailContent .eAlertBox.alert-danger p,
+#box-step .eAlertBox.alert-danger p,
+#headFiche .eAlertBox.alert-danger p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: var(--size-13);
+    text-align: right;
+}
+
+.detailContent .eAlertBox,
+#box-step .eAlertBox,
+#headFiche .eAlertBox {
+    top: var(--size-28);
+}

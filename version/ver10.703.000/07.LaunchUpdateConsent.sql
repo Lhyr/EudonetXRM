@@ -1,0 +1,1 @@
+exec dbo.esp_archiveConsentAll

@@ -1,0 +1,58 @@
+﻿div.bkm-tab .drag-drop-container {
+    position: relative;
+    padding: var(--size-10) 0;
+}
+
+div.bkm-tab .drop-area {
+    background: var(--bkmTab-clsBkmFooterPosition);
+    color: var(--detail-label);
+    font-size: var(--size-16);
+    height: 80px;
+    padding: 0;
+    font-family: var(--ffamily);
+    border: dashed 2px var(--bkmTab-clsBkmFooterPosition);
+    background-image: linear-gradient(var(--bkmTab-clsBkmFooterPosition), var(--bkmTab-clsBkmFooterPosition)), linear-gradient(#9e9e9e, #9e9e9e);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+div.bkm-tab .drop-area.expanded {
+    height: 100%;
+    transition: height .5s;
+    font-size: var(--size-20);
+}
+
+div.bkm-tab :not(.drop-container).PjHover .drop-area {
+    background: var(--bkmTab-clsBkmFooterPosition);
+    color: var(--tag-color);
+    font-size: var(--size-16);
+    height: 70px;
+    border-radius: 0;
+    padding: 0;
+    font-family: var(--ffamily);
+    border: dashed 2px var(--bkmTab-clsBkmFooterPosition);
+    background-image: linear-gradient(var(--bkmTab-clsBkmFooterPosition), var(--bkmTab-clsBkmFooterPosition)), linear-gradient(var(--checkbox-color), var(--pj-gradient-over), var(--main-color));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+div.bkm-tab .drop-area {
+    width: 97%;
+    height: 4.6875rem;
+    position: relative;
+}
+
+div.bkm-tab .drop-area.dragged,
+div.bkm-tab .drop-area:hover {
+    background-image: linear-gradient(var(--bkmTab-clsBkmFooterPosition), var(--bkmTab-clsBkmFooterPosition)), linear-gradient(var(--checkbox-color), var(--pj-gradient-over), var(--main-color));
+    border: dashed 2px var(--bkmTab-clsBkmFooterPosition);
+}
+
+.drag-drop-title {
+    text-align: center;
+}
+
+.drop-area i.fas {
+    font-size: var(--size-20);
+    margin-bottom: 0px;
+}

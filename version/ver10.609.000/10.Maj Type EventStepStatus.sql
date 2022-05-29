@@ -1,0 +1,1 @@
+UPDATE [DESC] SET Popup = 6 WHERE descid in (SELECT value + 24 from DESCADV dd where  dd.Parameter= 41)

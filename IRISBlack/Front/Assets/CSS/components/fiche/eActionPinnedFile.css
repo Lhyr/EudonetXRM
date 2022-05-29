@@ -1,0 +1,48 @@
+﻿div.bkm-tab div#pinned_file_button {
+    right: 0;
+    z-index: 3;
+    top: 6px;
+    min-height: 40px;
+}
+
+#MainWrapper .btn-group button.pinned-file--btn,
+#MainWrapper .btn-group button.pinned-file--btn:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+button.pinned-file--btn, .pinned-file--dropdown {
+    padding: 0 0 0 5px !important;
+}
+
+.pinned-file--dropdown {
+    font-size: var(--size-12);
+}
+
+.btn.pinned-file--btn:active {
+    box-shadow: none;
+}
+
+.pinned-tabs-custom {
+    margin-top: 30px;
+    border-top: solid 1px #f2f2f2;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+#pinned-tabs-ul {
+    border-bottom: 1px solid #dadada;
+}
+
+.pinned-tab-content {
+    overflow: visible;
+    height: 200px;
+}
+
+.pinned-tab-content > .tab-pane {
+    height: inherit;
+    display: none;
+}
+
+.pinned-tab-content > .active {
+    display: block !important;
+}

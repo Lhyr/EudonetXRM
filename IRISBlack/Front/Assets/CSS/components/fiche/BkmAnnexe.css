@@ -1,0 +1,4 @@
+﻿div.bkm-tab :not(.drop-container).PjHover {
+    background-color: #F7F7F7 !important;
+    border: 0px dashed #84B0C7 !important;
+}

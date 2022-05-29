@@ -1,0 +1,36 @@
+﻿body {
+}
+
+div.title, .icon-delete, .icon-add {
+    font-size: 10pt;
+    color: #37A7DE;
+}
+
+table#TbMapping {
+    margin: auto;
+    table-layout: fixed;
+}
+
+
+    table#TbMapping td select {
+        width: 100%;
+    }
+
+
+
+#divAddLine {
+    font-size: 10pt;
+    color: #37A7DE;
+    cursor: pointer;
+}
+
+.linkButton {
+    display: block;
+    width: 100%;
+}
+
+    .linkButton a {
+        margin: 10px auto;
+        display: block;
+        width: 250px;
+    }

@@ -1,0 +1,87 @@
+﻿
+/*@import '../../Theme2019/css/theme.css';*/
+
+/*Couleurs du site*/
+
+:root {
+    --main-color: #51754A;
+    --main-color-alpha-93: #5d7f57;
+    --main-color-alpha-34: #c4d0c1;
+    --main-color-alpha-96: #587b51;
+    --main-color-hover: #2D4D26;
+    --secondary-color: #51754A;
+    --title-color: #6d9665;
+    --border-color: #3c5837;
+    --dark-border-color: #2f432b;
+    --checkbox-color: #6bc15a;
+    --hover-color: rgba(107, 193, 90, 0.1);
+    --hover-color-date-test: rgba(107, 193, 90, 0.2);
+    --tag-color: #58a04a;
+    --btn-triangle: url(../../../../themes/default/images/btn-green-triangle-bg.png);
+    --ico-bkm: #58a04a;
+    --ico-bkm-activated: #2FA84F;
+    --pj-gradient-over: #58a04a;
+    --head-mru: #3c8dbc;
+    --main_color-red: #51754A;
+    --hover_focus_visited_color-red: #2D4D26 !important;
+    --clair_mid_color-red: #58a04a !important;
+    --clair_gris_color-red: #5f7964 !important;
+    --clair_second_color-red: #58a04a !important;
+    --bg-datetimepckr: #e3fcef;
+    --danger-color: #bb1515;
+    --info-color: #3c8dbc;
+    --warning-color: #ff8A00;
+    --success-color: #58a04a;
+    --xpressfilter-bgcolor: #e3fcef;
+    --progress-fgcolor: #58a04a;
+    --progress-bgcolor: #2D4D26;
+    --stepbar-bgcolor: silver;
+    --stepbar-fgcolor: silver;
+    --stepbar-bordercolor: gray;
+    --stepbar-hover-bgcolor: #E0E0E0;
+    --stepbar-hover-fgcolor: #E0E0E0;
+    --stepbar-hover-bordercolor: gray;
+    --stepbar-selected-bgcolor: #E0E0E0;
+    --stepbar-selected-fgcolor: #E0E0E0;
+    --stepbar-selected-bordercolor: gray;
+    --stepbar-inprogress-bgcolor: #51754A;
+    --stepbar-inprogress-fgcolor: #51754A;
+    --stepbar-inprogress-bordercolor: #2D4D26;
+    --stepbar-inprogress-hover-bgcolor: #58a04a;
+    --stepbar-inprogress-hover-fgcolor: #58a04a;
+    --stepbar-inprogress-hover-bordercolor: #2D4D26;
+    --stepbar-inprogress-selected-bgcolor: #58a04a;
+    --stepbar-inprogress-selected-fgcolor: #58a04a;
+    --stepbar-inprogress-selected-bordercolor: #2D4D26;
+    --stepbar-completed-bgcolor: silver;
+    --stepbar-completed-fgcolor: silver;
+    --stepbar-completed-bordercolor: gray;
+    --stepbar-completed-hover-bgcolor: #E0E0E0;
+    --stepbar-completed-hover-fgcolor: #E0E0E0;
+    --stepbar-completed-hover-bordercolor: gray;
+    --stepbar-completed-selected-bgcolor: #E0E0E0;
+    --stepbar-completed-selected-fgcolor: #E0E0E0;
+    --stepbar-completed-selected-bordercolor: gray;
+    --stepbar-completed-suite-bgcolor: #51754A;
+    --stepbar-completed-suite-fgcolor: white;
+    --stepbar-completed-suite-bordercolor: #2D4D26;
+    --stepbar-completed-suite-hover-bgcolor: #58a04a;
+    --stepbar-completed-suite-hover-fgcolor: white;
+    --stepbar-completed-suite-hover-bordercolor: #2D4D26;
+    --stepbar-cpmpleted-suite-selected-bgcolor: #58a04a;
+    --stepbar-completed-suite-selected-fgcolor: white;
+    --stepbar-completed-suite-selected-bordercolor: #2D4D26;
+    --stepbar-textcolor: black;
+    --stepbar-inprogress-textcolor: black;
+    --stepbar-completed-textcolor: black;
+    --stepbar-completed-selected-textcolor: black;
+    --background-main-color: #f5f5f5;
+    --background-main-color-light: #fbfbfb;
+    --light-color-grey: #bdffaf;
+}
+
+/*Couleurs du site*/
+
+
+
+

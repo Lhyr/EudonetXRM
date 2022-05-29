@@ -1,0 +1,51 @@
+﻿#dupliTreatSelectFields {
+    width: 93%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+    #dupliTreatSelectFields .list_even, #dupliTreatSelectFields .list_odd {
+        text-indent: 0;
+    }
+    #dupliTreatSelectFields input[type="text"], #dupliTreatSelectFields input[type="search"] {
+        height: 21px;
+        box-sizing: border-box;
+    }
+#dupliTreatSelectFields table {
+    border: 1px solid #AFABAA;
+    border-collapse: collapse;
+    width: 100%;
+}
+    #dupliTreatSelectFields table thead > tr, #dupliTreatSelectFields table tbody  {
+        /*display: block;*/
+    }
+    #dupliTreatSelectFields table tbody {
+        /*height: 450px;
+        overflow: auto;*/
+    }
+#dupliTreatSelectFields table th {
+    background-color: #DFDFDF;
+    color: #696969;
+    font-weight: bold;
+    height: 24px;
+    font-size: 12px;
+    border-right: 1px solid #AFABAA;
+    box-sizing: border-box;
+}
+    #dupliTreatSelectFields table th.checkCol {
+        width: 35px;
+    }
+#dupliTreatSelectFields table th,
+#dupliTreatSelectFields table td {
+    padding: 0 10px;
+}
+    #dupliTreatSelectFields table td {
+        padding: 7px 10px;
+        border: none;
+    }
+
+td.duplival div.options {
+    margin: 0px;
+}
+
+ 

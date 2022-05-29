@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SynchroWCF" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/SynchroWCF/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/SynchroWCF/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/SynchroWCF/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" />
+      <xsd:import schemaLocation="http://localhost:8733/SynchroWCF/?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:8733/SynchroWCF/?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISynchroWCF_CreateUpdateAppointment_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUpdateAppointment" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_CreateUpdateAppointment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUpdateAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_DeleteAppointment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAppointment" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_DeleteAppointment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_ActivateUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateUsers" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_ActivateUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_ActivateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateUser" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_ActivateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_RenewSubscriptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:RenewSubscriptions" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_RenewSubscriptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RenewSubscriptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_RenewSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:RenewSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_RenewSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RenewSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_DeactivateUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateUsers" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_DeactivateUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_DeactivateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateUser" />
+  </wsdl:message>
+  <wsdl:message name="ISynchroWCF_DeactivateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISynchroWCF">
+    <wsdl:operation name="CreateUpdateAppointment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISynchroWCF/CreateUpdateAppointment" message="tns:ISynchroWCF_CreateUpdateAppointment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISynchroWCF/CreateUpdateAppointmentResponse" message="tns:ISynchroWCF_CreateUpdateAppointment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppointment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISynchroWCF/DeleteAppointment" message="tns:ISynchroWCF_DeleteAppointment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISynchroWCF/DeleteAppointmentResponse" message="tns:ISynchroWCF_DeleteAppointment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISynchroWCF/ActivateUsers" message="tns:ISynchroWCF_ActivateUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISynchroWCF/ActivateUsersResponse" message="tns:ISynchroWCF_ActivateUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISynchroWCF/ActivateUser" message="tns:ISynchroWCF_ActivateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISynchroWCF/ActivateUserResponse" message="tns:ISynchroWCF_ActivateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RenewSubscriptions">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISynchroWCF/RenewSubscriptions" message="tns:ISynchroWCF_RenewSubscriptions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISynchroWCF/RenewSubscriptionsResponse" message="tns:ISynchroWCF_RenewSubscriptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RenewSubscription">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISynchroWCF/RenewSubscription" message="tns:ISynchroWCF_RenewSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISynchroWCF/RenewSubscriptionResponse" message="tns:ISynchroWCF_RenewSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISynchroWCF/DeactivateUsers" message="tns:ISynchroWCF_DeactivateUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISynchroWCF/DeactivateUsersResponse" message="tns:ISynchroWCF_DeactivateUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISynchroWCF/DeactivateUser" message="tns:ISynchroWCF_DeactivateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISynchroWCF/DeactivateUserResponse" message="tns:ISynchroWCF_DeactivateUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EudoSynchroExchangeEndPoint" type="tns:ISynchroWCF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateUpdateAppointment">
+      <soap:operation soapAction="http://tempuri.org/ISynchroWCF/CreateUpdateAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppointment">
+      <soap:operation soapAction="http://tempuri.org/ISynchroWCF/DeleteAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateUsers">
+      <soap:operation soapAction="http://tempuri.org/ISynchroWCF/ActivateUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateUser">
+      <soap:operation soapAction="http://tempuri.org/ISynchroWCF/ActivateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RenewSubscriptions">
+      <soap:operation soapAction="http://tempuri.org/ISynchroWCF/RenewSubscriptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RenewSubscription">
+      <soap:operation soapAction="http://tempuri.org/ISynchroWCF/RenewSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateUsers">
+      <soap:operation soapAction="http://tempuri.org/ISynchroWCF/DeactivateUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateUser">
+      <soap:operation soapAction="http://tempuri.org/ISynchroWCF/DeactivateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SynchroWCF">
+    <wsdl:port name="EudoSynchroExchangeEndPoint" binding="tns:EudoSynchroExchangeEndPoint">
+      <soap:address location="http://localhost:8733/SynchroWCF/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

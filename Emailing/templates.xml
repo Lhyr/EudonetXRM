@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+  <template id="12"  res="6406"  image-name="minSimpleTexte.jpg" image-zoom="maxSimpleTexte.jpg" folder="vierge-rd"/>
+  <template id="13"  res="2213"  image-name="minSimpleTextCenter.jpg" image-zoom="maxSimpleTextCenter.jpg" folder="vierge-center-rd"/>
+  <template id="1"  res="6421"  image-name="minInfo.jpg" image-zoom="maxInfo.jpg" folder="information"/>
+  <template id="2"  res="6417"  image-name="minInvit.jpg" image-zoom="maxInvit.jpg" folder="invitation"/>
+  <template id="3"  res="6416"  image-name="minNewsletter.jpg" image-zoom="maxNewsletter.jpg" folder="newsletter"/>
+  <template id="4"  res="6415"  image-name="minInfoRD.jpg" image-zoom="maxInfoRD.jpg" folder="information-rd"/>
+  <template id="5"  res="6418"  image-name="minPromoRD.jpg" image-zoom="maxPromoRD.jpg" folder="promotion-rd"/>
+  <template id="6"  res="6419"  image-name="minNewsTurquoiseRD.jpg" image-zoom="maxNewsTurquoiseRD.jpg" folder="newsletter-turquoise-rd"/>
+  <template id="7"  res="6420"  image-name="minNewsRougeRD.jpg" image-zoom="maxNewsRougeRD.jpg" folder="newsletter-rouge-rd"/>
+  <template id="8"  res="6414"  image-name="minNewsVertRD.jpg" image-zoom="maxNewsVertRD.jpg" folder="newsletter-vert-rd"/>
+  <template id="9"  res="6755"  image-name="minNewsFushiaRD.jpg" image-zoom="maxNewsFushiaRD.jpg" folder="newsletter-fushia-rd"/>
+  <template id="10"  res="6756"  image-name="minNewsOrangeRD.jpg" image-zoom="maxNewsOrangeRD.jpg" folder="newsletter-orange-rd"/>
+  <template id="11"  res="6757"  image-name="minNewsBleuRD.jpg" image-zoom="maxNewsBleuRD.jpg" folder="newsletter-bleu-rd"/>
+</templates>

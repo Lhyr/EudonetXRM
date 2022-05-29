@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Maquette Administrer les droits</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="../Scripts/eTools.js"></script>
+    <link href="../themes/default/css/eudoFont.css" rel="stylesheet" />
+    <link href="../themes/default/css/eMain.css" rel="stylesheet" />
+    <link href="../themes/default/css/eButtons.css" rel="stylesheet" />
+    <link href="../themes/default/css/eAdminMenu.css" rel="stylesheet" />
+    
+</head>
+<body class="maquette">
+    <div class="adminModal" id="rightsModal">
+        <header>
+            Administrer les droits
+        </header>
+
+        <div class="adminModalContent">
+
+            <div id="headerFilters">
+                <div class="field">
+                    <label>Onglet :</label>
+                    <select>
+                        <option>Affaires</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Type :</label>
+                    <select>
+                        <option>Tous</option>
+                    </select>
+                    <div id="typeFilter">
+                        <div id="searchField">
+                            <input type="text" id="txtSearchType" value="Val"/>
+                            <span class="icon-magnifier"></span>
+                        </div>
+                    
+                        <ul id="typeFilterOptions">
+                            <li>
+                                <ul id="searchOperators" class="filterOptions">
+                                    <li>Débute par <span>"Val"</span></li>
+                                    <li>Contient <span>"Val"</span></li>
+                                    <li>Uniquement les valeurs cochées</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul id="searchValues">
+                                    <li><input type="checkbox" /><label>Tout sélectionner</label></li>
+                                    <li><input type="checkbox" /><label>Valeur 1</label></li>
+                                    <li><input type="checkbox" /><label>Valeur 2</label></li>
+                                    <li><input type="checkbox" /><label>Valeur 3</label></li>
+                                </ul>
+                            </li>
+                            <li >
+                                <ul class="filterOptions">
+                                    <li>Charger toutes les valeurs</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="filterOptions">
+                                    <li>Vide</li>
+                                    <li>Non vide</li>
+                                </ul>
+                            </li>
+                            <li id="noFilterOption">
+                                <ul class="filterOptions" >
+                                    <li><span class="icon-rem_filter"></span> Aucun filtre</li>
+                                </ul>
+                            
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+            <div id="rightsTabFilters" class="rightsButton">
+                <div id="iconWrapper">
+                    <span class="icon-bt-actions-left"></span>
+                </div>
+                <div id="content">
+                    <label>Afficher les permissions pour :</label>
+                    <select>
+                        <option>Niveaux</option>
+                    </select>
+                    <select>
+                        <option>Groupes et Utilisateurs</option>
+                    </select>
+                </div>
+                
+            </div>
+
+            <div id="treatmentsButton" class="rightsButton" onclick="showTreatmentsRights();">
+                Traitements
+            </div>
+
+            <table id="tableFilters">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Onglets</th>
+                        <th>Types</th>
+                        <th>Depuis</th>
+                        <th>Fonction</th>
+                        <th>Niveaux</th>
+                        <th>Utilisateurs et groupes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="icon-pin_down"></span></td>
+                        <td><span class="icon-edn-info"></span>Affaires</td>
+                        <td>Action unitaire</td>
+                        <td>-</td>
+                        <td>Ajouter une fiche</td>
+                        <td><input type="range" class="rangeLevels"/></td>
+                        <td>Tous</td>
+                    </tr>
+                    <tr>
+                        <td><span class="icon-pin_down"></span></td>
+                        <td><span class="icon-edn-info"></span>Affaires</td>
+                        <td>Action unitaire</td>
+                        <td>-</td>
+                        <td>Modifier une fiche</td>
+                        <td><input type="range" class="rangeLevels"/></td>
+                        <td>Direction</td>
+                    </tr>
+                    <tr>
+                        <td><span class="icon-pin_down"></span></td>
+                        <td><span class="icon-edn-info"></span>Affaires</td>
+                        <td>Action unitaire</td>
+                        <td>-</td>
+                        <td>Supprimer une fiche</td>
+                        <td><input type="range" class="rangeLevels"/></td>
+                        <td>Aucun</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        
+    </div>
+    <div class="adminModal" id="treatmentRightsModal">
+                <header>
+                    <div class="modalTitle">Traitements</div>
+                    <div class="modalActions">
+                        <span class="icon-maximize"></span>
+                        <span class="icon-edn-cross"></span>
+                    </div>
+                </header>
+
+                <div class="adminModalContent">
+                    <p>Pour chaque droit sélectionné :</p>
+                    <div class="field">
+                        <div class="checkboxField">
+                            <a class="rChk chk" dis="0" chk="0" align="top" onclick="chgChk(this);return false;" href="#"><span class="icon-check-square"></span>Habiliter le niveau</a>
+                        </div>
+                        <select>
+                            <option>Niveaux</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="checkboxField">
+                            <a class="rChk chk" dis="0" chk="0" align="top" onclick="chgChk(this);return false;" href="#"><span class="icon-square-o"></span>Habiliter les groupes et utilisateurs</a>
+                        </div>
+                        <select>
+                            <option>Vide</option>
+                        </select>
+                    </div>
+   
+                    <p class="warning">Attention, ce traitement de masse est irréversible</p>
+
+                    <div ednmodalbtn="1" class="button-green"><div class="button-green-left"></div><div class="button-green-mid">Valider</div><div class="button-green-right"></div></div>
+
+                    <div ednmodalbtn="1" class="button-gray"><div class="button-gray-left"></div><div class="button-gray-mid">Annuler</div><div class="button-gray-right"></div></div>
+                </div>
+            </div>
+    <script type="text/javascript">
+        function showTreatmentsRights() {
+            var modal = document.getElementById("treatmentRightsModal");
+            modal.className += " active";
+            var rightsModal = document.getElementById("rightsModal");
+            rightsModal.style.backgroundColor = "gray";
+            rightsModal.style.opacity = "0.3";
+        }
+    </script>
+</body>
+</html>

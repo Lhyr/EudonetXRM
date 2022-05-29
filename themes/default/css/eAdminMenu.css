@@ -1,0 +1,3361 @@
+#globalNav *, #rightMenu *, div.fileDiv * {
+    box-sizing: border-box;
+}
+
+div#rightMenuBrowsing * {
+    box-sizing: content-box;
+}
+
+
+body {
+    font-family: Verdana, 'Trebuchet MS';
+    color: #7A716E;
+}
+
+ul, li, p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    filter : none;
+    margin: 0;
+}
+
+    input[type='text'].numInput {
+        text-align: right;
+        width: 55px !important;
+    }
+
+    input[type='radio'] {
+        margin-right: 5px;
+    }
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+[data-active='0'] {
+    display: none;
+}
+
+[data-active='1'] {
+    display: block;
+}
+
+#Gerrard a.rChk span {
+    vertical-align: middle;
+    color: #606266;
+}
+
+.rightMenu {
+    font-family: Verdana, 'Trebuchet MS';
+}
+
+    .rightMenu .blockMenuLink {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+        .rightMenu .blockMenuLink:hover {
+            background-color: #D0E6FC;
+        }
+
+    .rightMenu .paramPart a {
+        white-space: normal;
+        /*font-size: 10pt;
+    display: block;*/
+    }
+
+    .rightMenu .paramPartContent a.chk {
+        color: #7A716E;
+        font-size: 9pt;
+        display: table-row;
+        font-style: normal;
+    }
+
+    .rightMenu .paramPart a.chk span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+        .rightMenu .paramPart a.chk span:last-child {
+            padding-left: 5px;
+        }
+
+    .rightMenu .paramBlock .field select {
+        width: 75%;
+        position: absolute;
+    }
+
+
+label.select_red + select {
+    background-color: red;
+    color: white
+}
+
+.rightMenu .paramBlock .field.verticalSelect select {
+    width: 100%;
+    position: inherit;
+}
+
+.rightMenu .paramBlock .verticalSelect label {
+    font-style: italic;
+    color: #A5A4A8;
+    font-size: 8pt;
+    padding-bottom: 3px;
+    margin-right: 0px;
+}
+
+
+.rightMenu .paramBlock .field.LabelResult input {
+    float: right;
+    width: 70%;
+}
+
+
+#main {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 90%;
+}
+
+.globalNav {
+    font-family: Verdana, 'Trebuchet MS' !important;
+    font-size: 14pt;
+}
+
+.button-green, .button-gray {
+    background-image: none;
+}
+
+.button-green {
+    background-color: #8EBA3A;
+}
+
+.button-gray {
+    background-color: #E9EAEA;
+}
+
+    .button-green > div[class^="button"],
+    .button-gray > div[class^="button"] {
+        background-image: none !important;
+    }
+
+.updatedField {
+    border-color: #79BE0B !important;
+}
+
+/* CONTENU PRINCIPAL */
+#adminNav {
+    height: 40px;
+    background-color: #ebebeb;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 15px;
+    position: relative;
+    border-top-style: solid;
+    border-top-color: #37A7DE;
+    border-top-width: 2px;
+}
+
+    #adminNav span {
+        vertical-align: middle;
+        color: #636363;
+    }
+
+    #adminNav input[type=text] {
+        border: 1px solid #887F7D;
+        height: 24px;
+        font-family: Verdana;
+        color: #606266;
+        font-size: 9pt;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+        #adminNav input[type=text]:focus {
+            border: 2px solid #A0CDE3;
+        }
+        /* On n'affiche pas la croix sur IE */
+        #adminNav input[type=text]::-ms-clear {
+            display: none;
+        }
+
+    /*
+    #adminNav #divLabelTabName {
+        cursor: pointer;
+        display: inline-block;
+        line-height: 15px;
+        padding: 2px 7px;
+    }
+
+        #adminNav #divLabelTabName span[class^='icon-'] {
+            display: none;
+        }
+
+        #adminNav #divLabelTabName:hover span[class^='icon-'] {
+            display: inline-block;
+        }
+        */
+
+    /**********  Début admin grilles ***********************/
+
+    #adminNav #divLabelTabName[edit='0'] input, #adminNav #divLabelTabName[edit='1'] #labelTabName {
+        display: none;
+    }
+
+    #adminNav #divLabelTabName[edit='0'] #labelTabName, #adminNav #divLabelTabName[edit='1'] input {
+        /*display: initial;*/
+    }
+
+    #adminNav #divLabelTabName[edit='1'] {
+        background-color: inherit;
+    }
+
+        #adminNav #divLabelTabName[edit='1'] [class^=icon-] {
+            color: #606266 !important;
+            float: right;
+        }
+
+        #adminNav #divLabelTabName[edit='1'] input {
+            min-width: 75px;
+            width: 100%;
+            max-width: 100px;
+            vertical-align: middle;
+        }
+
+    /********************** Fin admin grille *********************/
+
+    #adminNav #labelTabName, #adminNav #labelBkmName, #adminNav .navEntry .navEntryLabel {
+        line-height: 38px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    #adminNav .navEntry.navModuleWithMenu .navAction .navEntryLabel {
+        line-height: 18px;
+    }
+
+    #adminNav #divInputTabName, #adminNav #divInputBkmName {
+        position: relative;
+        padding-left: 15px;
+    }
+
+        #adminNav #divInputTabName [class^=icon-], #adminNav #divInputBkmName [class^=icon-], #adminNav #divLabelTabName[edit='1'] [class^=icon-] {
+            position: absolute;
+            right: 15px;
+            /*top: 9px;*/
+            font-size: 11pt;
+            color: #6E6966;
+            line-height: 38px;
+        }
+
+    #adminNav #inputTabName {
+        vertical-align: middle;
+    }
+
+    #adminNav .navTitleActive {
+        background-color: inherit;
+    }
+
+    #adminNav .navLinks {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        vertical-align: middle;
+        margin-right: 15px;
+    }
+
+        #adminNav .navLinks > li {
+            cursor: pointer;
+            height: 100%;
+            vertical-align: middle;
+            display: block;
+            position: relative;
+            float: left;
+            /*border: 1px solid #a5a4a8;*/
+            background-color: #ebebeb;
+            color: #fff;
+            max-width: 300px;
+        }
+
+
+            /* Préciser navLinks est nécessaire pour maintenir la couleur de surbrillance sur les boutons de la navbar lorsque le curseur se trouve sur le menu déroulant */
+            #adminNav .navLinks > li:hover {
+                background-color: #f8f8f8;
+            }
+
+                #adminNav .navLinks > li:hover span {
+                    color: #37A7DE;
+                }
+
+                /* Les classes ci-dessus ne doivent pas s'appliquer aux li d'un sous-menu.
+                   (le li déroulant le menu étant en hover, ce :hover s'applique automatiquement aux sous-li, même s'ils ne sont pas survolés)
+                    */
+                #adminNav .navLinks > li:hover li.navAction:hover span.navActionText {
+                    color: #706A64;
+                }
+
+                #adminNav .navLinks > li:hover span.navActionText,
+                #adminNav .navLinks > li:hover li.navActionSelected:hover span.navActionText {
+                    font-family: Verdana, 'Trebuchet MS';
+                    color: white;
+                }
+
+            #adminNav .navLinks > li span {
+                line-height: 18px;
+                height: 100%;
+            }
+
+    #adminNav .navLinksLeft > li span {
+        /*padding-left: 10px;*/
+    }
+
+
+    #adminNav .navLinks span[class^='icon-'] {
+        /*color: #fff;*/
+        font-size: 12pt;
+    }
+
+
+    #adminNav #divLabelTabName [class^=icon-], #adminNav #divLabelBkmName [class^=icon-], #adminNav .navEntry.navModuleWithMenu .navTitle [class^=icon-] {
+        font-size: 13px;
+        position: absolute;
+        right: 2px;
+        top: 0;
+        line-height: 38px;
+    }
+
+    #adminNav .navLinksLeft span[class^='icon-'] {
+        padding-left: 10px;
+    }
+
+    #adminNav .navTitleSelected,
+    #adminNav .navActionSelected,
+    #adminNav .navLinks > li.navActionSelected,
+    #adminNav .navLinks > li.navTitleSelected {
+        background-color: #37A7DE;
+        height: 100%;
+    }
+
+        #adminNav .navTitleSelected:hover,
+        #adminNav .navActionSelected:hover,
+        #adminNav .navLinks > li.navTitleSelected:hover,
+        #adminNav .navLinks > li.navActionSelected:hover {
+            background-color: #37A7DE;
+        }
+
+            #adminNav .navTitleSelected span:hover,
+            #adminNav .navActionSelected span:hover,
+            #adminNav .navLinks > li.navTitleSelected:hover span,
+            #adminNav .navLinks > li.navActionSelected:hover span {
+                color: white;
+            }
+
+    #adminNav .navLinks > li:hover > div.navTitleSelected span {
+        color: white;
+    }
+
+    #adminNav .navEntry .navTitle, #adminNav .navEntry .navTitleSelected {
+        border-bottom: none;
+        height: 100%;
+        padding-right: 20px;
+    }
+
+    #adminNav .navEntry.navModuleWithMenu .navTitle span {
+        color: #37A7DE;
+    }
+
+    #adminNav .navEntry .navTitleSelected span {
+        color: #fff !important;
+    }
+
+
+    /* Triangle sur le bord droit des boutons de la navbar */
+    #adminNav .navLinksLeft .navEntry .navTitle:not(.navTitleSelected):after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: -24px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 15px 6px 9px;
+        border-color: transparent transparent transparent #ebebeb;
+        z-index: 1;
+    }
+
+    #adminNav .navLinksLeft .navEntry:hover .navTitle:after {
+        border-color: transparent transparent transparent #f8f8f8;
+    }
+
+    /*#adminNav .navLinksLeft .navEntry:hover .navTitleSelected:after {
+        border-color: transparent transparent transparent #37A7DE;
+    }
+
+    #adminNav .navLinksLeft .navEntry .navTitleSelected:after {
+        border-color: transparent transparent transparent #37A7DE;
+    }*/
+
+    #adminNav .navEntry .navTitle:hover {
+    }
+
+    #adminNav .navLinksLeft {
+        left: 0;
+    }
+
+    #adminNav .navLinksRight {
+        right: 0;
+    }
+
+    #adminNav .navTitle {
+        padding-right: 0;
+    }
+
+    #adminNav #navLeaveAdmin {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 15%;
+        min-width: 212px;
+        height: 100%;
+    }
+
+        #adminNav #navLeaveAdmin .navTitle {
+            padding: 0 5px;
+        }
+
+        #adminNav #navLeaveAdmin span {
+            color: #636363;
+            line-height: 38px;
+            display: inline-block;
+            float: left;
+        }
+
+            #adminNav #navLeaveAdmin span:first-child {
+                width: 20%;
+                margin-right: 5px;
+            }
+
+            #adminNav #navLeaveAdmin span:last-child {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 75%;
+            }
+
+        #adminNav #navLeaveAdmin:hover span {
+            color: #37A7DE;
+        }
+
+        #adminNav #navLeaveAdmin:hover ul.sbMenu {
+            display: block;
+        }
+
+
+/* MRU - menu déroulant navbar admin */
+li.navLst div {
+    overflow: hidden;
+    width: 142px !important;
+    /* text-overflow: ellipsis; */ /* Pas d'ellipsis, texte tronqué - comme en utilisation */
+}
+
+.adminNav ul.sbMenu, .adminNav ul.sbMenuActive {
+    width: 100%;
+    border: none;
+    background-color: #F8F8F8;
+    padding: 10px;
+    border: 1px solid #EBEBEB;
+    border-bottom: 2px solid #37A7DE;
+    border-top: none;
+    top: 38px;
+}
+/* Sélecteur + : ul.sbMenu doit être la balise soeur directe de div.navTitleSelected */
+.adminNav div.navTitleSelected + ul.sbMenu, .adminNav div.navTitleSelected + ul.sbMenuActive {
+    border-bottom: 2px solid #37A7DE;
+    border-top: none;
+}
+
+.adminNav li#navLeaveAdmin:hover ul.sbMenu,
+.adminNav li#navLeaveAdmin:hover ul.sbMenuActive,
+.adminNav li#navRootAdmin:hover ul.sbMenu,
+.adminNav li#navRootAdmin:hover ul.sbMenuActive,
+.adminNav li.navModuleWithMenu:hover ul.sbMenu,
+.adminNav li.navModuleWithMenu:hover ul.sbMenuActive {
+    display: block;
+    z-index: 1;
+}
+
+.adminNav li#navRootAdmin:hover ul.sbMenu,
+.adminNav li#navRootAdmin:hover ul.sbMenuActive,
+.adminNav li.navModuleWithMenu:hover ul.sbMenu,
+.adminNav li.navModuleWithMenu:hover ul.sbMenuActive {
+    width: auto;
+}
+
+.adminNav .sbmMRU {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.adminNav .sbmA {
+    width: auto;
+}
+
+.adminNav .sbmMRU li.navLst {
+    width: 100%;
+    background-color: #e1e0e3;
+}
+
+    .adminNav .sbmMRU li.navLst:hover, .adminNav .sbmMRU li.navActiveElt {
+        background-color: #b1d3f0;
+    }
+
+.adminNav ul.Action_sMC, .adminNav ul.Action_sMC .navAction {
+    background-color: #a5a4a8;
+    width: 100%;
+    font-size: 10pt;
+}
+
+    .adminNav ul.Action_sMC .navSubAction {
+        padding-left: 20px;
+    }
+
+    .adminNav ul.Action_sMC .navRootAction {
+        border-top: 1px solid white;
+    }
+
+    .adminNav ul.Action_sMC .navAction:hover {
+        background-color: #b1d3f0;
+        /*color: #37A7DE;*/
+    }
+
+
+.adminNav li.navAction div {
+    overflow: hidden;
+    width: 180px !important;
+}
+
+/* MENU DE DROITE */
+#rightMenu {
+    /*width: 208px;*/
+    position: fixed;
+    right: 0;
+    background-color: gray;
+    min-height: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 9;
+}
+
+#Gerard {
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.fs_8pt #Gerard .encartProfil {
+    height: 50px;
+    background-color: #f8f8f8;
+    padding: 10px 7px 7px 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.fs_10pt #Gerard .encartProfil {
+    height: 50px;
+    background-color: #f8f8f8;
+    padding: 10px 7px 7px 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.fs_12pt #Gerard .encartProfil {
+    height: 50px;
+    background-color: #f8f8f8;
+    padding: 10px 7px 7px 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.fs_14pt #Gerard .encartProfil {
+    height: 58px;
+    background-color: #f8f8f8;
+    padding: 10px 7px 0px 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.fs_16pt #Gerard .encartProfil {
+    height: 58px;
+    background-color: #f8f8f8;
+    padding: 5px 7px 0px 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.fs_18pt #Gerard .encartProfil {
+    height: 58px;
+    background-color: #f8f8f8;
+    padding: 3px 7px 0px 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.fs_18pt #Gerard .hAvatar {
+    margin: 0;
+    margin-right: 7px;
+    cursor: pointer;
+    position: relative;
+    top: 14px;
+}
+
+
+#Gerard .encartProfil {
+    height: 40px;
+    background-color: #f8f8f8;
+    padding: 7px 7px 7px 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#Gerard .encartProfilH {
+    height: 85px;
+    padding: 25px 7px 25px 15px;
+}
+
+#Gerard .encartProfil .helloMnu {
+    padding: 0;
+    /*line-height: 10px;*/
+}
+
+#Gerard .encartProfil .nickMnu {
+    /*line-height: 18px;*/
+}
+
+#Gerard .hAvatar {
+    margin: 0;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+/* Surcharge de eMain.css */
+#Gerard .rightMenuSpan_adjust [class^="icon-"] {
+    padding: 7px;
+}
+
+#Gerard #rightMenuBrowsing .rightMenuSpan_adjust [class^="icon-"] {
+    padding: 5px;
+}
+
+.rightMenuModFile a {
+    background-color: #37A7DE;
+    color: #FFFFFF;
+    font-size: 9pt;
+}
+
+.rightMenuModFile:hover a {
+    /*background-color: #F8F8F8;*/
+    /*color: #37A7DE;*/
+    /*font-size: 12pt;*/
+}
+
+.rightMenuOption a, .rightMenuModFile a {
+    font-family: Verdana;
+}
+
+.hUserBloc {
+    font-size: 12pt;
+    font-family: Verdana;
+}
+
+    .hUserBloc span[class^="icon-"] {
+        font-size: 12pt;
+        margin-right: 5px;
+    }
+
+.btnEscMnu [class^='icon-'] {
+    line-height: 22px;
+}
+
+.menuBar {
+    background-color: #414347;
+    height: 100%;
+    transition: 250ms;
+}
+
+.rightMenuSubMenuTitle {
+    font-size: 9pt;
+    /*height: 32px;*/
+}
+
+.rightMenuOptionClickable ul.rightMenuSubMenuTitle li:hover {
+    background-color: #BEDCFB;
+}
+
+.rightMenuOptionSelected ul.rightMenuSubMenuTitle li,
+.rightMenuSubMenuItem li.rightMenuOptionSelected {
+    background-color: #BEDCFB;
+}
+
+/* UTILISATEUR */
+#userInfo {
+    height: 48px;
+    padding: 10px 0 10px 17px;
+    box-sizing: border-box;
+}
+
+    #userInfo #userAvatar {
+    }
+
+    #userInfo img {
+        float: left;
+        margin-right: 10px;
+    }
+
+/* NAVIGATION */
+#navTabs {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    height: 40px;
+    background-color: #37A7DE;
+    color: #A0CFEA;
+}
+
+.navIcon {
+    flex: 1;
+    text-align: center;
+}
+
+    .navIcon span[class^="icon"] {
+        position: relative;
+        left: 0;
+        color: #8DD1F3;
+        line-height: 40px;
+    }
+
+        .navIcon span[class^="icon"]:hover {
+            color: white;
+        }
+
+.Action_sMC li {
+    border: none;
+}
+
+/* BLOC PARAM */
+.paramBlock {
+    background-color: #fff;
+    position: relative;
+    display: none;
+    font-size: 9pt;
+}
+
+#slidingArrow {
+    left: 185px;
+    position: absolute;
+    top: 73px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 17px 15px;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.paramBlock h3 {
+    color: #37a7de;
+    font-weight: normal;
+    font-size: 11pt;
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+.paramBlock .info {
+    font-style: italic;
+    color: #A5A4A8;
+    font-size: 8pt;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+
+.paramBlock .infoText {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.paramBlock > .info {
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+
+#PerfPart .info {
+    margin-bottom: 8px;
+}
+
+.paramBlock .field {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.paramBlock > .field {
+}
+
+.paramBlock .field * {
+    vertical-align: middle;
+}
+
+.paramBlock .field label {
+    margin-right: 10px;
+    line-height: 20px;
+}
+
+.paramBlock .field.fieldInline label.inlinePrefix {
+    margin-left: 0px;
+    margin-right: 2px;
+}
+
+.paramBlock .field.fieldInline label.inlineSuffix {
+    margin-left: 2px;
+    margin-right: 0px;
+}
+
+.paramBlock .field.fieldInline input {
+    width: auto;
+}
+
+.paramBlock input[type=text], not[ehasbtn], .paramBlock textarea {
+    font-family: Verdana;
+    color: #606266;
+    font-size: 9pt;
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #DDD7D3;
+    height: auto;
+}
+
+.paramBlock input[type=radio] {
+    margin-right: 5px;
+}
+
+.paramBlock input[type=text][ehasbtn='1'] {
+    font-family: Verdana;
+    color: #606266;
+    width: 85%;
+    padding: 2px;
+    border: 1px solid #DDD7D3;
+    margin-bottom: 3px;
+    height: auto;
+}
+
+.paramBlock input[type=text].txtCatalog {
+    border: none;
+    border-bottom: 1px dashed #b6b6b6;
+    height: 18px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.paramBlock input[type=checkbox] {
+    /*margin-right: 7px;*/
+    float: left;
+    width: auto;
+}
+
+.field ul.listRB {
+    overflow: hidden;
+}
+
+    .field ul.listRB li {
+        display: inline-block;
+        margin-right: 10px;
+        float: left;
+    }
+
+        .field ul.listRB li * {
+            vertical-align: bottom; /* ALISTER => Demande/Request 83 964*/
+        }
+
+.stepContent .field ul.listRB li {
+    display: block;
+    float: none;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+.paramBlock [class^="icon-"] {
+    color: #706A64;
+}
+
+.paramBlockContent {
+    overflow-y: auto;
+}
+
+.paramPartContent {
+    border-top: 1px solid #d7d8da;
+    background-color: #e8e8e9;
+    border-bottom: 1px solid #d7d8da;
+    box-sizing: border-box;
+    padding: 8px 8px 3px 8px;
+    display: none;
+}
+
+    .paramPartContent h5 {
+        font-size: 9pt;
+        margin: 10px 0 5px;
+    }
+
+    .paramPartContent .paramPartContent {
+        padding: 0;
+    }
+
+.blueParamPartContent {
+    display: none;
+    background-color: #e5f2fa;
+}
+
+.paramPartContent[data-active="1"] {
+    display: block;
+    transition: all 1s;
+}
+
+#FieldsTypesPart ul {
+    overflow: hidden;
+}
+
+div[id$='RulesPart'] > .paramPartContent,
+#RulesBkmPart > .paramPartContent {
+    padding: 3px 0px 3px 0px !important;
+}
+
+    div[id$='RulesPart'] > .paramPartContent > .linkButton,
+    #RulesBkmPart > .paramPartContent > .linkButton {
+        margin: 11px !important;
+    }
+
+    div[id$='RulesPart'] > .paramPartContent .btnLink .paramPartContent .linkButton,
+    #RulesBkmPart > .paramPartContent .btnLink .paramPartContent .linkButton {
+        margin: 6px 0px 6px 0px !important;
+    }
+
+
+#adminAssociateField > .paramPartContent {
+    padding: 8px 8px 3px 8px;
+}
+
+div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent .linkButton a,
+#RulesBkmPart .paramPartContent .btnLink .paramPartContent .linkButton a {
+    background-color: #E8E8E9 !important;
+    text-align: left;
+    font-size: 9pt;
+}
+
+    div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent .linkButton a:not([data-ro='1']),
+    #RulesBkmPart .paramPartContent .btnLink .paramPartContent .linkButton a:not([data-ro='1']) {
+        color: #7A716E !important;
+    }
+
+    div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent .linkButton a[data-ro='1'],
+    #RulesBkmPart .paramPartContent .btnLink .paramPartContent .linkButton a[data-ro='1'] {
+        color: #000 !important;
+    }
+
+#adminRules .paramPartContent,
+#adminBkmRules .paramPartContent {
+    padding: 0px !important;
+}
+
+div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent .paramPart .paramPartContent .paramPart .paramPartContent,
+div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent .paramPart .paramPartContent,
+div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent,
+#RulesBkmPart .paramPartContent .btnLink .paramPartContent .paramPart .paramPartContent .paramPart .paramPartContent,
+#RulesBkmPart .paramPartContent .btnLink .paramPartContent .paramPart .paramPartContent,
+#RulesBkmPart .paramPartContent .btnLink .paramPartContent {
+    /*border: 1px solid #e5f2fa !important;*/
+    /*padding: 8px 0px 0px 0px !important;*/
+}
+
+    div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent .paramPart .paramPartContent .paramPart .paramPartContent a,
+    div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent .paramPart .paramPartContent a,
+    #RulesBkmPart .paramPartContent .btnLink .paramPartContent .paramPart .paramPartContent .paramPart .paramPartContent a,
+    #RulesBkmPart .paramPartContent .btnLink .paramPartContent .paramPart .paramPartContent a {
+        padding-left: 35px !important;
+    }
+
+    div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent a,
+    #RulesBkmPart .paramPartContent .btnLink .paramPartContent a {
+        padding-left: 38px !important;
+    }
+
+#adminAutomatismes .paramPartContent header,
+#adminRules .paramPartContent header,
+#adminBkmRules .paramPartContent header {
+    padding: 0px 0px 0px 18px !important;
+}
+
+div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent .linkButton:hover,
+#RulesBkmPart .paramPartContent .btnLink .paramPartContent .linkButton:hover {
+    /*background-color: #37A7DE !important;*/
+    color: #37A7DE !important;
+}
+
+div[id$='RulesPart'] .paramPartContent .btnLink .paramPartContent .linkButton a:hover,
+#RulesBkmPart .paramPartContent .btnLink .paramPartContent .linkButton a:hover {
+    /*background-color: #37A7DE !important;*/
+    color: #37A7DE !important;
+}
+
+.paramPartContent .subTitle {
+    border-bottom: 1px solid #CACBCB;
+    padding-bottom: 3px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+    .paramPartContent .subTitle * {
+        vertical-align: middle;
+    }
+
+    .paramPartContent .subTitle span[class^="icon-"] {
+        font-size: 10pt;
+        margin-right: 9px;
+    }
+
+    .paramPartContent .subTitle .sepLabel {
+        font-size: 9pt;
+        font-weight: bold;
+    }
+
+.blueHeader {
+    background-color: #37A7DE;
+}
+
+    .blueHeader h4 {
+        color: white !important;
+    }
+
+.paramPart header {
+    padding: 7px 4px 7px 10px;
+    cursor: pointer;
+}
+
+    .paramPart header > div[class^='icon'] {
+        float: left;
+        width: 18px;
+        font-size: 12pt;
+    }
+
+    .paramPart header h4 {
+        line-height: normal;
+        font-size: 9pt;
+        font-weight: normal;
+        color: #7A716E;
+        overflow: auto;
+    }
+
+div#edaBkmRelationsMenu .paramPart header {
+    cursor: default;
+}
+
+    div#edaBkmRelationsMenu .paramPart header label {
+        margin-right: 10px;
+    }
+
+/* Spécifique */
+/*#RelationsPart .paramPartContent,
+#partHeaderFields .paramPartContent,
+#HeaderPart .paramPartContent,
+#FieldsTypesPart .paramPartContent {
+    padding: 0;
+}*/
+.relationsFeatures {
+    padding: 5px 0;
+}
+
+#FieldsTypesPart .paramPartContent h5 {
+    font-size: 8pt;
+    color: #999ba0;
+    font-style: italic;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 13px;
+}
+
+#paramTab1 ul li, li.dragField {
+    height: 24px;
+    padding-left: 8px;
+    display: block;
+    border-left: 10px solid #e8e8e9;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+    #paramTab1 ul li:hover, li.dragField:hover {
+        border: 1px dashed #37a7de;
+        border-left: 10px solid #37a7de;
+        color: #37a7de;
+        background-color: #d7e3ea;
+    }
+
+    #paramTab1 ul li *, li.dragField * {
+        line-height: 22px;
+    }
+
+    #paramTab1 ul li span, li.dragField span {
+        vertical-align: middle;
+        font-size: 9pt;
+        color: #66686c;
+    }
+
+    #paramTab1 .fieldIcon[class^='icon-'], li.dragField .fieldIcon {
+        width: 19px;
+        margin-right: 7px;
+        font-size: 12pt;
+        display: inline-block;
+    }
+
+div.parentParam {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+/* Basic */
+input[type="range"] {
+    position: relative;
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    vertical-align: middle;
+    margin: 5px 0 10px;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    border: none;
+}
+
+.divRanges input[type="range"] {
+    display: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+    input[type=range]:hover::-webkit-slider-thumb:after,
+    input[type=range]:focus::-webkit-slider-thumb:after {
+        background: #619FCD;
+    }
+
+/* CHROME */
+/* Thumb */
+input[type=range]::-webkit-slider-runnable-track {
+    background: #AB3732;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 4px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+input[type=range].rangeLevels::-webkit-slider-runnable-track {
+    background: #BACA53;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    /*position: relative;
+	pointer-events:none;
+    width: 4px;
+	height: 100%;
+    cursor: pointer;*/
+    -webkit-appearance: none;
+    border: 1px solid #E2DFDF;
+    background: #fff;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin-top: -7px;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:before {
+    content: attr(min);
+    content: "-";
+    line-height: 0;
+    position: absolute;
+    left: -3000px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #BACA53;
+}
+
+input[type="range"].rangeLevels::-webkit-slider-thumb:before {
+    background: #AB3732;
+}
+
+input[type="range"]::-webkit-slider-thumb:after {
+    content: attr(max);
+    content: "";
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    top: -4px;
+    bottom: -4px;
+    background: #adadad;
+    border-radius: 50%;
+    border: 5px solid #e8e8e8;
+    /*z-index: 10;*/
+}
+
+/* FIREFOX */
+
+input[type=range]::-moz-range-track {
+    height: 4px;
+    background: #AB3732;
+}
+
+input[type=range]::-moz-range-progress {
+    background: #BACA53;
+    height: 4px;
+}
+
+input[type=range].rangeLevels::-moz-range-track {
+    background: #BACA53;
+}
+
+input[type=range].rangeLevels::-moz-range-progress {
+    background: #AB3732;
+}
+
+/* IE 10+ */
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    height: 4px;
+    border-width: 6px 0;
+}
+
+input[type="range"]::-ms-thumb {
+    border: 1px solid #E2DFDF;
+    background: #fff;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #BACA53;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #AB3732;
+    border-radius: 10px;
+}
+
+input[type=range].rangeLevels::-ms-fill-lower {
+    background: #AB3732;
+}
+
+input[type=range].rangeLevels::-ms-fill-upper {
+    background: #BACA53;
+}
+
+div.divRightRule {
+    font-size: 10.5pt;
+    color: #7A716E;
+    min-height: 30px;
+    line-height: 18px;
+}
+
+.divRightRule:hover {
+    background-color: #7ad2f7;
+}
+
+div.divRightRule a {
+    padding: 0 10px 0 30px;
+    line-height: 30px;
+}
+
+/* ADMINISTRER LES DROITS */
+.maquette {
+    background-color: #fff;
+}
+
+    .maquette .adminModal {
+        background-color: #fff;
+    }
+
+.adminModal {
+    color: #606266;
+    padding: 10px;
+}
+
+#rightsModal {
+    width: 985px;
+    height: 652px;
+    margin: auto;
+    margin-top: 90px;
+    position: relative;
+}
+
+.adminModal header {
+    background-color: #898F98;
+    height: 27px;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 14px;
+    line-height: 27px;
+}
+
+    .adminModal header .modalTitle {
+        display: inline-block;
+    }
+
+    .adminModal header .modalActions {
+        float: right;
+    }
+
+        .adminModal header .modalActions span {
+            font-size: 10pt;
+            margin-left: 5px;
+        }
+
+.adminModal .adminModalContent {
+    padding: 14px;
+    font-size: 12px;
+}
+
+.adminModal #headerFilters {
+    margin-bottom: 25px;
+}
+
+    .adminModal #headerFilters label {
+        margin-right: 10px;
+        display: inline-block;
+        width: 80px;
+    }
+
+    .adminModal #headerFilters select {
+        width: 145px;
+        display: inline-block;
+        margin-bottom: 3px;
+    }
+
+        .adminModal #headerFilters select option.BotSep {
+            color: #A5A4A8;
+            text-align: center;
+        }
+
+.adminModal select {
+    border: 1px solid #d3d4d6;
+    width: 198px;
+    height: 21px;
+}
+
+    .adminModal select.edaFormulaActive {
+        margin-left: 5px;
+    }
+
+.adminModal .field {
+    display: inline-block;
+    margin-right: 35px;
+    position: relative;
+}
+
+.adminModal .rightsButton {
+    /*width: 515px;*/
+    background-color: #A5A4AC;
+    height: 23px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+#rightsAdminModalContent #actionsButtons {
+    float: right;
+}
+
+#rightsAdminModalContent .linkButton {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.adminModal #iconWrapper {
+    background-color: #686667;
+    width: 28px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100%;
+    padding-left: 7px;
+    float: left;
+}
+
+    .adminModal #iconWrapper span {
+        color: #fff;
+        font-size: 10pt;
+        line-height: 21px;
+    }
+
+.adminModal #rightsTabFilters #content {
+    float: left;
+    padding: 0 8px;
+}
+
+    .adminModal #rightsTabFilters #content label {
+        margin-right: 10px;
+        display: inline-block;
+        float: left;
+        height: 100%;
+        line-height: 23px;
+    }
+
+    .adminModal #rightsTabFilters #content div {
+        display: inline-block;
+        vertical-align: middle;
+        float: left;
+        padding-top: 1px;
+    }
+
+.adminModal #rightsTabFilters select {
+    font-size: 12px;
+    min-width: 110px;
+    width: auto;
+    float: left;
+}
+
+    .adminModal #rightsTabFilters select:first-of-type {
+        margin-right: 15px;
+    }
+
+.adminModal #treatmentsButton {
+    padding: 0 20px;
+    cursor: pointer;
+    line-height: 23px;
+}
+
+.adminModal p {
+    /*color: black;*/
+    margin-bottom: 35px;
+}
+
+#tableWrapper div.EmptyMsg {
+    padding-top: 6px;
+    padding-left: 6px;
+}
+
+#tableFilters {
+    font-size: 12px;
+    border: 1px solid #d3d4d6;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+}
+
+    #tableFilters .colCatUsers {
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: table-cell;
+        white-space: nowrap;
+        vertical-align: inherit;
+    }
+
+    #tableFilters tr.alternateLine {
+        background-color: #F6F6F6;
+    }
+
+    #tableFilters tr.updateOrViewPerm {
+        font-weight: bold;
+    }
+
+    #tableFilters thead {
+        background-color: #d6d9da;
+        font-weight: normal;
+        border-bottom: 1px solid #F8F3EE;
+    }
+
+        #tableFilters thead th {
+            border-right: 1px solid #B3A69E;
+            padding: 0 12px;
+            height: 26px;
+        }
+
+    #tableFilters td {
+        vertical-align: middle;
+        height: 30px;
+        padding: 0px 10px;
+        line-height: 21px;
+    }
+
+        #tableFilters td span {
+            vertical-align: middle;
+        }
+
+    #tableFilters span.icon-edn-info {
+        font-size: 12pt;
+        margin-right: 10px;
+        vertical-align: middle;
+        cursor: auto;
+    }
+
+    #tableFilters span.icon-pin_down {
+        color: #93B739;
+        font-size: 12pt;
+    }
+
+    #tableFilters .icon-unlock {
+        color: #75c043;
+    }
+
+    #tableFilters .icon-lock {
+        color: #ba2426;
+    }
+
+        #tableFilters .icon-lock:hover, #tableFilters .icon-unlock:hover {
+        }
+
+/* Droits traitements*/
+
+#rightsTreatmentModalContent .field {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+.checkboxField, .labelField {
+    width: 230px;
+    display: inline-block;
+}
+
+/*.blueHeader [class^='icon-'] {
+    color: white !important;
+    font-size: 10pt !important;
+}*/
+
+.icon-caret-square-o-up:before {
+    content: "\f151";
+}
+
+.icon-caret-square-o-down:before {
+    content: "\f150";
+}
+
+.rightMenuSpan_adjust [class^='icon-caret'] {
+    float: right;
+    line-height: 25px;
+}
+
+/* checkboxes */
+span.optionField[class^='icon-'] {
+    width: 370px !important;
+}
+
+div.optionField, label.optionField, span.optionField[class^='icon-'] {
+    width: 370px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+/*Surcharge de la largeur pour les labels strategies de mot de passe*/
+#pnlPasswordPolicy div.optionField,
+#pnlPasswordPolicy label.optionField,
+#pnlPasswordPolicy span.optionField[class^='icon-'] {
+    /*width: 33%;*/
+    width: 40%; /* Augmentation de la largeur du libellé car libellés trop longs */
+    margin-right: 5px;
+}
+/*Surcharge de la largeur pour les lables strategies de mot de passe*/
+#pnlPasswordPolicy .field:nth-child(1) {
+    margin-left: 15%;
+}
+
+#pnlPasswordPolicy .checkboxField {
+    width: 50%;
+}
+
+
+@media (max-width: 1264px) {
+    div.optionField, label.optionField {
+        width: 275px;
+    }
+
+    #groupPolicyOptions label {
+        width: 125px;
+    }
+
+    #adminNav .navTitle {
+        font-size: 10pt;
+    }
+
+    #adminNav .navLinks > li {
+        max-width: 150px;
+    }
+
+        #adminNav .navLinks > li.navModuleWithMenu {
+            max-width: 120px;
+        }
+}
+
+@media (min-width:1265px) {
+    #adminNav .navLinks > li {
+        max-width: 200px;
+    }
+}
+
+.rightMenu .labelField {
+    margin-bottom: 5px;
+}
+
+div#Gerard div.rightMenuOptionClickable ul.rightMenuSubMenuTitle li[onclick] * {
+    cursor: pointer;
+}
+
+p.copyPrefP {
+    margin-bottom: 0px;
+}
+
+p.warning {
+    color: #bc2525;
+    margin-top: 52px;
+    text-align: center;
+}
+
+    p.warning .icon-warning {
+        color: #bc2525;
+        margin-right: 10px;
+        font-size: 11pt;
+        line-height: 20px;
+    }
+
+#rightsTreatmentModalContent .selectionField {
+    border: 1px solid #F8F3EE;
+    color: black;
+    display: inline-block;
+    background-color: #fff;
+    height: 20px;
+    font-size: 9pt;
+    width: 180px;
+    font-family: Verdana, 'Trebuchet MS';
+    padding: 2px 5px;
+}
+
+#rightsTreatmentModalContent select.selectionField {
+    padding: 0px;
+}
+
+#rightsTreatmentModalContent .selectionField[active='0'] {
+    color: #808080;
+    background-color: #EBEBE4;
+}
+
+#rightsTreatmentModalContent .selectionField[active='1'] {
+    cursor: pointer;
+}
+
+/* Contrôles */
+input[type='range'].rangeLevels {
+    width: 190px;
+}
+
+.checkboxField a, .labelField a {
+    text-decoration: none;
+    color: #7A716E;
+    vertical-align: middle;
+}
+
+    .checkboxField a.rChk img {
+        width: 20px;
+        vertical-align: -4px;
+        background: url("../images/Control/checkbox.png") no-repeat;
+    }
+
+.checkboxField .chk[chk='0'] img {
+    background-position: -1px -3px;
+    width: 20px;
+    height: 17px;
+}
+
+.checkboxField .chk[chk='1'] img {
+    background-position: -1px -47px;
+    width: 20px;
+    height: 17px;
+}
+
+.checkboxField .chk[chk='1']:hover img {
+    background-position: -1px -68px;
+    width: 20px;
+    height: 17px;
+}
+
+option.grp {
+    background-color: #ECDBD4;
+}
+
+/* Filtre sur Type */
+#typeFilter {
+    width: 198px;
+    border: 1px solid #39a7de;
+    padding: 4px;
+    background-color: #f5f5f4;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+    #typeFilter #searchField {
+        position: relative;
+    }
+
+    #typeFilter .icon-magnifier {
+        position: absolute;
+        right: 5px;
+        font-size: 14px;
+        top: 3px;
+    }
+
+    #typeFilter input[type=text] {
+        padding: 0 18px 0 4px;
+        width: 100%;
+        margin-bottom: 5px;
+        border: 1px solid #d3d4d6;
+        height: 21px;
+    }
+
+ul#typeFilterOptions > li {
+    border-bottom: 1px solid #c9cacc;
+}
+
+#searchOperators {
+    font-style: italic;
+}
+
+.watermark {
+    font-style: italic;
+}
+
+.filterOptions > li {
+    height: 22px;
+    line-height: 22px;
+    cursor: pointer;
+    padding: 0 1px;
+}
+
+    .filterOptions > li:hover {
+        background-color: #39a7de;
+        color: #fff;
+    }
+
+.filterOptions span[class^='icon'] {
+    font-size: 10.5pt;
+}
+
+#searchValues {
+    padding: 3px 0;
+}
+
+    #searchValues input[type=checkbox] {
+        float: left;
+    }
+
+    #searchValues li {
+        overflow: hidden;
+    }
+
+        #searchValues li label {
+            vertical-align: middle;
+        }
+
+ul#typeFilterOptions li#noFilterOption {
+    border: none;
+}
+
+/* RUBRIQUES */
+.maquette .mainDiv {
+    margin-left: 0;
+}
+
+.fieldsDropArea {
+    background-color: #eeedee;
+    color: #66686c;
+    border: 1px dashed #b5b7bb;
+    height: 49px;
+}
+
+    .fieldsDropArea p {
+        font-size: 10.5pt;
+        font-style: italic;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .fieldsDropArea td p {
+        margin: 0;
+    }
+
+#adminFields header {
+    padding: 10px;
+    border-bottom: 1px solid #d7d8da;
+}
+
+#adminFieldsContent .fieldsDrop .table_labels {
+    border-left: 1px solid #d0d1d3;
+    border-top: 1px solid #d0d1d3;
+    border-bottom: 1px solid #d0d1d3;
+    height: 24px;
+    width: auto;
+    font-family: Verdana, 'Trebuchet MS';
+}
+
+    #adminFieldsContent .fieldsDrop .table_labels.selected {
+        border-top: 1px dashed #37a7de;
+        border-bottom: 1px dashed #37a7de;
+        border-left: 10px solid #37a7de;
+        background-color: #d7e3ea;
+    }
+
+#adminFieldsContent .fieldsDrop .table_values {
+    border-top: 1px solid #d0d1d3;
+    border-bottom: 1px solid #d0d1d3;
+    position: relative;
+}
+
+    #adminFieldsContent .fieldsDrop .table_values.selected {
+        border-top: 1px dashed #37a7de;
+        border-bottom: 1px dashed #37a7de;
+        background-color: #d7e3ea;
+        position: relative;
+    }
+
+    #adminFieldsContent .fieldsDrop .table_values div.dashedContent {
+        width: 100%;
+        height: 45%;
+        border-bottom: 1px dashed #acafb3;
+    }
+
+#adminFieldsContent .fieldsDrop .icnFileBtn {
+    border-right: 1px solid #d0d1d3;
+    border-top: 1px solid #d0d1d3;
+    border-bottom: 1px solid #d0d1d3;
+}
+
+    #adminFieldsContent .fieldsDrop .icnFileBtn.selected {
+        border-right: 1px dashed #37a7de;
+        border-top: 1px dashed #37a7de;
+        border-bottom: 1px dashed #37a7de;
+        background-color: #d7e3ea;
+    }
+
+#adminFieldsContent .fieldsSep {
+    height: 4px;
+}
+
+#adminFieldsContent .tableSep {
+    height: 8px;
+}
+
+.fieldsDropArea.fieldsDropDetails {
+    height: 100px;
+}
+
+.table_values .fieldOptions {
+    position: absolute;
+    right: 0;
+    background-color: black;
+    top: 0;
+    background-color: #37a7de;
+    color: #fff;
+    z-index: 2;
+    display: none;
+}
+
+    .table_values .fieldOptions.selected {
+        display: block;
+    }
+
+    .table_values .fieldOptions li {
+        float: left;
+        width: 25px;
+        font-size: 9pt;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .table_values .fieldOptions.fieldOptionsOverflowed li {
+        background-color: inherit;
+    }
+
+        .table_values .fieldOptions.fieldOptionsOverflowed li.deleteOption {
+            background-color: #bb2526;
+        }
+
+
+.linkButton .fieldOptions {
+    /*height: 100%;*/
+    right: 0;
+}
+
+    .linkButton .fieldOptions .configOption {
+        border: none;
+    }
+
+.linkButton:hover > .fieldOptions {
+    display: block;
+}
+
+.table_values .fieldOptionsOverflowed {
+    position: relative;
+}
+
+
+.linkButton[id^='weblink']:hover, .linkButton[id^='weblink']:hover a, .linkButton[id^='weblink'] a:hover {
+    background-color: #A5A4AC !important;
+    border-radius: 5px; /* Car on perd le border-radius sur le hover */
+}
+
+.linkButton span[class^='icon'] {
+    font-size: 11pt;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* RELATIONS ENTETE */
+.margin25px {
+    margin-left: 25px;
+}
+
+#relationsModal {
+    margin: 20px auto;
+    width: 985px;
+    font-size: 10.5pt;
+}
+
+#bodyAdminRelations {
+    font-size: 10.5pt;
+    color: #7A716E;
+}
+
+    #relationsModal p, #bodyAdminRelations p, #bodyAdminRelations a {
+        margin: 10px 0;
+    }
+
+#formAdminRelations, #formAdminRelationsSQLFilters {
+    padding: 0 14px;
+}
+
+    #formAdminRelationsSQLFilters textarea {
+        width: 470px;
+        height: 180px;
+    }
+
+.paramStep {
+    background-color: #fff;
+    vertical-align: middle;
+    margin: 12px 0;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+div.paramStepDefPointer {
+    cursor: default;
+}
+
+.paramStep span[class^='icon-'] {
+    font-size: 10pt;
+    vertical-align: middle;
+    line-height: 12px;
+    color: #42a7dc;
+}
+
+.paramStep.active {
+    background-color: #dbf0fc;
+}
+
+.paramStep .stepNum {
+    float: left;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-color: #f4ece6;
+    text-align: center;
+    color: #fff;
+    line-height: 28px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.paramStep.active .stepNum {
+    background-color: #37A7DE;
+}
+
+.paramStep .stepTitle {
+    line-height: 28px;
+    margin-left: 10px;
+}
+
+.stepContent {
+    border: 1px solid #f1eeee;
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+    .stepContent > div {
+        margin-bottom: 3px;
+    }
+
+        .stepContent > div > input {
+            margin-top: 3px;
+        }
+
+.parentTabName {
+    text-transform: uppercase;
+}
+
+.adminTableRelationTitle {
+    cursor: pointer;
+}
+
+.relationTableName {
+    font-size: 10pt;
+    padding-bottom: 5px;
+    color: #37A7DE;
+    text-align: center;
+    font-weight: bold;
+}
+
+.relationOpener {
+    border-top: 1px solid #37A7DE;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.openerButton {
+    background-color: #37A7DE;
+    color: #fff;
+    width: 70px;
+    margin: auto;
+    text-align: center;
+    height: 11px;
+    position: relative;
+}
+
+    .openerButton span {
+        font-size: 10px;
+        position: absolute;
+        top: -1px;
+        left: 30px;
+        color: #fff !important;
+    }
+
+.relationsFeatures {
+    margin-left: 16px;
+}
+
+    .relationsFeatures .field {
+        margin-bottom: 0px;
+    }
+
+        .relationsFeatures .field ul.listRB {
+            margin-left: 15px;
+            display: block;
+        }
+
+            .relationsFeatures .field ul.listRB li {
+                display: block;
+                float: none;
+                margin-bottom: 3px;
+            }
+
+.stepContent .relationsFeatures .field ul.listRB {
+    margin-bottom: 15px;
+}
+
+
+div.parentParam {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.radioBullet {
+    font-size: 8pt;
+    margin-right: 10px;
+}
+
+    .radioBullet.icon-circle {
+        color: #37A7DE;
+    }
+
+    .radioBullet.icon-circle-o {
+        color: #f1eeee;
+    }
+
+.relationChoices {
+    margin-left: 25px;
+}
+
+    .relationChoices li {
+        margin-bottom: 5px;
+    }
+
+a#actionLink {
+    color: #37A7DE;
+    margin: 10px 0 0;
+    cursor: pointer;
+    display: block;
+}
+
+    a#actionLink span[class^='icon'] {
+        vertical-align: middle;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+
+.stepContent a.rChk span {
+    color: #7A716E;
+}
+
+.adminTableRelationContent {
+    margin-bottom: 20px;
+}
+
+    .adminTableRelationContent[data-active='1'] {
+        display: block;
+    }
+
+    .adminTableRelationContent[data-active='0'] {
+        display: none;
+    }
+
+#bodyAdminRelations .adminTableRelationContent .info {
+    margin-bottom: 5px;
+}
+
+#ddlInterTables, #ddlInterPMADR {
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 23px;
+    font-family: Verdana, 'Trebuchet MS';
+    color: #7A716E;
+}
+
+.adminFieldParamBtn {
+    float: right;
+}
+
+    .adminFieldParamBtn.icon-catalog {
+        font-size: 10pt;
+        line-height: 22px;
+        color: #37A7DE;
+    }
+
+        .adminFieldParamBtn.icon-catalog:hover {
+            color: #000;
+        }
+
+/* Format d'affichage du libellé d'une rubrique */
+.labelFormat {
+    overflow: hidden;
+}
+
+    .labelFormat li {
+        display: inline-block;
+        font-size: 12pt;
+        width: 40px;
+        padding: 3px 5px;
+        text-align: center;
+        margin-right: 1px;
+    }
+
+        .labelFormat li:hover {
+            color: #79BE08;
+        }
+
+        .labelFormat li[dbvalue='1'] {
+            background-color: #79BE08;
+            color: #fff;
+        }
+
+
+
+/* Administration de la Mini-Fiche */
+
+div#miniFileAdminModalContent {
+    height: 500px;
+}
+
+#edamfLeftDiv, #edamfRightDiv {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#edamfLeftDiv {
+    min-height: 500px;
+    width: 55%;
+    float: left;
+    overflow: auto;
+}
+
+#edamfRightDiv {
+    width: 45%;
+    float: right;
+    position: relative;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#edamfImgContainer {
+    position: relative;
+}
+
+div#miniFileAdminModalContent div.headerSection, div.edamfSection {
+    margin: 0px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+
+div#miniFileAdminModalContent div.headerSection {
+    background-color: #dbf0fc;
+    color: #42a7dc;
+    font-size: 10pt;
+}
+
+    div#miniFileAdminModalContent div.headerSection span.edamflist {
+        border-right: 1px solid #F6F6F6;
+    }
+
+    div#miniFileAdminModalContent div.headerSection span.edamflibelle {
+        border-left: 1px solid #F6F6F6;
+    }
+
+    div#miniFileAdminModalContent div.headerSection div.field {
+        margin: 0px;
+    }
+
+    div#miniFileAdminModalContent div.headerSection span.edamflist, div#mapTooltipAdminModalContent div.headerSection span.edamflibelle {
+        margin: 0px;
+        padding: 2px 0px;
+    }
+
+div#miniFileAdminModalContent div.field, div#miniFileAdminModalContent div.prtField {
+    width: 100%;
+    margin: 2px 0px;
+    box-sizing: border-box;
+}
+
+div.edamfSection {
+    background-color: #ffffff;
+    border: 1px solid #c1c1c1;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+    div.edamfSection:hover {
+        background-color: #D0E6FC;
+    }
+
+div#miniFileAdminModalContent select {
+    width: 100%;
+    font-family: Verdana, 'Trebuchet MS';
+    color: #7A716E;
+}
+
+div#miniFileAdminModalContent option:disabled {
+    color: #CCBDB9;
+    font-style: italic;
+}
+
+span.edamflabel, span.edamflist, span.edamflibelle {
+    display: inline-block;
+    padding: 0px 2px;
+    box-sizing: border-box;
+}
+
+span.eCloneflist {
+    margin: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+input.eCloneIpt {
+    margin-top: 5px;
+    color: #7A716E;
+}
+
+input[type="radio"].eCloneRad {
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+.eTitleClone {
+    font-family: Verdana, 'Trebuchet MS';
+    font-size: 13.3333px;
+}
+
+
+span.edamflabel {
+    width: 20%;
+    text-align: right;
+}
+
+span.edamflist {
+    width: 55%;
+    text-align: left;
+}
+
+span.edamflibelle {
+    width: 25%;
+    text-align: center;
+}
+
+div#miniFileAdminModalContent div.prtField span.edamflabel {
+    padding-left: 15px;
+    width: 75%;
+    text-align: left;
+}
+
+div#miniFileAdminModalContent div.headerSection span.edamflist {
+    width: 75%;
+    text-align: center;
+}
+
+div.edamfRightDivs {
+    background-color: #0097E2;
+    opacity: 0.2;
+    position: absolute;
+    display: none;
+}
+
+div#edamfRightDivImage {
+    left: 17px;
+    top: 17px;
+    width: 64px;
+    height: 62px;
+}
+
+div#edamfRightDivTitle, div#edamfRightDivRubrique, div#edamfRightDivPrtRubrique {
+    left: 95px;
+    width: 250px;
+}
+
+div#edamfRightDivTitle {
+    top: 17px;
+    height: 24px;
+}
+
+div#edamfRightDivRubrique {
+    top: 37px;
+    height: 125px;
+}
+
+div#edamfRightDivPrtRubrique {
+    top: 163px;
+    height: 65px;
+}
+
+/* Fin Administration de la Mini-Fiche */
+
+/* Administration de la Recherche d'adresses prédictive et du référentiel Sirene */
+
+#edaAcaMainDiv, #edaSireneMainDiv {
+    width: 100%;
+    height: 100%;
+}
+
+.edaAcaSection, .edaSireneSection {
+    background-color: #ffffff;
+    border: 1px solid #c1c1c1;
+    margin: 10px 10px 15px 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.edaAcaDuplicate {
+    background-color: #ffffff;
+    border: 1px solid #c1c1c1;
+    margin: 10px 10px 15px 10px;
+    padding: 10px;
+}
+
+.edaAcaSubtitle, .edaSireneSubtitle {
+    color: #37A7DE;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div#autocompleteAddressAdminModalContent div.field, div#autocompleteAddressAdminModalContent div.title, div#autocompleteAddressAdminModalContent div.subtitle,
+div#sireneAdminModalContent div.field, div#sireneAdminModalContent div.title, div#sireneAdminModalContent div.subtitle {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+div#autocompleteAddressAdminModalContent div.mappingConflict span.edaAcaLabel label, div#sireneAdminModalContent div.mappingConflict span.edaSireneLabel label {
+    color: red;
+}
+
+div#autocompleteAddressAdminModalContent div.mappingConflict span.edaAcaList select, div#sireneAdminModalContent div.mappingConflict span.edaSireneList select {
+    background-color: red;
+    color: white;
+}
+
+div#sireneAdminModalContent div.subtitle {
+    margin-left: 20px;
+}
+
+div#autocompleteAddressAdminModalContent div.title,
+div#sireneAdminModalContent div.title {
+    margin-bottom: 10px;
+    font-size: 10pt;
+    color: #37A7DE;
+}
+
+div#autocompleteAddressAdminModalContent select,
+div#sireneAdminModalContent select {
+    font-family: Verdana, 'Trebuchet MS';
+    color: #7A716E;
+}
+
+div#autocompleteAddressAdminModalContent option:disabled,
+div#sireneAdminModalContent option:disabled {
+    color: #CCBDB9;
+    font-style: italic;
+}
+
+span.edaAcaLabel, span.edaAcaList, span.edaCloneLabel,
+span.edaSireneLabel, span.edaSireneList {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+    span.edaAcaList select.mappingConflict, span.edaSireneList select.mappingConflict {
+        background-color: red;
+    }
+
+span.edaAcaLabel {
+    width: 160px;
+    text-align: right;
+}
+
+
+span.edaCloneLabel {
+    width: 250px;
+    text-align: right;
+}
+
+
+span.edaAcaList {
+    width: 250px;
+    text-align: left;
+}
+
+span.edaSireneLabel, span.edaSireneClickableLabel {
+    width: 350px;
+    text-align: right;
+}
+
+label.edaSireneClickableLabel:hover {
+    cursor: pointer;
+    color: #37a7de;
+}
+
+span.edaSireneList {
+    width: 250px;
+    text-align: left;
+}
+
+span.edaSireneAddCatalogValue {
+    width: 150px;
+}
+
+/* Fin Administration de la Recherche d'adresses prédictive et référentiel Sirene */
+
+/* Administration de l'infobulle de position */
+div#mapTooltipAdminModalContent {
+    height: 400px;
+}
+
+#edaMpTtLeftDiv, #edaMpTtRightDiv {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#edaMpTtLeftDiv {
+    width: 65%;
+    float: left;
+}
+
+#edaMpTtRightDiv {
+    width: 35%;
+    float: right;
+    position: relative;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#edaMpTtImgContainer {
+    position: relative;
+}
+
+div#mapTooltipAdminModalContent div.headerSection, div.edaMpTtSection {
+    margin: 0px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+
+div#mapTooltipAdminModalContent div.headerSection {
+    background-color: #dbf0fc;
+    color: #42a7dc;
+    font-size: 12pt;
+}
+
+    div#mapTooltipAdminModalContent div.headerSection span.edaMpTtListTab {
+        border-right: 1px solid #F6F6F6;
+    }
+
+    div#mapTooltipAdminModalContent div.headerSection span.edaMpTtLibelle {
+        border-left: 1px solid #F6F6F6;
+    }
+
+div.edaMpTtSection {
+    background-color: #ffffff;
+    border: 1px solid #c1c1c1;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+    div.edaMpTtSection:hover {
+        background-color: #D0E6FC;
+    }
+
+div#mapTooltipAdminModalContent div.field {
+    width: 100%;
+    margin: 2px 0px;
+    box-sizing: border-box;
+}
+
+div#mapTooltipAdminModalContent div.headerSection div.field {
+    margin: 0px;
+}
+
+div#mapTooltipAdminModalContent div.headerSection span.edaMpTtListTab, div#mapTooltipAdminModalContent div.headerSection span.edaMpTtLibelle {
+    margin: 0px;
+    padding: 2px 0px;
+}
+
+div#mapTooltipAdminModalContent select {
+    width: 100%;
+    font-family: Verdana, 'Trebuchet MS';
+    color: #7A716E;
+}
+
+div#mapTooltipAdminModalContent option:disabled {
+    color: #CCBDB9;
+    font-style: italic;
+}
+
+span.edaMpTtLabel, span.edaMpTtListTab, span.edaMpTtListField, span.edaMpTtLibelle {
+    display: inline-block;
+    padding: 0px 2px;
+    box-sizing: border-box;
+}
+
+span.edaMpTtLabel {
+    width: 17%;
+    text-align: right;
+}
+
+span.edaMpTtListTab, span.edaMpTtListField {
+    width: 34%;
+    text-align: center;
+}
+
+span.edaMpTtLibelle {
+    width: 15%;
+    text-align: center;
+}
+
+div#mapTooltipAdminModalContent div.headerSection span.edaMpTtListTab {
+    width: 85%;
+    text-align: center;
+}
+
+div.edaMpTtRightDivs {
+    background-color: #0097E2;
+    opacity: 0.2;
+    position: absolute;
+    display: none;
+}
+
+div#edaMpTtRightDivImage {
+    left: 41px;
+    top: 34px;
+    width: 198px;
+    height: 109px;
+}
+
+div#edaMpTtRightDivTitle {
+    left: 41px;
+    top: 114px;
+    width: 123px;
+    height: 29px;
+}
+
+div#edaMpTtRightDivSubtitle {
+    left: 36px;
+    top: 147px;
+    width: 208px;
+    height: 22px;
+}
+
+div#edaMpTtRightDivRubrique {
+    left: 36px;
+    top: 166px;
+    width: 208px;
+    height: 34px;
+}
+
+/* Fin Administration de l'infobulle de position */
+
+/* Administration des automatismes avancés */
+html#htmlAdminAutomatisms, body#bodyAdminAutomatisms, form#formAdminAutomatisms {
+    height: 100%;
+}
+
+body#bodyAdminAutomatisms {
+    padding-top: 0px;
+}
+
+div#automatismsAdminModalContent {
+    height: 100%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding-top: 0px;
+}
+
+    div#automatismsAdminModalContent span.stepTitle {
+        color: #37A7DE;
+    }
+
+div.edaFormulaHeader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 26px;
+    background-color: #ffffff;
+    font-size: 12pt;
+}
+
+    div.edaFormulaHeader, div.edaFormulaHeader span {
+        line-height: 36px;
+    }
+
+div.edaFormulaDivSpacer {
+    height: 42px;
+}
+
+div.edaFormulaHeader span.spanAnchor {
+    display: inline-block;
+    text-align: center;
+    width: 27%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+    div.edaFormulaHeader span.spanAnchor a {
+        text-decoration: none;
+        vertical-align: middle;
+        color: #37A7DE;
+    }
+
+    div.edaFormulaHeader span.spanAnchor:hover, div.edaFormulaHeader span.spanAnchor.active {
+        background-color: #f6f6f6;
+        /*box-shadow: -4px -1px 5px -2px #c0c0c0, 4px -1px 5px -2px #c0c0c0;*/
+    }
+
+div.edaFormulaField {
+    margin-bottom: 15px;
+    margin-top: 2px;
+}
+
+label.edaFormulaTitle, label.edaFormulaActive {
+    display: inline-block;
+}
+
+input.edaFormulaTitle {
+    width: 60%;
+    margin-left: 6px;
+}
+
+.edaFormulaStep1Chbx {
+    margin-left: 55px;
+}
+
+.edaFormulaStep1UpdDdl {
+    margin-left: 5px;
+    width: 300px;
+}
+
+.edaFormulaSQLContainer {
+    padding-left: 20px;
+}
+
+.edaFormulaSQLLabel, .edaFormulaSQLText {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 2px;
+}
+
+/* Si le radio n'est pas coché on affiche pas le select*/
+.displaySelect + label + select {
+    display: none;
+}
+
+/* Si le radio est coché on affiche le select*/
+.displaySelect:checked + label + select {
+    display: inline-block;
+}
+
+.edaFormulaSQLLabel {
+    width: 10%;
+    text-align: right;
+}
+
+.edaFormulaSQLText {
+    width: 85%;
+}
+
+div.edaAllCases {
+    color: #37A7DE;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+div.edaEnd {
+    color: #ffffff;
+    font-size: 10pt;
+    background-color: #37A7DE;
+    /*margin: -5px;
+    margin-top: 3px;*/
+    margin: 12px 0;
+    padding-left: 10px;
+    display: grid;
+    /*float: left;*/
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+    div.edaEnd span {
+        line-height: 28px;
+    }
+
+/* Fin Administration des automatismes avancés */
+
+/* Administration des catalogues avancés */
+
+div#advancedCatalogAdminModalContent p {
+    margin-bottom: 3px;
+}
+
+div#advancedCatalogAdminModalContent select, div#advancedCatalogAdminModalContent input[type=text] {
+    font-family: Verdana, 'Trebuchet MS';
+    color: #7A716E;
+    margin: 0px 2px;
+}
+
+div#advancedCatalogAdminModalContent div.fieldsContainer {
+    margin-bottom: 15px;
+}
+
+div#advancedCatalogAdminModalContent div.field {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+div#advancedCatalogAdminModalContent input#txtSearchLimit {
+    width: 40px;
+}
+
+div#advancedCatalogAdminModalContent input#txtDataAutoStart {
+    width: auto;
+}
+
+div#advancedCatalogAdminModalContent input#txtDataAutoFormula {
+    width: auto;
+}
+
+div#advancedCatalogAdminModalContent a, div#advancedCatalogAdminModalContent a:visited {
+    text-decoration: none;
+}
+
+div#advancedCatalogAdminModalContent div.linkRights a {
+    background-color: #bcbfc2;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 10pt;
+    padding: 3px 10px;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+}
+
+    div#advancedCatalogAdminModalContent div.linkRights a:hover {
+        background-color: #37A7DE;
+    }
+
+/* Fin Administration des catalogues avancés */
+
+/* Administration des relations additionnelles */
+
+#bkmRelationsSQLFiltersModalContent .field {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+    #bkmRelationsSQLFiltersModalContent .field .divContainerLeft, #bkmRelationsSQLFiltersModalContent .field .divContainerRight {
+        height: 100%;
+        display: inline-block;
+        float: left;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    #bkmRelationsSQLFiltersModalContent .field .divContainerLeft {
+        width: 30%;
+    }
+
+    #bkmRelationsSQLFiltersModalContent .field .divContainerRight {
+        width: 70%;
+    }
+
+    #bkmRelationsSQLFiltersModalContent .field label {
+        width: 100%;
+        display: inline-block;
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+    #bkmRelationsSQLFiltersModalContent .field textarea {
+        width: 100%;
+        height: 100%;
+        min-height: 100px;
+        resize: none;
+        box-sizing: border-box;
+    }
+
+    #bkmRelationsSQLFiltersModalContent .field.fieldHeader label {
+        text-align: left;
+    }
+
+/* Fin Administration des relations additionnelles */
+
+/* Administration des Mappings de cible étendue */
+
+#edaExtmpMainDiv {
+    width: 100%;
+    height: 100%;
+}
+
+.edaExtmpSection {
+    background-color: #ffffff;
+    border: 1px solid #c1c1c1;
+    margin: 10px 10px 15px 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+div#extendedTargetMappingsAdminModalContent div.field, div#extendedTargetMappingsAdminModalContent div.title, div#extendedTargetMappingsAdminModalContent div.subtitle {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+div#extendedTargetMappingsAdminModalContent div.title {
+    margin-bottom: 10px;
+    font-size: 10pt;
+    color: #37A7DE;
+}
+
+div#extendedTargetMappingsAdminModalContent select {
+    font-family: Verdana, 'Trebuchet MS';
+    color: #424242;
+}
+
+    div#extendedTargetMappingsAdminModalContent select[disabled='disabled'] {
+        color: #848484;
+        font-style: italic;
+    }
+
+div#extendedTargetMappingsAdminModalContent option:disabled {
+    color: #CCBDB9;
+    font-style: italic;
+}
+
+span.edaExtmpLabel, span.edaExtmpList {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+span.edaExtmpLabel {
+    width: 160px;
+    text-align: right;
+}
+
+span.edaExtmpList {
+    width: 250px;
+    text-align: left;
+}
+
+/* Fin Administration des Mappings de cible étendue */
+
+.linkButton {
+    display: inline-block;
+}
+
+    .linkButton a, .fileUpload {
+        background-color: #37A7DE;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 10pt;
+        padding: 3px 10px;
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+        .linkButton a[data-ro='1'] {
+            background-color: #000;
+            color: white;
+            cursor: default;
+        }
+
+.rightMenu .linkButton {
+    display: block;
+    min-height: 24px;
+}
+
+    .rightMenu .linkButton a {
+        width: 100%;
+        min-height: 24px;
+    }
+
+
+.linkButton a:hover, .linkButton a.activeLinkButton {
+    background-color: #2f363e !important;
+    color: white !important;
+}
+
+a#btnTranslations, a#btnLangs {
+    background-color: #37A7DE;
+}
+
+    a#btnTranslations:hover, a#btnLangs:hover {
+        background-color: #2f363e !important;
+    }
+
+.rightMenu .paramPart > a:hover {
+    background-color: #37A7DE;
+}
+
+.btnLink .paramPartContent header h4 {
+    background-color: #e5f2fa;
+    border-radius: 5px;
+    font-size: 10pt;
+    padding: 3px;
+    cursor: pointer;
+    color: #37a7de !important;
+    width: 100%;
+    display: table-cell;
+    /*text-align: center;*/
+}
+
+div.btnLink header h4, div.paramPart header h4, #TraceabilityPart .paramPartContent div a span {
+    display: table-cell;
+}
+
+.btnLink header [class^='icon-'] {
+    font-size: 10pt;
+    margin-right: 9px;
+}
+
+.btnLink header h4 {
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+/*.btnLink .paramPartContent {
+    background-color: #e5f2fa !important;
+}*/
+
+/*.paramPart > .paramPartContent{
+    padding-left:1px !important;
+}*/
+
+.paramPart select.relationparent {
+    width: 178px;
+    margin-bottom: 5px;
+    font-family: Verdana, 'Trebuchet MS';
+    font-size: 10pt;
+    color: #7A716E;
+}
+
+/*ALISTER => Demande / Request 83750 */
+.paramPart div.relationparentContainer {
+    margin-bottom: 5px;
+}
+
+.paramPart span.relationparent {
+    width: 178px;
+    margin-left: 20px !important;
+    font-family: Verdana, 'Trebuchet MS';
+    font-size: 10pt;
+    color: #7A716E;
+}
+
+.btnLink a:hover {
+    background-color: #37A7DE;
+}
+/*interface de création de table*/
+
+#NewTabModalContent p {
+    margin-bottom: 20px;
+}
+
+#NewTabModalContent span {
+    width: 200px;
+}
+
+#NewTabModalContent input, #NewTabModalContent select {
+    border: 1px solid #d3d4d6;
+}
+
+#NewTabModalContent input {
+    padding-left: 4px;
+    width: 194px;
+}
+
+#NewTabModalContent select {
+    padding-left: 0px;
+    width: 200px;
+}
+
+#NewTabModalContent option {
+    padding-left: 0px;
+}
+
+/* FIN interface de création de table*/
+
+#groupEdit {
+    margin-top: 0px;
+}
+
+#accessSecurityIPEdit {
+    margin-top: 0px;
+}
+
+#lbIPUsers, #lbTraitUsers {
+    cursor: pointer;
+    color: #42A7DC;
+    width: 180px;
+    padding: 1px 2px;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    border: 1px solid #b6b6b6;
+    box-sizing: border-box;
+}
+
+    #lbIPUsers[active='0'], #lbTraitUsers[active='0'] {
+        background-color: #EBEBE4;
+    }
+
+.field > select, .field > input, .adminIPTable {
+    font-family: Verdana, 'Trebuchet MS';
+    font-size: 10pt;
+    color: #7A716E;
+}
+
+#NewTabModalContent > .field {
+    margin-right: 0px;
+}
+
+/* Recherche avancée */
+#bodyAdminAdvSearch {
+    margin: 5px 10px;
+}
+
+    #bodyAdminAdvSearch .choiceTable {
+        height: 335px;
+    }
+
+        #bodyAdminAdvSearch .choiceTable ul {
+            height: 300px;
+        }
+
+.stepRulesConditionalBloc {
+    color: #37A7DE;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.stepRulesConditionalFilterBloc {
+    margin-left: 30px;
+}
+
+.stepRulesConditionalText {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.stepRulesConditionalTextSpace {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.stepRulesAllBtn {
+    float: right;
+    line-height: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.stepRulesNewRulesBtn {
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.stepRules div * {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.rulesDescription {
+    display: inline-block;
+    width: 88%;
+    border-color: grey;
+    border: solid 1px;
+    padding: 5px;
+}
+
+.spanAdminRulesInfo[ednnb='0'] {
+    display: none;
+}
+
+div.divAdminRulesSpace {
+    height: 10px;
+}
+
+.linkAdminTab:hover {
+    color: #37a7de;
+}
+
+
+
+/* LABEL FORMAT */
+.labelFormat li, .fieldOptions li {
+    cursor: pointer;
+}
+
+    .fieldOptions li.active {
+        color: #fff;
+        background-color: #79BE08;
+    }
+
+.buttonBold {
+    font-weight: bold;
+}
+
+.buttonItalic {
+    font-style: italic;
+}
+
+.buttonUnderline {
+    text-decoration: underline;
+}
+
+div#conditionsAdminModalContent span.stepRulesAllBtn, div#conditionsAdminModalContent span.stepRulesAllBtn span.icon-add,
+div#conditionsAdminModalContent span.stepRulesNewRulesBtn, div#conditionsAdminModalContent span.stepRulesNewRulesBtn span.icon-add,
+div#Aggregates span.icon-add {
+    font-weight: normal;
+    font-size: 9pt;
+    color: #42A7DC;
+}
+
+    div#conditionsAdminModalContent span.stepRulesNewRulesBtn.icon-delete {
+        font-size: 12pt;
+    }
+
+
+
+
+div.stepRulesConditionalFilterBloc select[id^='SEL_OP_'] {
+    width: 40px;
+}
+
+div#paramTab2 select:disabled, div#paramTab2 option:disabled {
+    color: #706A64;
+    background-color: #EBEBEB;
+}
+
+
+span.parentIcon {
+    line-height: 22px;
+    font-size: 11pt;
+    margin-left: 5px;
+}
+
+/*ALISTER => Demande / Request 83750 */
+span.parentIconTab {
+    pointer-events: none;
+    font-size: 11pt;
+    margin-left: 10px;
+}
+
+/* Liens web */
+#weblink_template {
+    display: none;
+}
+
+/* COLOR PICKER */
+#btnSelectPicto {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #DDD7D3;
+    padding: 0 20px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.PersColor, .selectedColCell {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.colorWrapper {
+    overflow: hidden;
+}
+
+.colorPickerWrapper {
+    float: left;
+    width: 40px;
+    height: 21px;
+    background-color: #e8e8e9;
+    border: 1px solid #d7d8da;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-left: none;
+}
+
+.colorPicker {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #636363;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin-top: 3px;
+}
+
+.txtColor {
+    width: auto !important;
+    float: left;
+}
+
+#perfSlider .noUi-connect {
+    background-color: #3CA7DE;
+}
+
+#perfSlider .noUi-base {
+    background-color: #AB3732;
+}
+
+select option[data-mainfield='1'] {
+    font-weight: bold;
+}
+
+.paramBlock input.inputSelectFile {
+    float: left;
+    font-size: 10pt;
+    border: none;
+    border-bottom: 1px dashed #b6b6b6;
+    text-overflow: ellipsis;
+    padding: 1px;
+    width: auto;
+    height: 17px;
+    background-color: #F0F0F0;
+}
+
+.btnSelectFile {
+    float: left;
+    cursor: pointer;
+    font-size: 10pt;
+    margin-left: 5px;
+    line-height: 17px;
+}
+
+#saml-tab-btns {
+    width: 475px;
+    display: inline-block;
+}
+
+    #saml-tab-btns label {
+        padding: 8px;
+        background-color: #37A7DE;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+        #saml-tab-btns label span {
+            color: white;
+            vertical-align: -3px;
+        }

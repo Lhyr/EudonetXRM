@@ -1,0 +1,222 @@
+set nocount on;
+DECLARE @notificationTriggerId INT;
+DECLARE @message VARBINARY(MAX); 
+-- Message "L'administrateur a modifié votre profil. Veuillez vous reconnecter pour que les modifications soient prises en compte."
+set @message = 0x0001000000FFFFFFFF01000000000000000C02000000454575646F496E7465726E616C2C2056657273696F6E3D31302E302E31372E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D6E756C6C050100000020436F6D2E4575646F6E65742E4D657267652E65416E616C797A6572496E666F730400000007636F6E74656E74096D6572676544617461096C696E6B734461746109696D61676544617461040404041F436F6D2E4575646F6E65742E4D657267652E4D657267654461746148746D6C0200000027436F6D2E4575646F6E65742E4D657267652E4D65726765506172736575724C6162656C446174610200000027436F6D2E4575646F6E65742E4D657267652E4D65726765506172736575724C696E6B73446174610200000027436F6D2E4575646F6E65742E4D657267652E4D6572676550617273657572496D616765446174610200000002000000090300000009040000000A0A05030000001F436F6D2E4575646F6E65742E4D657267652E4D657267654461746148746D6C0200000025526567457870446174612B3C4F72696756616C75653E6B5F5F4261636B696E674669656C6421526567457870446174612B3C4368696C643E6B5F5F4261636B696E674669656C640103880153797374656D2E436F6C6C656374696F6E732E47656E657269632E4C69737460315B5B436F6D2E4575646F6E65742E4D657267652E526567457870446174612C204575646F496E7465726E616C2C2056657273696F6E3D31302E302E31372E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D6E756C6C5D5D020000000605000000774C2761646D696E6973747261746575722061206D6F64696669C3A920766F7472652070726F66696C2E20566575696C6C657A20766F7573207265636F6E6E656374657220706F757220717565206C6573206D6F64696669636174696F6E7320736F69656E742070726973657320656E20636F6D7074652E0A0C060000004E53797374656D2E436F72652C2056657273696F6E3D342E302E302E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D62373761356335363139333465303839050400000027436F6D2E4575646F6E65742E4D657267652E4D65726765506172736575724C6162656C4461746103000000114578697374496E76616C69644D657267650A4C6973744669656C6473104C6973744669656C647342794E616D6500040401810153797374656D2E436F6C6C656374696F6E732E47656E657269632E4861736853657460315B5B53797374656D2E496E7433322C206D73636F726C69622C2056657273696F6E3D342E302E302E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D623737613563353631393334653038395D5D06000000820153797374656D2E436F6C6C656374696F6E732E47656E657269632E4861736853657460315B5B53797374656D2E537472696E672C206D73636F726C69622C2056657273696F6E3D342E302E302E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D623737613563353631393334653038395D5D060000000200000000090700000009080000000507000000810153797374656D2E436F6C6C656374696F6E732E47656E657269632E4861736853657460315B5B53797374656D2E496E7433322C206D73636F726C69622C2056657273696F6E3D342E302E302E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D623737613563353631393334653038395D5D030000000756657273696F6E08436F6D706172657208436170616369747900030008910153797374656D2E436F6C6C656374696F6E732E47656E657269632E47656E65726963457175616C697479436F6D706172657260315B5B53797374656D2E496E7433322C206D73636F726C69622C2056657273696F6E3D342E302E302E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D623737613563353631393334653038395D5D0806000000000000000909000000000000000508000000820153797374656D2E436F6C6C656374696F6E732E47656E657269632E4861736853657460315B5B53797374656D2E537472696E672C206D73636F726C69622C2056657273696F6E3D342E302E302E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D623737613563353631393334653038395D5D030000000756657273696F6E08436F6D706172657208436170616369747900030008920153797374656D2E436F6C6C656374696F6E732E47656E657269632E47656E65726963457175616C697479436F6D706172657260315B5B53797374656D2E537472696E672C206D73636F726C69622C2056657273696F6E3D342E302E302E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D623737613563353631393334653038395D5D080600000000000000090A000000000000000409000000910153797374656D2E436F6C6C656374696F6E732E47656E657269632E47656E65726963457175616C697479436F6D706172657260315B5B53797374656D2E496E7433322C206D73636F726C69622C2056657273696F6E3D342E302E302E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D623737613563353631393334653038395D5D00000000040A000000920153797374656D2E436F6C6C656374696F6E732E47656E657269632E47656E65726963457175616C697479436F6D706172657260315B5B53797374656D2E537472696E672C206D73636F726C69622C2056657273696F6E3D342E302E302E302C2043756C747572653D6E65757472616C2C205075626C69634B6579546F6B656E3D623737613563353631393334653038395D5D000000000B0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+
+--INSERT DESC USERID 
+IF EXISTS(SELECT * FROM [DESC] where descid = 101021)
+BEGIN
+	DELETE FROM [DESC] where descid = 101021
+	DELETE FROM [RES] where resid = 101021
+	DELETE FROM [NotificationTrigger] where label = 'Notification table utilisateur'
+END
+
+--Si les notifications utilisateurs n'existent pas déja
+IF NOT EXISTS(SELECT * FROM NotificationTrigger where label = 'Notification table utilisateur')
+BEGIN
+	--INSERT DESC USERID 
+	IF NOT EXISTS(SELECT * FROM [DESC] where descid = 101033)
+	BEGIN
+		insert into [desc] ([DescId], [File], [Field], [Format], [Length], [DispOrder], [x], [y]) 
+		select 101033, 'USER', 'UserId', 10, 0, 0 ,0, 0
+	END
+
+	--INSERT RES USERID 
+	IF NOT EXISTS(SELECT * FROM [RES] where ResId = 101033)
+	BEGIN
+		INSERT INTO [res] (resid, lang_00, lang_01, lang_02, lang_03, lang_04, lang_05) 
+		SELECT 101033, 'ID Utilisateur', 'User ID', 'User ID', 'User ID', 'User ID', 'User ID'
+	END
+
+	-- Insert Trigger UserLogin
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101001, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserName
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101002, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger Description
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101003, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserMail
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101004, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserSignature
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101005, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserAddress
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101006, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserTel
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101007, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserFax
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101008, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+
+	-- Insert Trigger UserMobile
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101009, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserFunction
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101010, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserDisabled
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101011, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserHidden
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101012, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserCP
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101013, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserCity
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101014, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger SynchroExchangeEnabled
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101015, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserLevel
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101017, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserMailOther
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101018, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger UserCountry
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101019, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger LANG
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101023, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger Coordonnées
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101024, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger Habilitations et Appartenances
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101025, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger Informations Complémentaires
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101026, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger Groupe
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101027, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger Le mot de passe n'expire pas.
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101028, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger Login externe
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101029, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger Nom Complet
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101030, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+	-- Insert Trigger Profil
+	INSERT INTO [NotificationTrigger] (LABEL, TriggerAction, TriggerTargetDescId, NotificationType, BroadCastType, SubscribersTargetDescId, NotificationTrigger95, Status, LifeDuration)
+	SELECT 'Notification table utilisateur', 3, 101032, 0,1, 101033, getdate(), 1, 1
+	SET @notificationTriggerId = SCOPE_IDENTITY(); 
+	-- Insert message
+	INSERT INTO [NotificationTriggerRes] values (@notificationTriggerId, 'LANG_00', @message,@message,@message,@message,@message)
+	
+
+END

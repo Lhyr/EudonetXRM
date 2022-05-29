@@ -1,0 +1,122 @@
+﻿/*BUTTON CLICKED*/
+.detailContent button.btn.btn_eudo.btn-default:not([disabled])[value="1"] {
+    opacity: 1;
+    color: white !important;
+    border-color: var(--checkbox-color) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    background: var(--btn-triangle) left top no-repeat !important;
+    transition: background 250ms;
+    background-color: var(--checkbox-color) !important;
+    background-size: 70px 28px !important;
+}
+
+/*BUTTON UNCLICKED*/
+.detailContent button.btn.btn_eudo.btn-default:not([disabled])[value="0"] {
+    opacity: 1;
+    color: var(--detail-label) !important;
+    border-color: var(--detail-label) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    background: url(../../../../themes/default/images/Store/btn-grey-triangle-bg.png) left top no-repeat !important;
+    transition: background 250ms;
+    background-color: var(--detail-background-btn) !important;
+    background-size: 70px 28px !important;
+}
+
+/*BUTTON DISABLED*/
+button.btn.btn_eudo.btn-default[disabled] {
+    color: var(--detail-foreground-btn-disabled) !important;
+    border-color: var(--btn-eudo-border-color) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    background: url(../../../../themes/default/images/Store/btn-grey-triangle-bg.png) left top no-repeat !important;
+    opacity: 1;
+    transition: background 250ms;
+    background-color: var(--btn-eudo-background-color) !important;
+    position: relative;
+    background-size: 70px 28px !important;
+}
+
+div.bkm-tab button.btn.btn_eudo.btn-default {
+    font-size: var(--size-15) !important;
+    font-family: var(--ffamily);
+    padding: 2px 20px 0px 20px !important;
+    background-size: 65px 23px !important;
+    display: flex;
+    align-items: center;
+}
+
+div.bkm-tab button.btn.btn_eudo[value="1"].btn-default:not([disabled]) {
+    color: white !important;
+    border-color: var(--checkbox-color) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    background: var(--btn-triangle) left top no-repeat !important;
+    transition: background 250ms;
+    background-color: var(--checkbox-color) !important;
+    background-size: 65px 23px !important;
+}
+
+div.bkm-tab button.btn.btn_eudo[value="0"].btn-default:not([disabled]) {
+    background: url(../../../../themes/default/images/Store/btn-grey-triangle-bg.png) left top no-repeat !important;
+    transition: background 250ms;
+    opacity: 1;
+    color: var(--detail-label) !important;
+    border-color: var(--detail-label) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    transition: background 250ms;
+    background-color: var(--detail-background-btn) !important;
+    background-size: 65px 23px !important;
+}
+
+
+/*BUTTON CLICKED*/
+.eudo-modal button.btn.btn_eudo.btn-default:not([disabled])[value="1"] {
+    opacity: 1;
+    color: white !important;
+    border-color: var(--checkbox-color) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    background: var(--btn-triangle) left top no-repeat !important;
+    transition: background 250ms;
+    background-color: var(--checkbox-color) !important;
+    background-size: 70px 28px !important;
+}
+
+/*BUTTON UNCLICKED*/
+.eudo-modal button.btn.btn_eudo.btn-default:not([disabled])[value="0"] {
+    opacity: 1;
+    color: var(--detail-label) !important;
+    border-color: var(--detail-label) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    background: url(../../../../themes/default/images/Store/btn-grey-triangle-bg.png) left top no-repeat !important;
+    transition: background 250ms;
+    background-color: var(--detail-background-btn) !important;
+    background-size: 70px 28px !important;
+}
+
+/*BUTTON DISABLED*/
+button.btn.btn_eudo.btn-default[disabled] {
+    color: var(--detail-foreground-btn-disabled) !important;
+    border-color: var(--btn-eudo-border-color) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    background: url(../../../../themes/default/images/Store/btn-grey-triangle-bg.png) left top no-repeat !important;
+    opacity: 1;
+    transition: background 250ms;
+    background-color: var(--btn-eudo-background-color) !important;
+    position: relative;
+    background-size: 70px 28px !important;
+    cursor: default; /* 85 592 */
+}

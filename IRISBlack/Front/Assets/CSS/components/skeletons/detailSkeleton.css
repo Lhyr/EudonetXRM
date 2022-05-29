@@ -1,0 +1,29 @@
+﻿/** design skeleton détail */
+
+.detail-skeletons-wrapper {
+    background: var(--detail-foreground-btn);
+}
+
+.detail-content-skeletons-wrapper {
+    height: 100%;
+    overflow: hidden;
+    padding: 12px 24px;
+}
+
+.detail-header-skeletons-tab {
+    padding: 0 12px 24px 12px;
+    padding: 12px;
+}
+
+.detail-header-skeletons-tab {
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.detail-input-skeletons {
+    padding: 7px 0 8px 0;
+    margin: 5px 0;
+    border-radius: 28px;
+    border: solid 13px var(--detail-foreground-btn);
+}
+
+/** design skeleton détail */

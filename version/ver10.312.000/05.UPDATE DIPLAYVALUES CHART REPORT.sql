@@ -1,0 +1,1 @@
+UPDATE REPORT SET [Param] = REPLACE(CAST([Param] as nvarchar(max)),'displayvalues=0','displayvalues=1') where [Type] = 6 and  [Param] like '%displayvalues=0&%'

@@ -1,0 +1,880 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* Planning Global - Start */
+
+
+
+/* Planning Global - End */
+/* Gestion de la pop-up détails - Start */
+/*.bl_detail {
+	position: absolute;
+	z-index: 50;
+}*/
+
+
+/*BODY du TOOLTIP*/
+.pl_tt_body {
+	font-size: 8pt;
+	font-family: Verdana;
+	background-color: #ffffff;
+	padding: 0;
+	margin: 0;
+}
+.pl_tt_gl { /*GripLeft*/
+	font-size: 3px;
+	height: 100%;
+	width: 6px;
+}
+.pl_tt_head_table {
+	width:100%;
+	font-size: 9pt;
+	font-family: Verdana;
+	height:30px;
+	font-weight: bold;
+	
+	font-size: 9pt;
+	text-indent: 10px;
+	text-align: left;
+	border-bottom: 1px solid #dedede;
+}
+.icnPlanTlt {
+	float: right;
+}
+
+.pl_tt_mid_tab {
+	width: 100%;
+	height: 163px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	}
+.pl_tt_mid_tab table {
+	font-size: 8pt;
+	/*padding:0;*/
+	margin:0;
+	width: 100%;
+	color:gray;
+}
+.pl_tt_fields{
+	/*height:152px;*/
+	padding-top: -4px;
+	/*padding-left: 5px;*/
+	overflow-y:auto;
+	overflow-x:hidden;
+	width:100%;
+	background-color: #f8F8F8;
+}
+/*
+.pl_tt_fields td{
+	vertical-align:top;
+	padding-top: 9px;
+}
+*/
+.pl_tt_fields hr{
+	margin: 0px;
+}
+.pl_tt_content_table{
+    padding-left: 5px;
+}
+.pl_tt_content_table td{
+	vertical-align:top;
+	padding-top: 9px;
+}
+.pl_tt_flbl{
+	white-space:nowrap;
+}
+.pl_tt_flblM{	/*tooltip - date en gras*/
+	white-space:nowrap;
+	font-weight:bold;
+}
+
+.pl_tt_txt_link {
+	color:#42a7dc;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+.pl_tt_bot_icon {
+	height:38px;
+	width:100%;
+	border-top:1px solid #c3c1c3;
+    background-color: #f1f1f1;
+}
+.pl_tt_bot_icon td {
+	background-repeat:no-repeat;
+	height:32px;
+	cursor: pointer;
+	text-align: center;
+}
+.pl_tt_bot_icon > td > a {
+	width:100%;
+	height:100%;
+	display:block;
+	}
+.pl_tt_opt_copy {
+
+	width: 17px;
+	height:17px;
+	cursor:pointer;
+}
+.pl_tt_opt_copy:hover {
+	background-position: -58px -776px;
+	
+}
+.pl_tt_opt_cut {
+
+	width: 17px;
+	height:17px;
+	cursor:pointer;
+}
+.pl_tt_opt_cut:hover {
+	background-position: -17px -1125px;
+	
+}
+.pl_tt_opt_print {
+
+	width: 18px;
+	height:17px;
+	cursor:pointer;
+}
+.pl_tt_opt_print:hover {
+	background-position: 19px -351px;
+}
+.pl_tt_opt_upd {
+
+	width: 18px;
+	height:17px;
+	cursor:pointer;
+}
+.pl_tt_opt_upd:hover {
+	background-position: 19px -706px;
+
+}
+.pl_tt_opt_del {
+
+	width:20px;
+	height:17px;
+	cursor:pointer;
+}
+.pl_tt_opt_del:hover {
+	background-position: 24px -919px;
+}
+
+
+
+.pl_tt_opt_copy_dis {
+	background-image:url(../images/ui/cal/copier_inactif.png);
+	width:20px;
+	height:17px;
+	cursor:pointer;
+}
+.pl_tt_opt_cut_dis {
+	background-image:url(../images/ui/cal/couper_inactif.png);
+	width:20px;
+	height:17px;
+	cursor:pointer;
+}
+.pl_tt_opt_print_dis {
+	background-image:url(../images/ui/cal/imprimer_inactif.png);
+	width:20px;
+	height:17px;
+	cursor:pointer;
+}
+.pl_tt_opt_upd_dis {
+	background-image:url(../images/ui/cal/crayon_inactif.png);
+	width:20px;
+	height:17px;
+	cursor:pointer;
+}
+.pl_tt_opt_del_dis {
+	
+    background-position: -34px -854px;
+	width:20px;
+	height:17px;
+	cursor:pointer;
+}
+
+/* Gestion de la pop-up détails - Endheu */
+
+/* Planning pur les tâches - Start */
+.pl_day_elmnt {
+	height:580px;
+	width:350px;
+}
+.pl_day_elmnt_title {
+	width:350px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #636363;
+	text-align: center;
+	font-size: 10pt;
+}
+.pl_day_elmnt-hrs {
+	height:41px;
+	width:59px;
+	border-left:1px solid #dedede;
+	border-bottom:1px solid #dedede;
+	vertical-align:top;
+	font-size:8pt;
+	color:#636363;
+}
+.pl_day_elmnt-hrs_head {
+	height:41px;
+	width:59px;
+	border-left:1px solid #dedede;
+	border-bottom:1px solid #dedede;
+	border-top:1px solid #dedede;
+	vertical-align:top;
+	font-size:8pt;
+	color:#636363;
+}
+.pl_day_elmnt-task_head {
+	height:21px;
+	width:59px;
+	border-top: 1px solid #DEDEDE;
+	border-left:1px solid #dedede;
+	border-bottom:1px dotted #dedede;
+	border-right: 1px solid #DEDEDE;
+}
+.pl_day_elmnt-task_bottom {
+	height:21px;
+	border-right:1px solid #dedede;
+	border-left:1px solid #dedede;
+}
+.pl_day_elmnt-task_top {
+	height:21px;
+	width:59px;
+	border-right:1px solid #dedede;
+	border-left:1px solid #dedede;
+	border-bottom:1px dotted #dedede;
+}
+/* Planning pur les tâches - End */
+
+
+
+/* Planning head onglets - Start */
+
+.nav-onglets {
+	width: 340px;
+	height: 40px;
+	background-color:#e0e0e0;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	/**margin-bottom: -3px;**/
+}
+
+.nav-onglets table {
+	height: 40px;
+	/*width: 350px;*/
+	cursor:default;
+}
+
+.nav-onglets-space {
+	cursor: pointer;
+}
+
+.cell-sep {
+	width: 60px;
+}
+.head-onglets {
+	width:68px;
+	cursor:pointer;
+}
+.head-onglet-start {
+	float:left;
+	background-repeat:no-repeat;
+	width:9px;
+	height: 22px;
+	background-image:url(../images/ui/cal/bouton-onglets-start.png);
+	vertical-align:middle;
+	line-height:22px;
+	cursor:pointer;
+	font-size:9pt;
+}
+.head-onglet-middle {
+	cursor:pointer;
+	color:#636363;
+	font-size:11pt;
+	float:left;
+	background-repeat:repeat-x;
+	height: 22px;
+	background-image:url(../images/ui/cal/bouton-onglets-middle.png);
+	min-width:45px;
+	vertical-align:middle;
+	line-height:22px;
+	cursor:pointer;
+	font-size:9pt;
+	text-align: center;
+}
+.head-onglet-middle:hover {
+
+	background-image:url(../images/ui/cal/bouton-onglets-middle.png);
+
+}
+.head-onglet-middle:hover a {
+	
+	color:white;
+	
+}
+.head-onglet-middle a {
+	
+	color:gray;
+	
+}
+.head-onglet-end {
+	float:left;
+	width:9px;
+	height: 22px;
+	background-image:url(../images/ui/cal/bouton-onglets-end.png);
+	vertical-align:middle;
+	line-height:22px;
+	cursor:pointer;
+	font-size:9pt;
+}
+.head-onglet-start_clicked {
+	float:left;
+	background-repeat:no-repeat;
+	width:9px;
+	height: 22px;
+	background-image:url(../images/ui/cal/bouton-onglets-start_actived.png);
+	vertical-align:middle;
+	line-height:22px;
+	cursor:pointer;
+	font-size:9pt;
+}
+.head-onglet:hover .head-onglet-start_clicked{
+	background-image:url(../images/ui/cal/bouton-onglets-start_hover.png);
+}
+.head-onglet-middle_clicked {
+	color: white;
+	text-align: center;
+	vertical-align:middle;
+	line-height:22px;
+	cursor:pointer;
+	font-size:9pt;
+	float:left;
+	text-indent: -2px;
+	background-repeat:repeat-x;
+	height: 22px;
+	background-image:url(../images/ui/cal/bouton-onglets-middle_actived.png);
+	min-width:45px;
+	
+}
+.head-onglet:hover .head-onglet-middle_clicked {
+	background-image:url(../images/ui/cal/bouton-onglets-middle_hover.png);
+
+}
+.head-onglet-middle_clicked a{
+	color:white;
+	
+}
+.head-onglet {
+	cursor: pointer;
+	width: 200px;
+}
+.head-onglet:hover a {
+	color:white;
+	cursor:pointer;
+}
+.head-onglet-end_clicked {
+	vertical-align:middle;
+	line-height:22px;
+	cursor:pointer;
+	font-size:9pt;
+	float:left;
+	width:9px;
+	height: 22px;
+	background-image:url(../images/ui/cal/bouton-onglets-end_actived.png);
+	color:white;
+}
+.head-onglet:hover .head-onglet-end_clicked {
+	background-image:url(../images/ui/cal/bouton-onglets-end_hover.png);
+}
+.head-onglet:hover .head-onglet-start {
+	background-image:url(../images/ui/cal/bouton-onglets-start_hover.png);
+}
+.head-onglet:hover .head-onglet-middle {
+	color:white;
+	background-image:url(../images/ui/cal/bouton-onglets-middle_hover.png);
+}
+.head-onglet:hover .head-onglet-end {
+	background-image:url(../images/ui/cal/bouton-onglets-end_hover.png);
+}
+/* Planning head onglets - End */
+
+/* Planning tasks - Start */
+
+.task_day-list {
+	width:100%;
+}
+.pl_ht {    /*head title*/
+		    margin-left: 70%;
+		        height:20px;
+	
+}
+.head-today {
+	color:#42a7dc;
+	cursor:pointer;
+}
+.head_title-text {
+	color:#636363;
+	text-align:center;
+	font-weight: bold;
+}
+.head_title table {
+	width: 600px;
+}
+.list-item {
+	margin-left:20px;
+}
+.list-element {
+	height:400px;
+	width:690px;
+	background-image:url(../images/ui/cal/task-list/list-img.png);
+}
+.title-task {
+	font-weight:bold;
+	font-size:9pt;
+	color:#636363;
+	padding: 9px;
+}
+.task-align {
+	vertical-align:top;
+}
+/* Planning tasks - End */
+
+/* Planning Week - Start */
+
+.pl_week_elmnt-task_head {
+	height:41px;
+	line-height:41px;
+	width:59px;
+	font-size:8pt;
+	font-weight:bold;
+	color:#636363;
+	vertical-align:middle;
+}
+.pl_week_elmnt-task_head_current {
+	height:41px;
+	line-height:41px;
+	width:59px;
+	font-size:8pt;
+	font-weight:bold;
+	color:#636363;
+	vertical-align:middle;
+	background-color:#edebeb;
+}
+.pl_week_elmnt-hrs_head {
+	font-weight:bold;
+}
+.pl_week_elmnt-task_head-top-left {
+	border-bottom:1px solid #dedede;
+}
+.pl_week_elmnt-task_day-bottom {
+	height: 21px;
+	border-left: 1px solid #DEDEDE;
+	border-bottom: 1px solid #dedede;
+}
+.pl_week_elmnt-task_day-top {
+	height: 21px;
+	border-left: 1px solid #DEDEDE;
+	border-bottom: 1px dotted #DEDEDE;
+}
+.pl_week_elmnt-task_day-top-first {
+	height: 21px;
+	border-left: 1px solid #DEDEDE;
+	border-bottom: 1px dotted #DEDEDE;
+	border-top: 1px solid #DEDEDE;
+}
+
+.logo-recur {
+	font-size: 11pt;
+    line-height: 22px;
+}
+.bar-now {
+	z-index: 1;
+	background-color: #ceef60;
+	height: 2px;
+	position:absolute;
+}
+/* Planning Week - End */
+
+
+/* Planning Month - Start */
+
+.pl_month_elmnt_week-head {
+	border-top:1px solid #dfdfdf;
+	border-bottom:1px solid #dfdfdf;
+	background-color:#ededed;
+	text-align:center;
+}
+.pl_month_elmnt_week-head-txt {
+	text-align:center;
+	font-weight:bold;
+	font-size:10pt;
+}
+.pl_month_elmnt_week-head_start {
+	border-left:1px solid #dfdfdf;
+	background-color:#ededed;
+}
+.pl_month_elmnt_week-head_end {
+	border-right:1px solid #dfdfdf;
+	background-color:#ededed;
+}
+.pl_month_elmnt_day-head {
+	background-color:white;
+	height:3%;
+}
+.pl_month_elmnt_day-head_left {
+	border-left:1px solid #dfdfdf;
+}
+.pl_month_elmnt_day-head_right {
+	border-right:1px solid #dfdfdf;
+}
+.pl_month_elmnt_day_left {
+	height:15%;
+	border-left:1px solid #dfdfdf;
+	border-bottom:1px dotted #dfdfdf;
+}
+.pl_month_elmnt_day_right {
+	border-right:1px solid #dfdfdf;
+	border-bottom:1px dotted #dfdfdf;
+}
+.pl_month_elmnt_day-used {
+	background-color:#bddcfb;
+}
+.pl_month_elmnt_day-blocked {
+	background-image:url(../images/ui/cal/background-blocked.png);
+}
+.pl_month_elmnt_day-blocked-alt {
+	background-image:url(../images/ui/cal/background-blocked.png);
+	background-position: 0px 2px;
+}
+/* Planning Month - End */
+
+/* Planning WeekDyn - Start */
+
+.D-elm {
+	overflow: auto;
+}
+.phd {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #636363;
+	vertical-align: middle;
+	margin-right: -2px;
+	text-align: center;
+	padding:5px;
+		
+	height: 10px;
+	overflow: hidden;
+}
+    .phd:hover {
+        cursor: pointer;
+    }
+.phd_current {
+	background-color: #EDEBEB;	
+
+}
+.i-D {
+	/*height: 21px;*/
+	border-right: 1px solid #DEDEDE;
+	border-left: 1px solid #DEDEDE;
+	/*margin-bottom: -1px;*/
+	margin-right: -2px;	
+	position:relative;  
+}
+.D-sep {
+	height: 1px;
+	/**margin-top: -1px;**/
+	margin-right: -2px;
+	background-color: #DEDEDE;
+}
+.D-sep-dot {
+	height: 1px;
+	margin-right: -2px;
+	/*background-image: url(../images/ui/dotted.png);*/
+	background-image: none;
+	background: #f3f3f3;
+}
+.D-sep-empty {
+	height: 1px;
+	/**margin-bottom: -1px;**/
+;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #DEDEDE;
+}
+.i-D_b {
+	border-right: 1px solid #dedede;
+	height: 21px;
+	background-color:#f8f8f8;
+	border-left: 1px solid #DEDEDE;
+	/**margin-bottom: -1px;**/
+	margin-right: -2px;
+	position:relative;  	
+}
+.DH-cell {
+	padding:5px;
+	height: 10px;
+	overflow: hidden;
+}
+.D-h {
+	width: 50px;
+	text-align:right;
+	/*height: 21px;*/
+	border-left: 1px solid #DEDEDE;
+	font-size: 8pt;
+	color: #636363;
+	position: relative;
+	float: right;
+}
+.elmCnt {
+	
+	padding-top: 5px;
+	width:100%;
+}
+.calElm {
+
+	border-top: 1px solid #636363;
+	border-bottom: 1px solid #636363;
+	border-right: 1px solid #636363;
+	
+
+	padding-left: 8px;
+	overflow: hidden;
+	
+
+	z-index: 2;
+	
+
+	position: absolute;
+	
+
+	top: -1px;
+	cursor:pointer;
+}
+
+.calElmCutted {
+
+	border-top: 1px dashed #636363;
+	border-bottom: 1px dashed #636363;
+	border-right: 1px dashed #636363;
+	padding-left: 8px;
+	overflow: hidden;
+	z-index: 1;
+	position:absolute;
+	top: -1px;
+	cursor:pointer;
+	opacity : 0.4;
+	-moz-opacity : 0.4;
+	-ms-filter: "alpha(opacity=40)"; /* IE 8 */
+	filter : alpha(opacity=40); /* IE < 8 */
+}
+
+.calElmCopied {
+
+	border-top: 1px dashed #000063;
+	border-bottom: 1px dashed #000063;
+	border-right: 1px dashed #000063;
+	padding-left: 8px;
+	overflow: hidden;
+	z-index: 1;
+	position:absolute;
+	top: -1px;
+	cursor:pointer;
+}
+
+/* Planning WeekDyn - End */
+
+.plgcellsep 
+{
+	display: none;
+	background-color: #EEEEED;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	font-size: 1px;
+	padding-left: 4px;
+}
+
+.griptop {
+	background-color: #666666;
+	cursor: s-resize;
+	font-size: 0;
+	height: 6px;
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	width: 200%;
+	z-index: 99;
+}
+
+.gripleft {
+	font-size: 5px;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 6px;
+	cursor: move;
+}
+
+/* Planning Month Mode - Start */
+.plM-HESWL {  /*planning Month Head Empty Spaces Week Label*/
+	text-align: center;
+	font-weight: bold;
+	font-size: 10pt;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+    .plM-HESWL td {
+        color: #636363;
+        cursor: pointer;
+    }
+.plM-dayLabel td {
+    text-align: center;
+    color: #707173;
+    font-size: 7pt;
+    padding-bottom: 1px;
+}
+.plM-HESDL {    /*planning Month Head Empty Spaces Day Label*/
+	height: 20px;
+
+}
+.plM-NDL {   /*planning Month number day left*/
+	border-left: 2px solid black;
+	border-top: 1px solid #dedede;
+	background-color: #EDEDED;
+	text-align: center;
+}
+.plM-NDR {   /*planning Month number day right*/
+	border-right: 1px solid #dedede;
+	border-top: 1px solid #dedede;
+	background-color: #EDEDED;
+	text-align: center;
+}
+.plM-NDM {   /*planning Month number day middle*/
+	background-color: #EDEDED;
+	border-top: 1px solid #dedede;
+	text-align: center;
+}
+.plM-LG  {  /*planning Month label Groupe*/
+	font-size: 10pt;
+	font-weight:bold;
+	color:#636363;
+	background-color: #ccc;   
+	text-align: center;
+}
+.plM-GC  {  /*planning Month Groupe col*/
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;    
+	
+	background-color: #ccc;    
+}
+.plM-LU { /*planning Month label User*/
+	height: 25px;
+	color:#636363;
+	line-height: 25px;
+	text-align:center;
+	font-weight:bold;
+	font-size: 10pt;
+}
+.plM-C { /*planning Month Conflict*/
+	background-image:url(../images/ui/cal/background-blocked.png);
+}
+.plM-D{ /*planning Month Day*/
+	height: 25px;
+	border-collapse: collapse;
+	border-left: 1px solid #DFDFDF;
+	border-right: 1px solid #DFDFDF;
+	border-bottom:1px dotted #DFDFDF;
+}
+.plM-D table{ /*planning Month Day table*/
+	width:100%;
+	height:100%;
+	vertical-align:top;
+	border-width:0px;
+	border-collapse:collapse;
+}
+.plM-UES {  /*planning Month User Empty Spaces*/
+	font-size: 2px;
+	padding:0;
+}
+.plM-UES > div{  /*planning Month User Empty Spaces*/
+	float:right;
+	width:20%;
+}
+.plM-DES {  /*planning Month Day Empty Spaces*/
+	height: 4px;
+	font-size: 2px;
+	border-top: 1px dotted #DFDFDF;
+	border-collapse: collapse;
+	border-left: 1px solid #DFDFDF;
+	border-right: 1px solid #DFDFDF;
+}
+/* Planning Month Mode - End */
+
+.dashedDiv
+{
+	position:absolute;
+	border: 2px dashed #42a7dc;
+	background-color: #42A7DC ;
+	display: none;
+	z-index: 999;
+	opacity : 0.4;
+	-moz-opacity : 0.4;
+	-ms-filter: "alpha(opacity=40)"; /* IE 8 */
+	filter : alpha(opacity=40); /* IE < 8 */
+}
+
+.cellSelected {
+	background-color: #bcdefb;
+}
+
+.rangeSelected {
+	background-color: #ffdead;	
+}
+.onMoveZindexUp
+{
+    z-index:20;
+}
+.icon-reload {
+    float: right;
+    font-size: 11pt;
+    line-height: 24px;
+    text-align: center;
+    width: 25px;
+}
+
+/* .pl0, .phd, .bar-now {
+	width: 291px !important;
+}
+
+#CalDivMain table {
+	width: auto !important;
+} */
+
+#CalDivMain .i-D {
+	border-right: none;
+}
+
+table.pl_tt_content_table,
+table.pl_tt_content_table tbody,
+table.pl_tt_content_table tr, 
+table.pl_tt_content_table td {
+    display: block;
+}
+
+td.pl_tt_flbl + td{   
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+} 
+
+table.pl_tt_content_table tr {
+    display: flex;
+}

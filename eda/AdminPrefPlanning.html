@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Administrer les préférences par défaut du mode graphique</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="../Scripts/eTools.js"></script>
+    <link href="../themes/default/css/eudoFont.css" rel="stylesheet" />
+    <link href="../themes/default/css/eMain.css" rel="stylesheet" />
+    <link href="../themes/default/css/eFile.css" rel="stylesheet" />
+    <link href="../themes/default/css/eControl.css" rel="stylesheet" />
+    <link href="../themes/default/css/eButtons.css" rel="stylesheet" />
+    <link href="../themes/default/css/eAdminMenu.css" rel="stylesheet" />
+    <link href="../themes/default/css/eAdminPrefPlanning.css" rel="stylesheet" />
+</head>
+<body class="maquette">
+    <div class="adminModal" id="prefPlanningModal">
+        <header>
+            Administrer les préférences par défaut du mode graphique
+        </header>
+
+        <div class="adminModalContent">
+            <h3>Semaine de travail</h3>
+            <div id="weekOptions" class="partContent">
+                <ul id="listWeekDays">
+                    <li class="selected">Lundi</li>
+                    <li>Mardi</li>
+                    <li>Mercredi</li>
+                    <li>Jeudi</li>
+                    <li>Vendredi</li>
+                    <li>Samedi</li>
+                    <li>Dimanche</li>
+                </ul>
+                <div class="weekOption">
+                    <label>Premier jour de la semaine</label>
+                    <select><option>Lundi</option><option>Mardi</option></select>
+                </div>
+                <div class="weekOption">
+                    <label>Heure de début</label>
+                    <input type="text" value="09:00" />
+                </div>
+                <div class="weekOption">
+                    <label>Heure de fin</label>
+                    <input type="text" value="09:00" />
+                </div>
+                <div class="weekOption">
+                    <label>Hauteur d'un intervalle</label>
+                    <select><option>00h15</option><option>00h30</option></select>
+                </div>
+                <div class="weekOption">
+                    <label>Durée par défaut d'un rendez-vous</label>
+                    <select><option>01h00</option><option>02h00</option></select>
+                </div>
+                <div class="weekOption">
+                    <label>Nombre maximal de chevauchement</label>
+                    <select><option>2</option><option>3</option></select>
+                </div>
+            </div>
+            <h3>Tâches affichées en mode jour</h3>
+            <div class="partContent">
+                <div class="dayOption"><input type="radio" /><label>Ne pas afficher les tâches</label></div>
+                <div class="dayOption"><input type="radio" /><label>Afficher toutes les tâches</label></div>
+                <div class="dayOption"><input type="radio" /><label>Afficher uniquement les tâches du jour</label></div>
+            </div>
+            <h3>Couleurs de la bordure gauche d'un rendez-vous</h3>
+            <div class="partContent">
+                <p>Cliquez sur la couleur pour la modifier</p>
+                <ul id="rdvColors">
+                    <li><span class="rdvColor" id="colorOpt1"></span>Le rendez-vous m'appartient</li>
+                    <li><span class="rdvColor" id="colorOpt2"></span>Le rendez-vous m'appartient et est confidentiel</li>
+                    <li><span class="rdvColor" id="colorOpt3"></span>Le rendez-vous ne m'appartient pas mais me concerne</li>
+                    <li><span class="rdvColor" id="colorOpt4"></span>Le rendez-vous ne m'appartient pas et ne me concerne pas</li>
+                    <li><span class="rdvColor" id="colorOpt5"></span>Le rendez-vous ne m'appartient pas et est confidentiel</li>
+                </ul>
+            </div>
+            <h3>Options</h3>
+            <div class="partContent">
+                <div class="planningOption">
+                    <input type="checkbox" /><label>Activer les conflits</label>
+                </div>
+                <div class="planningOption">
+                    <input type="checkbox" /><label>A chaque connexion, positionner le planning sur aujourd'hui</label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+    </script>
+</body>
+</html>

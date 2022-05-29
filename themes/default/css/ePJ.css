@@ -1,0 +1,464 @@
+* /* CSS Document */ /* CSS Document */ body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 8pt;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+ul, li, span, div {
+    margin: 0;
+    padding: 0;
+}
+
+:focus, input {
+    outline: none;
+}
+
+.annGlobl li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.off {
+    display: none;
+}
+
+.fileUpload {
+    height: 24px;
+    width: 177px;
+}
+
+.linkAdd {
+    height: 24px;
+    width: 50px;
+}
+
+.fileUpload, .linkAdd {
+    font-family: verdana;
+    font-size: 9pt;
+    color: white;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    border: none;
+}
+
+.bodyFieldFiles .fileUpload {
+    color: black;
+    width: auto;
+}
+
+.bodyFieldFiles .divFldFile {
+    width: auto;
+}
+
+#frmUpload .button-green {
+    font-weight: bold;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.divPJGlobal {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.divlstPJ {
+    cursor: default;
+    border: 1px solid #8A8A8A;
+    text-align: left;
+    color: black;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 15px;
+    overflow: auto;
+    clear: both;
+    height: 300px; /* TODO taille en % pour l'agrandissement*/
+    width: 96%;
+    background-color: white;
+}
+
+    .divlstPJ .divmTab {
+        overflow: auto;
+        height: 300px;
+        margin: 0;
+    }
+
+.divlstPJMail {
+    text-indent: 5px;
+    border: 1px solid #afabac;
+    background-color: #EFEFEF;
+    width: 500px;
+    overflow-y: auto;
+    height: 60px;
+    margin-left: -1px;
+}
+
+span.pjCnt {
+    font-weight: bold;
+    display: block;
+}
+
+span.spanlstPj {
+    margin-left: 5px;
+}
+
+.createAnn {
+}
+
+    .createAnn li {
+        line-height: 25px;
+        height: 25px;
+        margin-left: 20px;
+        list-style-type: none;
+        margin-bottom: 8px;
+    }
+
+#txtDesc {
+    color: #666;
+    font-style: italic;
+    text-indent: 3px;
+}
+
+.createAnn li input[type="radio"] {
+    vertical-align: -3px;
+    margin-left: -20px;
+}
+
+.createAnn li input[type="text"] {
+    width: 400px;
+    border: 1px solid #ccc;
+}
+
+.createAnn li span {
+    font-style: italic;
+}
+/* Fenetre annexe des template*/
+/* Bountons Ajouter */
+.AddButton {
+    width: 0;
+    line-height: 21px;
+    display: block;
+    padding-left: 25px;
+    cursor: pointer;
+    color: #636363;
+    margin-left: -3px;
+    vertical-align: middle;
+    padding-top: 0px;
+    margin-top: -4px;
+    margin-bottom: -8px;
+}
+
+    .AddButton:hover {
+        background-position: 0 -73px;
+        width: 0px;
+        height: 21px;
+        color: #42A7DC;
+    }
+
+.pjAddLib {
+    background-position: 0 0;
+    width: 30px;
+    line-height: 21px;
+    display: block;
+    cursor: pointer;
+    color: #636363;
+    padding-top: 0px;
+}
+
+    .pjAddLib:hover {
+        background-position: 0 -71px;
+        width: 22px;
+        height: 21px;
+    }
+
+.pjAdd a {
+    display: block;
+    padding-left: 25px;
+    cursor: pointer;
+    color: #636363;
+    margin-left: 3px;
+    vertical-align: middle;
+    padding-top: 0px;
+    text-decoration: none;
+}
+
+    .pjAdd a:hover {
+        color: #42A7DC;
+    }
+
+li.pJsep {
+    height: 1px;
+    background-color: #636363;
+    width: 88%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+    li.pJsep hr {
+        width: 80%;
+    }
+
+.headPj {
+    background-color: #666666;
+}
+
+/*FIn annexe Template*/
+
+.btnRefresh {
+    visibility: hidden;
+}
+
+.anxFilUp {
+    margin-left: 20px !important;
+    margin-top: 10px !important;
+    list-style-type: none;
+}
+
+    .anxFilUp li {
+        margin-top: 5px;
+    }
+
+.anxFile_a:hover > * {
+    color: #47a7dc;
+}
+
+.anxFile_a > * {
+    color: #636363;
+}
+
+.anxFilUp input[type="text"] {
+    border: 1px solid #afabac;
+}
+
+.ulAnx {
+    width: 80px;
+}
+
+    .ulAnx li {
+        list-style-type: none;
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+/* MouseOver sur la TR */
+.line_Pj {
+}
+
+    .line_Pj:hover {
+        background-color: #BEDCFB;
+    }
+
+.txtBoxTip {
+    width: 200px;
+}
+/* Hértiage de classe -eMains.css- pour ie-Mousse */
+
+div.ePopup {
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+    box-shadow: 8px 8px 12px #CCC;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+ul.pjAddSplitter {
+    list-style-type: none;
+    width: 100%;
+}
+
+li.pjAddSplitterFile, li.pjAddSplitterLink, li.pjAddSplitterLinkAdd {
+    float: left;
+}
+
+li.pjAddSplitterFile {
+    width: 310px;
+    height: 90px;
+}
+
+li.pjAddSplitterSep {
+    margin-top: 10px;
+    font-size: 1px;
+    width: 1px;
+    background-color: gray;
+    float: left;
+    height: 70px;
+    margin-left: 16px;
+}
+
+li.pjAddSplitterLink {
+    width: auto;
+}
+
+li.pjAddSplitterLinkAdd {
+    width: 90px;
+}
+
+input.pjAddSplitterLink {
+    width: 80%;
+    height: 18px;
+    float: left;
+}
+
+#blockUpload {
+    clear: both;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+    #blockUpload input[type='radio'] {
+        margin-bottom: 10px;
+    }
+
+.blockAddPj {
+    float: left;
+    width: 35%;
+    margin-right: 10px;
+}
+
+.borderRight {
+    border-right: 1px solid black;
+}
+
+#blockAddLink {
+    float: left;
+    width: 60%;
+}
+/* Lien sécurisé PJ */
+#bodyPJ {
+    background-color: #fff;
+    font-family: "Cabin-Regular", "Verdana", 'Trebuchet MS', 'Times New Roman', Times, serif;
+    font-size: 16pt;
+}
+#bodyPJ #errorContainer {
+    padding-top: 45px;
+    font-size: 10pt;
+    margin: auto;
+    text-align: center;
+}
+#bodyPJ #errorContainer h2 {
+    color: #333;
+    font-size: 46px;
+    margin: 0;
+    line-height: 46px;
+}
+#bodyPJ #errorContainer h1 {
+    color: #bb1515;
+    font-size: 81px;
+    margin: 0;
+    margin-bottom: 35px;
+    line-height: 80px;
+
+}
+#imgOops {
+    background: #fff url("../images/oops.png") no-repeat;
+    height: 255px;
+    width: 147px;
+    margin: auto;
+}
+#bodyPJ #errorContainer p {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 85px;
+}
+#bodyPJ #errorContainer a#footerCopyright {
+    font-size: 15px;
+    color: #636363;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+#bodyPJ #errorContainer a#footerCopyright:hover {
+    text-decoration: underline;
+}
+/*#bodyPJ #errorContainer * {
+    vertical-align: middle;
+}
+#bodyPJ #errorContainer .errorTitle {
+    font-weight: bold;
+    color: #bb1515;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+#bodyPJ #errorContainer .errorTitle .icon-ban {
+    color: #bb1515;
+    margin-right: 7px;
+}
+#bodyPJ #errorContainer .closeLink {
+    color: #bb1515;
+    font-size: 9pt;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+
+}*/
+#setViewType {
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+#setViewType li {
+    display: block;
+    margin-bottom: 3px;
+    line-height: 14px;
+}
+    #setViewType li * {
+        vertical-align: middle;
+    }
+    #setViewType li input {
+        margin-right: 5px;
+    }
+.blockFile {
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 3px 10px;
+    font-size: 9pt;
+    border-left: 3px solid #D63301;
+}
+.labelFilename {
+    width: 250px;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #D63301;
+    cursor: pointer;
+}
+.labelFilename:hover {
+    text-decoration: underline;
+}
+.blockChoices {
+    margin-left: 10px;
+}
+.blockChoices > div * {
+    vertical-align: middle;
+}
+.blockChoices label {
+    margin-right: 10px;
+    display: inline-block;
+}
+.blockChoices input[type='radio'] {
+    margin: 0;
+    margin-right: 5px;
+}
+.blockChoices input[type='text'] {
+    width: 350px;
+    box-sizing: border-box;
+    font-size: 9pt;
+}
+#pjIframe {
+    border: none;
+    overflow: auto;
+    width: 100%;
+
+}

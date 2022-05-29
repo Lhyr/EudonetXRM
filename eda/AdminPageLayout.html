@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Maquette Administrer les droits</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="../Scripts/eTools.js"></script>
+    <script type="text/javascript" src="../Scripts/eAdminResizer.js"></script>
+    <link href="../themes/default/css/eudoFont.css" rel="stylesheet" />
+    <link href="../themes/default/css/eMain.css" rel="stylesheet" />
+    <link href="../themes/default/css/eFile.css" rel="stylesheet" />
+    <link href="../themes/default/css/eButtons.css" rel="stylesheet" />
+    <link href="../themes/default/css/eAdminMenu.css" rel="stylesheet" />
+    <link href="../themes/default/css/eAdminFile.css" rel="stylesheet" />
+
+</head>
+<body class="maquette">
+
+    <div id="globalNav" class="globalNav">
+        <div id="adminNav" class="adminNav" style="width: 1442px;">
+            <div id="divLabelTabName" title="Cliquer pour modifier le nom de l'onglet" onclick="nsAdmin.tabNameOnClick(this);">
+                <span id="labelTabName">Sociétés</span><span class="icon-edn-pen"></span>
+            </div>
+            <div id="divInputTabName" style="display: none;">
+                <input name="inputTabName" type="text" id="inputTabName" value="Sociétés" dsc="2|0" onblur="nsAdmin.updateTabNameOnBlur(this);"><span class="icon-edn-pen"></span>
+            </div>
+            <ul class="navLinks">
+                <li>
+                    <div class="navTitle">
+                        <span class="icon-administrafion"></span><span>Administrer la base</span>
+                    </div>
+                </li>
+                <li id="navLeaveAdmin" class="navEntry">
+                    <div id="tab_header_300" class="navTitle" onclick="nsAdmin.reloadHome();">
+                        <span class="icon-deselect_all"></span><span>Quitter l'administration</span>
+                    </div>
+                    <ul class="sbMenu">
+                        <li class="sbmMRU">
+                            <ul id="ul_mru_300" class="listResult_sMC2">
+                                <li class="navLst" id="754" title="EUDOWEB">
+                                    <div>EUDOWEB</div>
+                                </li>
+                                <li class="navLst" id="798" title="JUVENTUS DE TURIN">
+                                    <div>JUVENTUS DE TURIN</div>
+                                </li>
+                                <li class="navLst" id="759" title="TF1">
+                                    <div>TF1</div>
+                                </li>
+                                <li class="navLst" id="755" title="PARIS SAINT GERMAIN">
+                                    <div>PARIS SAINT GERMAIN</div>
+                                </li>
+                                <li class="navLst" id="871" title="バルーン">
+                                    <div>バルーン</div>
+                                </li>
+                                <li class="navLst" id="915" title="TEST ALE">
+                                    <div>TEST ALE</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sbmA">
+                            <ul class="Action_sMC">
+                                <li class="navAction" onclick="javascript:nsAdmin.goTabList(300);">Liste des fiches</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="mainDiv" class="mainDiv" style="width: 88%">
+        <div id="adminFields">
+            <header>
+                <div class="fieldsDropArea">
+                    <p>Déposer ici les rubriques des onglets web</p>
+                </div>
+            </header>
+
+            <table id="fth_300" class="mTabFile" eid="300_754" border="0">
+                <tbody>
+                    <tr>
+                        <td class="fileHeaderCell" colspan="2">
+                            <table class="fileCadre" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="file99"><span title="TEST1" class="icon-group" style="float: left;"></span>
+                                            <span id="fileInfo" onclick="shPties(300,754)" onmouseover="oToolTip.show(this, 300,754);" onmouseout="oToolTip.hide();" class="fileOwner"><span class="file99Label">Appartient à&nbsp;:&nbsp;</span><span id="file99Value" class="file99Value"></span></span><span class="icon-edn-info pppm" title="Infos" did="393" html="0" name="Infos" onclick="shi(this, 754);"></span></td>
+                                        <td class="toolBtn">
+                                            <div class="fileTools">
+                                                <ul class="outils">
+                                                    <!--                                                    <li class="icon-a_moins" title="Diminuer la taille du texte" onclick="resizeFont(-2);"></li>
+                                                    <li class="icon-a_plus" onclick="resizeFont(2);" title="Grossir la taille du texte"></li>
+                                                    <li class="icon-print" title="Imprimer la liste" onclick="printFile();"></li>-->
+                                                    <li id="opencloseall" class="icon-uncollapse" onclick="OpenCloseSepAll(document.getElementById('opencloseall'))" tab="300" title="Tout masquer"></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="adminFieldsContent">
+
+                <div id="ruleGrips2" style="display: none">
+                    <div class="ruleCell" style="width: 110px">
+                        <div class="resizer icon-caret-down" onmousedown="initDrag(event);"></div>
+                    </div>
+                    <div class="ruleCell"></div>
+                    <div class="ruleCell" style="width: 25px"></div>
+                    <div class="ruleCell" style="width: 110px">
+                        <div class="resizer icon-caret-down" onmousedown="initDrag(event);"></div>
+                    </div>
+                    <div class="ruleCell"></div>
+                    <div class="ruleCell" style="width: 25px"></div>
+                </div>
+
+                <div id="ruleGrips">
+                </div>
+
+                <table id="Table1" class="mTabFile" border="0">
+                    <tbody>
+                        <tr class="rowForStyle emptyrow" style="">
+                            <td class="table_labels" style="height: 1px; width: 70px;"></td>
+                            <td class="table_values" style="height: 1px;"></td>
+                            <td class="btn" style="height: 1px; width: 25px;"></td>
+                            <td class="table_labels" style="height: 1px; width: 70px;"></td>
+                            <td class="table_values" style="height: 1px;"></td>
+                            <td class="btn" style="height: 1px; width: 25px;"></td>
+                        </tr>
+                        <tr id="ruleRow">
+                            <td class="table_labels"><span class="icon-caret-down"></span><span class="colWidth">70px</span></td>
+                            <td class="table_values"><span class="icon-caret-down"></span><span class="colWidth">Automatique</span></td>
+                            <td class="btn"></td>
+                            <td class="table_labels"><span class="icon-caret-down"></span><span class="colWidth">70px</span></td>
+                            <td class="table_values"><span class="icon-caret-down"></span><span class="colWidth">Automatique</span></td>
+                            <td class="btn"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="fts_200" class="mTab mTabFile" border="0" style="width: 100%">
+                    <tbody>
+                        <tr class="emptyrow" style="height: 1px;">
+                            <td class="table_labels" style="height: 1px; width: 70px;"></td>
+                            <td class="table_values" style="height: 1px;"></td>
+                            <td class="btn" style="height: 1px; width: 25px;"></td>
+                            <td class="table_labels" style="height: 1px; width: 70px;"></td>
+                            <td class="table_values" style="height: 1px;"></td>
+                            <td class="btn" style="height: 1px; width: 25px;"></td>
+                        </tr>
+                        <tr class="fieldsDropArea">
+                            <td colspan="6">
+                                <p>Déposer ici les rubriques des onglets parents</p>
+                            </td>
+                        </tr>
+                        <tr class="tableSep"></tr>
+                        
+                        <tr class="fieldsDrop">
+                            <td id="COL_200_201" tab="tab" eltvalid="COL_200_201_2839_2839_0" rul="0" pop="0" class=" table_labels mandatory_Label" popid="0" fld="fld" did="201" lib="Nom" bf="0" mf="0" tree="0" bndid="0" title="Nom
+Nom de famille"
+                                mult="0" rowspan="1" style="border-style: thin;" cellpos="1;1">Nom<span class="MndAst">*</span></td>
+                            <td class=" table_values" colspan="1" rowspan="1" style="height: 24px;" cellpos="1;1">
+                                <div class="dashedContent"></div>
+                                <ul class="fieldOptions">
+                                    <li class="icon-bold"></li>
+                                    <li class="icon-italic"></li>
+                                    <li class="icon-underline"></li>
+                                    <li class="icon-cog configOption"></li>
+                                    <li class="deleteOption icon-delete"></li>
+                                </ul>
+                            </td>
+                            <td class=" icnFileBtn" eacttg="COL_200_201_2839_2839_0" eaction="LNKFREETEXT" efld="1" rowspan="1" cellpos="1;1"></td>
+
+                            <td id="COL_200_202" tab="tab" eltvalid="COL_200_202_2839_2839_0" rul="0" pop="0" class=" table_labels mandatory_Label" popid="0" fld="fld" did="202" lib="Prénom" bf="0" mf="0" tree="0" bndid="0" title="Prénom
+Prénom du contact"
+                                mult="0" rowspan="1" style="border-style: thin;" cellpos="2;1">Prénom<span class="MndAst">*</span></td>
+                            <td class=" table_values" colspan="1" rowspan="1" style="height: 24px;" cellpos="2;1">
+                                <div class="dashedContent"></div>
+                                <ul class="fieldOptions">
+                                    <li class="icon-bold"></li>
+                                    <li class="icon-italic"></li>
+                                    <li class="icon-underline"></li>
+                                    <li class="icon-cog configOption"></li>
+                                    <li class="deleteOption icon-delete"></li>
+                                </ul>
+                            </td>
+                            <td class=" icnFileBtn" eacttg="COL_200_202_2839_2839_0" eaction="LNKFREETEXT" efld="1" rowspan="1" cellpos="2;1"></td>
+
+                        </tr>
+                        <tr class="fieldsSep"></tr>
+                        <tr class="fieldsDrop">
+                            <td id="COL_200_204" did="204" popid="204" treeusr="0" fld="fld" bf="0" rul="0" mf="0" class=" table_labels" special="0" treeolc="0" title="Civilité
+Civilité du contact"
+                                pop="3" eltvalid="COL_200_204_2839_2839_0" mult="0" tree="0" bndid="0" lib="Civilité" tab="tab" rowspan="1" style="border-style: thin;" cellpos="1;2">Civilité</td>
+                            <td class=" table_values" eempty="1" colspan="1" rowspan="1" style="height: 24px;" cellpos="1;2">
+                                <div class="dashedContent"></div>
+                                <ul class="fieldOptions">
+                                    <li class="icon-bold"></li>
+                                    <li class="icon-italic"></li>
+                                    <li class="icon-underline"></li>
+                                    <li class="icon-cog configOption"></li>
+                                    <li class="deleteOption icon-delete"></li>
+                                </ul>
+                            </td>
+                            <td class="icon-catalog icnFileBtn" eacttg="COL_200_204_2839_2839_0" eaction="LNKADVCAT" efld="1" rowspan="1" cellpos="1;2"></td>
+
+
+                            <td id="COL_200_230" tab="tab" eltvalid="COL_200_230_2839_2839_0" rul="0" class=" table_labels" popid="0" fld="fld" did="230" pop="0" lib="photo" bf="0" mf="0" tree="0" bndid="0" title="photo" mult="0" rowspan="1">photo</td>
+                            <td id="COL_200_230_2839_2839_0" class=" LNKCATIMG edit table_values" ename="COL_200_230" dbv="" title="" eaction="LNKCATIMG" efld="1" colspan="1" rowspan="1" style="height: 24px;">
+                                <img src="themes/default/images/ui/picture_grayed.png" style="border-width: 0px;"></td>
+                            <td class=" icnFileBtn" eaction="" efld="1" rowspan="1"></td>
+
+                        </tr>
+
+                        <tr class="fieldsSep"></tr>
+                        <tr class="fieldsDrop">
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+
+                        </tr>
+
+                        <tr class="fieldsSep"></tr>
+                        <tr class="fieldsDrop">
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+                        </tr>
+
+                        <tr class="fieldsSep"></tr>
+                        <tr class="fieldsDrop">
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+                        </tr>
+
+                        <tr class="fieldsSep"></tr>
+                        <tr class="fieldsDrop">
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+                        </tr>
+
+                        <tr class="fieldsSep"></tr>
+                        <tr class="fieldsDrop">
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+                        </tr>
+
+                        <tr class="tableSep"></tr>
+
+                        <tr class="fieldsDropArea">
+                            <td colspan="6">
+                                <p>Déposer ici les rubriques situées au-dessus de la section "Détails" de l'onglet</p>
+                            </td>
+                        </tr>
+
+                        <tr class="tableSep"></tr>
+
+                        <tr>
+                            <td colspan="6">
+                                <div id="bkmBar_200" class="bkmBar" activebkm="0">
+                                    <table id="bkmTab_200" class="bkmBar" border="0">
+                                        <tbody>
+                                            <tr id="bkmtr" class="bkmTr">
+                                                <td id="bkmDtls" class="bkmDtlsSel" ednbkmpage="0"><a class="txtDetails" onclick="javascript:swFileBkm(0)">Détails</a></td>
+                                                <td id="bkmAll" class="bkmHead" ednbkmpage="0"><a class="txtAll" onclick="loadBkmList(-1)">TOUS</a></td>
+                                                <td class="bkmSep" ednbkmpage="0"></td>
+                                                <td id="BkmHead_400" class="bkmHead" ednbkmpage="1" style="display: ;"><a onclick="loadBkmList(400);">Adresse</a></td>
+                                                <td class="bkmSep" ednbkmpage="1" style="display: ;"></td>
+                                                <td id="BkmHead_1900" class="bkmHead" ednbkmpage="1" style="display: ;"><a onclick="loadBkmList(1900);">Planning2</a></td>
+                                                <td class="bkmSep" ednbkmpage="1" style="display: ;"></td>
+                                                <td id="BkmHead_294" class="bkmHead" ednbkmpage="1" style="display: ;"><a onclick="loadBkmList(294);">Notes</a></td>
+                                                <td class="bkmSep" ednbkmpage="1" style="display: ;"></td>
+                                                <td id="BkmHead_291" class="bkmHead" ednbkmpage="1" style="display: ;"><a onclick="loadBkmList(291);">Annexes<span id="bkmTabCnt_291">&nbsp;(0)</span></a></td>
+                                                <td class="bkmSep" ednbkmpage="1" style="display: ;"></td>
+                                                <td id="BkmHead_2800" class="bkmHead" ednbkmpage="1" style="display: ;"><a onclick="loadBkmList(2800);">Destinataires</a></td>
+                                                <td class="bkmSep" ednbkmpage="1" style="display: ;"></td>
+                                                <td id="BkmHead_2600" class="bkmHead" ednbkmpage="1" style="display: ;"><a onclick="loadBkmList(2600);">Affaire</a></td>
+                                                <td class="bkmSep" ednbkmpage="1" style="display: ;"></td>
+                                                <td id="BkmHead_289" class="bkmHead" ednbkmpage="1" style="display: ;"><a onclick="loadBkmList(289);">Description</a></td>
+                                                <td class="bkmSep" ednbkmpage="1" style="display: ;"></td>
+                                                <td id="BkmHead_100" class="bkmHead" ednbkmpage="1" style="display: ;"><a onclick="loadBkmList(100);">Evénements</a></td>
+                                                <td class="bkmSep" ednbkmpage="1" style="display: ;"></td>
+                                                <td class="bkmHeadClean" ednbkmpage="0">&nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr class="fieldsSep"></tr>
+                        <tr class="fieldsDrop">
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+                        </tr>
+
+                        <tr class="fieldsSep"></tr>
+                        <tr class="fieldsDrop">
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+                        </tr>
+
+                        <tr class="fieldsSep"></tr>
+                        <tr class="fieldsDrop">
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+
+                            <td class=" table_labels"></td>
+                            <td class=" table_values"></td>
+                            <td class="icnFileBtn"></td>
+                        </tr>
+
+                        <tr class="tableSep"></tr>
+                        <tr class="fieldsDropArea fieldsDropDetails">
+                            <td colspan="6">
+                                <p>Déposer ici les rubriques situées dans la section "Détails" de l'onglet</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="rightMenu">
+    </div>
+
+    <script type="text/javascript">
+
+        var cells = document.querySelectorAll(".fieldsDrop td");
+        for (var i = 0; i < cells.length; i++) {
+            cells[i].addEventListener('mouseover', function () {
+                selectCell(this, true);
+            });
+
+            cells[i].addEventListener('mouseout', function () {
+                selectCell(this, false);
+            });
+        }
+
+        function selectCell(element, bMouseOver) {
+            var cellpos = "";
+            var parent;
+            var optionsBlock;
+
+            parent = element.parentNode;
+            cellpos = element.getAttribute("cellpos");
+            var cellsToSelect = parent.querySelectorAll("[cellpos='" + cellpos + "']");
+            for (var j = 0; j < cellsToSelect.length; j++) {
+                if (bMouseOver)
+                    addClass(cellsToSelect[j], "selected");
+                else
+                    removeClass(cellsToSelect[j], "selected");
+
+                if (cellsToSelect[j].classList.contains("table_values")) {
+                    optionsBlock = cellsToSelect[j].querySelector(".fieldOptions");
+                    if (bMouseOver)
+                        addClass(optionsBlock, "selected");
+                    else
+                        removeClass(optionsBlock, "selected");
+                }
+            }
+
+        }
+
+        var listColWidth = "";
+        //var arrGrips = [110, 698, 723, 833, 1425];
+        var resizer = new nsAdminResizer.AdminResizer(listColWidth);
+    </script>
+</body>
+</html>

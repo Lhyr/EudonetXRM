@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" language="javascript" src="../scripts/eTools.js"></script>
+    <script type="text/javascript" language="javascript" src="../scripts/eModalDialog.js"></script>
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eModalDialog.css" />
+    <script type="text/javascript" language="javascript">
+        var modal = null;
+        function createProgress() {
+            modal = null;
+            prog = 0;
+            modal = new eModalDialog("test", 4, null, 550, 160);
+            // Masquer le bouton "Agrandir"
+            modal.hideMaximizeButton = true;
+            // Masquer le bouton "Fermer"
+            modal.hideCloseButton = true;
+            modal.noButtons = true;
+            modal.show();
+
+        }
+        function doProgress() {
+            createProgress();
+            window.setTimeout(progess, 5);
+        }
+
+        var prog = 0;
+        function progess() {
+            prog++;
+            if (prog > 100)
+                return;
+            modal.updateProgressBar(prog);
+            window.setTimeout(progess, 500);
+        }
+    </script>
+</head>
+<body style="height:400px;">
+    <input type="button" onclick="createProgress();" value="Create Progress only" />
+    <input type="button" onclick="doProgress();" value="Create and Do Progress"/>
+</body>
+</html>

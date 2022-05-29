@@ -1,0 +1,7 @@
+set nocount on;
+BEGIN	
+	BEGIN
+		ALTER TABLE [NotificationTrigger] ALTER COLUMN SubscribersTargetDescId VARCHAR(512)		
+		UPDATE [DESC] SET FORMAT = 1, LENGTH = 514 WHERE DESCID = 114224
+	END
+END

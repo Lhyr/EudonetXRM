@@ -1,0 +1,76 @@
+﻿/** design skeleton stepsbar */
+
+.stepsBar-skeletons-wrapper,
+.skeleton-content-progress {
+    background: var(--detail-foreground-btn);
+}
+
+.skeleton-progressbar {
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    padding: 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+    .skeleton-progressbar li {
+        list-style-type: none;
+        float: left;
+        font-size: var(--size-13);
+        position: relative;
+        text-align: center;
+        color: var(--stepbar-textcolor);
+        font-family: var(--ffamilyBold);
+    }
+
+        .skeleton-progressbar li:after {
+            width: 70%;
+            height: 1px;
+            content: "";
+            position: absolute;
+            background-color: #e2e2e2;
+            top: 50%;
+            left: -35%;
+            z-index: 0;
+            margin: -1px 0 0 0;
+        }
+
+        .skeleton-progressbar li:first-child:after {
+            content: none;
+        }
+
+    .skeleton-progressbar .skeleton-circle-container {
+        content: "";
+        width: 40px;
+        height: 40px;
+        bottom: 18px;
+        border-radius: 500px;
+        margin: 0 auto 5px auto;
+        text-align: center;
+        z-index: 1;
+        position: sticky;
+    }
+
+        .skeleton-progressbar .skeleton-circle-container .skeleton-circle-button {
+            background-color: #e0e0e0;
+            display: inline-block;
+            min-height: 40px;
+            width: 40px;
+            border-radius: 500px;
+        }
+
+    .skeleton-progressbar .skeleton.skeleton-subtitle-progress {
+        width: 15%;
+        margin: 0 auto;
+        height: 11px;
+    }
+
+.skeleton-progress-field {
+    padding: 8px 0 7px 0;
+    margin: 2px 0;
+    border-radius: 30px;
+    border: solid 10px var(--detail-foreground-btn);
+}
+
+/** design skeleton stepsbar */

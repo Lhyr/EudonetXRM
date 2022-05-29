@@ -1,0 +1,827 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html {
+   /* background: url(../images/login-background.jpg) no-repeat center fixed;*/
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('../../fonts/oxygen-light-webfont.eot');
+    src: url('../../fonts/oxygen-light-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/oxygen-light-webfont.woff2') format('woff2'), url('../../fonts/oxygen-light-webfont.woff') format('woff'), url('../../fonts/oxygen-light-webfont.ttf') format('truetype'), url('../../fonts/oxygen-light-webfont.svg#oxygenlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+BODY {
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+    font-size: 8pt;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    overflow: auto;
+}
+
+/*BODY {
+    background-image: url("../images/xrm-cover-connect.jpg");
+    width: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: Verdana;
+    font-size: 8pt;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    overflow: auto;
+}*/
+
+#container {
+}
+
+
+input {
+    outline: medium none;
+    filter: none;
+    background: white;
+}
+
+select {
+    outline: medium none;
+}
+
+:focus {
+    outline: medium none;
+}
+
+IMG {
+    border-color: -moz-use-text-color;
+    border-style: none;
+    border-width: medium;
+}
+
+.header {
+    margin: 10px auto;
+    overflow: hidden;
+    width: 100%;
+}
+/*.logo {
+    height: 60px;
+    left: 10px;sprite-bt-00_hover
+    position: absolute;
+    width: 400px;
+}*/
+.hLogo {
+    background: url("../images/eLogin_logo.png") no-repeat scroll left top transparent;
+    height: 44px;
+    width: 90px;
+    top: 20px;
+    margin-right: 45px;
+    float: right;
+}
+
+.espabo {
+    color: #5E5E5E;
+    font-size: 14pt;
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+    line-height: 25px;
+    margin-left: 45px;
+}
+
+.espaversion {
+    height: 108px;
+    left: 65px;
+    right: 65px;
+    text-align: center;
+    position: absolute;
+    color: #42a7dc;
+    /* background: #42a7dc; */
+    /* font-weight: bold; */
+    font-size: 11pt;
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+    /* line-height: 25px; */
+    top: 110px;
+}
+
+.espabo span#txtLoginSpace {
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 16pt;
+}
+
+#container-connect {
+    overflow: hidden;
+    width: 400px;
+    margin: auto;
+}
+
+.divLang {
+    overflow: hidden;
+}
+
+#Flags {
+    display: block;
+    /*position: relative;*/
+    z-index: 1000;
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+    float: right;
+    padding: 0;
+    margin: 0px 0px 10px 0px;
+}
+
+    #Flags li {
+        display: block;
+        float: left;
+        font-size: 10pt;
+        list-style: none outside none;
+        margin: 0 4px;
+        padding-top: 1px;
+        position: relative;
+        text-align: center;
+    }
+
+.bt_flag {
+    cursor: pointer;
+}
+
+    .bt_flag:hover {
+        display: block;
+        float: left;
+        color: #42a7dc;
+        list-style: none outside none;
+        position: relative;
+        text-align: center;
+    }
+
+.bt_flag_active {
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+    font-size: 13pt;
+    color: #42a7dc;
+    background-color: #42a7dc;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #ffffff;
+    list-style: none outside none;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+}
+
+
+
+.title-box {
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.loading-img {
+}
+
+#container-info {
+    position: absolute;
+    top: 0;
+    margin-left: 40px;
+    /* margin-top: 20px; */
+    background: rgba(250,250,250,0.9);
+    float: left;
+    width: 530px;
+    /*padding-bottom: 35px;*/
+    height: 100%;
+}
+
+#info {
+    background: none repeat scroll 0 0 #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+DIV {
+    background: none repeat scroll 0 0 transparent;
+    border-color: -moz-use-text-color;
+    border-style: none;
+    border-width: 0;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 9pt;
+    font-style: normal;
+    /*font-weight: normal;*/ /*GCH : rentre en conflit avec les boutons de modals de login*/
+    margin: 0;
+    outline-style: none;
+    outline-width: 0;
+    padding: 0;
+    vertical-align: baseline;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+FORM {
+    background: none repeat scroll 0 0 transparent;
+    border-color: -moz-use-text-color;
+    border-style: none;
+    border-width: 0;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 9pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    outline-style: none;
+    outline-width: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+LABEL {
+    background: none repeat scroll 0 0 transparent;
+    border-color: -moz-use-text-color;
+    border-style: none;
+    border-width: 0;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 9pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    outline-style: none;
+    outline-width: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+DIV.formContainer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    overflow: hidden;
+    padding: 15px 20px 20px;
+    border-bottom: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    width: auto;
+    position: relative;
+}
+
+div.fieldRow {
+    clear: both;
+    color: #666666;
+    /* height: 62px; */
+    margin: 0 0 4px;
+    overflow: hidden;
+}
+
+.sep {
+    border-bottom: 1px solid #A4A4A4;
+    margin: 15px 0;
+}
+
+div.fieldRow label {
+    display: block;
+    font-weight: bold;
+    margin-right: 15px;
+    padding: 2px 0;
+    text-align: left;
+}
+
+.inputText {
+    border-radius: 2px 2px 2px 2px;
+    font-family: Arial,sans-serif;
+    margin: 0 7px 5px 0;
+    padding: 8px 4px;
+    text-transform: uppercase;
+}
+
+input.inputText {
+    border: 2px solid #EEEEEE;
+    /*border-radius: 8px 8px 8px 8px;*/
+    height: 10px;
+    width: 340px;
+}
+
+select.inputText {
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    width: 350px;
+    padding: 5px;
+}
+
+.inputText:hover {
+    background-position: 317px -631px;
+    border: 2px solid #8CD6F9;
+}
+
+.inputText:focus, input.inputTextFocus {
+    border: 2px solid #D8D8D8 !important;
+}
+
+.inputEdit {
+    background-color: rgb(246, 246, 246);
+    border: 1px solid #D8D8D8;
+    font-size: 10pt;
+}
+
+.inputFilled {
+    background-color: white;
+    border: medium none;
+    color: #666666;
+    font-size: 9pt;
+}
+
+.errorPwd, .errBase {
+    border-color: Red !important;
+}
+
+.errLogin {
+    color: Red;
+    font-weight: bold;
+}
+
+.errorPwd:focus, input.errorPwd, .errorBase:focus, input.errorBase {
+    border-color: Red !important;
+}
+
+textarea {
+    border: 1px solid #D8D8D8;
+    font-family: Arial,sans-serif;
+    font-size: 10pt;
+    height: 40px;
+    margin: 0 7px 5px 0;
+    padding: 8px 4px;
+    text-transform: uppercase;
+    width: 340px;
+}
+
+DIV.fieldRow A.fieldAction {
+    color: #42A7DC;
+    float: right;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 9pt;
+    text-align: right;
+}
+
+A.fieldAction {
+    color: #42A7DC;
+    float: right;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 9pt;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.pubDiv {
+    position: absolute;
+    color: #000;
+    font-family: Cabin, Verdana, 'Trebuchet MS', 'Times New Roman';
+    font-weight: lighter;
+    font-size: 60px;
+    left: 630px;
+    top: 150px;
+    max-width: calc(100% - 570px);
+}
+
+    .pubDiv p {
+        margin: 5px 0;
+    }
+
+    .pubDiv span {
+        color: #bb1515;
+    }
+
+div#pubDiv > * {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.eudonet-links {
+    /* padding-top: 15px; */
+}
+
+    .eudonet-links a {
+        color: #42a7dc;
+    }
+
+.footerDiv {
+    bottom: 0;
+    color: #5E5E5E;
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+    text-align: left;
+    text-align: center;
+    font-size: 8pt;
+}
+
+#btnForgotPassword {
+}
+
+.button-rouge {
+    cursor: pointer;
+    display: inline-block;
+    color: #ffffff;
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+    font-size: 30px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background: #60cf60 url(../images/background-buttun-success.png) left top no-repeat;
+    border: 1.5px solid #60cf60;
+    background-size: 100px 82px;
+    /*box-shadow: 2px 2px 1px #a0a0a0;*/
+    font-weight: bold;
+    margin-top: 30px;
+    /*demande 73750 */
+    background: #f12239 url(../images/btn-red-triangle-bg-5.png) left top no-repeat;
+    border: 1.5px solid #f12239;
+    /*background-size: 40%;
+    background-position: -34px 51%;
+    background-position: -34px 150%;*/
+    transition: background .3s;
+    /*box-shadow: 2px 2px 1px #7f7e7e;*/
+}
+
+    .button-rouge:hover {
+        background: #59CA5A url(../images/background-buttun-success.png) left top no-repeat;
+        border: 1.5px solid #59CA5A !important;
+        background-size: 100px 82px;
+        /*demande 73750 */
+        background: #da1f34 url(../images/btn-red-triangle-bg-5.png) left top no-repeat;
+        border: 1.5px solid #da1f34 !important;
+        /*background-size: 60%;
+        background-position: -34px 51%;
+        background-position: -46px 51%;*/
+    }
+
+
+#footerAskDemo {
+    overflow: hidden;
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+    margin-top: 7px;
+}
+
+#textNotYetCust {
+    font-size: 10pt;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    line-height: 34px;
+    padding-right: 10px;
+    font-family: Oxygen, Verdana, 'Trebuchet MS', 'Times New Roman';
+}
+
+#button-demo {
+    float: right;
+    background-color: #7c8894;
+    text-decoration: none;
+    line-height: 15px;
+    color: #ffffff;
+    height: 15px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    font-size: 11pt;
+}
+
+    #button-demo:hover {
+        background-color: #dadada;
+        color: #636363;
+        line-height: 15px;
+        height: 15px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px;
+        font-size: 11pt;
+    }
+
+
+
+
+
+#slogan {
+    margin-bottom: 0;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    padding: 40px 27px 35px;
+    right: 50PX;
+    background-color: #fff;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+    #slogan img {
+        width: 370px;
+        height: 175px;
+        opacity: 1;
+    }
+
+@media only screen and (max-width: 1550px) {
+    #slogan{
+        opacity:0;
+    }
+}
+
+
+
+#btnConnect {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+}
+
+#titleLogin {
+    background-color: #7C8894;
+    color: white;
+    height: 32px;
+    padding: 0 20px;
+}
+
+    #titleLogin * {
+        vertical-align: middle;
+        line-height: 32px;
+    }
+
+    #titleLogin span[class^='icon'] {
+        margin-right: 10px;
+        font-size: 12pt;
+    }
+/* TODO */
+
+
+
+.sprite-eMain_logo {
+    background: url("../images/iLog/iLoginSprite.png") no-repeat scroll 0 -1092px transparent;
+    height: 64px;
+    width: 165px;
+}
+
+.sprite-espabo00 {
+    background: url("../images/iLog/iLoginSprite.png") no-repeat scroll 0 -1206px transparent;
+    height: 58px;
+    width: 250px;
+}
+
+.sprite-espabo01 {
+    background: url("../images/iLog/iLoginSprite.png") no-repeat scroll 0 -1314px transparent;
+    height: 58px;
+    width: 250px;
+}
+
+.sprite-espabo02 {
+    background: url("../images/iLog/iLoginSprite.png") no-repeat scroll 0 -1422px transparent;
+    height: 58px;
+    width: 250px;
+}
+
+.sprite-espabo03 {
+    background: url("../images/iLog/iLoginSprite.png") no-repeat scroll 0 -1530px transparent;
+    height: 58px;
+    width: 250px;
+}
+
+.sprite-espabo04 {
+    background: url("../images/iLog/iLoginSprite.png") no-repeat scroll 0 -1638px transparent;
+    height: 58px;
+    width: 250px;
+}
+
+.sprite-espabo05 {
+    background: url("../images/iLog/iLoginSprite.png") no-repeat scroll 0 -1746px transparent;
+    height: 58px;
+    width: 250px;
+}
+
+.sprite-espabo06 {
+    background: url("../images/iLog/iLoginSprite.png") no-repeat scroll 0 -1854px transparent;
+    height: 58px;
+    width: 250px;
+}
+
+.waiter {
+    background: none repeat scroll 0 0 #999999;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 9999;
+}
+
+.contentWait {
+    color: black;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: xx-large;
+    left: 48%;
+    margin-top: 250px;
+    opacity: 0.8;
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+}
+
+#divRememberMe {
+    background: none repeat scroll 0 0 transparent;
+    border-width: 0;
+    float: left;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    outline-style: none;
+    outline-width: 0;
+    padding: 35px 0 0;
+    vertical-align: baseline;
+}
+
+.buttons {
+    display: block;
+    float: right;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+/* Pop Up eUserPassword */
+.eUsrPwd {
+    background-color: #F8F8F8;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 90px;
+    font-family: Verdana;
+    width: 100%;
+    height: auto;
+}
+#pass-status {
+    font-size: 16px;
+    right: -320px;
+    position: absolute;
+    right: 14px;
+    top: 26px;
+}
+
+i#pass-status.icon-edn-eye {
+    font-size: 11px;
+    top: 28px;
+    background: rgb(246, 246, 246);
+    padding: 0 1px 1px 0;
+}
+
+div.fieldRow.passwordField {
+    position: relative;
+}
+
+
+.eUsrPwdChk {
+    margin-left: 125px;
+    /* margin-top: 5px; */
+}
+
+.eUsrPwd input {
+    border: 1px solid #B6B6B6;
+}
+
+.eUsrPwdChk input {
+    vertical-align: -2px;
+}
+
+.eUsrPwdChk span {
+    font-size: 8pt;
+}
+
+.eUsrPwdLbl {
+    text-align: right;
+}
+
+#chkRememberMe span[class^='icon'] {
+    color: #3CA7DE;
+}
+
+#alertMessage {
+    margin: 50px auto;
+    width: 400px;
+    text-align: justify;
+    font-size: 8pt;
+    line-height: 16px;
+    color: #3CA7DE;
+    font-weight: bold;
+    background-color: white;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+    #alertMessage p {
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    #alertMessage #messageIcon {
+        float: left;
+        margin-right: 8px;
+    }
+
+
+@media screen and (max-width: 1704px) {
+    .pubDiv {
+        top: 150px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1071px) {
+    .pubDiv {
+        font-size: 30px;
+        left: 600px;
+    }
+
+    .button-rouge {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pubDiv {
+        font-size: 30px;
+        left: 600px;
+        top: 80px;
+    }
+
+    #slogan {
+        display: none;
+    }
+
+    .button-rouge {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .pubDiv, #slogan {
+        display: none;
+    }
+
+    #container-info {
+        margin: 20px auto;
+        float: none;
+        position: relative;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #container-info {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    select.inputText {
+        width: 95%;
+    }
+
+    input.inputText {
+        width: 95%;
+    }
+
+    #container-connect {
+        width: 100%;
+    }
+
+    #divRememberMe {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #btnConnect {
+        position: relative;
+        margin-top: 10px;
+        float: right;
+    }
+
+    #textNotYetCust {
+    }
+}
+
+#globalAuthnBlock[mode="form"] #userAuthnBlock,
+#globalAuthnBlock[mode="saml"] #samlAuthnBlock {
+    display: block;
+}
+
+#globalAuthnBlock[mode="form"] #samlAuthnBlock,
+#globalAuthnBlock[mode="saml"] #userAuthnBlock {
+    display: none;
+}

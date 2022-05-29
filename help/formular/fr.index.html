@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html style="                                                                                                                                                                                                                             height: 822px;"
+  lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eudoFont.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <header>
+        <div class="content-header">
+          <h2>Création d'un formulaire avancé</h2>
+          <h3>Formulaire avancé</h3>
+        </div>
+        <div class="content-100">
+          <div class="title-100">
+            <h4>Sommaire</h4>
+            <p><a href="#CreationGraphique">Création Graphique</a></p>
+            <p><br>
+            </p>
+            <ul>
+              <li><a href="#CreationGraphiqueBlocsStructures">Blocs de structure</a></li>
+              <li><a href="#CreationGraphiqueBlocsContenu">Blocs de contenu</a></li>
+              <li><a href="#CreationGraphiqueBlocsSaisie">Blocs de saisie</a></li>
+            </ul>
+            <br>
+            <p> <a href="#Parametres">Paramètres</a></p>
+            <ul>
+              <li><a href="#ParametresGeneraux">Paramètres généraux</a></li>
+              <li><a href="#PlanificationTitre">Planification</a></li>
+              <li><a href="#Securite">Sécurité</a></li>
+              <li><a href="#Personnalisation"><span style="color: #3c8dbc;">Personnalisation</span></a></li>
+            </ul>
+            <br>
+            <p><a href="#Publication">Publication</a> </p>
+            <ul>
+              <li><a href="#PublierPartager">Publier et partager</a></li>
+              <li><a href="#IntegrerFormulaire">Intégrer le formulaire<br>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout-info">
+          <p class="title">Informations générales</p>
+          <ul class="content-callout-info">
+          </ul>
+          <span style="color: #404040;">L'extension "Formulaire avancé" permet
+            de créer des formulaires et des pages d'atterrissage optimisés pour
+            des affichages sur tablette et mobile et respectant le RGAA
+            (Référentiel général d'amélioration de l'accessibilité).<br>
+            <br>
+          </span><span style="color: #404040;">La création de formulaires
+            avancés se fait par un assistant en plusieurs parties :</span><span
+            style="color: #404040;"></span><br>
+          <span style="color: #404040;"></span><span style="color: #404040;"></span><br>
+          <div style="margin-left: 40px;">
+            <ul>
+              <li>Une partie "Création graphique" permet de construire le
+                formulaire à partir de blocs de structure, de contenu et des
+                zones de saisie.</li>
+              <li>Une partie "Paramètres" donne accès aux propriétés du
+                formulaire comme sa langue, le message à la validation, les
+                dates de publication et les messages avant/après publication
+                ainsi que les droits de visualisation/modification du formulaire
+                par les autres utilisateurs de la base Eudonet.</li>
+              <li>Une partie "Publication" réunit le bouton de publication du
+                formulaire, le lien de partage public et le code à copier pour
+                intégrer le formulaire à un site existant.</li>
+            </ul>
+          </div>
+          <br>
+          <ul class="content-callout-info">
+          </ul>
+        </div>
+        <div class="callout callout-danger">
+          <p class="title">Remarque</p>
+          <p>Pour bénéficier de toutes les fonctionnalités de création de
+            formulaire, nous vous invitons à utiliser les navigateurs Chrome,
+            Firefox ou Safari.</p>
+        </div>
+      </header>
+      <div class="content-body">
+        <div class="steps">
+          <h3><strong><a name="CreationGraphique" id="CreationGraphique"></a>Création
+              Graphique</strong></h3>
+          <div id="content-little-img" class="content-image">
+            <div class="content-image-center">
+              <h4>L'onglet "Création graphique" vous permet de définir le
+                contenu de votre formulaire en y déposant des blocs de
+                structure, de contenu et des zones de saisie.<br>
+                <br>
+              </h4>
+              <div class="content-image-hidden"> <img src="lib/ChapitreCreationGraphique_assistant.png"
+                  alt="Assistant Creation Graphique" title="ChapitreCreationGraphique_assistant">
+              </div>
+              <h4> <br>
+                Les Blocs à déposer sont disponibles dans le menu droit sous
+                l'onglet suivant :<br>
+                <br>
+              </h4>
+              <img style="width: auto;max-width: 370px;" src="lib/ChapitreCreationGraphique_MenuBloc.png"
+                alt="Menu Blocs" title="Menu Blocs"></div>
+            <div id="colonnes" class="content-image-double">
+              <h4 class="titleH4"><a name="CreationGraphiqueBlocsStructures" id="CreationGraphiqueBlocsStructures"></a>Les
+                blocs de structure</h4>
+              <div class="content-image">
+                <div class="content-image-center">
+                  <div class="desc-image">
+                    <div class="little-img"> <img src="lib/BlocCanvas.png"> <span
+                        class="title-little-img">Bloc "Canvas"</span> <span class="desc-little-img">Ce
+                        bloc est obligatoire sur le formulaire, il est l'élément
+                        de base de la page sur lequel seront déposés les autres
+                        éléments.</span> </div>
+                    <div class="little-img"> <img src="lib/Bloc1colonne.png"> <span
+                        class="title-little-img">Bloc "1 Colonne"</span> <span
+                        class="desc-little-img">Ce bloc permet d'ajouter une
+                        colonne qui prend toute la largeur disponible là où le
+                        bloc est déposé.</span> </div>
+                    <div class="little-img"> <img src="lib/Bloc2colonnes.png">
+                      <span class="title-little-img">Bloc "2 Colonnes"</span> <span
+                        class="desc-little-img">Ce bloc permet d'ajouter 2
+                        colonnes prenant chacune 50% de la largeur disponible là
+                        où le bloc est déposé. Les 2 colonnes passent l'une en
+                        dessous de l'autre sur les tablettes en mode portrait et
+                        les téléphones portables ou lorsque la largeur de la
+                        fenêtre se réduit.</span> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-image">
+                <div class="content-image-center">
+                  <div class="desc-image">
+                    <div class="little-img"> <img src="lib/Bloc2colonnes3070.png"
+                        alt="Bloc2colonnes3070"> <span class="title-little-img">Bloc
+                        "2 Colonnes 30%/70%"</span> <span class="desc-little-img">Ce
+                        bloc permet d'ajouter 2 colonnes prenant respectivement
+                        30% et 70% de la largeur disponible là où le bloc est
+                        déposé. Les 2 colonnes passent l'une en dessous de
+                        l'autre sur les tablettes en mode portrait et les
+                        téléphones portables ou lorsque la largeur de la fenêtre
+                        se réduit.</span> </div>
+                    <div class="little-img"> <img src="lib/Bloc2colonnes7030.png"
+                        alt="Bloc2colonnes7030"> <span class="title-little-img">Bloc
+                        "2 Colonnes 70%/30%"</span> <span class="desc-little-img">Ce
+                        bloc permet d'ajouter 2 colonnes prenant respectivement
+                        70% et 30% de la largeur disponible là où il est déposé.
+                        Les 2 colonnes passent l'une en dessous de l'autre sur
+                        les tablettes en mode portrait et les téléphones
+                        portables ou lorsque la largeur de la fenêtre se réduit.</span>
+                    </div>
+                    <div class="little-img"> <img src="lib/Bloc3colonnes.png" alt="Bloc3colonnes">
+                      <span class="title-little-img">Bloc "3 Colonnes"</span> <span
+                        class="desc-little-img">Ce bloc permet d'ajouter 3
+                        colonnes prenant chacune 1/3 de la largeur disponible là
+                        où le bloc est déposé. Les 3 colonnes passent l'une en
+                        dessous de l'autre sur les tablettes en mode portrait et
+                        les téléphones portables ou lorsque la largeur de la
+                        fenêtre se réduit.</span> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="callout callout-danger inner-info">
+                <p class="title">Remarque</p>
+                <p>Chacun des blocs de structure a ses propres dimensions,
+                  marges et couleur de fond.</p>
+              </div>
+              <div class="content-100">
+                <div class="title-100">
+                  <h4><a name="ModifierDimensions" id="ModifierDimensions"></a>Modifier
+                    les dimensions, marges et couleur de fond d'un bloc depuis
+                    le menu droit</h4>
+                  <p>En sélectionnant un élément de la partie graphique, le menu
+                    droit se placera automatiquement sur l'onglet "Pinceau"
+                    permettant ainsi d'accéder aux propriétés de l'élément:</p>
+                  <ul>
+                    <li>Les propriétés liées à la couleur de fond et la couleur,
+                      la forme et l'épaisseur des bordures sont réunies dans le
+                      chapitre "Couleur et bordure".</li>
+                    <li>Les propriétés liées aux dimensions, aux marges et aux
+                      marges intérieures (padding) sont réunies dans le chapitre
+                      "Dimension et marge".</li>
+                  </ul>
+                  <br>
+                </div>
+                <div class="content-img-100"> <img class="imageoriginale" src="lib/MenuDroitDimensions.png"
+                    alt="MenuDroitDimensions"> </div>
+              </div>
+            </div>
+            <div id="bloc_bouton" class="content-image-double">
+              <h4 class="titleH4"><a name="CreationGraphiqueBlocsContenu" id="CreationGraphiqueBlocsContenu"></a>Les
+                blocs de contenu</h4>
+              <div class="content-image-50">
+                <div class="content-50">
+                  <div class="title-50">
+                    <h4>Le bloc "Texte"</h4>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/bloctexte.png"
+                        alt="" id="ImageTexte"> </div>
+                    <p>Ce bloc permet d'ajouter une zone de texte dans le
+                      formulaire. Une barre d'outils permet de mettre le texte
+                      en gras, italique, souligné ou barré, d'ajouter un lien ou
+                      d'insérer des champs de fusion : </p>
+                    <p><br>
+                    </p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/MenuTexte.png"
+                        alt="MenuTexte" id="ImageTexte"></div>
+                    <div class="content-body-50"><br>
+                    </div>
+                    <p>Les propriétés du texte comme l'alignement, la couleur,
+                      la police et la taille sont modifiables dans les chapitres
+                      Alignement et Typographie du menu droit</p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/MenuStyle.png"
+                        alt="MenuTexte" id="ImageTexte"></div>
+                    <p><br>
+                      Comme pour les autres éléments, il est également possible
+                      de modifier les dimensions et les marges du bloc Image en
+                      ouvrant les menus correspondants dans le menu droit (voir
+                      chapitre <a href="#ModifierDimensions">Modifier les
+                        dimensions, marges et couleur de fond d'un bloc depuis
+                        le menu droit</a>).</p>
+                  </div>
+                </div>
+                <div class="content-50">
+                  <div class="callout callout-info inner-info">
+                    <p class="title">Ajouter un lien</p>
+                    <p>Pour ajouter un lien, dans un bloc texte, sélectionner le
+                      texte qui portera le lien et cliquer sur l'icône en forme
+                      de maillon dans la barre d'outils.</p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/MenuLien.png"
+                        alt="Menu Lien" id="ImageTexte"></div>
+                    <p><br>
+                    </p>
+                    <p>Ensuite, cliquez une fois en dehors de la zone de texte
+                      puis cliquer sur le texte qui vient d'être transformé en
+                      lien (il devrait être souligner maintenant), vous verrez
+                      alors apparaître dans le menu droit les propriétés du
+                      lien.</p>
+                    <p><br>
+                    </p>
+                    <p><strong>Attention</strong> Il est important de commencer
+                      votre Href (URL du lien) par "https://" ou "http://" pour
+                      que le lien s'ouvre correctement.<br>
+                      N'hésitez pas à vérifier vos liens après avoir publié
+                      votre formulaire et avant de le partager.</p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/MenuParametresLien,.png"
+                        alt="Menu Lien" id="ImageTexte"></div>
+                  </div>
+                  <div class="callout callout-info inner-info">
+                    <p class="title"><a name="AstuceCollerTexteBrut" id="AstuceCollerTexteBrut"></a>Astuce
+                      pour coller en texte brut</p>
+                    <p>Pour ne pas reprendre la mise en forme source lors d'un
+                      copier/coller, le navigateur "Chrome" propose une fonction
+                      "Coller en texte brut" dans le menu qui apparaît au clic
+                      droit.</p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/AstuceTexteBrut.png"
+                        alt="Menu Lien" id="ImageTexte"></div>
+                  </div>
+                  <div class="callout callout-info inner-info">
+                    <p class="title">Texte de remplacement d'une image</p>
+                    <p>Afin d'assurer le respect RGAA par le formulaire, il est
+                      important de définir le texte de remplacement de l'image,
+                      il sera utilisé lorsque l'image ne peut pas s'afficher ou
+                      si l'internaute utilise un lecteur d'écran dans le cas
+                      d'un handicap visuel par exemple. Ce texte se définit dans
+                      les "paramètres de l'élément" qui s'affichent dans le menu
+                      droit au clic sur le bloc Image :</p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/TextRemplacement.png"
+                        alt="Texte Remplacement" id="ImageTexte"></div>
+                  </div>
+                  <div class="callout callout-info inner-info">
+                    <p class="title">Changer l'alignement d'une image</p>
+                    Si votre image ne fait pas toute la largeur disponible de la
+                    zone et que vous souhaitez la centrer ou l'aligner à droite,
+                    il faut sélectionner l'élément parent et dans le menu
+                    "Alignement" du menu droit, sélectionner l'alignement qui
+                    vous convient.</div>
+                </div>
+                <div class="content-50">
+                  <div class="title-50">
+                    <h4>Le bloc "Image"</h4>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/BlocImage.png"
+                        alt="Bloc Image" id="ImageTexte"> </div>
+                    <p>Ce bloc permet d'ajouter une image dans le formulaire,
+                      par défaut elle ne dépasse pas la largeur disponible dans
+                      la zone où elle a été déposée et sa largeur se réduit
+                      automatiquement pour s'adapter à la taille de l'écran qui
+                      affiche le formulaire. <br>
+                      Comme pour les autres éléments, il est également possible
+                      de modifier les dimensions et les marges du bloc Image en
+                      cliquant sur le pictogramme "Pinceau" dans le menu droit
+                      (voir chapitre <a href="#ModifierDimensions">Modifier les
+                        dimensions, marges et couleur de fond d'un bloc depuis
+                        le menu droit</a>).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="bloc_bouton" class="content-image-double">
+              <h4 class="titleH4"><a name="CreationGraphiqueBlocsSaisie" id="CreationGraphiqueBlocsSaisie"></a>Les
+                blocs de saisie</h4>
+              <div class="content-image-50">
+                <div class="content-100">
+                  <div class="title-100">
+                    <h4>Le bloc "Formulaire"</h4>
+                    <div class="content-body-100"> <img class="imageoriginale"
+                        src="lib/BlocFormulaire.png" alt="Bloc Formulaire" id="ImageTexte">
+                    </div>
+                    <p>Ce bloc permet d'ajouter un ensemble d'éléments dont une
+                      zone centrée de 800px de large par défaut ainsi qu'un
+                      bouton de validation en bas de cette zone. C'est dans ce
+                      bloc Formulaire que pourront être ajoutés les blocs de
+                      saisie.</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="callout callout-info inner-info">
+                    <p class="title"><a name="CouleurFondFormulaire" id="CouleurFondFormulaire"></a>Modifier
+
+                      la couleur de fond du bloc Formulaire</p>
+                    <p>Si vous souhaitez modifier la couleur de fond du bloc
+                      formulaire, il vous faut sélectionner l'élément au centre
+                      du bloc qui inclus une zone libre et le bouton.</p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/SelectionFormulaire.png"
+                        alt="Menu Lien" id="ImageTexte"></div>
+                    <p>Pour sélectionner cet élément, vous pouvez cliquer sur
+                      l'un des éléments du bloc formulaire et remonter en
+                      utilisant la flèche vers le haut de la barre d'outils
+                      ci-dessous :</p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/MenuFormulaire.png"
+                        alt="Menu Formulaire" id="ImageTexte"></div>
+                    <p><strong></strong>Ensuite dans le chapitre "Couleur et
+                      bordure" du menu droit, vous pouvez modifier la "Couleur
+                      de fond" du bloc.</p>
+                    <p></p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/Couleur%20Formulaire.png"
+                        alt="Couleur de fond Bloc Formulaire" id="ImageTexte"></div>
+                    <p></p>
+                  </div>
+                  <div class="callout callout-info inner-info">
+                    <p class="title">Modifier la largeur du bloc Formulaire</p>
+                    <p>Si vous souhaitez agrandir ou réduire la largeur prise
+                      par le bloc formulaire, il vous faut sélectionner
+                      l'élément au centre du bloc qui inclus une zone libre et
+                      le bouton.</p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/SelectionFormulaire.png"
+                        alt="Menu Lien" id="ImageTexte"></div>
+                    <p>Pour sélectionner cet élément, vous pouvez cliquer sur
+                      l'un des éléments du bloc formulaire et remonter en
+                      utilisant la flèche vers le haut de la barre d'outils
+                      ci-dessous :</p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/MenuFormulaire.png"
+                        alt="Menu Formulaire" id="ImageTexte"></div>
+                    <p><strong></strong>Ensuite dans le chapitre "Dimension et
+                      marge" du menu droit, la "Largeur max" par défaut de 800
+                      px est visible vous pouvez alors la changer par une
+                      nouvelle largeur maximale en pixel ou en %.</p>
+                    <p></p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/DimensionFormulaire.png"
+                        alt="Dimensions" id="ImageTexte"></div>
+                    <p></p>
+                  </div>
+                  <div id="colonnes" class="content-image-double">
+                    <div class="content-image">
+                      <div class="content-image-center">
+                        <div class="desc-image">
+                          <div class="little-img"> <img src="lib/BlocTexteCourt.png"
+                              alt="Bloc Texte Court"> <span class="title-little-img">Bloc
+                              "Texte Court"</span> <span class="desc-little-img">Ce
+                              bloc permet d'ajouter une zone de saisie d'un
+                              texte court, il permet à l'internaute renseigner
+                              par exemple son nom, prénom ou un texte sur une
+                              ligne.</span> </div>
+                          <div class="little-img"> <img src="lib/BlocCourriel.png"
+                              alt="Bloc Courriel"> <span class="title-little-img">Bloc
+                              "Courriel"</span> <span class="desc-little-img">bloc
+                              permet d'ajouter une zone de saisie d'un Courriel,
+                              à la saisie par l'internaute le format de
+                              l'adresse email entrée est vérifié.</span> </div>
+                          <div class="little-img"> <img src="lib/BlocTelephone.png"
+                              alt="Bloc téléphone"> <span class="title-little-img">Bloc
+                              "Téléphone"</span> <span class="desc-little-img">Ce
+                              bloc permet d'ajouter une zone de saisie d'un
+                              téléphone, il n'y a pas de contrôle spécifique au
+                              format du téléphone.</span> </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-image">
+                      <div class="content-image-center">
+                        <div class="desc-image">
+                          <div class="little-img"> <img src="lib/BlocCaseACocher.png"
+                              alt="Bloc Case à cocher"> <span class="title-little-img">Bloc
+                              "Case à cocher"</span> <span class="desc-little-img">Ce
+                              bloc permet d'ajouter une case à cocher dans le
+                              formulaire.<br>
+                              Pour accéder aux propriétés de ce bloc, il faut
+                              cliquer sur la case à cocher.</span> </div>
+                          <div class="little-img"> <img src="lib/BlocNumerique.png"
+                              alt="Bloc Numérique"> <span class="title-little-img">Bloc
+                              "Numérique"</span> <span class="desc-little-img">Ce
+                              bloc permet d'ajouter une zone de saisie d'un
+                              numérique dans le formulaire.</span> </div>
+                          <div class="little-img"> <img src="lib/BlocDate.png"
+                              alt="Bloc DAte"> <span class="title-little-img">Bloc
+                              "Date"</span> <span class="desc-little-img">Ce
+                              bloc permet d'ajouter une zone de saisie d'une
+                              date dans le formulaire.<br>
+                              La propriété "Heure" permet de définir si l'heure
+                              est également à saisir par l'internaute.</span> </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-image">
+                      <div class="content-image-center">
+                        <div class="desc-image">
+                          <div class="little-img"> <img src="lib/BlocTexteLong.png"
+                              alt="Bloc Texte Long"> <span class="title-little-img">Bloc
+                              "Texte long"</span> <span class="desc-little-img">Ce
+                              bloc permet d'ajouter une zone de saisie d'un
+                              texte long dans le formulaire.<br>
+                              La propriété "Nombre de lignes" permet de définir
+                              la hauteur de la zone de saisie sur le formulaire.
+                              La saisie est limitée à 4000 caractères.</span> </div>
+                          <div class="little-img"> <img src="lib/BlocListeDeroulante.png"
+                              alt="Bloc Liste Déroulante"> <span class="title-little-img">Bloc
+                              "Liste déroulante"</span> <span class="desc-little-img">Ce
+                              bloc permet d'ajouter une zone de saisie d'une
+                              liste déroulante à choix unique.</span> </div>
+                          <div class="little-img"> <img src="lib/BlocChoixMultiple.png"
+                              alt="Bloc Choix multiple"> <span class="title-little-img">Bloc
+                              "Choix multiple"</span> <span class="desc-little-img">Ce
+                              bloc permet d'ajouter une zone de saisie d'une
+                              liste déroulante à choix multiple.</span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="callout callout-info inner-info">
+                    <p class="title"><a name="ModifierLibellePropsSaisie" id="ModifierLibellePropsSaisie"></a>Modifier
+                      le libellé et les propriétés d'un bloc de saisie</p>
+                    <p>Tous les types blocs de saisie listés ci-dessous
+                      fonctionnent selon le même principe, lorsqu'un bloc est
+                      déposé, il est composé de 2 éléments : un libellé et une
+                      zone de saisie. <br>
+                      En cliquant sur le libellé, on peut le modifier. </p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/TexteCourtLabel.png"
+                        alt="Texte Court Label" id="ImageTexte"></div>
+                    <p>En cliquant sur la zone de saisie, on accède à ses
+                      propriétés dans le menu droit</p>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/TexteCourtInput.png"
+                        alt="Texte Court Input" id="ImageTexte"></div>
+                    <p>Les propriétés varient en fonction du type de bloc de
+                      saisie mais certaines sont communes :</p>
+                    <ul class="listcallout">
+                      <li><strong>Texte en filigrane :</strong> Texte d'aide
+                        apparaissant dans la zone de saisie pour indiquer à
+                        l'internaute ce qui est attendu dans la rubrique. Le
+                        texte en filigrane disparait dès que l'internaute
+                        commence à saisir dans la rubrique. Si aucun filigrane
+                        n'est défini ici alors le filigrane paramétré dans
+                        Eudonet pour la rubrique associée (voir ci-dessous)
+                        s'applique.</li>
+                      <li><strong>Rubrique associée :</strong> Rubrique Eudonet
+                        dans laquelle est enregistrée la donnée saisie par
+                        l'internaute à la validation du formulaire. Si le
+                        formulaire est utilisé pour compléter/mettre à jour une
+                        fiche existante alors la rubrique est préremplie à
+                        l'ouverture avec la donnée présente dans Eudonet, c'est
+                        le cas par exemple pour un formulaire envoyé par email à
+                        des destinataires présents dans la base Eudonet.</li>
+                      <li><strong>Rendre cette obligatoire :</strong> Cocher
+                        cette case rend la saisie de cette rubrique obligatoire
+                        pour la validation du formulaire.</li>
+                    </ul>
+                    <div class="content-body-50"> <img class="imageoriginale" src="lib/ParametresChampSaisie.png"
+                        alt="Parametres Champ Saisie" id="ImageTexte"></div>
+                    <p>Les propriétés disponibles peuvent varier en fonction du
+                      type de bloc :</p>
+                    <ul class="listcallout">
+                      <li><strong>Case à cocher :</strong> Il n'y a pas de
+                        filigrane mais on peut définir si la case est cochée par
+                        défaut.</li>
+                      <li><strong>Date :</strong> Une option permet de définir
+                        si l'heure est également à saisir par l'internaute.</li>
+                      <li><strong>Texte long :</strong> Une propriété permet de
+                        définir la hauteur de la zone de saisie en nombre de
+                        lignes.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="content-100">
+                <div class="title-100">
+                  <h4>Exemple de création d'un formulaire avancé en quelques
+                    étapes</h4>
+                  <p>Voici le rendu de cet exemple de formulaire avancé une fois
+                    publié :</p>
+                  <div class="content-img-100"> <img class="imageoriginale" src="lib/ExempleFormulaireAvance.png"
+                      alt="Exemple Formulaire Avancé"> </div>
+                  <ul>
+                    Cet exemple est composé des blocs suivants :
+                    <li>Un bloc Canvas</li>
+                    <li>Un bloc Formulaire</li>
+                    <li>Un bloc Image</li>
+                    <li>Deux blocs Textes</li>
+                    <li>Un bloc 2 Colonnes</li>
+                    <li>Quatre blocs de saisie</li>
+                  </ul>
+                  <br>
+                  <ol>
+                    Voici la suite d'étapes vous permettant de le construire :
+                    <li>Tout d'abord, je définis la couleur de fond du
+                      formulaire, pour cela je clique dans la zone blanche (le
+                      "body") et, dans le chapitre "Couleur et bordure" du menu
+                      droit, je saisis la couleur de fond "#d0d0d0"</li>
+                    <div class="content-img-100"> <img class="imageoriginale" src="lib/ExempleCouleurBordure.png"
+                        alt="Exemple Couleur et bordure"> </div>
+                    <li>Ensuite, je dépose un bloc "Canvas" qui formera la base
+                      du formulaire </li>
+                    <div class="content-img-100"> <img class="imageoriginale" src="lib/BlocCanvas.png"
+                        alt="Exemple Bloc Canvas"> </div>
+                    <li>Puis un bloc "Formulaire" afin d'avoir une zone moins
+                      large et centrée sur laquelle je vais déposer les autres
+                      éléments et un bouton de validation. Je modifie ensuite la
+                      couleur de fond du bloc Formulaire en blanc (#FFFFFF) via
+                      le menu droit (voir <a href="#CouleurFondFormulaire">Modifier
+                        la couleur de fond du bloc Formulaire</a>)</li>
+                    <div class="content-img-100"> <img class="imageoriginale" src="lib/BlocFormulaire.png"
+                        alt="Exemple Bloc Canvas"> </div>
+                    <li>Je dépose dans le bloc Formulaire, un bloc Image en
+                      utilisant l'image de 800px x 300px : <a href="https://i.picsum.photos/id/299/800/300.jpg?hmac=SrYDbbLZfmUdQ4iM9kzvPJok4TJTKJz_vSM575jHbSY">https://i.picsum.photos/id/299/800/300.jpg?hmac=SrYDbbLZfmUdQ4iM9kzvPJok4TJTKJz_vSM575jHbSY</a>
+                      et je renseigne le texte de remplacement dans le menu
+                      droit.</li>
+                    <li>Je dépose un bloc Texte pour le Titre de mon formulaire,
+                      je copie/colle le texte "Restez informé(e) grâce à notre
+                      newsletter" (voir <a href="#AstuceCollerTexteBrut">Astuce
+                        pour coller en texte brut</a>) et je le mets en gras,
+                      ensuite je définis dans le chapitre "Alignement" du menu
+                      droit un alignement du texte centré et dans le chapitre
+                      "Typographie" la police Arial et une taille de police de
+                      28px.</li>
+                    <li>Je dépose un deuxième bloc Texte pour la description de
+                      mon formulaire, je copie/colle le texte "Abonnez-vous
+                      maintenant pour recevoir par e-mail les dernières
+                      actualités, mises à jour, offres et plus encore (ainsi que
+                      d'autres actualités, produits, événements et promotions)."
+                      et je définis dans le chapitre "Typographie" du menu droit
+                      la police Arial et une taille de police de 20px</li>
+                    <li>Sous les textes, je dépose un bloc 2 colonnes</li>
+                    <li>Je dépose un bloc de saisie "Texte court" dans la
+                      colonne de gauche pour demander à l'internaute son Prénom,
+                      je modifie le libellé et j'affecte la "Rubrique associée"
+                      (voir <a href="#ModifierLibellePropsSaisie">modifier le
+                        libellé et les propriétés d'un bloc de saisie</a>)</li>
+                    <li>Je dépose un bloc de saisie "Texte court" dans la
+                      colonne de gauche sous le prénom pour demander à
+                      l'internaute son Nom, je modifie le libellé et j'affecte
+                      la "Rubrique associée" (voir <a href="#ModifierLibellePropsSaisie">modifier
+                        le libellé et les propriétés d'un bloc de saisie</a>)</li>
+                    <li>Je dépose un bloc de saisie "Courriel" pour demande à
+                      l'internaute son Adresse email, je modifie le libellé et
+                      j'affecte la "Rubrique associée" (voir <a href="#ModifierLibellePropsSaisie">modifier
+                        le libellé et les propriétés d'un bloc de saisie</a>)</li>
+                    <li>Je dépose un bloc de saisie "Téléphone" pour demande à
+                      l'internaute son Téléphone, je modifie le libellé et
+                      j'affecte la "Rubrique associée" (voir <a href="#ModifierLibellePropsSaisie">modifier
+                        le libellé et les propriétés d'un bloc de saisie</a>)</li>
+                    <br>
+                    Pour Aller plus loin : <br>
+                    <li>J'augmente la marge sous le bouton pour décaler un peu
+                      plus le bouton du bas du formulaire, pour cela je
+                      sélectionne le bloc formulaire en cliquant dans la zone
+                      blanche sous le bouton "Valider" et dans le chapitre
+                      "Dimension et marge" du menu droit, je passe la marge
+                      intérieure basse de 20px à 50px.</li>
+                    <li>Je renomme le bouton en "Je m'inscris" ,pour cela je
+                      clique sur le bouton et je change le texte dans le menu
+                      droit</li>
+                    <li>J'augmente les marges du Bloc de texte contenant la
+                      description afin que le texte soit moins collé au bord sur
+                      les écrans mobiles, pour cela je sélectionne le bloc Texte
+                      et dans le chapitre "Dimension et marge" du menu droit, je
+                      passe les marges intérieures gauche et droite de 5px à
+                      20px.</li>
+                  </ol>
+                  <p><br>
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="steps">
+              <h3><a name="Parametres" id="Parametres"></a>Paramètres</h3>
+              <div class="content-image-center">
+                <h4>L'onglet "Paramètres" donne accès aux propriétés du
+                  formulaire, comme sa langue, le message à la validation, les
+                  dates de publication et les messages avant/après publication,
+                  les droits de visualisation/modification du formulaire par les
+                  autres utilisateurs de la base Eudonet ainsi qu'aux options de
+                  personnalisation.<br>
+                  <br>
+                </h4>
+              </div>
+              <div class="content-img-100"> <img class="imageoriginale" src="lib/ChapitreParametres_assistant.png"
+                  alt="Exemple Bloc Canvas"> </div>
+              <div id="colonnes" class="content-image-double">
+                <h4 class="titleH4"><a name="ParametresGeneraux" id="ParametresGeneraux"></a>Paramètres
+                  généraux</h4>
+                <div class="content-image">
+                  <h4 class="titleH5">Langue du formulaire</h4>
+                  <div class="content-image-double-right">
+                    <p>Elle est définie par défaut sur la langue de
+                      l'utilisateur, elle peut être changée afin de modifier la
+                      langue dans laquelle les messages de contrôles du
+                      formulaire s'afficheront, comme par exemple ceux pour les
+                      champs obligatoires non renseignées ou ceux pour une
+                      saisie d'adresse email incorrecte.</p>
+                    <img class="imageoriginale" src="lib/LangueFormulaire.png" alt="Langue Formulaire">
+                  </div>
+                </div>
+                <div class="content-image ">
+                  <h4 class="titleH5">Message de remerciement</h4>
+                  <div class="content-image-double-left">
+                    <p>A la validation du formulaire par l'internaute, il est
+                      possible d'afficher un message de remerciement ou de le
+                      rediriger vers une autre URL internet. Dans le cas du
+                      message, il est possible de le mettre en page et d'y
+                      insérer des champs de fusion reprenant des informations
+                      que l'internaute vient de saisir.</p>
+                    <img class="imageoriginale" src="lib/MessageRemerciement.png"
+                      alt="Message de remerciement"> </div>
+                </div>
+              </div>
+              <div id="colonnes" class="content-image-double">
+                <h4 class="titleH4"><a name="PlanificationTitre" id="PlanificationTitre"></a>Planification</h4>
+                <div class="content-image">
+                  <h4 class="titleH5"><a name="Planification" id="Planification"></a>Date
+                    de début</h4>
+                  <div class="content-image-double-right">
+                    <p>Cette date permet de définir la date à laquelle le
+                      contenu du formulaire sera accessible et le message à
+                      afficher si un internaute y accède avant cette date. </p>
+                    <img class="imageoriginale" src="lib/DateDebut.png" alt="Langue Formulaire">
+                  </div>
+                </div>
+                <div class="content-image ">
+                  <h4 class="titleH5">Date de fin</h4>
+                  <div class="content-image-double-left">
+                    <p>Cette date permet de définir la date à laquelle le
+                      contenu du formulaire ne sera plus accessible et le
+                      message à afficher si un internaute y accède après cette
+                      date. </p>
+                    <img class="imageoriginale" src="lib/DateFin.png" alt="Message de remerciement">
+                  </div>
+                </div>
+                <div class="callout callout-danger inner-info">
+                  <p class="title">Remarque</p>
+                  <p>Les dates de début et de fin et les messages associés ne
+                    sont pris en compte que si le formulaire est publié.</p>
+                </div>
+                <div class="callout-info">
+                  <p class="title">Partage sur les réseaux sociaux</p>
+                  <p>Les informations de partage paramétrées dans l'onglet
+                    "Publication", comme l'image, le titre et la description,
+                    sont prises en compte même si le formulaire est partagé avant
+                    d'être accessible. </p>
+                </div>
+              </div>
+              <div id="colonnes" class="content-image-double">
+                <h4 class="titleH4"><a name="Securite" id="Securite"></a>Sécurité</h4>
+                <div class="content-image">
+                  <div class="content-image-double-right">
+                    <p>Ces droits permettent de définir quels utilisateur
+                      Eudonet ont accès au formulaire en visualisation et/ou en
+                      modification. </p>
+                    <img class="imageoriginale" src="lib/DroitsAcces.png" alt="Langue Formulaire">
+                  </div>
+                </div>
+                <div class="callout callout-danger inner-info">
+                  <p class="title">Remarque</p>
+                  <p>Les droits d'accès ne sont pas repris à la duplication d'un
+                    formulaire.</p>
+                </div>
+              </div>
+              <div id="colonnes" class="content-image-double">
+                <h4 class="titleH4"><a name="Personnalisation" id="Personnalisation"></a>Personnalisation</h4>
+                <div class="content-image">
+                  <div class="content-image-double-right">
+                    <p>Cette option permet de définir la couleur par défaut des
+                      liens dans le formulaire.</p>
+                    <img class="imageoriginale" src="lib/CouleurParDefaut.png" alt="Langue Formulaire">
+                  </div>
+                </div>
+                <div class="content-image ">
+                  <div class="content-image-double-left">
+                    <p>Ces options permettent de définir la couleur
+                      d'accentuation et la couleur de la valeur des champs de
+                      saisie.<br>
+                      La couleur d'accentuation correspond à la couleur du
+                      bouton et des champs pendant leur saisie par
+                      l'utilisateur.</p>
+                    <img class="imageoriginale" src="lib/CouleurChampsSaisies.png"
+                      alt="Couleur champs de saisie"> </div>
+                </div>
+                <div class="content-image">
+                  <div class="content-image-double-right">
+                    <p>Ces options permettent de définir la taille et la police
+                      des champs de saisie.</p>
+                    <img class="imageoriginale" src="lib/PoliceChampsSaisies.png"
+                      alt="Police champs de saisie"> </div>
+                </div>
+                <div class="callout callout-danger inner-info">
+                  <p class="title">Remarque</p>
+                  <p>La personnalisation est visible sur le formulaire publié
+                    mais n'est pas prise en compte à l'étape "Création
+                    graphique"</p>
+                </div>
+              </div>
+            </div>
+            <div class="steps">
+              <h3><a name="Publication" id="Publication"></a>Publication</h3>
+              <div class="content-image-center">
+                <h4>L'onglet "Publication" réunit le bouton de publication du
+                  formulaire, le lien de partage public, les liens de partage
+                  sur les réseaux sociaux et le code à copier pour intégrer le
+                  formulaire à un site existant.<br>
+                  <br>
+                </h4>
+              </div>
+              <div class="content-img-100"> <img class="imageoriginale" src="lib/ChapitrePublication_assistant.png"
+                  alt="Exemple Bloc Canvas"> </div>
+              <div id="colonnes" class="content-image-double">
+                <h4 class="titleH4"><a name="PublierPartager" id="PublierPartager"></a>Publier
+                  et partager</h4>
+                <div class="content-image">
+                  <h4 class="titleH5">Publier</h4>
+                  <div class="content-image-double-right">
+                    <p>En activant le switch, le formulaire passe au statut
+                      "Publié" et devient accessible selon la <a href="#Planification">planification</a>
+                      définit dans les paramètres.</p>
+                    <img class="imageoriginale" src="lib/Publier.png" alt="Publier">
+                  </div>
+                </div>
+                <div class="callout callout-danger inner-info">
+                  <p class="title">Remarque</p>
+                  <p>A la publication, le formulaire est enregistré et tous les
+                    champs de saisies sont contrôlés afin de vérifier qu'ils ont
+                    tous une rubrique associée.</p>
+                </div>
+                <div class="content-image ">
+                  <h4 class="titleH5">Lien public</h4>
+                  <div class="content-image-double-left">
+                    <p>Ce lien est disponible après avoir publié le formulaire
+                      et permet de partager le formulaire de manière publique.</p>
+                    <img class="imageoriginale" src="lib/LienPublic.png" alt="Lien Public">
+                  </div>
+                </div>
+                <div class="content-image">
+                  <h4 class="titleH5">Réseaux sociaux</h4>
+                  <div class="content-image-double-right">
+                    <p>Les 3 boutons permettent de partager le formulaire sur
+                      Facebook, LinkedIn ou Twitter. L'image, le titre et la
+                      description qui apparaîtront à la publication sont
+                      personnalisables.</p>
+                    <img class="imageoriginale" src="lib/PArtageR%C3%A9seauxSociaux.png"
+                      alt="Partage Réseaux sociaux"> </div>
+                </div>
+                <div class="callout callout-danger inner-info">
+                  <p class="title">Enregistrer les dernières modifications avant
+                    de partager</p>
+                  <p>Après avoir terminé vos dernières modifications sur les
+                    informations de partage, pensez à enregistrer vos
+                    modifications afin qu'elles soient bien prises en compte au
+                    moment de partager votre formulaire.</p>
+                </div>
+                <div class="callout-info">
+                  <p class="title">Format et dimensions de l'image</p>
+                  <p>L'image doit être au format png, svg, jpeg ou gif et ne
+                    doit pas dépasser 5 Mo.</p>
+                  <p>Afin d'optimiser l'affichage de votre publication il est
+                    conseillé d'utiliser:</p>
+                  <ul>
+                    <li>Pour Facebook, une image de 1200x630 px et d'au minimum
+                      de 200x200 px</li>
+                    <li>Pour LinkedIn, une image de 1200x627 px</li>
+                    <li>Pour Twitter, une image d'au minimum 600x335 px</li>
+                  </ul>
+                </div>
+                <div class="callout-info">
+                  <p class="title">Taille maximum pour le titre et la
+                    description</p>
+                  <ul>
+                    <li>Le titre est limité à 70 caractères</li>
+                    <li>La description est limitée 155 caractères</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="colonnes" class="content-image-double">
+                <h4 class="titleH4"><a name="IntegrerFormulaire" id="IntegrerFormulaire"></a>Intégrer
+                  le formulaire</h4>
+                <div class="content-image">
+                  <h4 class="titleH5">Formulaire entier</h4>
+                  <div class="content-image-double-right">
+                    <p>Dès le formulaire publié, le code pour intégrer le
+                      formulaire dans une page d'un site web est disponible dans
+                      ce menu. Pour intégrer le formulaire, il faut copier le
+                      code et l'insérer dans le code source de la page web à
+                      l'endroit où vous voulez voir apparaître le formulaire. Le
+                      formulaire intégré correspond au formulaire public, il y a
+                      donc un reCAPTCHA Google V2 qui s'ajoute automatiquement
+                      au-dessus du bouton de validation.</p>
+                    <img class="imageoriginale" src="lib/IntegrationFormulaireEntier.png"
+                      alt="Intégration Formulaire Entier"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+﻿.ChkPerm {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.DivFilterName, .DivModeleName {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.FilterName, .ModeleName {
+    margin-bottom: 10px;
+    margin-left: 9px;
+    width: 240px;
+    border: 1px solid grey;
+}
+
+.ModeleLabelName {
+    background-color: #F0F0F0;
+    display: inline-block;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    width: 200px;
+    border: 1px solid grey;
+}
+
+.OptTtlFilt {
+}
+
+.opt-list-chk {
+    line-height: 30px;
+    height: 20px;
+}
+
+.DivPerm {
+    padding-left: 25px;
+}
+
+    .DivPerm select {
+        /*width: 50px;*/
+        margin-left: 5px;
+        display: inline-block;
+    }
+
+    .DivPerm input {
+        width: 140px;
+        border: 1px solid #CCC;
+        cursor: default;
+        margin-left: 10px;
+        text-indent: 6px;
+    }
+
+.PermOpt {
+    /*padding-top: 15px;*/
+    margin-bottom: 11px;
+}
+
+.ParamLink {
+    /*padding-top: 15px;*/
+    /*height:auto !important;*/
+}
+
+.CheckPermOpt {
+    /* padding-top: 7px;*/
+}
+
+    .CheckPermOpt span.icon-catalog {
+        font-size: 8pt;
+        text-align: center;
+        margin-left: 5px;
+    }
+
+.divSpace {
+    height: 15px;
+}
+
+.CheckPermOpt input {
+    margin-top: 0px !important;
+}

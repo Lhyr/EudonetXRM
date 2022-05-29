@@ -1,0 +1,26 @@
+﻿.detailContent .fileInput[tp="15"] .label-field span:first-of-type,
+#box-step .fileInput[tp="15"] .label-field span:first-of-type,
+#headFiche .fileInput[tp="15"] .label-field span:first-of-type {
+    display: block;
+    border-bottom: solid 0px var(--detail-fileinput-label);
+    padding: 0 0 0px 0;
+    width: 100%;
+    font-size: var(--size-20);
+    font-family: var(--ffamily);
+    color: var(--detail-label);
+    line-height: initial;
+}
+
+
+.eudo-modal .fileInput[tp="15"] .label-field span:first-of-type {
+    display: block;
+    border-bottom: solid 0px var(--detail-fileinput-label);
+    padding: 0 0 0px 0;
+    width: 100%;
+    font-size: var(--size-20);
+    text-decoration: none;
+    font-family: var(--ffamily);
+    font-style: normal;
+    color: var(--detail-label) !important;
+    line-height: initial;
+}

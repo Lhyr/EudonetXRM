@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+    <title>Eudo Maps</title>
+    <script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?callback=getMap" async defer></script>
+    <script type="text/javascript" src="../Scripts/bingmaps/eBingInterface.js"></script>
+    <script type="text/javascript" src="Scripts/countries.js"></script>
+</head>
+<body>
+    <input type="hidden" id="accessKey" value="Aia9V-TFKUb44CNZsVp_oxYGgszFUgksJal8-_IW1SSbodepQ4didGSMVp4UiSwR" />
+    <div id="myMap"></div>
+    <script>
+        var map = null;
+        function getMap() {
+            var options = {
+                credentials: document.getElementById("accessKey").value,
+                mapTypeId: Microsoft.Maps.MapTypeId.road,
+                showLocateMeButton: true,
+                showBreadcrumb: true,
+                showTermsLink: false,
+                navigationBarMode: Microsoft.Maps.NavigationBarMode.minified,
+                liteMode: true
+            };
+
+            if (oMaps) {
+                oMaps.createCustomMap("myMap", options, null);
+                oMaps.search(getAddress());
+            }
+
+        }
+
+        /*EUDO - Récup d'une query string*/
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        // Récupération de l'adresse
+        function getAddress() {
+            var address = "";
+
+            var street1 = getParameterByName("rue1");
+            var street2 = getParameterByName("rue2");
+            var street3 = getParameterByName("rue3");
+            var postalCode = getParameterByName("cp");
+            var city = getParameterByName("ville");
+            var country = getParameterByName("pays");
+            var addressLine = getAddressLine(street1, street2, street3);
+
+            if (!country) {
+                country = "FR";
+            }
+            else {
+                country = getCountryCode(country.toUpperCase());
+            }
+            
+            address = addressLine + " " + postalCode + " " + city + " " + country;
+
+            return address;
+        }
+        // Concatène les rues de l'adresse
+        function getAddressLine(street1, street2, street3) {
+            var s = "";
+            if (street1) {
+                s = street1;
+            }
+            if (street2) {
+                s = s + " " + street2;
+            }
+            if (street3) {
+                s = s + " " + street3;
+            }
+            return s;
+        }
+
+    </script>
+</body>
+</html>

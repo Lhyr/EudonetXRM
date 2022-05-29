@@ -1,0 +1,44 @@
+﻿.numberListField:not(.focusIn):hover {
+    box-shadow: none;
+}
+
+.numberListField > input {
+    text-align: right;
+}
+
+.dataTable .theme--light.v-text-field > .v-input__control > .v-input__slot:before {
+    border-color: rgba(0,0,0,.1);
+}
+
+/* css eudo-front & vuetify */
+.fileInput.readOnlyComponent .Numeric .globalDivComponent {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.fileInput.readOnlyComponent .Numeric .left {
+    display: none !important;
+}
+
+.fileInput.readOnlyComponent .Numeric .theme--light.v-text-field.v-input--is-disabled .v-input__slot:before {
+    border-image: none;
+}
+
+.fileInput.readOnlyComponent .Numeric .v-input .v-label {
+    margin-left: 8px;
+    color: var(--detail-label);
+    top: 0;
+}
+
+.fileInput.readOnlyComponent .Numeric .v-input input {
+    margin-left: 8px;
+}
+
+.fileInput.readOnlyComponent .Numeric .v-input__slot {
+    min-height: 45px;
+    padding: 0 !important;
+}
+
+.readOnlyComponent .Numeric .v-text-field__prefix {
+    padding:0 0 0 7px;
+}

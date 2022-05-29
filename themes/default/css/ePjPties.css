@@ -1,0 +1,32 @@
+﻿body
+{
+	padding: 40px;
+}
+
+.tbPJPties
+{
+	width: 100%;
+}
+.tbPJPties input {
+	border: 1px solid #999999;
+	height: 20px;
+	text-indent: 6px;
+}
+	.tbPJPties td
+	{
+		height: 25px;
+	}
+
+td.lblCol
+{
+	width: 110px;
+	text-align: right;
+	padding-right: 7px;
+	color: #636363;
+	white-space: nowrap;
+}
+
+td.valCol input
+{
+	width: 100%;
+}

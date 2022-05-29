@@ -1,0 +1,45 @@
+﻿#headFiche .catComponent,
+#headFiche .userComponent {
+    min-width: 190px
+}
+
+#headFiche .catComponent .ellips,
+#headFiche .userComponent .ellips,
+#headFiche .button--resume[format="5"] .globalDivComponent .ellips {
+    align-items: end;
+}
+
+.catComponent.multiple .cat-group {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.catComponent.multiple .cat-group:not(.accordionOpened) details.clsDetailIndex {
+    width: calc(100% - 35px) !important;
+    height: 1.625rem;
+}
+
+div.bkm-tab .listRubriqueRelation.cat-group.emptyCatalog {
+    display: inline-flex !important;
+}
+
+#resizeColumnsWidthContainer .input-group.cat-group ul > li > span {
+    font-size: var(--size-15) !important;
+    font-family: var(--ffamily);
+}
+
+#MainWrapper #headFiche .accordionClosed .clsEltSummary {
+    top: 0px;
+    margin: 1px 4px 4px 0 !important;
+}
+
+#MainWrapper .input-group span.catalog-val.mru-cat-width {
+    margin-right: 45px;
+    width: max-content;
+    max-width: 100%;
+    font-family: var(--ffamily);
+}
+
+#box-step .Catalog .left-label {
+    margin: -3px 0 0 0;
+}

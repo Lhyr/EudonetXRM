@@ -1,0 +1,100 @@
+
+#modal-organigramme .modal-header {
+   padding-top: 0!important;
+    padding-bottom: 25px!important;
+}
+
+#modal-organigramme .modal-title-full {
+    padding-bottom: 0;
+}
+
+#modal-organigramme .a_close {
+    top: 45px;
+}
+
+#modal-organigramme .pad-15 {
+    overflow: auto;
+}
+
+
+#modal-organigramme .first-user {
+    float: inherit;
+    margin: 0 auto!important;
+}
+
+#modal-organigramme .profile-user-img {
+    margin: 0 auto!important;
+    width: 80px;
+    padding: 3px;
+    border: 3px solid #d2d6de;
+}
+
+#modal-organigramme .profile-username {
+    margin: 0!important;
+        
+    font-size: 20px;
+}
+
+#modal-organigramme .box-body {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#modal-organigramme .pull-right-container {
+    margin-top: -7px;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-right: 10px;
+    -webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+    
+    position: absolute;
+    left: 50%;
+    z-index: 9999;
+    top: 80%;
+}
+
+
+#modal-organigramme .text-muted {
+    margin-bottom: 10px;
+}
+
+#modal-organigramme ul li a{
+    width: 250px;
+    margin: 0 auto;
+}
+
+#modal-organigramme ul:first-child {
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#modal-organigramme ul ul{
+    display: flex;
+}
+
+
+#modal-organigramme ul ul li:first-child {
+    width: 250px;
+    margin: 0 0 0 auto;
+}
+
+
+#modal-organigramme ul ul li {
+    width: 250px;
+}
+
+#modal-organigramme ul ul li:last-child {
+    width: 250px;
+    margin: 0 auto 0 0;
+}
+
+#modal-organigramme .ul-hori {
+    display: flex;
+}
+
+#modal-organigramme ul ul li ul, #modal-organigramme .ul-hori ul {
+    display: block;
+}

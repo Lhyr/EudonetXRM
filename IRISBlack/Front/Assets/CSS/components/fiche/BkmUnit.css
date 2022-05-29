@@ -1,0 +1,30 @@
+﻿div.bkm-tab .box.box-danger-shadow {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 2px solid;
+    box-shadow: 0 2px 4px 0 #a5a5a5 !important;
+    border-image: linear-gradient(to top,var(--checkbox-color) 1%,var(--pj-gradient-over) 50%,var(--main-color) 100%) 100%/0 0 100% 2px stretch;
+}
+
+div.bkm-tab .box {
+    position: relative;
+    border-radius: 0;
+    background: var(--detail-foreground-btn);
+    margin-bottom: 0px;
+    width: 100%;
+    box-shadow: none;
+    border-top: none;
+    margin: 10px 0 20px 0px;
+}
+
+.bkm-wrapper {
+    height: 213px;
+}
+
+/* Content */
+
+div.bkm-tab .box-body {
+    background: var(--box-body-color);
+    padding: 0 !important;
+}

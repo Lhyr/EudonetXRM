@@ -1,0 +1,708 @@
+﻿{
+  "templates": [
+    {
+      "id": "12",
+      "imageName": "minSimpleTexte.jpg",
+      "imageZoom": "maxSimpleTexte.jpg",
+      "folder": "vierge-rd",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Courriel simple (Responsive Design)"
+        },
+        {
+          "langId": 1,
+          "label": "Basic template (Responsive Design)"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "imageName": "minSimpleTextCenter.jpg",
+      "imageZoom": "maxSimpleTextCenter.jpg",
+      "folder": "vierge-center-rd",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Courriel centré (Responsive Design)"
+        },
+        {
+          "langId": 1,
+          "label": "Centred mail (Responsive Design)"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "imageName": "minInfo.jpg",
+      "imageZoom": "maxInfo.jpg",
+      "folder": "information",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Bulletin d'information"
+        },
+        {
+          "langId": 1,
+          "label": "Newsletter"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "imageName": "minInvit.jpg",
+      "imageZoom": "maxInvit.jpg",
+      "folder": "invitation",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Invitation"
+        },
+        {
+          "langId": 1,
+          "label": "Invitation"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "imageName": "minNewsletter.jpg",
+      "imageZoom": "maxNewsletter.jpg",
+      "folder": "newsletter",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Newsletter"
+        },
+        {
+          "langId": 1,
+          "label": "Newsletter"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "imageName": "minInfoRD.jpg",
+      "imageZoom": "maxInfoRD.jpg",
+      "folder": "information-rd",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Information (Responsive Design)"
+        },
+        {
+          "langId": 1,
+          "label": "Newsletter 1"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "imageName": "minPromoRD.jpg",
+      "imageZoom": "maxPromoRD.jpg",
+      "folder": "promotion-rd",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Promotion (Responsive Design)"
+        },
+        {
+          "langId": 1,
+          "label": "Invitation 2"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "imageName": "minNewsTurquoiseRD.jpg",
+      "imageZoom": "maxNewsTurquoiseRD.jpg",
+      "folder": "newsletter-turquoise-rd",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Newsletter Turquoise (Responsive Design)"
+        },
+        {
+          "langId": 1,
+          "label": "Responsive email"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "imageName": "minNewsRougeRD.jpg",
+      "imageZoom": "maxNewsRougeRD.jpg",
+      "folder": "newsletter-rouge-rd",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Newsletter Rouge (Responsive Design)"
+        },
+        {
+          "langId": 1,
+          "label": "Event"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "imageName": "minNewsVertRD.jpg",
+      "imageZoom": "maxNewsVertRD.jpg",
+      "folder": "newsletter-vert-rd",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Newsletter Verte (Responsive Design)"
+        },
+        {
+          "langId": 1,
+          "label": "Simple email campaign"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "imageName": "minNewsFushiaRD.jpg",
+      "imageZoom": "maxNewsFushiaRD.jpg",
+      "folder": "newsletter-fushia-rd",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Newsletter Fushia (Responsive Design)"
+        },
+        {
+          "langId": 1,
+          "label": "Fuchsia Newsletter (Responsive Design)"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "imageName": "minNewsOrangeRD.jpg",
+      "imageZoom": "maxNewsOrangeRD.jpg",
+      "folder": "newsletter-orange-rd",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Newsletter Orange (Responsive Design)"
+        },
+        {
+          "langId": 1,
+          "label": "Orange Newsletter (Responsive Design)"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "imageName": "minNewsBleuRD.jpg",
+      "imageZoom": "maxNewsBleuRD.jpg",
+      "folder": "newsletter-bleu-rd",
+      "activityArea": [],
+      "thematic": [],
+      "res": [
+        {
+          "langId": 0,
+          "label": "Newsletter Bleue (Responsive Design)"
+        },
+        {
+          "langId": 1,
+          "label": "Blue Newsletter (Responsive Design)"
+        },
+        {
+          "langId": 2,
+          "label": ""
+        },
+        {
+          "langId": 3,
+          "label": ""
+        },
+        {
+          "langId": 4,
+          "label": ""
+        },
+        {
+          "langId": 5,
+          "label": ""
+        },
+        {
+          "langId": 6,
+          "label": ""
+        },
+        {
+          "langId": 7,
+          "label": ""
+        },
+        {
+          "langId": 8,
+          "label": ""
+        },
+        {
+          "langId": 9,
+          "label": ""
+        },
+        {
+          "langId": 10,
+          "label": ""
+        }
+      ]
+    }
+  ],
+  "activityArea": [],
+  "thematic": []
+}

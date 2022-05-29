@@ -1,0 +1,119 @@
+/* CLASSE CSS UTILISEE POUR LE MENU DE DROITE SUR TABLETTES */
+
+.rightMenu
+{
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 10pt;
+    margin-left: 1px;
+    margin-top: 80px;
+    width: 200px; /* si cette valeur est modifiée, il faut la mettre à jour dans slideinmenu.js */
+    height: 444px; /* rajouté pour les besoins de l'iPad */
+    z-index: 3;
+	position: fixed;
+	background-color: #F8F8F8; /* le menu étant escamotable, il ne profite pas de la couleur de fond de l'espace qui lui est habituellement réservé à droite. Il faut donc en définir une */
+    border-bottom: 1px solid #DDDDDD; /* pour les mêmes raisons, la bordure permet de délimiter visuellement son périmètre */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.rightMenu div 
+{
+    margin-bottom: 0px;
+}
+
+#rightMenu .tabletHandle {
+	-webkit-user-select:none;
+	bottom:-28px;
+	left:0;
+	width: 29px;
+	height: 442px;
+	float: left;
+/*	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.7);*/
+}
+
+.rightMenuOption
+{
+	overflow: auto; /* autorise le "débordement" du menu de son conteneur lorsqu'il y a beaucoup de liens */
+	width: 165px; /* on fixe la taille du contenu pour calculer correctement son positionnement en mode escamotable (tablettes) */
+}
+
+/* Sur iPad, les classes crées via createCss() ne sont pas toujours interprétées dès leur ajout.
+    On déclare donc des valeurs par défaut pour les classes en question
+*/
+
+.touchMenu {
+	height: 442px;
+	width: 193px;
+	background-image: url(../../images/ui/imgTest.png);
+	display: inline-block;
+	float: right;
+	background-repeat: no-repeat;
+}
+
+.touchBar {
+	width: 29px;
+	height: 442px;
+	float: left;
+}
+.touchElement {
+	width: 231px;
+	float: right; 
+	-webkit-transition: 500ms; 
+	height: 444px;
+}
+.top-bar {
+	height: 19px;
+	width: 29px;	
+	background-image:url(../../images/ui/bar-top.png);
+	background-repeat: no-repeat;
+}
+.middle-bar {
+	height: 368px;
+	width: 29px;	
+	background-image:url(../../images/ui/arrow-open.png);
+	background-repeat: no-repeat;
+	background-color: #E0E0E0;
+	background-position: center center;
+	-webkit-transform: rotate(180deg);
+}
+.bgWhite {
+	height: 368px;
+	width: 29px;	
+	background-repeat: no-repeat;
+	background-color: #E0E0E0;
+}
+.bottom-bar {
+	height: 56px;
+	width: 29px;	
+	background-image:url(../../images/ui/bar-bottom.png);
+}
+.Vtext {
+    -webkit-transform: rotate(270deg);
+	
+    font-family: Verdana;
+    font-size: 14pt;
+    text-indent: 25px;
+    font-weight: bold;
+    color: #666;
+}
+.arrow-open {
+	background-image:url(../../images/ui/arrow-open.png);
+	height: 22px;
+	width: 20px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 45%;
+	-webkit-transition: 500ms;
+	-webkit-transform-origin: 8px;
+	left: 5px;
+}
+.fake-dblBordr {
+	height:100%;
+	width:1px;
+	font-size: 1px;
+	border-right: 1px solid grey;
+	background-color: white;	
+	float: left;
+}

@@ -1,0 +1,8 @@
+UPDATE [EDNCOUNTRIES] SET [LANG_00] = 'Îles Vierges britanniques' WHERE [LANG_00] = 'British Virgin Islands'
+UPDATE [EDNCOUNTRIES] SET [LANG_00] = 'Îles Caïmans' WHERE [LANG_00] = 'Iles Cayman'
+UPDATE [EDNCOUNTRIES] SET [LANG_00] = 'Île de Man' WHERE [LANG_00] = 'Ile de Man'
+UPDATE [EDNCOUNTRIES] SET [LANG_00] = 'Îles Pitcairn' WHERE [LANG_00] = 'Pitcairn'
+UPDATE [EDNCOUNTRIES] SET [LANG_00] = 'Saint-Vincent-et-les-Grenadines' WHERE [LANG_00] = 'Saint-Vincent-et-les Grenadines'
+UPDATE [EDNCOUNTRIES] SET [LANG_00] = 'Taïwan' WHERE [LANG_00] = 'Taiwan'
+UPDATE [EDNCOUNTRIES] SET [LANG_00] = 'Palaos' WHERE [LANG_00] = 'Palau'
+UPDATE [EDNCOUNTRIES] SET [LANG_00] = 'Saint-Christophe-et-Niévès' WHERE [LANG_00] = 'Saint-Kitts-et-Nevis'

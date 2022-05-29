@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EudoSynchroExchangeInterface" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8733/SynchroWCF/?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:8733/SynchroWCF/?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:complexType name="AuthentificationContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HashDatabase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HashUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParamJSON" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AuthentificationContract" nillable="true" type="tns:AuthentificationContract" />
+  <xs:complexType name="EventContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DateBegining" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateEnding" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EudoAppointmentType" type="xs:int" />
+      <xs:element minOccurs="0" name="EudoRecordId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventBodyContenType" type="xs:int" />
+      <xs:element minOccurs="0" name="EventBodyContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventSubject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExchangeRecordId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HasAttachment" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsNewRecord" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsReccurent" type="xs:boolean" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListRecipientEmail" nillable="true" type="q1:ArrayOfKeyValueOfstringstring" />
+      <xs:element minOccurs="0" name="OrganizerDisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizerEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" type="tns:RecurrenceType" />
+      <xs:element minOccurs="0" name="recurrenceInfo" nillable="true" type="tns:EventReccurenceContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventContract" nillable="true" type="tns:EventContract" />
+  <xs:simpleType name="RecurrenceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Single" />
+      <xs:enumeration value="Occurrence" />
+      <xs:enumeration value="Exception" />
+      <xs:enumeration value="RecurringMaster" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RecurrenceType" nillable="true" type="tns:RecurrenceType" />
+  <xs:complexType name="EventReccurenceContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DateEnd" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Day" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="DaysOfWeek" nillable="true" type="q2:ArrayOfDayOfWeek" />
+      <xs:element minOccurs="0" name="DdateStart" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Frequency" type="xs:int" />
+      <xs:element minOccurs="0" name="Month" type="xs:int" />
+      <xs:element minOccurs="0" name="OccurrenceCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Order" type="xs:int" />
+      <xs:element minOccurs="0" name="Pattern" type="tns:RecurrencePattern" />
+      <xs:element minOccurs="0" name="RangeType" type="tns:RecurrenceRangeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventReccurenceContract" nillable="true" type="tns:EventReccurenceContract" />
+  <xs:simpleType name="RecurrencePattern">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Daily" />
+      <xs:enumeration value="Weekly" />
+      <xs:enumeration value="Monthly" />
+      <xs:enumeration value="RelativeMonthly" />
+      <xs:enumeration value="Yearly" />
+      <xs:enumeration value="RelativeYearly" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RecurrencePattern" nillable="true" type="tns:RecurrencePattern" />
+  <xs:simpleType name="RecurrenceRangeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="endDate" />
+      <xs:enumeration value="noEnd" />
+      <xs:enumeration value="numbered" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RecurrenceRangeType" nillable="true" type="tns:RecurrenceRangeType" />
+  <xs:complexType name="ResponseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDetail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReturnCode" type="xs:int" />
+      <xs:element minOccurs="0" name="UserMail" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseContract" nillable="true" type="tns:ResponseContract" />
+  <xs:complexType name="ArrayOfAuthentificationContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AuthentificationContract" nillable="true" type="tns:AuthentificationContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAuthentificationContract" nillable="true" type="tns:ArrayOfAuthentificationContract" />
+  <xs:complexType name="ArrayOfResponseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResponseContract" nillable="true" type="tns:ResponseContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResponseContract" nillable="true" type="tns:ArrayOfResponseContract" />
+</xs:schema>

@@ -1,0 +1,1219 @@
+/**
+ * eudonetModaljs 1.11.0 http://eudonetModaljs.com
+ * eudonetModalJS is a javascript framework for developing pretty browser dialogs and notifications.
+ * Copyright 2017 Mohammad Younes <Mohammad@eudonetModaljs.com> (http://eudonetModaljs.com) 
+ * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
+
+
+
+
+.eudonetModal .form-group {
+    margin-bottom: 0;
+    padding: 10px 0px 5px 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+    .eudonetModal  .col-inline {
+        padding: 5px 0 5px 0;
+    }
+
+.eudonetModal .form-group .left {
+   max-width: 100%;
+}
+
+.eudonetModal .form-group .left-label {
+    margin: 0;
+    width: auto;
+    max-width:none;
+    white-space:normal;
+    text-overflow:clip;
+    overflow:visible;
+}
+
+.eudonetModal .col-inline {
+    float: initial !important;
+    display: inline-block;
+}
+
+
+.eudonetModal .titleModif {
+    padding: 0px 0 15px 0;
+    border-bottom: 1px solid #c3c3c3
+}
+
+.eudonetModal .titleModif.titleOnly {
+    border-bottom: none;
+}
+
+.eudonetModal .StitleModif:not(.sTitleOnly) {
+    padding: 15px 0 0 0;
+}
+
+.eudonetModal span.lib {
+    width: 100%;
+    display: block;
+    margin: 0;
+    font-size: 15px;
+    color: #404040;
+    padding: 0 0 2px 0;
+}
+
+.eudonetModal span.lib.alert-msg {
+    padding: 16px 0 2px 0;
+}
+
+    .eudonetModal .form-group .left {
+        width: auto;
+        text-align: left;
+    }
+
+.eudonetModal .globalDivComponent .input-group {
+    min-height: 20px;
+}
+
+.eudonetModal .eudo-dimmer {
+    position: absolute;
+    z-index: 1981;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #252525;
+    opacity: 0.5;
+}
+
+.eudonetModal .eudo-modal {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    overflow-y: auto;
+    z-index: 1981;
+}
+
+.eudonetModal .eudo-dialog {
+    position: relative;
+    margin: 1.5% auto;
+    min-height: 110px;
+    max-width: 1000px;
+    padding: 24px 24px 0 24px;
+    outline: 0;
+    background-color: #fff;
+}
+
+.eudonetModal .eudo-dialog.eudo-capture:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+}
+
+.eudonetModal .eudo-reset {
+    position: absolute !important;
+    display: inline !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+}
+
+.eudonetModal .eudo-commands {
+    position: absolute;
+    right: 4px;
+    margin: -14px 24px 0 0;
+    z-index: 2;
+}
+
+.eudonetModal .eudo-commands button {
+    display: none;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.eudonetModal .eudo-commands button.eudo-close {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNy8xMy8xNOrZqugAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAh0lEQVQYlY2QsQ0EIQwEB9cBAR1CJUaI/gigDnwR6NBL/7/xWLNrZ2b8EwGotVpr7eOitWa1VjugiNB7R1UPrKrWe0dEAHBbXUqxMQbeewDmnHjvyTm7C3zDwAUd9c63YQdUVdu6EAJzzquz7HXvTiklt+H9DQFYaxFjvDqllFyMkbXWvfpXHjJrWFgdBq/hAAAAAElFTkSuQmCC);
+}
+
+.eudonetModal .eudo-commands button.eudo-maximize {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNy8xMy8xNOrZqugAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAOUlEQVQYlWP8//8/AzGAhYGBgaG4uBiv6t7eXkYmooxjYGAgWiELsvHYFMCcRX2rSXcjoSBiJDbAAeD+EGu+8BZcAAAAAElFTkSuQmCC);
+}
+
+.eudonetModal .eudo-header {
+    margin: -24px;
+    margin-bottom: 0;
+    padding: 16px 24px;
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #ecf0f5;
+}
+
+.eudonetModal .eudo-body {
+    min-height: 56px;
+}
+
+    .eudonetModal .eudo-body .eudo-content {
+        padding: 16px 16px 16px 16px;
+        float: initial;
+    }
+
+        .eudonetModal .eudo-body .eudo-content .memoProp .form-group {
+            display: flex;
+        }
+        .eudonetModal .eudo-body .eudo-content .memoProp .form-group .left{
+            flex: none;
+        }
+            .eudonetModal .eudo-body .eudo-content .memoProp .form-group .left + div {
+                width : 100%
+            }
+
+                .eudonetModal .eudo-body .eudo-content .memoProp .form-group .left + div .rubriqueEmemo {
+                    height: 150px !important;
+                    width: 100%;
+                }
+
+
+
+.eudonetModal .eudo-footer {
+    padding: 4px;
+    margin-left: -24px;
+    margin-right: -24px;
+    min-height: 43px;
+    background-color: #fdfdfd;
+    border-top: 1px solid #ecf0f5;
+}
+
+.eudonetModal .eudo-footer .eudo-buttons.eudo-primary {
+    text-align: right;
+    float: right;
+}
+
+.eudonetModal .eudo-footer .eudo-buttons.eudo-primary .eudo-button {
+    margin: 4px;
+}
+
+.eudonetModal .eudo-footer .eudo-buttons.eudo-auxiliary {
+    text-align: right;
+}
+
+.eudonetModal .eudo-footer .eudo-buttons.eudo-auxiliary .eudo-button {
+    margin: 4px;
+}
+
+.eudonetModal .eudo-footer .eudo-buttons .eudo-button {
+    min-width: 88px;
+    min-height: 35px;
+}
+
+.eudonetModal .eudo-handle {
+    position: absolute;
+    display: none;
+    width: 10px;
+    height: 10px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNy8xMS8xNEDQYmMAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAQ0lEQVQYlaXNMQoAIAxD0dT7H657l0KX3iJuUlBUNOsPPCGJm7VDp6ryeMxMuDsAQH7owW3pyn3RS26iKxERMLN3ugOaAkaL3sWVigAAAABJRU5ErkJggg==);
+    -webkit-transform: scaleX(1)/*rtl:scaleX(-1)*/
+    ;
+    transform: scaleX(1)/*rtl:scaleX(-1)*/
+    ;
+    cursor: se-resize;
+}
+
+.eudonetModal.eudo-no-overflow .eudo-body .eudo-content {
+    overflow: hidden !important;
+}
+
+.eudonetModal.eudo-no-padding.eudo-maximized .eudo-body .eudo-content {
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+
+.eudonetModal.eudo-no-padding:not(.eudo-maximized) .eudo-body {
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+.eudonetModal.eudo-no-padding:not(.eudo-maximized) .eudo-body .eudo-content {
+    padding: 0;
+}
+
+.eudonetModal.eudo-no-padding.eudo-resizable .eudo-body .eudo-content {
+    left: 0;
+    right: 0;
+}
+
+.eudonetModal.eudo-maximizable .eudo-commands button.eudo-maximize,
+.eudonetModal.eudo-maximizable .eudo-commands button.eudo-restore {
+    display: inline-block;
+}
+
+.eudonetModal.eudo-closable .eudo-commands button.eudo-close {
+    display: inline-block;
+}
+
+.eudonetModal.eudo-maximized .eudo-dialog {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.eudonetModal.eudo-maximized.eudo-modeless .eudo-modal {
+    position: fixed !important;
+    min-height: 100% !important;
+    max-height: none !important;
+    margin: 0 !important;
+}
+
+.eudonetModal.eudo-maximized .eudo-commands button.eudo-maximize {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNy8xMy8xNOrZqugAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAASklEQVQYlZWQ0QkAMQhDtXRincOZX78KVtrDCwgqJNEoIB3MPLj7lRUROlpyVXGzby6zWuY+kz6tj5sBMTMAyVV3/595RbOh3cAXsww1raeiOcoAAAAASUVORK5CYII=);
+}
+
+.eudonetModal.eudo-resizable .eudo-dialog,
+.eudonetModal.eudo-maximized .eudo-dialog {
+    padding: 0;
+}
+
+.eudonetModal.eudo-resizable .eudo-commands,
+.eudonetModal.eudo-maximized .eudo-commands {
+    margin: 14px 24px 0 0;
+}
+
+.eudonetModal.eudo-resizable .eudo-header,
+.eudonetModal.eudo-maximized .eudo-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 16px 24px;
+}
+
+.eudonetModal.eudo-resizable .eudo-body,
+.eudonetModal.eudo-maximized .eudo-body {
+    min-height: 224px;
+    display: inline-block;
+}
+
+.eudonetModal.eudo-resizable .eudo-body .eudo-content,
+.eudonetModal.eudo-maximized .eudo-body .eudo-content {
+    position: absolute;
+    top: 50px;
+    right: 24px;
+    bottom: 50px;
+    left: 24px;
+    overflow: auto;
+}
+
+.eudonetModal.eudo-resizable .eudo-footer,
+.eudonetModal.eudo-maximized .eudo-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.eudonetModal.eudo-resizable:not(.eudo-maximized) .eudo-dialog {
+    min-width: 548px;
+}
+
+.eudonetModal.eudo-resizable:not(.eudo-maximized) .eudo-handle {
+    display: block;
+}
+
+.eudonetModal.eudo-movable:not(.eudo-maximized) .eudo-header {
+    cursor: move;
+}
+
+.eudonetModal.eudo-modeless .eudo-dimmer,
+.eudonetModal.eudo-modeless .eudo-reset {
+    display: none;
+}
+
+.eudonetModal.eudo-modeless .eudo-modal {
+    overflow: visible;
+    max-width: none;
+    max-height: 0;
+}
+
+.eudonetModal.eudo-modeless.eudo-pinnable .eudo-commands button.eudo-pin {
+    display: inline-block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNy8xMy8xNOrZqugAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAQklEQVQYlcWPMQ4AIAwCqU9u38GbcbHRWN1MvKQDhQFMEpKImGJA0gCgnYw0V0rwxseg5erT4oSkQVI5d9f+e9+xA0NbLpWfitPXAAAAAElFTkSuQmCC);
+}
+
+.eudonetModal.eudo-modeless.eudo-unpinned .eudo-modal {
+    position: absolute;
+}
+
+.eudonetModal.eudo-modeless.eudo-unpinned .eudo-commands button.eudo-pin {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNy8xMy8xNOrZqugAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAO0lEQVQYlWP8//8/AzGAiShV6AqLi4txGs+CLoBLMYbC3t5eRmyaWfBZhwwYkX2NTxPRvibKjRhW4wMAhxkYGbLu3pEAAAAASUVORK5CYII=);
+}
+
+.eudonetModal.eudo-modeless:not(.eudo-unpinned) .eudo-body {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.eudonetModal.eudo-basic .eudo-header {
+    opacity: 0;
+}
+
+.eudonetModal.eudo-basic .eudo-footer {
+    visibility: hidden;
+}
+
+.eudonetModal.eudo-frameless .eudo-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 60px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.eudonetModal.eudo-frameless .eudo-footer {
+    display: none;
+}
+
+.eudonetModal.eudo-frameless .eudo-body .eudo-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.eudonetModal.eudo-frameless:not(.eudo-resizable) .eudo-dialog {
+    padding-top: 0;
+}
+
+.eudonetModal.eudo-frameless:not(.eudo-resizable) .eudo-dialog .eudo-commands {
+    margin-top: 0;
+}
+
+.eudo-no-overflow {
+    overflow: hidden !important;
+    outline: none;
+}
+
+.eudo-no-overflow.eudo-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll!important;
+}
+
+.eudo-no-selection,
+.eudo-no-selection * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-width: 568px) {
+    .eudonetModal .eudo-dialog {
+        min-width: 150px;
+    }
+    .eudonetModal:not(.eudo-maximized) .eudo-modal {
+        padding: 0 5%;
+    }
+    .eudonetModal:not(.eudo-maximized).eudo-resizable .eudo-dialog {
+        min-width: initial;
+        min-width: auto/*IE fallback*/
+        ;
+    }
+}
+
+@-moz-document url-prefix() {
+    .eudonetModal button:focus {
+        outline: 1px dotted #3593D2;
+    }
+}
+
+.eudonetModal .eudo-dimmer,
+.eudonetModal .eudo-modal {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition-property: opacity, visibility;
+    transition-property: opacity, visibility;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+}
+
+.eudonetModal.eudo-hidden .eudo-dimmer,
+.eudonetModal.eudo-hidden .eudo-modal {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.eudonetModal.eudo-in:not(.eudo-hidden) .eudo-dialog {
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+}
+
+.eudonetModal.eudo-out.eudo-hidden .eudo-dialog {
+    -webkit-animation-duration: 250ms;
+    animation-duration: 250ms;
+}
+
+.eudonetModal .eudo-dialog.eudo-shake {
+    -webkit-animation-name: ajs-shake;
+    animation-name: ajs-shake;
+    -webkit-animation-duration: .1s;
+    animation-duration: .1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes ajs-shake {
+    0%,
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes ajs-shake {
+    0%,
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.eudonetModal.eudo-slide.eudo-in:not(.eudo-hidden) .eudo-dialog {
+    -webkit-animation-name: ajs-slideIn;
+    animation-name: ajs-slideIn;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.eudonetModal.eudo-slide.eudo-out.eudo-hidden .eudo-dialog {
+    -webkit-animation-name: ajs-slideOut;
+    animation-name: ajs-slideOut;
+    -webkit-animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.eudonetModal.eudo-zoom.eudo-in:not(.eudo-hidden) .eudo-dialog {
+    -webkit-animation-name: ajs-zoomIn;
+    animation-name: ajs-zoomIn;
+}
+
+.eudonetModal.eudo-zoom.eudo-out.eudo-hidden .eudo-dialog {
+    -webkit-animation-name: ajs-zoomOut;
+    animation-name: ajs-zoomOut;
+}
+
+.eudonetModal.eudo-fade.eudo-in:not(.eudo-hidden) .eudo-dialog {
+    -webkit-animation-name: ajs-fadeIn;
+    animation-name: ajs-fadeIn;
+}
+
+.eudonetModal.eudo-fade.eudo-out.eudo-hidden .eudo-dialog {
+    -webkit-animation-name: ajs-fadeOut;
+    animation-name: ajs-fadeOut;
+}
+
+.eudonetModal.eudo-pulse.eudo-in:not(.eudo-hidden) .eudo-dialog {
+    -webkit-animation-name: ajs-pulseIn;
+    animation-name: ajs-pulseIn;
+}
+
+.eudonetModal.eudo-pulse.eudo-out.eudo-hidden .eudo-dialog {
+    -webkit-animation-name: ajs-pulseOut;
+    animation-name: ajs-pulseOut;
+}
+
+.eudonetModal.eudo-flipx.eudo-in:not(.eudo-hidden) .eudo-dialog {
+    -webkit-animation-name: ajs-flipInX;
+    animation-name: ajs-flipInX;
+}
+
+.eudonetModal.eudo-flipx.eudo-out.eudo-hidden .eudo-dialog {
+    -webkit-animation-name: ajs-flipOutX;
+    animation-name: ajs-flipOutX;
+}
+
+.eudonetModal.eudo-flipy.eudo-in:not(.eudo-hidden) .eudo-dialog {
+    -webkit-animation-name: ajs-flipInY;
+    animation-name: ajs-flipInY;
+}
+
+.eudonetModal.eudo-flipy.eudo-out.eudo-hidden .eudo-dialog {
+    -webkit-animation-name: ajs-flipOutY;
+    animation-name: ajs-flipOutY;
+}
+
+@-webkit-keyframes ajs-pulseIn {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes ajs-pulseIn {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@-webkit-keyframes ajs-pulseOut {
+    20% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    50%,
+    55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+@keyframes ajs-pulseOut {
+    20% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    50%,
+    55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+@-webkit-keyframes ajs-zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.25, 0.25, 0.25);
+        transform: scale3d(0.25, 0.25, 0.25);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes ajs-zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.25, 0.25, 0.25);
+        transform: scale3d(0.25, 0.25, 0.25);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@-webkit-keyframes ajs-zoomOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.25, 0.25, 0.25);
+        transform: scale3d(0.25, 0.25, 0.25);
+    }
+}
+
+@keyframes ajs-zoomOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.25, 0.25, 0.25);
+        transform: scale3d(0.25, 0.25, 0.25);
+    }
+}
+
+@-webkit-keyframes ajs-fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ajs-fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes ajs-fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ajs-fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes ajs-flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes ajs-flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@-webkit-keyframes ajs-flipOutX {
+    0% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes ajs-flipOutX {
+    0% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes ajs-flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes ajs-flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@-webkit-keyframes ajs-flipOutY {
+    0% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes ajs-flipOutY {
+    0% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes ajs-slideIn {
+    0% {
+        margin-top: -100%;
+    }
+    100% {
+        margin-top: 5%;
+    }
+}
+
+@keyframes ajs-slideIn {
+    0% {
+        margin-top: -100%;
+    }
+    100% {
+        margin-top: 5%;
+    }
+}
+
+@-webkit-keyframes ajs-slideOut {
+    0% {
+        margin-top: 5%;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes ajs-slideOut {
+    0% {
+        margin-top: 5%;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+.eudonetModal-notifier {
+    position: fixed;
+    width: 0;
+    overflow: visible;
+    z-index: 1982;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.eudonetModal-notifier .eudo-message {
+    position: relative;
+    width: 260px;
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+    margin: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.eudonetModal-notifier .eudo-message.eudo-visible {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 1;
+    max-height: 100%;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.eudonetModal-notifier .eudo-message.eudo-success {
+    background: rgba(91, 189, 114, 0.95);
+}
+
+.eudonetModal-notifier .eudo-message.eudo-error {
+    background: rgba(217, 92, 92, 0.95);
+}
+
+.eudonetModal-notifier .eudo-message.eudo-warning {
+    background: rgba(252, 248, 215, 0.95);
+}
+
+.eudonetModal-notifier .eudo-message .eudo-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAFBJREFUGBl1j0EKADEIA+ve/P9f9bh1hEihNBfjVCO1v7RKVqJK4h8gM5cAPR42AkQEpSXPwMTyoi13n5N9YqJehm3Fnr7nL1D0ZEbD5OubGyC7a9gx+9eNAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 2px;
+}
+
+.eudonetModal-notifier.eudo-top {
+    top: 10px;
+}
+
+.eudonetModal-notifier.eudo-bottom {
+    bottom: 10px;
+}
+
+.eudonetModal-notifier.eudo-right {
+    right: 10px;
+}
+
+.eudonetModal-notifier.eudo-right .eudo-message {
+    right: -320px;
+}
+
+.eudonetModal-notifier.eudo-right .eudo-message.eudo-visible {
+    right: 290px;
+}
+
+.eudonetModal-notifier.eudo-left {
+    left: 10px;
+}
+
+.eudonetModal-notifier.eudo-left .eudo-message {
+    left: -300px;
+}
+
+.eudonetModal-notifier.eudo-left .eudo-message.eudo-visible {
+    left: 0;
+}
+
+.eudonetModal-notifier.eudo-center {
+    left: 50%;
+}
+
+.eudonetModal-notifier.eudo-center .eudo-message {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.eudonetModal-notifier.eudo-center .eudo-message.eudo-visible {
+    left: 50%;
+    -webkit-transition-timing-function: cubic-bezier(0.57, 0.43, 0.1, 0.65);
+    transition-timing-function: cubic-bezier(0.57, 0.43, 0.1, 0.65);
+}
+
+.eudonetModal-notifier.eudo-center.eudo-top .eudo-message {
+    top: -300px;
+}
+
+.eudonetModal-notifier.eudo-center.eudo-top .eudo-message.eudo-visible {
+    top: 0;
+}
+
+.eudonetModal-notifier.eudo-center.eudo-bottom .eudo-message {
+    bottom: -300px;
+}
+
+.eudonetModal-notifier.eudo-center.eudo-bottom .eudo-message.eudo-visible {
+    bottom: 0;
+}
+
+/** ajout des CSS pour les box d'alerte en dessous des composants. G.L */
+
+/** taille de la popup*/
+
+.eAlertBox {
+    right: 0;
+    position: absolute;
+    opacity: 0.8;
+    top: 30px;
+    padding: initial;
+    width: 100%;
+    height: 15px;
+    z-index: 3;
+    margin-bottom: 2px;
+    bottom: initial;
+    line-height: initial;
+    text-align: left;
+    vertical-align: bottom;
+    line-height: var(--size-15);
+}
+
+    .eAlertBox.alert-success {
+        color: #3c763d !important;
+        background-color:transparent !important;
+    }
+
+    .eAlertBox.alert-danger {
+        color: #a94442 !important;
+        background-color: transparent !important;
+        white-space: initial;
+    }
+
+/** transitions */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+/*Correction css position modale d'alerte*/
+
+.eudonetModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+}
+
+.eudonetModal .eudo-modal {
+    display: flex;
+    align-items: center;
+    padding: 100px 25px 25px 25px;
+}
+
+/*Correction css position modale d'alerte*/
+
+#prop-fiche .eudonetModal .logicCompo {
+    padding: 0;
+}
+
+.word-separator{
+    margin:0 5px 0 0;
+}

@@ -1,0 +1,121 @@
+﻿.wrapper-map {
+    height: calc(100vh - 290px);
+    position:sticky;
+    top:36px;
+}
+
+.resume-map {
+    background-color: var(--detail-fileinput-label);
+    height: auto;
+}
+.grp-resume-map {
+    width: 100%;
+}
+.title-resume-map {
+    height: 1.6vh;
+    width: 50%;
+    background-color: var(--detail-multirenderer-readonly-border);
+    min-height: 10px;
+}
+
+.s-title-resume-map {
+    height: 1.3vh;
+    width: 20%;
+    background-color: var(--detail-multirenderer-readonly-border);
+    min-height: 8px;
+}
+
+.circle-avatar-resume {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: grey;
+}
+.grp-resume-input-map {
+    display: flex;
+    flex: 1;
+}
+
+.grp-input-resume-map {
+    display: flex;
+    width: calc(100% - 27px);
+    flex-wrap: wrap;
+}
+
+.input-resume-map {
+    width: 29.333333%;
+    height: 8px;
+    background: grey;
+}
+
+.assist-map {
+    background-color: var(--detail-fileinput-label);
+    height: auto;
+}
+
+.circle-assist-map {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: grey;
+    position:relative
+}
+
+    .circle-assist-map + .circle-assist-map:after {
+        content: "";
+        height: 2px;
+        top: 9px;
+        background-color: var(--detail-multirenderer-readonly-border);
+        position: absolute;
+        z-index: 0;
+        width: 200%;
+        left: -195%;
+    }
+
+.detail-map {
+    background-color: var(--detail-fileinput-label);
+    height: 60%;
+}
+
+
+.pulse-color-bg {
+    background-color: var(--tag-color);
+    animation-name: color-bg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.pulse-color {
+    background-color: var(--tag-color);
+    animation-name: color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    0% {
+        background-color: var(--light-color-grey);
+    }
+
+    50% {
+        background-color: var(--detail-multirenderer-readonly-border);
+    }
+
+    100% {
+        background-color: var(--light-color-grey);
+    }
+}
+
+@keyframes color-bg {
+    0% {
+        background-color: var(--light-color-grey);
+    }
+
+    50% {
+        background-color: var(--detail-fileinput-label);
+    }
+
+    100% {
+        background-color: var(--light-color-grey);
+    }
+}

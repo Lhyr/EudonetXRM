@@ -1,0 +1,86 @@
+﻿.Grp
+{
+	font-weight: bold;
+}
+.Usr
+{
+	padding-left: 15px;
+}
+
+.sumup
+{
+	text-align: left;
+	margin-top: 5px;
+	border: 1px solid black;
+	color: #636363;
+	padding: 5px 10px;
+	background-color: white;
+}
+
+.aslogo
+{
+	background-image: url(../images/iCatalog/TreeView/all-select-check.png);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	/* margin-left: 20px; */
+}
+
+.asLbl
+{
+	font-family: Verdana;
+	float: right;
+	display: inline-block;
+	color: #636363;
+}
+
+.autoset
+{
+	float: right;
+	width: 150px;
+	vertical-align: middle;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.autoset:hover .aslogo
+{
+	background-image: url(../images/iCatalog/TreeView/all-select-check_hover.png);
+}
+
+.autoset:hover .asLbl
+{
+	color: #42A7DC;
+}
+
+.dispHidUsr
+{
+	float: left;
+}
+
+
+.GAUserList
+{
+	overflow-y: auto;
+	background-color:White;
+	margin-top: 10px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #808080;
+}
+
+#UsrLstTab th.head, #UsrLstTab tr td:first-child {
+    text-align: center;
+}
+
+#dispOptUsr {
+    margin: 0;
+}
+#dispOptUsr > div {
+    margin-bottom: 5px;
+}
+#rbAll, #rbSel {
+    float: left;
+    margin-right: 5px;
+}

@@ -1,0 +1,8 @@
+﻿.divVerifEmail .email-verification i.fas {
+    line-height: 18px !important; /* important car faw important aussi */
+}
+
+.detailContent .readOnlyComponent:not([tp="10"]):not([tp="20"]):not([tp="11"]):not([tp="16"]) .input-group + .divVerifEmail {
+    background: var(--detail-Readonly-cpt);
+    border-bottom: 1px dashed var(--detail-label);
+}

@@ -1,0 +1,599 @@
+body {
+    padding-left: 5px;
+    padding-top: 5px;
+    margin: 0; /*background: #f8f8f8;*/
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 8pt;
+    color: #000;
+    text-align: left;
+    background-color: #f8f8f8;
+}
+
+select {
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+.divDragTmp {
+    position: absolute;
+    background-color: silver;
+    border: 1px dashed gray;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.cell {
+    padding: 6px;
+    cursor: pointer;
+    text-indent: 6px;
+    /*text-indent: 6px;*/
+    vertical-align: middle;
+    line-height: 19px;
+    height: 19px;
+}
+
+.cell2 {
+    background-color: #f6f6f6;
+    height: 19px;
+    padding: 6px;
+    cursor: pointer;
+    text-indent: 6px;
+    line-height: 19px;
+    vertical-align: middle;
+}
+
+    .cell2:hover, .cell:hover {
+        background-color: #bcdcfb;
+        font-weight: normal;
+        padding: 6px;
+        cursor: pointer;
+        text-indent: 6px;
+        vertical-align: middle;
+    }
+
+.ItemList [data-mainfield='1'] {
+    font-weight: bold;
+}
+
+.SelectedItem {
+    background-color: #ccc;
+    height: 19px;
+    padding: 6px;
+    cursor: pointer;
+    text-indent: 6px;
+    vertical-align: middle;
+    line-height: 19px;
+}
+
+.btnSelectUnselectAllIcon {
+    height: 20px;
+    width: 20px;
+}
+
+.btnSelectUnselectAll, .btnSelectUnselectAllIcon, .btnSelectUnselectAllText {
+    padding-top: 4px;
+    display: inline;
+    cursor: pointer;
+}
+
+    .btnSelectUnselectAll:hover {
+        color: #42A7DC;
+    }
+
+.btnSelectUnselectAllText {
+    font-weight: bold;
+    font-size: 10pt;
+    vertical-align: 4px;
+}
+
+.ButtonSelectUnit {
+    background: url(../images/ui/iUiSprite.png) 0 -1355px;
+    background-repeat: repeat-x;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    color: White;
+}
+
+    .ButtonSelectUnit:hover {
+        background: url(../images/ui/iUiSprite.png) 0 -1425px;
+        background-repeat: repeat-x;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+        color: White;
+    }
+
+
+.ButtonUnselectUnit {
+    background: url(../images/ui/iUiSprite.png) 0 -1215px;
+    background-repeat: repeat-x;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    color: White;
+}
+
+    .ButtonUnselectUnit:hover {
+        background: url(../images/ui/iUiSprite.png) 0 -1285px;
+        background-repeat: repeat-x;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+        color: White;
+    }
+
+.ButtonUp {
+    background: url(../images/ui/iUiSprite.png) 0 -1495px;
+    background-repeat: repeat-x;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    color: White;
+}
+
+    .ButtonUp:hover {
+        background: url(../images/ui/iUiSprite.png) 0 -1565px;
+        background-repeat: repeat-x;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+        color: White;
+    }
+
+.ButtonDown {
+    background: url(../images/ui/iUiSprite.png) 0 -1075px;
+    background-repeat: repeat-x;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    color: White;
+}
+
+
+    .ButtonDown:hover {
+        background: url(../images/ui/iUiSprite.png) 0 -1144px;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+        color: White;
+    }
+
+
+
+
+.ButtonSelectAll {
+    padding-top: 4px;
+    background: url(../images/ui/iUiSprite.png) 0 -139px;
+    background-repeat: no-repeat;
+    height: 20px;
+    cursor: pointer;
+    width: 145px;
+}
+
+
+    .ButtonSelectAll:hover {
+        padding-top: 4px;
+        background: url(../images/ui/iUiSprite.png) 0 -209px;
+        background-repeat: no-repeat;
+        height: 20px;
+        cursor: pointer;
+        color: #42A7DC;
+    }
+
+.ButtonUnselectAll {
+    padding-top: 4px;
+    background: url(../images/ui/iUiSprite.png) 0 1px;
+    background-repeat: no-repeat;
+    height: 20px;
+    cursor: pointer;
+    width: 160px;
+}
+
+    .ButtonUnselectAll:hover {
+        padding-top: 4px;
+        background: url(../images/ui/iUiSprite.png) 0 -69px;
+        background-repeat: no-repeat;
+        height: 20px;
+        cursor: pointer;
+        color: #42A7DC;
+    }
+
+.tdHeader {
+    margin-top: 10px;
+    background-image: url('../images/iCatalog/bg_header.png');
+    background-repeat: repeat-x;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #636363;
+    height: 34px;
+    padding-left: 5px;
+    border: 1px solid #999;
+    background-position: 0 8px;
+    background-color: white;
+    border-bottom: 1px solid #D5D5D5;
+    line-height: 34px;
+}
+
+.DivClosed span {
+    vertical-align: -5px;
+    text-indent: -3px;
+}
+
+.DivClosed {
+    font-weight: bold;
+    background-repeat: no-repeat;
+    height: 20px;
+    cursor: pointer;
+    color: #636363;
+    line-height: 16px;
+}
+
+    .DivClosed img {
+        height: 20px;
+        width: 20px;
+        vertical-align: -4px;
+        background-position: -26px -26px;
+    }
+
+    .DivClosed:hover {
+        height: 20px;
+        cursor: pointer;
+        color: #42A7DC;
+    }
+
+        .DivClosed:hover img {
+            background-repeat: no-repeat;
+            height: 20px;
+            cursor: pointer;
+        }
+
+    .DivOpen .icon-add, .DivClosed .icon-add {
+        font-size: 11pt;
+        padding-right: 4px;
+        vertical-align: -2px;
+    }
+
+.DivOpen {
+    background-repeat: no-repeat;
+    height: 20px;
+    cursor: pointer;
+    color: #636363;
+    font-weight: bold;
+    line-height: 12px;
+}
+
+    .DivOpen img {
+        height: 20px;
+        width: 20px;
+        vertical-align: -4px;
+        background-position: -50px -26px;
+    }
+
+    .DivOpen:hover img {
+    }
+
+    .DivOpen:hover {
+        cursor: pointer;
+        color: #42A7DC;
+    }
+
+.SelectionList {
+    azimuth: height: 120px;
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    background-color: White;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    border-top: 0px;
+}
+
+.ItemList {
+    height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+    white-space: nowrap;
+    background-color: White;
+    border-top: 0px;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.ItemListTd {
+    border-top: 0px;
+    padding: 0;
+}
+
+.AddSelection {
+    border: 0px !important;
+}
+
+.SelectedItem .iDel, .SelectedItem .logo_trash, .SelectedItem .fldBtnDel a {
+}
+
+.SelectedItem .fldBtnModif a, .SelectedItem .logo_pen {
+}
+
+.cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a, .cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a {
+}
+
+.cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a, .cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a {
+    background-color: #636363;
+}
+
+.fldBtnModif a {
+    width: 22px;
+    height: 21px;
+    display: block;
+    margin: 0;
+    background-position: -121px -98px;
+}
+
+    .fldBtnModif a:hover {
+    }
+
+.sprite-no-valeur {
+    background-position: 0 -781px;
+    width: 20px;
+    height: 21px;
+}
+
+.fldBtnDel a {
+    width: 22px;
+    height: 21px;
+    display: block;
+    margin: 0;
+    margin-left: 17px;
+    background-position: -145px -97px;
+}
+
+    .fldBtnDel a:hover {
+    }
+
+/* DIV contenant les boutons Modifier infobulle et supprimer*/
+div.ViewsEditBtn {
+    position: relative;
+    float: right;
+    height: 21px;
+    /* display: block; */
+    visibility: hidden;
+}
+
+tr.cell:hover div.ViewsEditBtn, tr.cell2:hover div.ViewsEditBtn, tr.SelectedItem:hover div.ViewsEditBtn {
+    /* display: block; */
+    visibility: visible;
+}
+/* concerne Bountons Modifier infobulle et supprimer */
+ul.fldBtnUl {
+    height: 21px;
+    width: 85px;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+    /* concerne Bountons Modifier infobulle et supprimer */
+    ul.fldBtnUl li {
+        background-repeat: no-repeat;
+        cursor: pointer;
+        width: 22px;
+        height: 21px;
+        display: inline-block;
+        float: left;
+        line-height: 21px;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+    }
+
+.fldBtnUl .icon-edn-pen, .fldBtnUl .icon-delete {
+    font-size: 11pt;
+    text-align: center;
+}
+
+.DivSelectionListResult {
+    width: auto;
+    overflow: auto;
+    white-space: nowrap;
+    background-color: White;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    height: 70px;
+    text-indent: 14px;
+}
+
+    .DivSelectionListResult table td {
+        height: 31px;
+    }
+
+.MainTab {
+    width: 100%;
+    /*padding-left: 30px;*/
+}
+
+
+.sprite-Catalog {
+}
+
+.AddButton {
+    width: 0;
+    line-height: 21px;
+    display: block;
+    padding-left: 25px;
+    cursor: pointer;
+    color: #636363;
+    margin-left: -3px;
+    vertical-align: middle;
+    padding-top: 0px;
+    margin-top: -4px;
+    margin-bottom: -8px;
+    background-position: -26px -2px;
+}
+
+    .AddButton:hover {
+        color: #42A7DC;
+    }
+
+.SeparatorAdvanced {
+    width: 96%;
+    height: 1px;
+    background-color: #636363;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+
+.eMainFileList select {
+    width: 150px;
+}
+
+.ItemsUsed {
+    height: 218px;
+}
+
+.ItemListSep, /* GMA 20140317 (#27561) */
+.nonSelectable /* MAB 2014-08-13 (#32 501) */ {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+.dragGuideTab {
+    height: 3px;
+    width: 100%;
+    background-color: #42a7dc;
+}
+
+/* ADMIN */
+#availableFields, #selectedFields {
+    float: left;
+    width: 45%;
+}
+
+.btnSelectAll {
+    text-align: center;
+    font-weight: bold;
+    font-size: 10pt;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+    .btnSelectAll:hover {
+        color: #42A7DC;
+    }
+
+        .btnSelectAll:hover span {
+            color: #42A7DC !important;
+        }
+
+    .btnSelectAll span[class^='icon'] {
+        margin-right: 5px;
+    }
+
+    .btnSelectAll * {
+        vertical-align: middle;
+    }
+
+.choiceTable {
+    font-size: 8pt;
+    border: 1px solid #999;
+    height: 470px;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+    .choiceTable .tableHeader {
+        background-color: #EEEEEE;
+        font-weight: bold;
+        color: #636363;
+        height: 34px;
+        border-bottom: 1px solid #D5D5D5;
+        line-height: 34px;
+        padding: 0 6px;
+    }
+
+    .choiceTable ul {
+        height: 435px;
+        overflow-y: scroll;
+    }
+
+    .choiceTable li {
+        height: 30px;
+        padding: 0 6px;
+        line-height: 30px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+        .choiceTable li:hover {
+            background-color: #bcdcfb;
+        }
+
+    .choiceTable .line1 {
+        background-color: #f6f6f6;
+    }
+
+    .choiceTable .selectedItem {
+        background-color: #CCCCCC;
+    }
+
+    .choiceTable .btnSelectAll {
+        height: 30px;
+    }
+
+.horizontalArrows, .verticalArrows {
+    float: left;
+    width: 35px;
+    /*height: 500px;*/
+    padding-top: 200px;
+    text-align: center;
+}
+
+    .horizontalArrows div, .verticalArrows div {
+        width: 35px;
+        margin-bottom: 10px;
+    }
+
+#titleBlock {
+    padding: 10px 0px;
+}
+
+#searchBlock {
+    margin-bottom: 8px;
+    width: 45%;
+    position: relative;
+}
+
+    #searchBlock label {
+        margin-right: 5px;
+        font-size: 9pt;
+    }
+
+    #searchBlock #txtSearchField {
+        width: 100%;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        padding: 1px 5px;
+    }
+
+#iconRemoveSearch {
+    vertical-align: middle;
+    font-size: 10pt;
+    margin-left: 3px;
+    line-height: 19px;
+    position: absolute;
+    right: 3px;
+    top: 0;
+}
+

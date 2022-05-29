@@ -1,0 +1,32 @@
+IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE sys.tables.name = 'COLSPREF')
+BEGIN
+	CREATE TABLE [dbo].[COLSPREF]
+	(
+		[COLSPREFID] [int] IDENTITY(1,1) NOT NULL,
+		[userid] [numeric](18, 0) NOT NULL DEFAULT ((0)),
+		[tab] [numeric](18, 0) NOT NULL DEFAULT ((0)),
+		[bkmtab] [numeric](18, 0) NOT NULL DEFAULT ((0)),
+		[colspreftype] [int]  NOT NULL DEFAULT ((0)),
+		[col] [varchar](1000) NULL,
+		[colwidth] [varchar](1000) NULL,
+		[sort] int NULL,
+		[sortorder] bit NOT NULL DEFAULT ((0)),
+		[filteroptions] [varchar](1000) NULL
+		CONSTRAINT [PK_COLSPREF] PRIMARY KEY CLUSTERED ([COLSPREFID] ASC)
+		WITH (PAD_INDEX = ON, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+	) ON [PRIMARY]
+
+	CREATE UNIQUE NONCLUSTERED INDEX [IX_COLSPREF_KEY] ON [dbo].[COLSPREF]
+	(
+		[userid] ASC,
+		[tab] ASC,
+		[bkmtab] ASC,
+		[colspreftype] ASC
+		
+	) WITH (
+		PAD_INDEX = ON, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, 
+		ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90
+	) ON [PRIMARY]
+END
+
+

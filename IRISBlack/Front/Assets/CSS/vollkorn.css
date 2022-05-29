@@ -1,0 +1,37 @@
+@font-face {
+    font-family: vollkorn-bold;
+    src: url(../fonts/vollkorn/Vollkorn-Bold.ttf);
+}
+
+@font-face {
+    font-family: vollkorn-semi-bold;
+    src: url(../fonts/vollkorn/Vollkorn-Semibold.ttf);
+}
+
+@font-face {
+    font-family: vollkorn-regular;
+    src: url(../fonts/vollkorn/Vollkorn-Regular.ttf);
+}
+
+
+.vollkorn .wrapper{
+    font-family: vollkorn-regular!important;
+}
+
+.vollkorn h1{
+    font-family: vollkorn-bold!important;
+}
+
+.vollkorn h3{
+    font-family: vollkorn-bold!important;
+}
+
+.vollkorn h4{
+    font-family: vollkorn-semi-bold!important;
+}
+
+.vollkorn .box-title > a {
+    font-family: vollkorn-bold!important;
+}
+
+

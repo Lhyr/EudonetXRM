@@ -1,0 +1,40 @@
+﻿[
+  {
+    "id": "worldlinePaiment",
+    "opts": {
+      "label": "<eudoRes>blocWorldlinePaiment</eudoRes>",
+      "attributes": {
+        "title": "<eudoRes>blocWorldlinePaiment</eudoRes>",
+        "class": "icon-eudofont icon-credit-card"
+      },
+      "content": {
+        "type": "button-worldline",
+        "tagName": "extended-worldline-btn",
+        "droppable": false,
+        "copyable": false,
+        "classes": [ "worldlinePaiment", "deviceWidth" ],
+        "content": "<eudoRes>blocWorldline</eudoRes>",
+        "attributes": {
+          "contenteditable": "false"
+        },
+        "style": {
+          "border": "0",
+          "padding": "0 10px",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "display": "block",
+          "height": "25px",
+          "min-width": "120px",
+          "background-color": "rgb(187, 21, 21)",
+          "color": "white",
+          "border-radius": "4px",
+          "line-height": "1.5",
+          "width": "fit-content",
+          "text-align": "center",
+          "margin": "auto"
+        }
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  }
+]

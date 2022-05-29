@@ -1,0 +1,1 @@
+update BKMPREF SET ViewMode=NULL where bkm=2

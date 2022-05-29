@@ -1,0 +1,8 @@
+﻿ul.catEditVal li {
+    padding: 7px;
+    cursor: pointer;
+}
+
+    ul.catEditVal li:hover {
+        background-color: #DADADA;
+    }

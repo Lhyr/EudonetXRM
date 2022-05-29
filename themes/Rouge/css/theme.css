@@ -1,0 +1,1175 @@
+﻿#BrowsingPrevious[eenabled='1'] > span > img.rightMenuBrowsingPrevious, #BrowsingNext[eenabled='1'] > span > img.rightMenuBrowsingNext, #BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingLast, #BrowsingFirst[eenabled='1'] > span > img.rightMenuBrowsingFirst
+{
+	background-color: White;
+	border: 1px solid White;
+}
+
+#btnActionsTop
+{
+	background-color: #BB1515;
+	color: #FFFFFF;
+}
+
+#btnActionsTop div#actionLeft
+{
+	background-color: #2A2829;
+}
+
+#btnActionsTop:hover
+{
+	color: #FFFFFF;
+	background-color: #2B292A;
+}
+
+#cardBlockAvatar .icon-photo
+{
+	color: #C00000;
+}
+
+#cardBlockAvatar.cardBlock
+{
+	border-color: #C00000;
+}
+
+#formWidgetContent .widgetRSSItem h2 a
+{
+	color: #C00000;
+}
+
+#kbColHeader .kbHeaderCol
+{
+	color: #C00000;
+}
+
+.Action_sMC li
+{
+	border-bottom: 1px solid white;
+}
+
+.AddButton, .lnkAddTxt img, .addLinkImg
+{
+	background-color: #636363;
+}
+
+.AddButton:hover, .lnkAddTxt:hover img, .addLinkImg:hover
+{
+	background-color: #BB1515;
+}
+
+.background-hover-theme:hover, .background-theme, .static-background-theme
+{
+	background-color: #BB1515;
+	color: #FFFFFF !important;
+}
+
+.background-theme:hover
+{
+	background-color: #2B2B2B;
+	color: #FFFFFF;
+}
+
+.bar-now, td.day.selectedday
+{
+	background-color: #CEEF60;
+}
+
+.barre-outils ul li.impression a
+{
+	background-color: #636363;
+}
+
+.barre-outils ul li.impression a:hover
+{
+	background-color: #BB1515;
+}
+
+.barre-outils ul li.zoom_moins a, .fileTools ul li.zoom_moins a
+{
+	background-color: #CCCCCC;
+}
+
+.barre-outils ul li.zoom_moins a:hover, .fileTools ul li.zoom_moins a:hover
+{
+	background-color: #BB1515;
+}
+
+.barre-outils ul li.zoom_plus a, .fileTools ul li.zoom_plus a
+{
+	background-color: #CCCCCC;
+}
+
+.barre-outils ul li.zoom_plus a:hover, .fileTools ul li.zoom_plus a:hover
+{
+	background-color: #BB1515;
+}
+
+.bkmButtonsBar > ul > li > div > img
+{
+	background-color: #636363;
+}
+
+.bkmButtonsBar > ul > li:hover > div > img
+{
+	background-color: #BB1515;
+}
+
+.bkmdiv
+{
+	border-left: 5px solid #bb1515;
+}
+
+.bkmHisto[enabled='1'] div img
+{
+	background-color: #636363;
+}
+
+.bkmHisto[enabled='1']:hover div img
+{
+	background-color: #BB1515;
+}
+
+.bkmNoPaging:hover div
+{
+	background-color: #BB1515;
+}
+
+.bkmTr td
+{
+	background-image: none;
+	border: none;
+}
+
+.border-theme
+{
+	border-color: #BB1515;
+}
+
+.btnSelectUnselectAll > *
+{
+	color: #C00000;
+}
+
+.btnSelectUnselectAll:hover > *
+{
+	color: #4C4C4C;
+}
+
+.buttonAdd span
+{
+	color: #C00000;
+}
+
+.button-green
+{
+	background-color: #BB1515;
+	padding: 5px;
+}
+
+.button-green > *
+{
+	background-image: none;
+	height: inherit;
+}
+
+.button-green:hover
+{
+	background-color: #B5B5B5;
+}
+
+.button-green:hover > div[class^="button"]
+{
+	background-image: none;
+}
+
+.button-green-rightarrow > div[class^="button"]
+{
+	background-image: none;
+	height: inherit;
+	width: inherit;
+}
+
+.button-green-rightarrow:hover > div[class^="button"]
+{
+	background-image: none;
+}
+
+.button-green-rightarrow-mid
+{
+	padding: 5px;
+	background: #79BE0B;
+	padding-left: 10px;
+}
+
+.calendarselect
+{
+	background-color: #C00000;
+}
+
+.cardBlock .cardTitle
+{
+	color: #C00000;
+}
+
+.catToolAddLib:hover span
+{
+	color: #C00000;
+}
+
+.catToolSync a
+{
+	background-color: #636363;
+}
+
+.catToolSync a:hover
+{
+	background-color: #BB1515;
+}
+
+.cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a, .cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a
+{
+	background-color: #636363;
+}
+
+.cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a:hover, .cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a:hover
+{
+	background-color: #BB1515;
+}
+
+.cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a, .cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a
+{
+	background-color: #636363;
+}
+
+.cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a:hover, .cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a:hover
+{
+	background-color: #BB1515;
+}
+
+.color-hover-theme:hover
+{
+	color: White;
+}
+
+.color-theme
+{
+	color: #BB1515;
+}
+
+.disable
+{
+	color: #EFEFEF !important;
+}
+
+.discComm
+{
+	border-color: #BB1515;
+}
+
+.divBkmCtner
+{
+	background-color: #E3E3E3;
+}
+
+.DivClosed
+{
+	color: #4C4C4C;
+}
+
+.DivClosed > *
+{
+	color: #C00000;
+}
+
+.DivClosed img
+{
+	background-color: #636363;
+}
+
+.DivClosed span
+{
+	color: #BB1515;
+}
+
+.DivClosed:hover
+{
+	color: #4C4C4C;
+}
+
+.DivClosed:hover > *
+{
+	color: #4C4C4C;
+}
+
+.DivClosed:hover img
+{
+	background-color: #BB1515;
+}
+
+.DivOpen > *
+{
+	color: #C00000;
+}
+
+.DivOpen img
+{
+	background-color: #636363;
+}
+
+.DivOpen:hover
+{
+	color: #C00000;
+}
+
+.DivOpen:hover > *
+{
+	color: #4C4C4C;
+}
+
+.DivOpen:hover img
+{
+	background-color: #BB1515;
+}
+
+.DivOpen:hover span
+{
+	color: #C00000;
+}
+
+.DivSelectionListResult .cell2:hover, .DivSelectionListResult .cell:hover, .ItemList .cell:hover, .ItemList .cell2:hover
+{
+	color: White;
+	background-color: #BB1515;
+}
+
+.eMain_File
+{
+	background-color: #636363;
+}
+
+.file99Label, .file99Value
+{
+	color: #732C7B !important;
+}
+
+.fileDiv
+{
+	background-color: #FFFFFF;
+}
+
+.fileLogo
+{
+	color: #636363;
+}
+
+.fileLogoCV
+{
+	background-color: #636363;
+}
+
+.fileLogoCV:hover
+{
+	background-color: #BB1515;
+}
+
+.fileLogoInf, .logo_info, .catBtnTool a
+{
+	background-color: #636363;
+}
+
+.fileLogoInf:hover, .logo_info:hover, .catBtnTool a:hover
+{
+	background-color: #C00000;
+}
+
+.fileTools ul li.impression a, .catToolPrint a
+{
+	background-color: #636363;
+}
+
+.fileTools ul li.impression a:hover, .catToolPrint a:hover
+{
+	background-color: #BB1515;
+}
+
+.fIOff:hover, div.control_contextmenu li.selected, div.control_contextmenu li.actionItem:hover, div.control_contextmenu li.advFltItem:hover, .bkmDtls a:focus, .bkmDtlsSel a:focus, .bkmHead a:focus, .bkmHeadSel a:focus
+{
+	color: White;
+	background-color: #BB1515;
+}
+
+.fldBtnModif a, .logo_pen, .catBtnModif a
+{
+	background-color: #636363;
+}
+
+.fldBtnModif a:hover
+{
+	background-color: #BB1515;
+}
+
+.fldBtnModif a:hover, .logo_pen:hover, .catBtnModif a:hover
+{
+	background-color: #BB1515;
+}
+
+.hdName a
+{
+	color: #666666;
+}
+
+.hdName span
+{
+	color: White;
+}
+
+.hdResize
+{
+	background-color: #FFFFFF;
+	width: 2px;
+}
+
+.hide_all
+{
+	background-color: #636363;
+}
+
+.hide_all:hover
+{
+	background-color: #BB1515;
+}
+
+.highlight
+{
+	background-color: #C00000;
+}
+
+.hPaginTab
+{
+	left: 10px;
+	position: absolute;
+	top: 65px;
+	width: 165px;
+}
+
+.icnMnuChip
+{
+	font-size: 7pt;
+	vertical-align: 0px !important;
+}
+
+.icon-edn-history[enabled='1'], .bkmPaging.icon-edn-eye
+{
+	color: #79BE0B;
+}
+
+.iDel, .logo_trash, .fldBtnDel a, .pl_tt_opt_del, .catBtnDel a
+{
+	background-color: #636363;
+}
+
+.iDel:hover, .logo_trash:hover, .fldBtnDel a:hover, .catBtnDel a:hover
+{
+	background-color: #BB1515;
+}
+
+.imgAct
+{
+	color: #C00000;
+}
+
+.iModPj img
+{
+	background-color: #636363;
+}
+
+.iModPj:hover img
+{
+	background-color: #BB1515;
+}
+
+.jOrgChart .node
+{
+	color: #C00000;
+}
+
+.kbAggr
+{
+	color: #C00000;
+}
+
+.kbButtonSL
+{
+	background-color: #C00000;
+}
+
+.kbListSL
+{
+	color: #C00000;
+}
+
+.kbListSL li:hover
+{
+	background-color: #C00000;
+}
+
+.kbListSL, .kbListSL li
+{
+	border-color: #C00000;
+}
+
+.kbSL, .kbSL .icon-caret-down, .kbSL .icon-caret-right
+{
+	color: #C00000;
+}
+
+.line1:hover > *, .line2:hover > *, .list_even:hover > *, .list_odd:hover > *, .line1:hover, .line2:hover, .highlight, .highlight > *, .highlight > [class*=" icon-"]
+{
+	background-color: #DADADA;
+	color: #000000;
+}
+
+.line1:hover div.inTDbtn, .line2:hover div.inTDbtn
+{
+	color: White;
+}
+
+.line2
+{
+	background-color: #F6F6F6;
+}
+
+.linkAddNewBkmFile.gofile
+{
+	color: #C00000;
+}
+
+.list_even:hover .logo_modifs > div, .list_odd:hover .logo_modifs > div
+{
+	color: White;
+}
+
+.list_even:hover .logo_modifs > div:hover, .list_odd:hover .logo_modifs > div:hover
+{
+	color: #4C4C4C;
+}
+
+.lnkAddTxt:hover a
+{
+	color: #BB1515;
+}
+
+.lnkFieldsSel:hover img
+{
+	background-color: #BB1515;
+}
+
+.lnkFieldsSelBtn
+{
+	background-color: #636363;
+}
+
+.LNKOPENMEMOPOPUPbtn img
+{
+	background-color: #636363;
+}
+
+.LNKOPENMEMOPOPUPbtn:hover img
+{
+	background-color: #BB1515;
+}
+
+.logo_abc
+{
+	background-color: #636363;
+}
+
+.logo_abc:hover
+{
+	background-color: #BB1515;
+}
+
+.memoAvatar
+{
+	background-color: #BB1515;
+}
+
+.mTab .lnkIcon span
+{
+	color: #636363;
+}
+
+.mTab th.head, .hdTable
+{
+	height: 100%;
+}
+
+.mTab th.headActif
+{
+	background-color: #BB1515;
+	color: #FFFFFF;
+}
+
+.mTab tr.hdBgCol, .mTab tr.hdBgCol * 
+{
+	background-color: #AAAAAA;
+}
+
+.mTab tr.hdBgCol *
+{
+	color: White;
+}
+
+.navImportTitleActive
+{
+	background-color: #636363;
+	color: White;
+}
+
+.navTitleActive
+{
+	background-color: #BB1515;
+	color: White;
+}
+
+.open_all
+{
+	background-color: #636363;
+}
+
+.open_all:hover
+{
+	background-color: #BB1515;
+}
+
+.pagFirst
+{
+	background-color: #636363;
+}
+
+.pagFirst:hover
+{
+	background-color: #BB1515;
+}
+
+.pagFirstDis
+{
+	background-color: #EFEFEF;
+}
+
+.pagLast
+{
+	background-color: #636363;
+}
+
+.pagLast:hover
+{
+	background-color: #BB1515;
+}
+
+.pagLastDis
+{
+	background-color: #EFEFEF;
+}
+
+.pagNext
+{
+	background-color: #636363;
+}
+
+.pagNext:hover
+{
+	background-color: #BB1515;
+}
+
+.pagNextDis
+{
+	background-color: #EFEFEF;
+}
+
+.pagPrev
+{
+	background-color: #636363;
+}
+
+.pagPrev:hover
+{
+	background-color: #BB1515;
+}
+
+.pagPrevDis
+{
+	background-color: #EFEFEF;
+}
+
+.phd:hover
+{
+	color: #C00000;
+}
+
+.plM-HESWL td:hover
+{
+	color: #C00000;
+}
+
+.rightMenu:hover span.icnMnuVerBtn:hover
+{
+	color: #424448;
+}
+
+.rightMenuModFile
+{
+	background-color: #BB1515;
+}
+
+.rightMenuModFile span
+{
+	color: White;
+}
+
+.rightMenuModFile:hover
+{
+	background-color: #BB1515;
+}
+
+.rightMenuModFile:hover span
+{
+	color: #666666;
+}
+
+.rightMenuOption > ul > li > a > span > img
+{
+	background-color: #BB1515;
+}
+
+.rightMenuOption ul.hUserBloc li:hover span, .rightMenuOption ul.rightMenuSubMenuItem li:hover span, .rightMenuOption ul.rightMenuItem li:hover span
+{
+	background-color: #DADADA;
+	color: #636363;
+}
+
+.rightMenuSubMenuTitle
+{
+	color: #BB1515;
+}
+
+.table_labels, .table_labels_chk, .table_lab_pty
+{
+	color: #636363;
+}
+
+.tbHtileModal *
+{
+	background-color: #BB1515;
+	background-image: none;
+}
+
+.tdHeader
+{
+	background-color: #EEEEEE;
+	background-image: none;
+}
+
+.usrbt-all:hover *, .usrbt-none:hover *
+{
+	color: #C00000;
+}
+
+.VCardTT .vcImgPp
+{
+	border-color: #C00000;
+}
+
+.vcName, .vcCorporate, .vcMiniFileTitle
+{
+	color: #C00000;
+}
+
+.widget-page-title-container .widget-title
+{
+	color: #C00000;
+}
+
+.xrm-widget-title
+{
+	color: #C00000;
+}
+
+[class^="icon-"], [class*=" icon-"], div.contentMaster div.FavLnkOpen div.menuBar div.icon-menu_btn [class^="icon-"]:hover, div.contentMaster div.FavLnkOpen div.menuBar div.icon-menu_btn [class*=" icon-"]:hover, div.rightMenu:hover div.menuBar [class^="icon-"]:hover
+{
+	color: #BB1515;
+}
+
+[class^="icon-"]:hover, [class*=" icon-"]:hover
+{
+	color: #4C4C4C;
+}
+
+a.btnBitField
+{
+	background-color: #C00000;
+	color: #FFFFFF;
+}
+
+a.chk .icon-check-square
+{
+	color: #C00000 !important;
+}
+
+a.hAvatar
+{
+	background: url("../images/ui/avatar.png");
+	border: 1px solid #B6B6B6;
+	float: left;
+	height: 28px;
+	margin: 1px 15px 0 6px;
+	padding: 0;
+	width: 28px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+}
+
+a.historique span
+{
+	background-image: none;
+}
+
+a.historique span.afficherHisto
+{
+	color: White;
+}
+
+a.historique span.masquerHisto
+{
+	background-image: none;
+}
+
+a.historique:hover span.afficherHisto
+{
+	color: #BB1515;
+}
+
+body
+{
+	background-color: #F8F8F8;
+}
+
+div.advFltActiv div.advFltLabel
+{
+	border-left: 6px solid #CEEF60;
+	height: 17px;
+}
+
+div.advFltMenu
+{
+	background-color: #BB1515;
+	color: White;
+}
+
+div.advFltMenu div[class^="adv"]
+{
+	background-image: none;
+}
+
+div.advFltMenu:hover
+{
+	background-color: #2B2B2B;
+	color: #FFFFFF;
+}
+
+div.advFltMenu:hover div[class^="adv"]
+{
+	background-image: none;
+	color: #BB1515;
+}
+
+div.ahistoFltDiv
+{
+	background-color: #BB1515;
+	border-radius: 5px;
+	border: 1px solid White;
+}
+
+div.ahistoFltDiv a.historique
+{
+	background-image: none;
+}
+
+div.ahistoFltDiv a.historique span.masquerHisto
+{
+	color: White;
+}
+
+div.ahistoFltDiv:hover
+{
+	background-color: White;
+	border: 1px solid #BB1515;
+}
+
+div.ahistoFltDiv:hover a.historique span.masquerHisto
+{
+	color: #BB1515;
+}
+
+div.bkmTitle > ul > li.bkmButtonsBar > div > ul > li.bkmNoPaging > div > img
+{
+	background-color: #79BE0B;
+}
+
+div.colGuide
+{
+	color: #C00000;
+}
+
+div.globalNav
+{
+	background-color: #FFFFFF;
+	border-bottom: none;
+	color: #EFEFEF;
+}
+
+div.globalNav div.HomeFixed
+{
+	border-top: 3px solid #bb1515;
+}
+
+div.histoFilter
+{
+	background-color: #BC1411;
+	color: #FFFFFF;
+}
+
+div.histoFilter:hover, div.histoActive:hover
+{
+	background-color: #2A2A2A;
+	color: #FFFFFF;
+}
+
+div.hUserBloc
+{
+	color: Black;
+}
+
+div.hUserBloc *
+{
+	color: Black;
+}
+
+div.PlusFixed
+{
+	background-color: White;
+}
+
+div.rightMenuModFile > ul > li > a > span > img
+{
+	background-color: White;
+}
+
+div.rightMenuModFile:hover > ul > li
+{
+	background-color: #DADADA;
+}
+
+div.subTabDiv span a.selected, div.subTabDiv span a:hover
+{
+	color: #C00000;
+	border-color: #C00000;
+}
+
+div.usr_top_srch div.icon-edn-cross
+{
+	position: absolute;
+}
+
+img.SumCols
+{
+	top: 0;
+	float: none;
+}
+
+input.readonly
+{
+	background-color: #F0F0F0;
+}
+
+li.catToolAddLib span.catToolAddLibSp
+{
+	color: #C00000;
+}
+
+li.lnkFieldsAdd a, li.lnkFieldsSel a
+{
+	color: #C00000;
+}
+
+li.lnkFieldsAdd:hover *, li.lnkFieldsSel:hover *, li.catToolAddLib:hover *
+{
+	color: #4C4C4C !important;
+	cursor: pointer;
+}
+
+li.navAction
+{
+	background-color: #BB1515;
+	color: White;
+}
+
+li.navEntry
+{
+	color: #636363;
+}
+
+li.navEntry:hover, div.navEntry:hover, li.navEntryActive, div.navEntryActive
+{
+	color: #BB1515;
+	background-color: White;
+}
+
+li.navLst:hover, li.navActiveElt, li.navAction:hover, .rightMenuOption ul li:hover, .rightMenuOption ul li:hover a, ul.rightMenuFavlnk li:hover a
+{
+	background-color: #DADADA;
+}
+
+li.sbmBottom
+{
+	background-color: #333333;
+}
+
+li.sbmBottom a
+{
+	color: #FFFFFF;
+}
+
+span.icnMnuVerBtn
+{
+	color: #BB1515;
+}
+
+table.underCal td.icnListAct
+{
+	color: White;
+}
+
+td.bkmHead
+{
+	background-color: #BB1515;
+	background-image: none;
+	color: White;
+}
+
+td.bkmHead a
+{
+	color: White;
+}
+
+td.bkmHeadPlus
+{
+	background-color: #C00000;
+}
+
+td.bkmHeadPlus a
+{
+	background-color: #C00000;
+	color: White;
+}
+
+td.bkmHeadSel
+{
+	background-color: #383938;
+	background-image: none;
+}
+
+td.bkmHeadSel a
+{
+	color: White;
+	font-weight: bold;
+}
+
+td.eCatalogEditorMenuItem:hover, td.eCatalogMenuItemAddNew:hover, tr.catEditVal:hover, tr.catEditVal2:hover, td.eCatalogEditorMenuItemAdv:hover, ul.catEditVal > li[id^='val']:hover, ul.catMultSelVal > li[id^='val']:hover
+{
+	background-color: #DADADA;
+}
+
+td.LNKADVCATbtn, td.LNKCATbtn, td.LNKCATPOPUPbtn, td.LNKCATUSERbtn, td.LNKMNGFILEbtn, td.LNKSENDMAILbtn
+{
+	background-color: #636363;
+}
+
+td.LNKADVCATbtn:hover, td.LNKCATbtn:hover, td.LNKCATPOPUPbtn:hover, td.LNKCATUSERbtn:hover, td.LNKMNGFILEbtn:hover
+{
+	background-color: #BB1515;
+}
+
+td.LNKCATFILEbtn
+{
+	background-color: #636363;
+}
+
+td.LNKCATFILEbtn:hover
+{
+	background-color: #BB1515;
+}
+
+td.LNKCATHOURbtn
+{
+	background-color: #636363;
+}
+
+td.LNKDATEbtn
+{
+	background-color: #636363;
+}
+
+td.LNKDATEbtn:hover
+{
+	background-color: #BB1515;
+}
+
+td.LNKOPENWEBbtn
+{
+	background-color: #636363;
+}
+
+td.LNKOPENWEBbtn:hover
+{
+	background-color: #BB1515;
+}
+
+tr:hover > td > div.LNKSENDMAILbtn
+{
+	background-repeat: repeat;
+	background-color: #636363;
+}
+
+ul.sbMenu
+{
+	border: 1px solid #AFABAC;
+	border-top: 3px solid #bb1515;
+}
+
+ul.sbMenu, ul.sbMenuActive
+{
+	background-color: White;
+	border-top: 1px solid #DDDDDD;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-bottom: 2px solid #BB1515;
+}
+
+ul.sbMenuActive
+{
+	border: 1px solid #AFABAC;
+}
+
+
+.xrm-widget-resize {
+    border-right-color: #BB1515;
+}
+
+    .xrm-widget-resize:hover {
+        border-right-color: #636363;
+    }
+
+div.blocTexteCampaignType, div.blocTexteQualityEMailAdresses {
+	color: #bb1515;
+}

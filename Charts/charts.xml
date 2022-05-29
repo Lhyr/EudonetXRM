@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<series>
+  <serie id="1"  type="single" res="1573">
+    <description>Single Series Charts</description>
+    <charts>
+      <chart isNew ="0" id="1" type="column" is3d="0" res="1567" name="column2D" />
+      <chart isNew ="0" id="2" type="column" is3d="1"  res="1567" name="column3D" />
+      <chart isNew ="0" id="3" type="pie" is3d="0" res="1568" name="pie2D" />
+      <chart isNew ="0" id="4" type="pie" is3d="1" res="1568" name="pie3D"  />
+      <chart isNew ="0" id="5" type="line" is3d="0"  res="1569" name="Line" />
+      <chart isNew ="0" id="6" type="bar" is3d="0" res="1570"  name="bar2D" />
+      <chart isNew ="0" id="7" type="area" is3d="0"  res="1571" name="area2D" />
+      <chart isNew ="0" id="8" type="doughnut" is3d="0" res="1572" name="doughnut2d" />
+      <chart isNew ="0" id="9" type="doughnut" is3d="1" res="1572" name="doughnut3d" />
+      <chart isNew ="0" id="10" type="semipie" is3d="0" res="8042" name="SemiPie2d" imgname="SemiPie2D" />
+      <chart isNew ="0" id="11" type="semidoughnut" is3d="0" res="8041" name="SemiDoughnut2d" imgname="SemiDoughnut2D" />
+      <chart isNew ="0" id="12" type="spline" is3d="0" res="8043" name="spline" imgname="Spline2D" />
+      <chart isNew ="1" id="13" type="funnel" is3d="0" res="8044" name="funnel" imgname="Funnel"/>
+      <chart isNew ="1" id="14" type="pyramid" is3d="0" res="8045" name="pyramid" imgname="Pyramid"/>
+    </charts>
+  </serie>
+  <serie id="2" type="multi" res="1574">
+    <description>Multi-Series Charts</description>
+    <charts>
+      <chart isNew ="0" id="1" type="column" is3d="0" res="1567" name="MScolumn2D" />
+      <chart isNew ="0" id="2" type="column" is3d="1" res="1567" name="MScolumn3D" />
+      <chart isNew ="0" id="3" type="line" is3d="0" res="1569" name="MSline" imgname="MSline2D" />
+      <chart isNew ="0" id="4" type="bar" is3d="0" res="1570" name="MSbar2d" />
+      <chart isNew ="0" id="5" type="bar" is3d="1" res="1570" name="MSbar3d"/>
+      <chart isNew ="0" id="6" type="area" is3d="0" res="1571" name="MSarea" imgname="MSarea2D" />
+    </charts>
+  </serie>
+  <serie id="3" type="stacked" res="1575" >
+    <description >Stacked Charts</description>
+    <charts>
+      <chart isNew ="0" id="1" type="column" is3d="0" res="1567" name="StackedColumn2D" />
+      <chart isNew ="0" id="2" type="column" is3d="1" res="1567" name="StackedColumn3D" />
+      <chart isNew ="0" id="3" type="bar" is3d="0" res="1570" name="StackedBar2D" />
+      <chart isNew ="0" id="4" type="bar" is3d="1" res="1570" name="StackedBar3D" />
+      <chart isNew ="0" id="5" type="area" is3d="0" res="1571" name="StackedArea2D" />
+    </charts>
+  </serie>
+  <serie id="4" type="other" res="8576" >
+    <description >Other Charts</description>
+    <charts>
+      <chart isNew ="1" id="1" type="combine" is3d="0" res="8519" name="combine" imgname="Combine"/>
+      <chart isNew ="1" id="2" type="circulargauge" is3d="0" res="1844" name="circulargauge" imgname="CircularGauge"/>
+    </charts>
+  </serie>
+</series>

@@ -1,0 +1,1 @@
+UPDATE [RES] SET LANG_00 = 'Score de délivrabilité', LANG_01 ='Derivability score',LANG_02 ='Derivability score',LANG_03 ='Derivability score',LANG_04 ='Derivability score'  WHERE [ResId] = 106051

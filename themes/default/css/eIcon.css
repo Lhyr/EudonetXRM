@@ -1,0 +1,83 @@
+
+img.rIco {
+    background-image: url("../images/Icon/iFilter.png");  
+ }
+
+img.ArrowDown{ background-position: 0 0; width: 9px; height: 5px; } 
+img.ArrowLeft{ background-position: 0 -7px; width: 5px; height: 10px; } 
+img.ArrowRight{ background-position: 0 -19px; width: 5px; height: 10px; } 
+img.ArrowUp{ background-position: 0 -31px; width: 9px; height: 5px; } 
+img.Buzz{ background-position: 0 -38px; width: 16px; height: 23px; } 
+img.Clone{ background-position: 0 -63px; width: 18px; height: 18px; } 
+img.Cut{ background-position: 0 -83px; width: 16px; height: 16px; } 
+img.DblArrowLeft{ background-position: 0 -101px; width: 8px; height: 10px; } 
+img.DblArrowRight{ background-position: 0 -113px; width: 8px; height: 10px; } 
+img.Delete{ background-position: 0 -125px; width: 16px; height: 16px; } 
+img.DropDown{ background-position: 0 -143px; width: 11px; height: 6px; } 
+img.Exclam{ background-position: 0 -151px; width: 32px; height: 32px; } 
+img.Filter{ background-position: -1px 0px; width: 11px; height: 11px; cursor: pointer; } 
+img.Filter:hover{ background-position: -1px -26px; width: 11px; height: 11px; cursor: pointer; } 
+img.FilterEnabled{ background-position: -1px -51px; width: 11px; height: 11px; cursor: pointer; } 
+img.FilterEnabled:hover{ background-position: -1px -26px; height: 11px; cursor: pointer; }  
+img.Flag{ background-position: 0 -237px; width: 8px; height: 10px; } 
+img.MailingWait{ background-position: 0 -249px; width: 220px; height: 19px; } 
+img.MsgCritical{ background-position: 0 -270px; width: 32px; height: 32px; } 
+img.MsgExclam{ background-position: 0 -304px; width: 31px; height: 32px; } 
+img.MsgInfos{ background-position: 0 -338px; width: 32px; height: 32px; } 
+img.MsgQuestion{ background-position: 0 -372px; width: 32px; height: 32px; } 
+img.Picture{ background-position: 0 -406px; width: 14px; height: 14px; } 
+img.Pj{ background-position: 0 -422px; width: 7px; height: 14px; } 
+img.Print{ background-position: 0 -438px; width: 15px; height: 15px; } 
+img.ProgressBar{ background-position: 0 -455px; width: 4px; height: 15px; } 
+img.PuceRond{ background-position: 0 -472px; width: 13px; height: 13px; } 
+img.ScheduleInfo{ background-position: 0 -487px; width: 14px; height: 13px; } 
+img.SmallExclam{ background-position: 0 -502px; width: 20px; height: 21px; } 
+
+
+img.SortAsc{ background-position: -1px -489px; width: 11px; height: 6px; cursor: pointer; } 
+img.SortAscEnabled{ background-position: 0 -533px; width: 11px; height: 6px; cursor: pointer; } 
+img.SortAsc:hover{ background-position: -1px -497px; width: 11px; height: 6px; cursor: pointer; } 
+img.SortDesc{ background-position: -1px -513px; width: 11px; height: 6px; cursor: pointer; } 
+img.SortDescEnabled{ background-position: 0 -557px; width: 11px; height: 6px; cursor: pointer; } 
+img.SortDesc:hover{ background-position: -1px -521px; width: 11px; height: 6px; cursor: pointer; } 
+ 
+img.SumCols{ background-position: -1px -227px; width: 11px; height: 11px; cursor: pointer  ; position: relative; right: 0px; float: right; top: 7px;} 
+img.SumCols:hover{ background-position: -1px 62px; width: 11px; height: 11px; cursor: pointer; } 
+img.SumColsEnabled{ background-position: -1px -227px; width: 11px; height: 11px; cursor: pointer; } 
+img.SumColsEnabled:hover{ background-position: -1px -227px; height: 11px; cursor: pointer; }  
+ 
+
+img.admin{ background-position: 0 -599px; width: 11px; height: 11px; } 
+img.agenda{ background-position: 0 -612px; width: 13px; height: 11px; } 
+img.checkbox{ background-position: 0 -625px; width: 11px; height: 11px; } 
+img.comptage{ background-position: 0 -638px; width: 43px; height: 11px; } 
+img.copy{ background-position: 0 -651px; width: 16px; height: 14px; } 
+img.etape1{ background-position: 0 -667px; width: 100px; height: 16px; } 
+img.etape10{ background-position: 0 -685px; width: 100px; height: 16px; } 
+img.etape2{ background-position: 0 -703px; width: 100px; height: 16px; } 
+img.etape3{ background-position: 0 -721px; width: 100px; height: 16px; } 
+img.etape4{ background-position: 0 -739px; width: 100px; height: 16px; } 
+img.etape5{ background-position: 0 -757px; width: 100px; height: 16px; } 
+img.etape6{ background-position: 0 -775px; width: 100px; height: 16px; } 
+img.etape7{ background-position: 0 -793px; width: 100px; height: 16px; } 
+img.etape8{ background-position: 0 -811px; width: 100px; height: 16px; } 
+img.etape9{ background-position: 0 -829px; width: 100px; height: 16px; } 
+img.f{ background-position: 0 -847px; width: 14px; height: 14px; } 
+img.fNo{ background-position: 0 -863px; width: 14px; height: 14px; } 
+img.justifyrightout{ background-position: 0 -879px; width: 19px; height: 19px; } 
+img.justifyrightover{ background-position: 0 -900px; width: 19px; height: 19px; } 
+img.justifyrightpressed{ background-position: 0 -921px; width: 19px; height: 19px; } 
+img.loading{ background-position: 0 -942px; width: 32px; height: 32px; } 
+img.mail{ background-position: 0 -976px; width: 18px; height: 18px; } 
+img.mail_draft{ background-position: 0 -996px; width: 18px; height: 18px; } 
+img.mail_not_sent{ background-position: 0 -1016px; width: 18px; height: 18px; } 
+img.mail_read{ background-position: 0 -1036px; width: 18px; height: 18px; } 
+img.mail_sent{ background-position: 0 -1056px; width: 18px; height: 18px; } 
+img.paste{ background-position: 0 -1076px; width: 16px; height: 14px; } 
+img.record{ background-position: 0 -1092px; width: 11px; height: 11px; } 
+img.reload{ background-position: 0 -1105px; width: 13px; height: 15px; } 
+img.search{ background-position: 0 -1122px; width: 11px; height: 11px; } 
+img.search{ background-position: 0 -1135px; width: 21px; height: 20px; } 
+img.wait{ background-position: 0 -1157px; width: 32px; height: 32px; }
+
+img.rIco.SumCols { top: unset; } 

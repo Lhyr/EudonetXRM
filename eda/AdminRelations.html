@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Maquette Administrer les droits</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="../Scripts/eTools.js"></script>
+    <link href="../themes/default/css/eudoFont.css" rel="stylesheet" />
+    <link href="../themes/default/css/eMain.css" rel="stylesheet" />
+    <link href="../themes/default/css/eFile.css" rel="stylesheet" />
+    <link href="../themes/default/css/eControl.css" rel="stylesheet" />
+    <link href="../themes/default/css/eButtons.css" rel="stylesheet" />
+    <link href="../themes/default/css/eAdminMenu.css" rel="stylesheet" />
+    
+</head>
+<body class="maquette">
+    <div class="adminModal" id="relationsModal">
+        <header>
+            Administrer les relations en entête
+        </header>
+
+        <div class="adminModalContent">
+            <div class="paramStep active">
+                <span class="stepNum">1</span>
+                <span class="stepTitle">Sélectionner et administrer les préférences de chacune des relations affichées en entête de la fiche ONGLET 3</span>
+            </div>
+            <div class="stepContent">
+                 <div class="adminTableRelation">
+                     <div class="adminTableRelationTitle">
+                         <div class="relationTableName">Onglet parent</div>
+                        <div class="relationOpener">
+                            <div class="openerButton"><span class="icon-chevron-down openerButtonIcon"></span></div>
+                        </div>
+                     </div>
+
+                     <div class="adminTableRelationContent" data-active="0">
+                         <p>
+                             <a class="rChk chk" dis="0" chk="0" align="top" onclick=" if(!isDeferred(this)){ chgChk(this); ; return false;}" title="Lier
+" href="#" style="border-style:thin;"><span class="icon-check-square"></span><span>Lier la fiche ONGLET 3 à l'onglet parent 
+    </span></a> &nbsp;
+    <select>
+        <option>Sélectionner un onglet parent</option>
+    </select> 
+    &nbsp;
+    Puis, définir les caractéristiques de cette liaison :
+                         </p>
+
+                         <div class="margin25px">
+                            <p>Lors de la création ou la modification d'une fiche ONGLET 3 :</p>
+                            <ul class="relationChoices">
+                                <li><span class="icon-circle radioBullet"></span>La liaison avec une fiche ONGLET PARENT est facultative</li>
+                                <li><span class="icon-circle-o radioBullet"></span>La liaison avec une fiche ONGLET PARENT est obligatoire</li>
+                            </ul>
+                            <p>Lors de l'ouverture de la fiche dans une fenêtre détachée :</p>
+                            <ul class="relationChoices">
+                                <li><span class="icon-circle radioBullet"></span>La liaison avec la fiche ONGLET PARENT est visible</li>
+                                <li><span class="icon-circle-o radioBullet"></span>La liaison avec une fiche ONGLET PARENT est masquée</li>
+                            </ul>
+                            <p>Lors de la création de la fiche ONGLET 3 en signet et depuis un autre onglet parent de ONGLET 3 :</p>
+                            <ul class="relationChoices">
+                                <li><span class="icon-circle radioBullet"></span>La liaison vers la fiche ONGLET PARENT parente de cet autre onglet est reprise</li>
+                                <li><span class="icon-circle-o radioBullet"></span>La liaison vers la fiche ONGLET PARENT parente de cet autre onglet n'est pas reprise</li>
+                            </ul>
+                         </div>
+
+                        <p class="actionLink"><span class="icon-cog"></span>Activer les filtres SQL avancés sur les fiches ONGLET 3 lorsqu'elles sont affichées en signet de ONGLET PARENT.</p>
+                     </div>
+
+                </div>              
+
+                <div class="adminTableRelation">
+
+                    <div class="adminTableRelationTitle">
+                        <div class="relationTableName">Contacts</div>
+                        <div class="relationOpener">
+                            <div class="openerButton"><span class="icon-chevron-down openerButtonIcon"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="adminTableRelationContent" data-active="0">
+                        <a class="rChk chk" dis="0" chk="0" align="top" onclick=" if(!isDeferred(this)){ chgChk(this); ; return false;}" title="Lier
+" href="#" style="border-style:thin;"><span class="icon-check-square"></span><span>Lier la fiche ONGLET 3 à l'onglet CONTACTS </span></a>
+                    </div>
+
+                </div>
+
+                <div class="adminTableRelation">
+
+                    <div class="adminTableRelationTitle">
+                        <div class="relationTableName">Sociétés</div>
+                        <div class="relationOpener">
+                            <div class="openerButton"><span class="icon-chevron-down openerButtonIcon"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="adminTableRelationContent" data-active="0">
+                        <a class="rChk chk" dis="0" chk="0" align="top" onclick=" if(!isDeferred(this)){ chgChk(this); ; return false;}" title="Lier
+" href="#" style="border-style:thin;"><span class="icon-check-square"></span><span>Lier la fiche ONGLET 3 à l'onglet SOCIETES </span></a>
+                    </div>
+                </div>
+ 
+            </div>
+            <div class="paramStep">
+                <span class="stepNum">2</span>
+                <span class="stepTitle">Sélectionner les rubriques affichées de chacune des relations définies en entête de la fiche ONGLET 3</span>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script type="text/javascript">
+        // Evenements au clic sur les titres
+        var titles = document.getElementsByClassName("adminTableRelationTitle");
+        for (var i = 0; i < titles.length; i++) {
+            titles[i].addEventListener("click", function () {
+                var content = this.parentElement.querySelector(".adminTableRelationContent");
+                var icon = this.querySelector(".openerButtonIcon");
+                var active = getAttributeValue(content, "data-active");
+                if (active == "1") {
+                    setAttributeValue(content, "data-active", "0");
+                    eTools.SetClassName(icon, "icon-chevron-down");
+                    eTools.RemoveClassName(icon, "icon-chevron-up");
+                }
+                else {
+                    setAttributeValue(content, "data-active", "1");
+                    eTools.SetClassName(icon, "icon-chevron-up");
+                    eTools.RemoveClassName(icon, "icon-chevron-down");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/*CSS spécifique à la fenêtre de traitements */
+
+body {
+}
+
+li {
+    list-style-type: none;
+    height: 25px;
+    line-height: 20px;
+    display: block;
+}
+
+    li.trt_Opt1 {
+        margin-left: 20px;
+    }
+
+    li.trt_Opt2 {
+        margin-left: 40px;
+        position: relative;
+    }
+
+.trt_Opt2 > div {
+    display: inline-block;
+    float: right;
+    padding-right: 38px;
+}
+
+.trt_Opt2 div input {
+    border: 1px solid #A9A9A9;
+    background-color: white;
+}
+
+.trt_btn {
+    width: 30px !important;
+    right: 0;
+    display: inline-block;
+    position: absolute;
+    line-height: 19px;
+}
+
+li.trt_Opt3 {
+    margin-left: 60px;
+}
+
+li.trt_Header {
+    font-weight: bold;
+}
+
+li.trt_SubHeader {
+    font-style: italic;
+}
+
+#ulActions input[type=text], #ulActions select {
+    font-family: Verdana, Calibri;
+}
+
+#ulActions select {
+    width: 160px;
+}
+
+select.selectActionsNew, select.selectActionsUpdate, select.selectActionsUpdateFromExisting, input.trt_UpdWithNew {
+    margin-left: 60px; /* alignement des contrôles de ce type par rapport à la droite de la fenêtre */
+}
+
+input.trt_RndCnt {
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+select.selectActionsNew, select.selectActionsUpdate, select.selectActionsUpdateFromExisting {
+    position: absolute;
+    right: 38px; /* alignement des contrôles de ce type par rapport à la droite de la fenêtre */
+    width: 150px;
+    min-width: 140px;
+    float: left;
+}
+
+.trt_UpdWithNew_Date {
+    width: 156px;
+}
+
+.trt_UpdWithNew_DateFix {
+    height: 15px;
+    width: 117px !important;
+}
+
+input.trt_UpdWithNew {
+    height: 15px;
+    width: 156px !important;
+}
+
+.trt_UpdWithNew_datedeacl {
+    height: 20px;
+    width: 110px !important;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: -2px;
+}
+
+
+.btn {
+    width: 30px !important;
+    height: 21px;
+    line-height: 21px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: 1px 1px;
+}
+
+.LNKDATEbtn {
+    background-image: url(../images/iFile/iFileSprite.png); /* TODO: EudoFont */
+    background-position: 7px -927px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+
+    .LNKDATEbtn:hover {
+        background-position: 7px -966px;
+    }
+
+.trt_UpdWithNew_datedeaclNpt {
+    margin-right: 7px;
+}
+
+.trt_Opt2 div input.trt_UpdWithNew_datedeaclNpt {
+    width: 40px;
+    margin-left: 0;
+    height: 16px;
+    padding: 1px 0;
+    float: left;
+}
+
+.trt_UpdWithNew_datedeac1 {
+    margin-right: 38px;
+    width: 120px;
+}
+
+.trt_UpdWithNew_bit {
+    position: absolute;
+    right: 38px; /* alignement des contrôles de ce type par rapport à la droite de la fenêtre */
+    width: 150px;
+    min-width: 140px;
+    float: left;
+}
+
+.trt_UpdWithNew_bit_Dupli {
+    position: absolute;
+    right: 38px; /* alignement des contrôles de ce type par rapport à la droite de la fenêtre */
+    width: 320px;
+    min-width: 140px;
+    float: left;
+}

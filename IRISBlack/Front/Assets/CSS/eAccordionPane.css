@@ -1,0 +1,157 @@
+﻿/**Bouton de l'accordeon */
+.clsBtnWrap {
+    white-space: normal;
+}
+
+/** le detail dans son ensemble.*/
+
+details.clsDetailIndex {
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+
+.clsDetailIndex[open] {
+    background-color: #f8f8f8;
+    z-index: 5;
+    border: 1px solid #eaeaea;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    position: relative;
+}
+
+    .clsDetailIndex[open] .expCagalogColor {
+        visibility : hidden
+    }
+
+    .clsDetailIndex[open] .clsBtnWrap {
+        padding: 0;
+        margin: 0 -1px 0 0px;
+        width : 100%
+    }
+
+        .clsDetailIndex[open] .clsBtnWrap button {
+            border: none;
+            margin: 0px 0px -3px 0px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: black !important;
+            border-color: #e4e4e4 !important;
+            width: 100% !important;
+            background: url(../../../../themes/default/images/Store/btn-grey-triangle-bg.png) left top no-repeat !important;
+            opacity: 1;
+            transition: background 250ms;
+            background-color: #e8e8e8 !important;
+            height: inherit;
+        }
+
+.read-only .clsDetailIndex[open] .clsBtnWrap button {
+    color: #777777c3 !important;
+    cursor : not-allowed;
+}
+
+
+/** Pour que les éléments du catalogue s'affichent
+  * correctement dans les summary. */
+.clsCatalogSummary {
+    display: inline-flex;
+    align-items:flex-end;
+    max-height: var(--size-25);
+    overflow: hidden !important;
+}
+
+.clsDetailIndex[open] .clsCatFileMult {
+    max-height: initial;
+    min-height: auto;
+    width: 95%;
+}
+
+
+/** Pour chaque li, on met des ellipses si trop grand.*/
+.clsEltSummary {
+    position: relative;
+    display: block !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-height: var(--size-20);
+    margin-right: 4px !important;
+    padding:0.125rem var(--size-5) !important;
+    text-indent: var(--textIndentStart);
+    line-height:24px;
+}
+
+/** La petite croix pour fermer l'élément. */
+.clsEltSummaryCross {
+    text-indent: 0px !important;
+    margin-left: 5px;
+}
+
+/** #3834 - Pour chaque li en lecture seule, sans croix */
+.clsEltSummaryReadOnly {
+	padding: 2px 5px 2px 5px !important;
+}
+
+/* flêche de détails. */
+summary::-webkit-details-marker {
+    display: none
+}
+
+summary:after {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f107';
+    top: 3px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
+
+details[open] summary:after {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f106';
+    top: 1px;
+    position: absolute;
+    right: 3px;
+    cursor: pointer;
+}
+
+/* Numbers */
+details .expCagalogColor {
+    top: 7px;
+    position: relative;
+    left: 0;
+    font-size: 12px;
+    width: 5%;
+}
+
+/* display flex afin d'obliger les élément ( valeurs catalogues et indicateur numériques) à être sur la même ligne.
+    On met un !important pour surpasser l'important existant sur ficheGrid.css .multiRenderer */
+
+details .clsCatFileMult.form-control.input-line.fname {
+    padding-right: 0 !important;
+    width: 95%;
+    display:inline-flex !important;
+}
+
+/* #3832 et #4012 - Ajout d'un retour à la ligne (flex-wrap) pour autoriser l'affichage des chips de valeurs catalogues multiples sur plusieurs lignes lorsqu'on développe (déroule) le catalogue */
+details .clsCatFileMult.form-control.input-line.fname ul.clsCatalogSummary {
+	flex-wrap: wrap;
+}

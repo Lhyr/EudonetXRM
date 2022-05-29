@@ -1,0 +1,64 @@
+input {
+    text-indent: 2px;
+    height: auto;
+    width: 100%;
+    border: none;
+    border-bottom: 1px dashed #b6b6b6;
+    font-size: 8pt;
+    text-overflow: ellipsis;
+    padding: 1px;
+    margin: 0;
+    border-radius: 0;
+}
+
+
+    input[type="radio"] {
+        width: 16px;
+        vertical-align: -2px;
+        border: 0px;
+    }
+
+/* Couleur de la valeur */
+.useValueColor input {
+    color: inherit;
+}
+
+td.LNKOPENMEMOPOPUPbtn {
+    vertical-align: top;
+}
+
+
+.CalHour {
+    height: 16px;
+}
+
+/* Bouton de validation mode Création */
+
+.BtnValTop {
+    position: absolute;
+    display: inline-block; /*border: 1px solid blue;*/
+    margin-top: 15px;
+    margin-left: 45%;
+}
+
+.BtnValBottom {
+    position: absolute;
+    display: inline-block; /*border: 1px solid blue;*/
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 45%;
+}
+
+/* Bouton de validation mode Création - fin */
+
+
+/* Champs obligatoires */
+/*
+.mandatory_Label
+{
+    color: #bb1515;
+} */
+td.mandatory input {
+    border-color: #BB1515;
+}
+

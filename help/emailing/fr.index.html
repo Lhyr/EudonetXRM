@@ -1,0 +1,750 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/eudoFont.css">
+    </head>
+    <body>
+        <div class="main-content">
+            <header>
+                <div class="content-header">
+                    <h2>Création d'un email de masse</h2>
+                    <h3>Editeur de mail</h3>
+                </div>
+                <div class="callout-info">
+                    <p class="title">Bonnes pratiques</p>
+                    <ul class="content-callout-info">
+                        <li>La largeur maximum d'un email doit être comprise entre 600px et 800px. Cela permettra d'assurer un meilleur affichage de l'email sur les petits écrans et lors de la prévisualisation de l'email dans les messageries.</li>
+                        <li>Eviter les éléments HTML complexes et préférez une structure en grille plutôt que des éléments avec des positions fixe ou relative qui risquent de ne pas se positionner correctement sur tous les clients de messagerie.</li>
+                        <li>La plupart des messageries bloquent par défaut l'affichage des images. Il est donc nécessaire de prévoir des textes de remplacements pour les images ("Alt") et éviter d'utiliser une image de fond pour l'email.</li>
+                        <li>Pour améliorer la délivrabilité et l'affichage de l'email, il est conseillé de ne pas avoir qu'une seule image contenant toutes les informations ni d'avoir que des images sans texte dans l'email. Le ratio idéal est d'avoir 60% de texte et 40% d'image.</li>
+                        <li>Préférez l'utilisation de Police de caractères compatibles avec un maximum de messagerie comme Arial, Verdana, Georgia ou Times New Roman.</li>
+
+                        <li>Evitez le contenu nécessitant du Flash ou du Javascript qui sont mal supportés par les messageries et optez pour des .gif animés à la place.</li>
+                        <li>Utilisez des requêtes media (media-query) pour améliorer la visibilité et l'accessibilité sur les petits écrans et les mobiles, en réorganisant les images et les textes, en augmentant la taille du texte et des boutons pour faciliter leur lecture et le clic depuis un mobile. En construisant votre email à partir des blocs que nous vous proposons, vous bénéficiez automatiquement de ces requêtes média.</li>
+                        <li>
+                            Tester votre email avant l'envoi de votre campagne :
+                            <ul class="list-text-indent">
+                                <li>Tester l'affichage de l'email sur différentes messageries / différents écrans / en version mobile en utilisant la fonction "Envoyer un email de Test"</li>
+                                <li>Utiliser des services comme <a href="www.mail-tester.com">www.mail-tester.com</a> pour obtenir une note pour votre email prenant en compte plusieurs paramètres comme la validité des liens présents, les informations d'envoi, la proportion images/textes.</li>
+                                <li>Tester votre email, en vous sélectionnant comme unique destinataire de votre campagne d'email.</li>
+                            </ul>
+                        </li>
+
+                        <li>Tester encore une dernière fois votre email avant de l'envoyer.</li>
+                    </ul>
+                </div>
+                <div class="callout callout-danger">
+                    <p class="title">Remarque</p>
+                    <p>Pour bénéficier de toutes les fonctionnalités de création d’email, nous vous invitons à utiliser les navigateurs Chrome, Firefox ou Safari.</p>
+                </div>
+                <div class="callout callout-danger">
+                    <p class="title">Remarque</p>
+                    <p>Lorsque vous saisissez une couleur en hexadécimal, vérifiez à bien préfixer du "#" afin que votre couleur soit bien interprétée par tous les outils de messagerie.</p>
+                </div>
+            </header>
+            <div class="content-body">
+                <div class="steps">
+                    <h3>Etape 1 : Choix du modèle</h3>
+                    <div class="content-image">
+                        <img src="lib/NouvelElement3.png">
+                    </div>
+
+                    <ul class="list-body">
+                        <h4>Vous pouvez choisir un modèle parmi :</h4>
+                        <li>Vos modèles : cette liste contient les emails que vous avez créés et ceux que les autres utilisateurs vous ont partagés.</li>
+                        <li>Modèles personnalisables : vous y trouvez une liste de modèles responsives que nous avons mis à votre disposition en espérant que vous y trouverez votre inspiration.</li>
+                    </ul>
+                    <div class="content-image-hidden">
+                        <img src="lib/NouvelElement4.png">
+                    </div>
+					<ul class="list-body">
+                        <li>Courriel simple : choisissez cette option si vous souhaitez réaliser un courriel simple ou si vous souhaitez repartir d'une page blanche.</li>
+                    </ul>
+                    <div class="callout callout-danger">
+                        <p class="title">Remarque</p>
+                        <p>Le modèle <span class="info">"Courriel simple" </span> a une largeur de <code>680px</code>  et est aligné à gauche et le modèle <span class="info"> "Courriel centré" </span> a un corps d'une largeur de <code>680px</code> centré.</p>
+                    </div>
+
+                    <div class="callout callout-success">
+                        <p class="title">Astuce</p>
+                        <p>Pour démarrer la création d'un nouveau courriel centré, choisissez le <span class="info">"Courriel centré" </span> depuis la liste des modèles personnalisables.</p>
+                    </div>
+                </div>
+
+                <div class="steps">
+                    <h3>Etape 2 : Création graphique</h3>
+                    <div class="content-image">
+                        <img src="lib/NouvelElement5.png">
+                    </div>
+                    <div id="content-little-img" class="content-image">
+                        <div class="content-image-center">
+                            <h4>
+                                A cette étape, vous allez pouvoir construire votre email responsive en glissant/déposant différents blocs de contenu.
+                                Les blocs sont disponibles dans l'onglet Blocs du menu droit
+                            </h4>
+                            <div class="desc-image">
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement6.png">
+                                    <span class="title-little-img">Bloc "Texte"</span>
+                                    <!--<span class="desc-little-img">Déposer une zone de texte éditable</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement11.png">
+                                    <span class="title-little-img">Bloc "Image"</span>
+                                    <!--<span class="desc-little-img">Déposer une image</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement18.png">
+                                    <span class="title-little-img">Bloc "Bouton"</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement26.png">
+                                    <span class="title-little-img">Bloc "Séparateur"</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement103.jpg">
+                                    <span class="title-little-img">Bloc "Article"</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement36.png">
+                                    <span class="title-little-img">Bloc "1 Colonne"</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement37.png">
+                                    <span class="title-little-img">Bloc "2 Colonnes"</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement39.png">
+                                    <span class="title-little-img">Bloc "2 Colonnes 30% / 70%"</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement95.png">
+                                    <span class="title-little-img">Bloc "Entête"</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement96.png">
+                                    <span class="title-little-img">Bloc "Corps"</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                                <div class="little-img">
+                                    <img src="lib/NouvelElement97.png">
+                                    <span class="title-little-img">Bloc "Pied de page"</span>
+                                    <!--<span class="desc-little-img">Salut les amies ce bloques sert a ecris du texte dedans"</span>-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-image-double">
+                        <h4 class="titleH4">Le bloc "Texte"</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <h4>Vous pouvez faire glisser un bloc "Texte" directement dans votre email afin de pouvoir ensuite le modifier.</h4>
+                                <img src="lib/NouvelElement8.png">
+                            </div>
+                        </div>
+                        <div class="content-image ">
+                            <div class="content-image-double-left">
+                                <h4>Vous pourrez ainsi éditer directement son contenu en utilisant les options de mise en page qui apparaissent dans la barre en haut de votre email.</h4>
+                                <img src="lib/NouvelElement9.png">
+                            </div>
+                        </div>
+                        <div class="callout callout-danger inner-info">
+                            <p class="title">Remarque</p>
+                            <p>Pour Modifier la hauteur du bloc Texte cliquez dans l'espace vide à l'extérieur du Texte mais dans l'intérieur du Bloc Texte le menu droit affiche alors les propriétés du bloc, ouvrez le chapitre Dimension puis modifier la propriété Hauteur</p>
+                        </div>
+                        <div class="callout callout-danger inner-info">
+                            <p class="title">Remarque </p>
+                            <p>Pour modifier les marges intérieurs du bloc Texte cliquez dans la zone de texte, le menu droit affiche alors les propriétés du bouton, dans le chapitre Dimension puis modifier la propriété Marge intérieur</p>
+                        </div>
+                    </div>
+
+                    <div class="content-image-double">
+                        <h4 class="titleH4">Le bloc "Image"</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <h4>Vous pouvez faire glisser un bloc "Image" directement dans votre email afin de pouvoir ensuite le modifier.</h4>
+                                <img src="lib/NouvelElement10.png">
+                            </div>
+                        </div>
+                        <div class="content-image ">
+                            <div class="content-image-double-left">
+                                <h4>Vous pourrez double cliquer sur l'image par défaut pour ouvrir le menu d'édition et sélectionner votre image.</h4>
+                                <img src="lib/NouvelElement12.png">
+                            </div>
+                        </div>
+                        <div class="callout callout-success inner-info">
+                            <p class="title">Astuce</p>
+                            <p>Un texte de remplacement peut-être défini dans les paramètres de l'image (Double-clic sur l'image). Il est fortement conseillé de définir un texte de remplacement ("Alt" ) sur vos images, il s'agit d'une brève description des images de votre email qui s'affiche lorsque les images ne sont pas accessibles. Certaines messageries désactivent par défaut les images, le texte de remplacement donne ainsi une indication sur la valeur de l'image à votre destinataire. Ce texte de remplacement est également utile pour l'accessibilité de votre email pour les destinataires qui utilisent un logiciel de lecture d'écran. De plus, la présence de texte de remplacement fait partie des bonnes pratiques pour la délivrabilité de votre email.</p>
+                        </div>
+
+                        <div class="callout callout-success inner-info">
+                            <p class="title">Astuce</p>
+                            <p class="txtInner">Vous pouvez utiliser le bouton ci-dessous pour visualiser le rendu de votre email lorsque les images ne sont pas accessibles</p>
+                            <img style="max-width: 110px;" src="lib/NouvelElement17.png" alt="">
+                        </div>
+
+                        <div class="callout callout-success inner-info">
+                            <p class="title">Astuce</p>
+                            <p class="txtInner">Il est <b>fortement</b> conseillé d'utiliser des images ayant déjà les dimensions que vous souhaitez pour votre email. Vous pouvez forcer la largeur et la hauteur dans les paramètres de l'image (Double-clic sur l'image) mais certaines messageries ne tiennent pas compte de ces paramètres.</p>
+                            <img style="max-width: 110px;" src="lib/NouvelElement13.png" alt="">
+                        </div>
+                    </div>
+
+
+
+                    <div id="bloc_bouton" class="content-image-double">
+                        <h4 class="titleH4">Le bloc "Bouton"</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <div class="blocTitle-callout">
+                                    <h4>Le bloc "Bouton" vous permet d'ajouter un bouton d'action dans votre email. Vous pouvez faire glisser un bloc "Bouton" dans votre email.</h4>
+                                    <div class="callout callout-danger">
+                                        <p class="title">Remarque</p>
+                                        <p class="txtInner">les liens sont définis à l'étape 3 - Contenus et liens.</p>
+                                    </div>
+                                </div>
+                                <img src="lib/NouvelElement8.png">
+                            </div>
+                        </div>
+                        <div class="content-image ">
+                            <div class="content-image-double-left">
+                                <h4>Un bouton avec une mise en forme par défaut s'affiche.</h4>
+                                <img src="lib/NouvelElement20.png">
+                            </div>
+                        </div>
+                        <div class="content-image-50">
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Changer la couleur du bouton</h4>
+                                    <p>Sélectionner le bouton en cliquant dans la zone blanche à l'intérieur du bouton. Le menu droit affiche alors les propriétés du bouton, dans le chapitre <span class="info">"Couleur et bordure"</span>, l'option <span class="info">"Couleur de fond"</span> vous permet alors de changer la couleur de fond du bouton.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement22.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">Bords arrondis</p>
+                                    <p>Cela vous permet de définir la courbure des angles du bouton. Cette propriété n'est pas compatible avec la messagerie Outlook.</p>
+                                </div>
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">Bordure</p>
+                                    <p>Cela vous permet de définir la largeur, le style et la couleur des bordures. (Remarque : pour enlever les bordures du bouton, choisir le Style "none").</p>
+                                </div>
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">Couleur du texte du bouton</p>
+                                    <p>Cliquez dans la zone de texte à l'intérieur du bouton, pour éditer son contenu : une barre d'outils de mise en page s'affiche en haut de l'email et vous permet de mettre en page le texte.</p>
+                                </div>
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">Largeur du bouton</p>
+                                    <p>Sélectionner le bouton en cliquant dans la zone blanche à l'intérieur du bouton, le menu droit affiche alors les propriétés du bouton. Ouvrez le chapitre Dimension puis modifier la propriété largeur</p>
+                                </div>
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">hauteur du bouton</p>
+                                    <p>Sélectionner le bouton en cliquant dans la zone blanche à l'intérieur du bouton, le menu droit affiche alors les propriétés du bouton. Ouvrez le chapitre Dimension puis modifier les propriétés marges Haute et Basse</p>
+                                </div>
+                                <div class="callout callout-info inner-info">
+                                    <p class="title">hauteur du bloc Bouton</p>
+                                    <p>Cliquez dans l'espace vide à l'extérieur du bouton mais dans l'intérieur du Bloc Bouton, le menu droit affiche alors les propriétés du bouton. Ouvrez le chapitre Dimension puis modifier la propriété Hauteur</p>
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Changer les bordures du bouton</h4>
+                                    <p>Sélectionner le bouton en cliquant dans la zone blanche à l'intérieur du bouton, le menu droit affiche alors les propriétés du bouton, dans le chapitre Couleur et bordure, les options suivantes vous permettent de modifier l'aspect des bordures du boutons.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement24.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="separateur" class="content-image-double">
+                        <h4 class="titleH4">Le bloc "Séparateur"</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <div class="blocTitle-callout">
+                                    <h4>Le bloc "Séparateur" vous permet de diviser visuellement le contenu de votre email.</h4>
+                                </div>
+                                <img src="lib/NouvelElement29.png">
+                            </div>
+                        </div>
+                        <div class="content-image-50">
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Changer la hauteur du séparateur</h4>
+                                    <p>Sélectionnez le séparateur en cliquant dessus, le menu droit affiche alors les propriétés du séparateur. Dans le chapitre Dimension et marge, l'option Hauteur (par défaut à 5px) vous permet de modifier la hauteur du séparateur.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement31.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Changer la couleur du séparateur</h4>
+                                    <p>Sélectionnez le séparateur en cliquant dessus, le menu droit affiche alors les propriétés du séparateur. Dans le chapitre Couleur et bordure, l'option Couleur de fond vous permet de changer la couleur de fond du bouton.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement22.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Changer les marges du séparateur</h4>
+                                    <p>Sélectionner le séparateur en cliquant dessus, puis ouvrez le chapitre Dimension et marge. En remontant ensuite à l'élément HTML ayant une marge haute de 5px par défaut, vous pourrez modifier les marges haute et basse de cet élément HTML.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement31.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article" class="content-image-double">
+                        <h4 class="titleH4">Le bloc "Article"</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <div class="blocTitle-callout">
+                                    <h4>Le bloc Article permet d'ajouter à votre email un ensemble composé d'une image, d'un titre, d'une zone de texte et d'un bouton, chaque élément pouvant être modifié comme s'il s'agissait d'un bloc unitaire</h4>
+                                </div>
+                                <img src="lib/NouvelElement35.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="colonnes" class="content-image-double">
+                        <h4 class="titleH4">Les blocs "Colonne"</h4>
+                        <div class="content-image">
+                            <div class="content-image-center">
+                                <div class="desc-image">
+                                    <div class="little-img">
+                                        <img src="lib/NouvelElement36.png">
+                                        <span class="title-little-img">Bloc "1 Colonne"</span>
+                                        <span class="desc-little-img">Il vous permet de créer une zone libre dans votre email où vous pourrez définir une couleur de fond pour y déposer ensuite d'autres blocs (Image, Texte, Article...)</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/NouvelElement37.png">
+                                        <span class="title-little-img">Bloc "2 Colonnes"</span>
+                                        <span class="desc-little-img">Il vous permet d'avoir 2 zones sur la même ligne pour y déposer vos blocs.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/NouvelElement39.png">
+                                        <span class="title-little-img">Bloc "2 Colonnes 30% / 70%"</span>
+                                        <span class="desc-little-img">Il vous permet d'avoir 2 zones sur la même ligne pour y déposer vos blocs avec une colonne de gauche plus petite que celle de droite.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="callout callout-success">
+                            <p class="title">Astuce</p>
+                            <p class="txtInner">Pour les blocs "2 colonnes" si vous souhaitez que vos éléments soient alignés verticalement, définissez pour chaque élément une hauteur identique correspondant au plus grand des 2 éléments.</p>
+                        </div>
+                    </div>
+
+                    <div id="contentBlocs" class="content-image-double">
+                        <h4 class="titleH4">"Les Blocs de mise en page"</h4>
+                        <div class="content-image">
+                            <div class="content-image-center">
+                                <div class="desc-image">
+                                    <div class="little-img">
+                                        <img src="lib/NouvelElement95.png">
+                                        <span class="title-little-img">Bloc "Entête"</span>
+                                        <span class="desc-little-img">Il contient un lien de visualisation.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/NouvelElement96.png">
+                                        <span class="title-little-img">Bloc "Corps"</span>
+                                        <span class="desc-little-img">Il contient un bloc "Texte" à modifier.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/NouvelElement97.png">
+                                        <span class="title-little-img">Bloc "Pied de page"</span>
+                                        <span class="desc-little-img">Il contient sur la partie gauche les coordonnées à personnaliser, sur la partie droite les informations  de liens et de réseaux sociaux et en dessous, le lien de  gestion des abonnements. Vos liens personnalisés vers les réseaux sociaux sont à renseigner à l'étape "Contenu et liens".</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="callout callout-success inner-info">
+                            <p class="title">Astuce</p>
+                            <p class="txtInner">Sélectionner la cellule centrale et changer le paramètre "Largeur" du menu "Dimensions et marges" pour changer la largeur du bloc intérieur qui est par défaut à "680px".</p>
+                            <img style="width: auto;max-width: 1280px;" src="lib/NouvelElement99.jpg" alt="">
+                        </div>
+                        <div class="callout callout-success">
+                            <p class="title">Astuce</p>
+                            <p class="txtInner">Sélectionner la cellule de fond et changer le paramètre "Couleur de fond" du menu "Couleur et Bordure" pour changer la couleur de fond de ce bloc, cela permet d'avoir une couleur de fond global pour l'email et une couleur différente pour ce bloc uniquement.</p>
+                        </div>
+
+                        <div class="callout callout-success inner-info">
+                            <p class="title">Astuce</p>
+                            <p class="txtInner">Dans le bloc "Pied de page" vous pouvez retirer un réseau social, en sélectionnant la cellule et en cliquant sur le bouton "Supprimer".</p>
+                            <img style="width: auto;max-width: 370px;" src="lib/NouvelElement98.png" alt="">
+                            <p class="txtInner">Vous pouvez également remplacer l'un des réseaux sociaux proposé en double cliquant sur l'image pour la remplacer et changer le nom du lien.</p>
+                        </div>
+                    </div>
+
+                    <div id="bodyBackground" class="content-image-double">
+                        <h4 class="titleH4">Changer la couleur de fond de l'email</h4>
+                        <div class="content-image-50">
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Selection du fond</h4>
+                                    <p>Cliquez dans la zone vide autour de votre email de façon à sélectionner le bloc "Body" (son nom s'affiche en haut à gauche de l'éditeur d'email).</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement59.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Changer le fond du mail</h4>
+                                    <p>Sélectionnez la couleur de fond dans le chapitre <span class="info">"Couleur et bordure"</span> du menu droit.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement57.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="autreFonctionnalites" class="content-image-double">
+                        <h4 class="titleH4">Les autres fonctionnalités</h4>
+                        <div class="content-image-first">
+                            <img src="lib/NouvelElement43.png">
+                        </div>
+                        <div class="content-image">
+                            <div class="content-image-center">
+                                <div class="desc-image">
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/1.png">
+                                        <span class="title-little-img">Affichage des contours</span>
+                                        <span class="desc-little-img">Activer/désactiver l'affichage des contours des éléments HTML. Cette option est activée par défaut afin de vous permettre de positionner plus facilement vos blocs.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/2.png">
+                                        <span class="title-little-img">Retour</span>
+                                        <span class="desc-little-img">Annuler les dernières modifications effectués.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/3.png">
+                                        <span class="title-little-img">Rétablir</span>
+                                        <span class="desc-little-img">Rétablir les dernières modifications effectués.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/4.png">
+                                        <span class="title-little-img">Visualiser / Editer / Remplacer</span>
+                                        <span class="desc-little-img">Vous pouvez utiliser ce bouton pour visualiser/éditer/remplacer le code source de votre email</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/5.png">
+                                        <span class="title-little-img">Supprimer</span>
+                                        <span class="desc-little-img">Supprime le contenu de l'éditeur d'email</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/6.png">
+                                        <span class="title-little-img">Prévisualisation ouvert</span>
+                                        <span class="desc-little-img">Permet de prévisualiser votre email en plein écran</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/12.png">
+                                        <span class="title-little-img">Prévisualisation fermer</span>
+                                        <span class="desc-little-img">Ce bouton ce trouve en haut à gauche de la fenêtre pour revenir en mode édition</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/7.png">
+                                        <span class="title-little-img">Prévisualisation sans image</span>
+                                        <span class="desc-little-img">Permet de prévisualiser le rendu de votre email lorsque les images ne sont pas accessibles</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/8.png">
+                                        <span class="title-little-img">L'aide</span>
+                                        <span class="desc-little-img">Permet d'accéder a la documentation</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/9.png">
+                                        <span class="title-little-img">Prévisualisation ordinateur</span>
+                                        <span class="desc-little-img">Prévisualiser votre email en mode Bureau.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/10.png">
+                                        <span class="title-little-img">Prévisualisation tablette</span>
+                                        <span class="desc-little-img">Prévisualiser votre email en mode tablette.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/11.png">
+                                        <span class="title-little-img">Prévisualisation mobile</span>
+                                        <span class="desc-little-img">Prévisualiser votre email en mode mobile.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="callout callout-danger">
+                            <p class="title">Remarque</p>
+                            <p class="txtInner">Les propriétés CSS sur le body ( body{} ) ne sont pas prises en charge par l'éditeur d'email.</p>
+                        </div>
+
+                        <div class="callout callout-danger">
+                            <p class="title">Remarque</p>
+                            <p class="txtInner">
+                                Le CSS présent dans la source de votre email est passé en inline. Certaines boites de messagerie ne tiennent pas compte du code CSS définis dans les balises &lt;style&gt; de votre code , c'est pourquoi nous transformons votre code CSS en inline afin de rendre l'affichage de votre code plus précis dans les différentes boites de messagerie.
+                            </p>
+                        </div>
+
+                        <div class="callout callout-danger">
+                            <p class="title">Remarque</p>
+                            <p class="txtInner"> Pour modifier la feuille de style CSS, vous pouvez ouvrez le code .CSS de votre email via le bouton "CSS" à l'étape "Contenus et liens"</p>
+                        </div>
+                    </div>
+
+
+                    <div id="selectHTML" class="content-image-double">
+                        <h4 class="titleH4">Les options disponibles sur un élément HTML sélectionné</h4>
+                        <div class="content-image-first">
+                            <img src="lib/grapesJS/13.png">
+                        </div>
+                        <div class="content-image">
+                            <div class="content-image-center">
+                                <div class="desc-image">
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/14.png">
+                                        <span class="title-little-img">Hiérarchie  des elements</span>
+                                        <span class="desc-little-img">Remonter à l'élément HTML hiérarchiquement supérieur.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/15.png">
+                                        <span class="title-little-img">Déplacement</span>
+                                        <span class="desc-little-img">Déplacer l'élément HTML sélectionné et son contenu (Attention, il faut remonter au bon niveau de la structure HTML pour déplacer la table et non juste la cellule ou la ligne).</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/16.png">
+                                        <span class="title-little-img">Dupliquer</span>
+                                        <span class="desc-little-img">Duplique l'élément HTML sélectionné et son contenu (Attention, il faut remonter au bon niveau de la structure HTML pour dupliquer la table et non juste la cellule ou la ligne).</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/17.png">
+                                        <span class="title-little-img">Supprimer</span>
+                                        <span class="desc-little-img">Supprime l'élément HTML sélectionné et son contenu (Attention, il faut remonter au bon niveau de la structure HTML pour supprimer la table et non juste la cellule ou la ligne).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="traitement" class="content-image-double">
+                        <h4 class="titleH4">Autres opérations</h4>
+                        <div class="content-image-50">
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Envoyer un email de test</h4>
+                                    <p>Cette option est disponible àl'étape "2 : Création graphique" et à l'étape "3 : Contenus et liens". Elle vous permet d'envoyer un email de test à votre adresse ou à l'adresse de votre choix afin de tester le rendu de votre email sur différentes messageries et différents supports.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement86.png" alt="">
+                                </div>
+                                <div class="callout callout-danger">
+                                    <p class="title">Remarque</p>
+                                    <p class="txtInner">Les liens de visualisation et de désinscription/gestion des abonnements ne sont pas fonctionnels dans ces emails de tests.</p>
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Enregistrer le modèle</h4>
+                                    <p>Cette option est disponible à l'étape "2 : Création graphique" et à l'étape "3 : Contenus et liens". Elle vous permet d'enregistrer en tant que modèle l'email que vous avez construit ou modifié.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement87.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="article" class="content-image-double">
+                        <h4 class="titleH4">Sélection de couleur sous Firefox</h4>
+                        <div class="content-image">
+                            <div class="content-image-double-right">
+                                <div class="blocTitle-callout">
+                                    <h4>Sous Firefox, la fenêtre de sélection de couleur se place par défaut avec une opacité de 0%. Pour que la couleur s'affiche il faut déplacer le bouton glissoire de transparence vers la droite.</h4>
+                                </div>
+                                <img src="lib/NouvelElement30.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="steps_3" class="steps">
+                    <h3>Etape 3 : Contenus et liens</h3>
+                    <div class="content-image">
+                        <img src="lib/NouvelElement83.png">
+                    </div>
+
+                    <ul class="list-body">
+                        <h4>Cette étape vous permet d'utiliser l'ensemble des fonctionnalités de mise en page pour modifier le texte de votre email, insérer des champs de fusion et définir des liens de redirection.</h4>
+                    </ul>
+                    <div class="content-image">
+                        <img src="lib/NouvelElement100.jpg">
+                    </div>
+                    <div class="callout callout-danger inner-info steps-3-callout">
+                        <p class="title">Remarque</p>
+                        <p class="txtInner">L'insertion de tableau ou d'image en dehors de l'étape de création graphique est déconseillée car elle ne permet plus d'assurer le caractère responsive de votre email.</p>
+                        <img class="firstImg" src="lib/NouvelElement80.png" alt="">
+                        <img src="lib/NouvelElement81.png" alt="">
+                    </div>
+
+                    <div id="liens" class="content-image-double">
+                        <h4 class="titleH4">Les liens</h4>
+                        <div class="content-image-first">
+                            <img src="lib/NouvelElement101.jpg">
+                        </div>
+                        <div class="content-image">
+                            <div class="content-image-center">
+                                <h4>Avant de sélectionner l'une de ses options, sélectionner le texte sur lequel le lien sera placé.</h4>
+                                <div class="desc-image">
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/19.png">
+                                        <span class="title-little-img">Lien vers une annexe</span>
+                                        <span class="desc-little-img">Cette fonction vous permet de charger une annexe présente sur votre ordinateur sur le serveur et de placer un lien de téléchargement dans votre email.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/20.png">
+                                        <span class="title-little-img">Lien vers une url</span>
+                                        <span class="desc-little-img">Cette option vous permet de placer dans votre email, un lien vers une URL externe.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/21.png">
+                                        <span class="title-little-img">Lien de désinscription & gestion des abonnements</span>
+                                        <span class="desc-little-img">Cette option permet de placer un lien qui permettra au destinataire de se désinscrire ou de gérer ses abonnements en fonction du mode de gestion des désinscriptions. Remarque : ce lien n'est pas fonctionnel dans les emails de test </span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/22.png">
+                                        <span class="title-little-img">Lien de visualisation</span>
+                                        <span class="desc-little-img">Cette option permet de placer un lien permettant d'ouvrir l'email dans un navigateur. Remarque : ce lien n'est pas fonctionnel dans les emails de test.</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/grapesJS/23.png">
+                                        <span class="title-little-img">Lien vers un formulaire</span>
+                                        <span class="desc-little-img">Cette option permet de placer un lien vers un formulaire Eudonet qui a été créé au préalable. ( Ce lien n'est pas fonctionnel dans les emails de test. )</span>
+                                    </div>
+
+                                    <div class="little-img">
+                                        <img src="lib/NouvelElement102.jpg">
+                                        <span class="title-little-img">Bouton d'affichage du CSS</span>
+                                        <span class="desc-little-img">Cette option permet de modifier la feuille de style.</span>
+                                    </div>
+                                    <div class="callout callout-success">
+                                        <p class="title">Astuce</p>
+                                        <p class="txtInner">Les blocs contenant du texte (Blocs "Texte", "Article", "Entête"...) n'ont plus de police de caractères prédéfinie, la police par défaut de l'email est défini dans la feuille de style .css et peut être modifiée à l'étape "Contenu et liens" via le bouton d'affichage du CSS.</p>
+                                        <br><img style="width:auto;max-width: 500px;" src="lib/NouvelElement104.png" alt="">
+                                    </div>
+
+                                    <div class="callout callout-danger">
+                                        <p class="title">Remarque</p>
+                                        <p class="txtInner">
+                                            Cette feuille de style sera incluse dans la balise &lt;HEAD&gt; de votre email.
+                                        </p>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="traitement" class="content-image-double">
+                        <h4 class="titleH4">Le tracking des liens</h4>
+                        <div class="content-image-50">
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Lien</h4>
+                                    <p>Lorsque vous placez un lien dans votre email, vous pouvez définir des options de tracking.</p>
+                                </div>
+                                <div class="content-body-50">
+                                    <img src="lib/NouvelElement82.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-50">
+                                <div class="title-50">
+                                    <h4>Options de tracking</h4>
+                                    <ul>
+                                        <li>Désactiver le lien de tracking : cette option permet de ne pas tracer les statistiques de clics sur ce lien.</li>
+                                        <li>Nom du lien : Nommer le lien pour améliorer son accessibilité et retrouver plus facilement les statistiques associées.</li>
+                                        <li>Champ du lien : l'option "Champ du lien" vous permet de définir le champ de la fiche Cible/Invité/Destinataire qui sera mise à jour lors du clic sur le lien par le destinataire de l'email. Deux types de champ sont disponibles :
+                                            <ul>
+                                                <li>Case à cocher : La case à cocher dès le premier clic sur le lien.</li>
+                                                <li>Numérique : la valeur du champ numérique est incrémentée de 1 à chaque clic.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--<div class="callout callout-danger">
+                                    <p class="title">Remarque</p>
+                                    <p class="txtInner"> </p>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="steps_4" class="steps">
+                    <div class="content-all">
+                        <h3>Etape 4 : Envoi de l'email</h3>
+                        <div class="content-image">
+                            <img src="lib/NouvelElement84.png">
+                        </div>
+                        <ul class="list-body">
+                            <h4>A cette étape, vous pouvez :</h4>
+                            <li>Donner une description à votre campagne d'emailing.</li>
+                            <li>Compter le nombre destinataires.</li>
+                            <li>Définir la date d'expiration et de purge des liens de tracking.</li>
+                            <li>Définir le mode d'envoi Immédiat, Planifié ou Récurrent.</li>
+                            <li>Choisir de dédoublonner l'envoi sur les adresses emails.</li>
+                        </ul>
+                    </div>
+                    <div class="callout callout-info">
+                        <p class="title">La campagne est envoyée !</p>
+                        <p class="txtInner">Ça y est, votre campagne est envoyée ! Vous pouvez aller consulter les statistiques de votre campagne dans l'onglet "Campagnes Mails" et suivre les clics sur les liens de trackings et les réponses aux formulaires sur les fiches Destinataires/Cibles/Invités.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,663 @@
+/*CSS spécifique aux assistant Reporting*/
+.template_sel {
+    float: inherit;
+    /*height: 430px;*/
+    margin: auto 20px;
+}
+
+    .template_sel li {
+        text-align: left;
+        background-repeat: no-repeat;
+        list-style-type: none;
+        vertical-align: middle;
+        padding-top: 5px;
+        background-position: 22px 11px;
+    }
+
+    .template_sel ul {
+        margin-left: 40px;
+        padding: 0;
+    }
+
+.chartStapClass {
+    margin: auto 40pt;
+}
+
+.reportBase {
+    margin: 0 30px;
+}
+
+    .reportBase li {
+        list-style-type: none;
+        background-repeat: no-repeat;
+    }
+/*************DEBUT****************************
+    Etape 4 Menus Filtre, Regroupement et Tris. 
+**************DEBUT****************************
+*/
+.reportFilter {
+    /*margin-left: 60px;
+    margin-top: 15px;
+    position: fixed;*/
+    margin: 15px auto;
+    width: 800px;
+}
+
+    .reportFilter li {
+        list-style-type: none;
+        line-height: 30px;
+        height: 30px;
+    }
+
+.disabledLine {
+    color: #afabac;
+}
+/*************FIN****************************
+    Etape 4 Menus Filtre, Regroupement et Tris. 
+**************FIN****************************
+*/
+
+/*************DEBUT****************************
+    Etape 5 Menus Nom, Permissions , Historique. 
+**************DEBUT****************************
+*/
+
+.reportFinalize, .reportInformation {
+    /*margin-left: 60px;
+    margin-top: 0px;*/
+    margin: 0px auto;
+    width: 800px;
+    /*position: fixed;*/
+}
+
+    .reportFinalize li, .reportInformation li {
+        list-style-type: none;
+        line-height: 30px;
+        height: 30px;
+        /*width:100%;*/
+    }
+/*************FIN****************************
+    Etape 5 Menus Nom, Permissions , Historique. 
+**************FIN****************************
+*/
+
+.reportBase li {
+    list-style-type: none;
+    display: block;
+}
+/*************FIN****************************
+    Etape 5 Menus Nom, Permissions , Historique. 
+**************FIN****************************
+*/
+/*************DEBUT****************************
+    ID des Elements de l'assistant reporting
+**************DEBUT****************************
+*/
+.editor_formatoptionsul {
+    color: Green;
+    border: 1px solid red;
+    margin-left: 40px;
+    line-height: 25px;
+    padding: 0;
+}
+
+.editor_formatli {
+    height: 20px;
+    list-style-type: none;
+}
+
+.editor_formatradio {
+    margin-right: 10px;
+}
+
+.txtformatoptionsul {
+    padding-top: 30px;
+}
+
+.editor_formatoptions li {
+    vertical-align: middle;
+}
+
+    .editor_formatoptions li label {
+        margin-left: 5px;
+        vertical-align: middle;
+        line-height: 25px;
+        display: block;
+    }
+
+.editor_txtformatoptions {
+    padding-top: 30px;
+    left: 200px;
+    width: 400px;
+    display: block;
+}
+
+    .editor_txtformatoptions li {
+        height: 20px;
+    }
+
+.editor_template_chk {
+    margin-top: 20px;
+    display: block;
+}
+
+.editor_template_fusionlabel {
+    margin-left: 10px;
+    display: inline;
+}
+
+.editor_template {
+    padding-top: 30px;
+    margin-left: 20px;
+}
+
+.editor_templatelist {
+    /*margin-top: 10px;*/
+    width: 350px;
+    border: solid 1px grey;
+    width: 280px;
+    background-color: White;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.editor_templatebutton {
+    /*margin-top: 10px;*/
+    padding-left: 20px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.editor_txtformatoptions_septitlelib {
+    padding-right: 10px;
+    width: 150px;
+    text-align: right;
+}
+
+.editor_txtformatoptions_seplib {
+    padding-left: 5px;
+}
+
+.editor_txtformatoptions_sep {
+    width: 40px;
+}
+
+.editor_txtformatoptions_sidelib {
+    padding-right: 10px;
+    width: 150px;
+    text-align: right;
+}
+
+.editor_txtformatoptions_side {
+    width: 40px;
+}
+
+.editor_reportnameinput {
+    width: 350px;
+    height: 18px;
+    border: solid 1px #ccc;
+    background-color: white;
+    font-family: Verdana;
+    text-indent: 5px;
+}
+
+.editor_reportnameli {
+    margin-left: 50px;
+}
+
+.editor_publicspace {
+    margin-left: 20px;
+}
+
+.editor_powerbi_control {
+    margin-right: 10px;
+}
+
+.editor_powerbi_wizard_control {
+    width: 188px;
+}
+
+.editor_powerbi_reportinformation_control {
+    margin-left: 10px;
+    width: 60%;
+}
+
+.editor_powerbi_label {
+    float: left;
+}
+
+.editor_powerbi_wizard_label {
+    width: 250px;
+}
+
+.editor_powerbi_reportinformation_label {
+    width: 30%;
+}
+
+#editor_powerbi_url_input.editor_powerbi_wizard_control {
+    width: 90%;
+    margin-right: 10px;
+}
+
+.editor_powerbi_url_input, .editor_powerbi_date_input, .editor_powerbi_user_input, .editor_powerbi_executionmode_input, .editor_powerbi_format_input, .editor_powerbi_columnseparator_input, .editor_powerbi_columnseparatorcustomvalue_input {
+    border: solid 1px #ccc;
+    background-color: white;
+    font-family: Verdana;
+    text-indent: 5px;
+    margin-top: 5px;
+    margin-right: 12px;
+}
+
+.editor_powerbi_control[readonly=readonly] {
+    cursor: default; /* champ en lecture seule */
+}
+
+#editor_powerbi_url_button, #editor_powerbi_date_button, #editor_powerbi_user_button, #editor_powerbi_executionmode_button, #editor_powerbi_format_button, #editor_powerbi_columnseparator_button {
+    font-size: 12pt;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.editor_powerbi_executionmode_select, .editor_powerbi_format_select, .editor_powerbi_columnseparator_select {
+    margin-top: 5px;
+    width: 194px;
+    float: left;
+}
+
+.editor_powerbi_columnseparatorcustomvalue_input {
+    padding-top: 4px;
+    width: 30px;
+}
+
+.disabled {
+    color: Gray;
+}
+
+.editor_template_pdf {
+    margin-left: 20px;
+}
+
+.editor_template_pdffields {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.editor_template_pdf_label.rChk {
+    margin-left: 25px;
+}
+
+.editor_template_pdffields_label {
+    margin-bottom: 10px;
+}
+
+.editor_template_pdfcols {
+    height: 270px;
+    overflow-y: auto;
+}
+
+.editor_template_pdfcol {
+    float: left;
+    width: 280px;
+}
+
+.editor_template_pdffields ul {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.editor_template_pdffields li {
+    padding: 5px;
+    height: 20px;
+    list-style-type: none;
+}
+
+.editor_template_pdffields select {
+    width: 250px;
+}
+
+.editor_template_htmlfields {
+    margin-left: 40px;
+    margin-top: 25px;
+    height: 250px;
+    width: 85%;
+    display: block;
+}
+
+.editor_fieldlabelline {
+    font-weight: bold;
+    height: 30px;
+}
+
+/* Mapping PDF */
+.mappingField {
+    margin-bottom: 5px;
+}
+
+    .mappingField label {
+        display: inline-block;
+        width: 30%;
+    }
+
+/*Editeurs HTML pour l'assistant publipostages*/
+.editor_template_html_editor {
+    margin-top: 10px;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 15px;
+}
+
+.editor_template_html_editorlabel {
+    display: inline;
+    height: 20px;
+    padding: 0px;
+}
+/* Assistant graphique */
+
+
+.editor_select {
+    margin-right: 6px;
+    width: 150px;
+    min-width: 140px;
+}
+
+.editor_mlcell {
+    width: 25px;
+}
+
+.LogoPreview {
+    max-width: 200px;
+    max-height: 50px;
+}
+
+.logoLine {
+    vertical-align: top !important;
+    margin-left: 12px;
+    width: 150px;
+    position: absolute;
+}
+
+.editor_GridNb {
+    margin-left: 6px;
+    height: 20px;
+    width: 50px;
+}
+
+.trChrtLbls {
+    height: 31px;
+}
+
+    .trChrtLbls td {
+        vertical-align: top !important;
+    }
+
+.ChartImg {
+    border: 2px solid #666;
+}
+
+
+.editor_chart_panel {
+    margin-left: 24px;
+    height: 500px;
+    overflow: auto;
+}
+
+.editor_description_cell {
+    padding: 6px 6px 6px 6px;
+    border: solid 2px;
+}
+
+.editor_cell {
+    width: 175px;
+}
+
+.ChartImgSel {
+    border: 2px solid green;
+}
+
+
+
+
+.logoDeleteLine {
+    vertical-align: middle;
+    display: inline-block;
+    background-image: url('../images/filter/supprimer.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+
+    .logoDeleteLine:hover {
+        background-image: url('../images/filter/supprimer_hover.png');
+        background-repeat: no-repeat;
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+    }
+
+.logoAddLine {
+    padding-left: 18px;
+    display: inline-block;
+    background: url('../images/eWizard/ajouter.png');
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.liAddLine {
+    padding-left: 206px;
+}
+
+.logoAddLine:hover {
+    padding-left: 18px;
+    background: url('../images/eWizard/ajouter_hover.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #42A7DC;
+}
+
+.titreChrt {
+    font-weight: bold;
+    height: 12px;
+}
+
+.titreChrtCont {
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+
+
+.rbqValsLabel {
+    font-weight: bold;
+    height: 18px;
+    /*margin-top: 22px;*/
+    margin-bottom: 8pt;
+}
+
+#StatsRendDtl {
+    margin-top: 0px !important;
+}
+
+.rbqValsContent {
+    margin-left: 50px;
+    height: 24px;
+}
+
+.descLabel {
+    font-weight: bold;
+    height: 28px;
+    margin-top: 12px;
+}
+
+.descContent {
+    padding: 6px 6px 6px 6px;
+    border: solid 2px;
+    height: 24px;
+    margin-left: 50px;
+    width: 450px;
+}
+
+.choixSeriesLabel {
+    margin-top: 12px;
+    font-weight: bold;
+    height: 18px;
+}
+
+.choixSeriesContent {
+    margin-left: 50px;
+}
+
+.filterLabel, .filterExpressLabel, .specialFilterExpressLabel {
+    margin-top: 22px;
+    margin-bottom: 8pt;
+    font-weight: bold;
+    height: 18px;
+}
+
+.libelleExpressFilterBold {
+    font-weight: bold;
+    margin-right: 5pt;
+}
+
+.selectFilter, .selectExpressFilter {
+    margin-left: 50px;
+}
+
+.cumulerFilter {
+    margin-left: 50px;
+}
+
+
+.CombinedYCumulerFilter, .CombinedZCumulerFilter {
+    margin-left: 105px;
+}
+
+.emptyLi {
+    padding: 30px;
+}
+
+.liAddBtn {
+    margin-top: 0px;
+    height: 18px;
+}
+
+.rdBtnChoisSeries {
+    margin-right: 18px;
+    max-width: 215px;
+    display: inline-block;
+    max-height: 24px;
+    max-height: 24px;
+    vertical-align: middle;
+}
+
+.filterSelect, .CombinedZfilterSelect, .CombinedYfilterSelect {
+    width: 306px;
+}
+
+.CombinedZfilterSelect, .CombinedYfilterSelect {
+    margin-left: 25px;
+}
+
+.optionsVals {
+    margin-top: 6px;
+    margin-left: 50px;
+    height: 20px;
+}
+
+    .optionsVals a {
+        margin-right: 10px;
+    }
+
+.spanNbLigne {
+    margin-left: 50px;
+}
+
+.optionsVals input.inpChartSsize {
+    width: 50px;
+}
+
+.optionsVals input.chartTitleClass {
+    width: 37%;
+    margin-right: 5px;
+    border: 1px solid #B6B6B6;
+}
+
+#ChkAddLogos {
+    line-height: 18px;
+}
+
+.reportnameli {
+    margin-top: 12px;
+    font-weight: bold;
+    height: 18px;
+}
+
+.reportinputli {
+    margin-left: 50px;
+}
+
+.liSecurityLbl {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.editor_permissioninfos {
+    margin-left: 50px;
+}
+
+.SortChk {
+    margin-right: 15px;
+}
+
+
+
+.ParamLink {
+    padding-top: 0px !important;
+    height: auto !important;
+}
+
+.CheckPermOpt {
+    padding-top: 0px !important;
+}
+
+#ulWrappeur {
+    height: 100%;
+}
+
+#tailChrt {
+    padding-top: 25px;
+}
+
+
+.optionsVals > select {
+    vertical-align: middle;
+}
+
+select option[display='0'] {
+    display: none;
+}
+
+.padEtiqY {
+    padding-left: 16px;
+}
+
+.padEtiqFilter {
+    padding-left: 18px;
+}
+
+/*Request 90 194*/
+.reportFinalize a.chk{
+    display: inline !important;
+}
+
+#addCurrentFilter span{
+    line-height: 26px;
+}
+/*Request 90 194*/

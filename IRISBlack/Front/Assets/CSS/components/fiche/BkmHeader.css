@@ -1,0 +1,85 @@
+﻿div.bkm-tab .box .box-header {
+    padding: var(--size-10);
+    border-bottom: none;
+    background: var(--detail-foreground-btn);
+    display: flex;
+    align-items: center;
+}
+
+.bkm-header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+div.bkm-tab .box .box-header h3 {
+    color: var(--detail-multiRenderer-color) !important;
+    font-family: var(--ffamily);
+    font-weight: normal;
+    padding: 7px 0px 0px 10px;
+    padding: 0;
+    font-size: var(--size-20);
+}
+
+.sortActived,
+.FilterActived,
+.ComputedColumnEnabled,
+.pinned-bkm {
+    color: #14ba43 !important;
+    cursor: pointer;
+}
+
+a.pinned-bkm i.fas.fa-thumbtack {
+    font-size: var(--size-16);
+    margin: 3px 0 0 10px;
+}
+
+div.bkm-tab .eFilterExcpress {
+    display: inline-flex;
+    margin: 0 0 0px 8px;
+}
+    div.bkm-tab .eFilterExcpress .FilterActived {
+        font-size: var(--size-16);
+        margin: 0 0 3px 0;
+    }
+    div.bkm-tab .eFilterExcpress.eHistorique {
+        margin: 0 0 0px 7px;
+    }
+    div.bkm-tab .eFilterExcpress .FilterActivated {
+        font-size: var(--size-13);
+        background: var(--tag-color);
+        border-radius: 50px;
+        margin: 0px 0px 0 10px;
+        color: var(--detail-foreground-btn) !important;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+        div.bkm-tab .eFilterExcpress .FilterActivated.icon-rem_filter {
+            font-size: var(--size-11);
+        }
+
+        #tabsBar .filterContent {
+            margin-top: 35px;
+        }
+        
+        div.bkm-tab .filterContent {
+            height: auto;
+            margin: 0;
+            position: fixed;
+            display: block;
+            z-index: 11;
+            width: 250px;
+            margin-top: 34px;
+            max-height: inherit;
+            overflow-y: auto;
+            text-align: left;
+            background-color: var(--detail-foreground-btn);
+            min-width: 250px;
+            border: 1px solid #cbd6e2;
+            font-family: var(--ffamily);
+        }

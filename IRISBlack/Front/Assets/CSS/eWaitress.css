@@ -1,0 +1,35 @@
+﻿.waiter {
+    background: none repeat scroll 0 0 #999999;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.waitOn {
+    background-color: #666;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.waitOff {
+    left: -999px;
+    overflow: hidden;
+    position: absolute;
+    top: -888px;
+    width: 0;
+    z-index: -999;
+}

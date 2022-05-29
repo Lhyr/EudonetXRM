@@ -1,0 +1,1 @@
+ update [NotificationTrigger] set TriggerAction = 2 where Label = 'Notification table utilisateur'

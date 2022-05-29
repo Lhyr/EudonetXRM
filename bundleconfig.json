@@ -1,0 +1,251 @@
+[
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/eudo-modal.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/eudo-modal.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/eProgressBarv2.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/eProgressBarv2.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/ionicons.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/ionicons.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/main.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/main.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/ficheGrid.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/ficheGrid.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/main-etienne.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/main-etienne.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/Eudonet.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/Eudonet.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/skin.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/skin.css"
+    ]
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/lato.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/lato.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/vollkorn.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/vollkorn.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/dropZone.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/dropZone.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/eAccordionPane.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/eAccordionPane.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/blue.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/blue.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/checkBox.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/checkBox.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/modal-user-list.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/modal-user-list.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/sweetalert.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/sweetalert.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/ModalsStyle.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/ModalsStyle.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/chat.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/chat.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/TabBarAside.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/TabBarAside.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/design-general-v2.min.css",
+    "inputFiles": [
+        "IRISBlack/Front/Assets/CSS/design-general-v2.css",
+        "IRISBlack/Front/Assets/CSS/components/eMru/eMru.css",
+        "IRISBlack/Front/Assets/CSS/components/eMru/eMruBody.css",
+        "IRISBlack/Front/Assets/CSS/components/eMru/eMruFooter.css",
+        "IRISBlack/Front/Assets/CSS/components/eMru/eMruSearch.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/generalFields.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eAlias.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eAliasRelation.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eAutoComplete.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eAutoCount.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eButton.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eCatalog.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eCharacter.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eChart.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eDate.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eFile.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eGeolocation.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eHyperLink.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eImage.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eLabel.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eLogic.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eMailAdress.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eMemo.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eMoney.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eNumeric.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/ePassword.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/ePhone.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/ePj.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eRelation.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eSeparator.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eSocialNetwork.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eUndefined.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eUser.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eWebPage.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eCharacter/eCharacterFile.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eCharacter/eCharacterFileBing.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eCharacter/eCharacterFileSirene.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eCharacter/eCharacterList.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eAutoCount/eAutoCountFile.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eAutoCount/eAutoCountList.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eButton/eButtonFile.css",
+        "IRISBlack/Front/Assets/CSS/components/formatChamps/eButton/eButtonList.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/fileDetail.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/generalFile.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/headFiche.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/stepsBar.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/tabsBarAside.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/tabsBarAside/tabsBarAsideNavigationDrawer.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/tabsBarAside/tabsBarAsideButtonDrawer.css",
+        "IRISBlack/Front/Assets/CSS/components/skeletons/asideSkeleton.css",
+        "IRISBlack/Front/Assets/CSS/components/skeletons/bkmSkeleton.css",
+        "IRISBlack/Front/Assets/CSS/components/skeletons/detailSkeleton.css",
+        "IRISBlack/Front/Assets/CSS/components/skeletons/stepsBarSkeleton.css",
+        "IRISBlack/Front/Assets/CSS/components/skeletons/summarySkeleton.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eAccordionPane.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eButton.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eChipsGroup.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eDragAndDrop.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eDropdown.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eDropDownButton.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eIcon.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eLinksOptions.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eList.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eNavigationDrawer.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/ePagination.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/ePopOver.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eProgressBar.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eProgressBarv2.css",
+        "IRISBlack/Front/Assets/CSS/components/subComponents/eSpeedDial.css",
+        "IRISBlack/Front/Assets/CSS/components/modale/alertBox.css",
+        "IRISBlack/Front/Assets/CSS/components/modale/expressFilterDate.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/headFile/shortcutBar.css",
+        "IRISBlack/Front/Assets/CSS/components/modale/modalWrapper.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/tabsBar.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/BkmHeader.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/BkmAnnexe.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/BkmUnit.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/eActionSignets.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/eActionPinnedFile.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/tabSignets.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/tabsBar.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/fileSettings.css",
+        "IRISBlack/Front/Assets/CSS/components/liste/listContent.css",
+        "IRISBlack/Front/Assets/CSS/components/liste/listContent/eBodyList.css",
+        "IRISBlack/Front/Assets/CSS/components/liste/listContent/eEmptyErrorList.css",
+        "IRISBlack/Front/Assets/CSS/components/liste/listContent/eFooterList.css",
+        "IRISBlack/Front/Assets/CSS/components/liste/listContent/eHeadList.css",
+        "IRISBlack/Front/Assets/CSS/components/fiche/tabsBar/tabPinnedNavigationDrawer.css",
+        "IRISBlack/Front/Assets/CSS/components/eMru/eMru.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/ePopOver.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/ePopOver.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Assets/CSS/eList.min.css",
+    "inputFiles": [
+      "IRISBlack/Front/Assets/CSS/eList.css"
+    ],
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "IRISBlack/Front/Scripts/methods/Enum.min.js",
+    "inputFiles": [
+      "IRISBlack/Front/Scripts/methods/Enum.js"
+    ],
+    "sourceMap": true
+  }
+]

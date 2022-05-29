@@ -1,0 +1,30 @@
+{
+  "img": [
+    {
+      "url": "https://fr.eudonet.com/version/eudonet-x/page-login/login-background-eudonetx.jpg",
+      "lang": "LANG_00",
+      "text": "<img src='https://fr.eudonet.com/version/eudonet-x/page-login/logo-eudonet-x.png' width='443' height='93' style='display:block; width:50% !important; height:auto !important; padding-bottom:10px;'/>
+	  <p style='color:#273039;'>une nouvelle e<span style='color:#e83f41;'>x</span>périence utilisateur</p>"
+
+    },
+    {
+      "url": "https://fr.eudonet.com/version/eudonet-x/page-login/login-background-eudonetx.jpg",
+      "lang": "LANG_01",
+      "text": "<img src='https://fr.eudonet.com/version/eudonet-x/page-login/logo-eudonet-x.png' width='443' height='93' style='display:block; width:50% !important; height:auto !important; padding-bottom:10px;'/><p style='color:#273039;'>a new user e<span style='color:#e83f41;'>x</span>perience</p>"
+    }
+
+  ],
+
+  "btn": [
+    {
+      "url": "https://fr.eudonet.com/crm/eudonet-x/",
+      "lang": "LANG_00",
+      "text": "Découvrir les nouveautés"
+    },
+    {
+      "url": "https://uk.eudonet.com/crm/eudonet-x/",
+      "lang": "LANG_01",
+      "text": "Discover"
+    }
+  ]
+}

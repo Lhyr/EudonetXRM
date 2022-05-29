@@ -1,0 +1,152 @@
+﻿@page {
+    size: landscape;
+    margin: 0.5cm;
+}
+@media print {
+    #btnPrint {
+        display: none;
+    }
+}
+
+body {
+    overflow: visible;
+    background-color: #fff;
+}
+.fileDiv {
+    margin-top: 20px;
+}
+
+#mailDiv table td {
+    padding: 3px;
+}
+
+.mTab {
+    border-collapse: separate;
+}
+.iconDef {
+    display: none;
+}
+
+.fileHeaderCell {
+    border: none;
+}
+
+.table_values input, .table_values input.readonly {
+   width: 100%;
+   border: 1px solid #F0F0F0;
+   background-color: #fff;
+}
+.md_pl-base {
+    border: none;
+}
+.md_pl_head.table_values input, .md_pl_head.table_values input.readonly {
+    width: auto;
+}
+.divHeadInfo table {
+    border-collapse: separate;
+    border-bottom: 1px dashed #C7C7C7;
+}
+
+.mTabFile {
+    width: 100%;
+}
+
+    .mTabFile .table_labels {
+        width: 15%;
+        overflow: visible;
+        white-space: normal;
+        text-overflow: clip;
+        line-height: 16px;
+    }
+    .mTabFile .table_values {
+        /*border: 1px solid #F0F0F0;*/
+        font-size: 8pt;
+        background-color: #F0F0F0;
+        padding: 0 5px;
+        text-align: left !important;
+    }
+    .mTabFile .table_values.LNKOPENMEMO {
+        white-space: pre-line;
+    }
+
+.mTab tr.tableSep {
+    height: 0;
+}
+
+.title_sep_page {
+    /*border-bottom: 1px solid #b6b6b6;*/
+}
+.separateur_glbl {
+    display: none;
+}
+
+.divBkmPres {
+    overflow-y: visible;
+}
+
+div.bkmButtonsBar {
+    display: none;
+}
+
+.mTabLst {
+    overflow: visible;
+    font-size: 7pt;
+}
+
+/*td.btn {
+    width: 0px !important;
+}*/
+.mTabFile .emptyrow .table_values {
+    background-color: #fff;
+}
+.mTabFile tr {
+    border: none;
+}
+.line1 td, .line2 td {
+    border: none;
+    background-color: #fff;
+}
+.bkmdiv {
+    box-shadow: none;
+    border: 1px solid #ccc !important;
+}
+    .bkmdiv[nofile='1'] {
+        display: none;
+    }
+    .bkmdiv.BkmWeb {
+        display: none;
+    }
+    .bkmdiv[memobkm='1'] textarea {
+        display: block !important;
+        width: 100%;
+        border: none;
+    }
+.divmTab {
+    overflow: hidden;
+}
+.bkmTitle {
+    border: none;
+}
+.icon-edn-info, .icon-info-circle, .vcard-line {
+    display: none;
+}
+
+#btnPrint {
+    padding: 3px 0;
+    background-color: #AEABAB;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+    #btnPrint:hover {
+        background-color: #BEDCFB;
+    }
+
+p.memoText {
+    white-space: pre-line;   
+}

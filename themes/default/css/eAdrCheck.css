@@ -1,0 +1,51 @@
+﻿
+table.AdrCheckTable
+{
+	margin: 20px;
+	font-family: Verdana, Calibri, Trebuchet MS;
+}
+
+table.AdrCheckTable thead
+{
+	height: 30px;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+table.AdrCheckTable tbody
+{
+	font-size: 8pt;
+}
+
+.btnAdrCheck td
+{
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.btnAdrCheck span
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.adrCheckList
+{
+	overflow-y: auto;
+	height: 250px;
+	margin-top: 5px;
+}
+
+.adrCheckList p
+{
+	margin: 5px;
+}
+.adrCheckList .rChk img {
+	margin-right: 15px;
+}
+
+/* US #3 561 - Tâche #5 332 - Pour les cases à cocher affichées sous Eudonet x, pas de float: left qui décale les icônes cochées sur la fenêtre de cochage des fiches Adresse */
+.adrCheckList span.icon-check-square, .adrCheckList span.icon-square-o  {
+    float: inherit;
+}

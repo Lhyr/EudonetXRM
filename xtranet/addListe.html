@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="../themes/default/css/eAdmin.css" rel="stylesheet" />
+    <link href="../themes/default/css/eudoFont.css" rel="stylesheet" />
+    <title>Apparence Admin</title>
+
+
+</head>
+
+<body>
+    <div id="modalPopCont" class="modalPopCont hidden" >
+        <div class="modalPop">
+            <div class="modalPopHead"><span>TITRE</span></div>
+            <ul>
+                <li class="headTitle">Rubrique</li>
+                <li>Selectionnez l'onglet</li>
+                <li>
+                    <select>
+                        <option>Organismes</option>
+                        <option>Offres d'emploi</option>
+                        <option>Contacts</option>
+                        <option>Planning</option>
+                        <option>Evènements</option>
+                        <option>Opportunités</option>
+                        <option>Catalogue Formations</option>
+                        <option>T.A.</option>
+                        <option>Stages</option>
+                        <option>Partenariats R.I.</option>
+                        <option>Sessions FC</option>
+                    </select></li>
+                <li>Selectionnez la rubrique</li>
+                <li>
+                     <select>
+                        <option>Veuillez sélectionner une valeur</option>
+                        <option>Date</option>
+                        <option>Titre</option>
+                        <option>Type</option>
+                        <option>Descriptif</option>
+                        <option>Notes</option>
+                        <option>Organismes</option>
+                    </select></li>
+            </ul>
+            <div class="actBtn">
+                <div class="cancelBtn" onclick="showPopup(event);return false;">Fermer</div>
+                <div class="acceptBtn" onclick="showPopup(event);return false;">Valider</div>
+            </div>
+        </div>
+    </div>
+    <div class="containerAdmin">
+        <div class="headPart">
+            <div class="Hleft_part">
+                <img src="img/left_part.jpg" />
+            </div>
+            <div class="Hright_part">
+                <img src="img/right_part.jpg" />
+            </div>
+        </div>
+        <div class="subHeadPart"><span class="active">Accueil</span> / Pages / <span>Ajouter une page</span></div>
+        <hr />
+        <ul class="leftMenu">
+            <li><span class="icon-administrafion"></span>Apparence</li>
+            <li class="pageHead"><span class="icon-duplicate"></span>Pages<span class="icon-title_sep"></span></li>
+            <li>
+                <ul>
+                    <li><span class="chevronPuce">></span>Login</li>
+                    <li class="active"><span class="chevronPuce">></span>Ajouter</li>
+                </ul>
+            </li>
+        </ul>
+        <div id="gloablAddListe" class="gloablAddListe" onclick="showPopup(event);return false;"></div>
+        <div class="rightMenuXtrAdmin"></div>
+    </div>
+
+    <script>
+        function showPopup(evt) {
+
+         
+            var modalPopup = document.getElementById("modalPopCont");
+            var cssClass = modalPopup.className;
+
+            if (cssClass.indexOf("hidden") > -1) {
+                cssClass = cssClass.replace("hidden", "visible");
+            } else {
+                cssClass = cssClass.replace("visible", "hidden");
+            }
+
+            modalPopup.className = cssClass;
+
+        };
+
+
+</script>
+</body>
+</html>

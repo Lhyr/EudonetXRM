@@ -1,0 +1,550 @@
+body * {
+  font-family: Verdana;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper,
+.content-wrapper,
+.content,
+.row,
+.contentElems,
+.tabcontent {
+  height: 100%;
+  background: #fcfcfc;
+}
+
+.content > .row {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.content > .row .headNav {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.content > .row .contentElems {
+  overflow: auto;
+  top: 0px;
+  position: relative;
+}
+
+.tab {
+  padding: 0 0px 0 30px;
+  display: flex;
+  /*
+    box-shadow: 0px 1px 0px 0px #ccc;
+    */
+}
+
+/* Style pour les boutons a l'intérieur de la navBar */
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 10px;
+  transition: 0.3s;
+  font-size: 15.5px;
+  min-width: 190px;
+  color: #fff;
+}
+
+.buttonGlobal {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: auto;
+  /*
+    box-shadow: 0px 1px 0px 0px #ccc;
+    */
+}
+
+/* Change le background des boutons au hover*/
+
+.tab button:hover {
+  background-color: #ad0909;
+}
+
+/* Change le background du bouton quand celui-ci est activé */
+
+.tab button.active {
+  z-index: 1;
+  background-color: #ccc;
+  /*
+    box-shadow: 0px 1px 0px 0px #fcfcfc, 1px 0 0px 0px #cccccc, -1px 0 0px 0px #cccccc;
+    */
+  background: #fcfcfc;
+  color: #444;
+}
+
+/* Style du contenu de chaque tab */
+
+.tabcontent {
+  display: none;
+}
+
+/* Animation d'opacité sur le contenu de chaque tab */
+
+.modal {
+  animation: fadeEffect 1s;
+  /* Fading effect takes 1 second */
+}
+
+/* Passe de zéro à l'opacité 1 */
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#headNav {
+  background-color: #bb1515;
+  width: 100%;
+  display: flex;
+}
+
+.contentTabHead {
+  width: 100%;
+}
+
+.inputBtn {
+  display: flex;
+  padding: 10px 0px 10px 10px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.inputBtn input {
+  font-size: 14px;
+  width: 100%;
+  line-height: 15px;
+  padding: 0 25px 0 10px;
+  border: none;
+  background: #f1f1f1;
+  text-overflow: ellipsis;
+  min-width: 100px;
+  border-radius: 5px;
+}
+
+.inputBtn input:focus {
+  outline-offset: 0;
+  outline-width: 0px;
+  outline: none;
+}
+
+.inputBtn span {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 28px;
+  padding: 0px 0px 0px 5px;
+  position: absolute;
+  right: 5px;
+}
+
+.buttonGlobal .btnHead {
+  background-color: #fff;
+  border: 1px solid #929292;
+  border-radius: 5px;
+  color: #444;
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buttonGlobal .btnHead:hover {
+  background-color: #fdfdfd;
+}
+
+.buttonGlobal .btnHead:focus {
+  outline: none;
+}
+
+.buttonGlobal .btnHead.btn-success {
+  color: #fff;
+  background-color: #00a65a;
+  border-color: #008d4c;
+}
+
+.buttonGlobal .btnHead.btn-success:hover {
+  color: #fff;
+  background-color: #008d4c;
+}
+
+.contentTab {
+  display: flex;
+}
+
+.contentTab .leftPanel {
+  width: 300px;
+  min-width: 300px;
+  position: fixed;
+  top: 49px;
+  z-index: 9999;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.settingsPanel {
+  width: 100%;
+  background-color: #f5f5f5;
+  overflow: auto;
+  height: 100%;
+}
+
+.settingsPanel-list {
+  margin: 1.5rem 0 0;
+}
+
+.settingsPanel-list li {
+  border-bottom: 1px solid #31373f;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.settingsPanel-list li a.active {
+  background: #fcfcfc;
+  position: relative;
+}
+
+.settingsPanel-list li a {
+  cursor: pointer;
+  display: block;
+  margin: 0 0 0 10px;
+  padding: 14px 0 14px 12px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.navLink_param,
+.navLink_publi {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.settingsPanel-list li a.active:after,
+.settingsPanel-list li a.active:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  background-image: radial-gradient(circle, transparent 65%, #fcfcfc 0);
+  background-position: 9% 9%;
+  background-size: 200% 200%;
+  height: 2rem;
+  width: 2rem;
+}
+
+.settingsPanel-list li a.active:before {
+  top: -2rem;
+  background-position: 72% 66%;
+}
+
+.settingsPanel-list li a.active:after {
+  bottom: -2rem;
+  background-position: 66% 28%;
+}
+
+.leftPanel,
+.rightPanel {
+  background-color: #3e4652;
+  bottom: 0;
+}
+
+.settingsPanel .card-leftSide {
+  float: left;
+  width: 40px;
+  padding: 12px 0 12px 0;
+  margin: 0 10px 0 0px;
+  text-align: center;
+}
+
+.settingsPanel .card-leftSide.paiement span {
+  font-size: 28px;
+}
+
+.settingsPanel-list li a.active .panelIcon,
+.settingsPanel-list li a.active .tablet-content {
+  color: #3e4652;
+}
+
+.settingsPanel .panelIcon {
+  position: relative;
+  font-size: 18px;
+}
+
+.settingsPanel .card-content {
+  display: table-cell;
+  vertical-align: top;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.settingsPanel .panelDesc {
+  font-size: 0.72rem;
+  line-height: 1rem;
+  letter-spacing: 0.025rem;
+  font-weight: 500 !important;
+  margin-bottom: 0.375rem;
+}
+
+.settingsPanel-list li a.active .panelDesc,
+.settingsPanel-list li a.active .panelHeader {
+  color: #3e4652;
+  font-weight: 600;
+}
+
+.settingsPanel .panelHeader {
+  margin-top: 0.375rem;
+  text-transform: uppercase;
+}
+
+.stageScroller {
+  padding-left: 300px;
+  height: 100%;
+  word-break: break-all;
+  overflow: auto;
+  width: 100%;
+}
+
+.settingsPanel-list li:hover {
+  background: #4c5563;
+}
+
+.modules_param.modal,
+.modules_publi.modal {
+  padding: 20px 10px 10px 10px;
+}
+
+.moduleContent {
+  margin: 0 auto;
+  max-width: 55rem;
+  min-height: 100px;
+}
+
+.content-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #cccccc;
+  padding: 0 0 5px 0;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.content-header small {
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  color: #777;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+  .modules_param.modal,
+  .modules_publi.modal {
+    padding: 20px 50px 10px 50px;
+  }
+}
+
+/* GRAPESJS */
+
+.gjs-one-bg {
+  background-color: #3e4652 !important;
+}
+
+/* SIDE BAR */
+
+.sidebar a {
+  color: #1e282c;
+}
+
+.sidebar-menu .treeTitle {
+  font-size: 14px;
+}
+
+.sidebar-menu .treeview-menu > li.active > a {
+  color: #1e282c;
+  border-left: 3px solid #940909;
+  background: gainsboro;
+}
+
+.sidebar-menu .treeview-menu > li > a:hover {
+  color: #1e282c;
+  border-left: 3px solid #bb1515;
+  background: #e2e2e2;
+}
+
+.treeview > a > i {
+  width: 25px;
+  text-align: center;
+}
+
+.treeview-menu > li > a > .fa,
+.treeview-menu > li > a > .fas,
+.treeview-menu > li > a > .glyphicon,
+.treeview-menu > li > a > .ion {
+  width: 20px;
+}
+
+.sidebar-menu > li > a > .fa,
+.sidebar-menu > li > a > .glyphicon,
+.sidebar-menu > li > a > .ion {
+  width: 20px;
+}
+
+.sidebar-menu li > a {
+  position: relative;
+}
+
+.treeview-menu > li > a {
+  padding: 9px 5px 9px 35px;
+  display: block;
+  font-size: 14px;
+  border-left: 3px solid #bb1515;
+}
+
+.sidebar-menu .treeview-menu > li > a {
+  color: #1e282c;
+}
+
+.treeview-menu > li {
+  margin: 0;
+}
+
+.treeview-menu {
+  /*
+    display: none;
+    */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.treeview > ul.treeview-menu {
+  overflow: hidden;
+  height: auto;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.sidebar-menu .active > .treeview-menu {
+  display: block;
+}
+
+.treeview.menu-open > ul.treeview-menu {
+  /*
+    overflow: visible;
+    */
+  height: auto;
+}
+
+.sidebar-menu > li > .treeview-menu {
+  background: #eaeaea;
+  transition: height 500ms;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.sidebar-menu li > a > .fa-angle-left,
+.sidebar-menu li > a > .pull-right-container > .fa-angle-left {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-right: 10px;
+  -webkit-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.sidebar-menu .menu-open > a > .fa-angle-left,
+.sidebar-menu .menu-open > a > .pull-right-container > .fa-angle-left {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.sidebar-menu li > a > .pull-right-container {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -7px;
+}
+
+.sidebar-menu,
+.main-sidebar .user-panel,
+.sidebar-menu > li.header {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar-menu > li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-menu > li > a {
+  padding: 12px 5px 12px 10px;
+  display: block;
+}
+
+.sidebar-menu > li:hover > a,
+.sidebar-menu > li.active > a,
+.sidebar-menu > li.menu-open > a {
+  color: #1e282c;
+  background: #eaeaea;
+}
+
+.sidebar-menu > li > a {
+  border-left: 3px solid transparent;
+}
+
+.sidebar-menu > li.active > a {
+  border-left-color: #bb1515;
+}
+
+.buttonGlobal.save-btn {
+  padding-left: 0px;
+}

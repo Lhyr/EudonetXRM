@@ -1,0 +1,264 @@
+body {
+}
+/*SELECTION D UNE LIGNE*/
+.line2 {
+    background-color: #F6F6F6;
+    cursor: pointer;
+}
+
+.line1 {
+    cursor: pointer;
+}
+
+    .line1 td {
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+.line2 td {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.mTab td.caF {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+}
+/*PASSAGE SUR CHAQUES LIGNES*/
+.line2:hover, .line2:hover td, tr.line2:hover, tr.line2:hover td.cell, tr.line2:hover td.caF {
+    background-color: #BCDEFB !important;
+    cursor: pointer;
+    color: #000000 !important;
+}
+
+.line1:hover, .line1:hover td, tr.line1:hover, tr.line1:hover td.cell, tr.line1:hover td.caF {
+    background-color: #BCDEFB !important;
+    cursor: pointer;
+    color: #000000 !important;
+}
+
+.eSel {
+    background-color: #ccc !important;
+}
+
+    .eSel td {
+        color: #bb1515;
+    }
+
+.eMe {
+    height: 22px;
+}
+
+ul.LnkTop {
+    padding: 20px 0 0 20px;
+    margin: 0px;
+}
+
+ul.LnkTopSecondSearchOptions {
+    padding: 0px;
+    margin: 0px 0px 0px 370px;
+}
+
+.LnkTop .srchFld {
+    width: 350px;
+    margin-right: 0;
+}
+
+    .srchFld > * {
+        display: inline-block;
+    }
+
+li.srchFld div.icon-magnifier {
+    font-size: 8pt;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    background-color: #636363;
+    color: white;
+    width: 22px;
+}
+
+li.srchFld div.icon-edn-cross {
+    background-color: #bb1515;
+    font-size: 8pt;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    width: 22px;
+    color: white;
+}
+
+ul.LnkTop, ul.LnkTopSecondSearchOptions {
+    overflow: hidden;
+}
+ul.LnkTop li, ul.LnkTopSecondSearchOptions li {
+    display: inline-block;
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+ul.LnkTop > li > div.RadioDiv > input[type="radio"], ul.LnkTopSecondSearchOptions > li > div.RadioDiv > input[type="radio"] {
+    vertical-align: -1px;
+    margin-right: 4px;
+}
+
+ul.LnkTopOpt > li > a {
+    vertical-align: 5px;
+    margin-left: 5px;
+}
+
+ul.LnkTopOpt {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+    ul.LnkTopOpt li {
+        display: inline-block;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+        padding-right: 10px;
+        vertical-align: middle;
+        float: left;
+        cursor: pointer;
+    }
+
+.lnkFieldsSel {
+    padding-bottom: 44px;
+    vertical-align: -7px;
+}
+
+.Lnk_srch-inpt {
+    border: 1px solid gray;
+    border-right: 0;
+    width: 200px;
+    margin-left: 5px;
+    height: 23px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-indent: 5px;
+    
+}
+
+.Lnk_srch-text {
+    color: black;
+    line-height: 21px;
+    float: left;
+    line-height: 23px;
+}
+
+.lnk_srch-divlogo {
+    display: block;
+    height: 20px;
+    width: 21px;
+    float: left;
+}
+
+.lnkDlg {
+    background-color: #f8f8f8;
+    height: 100%;
+}
+
+.tabeul, .tabeulmulti {
+    cursor: default;
+    
+    text-align: left;
+    color: black;
+    margin-left: 2%;
+    margin-right: 2%;
+    clear: both;
+}
+
+.tabeul .divmTab, .tabeulmulti .divmTab {
+    overflow: auto;
+    height: inherit;
+    border: 1px solid #8A8A8A;
+        
+}
+
+#selContent div.divmTab{
+    min-width:100%;
+}
+
+.tabeul {
+    height: 320px;
+}
+
+.tabeulmulti {
+    height: 155px;
+    margin-bottom: 30px;
+}
+
+#listContent {
+    padding-top: 10px;
+}
+#listContent p.pInfo {
+    margin: 0 0 5px;
+    font-size: 9pt;
+}
+
+li.LiHisto {
+    height: 30px;
+    margin-right: 18px;
+    float: right;
+}
+
+/* Boutons Ajouter */
+.lnkAddTxt:hover a {
+    color: #42A7DC;
+}
+
+.lnkAddBtn {
+    cursor: pointer;
+    vertical-align: middle;
+    padding-top: 0px;
+    text-decoration: none;
+    background-position: -26px -2px;
+    width: 22px;
+    height: 21px;
+    line-height: 21px;
+}
+
+.lnkAddTxt a {
+    cursor: pointer;
+    color: #636363;
+    vertical-align: middle;
+    padding-top: 0px;
+    text-decoration: none;
+}
+
+/*RUBRIQUES*/
+.lnkFieldsSel a {
+    vertical-align: 0px;
+    cursor: pointer;
+    color: #636363;
+    padding-top: 0px;
+}
+
+.lnkFieldsSel:hover a {
+    color: #42A7DC;
+}
+
+.lnkFieldsSelBtn {
+    vertical-align: middle;
+    background-position: -48px -48px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.MRUdetail {
+    background-color: White;
+}
+
+.hidden {
+    visibility: hidden;
+}

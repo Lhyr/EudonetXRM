@@ -1,0 +1,129 @@
+﻿.gw-grid {
+    position: absolute;
+}
+
+    .gw-grid[active='1'], .gw-tab[active='1'] {
+        display: block;
+    }
+
+    .gw-grid[active='0'], .gw-tab[active='0'] {
+        display: none;
+    }
+
+.widget-grid-container[config="0"]:hover, .widget-grid-container[config="1"] {
+    overflow-y: auto;
+}
+
+.widget-grid-container[config="0"] {
+    overflow-y: hidden;
+}
+
+
+
+.widget-grid-container[drag='1'] iframe {
+    z-index: -1;
+}
+
+
+.widget-grid {
+    z-index: 2;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.widget-wrapper[active='1'] {
+    z-index: 3;
+}
+
+.widget-wrapper[active='0'], .widget-wrapper {
+    z-index: 2;
+}
+
+.widget-shadow {
+    position: absolute;
+    z-index: 1;
+}
+
+
+.xrm-widget-error {
+    padding-top: 20px;
+    display: block;
+    color: red;
+}
+
+#widgetWaiter {
+    width: 100%;
+    opacity: 0.4;
+    background-color: #999999;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 9999;
+}
+
+    #widgetWaiter img {
+        border: 0 none;
+        vertical-align: middle;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+
+.xrm-widget-waiter {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    /*background-color:#fff;*/
+}
+
+    .xrm-widget-waiter img {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+    }
+
+#incompletGridPanel {
+    padding: 12px;
+    font-style: italic;
+    color: red;
+}
+
+#emptyGridPanel {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-family: 'Bradley Hand ITC', 'Monotype Corsiva', 'Comic Sans MS', 'Trebuchet MS', Arial;
+    font-size: 24pt;
+    color: #000;
+    position: relative;
+}
+
+    #emptyGridPanel #info {
+        position: absolute;
+        right: 55px;
+    }
+
+        #emptyGridPanel #info #infoIcon {
+            -webkit-transform: rotate(-75deg);
+            -moz-transform: rotate(-75deg);
+            -ms-transform: rotate(-75deg);
+            -o-transform: rotate(-75deg);
+            transform: rotate(-75deg);
+            display: inline-block;
+            color: #000;
+        }
+
+            #emptyGridPanel #info #infoIcon:hover {
+                color: #000;
+            }

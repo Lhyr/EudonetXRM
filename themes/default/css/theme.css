@@ -1,0 +1,893 @@
+﻿#BrowsingFirst[eenabled='0'] > span > img.rightMenuBrowsingFirst {
+}
+
+#BrowsingFirst[eenabled='1'] > span:hover > img.rightMenuBrowsingFirst, #BrowsingPrevious[eenabled='1'] > span:hover > img.rightMenuBrowsingPrevious, #BrowsingNext[eenabled='1'] > span:hover > img.rightMenuBrowsingNext, #BrowsingLast[eenabled='1'] > span:hover > img.rightMenuBrowsingLast {
+    background-color: #42A7DC;
+    border: 1px solid #42A7DC;
+}
+
+#BrowsingLast[eenabled='0'] > span > img.rightMenuBrowsingLast {
+}
+
+#BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingFirst:hover {
+}
+
+#BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingLast:hover {
+}
+
+#BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingNext:hover {
+}
+
+#BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingPrevious:hover {
+}
+
+#BrowsingNext[eenabled='0'] > span > img.rightMenuBrowsingNext {
+}
+
+#BrowsingPrevious[eenabled='0'] > span > img.rightMenuBrowsingPrevious {
+}
+
+#BrowsingPrevious[eenabled='1'] > span > img.rightMenuBrowsingPrevious, #BrowsingNext[eenabled='1'] > span > img.rightMenuBrowsingNext, #BrowsingLast[eenabled='1'] > span > img.rightMenuBrowsingLast, #BrowsingFirst[eenabled='1'] > span > img.rightMenuBrowsingFirst {
+    background-color: #636363;
+}
+
+#btnActionsTop {
+    background-color: #C8C8C8;
+    color: #636363;
+}
+
+    #btnActionsTop div#actionLeft {
+        background-color: #636363;
+    }
+
+    #btnActionsTop:hover {
+        color: #FFFFFF;
+        background-color: #636363;
+    }
+
+#cardBlockAvatar .icon-photo {
+    color: #AEABAB;
+}
+
+#cardBlockAvatar.cardBlock {
+    border-color: #AEABAB;
+}
+
+#formWidgetContent .widgetRSSItem h2 a {
+    color: #AEABAB;
+}
+
+#kbColHeader .kbHeaderCol {
+    color: #AEABAB;
+}
+
+.Action_sMC li {
+}
+
+.AddButton, .lnkAddTxt img, .addLinkImg {
+    background-color: #636363;
+}
+
+    .AddButton:hover, .lnkAddTxt:hover img, .addLinkImg:hover {
+        background-color: #42A7DC;
+    }
+
+.background-hover-theme:hover, .background-theme, .static-background-theme {
+    background-color: Gray;
+    color: #FFFFFF !important;
+}
+
+    .background-theme:hover {
+        background-color: White;
+        color: #646464 !important;
+    }
+
+.barre-outils ul li.impression a {
+    background-color: #636363;
+}
+
+    .barre-outils ul li.impression a:hover {
+        background-color: #42A7DC;
+    }
+
+.barre-outils ul li.zoom_moins a, .fileTools ul li.zoom_moins a {
+    background-color: #CCCCCC;
+}
+
+    .barre-outils ul li.zoom_moins a:hover, .fileTools ul li.zoom_moins a:hover {
+        background-color: #42A7DC;
+    }
+
+.barre-outils ul li.zoom_plus a, .fileTools ul li.zoom_plus a {
+    background-color: #CCCCCC;
+}
+
+    .barre-outils ul li.zoom_plus a:hover, .fileTools ul li.zoom_plus a:hover {
+        background-color: #42A7DC;
+    }
+
+.bkmButtonsBar > ul > li > div > img {
+    background-color: #636363;
+}
+
+.bkmButtonsBar > ul > li:hover > div > img {
+    background-color: #42A7DC;
+}
+
+.bkmdiv {
+    border-left: 5px solid #afabac;
+}
+
+.bkmHisto {
+}
+
+    .bkmHisto[enabled='1'] div img {
+        background-color: #636363;
+    }
+
+    .bkmHisto[enabled='1']:hover div img {
+        background-color: #42A7DC;
+    }
+
+.bkmNoPaging:hover div {
+    background-color: #42A7DC;
+}
+
+.bkmTitle .icnBkm:hover {
+    color: #42A7DC;
+}
+
+.border-theme {
+    border-color: #646464;
+}
+
+.btnEscMnu a {
+}
+
+.btnSelectUnselectAll > * {
+    color: #636363;
+}
+
+.btnSelectUnselectAll:hover > * {
+    color: #42A7DC;
+}
+
+.buttonAdd span {
+    color: #AEABAB;
+}
+
+.button-green {
+    background-color: #79BE0B;
+    padding: 5px;
+}
+
+.calendarselect {
+}
+
+.cardBlock .cardTitle {
+    color: #AEABAB;
+}
+
+.catToolAddLib:hover span {
+    color: #42A7DC;
+}
+
+.catToolSync a {
+    background-color: #636363;
+}
+
+    .catToolSync a:hover {
+        background-color: #42A7DC;
+    }
+
+.cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a, .cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a {
+}
+
+    .cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a:hover, .cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > .fldBtnDel a:hover {
+    }
+
+.cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a {
+    background-color: Red;
+}
+
+.cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a, .cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a {
+}
+
+    .cell2:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a:hover, .cell:hover > td > div.ViewsEditBtn > ul.fldBtnUl > li.fldBtnModif > a:hover {
+    }
+
+.color-hover-theme:hover {
+    color: White;
+}
+
+.color-theme {
+    color: #646464;
+}
+
+.disable {
+    color: #EFEFEF !important;
+}
+
+.discComm {
+    border-color: #AFABAC;
+}
+
+.divBkmCtner .linkAddNewBkmFile.gofile {
+    font-weight: normal;
+}
+
+.DivClosed {
+    color: #636363;
+}
+
+    .DivClosed > * {
+        color: #636363;
+    }
+
+    .DivClosed img {
+        background-color: #636363;
+    }
+
+    .DivClosed span {
+    }
+
+    .DivClosed:hover {
+        color: #42A7DC;
+    }
+
+        .DivClosed:hover > * {
+            color: #42A7DC;
+        }
+
+        .DivClosed:hover img {
+            background-color: #42A7DC;
+        }
+
+        .DivClosed:hover span {
+        }
+
+.DivOpen {
+}
+
+    .DivOpen > * {
+        color: #636363;
+    }
+
+    .DivOpen img {
+        background-color: #636363;
+    }
+
+    .DivOpen:hover {
+        color: #42A7DC;
+    }
+
+        .DivOpen:hover > * {
+            color: #636363;
+        }
+
+        .DivOpen:hover img {
+            background-color: #42A7DC;
+        }
+
+        .DivOpen:hover span {
+            color: #42A7DC;
+        }
+
+.DivSelectionListResult .cell2:hover, .DivSelectionListResult .cell:hover, .ItemList .cell:hover, .ItemList .cell2:hover {
+}
+
+.eMain_File {
+    background-color: #636363;
+}
+
+.fileLogo {
+    color: #636363;
+}
+
+.fileLogoCV {
+    background-color: #636363;
+}
+
+    .fileLogoCV:hover {
+        background-color: #42A7DC;
+    }
+
+.fileLogoInf, .logo_info, .catBtnTool a {
+    background-color: #636363;
+}
+
+    .fileLogoInf:hover, .logo_info:hover, .catBtnTool a:hover {
+        background-color: #42A7DC;
+    }
+
+.fileTools ul li.impression a, .catToolPrint a {
+    background-color: #636363;
+}
+
+    .fileTools ul li.impression a:hover, .catToolPrint a:hover {
+        background-color: #42A7DC;
+    }
+
+.fIOff:hover, div.control_contextmenu li.selected, div.control_contextmenu li.actionItem:hover, div.control_contextmenu li.advFltItem:hover, .bkmDtls a:focus, .bkmDtlsSel a:focus, .bkmHead a:focus, .bkmHeadSel a:focus {
+}
+
+.fldBtnModif a, .logo_pen, .catBtnModif a {
+    background-color: #636363;
+}
+
+    .fldBtnModif a:hover, .logo_pen:hover, .catBtnModif a:hover {
+        background-color: #42A7DC;
+    }
+
+.Gerard {
+}
+
+.hdName span {
+}
+
+.hide_all {
+    background-color: #636363;
+}
+
+    .hide_all:hover {
+        background-color: #42A7DC;
+    }
+
+.highlight {
+    background-color: #BCDCFB;
+}
+
+.hUserBloc a {
+}
+
+.icnMnuChip {
+    font-size: 7pt;
+    vertical-align: 0px !important;
+}
+
+.icon-edn-history[enabled='1'], .bkmPaging.icon-edn-eye {
+    color: #79BE0B;
+}
+
+.iDel, .logo_trash, .fldBtnDel a, .pl_tt_opt_del, .catBtnDel a {
+    background-color: #636363;
+}
+
+    .iDel:hover, .logo_trash:hover, .fldBtnDel a:hover, .catBtnDel a:hover {
+        background-color: #42A7DC;
+    }
+
+.imgAct {
+    color: #BB1515 !important;
+}
+
+.iModPj img {
+    background-color: #636363;
+}
+
+.iModPj:hover img {
+    background-color: #42A7DC;
+}
+
+.ivtFieldsSel {
+}
+
+    .ivtFieldsSel:hover {
+    }
+
+.jOrgChart .node {
+    color: #636363;
+}
+
+.kbAggr {
+    color: #AEABAB;
+}
+
+.kbButtonSL {
+    background-color: #AEABAB;
+}
+
+.kbListSL {
+    color: #AEABAB;
+}
+
+    .kbListSL li:hover {
+        background-color: #AEABAB;
+    }
+
+    .kbListSL, .kbListSL li {
+        border-color: #AEABAB;
+    }
+
+.kbSL, .kbSL .icon-caret-down, .kbSL .icon-caret-right {
+    color: #AEABAB;
+}
+
+.line1:hover > *, .line2:hover > *, .list_even:hover > *, .list_odd:hover > *, .line1:hover, .line2:hover, .highlight, .highlight > *, .highlight > [class*=" icon-"] {
+}
+
+    .line1:hover div.inTDbtn, .line2:hover div.inTDbtn {
+        color: White;
+    }
+
+.list_even:hover .logo_modifs > div, .list_odd:hover .logo_modifs > div {
+    color: #636363;
+}
+
+    .list_even:hover .logo_modifs > div:hover, .list_odd:hover .logo_modifs > div:hover {
+    }
+
+.listfiltres {
+}
+
+.lnkAddTxt:hover a {
+    color: #42A7DC;
+}
+
+.lnkFieldsSel:hover img {
+    background-color: #42A7DC;
+}
+
+.lnkFieldsSelBtn {
+    background-color: #636363;
+}
+
+.LNKOPENMEMOPOPUPbtn img {
+    background-color: #636363;
+}
+
+.LNKOPENMEMOPOPUPbtn:hover img {
+    background-color: #42A7DC;
+}
+
+.logo_abc {
+    background-color: #636363;
+}
+
+    .logo_abc:hover {
+        background-color: #42A7DC;
+    }
+
+.mTab .lnkIcon span {
+    color: #636363;
+}
+
+.mTab th.headActif {
+    color: #FFFFFF;
+}
+
+.navBar *:hover ul.sbMenu, .navBar *:hover ul.sbMenuActive {
+}
+
+.navTitleActive, .navImportTitleActive {
+    background-color: #636363;
+    color: White;
+}
+
+.open_all {
+    background-color: #636363;
+}
+
+    .open_all:hover {
+        background-color: #42A7DC;
+    }
+
+.pagFirst {
+    background-color: #636363;
+}
+
+    .pagFirst:hover {
+        background-color: #42A7DC;
+    }
+
+.pagFirstDis {
+    background-color: #EFEFEF;
+}
+
+.pagLast {
+    background-color: #636363;
+}
+
+    .pagLast:hover {
+        background-color: #42A7DC;
+    }
+
+.pagLastDis {
+    background-color: #EFEFEF;
+}
+
+.pagNext {
+    background-color: #636363;
+}
+
+    .pagNext:hover {
+        background-color: #42A7DC;
+    }
+
+.pagNextDis {
+    background-color: #EFEFEF;
+}
+
+.pagPrev {
+    background-color: #636363;
+}
+
+    .pagPrev:hover {
+        background-color: #42A7DC;
+    }
+
+.pagPrevDis {
+    background-color: #EFEFEF;
+}
+
+.phd:hover {
+    color: #AEABAB;
+}
+
+.plM-HESWL td:hover {
+    color: #AEABAB;
+}
+
+.rightMenu:hover span.icnMnuVerBtn:hover {
+    color: #47A7DC;
+}
+
+.rightMenuModFile {
+    background-color: #DADADA;
+}
+
+    .rightMenuModFile span {
+    }
+
+    .rightMenuModFile:hover {
+    }
+
+        .rightMenuModFile:hover span {
+        }
+
+.rightMenuOption > ul > li > a > span > img {
+}
+
+.rightMenuOption > ul > li > a:hover > span > img {
+}
+
+.rightMenuOption a, .rightMenuModFile a {
+}
+
+    .rightMenuOption a:hover, .rightMenuOption a:focus, .rightMenuOption a:active, .rightMenuModFile a:hover, .rightMenuModFile a:focus, .rightMenuModFile a:active {
+    }
+
+.rightMenuOption ul.hUserBloc li:hover span, .rightMenuOption ul.rightMenuSubMenuItem li:hover span, .rightMenuOption ul.rightMenuItem li:hover span {
+    color: #47A7DC;
+}
+
+.rightMenuSubMenuTitle:hover {
+}
+
+.SectedItem .iDel, .SectedItem .logo_trash, .SectedItem .fldBtnDel a {
+}
+
+.select-theme option:hover {
+    background-color: #B5B5B5;
+    color: White;
+}
+
+.tbHtileModal * {
+    background-image: none;
+    background-color: #7C8894;
+}
+
+.tdHeader {
+    background-color: #EEEEEE;
+    background-image: none;
+}
+
+.usrbt-all:hover *, .usrbt-none:hover * {
+    color: #42A7DC;
+}
+
+.VCardTT .vcImgPp {
+    border-color: #AEABAB;
+}
+
+.vcName, .vcCorporate, .vcMiniFileTitle {
+    color: #42A7DC;
+}
+
+.widget-page-title-container .widget-title {
+    color: #666666;
+}
+
+.xrm-widget-title {
+    color: #636363;
+}
+
+/* #71 615 - Pour les widgets Cartographie uniquement (type = 17), positionnement et style spécifique du bouton Rafraîchir */
+.widget-wrapper[t="17"] .xrm-widget[xrm-widget-header="0"][admin="0"] .widgetOptions #xrm-widget-reload {
+    color: #FFFFFF; /* identique à celle de static-background-theme */
+    background-color: Gray;
+}
+
+/* #71 615 - Pour les widgets Cartographie uniquement (type = 17), positionnement et style spécifique du bouton Rafraîchir */
+.widget-wrapper[t="17"] .xrm-widget[xrm-widget-header="0"][admin="0"] .widgetOptions #xrm-widget-reload:hover {
+    color: #47A7DC; /*identique à [class^="icon-"]:hover */
+}
+
+[class^="icon-"], [class*=" icon-"], div.contentMaster div.FavLnkOpen div.menuBar div.icon-menu_btn [class^="icon-"]:hover, div.contentMaster div.FavLnkOpen div.menuBar div.icon-menu_btn [class*=" icon-"]:hover, div.rightMenu:hover div.menuBar [class^="icon-"]:hover {
+    color: #FFFFFF:; /*#636363*/
+}
+
+    [class^="icon-"]:hover, [class*=" icon-"]:hover {
+        color: #47A7DC;
+    }
+
+a.btnBitField {
+    background-color: #AEABAB;
+    color: #FFFFFF;
+}
+
+    a.btnBitField[chk='1'] {
+    }
+
+a.chk .icon-check-square {
+    color: #3CA7DE !important;
+}
+
+a.historique span {
+}
+
+    a.historique span.afficherHisto {
+    }
+
+    a.historique span.masquerHisto {
+    }
+
+a.historique:hover span.afficherHisto {
+}
+
+catToolSync a {
+    background-color: #636363;
+}
+
+    catToolSync a:hover {
+        background-color: #42A7DC;
+    }
+
+catToolSyncDis a {
+    background-color: #BEBEBE;
+}
+
+div.advFltActiv div.advFltBtn {
+}
+
+div.advFltActiv div.advFltLabel {
+}
+
+div.advFltActiv div.advFltLeft {
+}
+
+div.advFltBtn {
+}
+
+div.advFltLabel {
+}
+
+div.advFltLeft {
+}
+
+div.advFltMenu {
+    background-color: #C8C8C8;
+    color: #646464;
+    border: 1px solid #FFFFFF;
+    line-height: 18px;
+}
+
+    div.advFltMenu div[class^="adv"] {
+    }
+
+    div.advFltMenu:hover {
+        background-color: #636363;
+        color: #FFFFFF;
+    }
+
+        div.advFltMenu:hover div.advFltBtn {
+        }
+
+        div.advFltMenu:hover div.advFltLabel {
+        }
+
+        div.advFltMenu:hover div.advFltLeft {
+        }
+
+        div.advFltMenu:hover div[class^="adv"] {
+        }
+
+div.ahistoFltDiv {
+}
+
+    div.ahistoFltDiv .histoLeftBtn {
+    }
+
+    div.aHistoFltDiv > a {
+    }
+
+    div.ahistoFltDiv a.historique {
+    }
+
+        div.ahistoFltDiv a.historique span.masquerHisto {
+        }
+
+    div.ahistoFltDiv:hover {
+    }
+
+        div.ahistoFltDiv:hover a.historique span.masquerHisto {
+        }
+
+div.bkmTitle > ul > li.bkmButtonsBar > div > ul > li.bkmNoPaging > div > img {
+    background-color: #79BE0B;
+}
+
+div.colGuide {
+    color: #42A7DC;
+}
+
+div.globalNav {
+}
+
+    div.globalNav div.HomeFixed {
+        border-top: 2px solid #bb1515;
+        background-color: #AEABAB;
+    }
+
+div.histoActive:hover {
+}
+
+div.histoFilter {
+    background-color: #C8C8C8;
+    color: #636363;
+    border: 1px solid #FFFFFF;
+    line-height: 18px;
+}
+
+    div.histoFilter.histoActive {
+    }
+
+    div.histoFilter:hover, div.histoActive:hover {
+        background-color: #636363;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+
+div.PlusFixed {
+    background-color: #AEABAB;
+}
+
+div.rightMenuModFile > ul > li > a > span > img {
+}
+
+div.rightMenuModFile:hover > ul > li {
+}
+
+div.rightMenuOption:hover > ul > li > a > span > [class^="icon-"]:hover, div.rightMenuOption:hover > ul > li > a > span > [class*=" icon-"]:hover {
+}
+
+div.rightMenuOption:hover > ul > li > a > span:hover > [class^="icon-"], div.rightMenuOption:hover > ul > li > a > span:hover > [class*=" icon-"] {
+}
+
+div.rightMenuOption:hover > ul > li > span:hover > [class^="icon-"], div.rightMenuOption:hover > ul > li > span:hover > [class*=" icon-"] {
+}
+
+div.subTabDiv span a.selected, div.subTabDiv span a:hover {
+    color: #AEABAB;
+    border-color: #AEABAB;
+}
+
+div.usr_top_srch div.icon-edn-cross {
+    position: absolute;
+}
+
+li.catToolAddLib span.catToolAddLibSp {
+    color: #42A7DC;
+}
+
+li.lnkFieldsAdd a, li.lnkFieldsSel a {
+    color: #636363;
+}
+
+li.lnkFieldsAdd:hover *, li.lnkFieldsSel:hover *, li.catToolAddLib:hover * {
+    color: #42A7DC;
+}
+
+li.navEntry {
+}
+
+    li.navEntry:hover, div.navEntry:hover, li.navEntryActive, div.navEntryActive {
+        background-color: #F8F8F8;
+        color: Black;
+    }
+
+li.navLst {
+}
+
+    li.navLst:hover, li.navActiveElt, li.navAction:hover, .rightMenuOption ul li:hover, .rightMenuOption ul li:hover a, ul.rightMenuFavlnk li:hover a {
+        background-color: #BEDCFB;
+    }
+
+li.sbmBottom {
+}
+
+span.icnMnuVerBtn {
+    color: #636363;
+}
+
+table.underCal td.icnListAct {
+}
+
+td.bkmHeadSel {
+}
+
+td.bkmHeadSel a {
+    font-weight: bold;
+}
+
+td.LNKADVCATbtn, td.LNKCATbtn, td.LNKCATPOPUPbtn, td.LNKCATUSERbtn, td.LNKMNGFILEbtn, td.LNKSENDMAILbtn {
+    background-color: #636363;
+}
+
+    td.LNKADVCATbtn:hover, td.LNKCATbtn:hover, td.LNKCATPOPUPbtn:hover, td.LNKCATUSERbtn:hover, td.LNKMNGFILEbtn:hover {
+        background-color: #42A7DC;
+    }
+
+td.LNKCATFILEbtn {
+    background-color: #636363;
+}
+
+td.LNKCATFILEbtn:hover {
+    background-color: #42A7DC;
+}
+
+td.LNKCATHOURbtn {
+    background-color: #636363;
+}
+
+td.LNKDATEbtn {
+    background-color: #636363;
+}
+
+td.LNKDATEbtn:hover {
+    background-color: #42A7DC;
+}
+
+td.LNKOPENWEBbtn {
+    background-color: #636363;
+}
+
+td.LNKOPENWEBbtn:hover {
+    background-color: #42A7DC;
+}
+
+ul.sbMenu, ul.sbMenuActive {
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #f8f8f8;
+    border-left: 1px solid #ddd;
+    border-bottom: 2px solid #bb1515;
+    background-color: #F8F8F8;
+}
+
+.xrm-widget-resize {
+    border-right-color: #636363;
+}
+
+    .xrm-widget-resize:hover {
+        border-right-color: #42A7DC;
+    }
+
+/*KJE, tâche #2 431: ajuster la taille du champ objet du mail*/
+.wizardbodyemailing [id^="editor_"] [id^="fileDiv_"] .md_mail-base#mailDiv table tbody tr.fields-row td .value-container {
+    width: 250px;
+    float:left;
+}
+
+.wizardbodyemailing [id^="editor_"] [id^="fileDiv_"] .md_mail-base#mailDiv table tbody tr.fields-row td .field-value {
+    width: auto;
+}

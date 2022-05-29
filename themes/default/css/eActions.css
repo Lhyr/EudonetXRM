@@ -1,0 +1,125 @@
+/* TODO: Sprite à vérifier */
+/*.action
+{
+	background-image: url(../images/btnaction/eActionsSprite.png);
+}*/
+#btnActionsTop
+{
+    width: 120px;
+    height: 20px;
+    font-size: 8pt;
+    line-height: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+    #btnActionsTop div
+    {
+        height: 100%;
+        vertical-align: middle;
+    }
+        #btnActionsTop div#actionLeft
+        {
+            float: left;
+            width: 22px;
+            border-radius: 5px 0 0 5px;
+        }
+            #btnActionsTop div#actionLeft div, #btnActionsTop div#actionRight div
+            {
+                padding-top: 2px !important;
+                width: 100%;
+                text-align: center;
+            }
+        #btnActionsTop div#actionRight div
+        {
+            padding-top: 0px ;
+        }
+        #btnActionsTop div#actionMiddle
+        {
+            float: left;
+            width: 65px;
+            cursor: pointer;
+        }
+            #btnActionsTop div#actionMiddle span
+            {
+                padding-left: 12px;
+            }
+        #btnActionsTop div#actionRight
+        {
+            float: right;
+            padding-right: 4px;
+        }
+    #btnActionsTop:hover
+    {
+
+    }
+
+.icon-bt-actions-left, .icon-bt-actions-right, .icon-bt-actions-left:hover, .icon-bt-actions-right:hover
+{
+    color: #fff;
+    
+}
+.icon-bt-actions-left
+{
+    font-size: 12px;
+}
+.icon-bt-actions-right
+{
+    font-size: 15px;
+}
+
+/************/
+/*	HAUT	*/
+/************/
+/* partie gauche, bouton haut, normal */
+/*.aGH
+{
+	background-position: 0 -568px;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 20px;
+}
+/* partie droite, bouton haut, normal */
+.aDH
+{
+	background-position: 0 -213px;
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 20px;
+	cursor: pointer;
+}*/
+/****************************************************************************/
+/*					BAS														*/
+/****************************************************************************/
+.aGB
+{
+	background-position: 0 -426px;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 20px;
+}
+.aDB
+{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	width: 21px;
+	height: 20px;
+	cursor: pointer;
+}
+/****************************************************************************/
+/*					MILIEU													*/
+/****************************************************************************/
+/*.aM
+{
+	background-image: url(../images/btnaction/actions-m.png);
+	background-repeat: repeat-x;
+	cursor: pointer;
+	height: 18px;
+}*/
+/*.aMH
+{
+	background-image: url(../images/btnaction/actions-m_Hover.png);
+	background-repeat: repeat-x;
+	height: 18px;
+	cursor: pointer;
+	color: White;
+}*/

@@ -1,0 +1,129 @@
+﻿/* design skeleton resumé */
+
+#MainWrapper > .content-wrapper > .content > .row #mainContentWrap.is-loading {
+    overflow: visible;
+}
+
+.summary-skeletons-wrapper {
+    padding: 5px 10px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.skeleton-effect {
+    height: 100%;
+    width: 100%;
+}
+
+.skeleton-wrapper,
+.skeleton-field-wrapper,
+.skeleton-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.content-skeleton-wrapper {
+    padding: 15px 0;
+}
+
+.summary-skeletons-wrapper .col.skeleton-field-wrapper {
+    flex-wrap: wrap;
+}
+
+.skeleton {
+    height: 15px;
+    border-radius: 15px;
+    position: relative;
+    background: rgba(0,0,0,.12);
+}
+
+.skeleton-field-wrapper .skeleton {
+    margin: 0 20px 0 0;
+}
+
+.avatar-skeleton {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.skeleton-title {
+    width: 100%;
+}
+
+.skeleton-params {
+    width: 100px;
+}
+
+.skeleton-subtitle {
+    width: 50%;
+}
+
+.skeleton-title {
+    height: 20px;
+}
+
+.skeleton-params {
+    height: 25px;
+}
+
+.skeleton-subtitle {
+    height: 15px;
+}
+
+.summary-skeletons-wrapper .col {
+    padding: 5px;
+}
+
+.params-skeleton-wrapper {
+    column-gap: 10px;
+    justify-content: flex-end;
+}
+
+.titles-skeleton-wrapper {
+    row-gap: 10px;
+}
+
+.skeleton::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( 90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0.3), hsla(0, 0%, 100%, 0) );
+    background-repeat: no-repeat;
+    background-size: 450px 100%;
+    animation: shimmer 1s linear 15;
+    left: 0;
+    top: 0;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -450px 0;
+    }
+
+    100% {
+        background-position: 450px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .avatar-skeleton {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .avatar-skeleton {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+
+
+/** design skeleton résumé */

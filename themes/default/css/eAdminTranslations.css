@@ -1,0 +1,55 @@
+﻿body {
+}
+
+.eFSContainer {
+    float: right;
+}
+
+.field {
+    float: left;
+}
+
+#divTranslations #headerFilters select {
+    width: 180px;
+}
+
+#divTranslations {
+    background-color: white;
+    padding: 12px;
+}
+
+#tabTranslations {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    #tabTranslations td {
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+     #tabTranslations td[upd] {
+        color: #37A7DE;
+    }
+
+    #tabTranslations th .rIco:not(.active) {
+        visibility: hidden;
+    }
+
+    #tabTranslations th:hover .rIco {
+        visibility: visible;
+    }
+
+input.translate {
+    width: 100%;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    padding-left: 7px;
+    box-sizing: border-box;
+    font-size: 8pt;
+}

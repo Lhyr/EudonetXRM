@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "axios@0.25.0",
+      "destination": "IRISBlack/Front/Scripts/libraries/axios/"
+    },
+    {
+      "library": "vue@2.6.14",
+      "destination": "IRISBlack/Front/Scripts/libraries/vue/"
+    },
+    {
+      "library": "vuex@3.6.2",
+      "destination": "IRISBlack/Front/Scripts/libraries/vuex/"
+    },
+    {
+      "library": "jqueryui@1.12.1",
+      "destination": "IRISBlack/Front/Scripts/libraries/jqueryui/"
+    },
+    {
+      "library": "lodash.js@4.17.15",
+      "destination": "IRISBlack/Front/Scripts/libraries/lodash/"
+    },
+    {
+      "library": "gridstack.js@0.4.0",
+      "destination": "IRISBlack/Front/Scripts/libraries/gridstack/"
+    },
+    {
+      "library": "select2@4.0.12",
+      "destination": "IRISBlack/Front/Scripts/libraries/select2/"
+    },
+    {
+      "library": "twitter-bootstrap@3.3.7",
+      "destination": "IRISBlack/Front/Scripts/libraries/twitter-bootstrap/"
+    },
+    {
+      "library": "moment.js@2.24.0",
+      "destination": "IRISBlack/Front/Scripts/libraries/momentjs/"
+    },
+    {
+      "library": "bootstrap-datetimepicker@4.17.47",
+      "destination": "IRISBlack/Front/Scripts/libraries/bootstrap-datetimepicker/"
+    },
+    {
+      "library": "bootstrap-daterangepicker@3.0.5",
+      "destination": "IRISBlack/Front/Scripts/libraries/bootstrap-daterangepicker/"
+    },
+    {
+      "library": "font-awesome@5.13.0",
+      "destination": "IRISBlack/Front/Assets/CSS/font-awesome/"
+    },
+    {
+      "library": "bootstrap3-wysiwyg@0.3.3",
+      "destination": "IRISBlack/Front/Scripts/libraries/bootstrap3-wysiwyg/"
+    },
+    {
+      "library": "datatables@1.10.20",
+      "destination": "IRISBlack/Front/Scripts/libraries/datatables/"
+    },
+    {
+      "library": "vuetify@2.3.23",
+      "destination": "IRISBlack/Front/Scripts/libraries/vuetify/"
+    },
+    {
+      "library": "dexie@3.2.0",
+      "destination": "IRISBlack/Front/Scripts/libraries/dexie/"
+    },
+  ]
+}

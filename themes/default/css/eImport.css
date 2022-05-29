@@ -1,0 +1,95 @@
+﻿
+.alloworm {
+    width: 40vw;
+    display: flex;
+    background-color: white;
+    box-shadow: 2PX 2PX 2PX #ccc;
+}
+
+.block-orange {
+    width: 5px;
+    height: 7VH;
+    background-color: orange;
+}
+
+.label-remarque {
+    display: block;
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Commun */
+.data-source-step {
+    margin-left: 70px;
+    margin-right: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+    .data-source-step > ul {
+        margin: 25px;
+    }
+
+    .data-source-step ul li {
+        list-style: none;
+    }
+
+#DataSourceOption li {
+    margin-top: 15px;
+}
+
+    #DataSourceOption li label {
+        margin-left: 10px;
+    }
+
+#DataSourceOption input[type='file'],
+#DataSourceOption textarea {
+    margin-left: 25px;
+}
+
+#DataSourceOption input[type="radio"], #DataSourceOption label {
+    cursor: pointer;
+}
+
+#DataSourceOption li textarea {
+    width: 95%;
+    height: 275px; /*En fonction de la hauteur de la modale*/
+}
+
+/*
+  Le text area est visible si on sélection Par copier/Coller 
+  Le bouton fichier est visible si on sélection Télécharger un fichier 
+*/
+#DataSourceOption[source='paste'] textarea,
+#DataSourceOption[source=''] input[type='file'] {
+    display: block;
+}
+
+#DataSourceOption[source='file'] textarea,
+#DataSourceOption[source=''] input[type='file'] {
+    display: none;
+}
+
+#DataSeparatorOption li span,
+#DataTextQualifierOption li span {
+    position: relative;
+}
+
+#DataSeparatorOption li select,
+#DataTextQualifierOption li input[type='text'] {
+    margin-left: 10px;
+}
+
+#DataSeparatorOption li select {
+    width: 108px;
+}
+
+#DataTextQualifierOption li input[type='text'] {
+    width: 105px;
+}
+
+#DataSeparatorOption li input[type='text'] {
+    width: 105px;
+    margin-left: 10px;
+}

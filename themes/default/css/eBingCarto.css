@@ -1,0 +1,255 @@
+﻿
+body {
+    margin: 0;
+}
+
+#CartoSelection {
+    width: 100%;
+    height: 100%;
+}
+
+#DrawingModes {
+    position: absolute;
+    margin: 10px auto;
+    width: 36%;
+    text-align: center;
+    left: 26%;
+}
+
+
+
+    #DrawingModes span {
+        line-height: 25px;
+        text-align: center;
+        height: 46px;
+        width: 45px;
+        padding-top: 12px;
+        display: inline-block;
+        box-sizing: border-box;
+        cursor: pointer;
+        vertical-align: middle;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+        #DrawingModes span[active='1'] {
+            color: #82a219 !important;
+            background-color: #ffffff;
+        }
+
+    #DrawingModes div {
+        line-height: 24px;
+        text-align: center;
+        height: 45px;
+        padding: 6px;
+        display: inline-block;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        margin-left: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+        #DrawingModes div input {
+            height: 22px;
+            margin: 0;
+            padding: 4px;
+            width: 150px;
+            padding-right: 30px;
+        }
+
+    #DrawingModes #searchLoupe {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+.customInfobox {
+    max-width: 200px;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12px;
+    pointer-events: auto !important;
+    height: 200px;
+    width: 180px;
+    position: relative;
+}
+
+
+/** context menu*/
+
+#cntnr #items {
+    list-style: none;
+    margin: 0px;
+    margin-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    font-size: 17px;
+    color: #333333;
+}
+
+#cntnr hr {
+    width: 92%;
+    background-color: #E4E4E4;
+    border-color: #E4E4E4;
+    color: #E4E4E4;
+}
+
+#cntnr {
+    position: fixed;
+    border: 1px solid #B2B2B2;
+    width: 200px;
+    background: #F9F9F9;
+    border-radius: 4px;
+    padding: 4px;
+    padding-bottom: 6px;
+}
+
+    #cntnr li {
+          padding: 3px;
+          padding-left: 6px;
+          line-height: 17px;    
+          font-size: 11pt;
+
+    }
+
+        #cntnr li span {
+            padding-left: 8px;
+
+        }
+
+    #cntnr #items :hover {
+        color: white;
+        background: #284570;
+        border-radius: 2px;
+    }
+
+
+    .icon-param-onglet:before {
+  content: "\e90c";
+  color: #a1d6f1;
+}
+
+.icon-mise-en-page:before {
+  content: "\e909";
+  color: #a1d5f1;
+}
+
+.icon-parametres:before {
+  content: "\e90a";
+  color: #a1d6f1;
+}
+
+
+.icon-copier-vers:before {
+  content: "\e90d";
+  color: #636363;
+}
+
+.icon-deplacer-vers:before {
+  content: "\e90e";
+  color: #636363;
+}
+
+
+.icon-arrow_down:before {
+  content: "\e64e";
+  color: #444;
+}
+
+.icon-mes_prefs:before {
+  content: "\e649";
+  color: #444;
+}
+
+
+.icon-databases:before {
+  content: "\e64a";
+  color: #444;
+}
+
+.icon-outils:before {
+  content: "\e64b";
+  color: #444;
+}
+
+.icon-table_bases:before {
+  content: "\e64c";
+  color: #444;
+}
+
+.icon-mes_options:before {
+  content: "\e64d";
+  color: #444;
+}
+
+
+.icon-menu_btn:before {
+  content: "\e644";
+  color: #444;
+}
+
+.icon-pin_up:before {
+  content: "\e645";
+  color: #444;
+}
+
+.icon-pin_down:before {
+  content: "\e646";
+  color: #444;
+}
+
+.icon-edn-phone:before {
+  content: "\e647";
+  color: #444;
+}
+
+.icon-vc_card_adress:before {
+  content: "\e648";
+  color: #444;
+}
+
+.icon-analyse:before {
+  content: "\e640";
+  color: #444;
+}
+
+.icon-communication:before {
+  content: "\e641";
+  color: #444;
+}
+
+.icon-administrafion:before {
+  content: "\e642";
+  color: #444;
+}
+
+.icon-aide:before {
+  content: "\e643";
+  color: #444;
+}
+
+.icon-all_select:before {
+  content: "\e63e";
+  color: #444;
+}
+
+.icon-deselect_all:before {
+  content: "\e63f";
+  color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+

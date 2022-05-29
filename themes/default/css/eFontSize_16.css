@@ -1,0 +1,3448 @@
+/* 16 PT */
+:root {
+    font-size: 20.6px;
+}
+
+body{
+    font-size: 15.5pt!important;
+}
+
+.fs_16pt .mTab, .fs_16pt .hdTable, .fs_16pt .table_labels, .fs_16pt .table_lab_pty, .fs_16pt input[type=\"text\"], .fs_16pt .mTab .table_values input[type='text'], .fs_16pt li div, .fs_16pt li.sbmBottom a, .fs_16pt .sbmBottom .icon-cog, .fs_16pt .Action_sMC, .fs_16pt .lib, .fs_16pt .helloMnu, .fs_16pt .nickMnu, .fs_16pt .rightMenuOption a, .fs_16pt .rightMenuModFile a, .fs_16pt .rightMenuSubMenuTitle, .fs_16pt .btnEscMnu, .fs_16pt .decBtn, .fs_16pt li.navLst, .fs_16pt .table_values, .fs_16pt .table_values input, .fs_16pt a.chk .icon-square-o, .fs_16pt a.chk .icon-check-square, .fs_16pt .bkmBar, .fs_16pt .bkmHeadSel, .fs_16pt .navTitle, .fs_16pt .adminNav ul.Action_sMC .navAction, #defaultHpChkCol {
+    font-size: 16pt;
+}
+
+.fs_16pt li.top-p div {
+    font-size: 19pt;
+}
+
+.fs_16pt [fstyle='MAIN_TITLE'], .fs_16pt [fstyle='MAIN_TITLE'] input[type=text] {
+    font-size: 24pt!important;
+}
+
+.fs_16pt [fstyle='SECONDARY_TITLE'], .fs_16pt [fstyle='SECONDARY_TITLE'] > input {
+    font-size: 21pt!important;
+}
+
+.fs_16pt .icnFileBtn, .fs_16pt .file99 {
+    font-size: 12.5pt;
+}
+
+.fs_16pt .fileLogo {
+    font-size: 13pt;
+    line-height: 23px;
+}
+
+.fs_16pt a.rChk [class^='icon-'] {
+    margin-right: 10px;
+}
+
+.fs_16pt .rightMenuSpan_adjust [class^="icon-"], .fs_16pt .rightMenuModFile span.icon-item_rem {
+    font-size: 12pt;
+}
+
+.fs_16pt td.bkmHead a, .fs_16pt td.bkmHeadSel a {
+    padding: 2px 4px 2px 4px;
+}
+
+.fs_16pt .rightMenuSpan_adjust [class^="icon-"] {
+    width: 40px;
+}
+
+.fs_16pt .icnMnuVerBtn {
+    width: 66px;
+}
+
+.fs_16pt #BrowsingLast {
+    border-right: none;
+}
+
+.fs_16pt #adminNav .navEntry.navModuleWithMenu .navAction .navEntryLabel {
+    line-height: 38px;
+}
+
+
+.fs_16pt .adminNav li.navAction div {
+    width: auto !important;
+    max-width: 250px;
+}
+
+.fs_16pt #adminNav #navLeaveAdmin span:first-child {
+    width: auto;
+}
+
+.fs_16pt #adminNav #navLeaveAdmin {
+    width: 23%;
+}
+
+    .fs_16pt #adminNav #navLeaveAdmin span:last-child {
+        width: 75%;
+    }
+
+.fs_16pt li.sbmA {
+    min-width: 280px;
+    max-height: 780px;
+    overflow: auto;
+}
+
+.fs_16pt .rightMenuModFile span.icon-administrafion {
+    font-size: 19pt;
+    margin:0 0 0 5px;
+}
+
+.fs_16pt .txtDetails {
+    line-height: 31px;
+    font-size: 15pt;
+}
+
+.fs_16pt li.sbmBottom {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.fs_16pt .bkmBar {
+    margin-bottom: 10px;
+}
+
+.fs_16pt .mTab tr {
+    height: 35px;
+}
+
+.fs_16pt tr.tableSep {
+    height: 0px;
+}
+
+.fs_16pt .logo_modifs [class^="icon-"] {
+    font-size: 12pt !important;
+    line-height:29px
+}
+
+.fs_16pt .logo_modifs {
+    width: auto !important;
+}
+
+.fs_16pt li.navSearchInpt input {
+    height: 27px;
+    font-size: 16px;
+}
+
+.fs_16pt li.srchFldImgCancel, .fs_16pt li.srchFldImgNoResult, .fs_16pt li.srchFldImg {
+    font-size: 8pt;
+    line-height: 30px;
+    height: 29px;
+    width: 25px;
+}
+
+.fs_16pt li.navLst div {
+    width: 260px !important;
+    text-overflow: ellipsis;
+}
+
+.fs_16pt #slidingArrow {
+    left: 277px;
+    top: 86px;
+}
+
+.fs_16pt .encartProfil {
+    height: 80px;
+    padding: 0px 0px 0px 10px;
+}
+
+.fs_16pt .divHeadInfo input[type='text'] {
+    font-size: 20px;
+}
+
+.fs_16pt .divHeadInfo tr {
+    height: 40px;
+}
+
+.fs_16pt .divHeadInfo table td {
+    line-height: normal;
+}
+
+.fs_16pt .divHeadInfo input {
+    min-height: 28px;
+}
+
+.fs_16pt .MndAst {
+    font-size: 13px;
+    margin-top: -3px;
+}
+
+.fs_16pt .bkmTitle {
+    line-height: 35px;
+    font-size: 18px;
+}
+
+.fs_16pt .divBkmCtner .linkAddNewBkmFile {
+    font-size: 15px;
+}
+
+.fs_16pt .divmTab {
+    overflow: auto!important;
+}
+
+.fs_16pt .add-file .divmTab {
+    max-height: calc(100% - 220px);
+}
+
+.fs_16pt .noFileInBkm {
+    font-size: 15px;
+}
+
+.fs_16pt .icnBkm {
+    font-size: 20px;
+    width: 40px;
+    line-height: 20px;
+}
+
+.fs_16pt .divFootInfo input {
+    min-height: 28px;
+    font-size: 18px;
+}
+
+.fs_16pt .cke_textarea_inline {
+    min-height: 80px;
+}
+
+.fs_16pt textarea {
+    min-height: 80px;
+    font-size: 18px;
+}
+
+.fs_16pt #StatsRendClicsChart, .fs_16pt #StatsRendClicsPerDayChart {
+    font-size: 15px;
+}
+
+.fs_16pt .data {
+    font-size: 18px;
+}
+
+.fs_16pt tr.data-head td {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    font-size: 12pt;
+    color: #636363;
+    font-weight: bold;
+    line-height: 23px;
+    background-color: #ccc;
+    vertical-align: middle;
+    cursor: default;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 155px;
+    border-right: 1px solid #fff;
+}
+
+    .fs_16pt tr.data-head td:last-child {
+        border-right: 0;
+    }
+
+.fs_16pt tr.dataLine td {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 155px;
+}
+
+.fs_16pt .xrm-widget-title {
+    line-height: 25px;
+    font-size: 13pt;
+}
+
+.fs_16pt .xrm-widget-subtitle {
+    font-size: 13px;
+}
+
+
+.fs_16pt #infos .lib {
+    font-size: 13pt;
+    line-height: 30px;
+}
+
+.fs_16pt .listfiltres {
+    font-size: 14pt;
+    height: 2.5rem;
+}
+
+.fs_16pt .QckUsrFltContent {
+    height: 23px;
+}
+
+.fs_16pt .QckUsrFltContent li {
+    line-height: 22px;
+}
+
+.fs_16pt .actionItem {
+    font-size: 15.5pt !important;
+}
+
+.fs_16pt input.eCMSearch {
+    height: 24px;
+    font-size: 18px;
+}
+
+.fs_16pt #eBtnSrch {
+    height: 27px;
+    margin-left: -3px;
+    margin-right: 5px;
+    margin-top: -33px;
+    width: 28px;
+    font-size: 11pt;
+    line-height: 28px;
+}
+
+.fs_16pt div.histoFilter, .fs_16pt div.advFltMenu {
+    font: bold 16px verdana,sans-serif;
+}
+
+.fs_16pt .numpage table tbody tr td:nth-child(2) {
+    width: auto !important;
+}
+
+.fs_16pt td.numpage input {
+    border: none;
+    font-size: 14px;
+}
+
+.fs_16pt .pagInput {
+    float: right;
+    font-size: 18pt;
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+.fs_16pt .listactions, .fs_16pt .listactions table.listactionstab {
+    height: 45px;
+}
+
+
+.fs_16pt .eFSContainer {
+    background: url(../images/list/eGSField_18pt.png) no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #666666;
+    float: right;
+    height: 25px;
+    margin-right: 10px;
+    padding: 0;
+    width: 230px;
+}
+
+.fs_16pt input[type='text'].eFSInput {
+        background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #666666;
+    font-size: 13.5pt;
+    line-height: 13px;
+    margin-left: 27px;
+    margin-top: -5px;
+    outline: medium none;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 139px;
+}
+
+.fs_16pt .actionLabel {
+    font-size: 15.5pt;
+}
+
+.fs_16pt .paramBlock h3 {
+    font-size: 16.5pt;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fs_16pt #paramTabPicto1, .fs_16pt #paramTabPicto2, .fs_16pt #paramTabPicto3 {
+    font-size: 16pt;
+    line-height: 30px;
+}
+
+.fs_16pt #navTabs {
+    height: 33px;
+}
+
+.fs_16pt .paramBlock > .info {
+    padding: 0px 0 0 20px !important;
+    font-size: 14px;
+}
+
+.fs_16pt .paramPart header h4 {
+    line-height: normal;
+    font-size: 18px;
+    overflow: auto;
+}
+
+.fs_16pt .paramBlock .info {
+    font-size: 16px;
+}
+
+.fs_16pt .paramBlock input[type=text], not[ehasbtn], .paramBlock textarea {
+    font-size: 18px;
+}
+
+.fs_16pt .paramBlock {
+    font-size: 18px;
+}
+
+.fs_16pt .rightMenu .paramPartContent a.chk {
+    font-size: 16px;
+}
+
+.fs_16pt .paramPartContent .subTitle .sepLabel {
+    font-size: 15px;
+}
+
+.fs_16pt .rightMenu .paramBlock .field.verticalSelect label {
+    font-size: 14px;
+}
+
+.fs_16pt .field > select, .field > input, .adminIPTable {
+    font-size: 17px;
+}
+
+
+.fs_16pt input[type="radio"] {
+    width: 16px;
+    height: 20px;
+    vertical-align: -4px;
+}
+
+.fs_16pt td.txtsrch {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.fs_16pt div.catDivSrch input {
+    font-size: 18px;
+    height: 28px;
+}
+
+.fs_16pt div.catloupe {
+    height: 28px;
+}
+
+    .fs_16pt div.catloupe [class*='icon-'] {
+        font-size: 12pt;
+        line-height: 27px;
+    }
+
+    .fs_16pt div.catloupe [class*='icon-'] {
+        font-size: 15pt;
+    }
+
+.fs_16pt .catloupe #eBtnSrch {
+    margin: 0 0 0 0;
+    font-size: 16pt;
+}
+
+.fs_16pt .catTool .icon-sync {
+    font-size: 14pt;
+}
+
+.fs_16pt ul.catTool li {
+    width: 24px;
+}
+
+.fs_16pt div.catEditVal {
+    font-size: 15.5pt;
+}
+
+.fs_16pt li[bd], li[hd] {
+    height: 27px;
+    line-height: 27px;
+}
+
+.fs_16pt div.catBtnVal ul.catBtnUl li {
+    font-size: 12pt;
+}
+
+.fs_16pt .button-gray, .fs_16pt .button-green {
+    font-size: 12pt !important;
+}
+
+.fs_16pt td.eCatalogEditorMenuItem {
+    font-size: 15pt;
+}
+
+.fs_16pt td.eCatalogMenuItemAddNew {
+    font-size: 15pt;
+}
+
+.fs_16pt input.eCatalogEditorSearch {
+    font-size: 17pt;
+    height: 20px;
+}
+
+.fs_16pt #ImgSrchCatalog {
+    color: white;
+    background-color: #636363;
+    font-size: 13pt;
+    text-align: center;
+    float: left;
+    width: 21px;
+    line-height: 21px;
+    height: 30px;
+}
+.fs_16pt #ImgSrchCatalog.icon-magnifier {
+    line-height: 30px;
+}
+
+.fs_16pt tr.eCatalogEditorAdvanced {
+    height: 35px;
+}
+
+.fs_16pt td.eCatalogEditorMenuItemAdv {
+    font-size: 14pt;
+}
+
+.fs_16pt .eTVP {
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 50px;
+    height: auto;
+    margin: 0 0 -2px 8px;
+}
+
+.fs_16pt a.rChk {
+    vertical-align: baseline;
+}
+
+.fs_16pt .catDivSrchTV {
+    font-size: 12.5pt;
+}
+
+.fs_16pt input.eTVTxtSrch {
+    height: 28px;
+}
+
+
+
+/*Modal User 18pt */
+
+.fs_16pt table.catEditVal tr th {
+    font-size: 12pt;
+    padding: 0 0 0 10px;
+}
+
+.fs_16pt .userTree {
+    font-size: 18px;
+}
+
+
+.fs_16pt table.catEditVal tr th, table.catMultSelVal tr th, ul.catEditVal > li[hd], ul.catMultSelVal > li[hd] {
+    font-size: 12pt;
+    padding: 0 0 0 10px;
+}
+
+.fs_16pt .userTreeValues {
+    height: 300px;
+}
+
+.fs_16pt div.usr_cat {
+    margin: 20px 22px 0;
+}
+
+.fs_16pt div.usr_btm {
+    font-size: 14pt;
+    margin: 10px 23px 0 23px;
+    overflow: auto;
+    height: 95px;
+}
+
+.fs_16pt .usrbt-none {
+    float: left;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: right;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.fs_16pt .usrbt-select {
+    margin-top: 5px;
+}
+
+.fs_16pt .usrbt-radio {
+    margin: 5px -4px 0px;
+}
+
+.fs_16pt .bt-right {
+    display: inline-block;
+    float: left;
+}
+
+.fs_16pt .msg-container {
+    font-size: 20px;
+}
+
+.fs_16pt .confirm-msg {
+    padding-bottom: 15px;
+}
+
+.fs_16pt .bt-right #chkUnsel {
+    margin-top: 0;
+}
+
+.fs_16pt .usr_top_srch #eBtnSrch {
+    height: 27px;
+    margin-left: -3px;
+    margin-right: 5px;
+    margin-top: 0;
+    width: 28px;
+    font-size: 11pt;
+    line-height: 28px;
+}
+
+
+
+.fs_16pt div.usr_top_srch .usr_search-inpt {
+    height: 27px;
+    box-sizing: border-box;
+    width: 67%;
+    font-size: 15pt;
+}
+
+.fs_16pt .usr_search-text {
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.fs_16pt .tabeul {
+    height: auto;
+}
+
+.fs_16pt #filterListGlobal .tabeul {
+    height: 375px!important;
+}
+
+.fs_16pt .Lnk_srch-text {
+    font-size: 16pt !important;
+    line-height: 31px;
+}
+
+.fs_16pt .Lnk_srch-inpt {
+    width: 300px;
+    height: 31px;
+    font-size: 16pt;
+}
+
+.fs_16pt li.srchFld div.icon-magnifier {
+    font-size: 19px;
+    height: 31px;
+    line-height: 31px;
+    width: 30px;
+    float:right;
+}
+
+.fs_16pt li.srchFld div.icon-edn-cross {
+    font-size: 19px;
+    height: 31px;
+    line-height: 27px;
+    width: 30px;
+    float:right;
+}
+
+.fs_16pt .srchFld {
+}
+
+.fs_16pt ul.LnkTop > li > div.RadioDiv > input[type="radio"], ul.LnkTopSecondSearchOptions > li > div.RadioDiv > input[type="radio"] {
+    vertical-align: -4px;
+    margin-right: 4px;
+}
+
+.fs_16pt ul.LnkTop {
+    padding: 15px 0 5px 20px;
+    
+}
+
+.fs_16pt ul.LnkTopSecondSearchOptions {
+    margin: 0 0 0 0;
+    margin-bottom: 5px;
+    margin-left: 360px;
+}
+
+    .fs_16pt ul.LnkTopSecondSearchOptions li {
+        margin: 0 30px 0 10px;
+    }
+
+        .fs_16pt ul.LnkTopSecondSearchOptions li:first-child {
+            margin: 0 0 0 0;
+        }
+
+.fs_16pt ul.LnkTop li, .fs_16pt ul.LnkTopSecondSearchOptions li {
+    line-height: 30px;
+}
+.fs_16pt ul.LnkTopOpt li {
+    padding-right: 30px;
+}
+
+.fs_16pt #DivTitle {
+    font-size: 18px !important;
+}
+
+.fs_16pt .eMainFileList select {
+    font-size: 20px;
+}
+
+.fs_16pt .tdHeader {
+    font-size: 15.5pt;
+}
+
+.fs_16pt .cell, .fs_16pt .cell2 {
+    font-size: 15.5pt;
+    height: 25px;
+    line-height: 29px;
+}
+
+.fs_16pt .btnSelectUnselectAllText {
+    font-size: 14pt;
+    vertical-align: 4px;
+}
+
+.fs_16pt .ItemList {
+    height: 270px;
+}
+
+.fs_16pt .ToolbarModal li {
+    font-size: 15pt;
+    line-height: 10px;
+}
+
+.fs_16pt .title_sep_page {
+    font-size: 16px;
+    margin: 0 0 0 10px;
+}
+
+.fs_16pt .title_sep_label {
+    margin: 0 0 0 25px;
+}
+
+.fs_16pt .title_sep_page .icon-title_sep {
+    font-size: 8.5pt;
+}
+
+.fs_16pt .title_sep_page .icon-edn-next {
+    font-size: 11.5pt;
+}
+
+.fs_16pt .buttonAdd span[class^="icon-"] {
+    font-size: 18px;
+}
+
+.fs_16pt .buttonAdd span {
+    font-size: 15pt;
+}
+
+    .fs_16pt .listHeader select {
+        font-size: 16pt;
+        width:170px!important;
+    }
+/*Clandar 18pt */
+
+.fs_16pt .CalContainer table {
+    width: 100%;
+    margin: 0;
+}
+
+.fs_16pt .calendarselect {
+    width: auto;
+    margin: 0 10px 0 10px;
+    height: 50px;
+}
+
+.fs_16pt .calendarbody {
+    width: auto;
+    margin: 0 10px 10px 10px;
+}
+
+.fs_16pt .calMonth select, .fs_16pt .calMonth {
+    width: 120px !important;
+}
+
+.fs_16pt .calYear {
+    width: 70px !important;
+    text-align: center !important;
+    margin-left: 60px;
+    font-size: 18px;
+    height: auto;
+}
+
+.fs_16pt .calMonth select {
+    width: 65px;
+    text-indent: 30px;
+    font-size: 18px;
+    height: auto;
+}
+
+.fs_16pt .labelWeek {
+    font-size: 18px;
+    border-bottom: 1px solid #16a5d7;
+    margin: 0px 0 5px 0;
+    line-height: 30px;
+    height: 30px;
+}
+
+.fs_16pt .calendardays tbody tr:first-child {
+    font-weight: 800;
+}
+
+.fs_16pt .calendardays {
+    padding: 5px !important;
+}
+
+    .fs_16pt .calendardays td {
+        font-size: 12px !important;
+    }
+
+.fs_16pt .day, .fs_16pt .day:hover {
+    border: 1px solid transparent;
+}
+
+.fs_16pt td.day.today {
+    border: 1px solid transparent;
+    background: #79be0b;
+    color: #fff;
+}
+
+@media (min-width: 1265px) {
+    .fs_16pt #adminNav .navLinks > li {
+        width: auto;
+        max-width: 220px;
+    }
+}
+
+
+.fs_16pt .window_iframe {
+    height: auto;
+}
+
+.fs_16pt #editor_field_selection [class^="icon-"], [class*=" icon-"] {
+    font-size: 30px;
+}
+
+.fs_16pt #editor_field_selection .btnSelectUnselectAllText {
+    position: relative;
+    top: 10px;
+}
+
+.fs_16pt .button-green-rightarrow {
+    font-size: 18px;
+}
+
+.fs_16pt .SelectedItem {
+    font-size: 15.5pt;
+    height: 25px;
+    line-height: 25px;
+}
+
+
+.fs_16pt #editor_fieldoptions {
+    position: relative;
+    top: 33px;
+}
+
+
+.fs_16pt #editor_popupdatadisplayoption {
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+}
+
+.fs_16pt #editor_popupdatalangpanel {
+    margin-left: 26px;
+    font-size: 17px;
+}
+
+    .fs_16pt #editor_popupdatalangpanel select {
+        font-size: 16px;
+        position: relative;
+        left: 10px;
+    }
+
+
+.fs_16pt #editor_truncatechar {
+    margin-left: 10px;
+    width: 60px !important;
+    position: relative;
+    top: -3px;
+    left: 5px;
+    font-size: 16px;
+}
+
+.fs_16pt #editor_cuinf span:nth-child(2) {
+    position: relative;
+    width:500px;
+    display: inline-block;
+    float: left;
+    top: -23px;
+    left: 25px;
+}
+
+.fs_16pt #editor_bitlabeloption select {
+    font-size: 14px;
+    position: relative;
+    left: 10px;
+    top: -2px;
+}
+
+.fs_16pt .editor_txtformatoptions {
+    width: auto;
+}
+.fs_16pt .editor_txtformatoptions_side, .fs_16pt .editor_txtformatoptions_sep {
+    width: 60px;
+}
+
+
+    .fs_16pt #editor_4 .reportFilter {
+        margin: 20px 20px 20px 40px;
+        width: auto;
+    }
+
+    .fs_16pt #editor_4 select {
+        font-size: 15pt;
+        height:auto;
+    }
+
+.fs_16pt #editor_sortinfos {
+    margin-top: 12px;
+}
+
+.fs_16pt #editor_groupinfos {
+    margin-top: 10px;
+}
+
+    .fs_16pt #editor_5 #editor_schedulespace {
+        line-height: 10px;
+    }
+
+.fs_16pt #report_schedule_enabled span:nth-child(2) {
+    line-height: 24px !important;
+    position: relative;
+    top: -24px;
+    float: left;
+    left: 50px;
+}
+
+.fs_16pt #editor_schedulemanage {
+    position: relative;
+    top: -24px;
+    left: 10px;
+}
+
+.fs_16pt #previous_btn-mid {
+    font-size: 12pt;
+}
+    .fs_16pt #wizardbody .btnChart:checked + span {
+        font-size: 16px;
+    }
+
+    .fs_16pt #wizardbody .fChartOptions {
+        width: 190px;
+    }
+
+    .fs_16pt #wizardbody .fChartOptions select {
+        width: 185px;
+    }
+
+.fs_16pt .TdOpt {
+}
+
+.fs_16pt .tabOptions tbody tr:first-child {
+    font-size: 16px;
+}
+
+.fs_16pt .calendarhourmin {
+    font-size: 16px;
+    text-align: center;
+}
+
+.fs_16pt .calendarmin, .fs_16pt .calendarhour {
+    color: #5e5e5e;
+    width: 72px;
+    text-align: center;
+    border: 1px solid #666;
+    font-size: 16px;
+}
+
+.fs_16pt .calendartoday {
+    width: 111px;
+    font-size: 15px;
+}
+
+.fs_16pt #tdWizDecal span {
+    font-size: 14px;
+}
+
+.fs_16pt #tdWizDecal .LblMove {
+    font-size: 14px;
+}
+
+.fs_16pt #DivMove {
+    position: relative;
+    top: 20px;
+}
+
+.fs_16pt #DivNoYear span:first-child {
+    font-size: 18pt;
+    position: relative;
+    top: 8px;
+}
+
+
+.fs_16pt #DivMove #lstMove {
+    margin: 0 10px 0 10px;
+    font-size: 15px;
+    width: 60px;
+}
+
+.fs_16pt #editor_2 .selectExpressFilter .eFilterOptionsValue {
+    width: 240px;
+    height: auto;
+    float:right;
+}
+
+    .fs_16pt #editor_2 .selectExpressFilter .eFilterOptionsValue input {
+        width: auto;
+        height: auto;
+    }
+
+.fs_16pt #editor_2 div.eFilterOptionsValue > span.icon-catalog {
+    font-size: 16px;
+}
+
+.fs_16pt div.catMultEditVal {
+    height: 280px;
+}
+
+.fs_16pt .btnSelectUnselectAllIcon {
+    height: 30px;
+}
+
+.fs_16pt .catMultSelUnsel .btnSelectUnselectAllText {
+    font-size: 12pt;
+    vertical-align: 6px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.fs_16pt div.catMultTitle {
+    font-size: 16px;
+}
+
+.fs_16pt #BtnSelect, .fs_16pt #BtnUnselect {
+    font-size: 30px;
+}
+
+.fs_16pt #addCurrentFilter span:nth-child(2) {
+    position: relative;
+    top: -3px;
+    left: 5px;
+}
+
+
+.fs_16pt #editor_3 .chartTitleClass {
+    font-size: 16px;
+}
+
+.fs_16pt #editor_3 span:nth-child(2) {
+    position: relative;
+    top: -3px;
+    left: 5px;
+}
+
+.fs_16pt #editor_3 .optionsVals > select {
+    font-size: 16px;
+}
+
+.fs_16pt #editor_3 .optionsVals input.inpChartSsize {
+    font-size: 16px;
+}
+
+
+.fs_16pt #editor_4 .editor_reportnameinput {
+    font-size: 16px;
+}
+
+.fs_16pt #editor_4 #editor_publicspace {
+    position: relative;
+    top: -3px;
+}
+
+.fs_16pt #editor_4 #editor_public span:nth-child(2) {
+    position: relative;
+    top: 2px;
+}
+
+.fs_16pt .catDlg .icon-folder, .fs_16pt .catDlg .icon-folder-open {
+    font-size: 20px;
+}
+
+.fs_16pt .editor_template_pdf_label {
+    font-size: 18px;
+}
+
+.fs_16pt .editor_templatelist {
+    width: auto;
+    font-size: 16px;
+}
+
+.fs_16pt #editor_templatebutton .button-gray-mid {
+    font-size: 16px;
+}
+
+
+.fs_16pt a.editor_template_pdf_label {
+}
+
+
+.fs_16pt #editor_template_pdffields_label {
+    font-size: 15px;
+}
+
+.fs_16pt .editor_template_pdfcols {
+    height: auto;
+    overflow-y: auto;
+}
+
+
+
+.fs_16pt .FltListTxt, .fs_16pt .NewFltTxt {
+    font-size: 15px;
+}
+
+
+
+.fs_16pt #FilterTabsContainer select, .fs_16pt #FilterTabsContainer input {
+    font-size: 16px;
+    height: auto;
+}
+
+.fs_16pt #FilterTabsContainer .ligne {
+    height: 23px;
+}
+
+.fs_16pt #DivOptList .opt-list-chk {
+    font-size: 18px;
+}
+
+    .fs_16pt #DivOptList .opt-list-chk a span:nth-child(2) {
+        position: relative;
+        top: 0px;
+        left: 5px;
+    }
+
+.fs_16pt #DivOptList #chk_random input {
+    font-size: 17px;
+    position: relative;
+    top: 4px;
+    left: 6px;
+    width: 50px;
+    line-height: 8px;
+}
+
+.fs_16pt .operateur_principal select {
+    width: 70px !important;
+}
+
+.fs_16pt #md_pl-base input {
+    font-size: 18pt;
+}
+
+.fs_16pt #md_pl-base .CalHour {
+    height: auto;
+}
+
+.fs_16pt #md_pl-base .multiusers {
+    height: 25px;
+    padding: 0;
+    line-height: 22px;
+}
+
+.fs_16pt #md_pl-base .tabLeft .table_values {
+    font-size: 17pt;
+}
+
+.fs_16pt #md_pl-base .tabLeft .colPicker {
+    margin-top: 20px;
+}
+
+.fs_16pt #md_pl-base .md_pl_head a.rChk span:nth-child(2) {
+    font-size: 18pt;
+}
+
+.fs_16pt div[ednadmin='1'].usr_cat_body input.usr_search-inpt {
+    border: 1px solid gray;
+    margin-left: 13px;
+    height: 27px;
+    width: calc(100% - 33px - 7px);
+    font-size: 18px;
+}
+
+.fs_16pt #adminAccessSecurity .stepContent .field ul.listRB li * {
+    font-size: 18px;
+}
+
+.fs_16pt #adminAccessSecurity .divStep .field * {
+    font-size: 18px;
+}
+
+.fs_16pt #pnlPasswordPolicy .checkboxField, .fs_16pt #chkIPAccessEnabled > span.optionField, .fs_16pt .stepContent a.rChk span {
+    width: auto;
+}
+
+.fs_16pt #newIPRestriction, #newIPRestriction > span {
+    font-size: 18px;
+}
+
+.fs_16pt .adminLDAPOptions label.info {
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fs_16pt .adminLDAPOptions .labelField {
+    width: 330px;
+}
+
+.fs_16pt .adminLDAPOptions .field > select {
+    width: 254px;
+}
+
+.fs_16pt #rbAuthenticationMethodCAS {
+    margin-top: 15px;
+}
+
+
+.fs_16pt #adminAccessPref p.copyPrefP {
+    font-size: 18px;
+}
+
+.fs_16pt #adminAccessPref ul.copyPrefLabelUl li {
+    font-size: 17pt;
+}
+
+.fs_16pt #adminAccessPref .stepContent p {
+    font-size: 16pt;
+}
+
+
+.fs_16pt #adminAccessPref li.copyPref input.edaPrefInputField {
+    font-size: 16pt;
+}
+
+.fs_16pt .adminCntntDashboard .divStep {
+    font-size: 18px;
+}
+
+.fs_16pt .adminCntntDashboard #txtLicenseKey {
+    font-size: 18px;
+}
+
+.fs_16pt .adminExpressMessage {
+    font-size: 17px;
+}
+
+.fs_16pt #myEudonet li.onClick {
+    font-size: 14pt;
+    margin-bottom:5px
+}
+
+.fs_16pt #myEudonet .titlePart {
+    font-size:18.5pt;
+    padding: 5px 2px;
+}
+
+.fs_16pt #myEudonet #infosWrapper #userDisplayName {
+    font-size: 20pt;
+}
+
+.fs_16pt #myEudonet #blockUserProfile {
+    font-size: 15.5pt;
+}
+
+.fs_16pt ul.adminBreadCrumbs > li {
+    font-size: 16px;
+}
+
+.fs_16pt .adminCntntTtl {
+    font-size: 14.5pt;
+}
+
+.fs_16pt .adminModalMiddleTitle {
+    font-size: 16px;
+}
+
+.fs_16pt #auto-sign {
+    font-size: 17px;
+}
+
+.fs_16pt div.adminCntnt > ul.labelMdpCntnt {
+    font-size: 16px;
+}
+
+.fs_16pt .versionTitle p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.fs_16pt #export-mode{
+    font-size: 16px;
+}
+
+.fs_16pt #formAdminPlanningPref{
+    font-size:18px;
+}
+
+.fs_16pt #formAdminPlanningPref select{
+    font-size:18px;
+    width: auto;
+    height: auto;
+}
+
+.fs_16pt #formAdminPlanningPref #listWeekDays li{
+    width:auto;
+}
+
+.fs_16pt #formAdminPlanningPref #rdvColors li {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    float: left;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.fs_16pt #formAdminPlanningPref #rdvColors li span {
+    font-size: 17px;
+}
+
+
+.fs_16pt #planningPrefContent .partContent .field {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fs_16pt input.readonly{
+    min-height:30px;
+}
+
+.fs_16pt .iMnd {
+    font-size: 16px;
+}
+
+
+.fs_16pt .DivOpen .icon-add, .DivClosed .icon-add{
+    font-size:16pt!important;
+}
+
+.fs_16pt .fldBtnUl .icon-edn-pen, .fs_16pt .fldBtnUl .icon-delete {
+    font-size: 15pt!important;
+}
+
+.fs_16pt div.subTabDiv span a {
+    font-size: 14.5pt;
+}
+
+.fs_16pt .colorPick span.colorTitle span {
+    font-size: 20px;
+}
+
+.fs_16pt .widget-menu-container .widgetTypeContainer div{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.fs_16pt .widgetTypeContainer span {
+    font-size: 14px;
+}
+
+.fs_16pt .widget-menu-container .widgetTypeContainer{
+    height:95px;
+}
+
+.fs_16pt .paramBlockContent {
+    overflow-y: auto;
+    max-height: 700px;
+}
+
+.fs_16pt .nickMnu {
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+     max-width: 280px;
+}
+
+.fs_16pt .xrm-grid-options span {
+    margin-right: 12px;
+    font-size: 1.8em;
+}
+
+.fs_16pt #DivSelectionList .DivOpen {
+    line-height: 23px;
+}
+
+.fs_16pt .xrm-grid-options span {
+    font-size: 18pt;
+}
+
+.fs_16pt .hp-submenu #SubTabMenuCtnr {
+    line-height: 26px;
+}
+
+.fs_16pt .xrm-widget-title {
+    line-height: 21px;
+    font-size: 13.3pt;
+}
+
+.fs_16pt .xrm-widget-subtitle {
+    color: #A5A4A8;
+    text-align: left;
+    font-size: 11.5pt;
+    line-height: 9px;
+}
+
+.fs_16pt .tbHtileModal {
+    width: 100%;
+}
+
+.fs_16pt .tbHtileModal .TitleModal {
+    font-size: 20pt;
+}
+
+.fs_16pt .MainModal {
+    background-color: #f8f8f8;
+    margin-top: 8px;
+}
+
+.fs_16pt table {
+    font-size: 16pt;
+}
+
+.fs_16pt .ItemListSep .icon-item_add, .fs_16pt .ItemListSep .icon-item_rem, .fs_16pt .ItemListSep .icon-item_down, .fs_16pt .ItemListSep .icon-item_up {
+    font-size: 24pt!important;
+}
+
+.fs_16pt .btnSelectUnselectAllIcon {
+    font-size: 22.5pt;
+}
+
+.fs_16pt .btnSelectUnselectAllIcon {
+    font-size: 22pt;
+}
+.fs_16pt .btnSelectUnselectAllIcon {
+    height: 30px;
+}
+
+.fs_16pt .btnSelectUnselectAllText {
+    font-size: 16pt;
+    vertical-align: 4px;
+}
+
+.fs_16pt #DivSelectionList{
+    margin-bottom:10px;
+}
+
+.fs_16pt .button-green {
+    font-size: 15pt!important;
+}
+
+.fs_16pt .button-red {
+    font-size: 15pt!important;
+}
+
+.fs_16pt .button-gray {
+    font-size: 15pt!important;
+}
+
+.fs_16pt .rightMenuSpan_adjust [class^="icon-"] {
+    font-size: 15.5pt;
+}
+
+.fs_16pt .rightMenuSpan_adjust [class^="icon-"] {
+    width: 40px;
+}
+.fs_16pt .rightMenuSpan_adjust [class^="icon-"], .fs_16pt .rightMenuModFile span.icon-item_rem {
+    font-size: 15pt;
+}
+
+.fs_16pt div.rightMenuOption > ul > li > a > span > span.icnMnuChip {
+    font-size: 11pt!important;
+}
+
+.fs_16pt .rightMenuOption a, .fs_16pt .rightMenuModFile a {
+    font-size: 16pt;
+    display: block;
+    line-height: 30px;
+    height: 2.125rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+ .fs_16pt .btnEscMnu {
+    line-height: 35px;
+}
+
+.fs_16pt .mTab .lnkIcon span {
+    font-size: 13pt!important;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.fs_16pt .hdName {
+    overflow: hidden;
+    white-space: nowrap;
+    color: #666666;
+    padding-left: 3px;
+    text-overflow: ellipsis;
+}
+
+.fs_16pt div.inTDbtn {
+    margin-right: 0px;
+    margin-left: auto;
+    font-size: 12pt;
+    text-align: center;
+    line-height: 29px;
+    margin-top: 0px;
+}
+
+.fs_16pt div.advFltMenu {
+    font: bold 15px verdana,sans-serif;
+    padding: 1px 8px;
+    line-height: 20px!important;
+    float: right;
+    margin-left: 10px;
+    padding: 1px 8px;
+    margin-bottom: 4px;
+    line-height: 16px;
+}
+
+.fs_16pt div.histoFilter {
+    font: bold 15px verdana,sans-serif;
+    float: right;
+    margin-left: 10px;
+    padding: 1px 8px;
+    margin-bottom:4px;
+    line-height:16px;
+}
+    .fs_16pt div.histoFilter div {
+        line-height: 22px;
+    }
+
+.fs_16pt div.histoFilter.histoActive {
+    background-color: #AAD524;
+    color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #AAD524;
+    font: bold 14px verdana,sans-serif;
+    line-height: 15px!important;
+}
+
+.fs_16pt div.histoFilter.histoActive:hover {
+    background-color: #9cc322;
+    color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #9cc322;
+    font: bold 14px verdana,sans-serif;
+    line-height: 15px!important;
+}
+
+.fs_16pt .QckUsrFltContent input.activeQF {
+    font-size: 0.9375rem;
+}
+
+.fs_16pt .QckUsrFltContent .icon-input {
+    font-size: 0.9375rem;
+    line-height: 28px;
+}
+
+.fs_16pt .QuickFilterCont select {
+    font-size: 15.5pt;
+}
+
+.fs_16pt #btnActionsTop {
+    width: 140px;
+    font-size: 13.5pt;
+}
+
+
+.fs_16pt td.numpage input {
+    border: 1px solid #AFABAC;
+    height: 20px;
+    text-align: center;
+    font-size: 15.5pt;
+}
+
+.fs_16pt .rightMenuModFile span {
+    margin-left: 9.5px;
+    margin-top: 4px;
+}
+
+.fs_16pt .rightMenuOption a, .fs_16pt .rightMenuModFile a {
+    font-size: 16pt;
+    display: block;
+    line-height: 30px;
+    height: 34px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.fs_16pt div.adminModalTitle div:nth-child(2) {
+    vertical-align: 6px;
+    font-size: 20pt;
+    margin-left: 0;
+}
+
+.fs_16pt #myEudonet {
+    height: 505px;
+    overflow: hidden;
+}
+
+.fs_16pt .myBlockPrefs {
+    height: 245px;
+}
+
+.fs_16pt .fileOwner {
+    float: left;
+    margin: 1px 5px 0 4px;
+    cursor: pointer;
+}
+
+.fs_16pt #goTabListRightMenuLink .icon-item_rem, .fs_16pt #goTabListRightMenuLink .rightMenuSpan_adjust {
+    margin: 0px;
+    line-height: 34px;
+}
+
+.fs_16pt .adminNav ul.Action_sMC .navSubAction {
+    padding: 1px 10px;
+}
+
+.fs_16pt .FltListTxt, .fs_16pt .NewFltTxt {
+    font-size: 13.5pt;
+}
+
+
+.fs_16pt .adminCntnt table.mTab [class^="icon-"], .fs_16pt .adminCntnt table.mTab [class*=" icon-"] {
+    font-size: 13pt;
+}
+
+.fs_16pt #eFSContainerAdminTabs, fs_16pt #eFSContainerAdminHomepages {
+    float: right;
+    padding-left: 20px;
+    padding-top: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 22px;
+}
+
+
+.fs_16pt .paramBlock h3 {
+    font-size: 15pt;
+    padding: 4px 0 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fs_16pt #paramTab1 ul li, .fs_16pt li.dragField {
+    height: 26px;
+}
+
+.fs_16pt #paramTab1 ul li span, .fs_16pt li.dragField span {
+    vertical-align: middle;
+    font-size: 14pt;
+    color: #66686c;
+}
+
+.fs_16pt #paramTab1 .fieldIcon[class^='icon-'], .fs_16pt li.dragField .fieldIcon {
+    width: 19px;
+    margin-right: 7px;
+    font-size: 14pt;
+    display: inline-block;
+}
+
+.fs_16pt .paramPartContent h5 {
+    font-size: 13pt;
+    margin: 10px 0 5px;
+}
+
+.fs_16pt .paramBlock .field {
+    margin-bottom: 9px!important;
+    margin-top: 4px!important;
+    position: relative;
+}
+
+.fs_16pt .paramPart header {
+    padding: 7px 4px 6px 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.fs_16pt #btnSelectPicto {
+    font-size: 16px;
+    height: 29px;
+}
+
+.fs_16pt .paramPart select.relationparent {
+    width: 178px;
+    margin-bottom: 5px;
+    font-family: Verdana, 'Trebuchet MS';
+    font-size: 13pt;
+    color: #7A716E;
+}
+
+.fs_16pt .resumeBreakline {
+    cursor: pointer;
+    position: absolute;
+    bottom: 4px;
+    left: 5px;
+    font-size: 18pt;
+}
+
+.fs_16pt .table_labels, .fs_16pt .table_lab_pty {
+    vertical-align: middle;
+    padding: 0px;
+    padding-right: 8px;
+    padding-left: 8px;
+    color: #636363;
+}
+
+.fs_16pt #editor_DivButtonSelectAll .btnSelectUnselectAllText {
+    vertical-align: 7px!important;
+}
+
+.fs_16pt #editor_DivButtonUnselectAll .btnSelectUnselectAllText {
+    vertical-align: 7px!important;
+}
+
+.fs_16pt #editor_fieldoptions li {
+    max-width: 470px;
+}
+
+.fs_16pt #editor_fieldoptions li a.rChk span {
+    margin: 5px 5px 3px 3px;
+}
+
+.fs_16pt #editor_fieldoptions a.rChk span:nth-child(2) {
+    font-size: 15.5pt;
+    width: 415px;
+    position: absolute;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fs_16pt #editor_ConfigurationDivTitle {
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 600px;
+}
+.fs_16pt #editor_fieldlabel {
+    display: inline-block;
+    width: 520px;
+}
+
+.fs_16pt #editor_fieldoptions li a.rChk [class^='icon-']{
+        margin: 8px 6px 0 0!important;
+}
+
+.fs_16pt #editor_truncatechar {
+    margin-left: 10px;
+    width: 60px !important;
+    position: relative;
+    top: 3px;
+    left: 415px;
+    font-size: 16px;
+}
+
+.fs_16pt #editor_popupdatadisplayoption {
+    position: relative;
+    top: 5px;
+    left: 115px;
+    font-size: 14pt
+}
+
+.fs_16pt #editor_bitlabeloption select {
+    font-size: 14pt;
+    position: relative;
+    left: 205px;
+    top: 3px;
+}
+
+.fs_16pt #editor_bitlabel span:nth-child(2) {
+    font-size: 14pt;
+    width: 215px!important;
+    position: absolute;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fs_16pt #editor_3 span:nth-child(2) {
+    position: relative;
+    top: -3px;
+    left: 5px;
+    margin-right: 10px;
+}
+
+.fs_16pt .editor_templatelist {
+    font-size: 15.5pt;
+    width:200px;
+}
+
+.fs_16pt div.mailing_options_container label.label {
+    display: inline-block;
+    width: 310px;
+    text-align: right;
+    margin-right: 8px;
+    color: #636363;
+}
+
+.fs_16pt .mailing_options_container input {
+    font-size: 15.5pt;
+    padding: 3px 3px 3px 3px;
+    width: auto;
+}
+
+.fs_16pt .mailing_options_container input[type="radio"] {
+    height: 16px;
+    width: 16px;
+}
+
+.fs_16pt #previous_btn-mid {
+    font-size: 15pt;
+}
+
+.fs_16pt #editor_txtformatoptions input {
+    font-size: 15.5pt;
+}
+
+.fs_16pt #editor_txtformatoptions .txtformatoptionsul li {
+    margin-top: 8px;
+}
+
+.fs_16pt #fontSelects select {
+    font-size: 15.5pt;
+    height: auto;
+}
+
+.fs_16pt #editor_groupinfos1 select, .fs_16pt #editor_groupinfos2 select, .fs_16pt #editor_groupinfos3 select{
+    margin-right:10px!important
+}
+
+.fs_16pt .editor_reportnameinput {
+    width: 300px;
+    height: auto;
+    border: solid 1px #ccc;
+    background-color: white;
+    font-family: Verdana;
+    text-indent: 5px;
+    font-size:15.5pt;
+}
+
+.fs_16pt #divFreq .selFreq {
+    margin-bottom: 15px;
+}
+
+.fs_16pt #divFreq h3 {
+    margin-top: 0;
+    font-size: 16pt;
+}
+
+.fs_16pt #ScheduleTypeList {
+    font-size: 15.5pt;
+    position: relative;
+    top: -5px;
+    left: 4px;
+    margin-bottom: 5px;
+}
+
+.fs_16pt #daily_DIV .line input:nth-child(2n) {
+    text-align: center;
+    font-size: 15.5pt;
+    margin: 0;
+    height: 17px;
+}
+
+.fs_16pt #divFreq ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.fs_16pt #hourTitle {
+    font-size: 16pt;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.fs_16pt #hourDiv .scheduleLabel {
+    width: 90px;
+    font-size: 16pt;
+    position: relative;
+    left: 25px;
+    top: -1px;
+    float: left;
+}
+
+.fs_16pt #hourDiv .scheduleDate {
+    position: relative;
+    left: 20px;
+    width: 70px;
+    float: left;
+}
+
+.fs_16pt #hourDiv #tdHourLaunch select {
+    font-size: 15.5pt;
+}
+
+.fs_16pt .selFreq {
+    font-size: 16pt;
+    margin-bottom: 0;
+}
+
+.fs_16pt #RangeBegin, .fs_16pt #RangeEndDate, .fs_16pt #RangeCount {
+    font-size: 15.5pt;
+    width: 120px;
+}
+
+
+.fs_16pt .scheduleLabel {
+    position: absolute;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 180px;
+}
+
+
+.fs_16pt #wizardbody .btnChart:checked + span {
+    font-size: 15pt;
+}
+
+.fs_16pt #wizardbody .editor_select {
+    margin-right: 6px;
+    width: 220px;
+    min-width: 140px;
+}
+
+.fs_16pt #ulWrappeur select {
+    font-size: 16pt;
+}
+
+.fs_16pt #wizardbody #liAddFilter select {
+    width: auto;
+}
+
+.fs_16pt #ulWrappeur select {
+    font-size: 16pt;
+}
+
+.fs_16pt #editor_2 .selectExpressFilter .eFilterOptionsValue input {
+    min-height: 25px;
+    width:75%;
+    font-size:16pt;
+}
+
+.fs_16pt .selectExpressFilter select.editor_select, .selectExpressFilter input {
+    font-size: 14pt;
+}
+
+.fs_16pt #editor_3 .chartTitleClass {
+    font-size: 15.5pt;
+     margin-top: 5px;
+}
+
+.fs_16pt #editor_3 .optionsVals > select {
+    font-size: 15.5pt;
+}
+
+
+.fs_16pt #editor_3 .optionsVals input.inpChartSsize {
+    font-size: 15.5pt;
+}
+
+.fs_16pt #ulWrappeur #rbqValsLabelY {
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+.fs_16pt #tailChrt {
+    padding-top: 20px;
+}
+
+.fs_16pt #editor_4 .editor_reportnameinput {
+    font-size: 15.5pt;
+    height: auto;
+}
+
+.fs_16pt #dynGraphImageDiv {
+    margin-right: 7%;
+}
+
+.fs_16pt #ulWrappeur .rdBtnChoisSeries {
+    max-width: 680px;
+}
+
+.fs_16pt #ulWrappeur #rbqValsLabelX {
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+.fs_16pt #wizardbody .editor_select {
+    margin-right: 6px;
+    width: 180px;
+    min-width: 140px;
+}
+
+.fs_16pt #ulWrappeur #rbqSeriesLabel {
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+.fs_16pt #ulWrappeur #rbqValsLabelY {
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+.fs_16pt #ulWrappeur #rbqDescContent {
+    height: auto;
+    width: 870px;
+}
+
+
+.fs_16pt #combinedulWrappeur select {
+    font-size: 15.5pt;
+}
+
+.fs_16pt #CombinedYrbqValsContentY label {
+    padding-left: 29px;
+}
+
+.fs_16pt .rbqValsContent {
+    margin-left: 50px;
+    height: 30px;
+}
+
+.fs_16pt #CombinedYliAddFilter label, .fs_16pt #CombinedZliAddFilter label {
+    padding-left: 81px;
+}
+
+.fs_16pt #CombinedZrbqValsContentY label {
+    padding-left: 28px;
+}
+
+.fs_16pt .filterLabel, .fs_16pt .filterExpressLabel {
+    margin-top: 22px;
+    margin-bottom: 8pt;
+    font-weight: bold;
+    height: auto;
+}
+
+.fs_16pt #mainDiv #listContent {
+    height: 220px;
+}
+
+.fs_16pt #ulActions li{
+    margin-bottom:10px;
+ }
+
+.fs_16pt #ulActions select {
+    width: 160px;
+    position: relative;
+    font-size: 15.5pt;
+    float: right;
+    height:auto;
+}
+
+
+.fs_16pt .title_sep_page .icnFileBtn {
+    margin: 0px 2px 0 9px;
+}
+
+.fs_16pt ul.adminBreadCrumbs > li {
+    font-size: 15.5pt;
+}
+
+.fs_16pt .adminModalMiddleTitle {
+    font-size: 15.5pt;
+}
+
+.fs_16pt .adminCntntTtl {
+    font-size: 15.5pt;
+}
+
+
+.fs_16pt #ftsize {
+    font-size: 15.5pt;
+}
+
+
+.fs_16pt #filePropContainer table tbody {
+    overflow: auto;
+    display: block;
+    max-height: 210px;
+}
+
+.fs_16pt #filePropContainer table tbody tr td[ero='1'].table_values{
+    display: inherit;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fs_16pt #mainDiv .fs_16pt #listContent {
+    height: inherit;
+}
+
+.fs_16pt #spanAddFileFromPopup {
+    position: relative;
+    top: -4px;
+}
+
+
+.fs_16pt .ToolbarModalRight {
+    float: right;
+    margin-top: 8px;
+}
+
+.fs_16pt .ToolbarModalLeft {
+    float: left;
+    margin-top: 8px;
+}
+
+.fs_16pt .filePty {
+    background-color: white;
+    width: 96%;
+    border: 1px solid Gray;
+    margin: 2%;
+    padding: 5px;
+}
+
+.fs_16pt .table_lab_pty {
+    vertical-align: middle;
+    padding: 0px;
+    padding-right: 2px;
+    padding-left: 2px;
+    color: #636363;
+}
+
+
+.fs_16pt .templates-select li {
+    margin: 0 60px 0 0;
+    padding: 2px;
+    min-width: inherit;
+    max-width: inherit;
+    text-align: left;
+    list-style-type: none !important;
+    float: left;
+}
+
+
+.fs_16pt #mailDiv input[type=text] {
+    font-family: Verdana, Calibri, Trebuchet MS;
+    height: auto;
+}
+
+.fs_16pt #ulActions input.trt_UpdWithNew{
+    height: auto;
+    width: 156px!important;
+    font-size: 15pt;
+}
+
+.fs_16pt #ulActions  {
+    overflow: auto;
+    max-height: 220px;
+}
+
+.fs_16pt #ulActions .trt_Header {
+    position: absolute;
+    background: #f8f8f8;
+    width: 90%;
+}
+
+.fs_16pt #ulActions li.trt_Opt3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fs_16pt #ulActions .trt_Opt2 div input {
+    font-size:15.5pt;
+    height:auto;
+    text-align:center;
+}
+
+
+.fs_16pt #ulActions li label[for=action_update_fromexisting]
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width:300px;
+    float:left
+}
+
+
+.fs_16pt #ulActions li #action_update_fromexisting
+{
+    float:left
+}
+
+.fs_16pt .selectFilter, .fs_16pt .selectExpressFilter {
+    margin-left: 0px;
+}
+
+.fs_16pt .ItemListTd {
+    max-width:350px;
+}
+.fs_16pt .ItemList{
+    overflow-x:auto!important;
+}
+.fs_16pt #DivTargetList, .fs_16pt #DivSourceList{
+    overflow-x:auto!important;
+    display:grid;
+}
+
+.fs_16pt .window_iframe {
+    height: auto;
+    max-height: 600px;
+}
+
+.fs_16pt #notifHeader a {
+    font-size:15pt;
+}
+.fs_16pt .notifInfoText {
+    font-size: 15pt;
+}
+.fs_16pt .notifTimeSpan {
+    font-size: 15pt;
+}
+.fs_16pt .notifNoItem {
+    font-size: 15pt;
+}
+
+.fs_16pt #formGeoloc #leftPart #intro{
+    font-size: 16pt;
+}
+.fs_16pt #formGeoloc #leftPart {
+    float: left;
+    width: 30%;
+    padding: 15px 10px;
+}
+.fs_16pt #formGeoloc #geolocMap {
+    width: 70%;
+    height: 630px;
+    float: left;
+}
+.fs_16pt #formGeoloc #leftPart .field input{
+    font-size: 16pt;
+    height: auto;
+    width: 100%;
+}
+
+.fs_16pt #formGeoloc #leftPart .field label {
+    font-size:16.5pt;
+    text-align: left;
+}
+
+
+.fs_16pt #FilterTabsContainer .table_filtres .head-contact select{
+    font-size:14pt;
+    top:0;
+}
+
+.fs_16pt #FilterTabsContainer .table_filtres .choix_filtres .options{
+    height:auto;
+}
+
+.fs_16pt #FilterTabsContainer .table_filtres .choix_filtres .ligne{
+    height:auto;
+}
+
+.fs_16pt #FilterTabsContainer .table_filtres .choix_filtres select, .fs_16pt #FilterTabsContainer .table_filtres .choix_filtres input{
+    font-size:14pt;
+    height:auto;
+}
+
+.fs_16pt #FilterTabsContainer .table_filtres .choix_filtres .icon-catalog{
+    font-size:13pt;
+}
+
+.fs_16pt #FilterTabsContainer .endOperator{
+    font-size:13pt;
+    width: 70px !important;
+}
+
+.fs_16pt #FilterTabsContainer .operateur_principal select{
+    font-size:13pt;
+    width: 70px !important;
+}
+
+.fs_16pt #MainFilterDiv .adv-opt-block .text-opt_av{
+    font-size:14pt;
+}
+.fs_16pt #MainFilterDiv .adv-opt-block .option-list{
+    font-size:13pt;
+}
+
+.fs_16pt #MainFilterDiv .opt-list-chk #TxtRandom{
+    font-size:14pt;
+}
+
+.fs_16pt #MainFilterDiv #DivOptList .opt-list-chk{
+    line-height:24px;
+}
+
+.fs_16pt #MainFilterDiv .adv-opt-block{
+    bottom: 0;
+}
+
+.fs_16pt #editor_configurablelist {
+    width: auto;
+}
+
+.fs_16pt .ButtonModal[lierFichier="true"]{
+    margin-top: 8px;
+}
+
+.fs_16pt .MainModal[lierFichierIframe="true"] iframe{
+    height:95%!important;
+}
+
+.fs_16pt .LinkFileResult div select{
+    width: 240px;
+    margin-top: 10px;
+    font-size: 14pt;
+}
+
+.fs_16pt .editor_template{
+     margin-left: 0;
+}
+
+.fs_16pt .editor_templatelist {
+    width: 260px;
+    float: left;
+    margin-left: 0;
+    margin-top: 1px;
+}
+
+.fs_16pt #editor_template_excellabel{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.fs_16pt #DataTextQualifierOption #textQualifier{
+    margin-left: 240px;
+    font-size: 15pt;
+    height: auto;
+}
+
+.fs_16pt #DataSeparatorOption #separatorList{
+    margin-left: 455px;
+    font-size: 15pt;
+    height: auto;
+}
+
+.fs_16pt #DataSeparatorOption #otherSeparator{
+    font-size: 15pt;
+}
+
+.fs_16pt #firstLineHeader{
+    width: 16px;
+    height: 16px;
+    vertical-align: -2px;
+}
+
+.fs_16pt .options_header .optionsMapping .divOptions .rdBOptions label{
+    font-size: 12pt;
+}
+
+.fs_16pt .options_header .tables_header .tables_header_title{
+    font-size: 12pt;
+}
+
+
+
+
+
+.fs_16pt #DataSourceOption input[type='file']{
+     font-size: 14pt;
+}
+
+.fs_16pt .subFieldHeadImport, .fs_16pt .fieldcibleSpan{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fs_16pt .data-source-mappingTab-step .options_header .red{
+     font-size: 13pt;
+}
+
+.fs_16pt .data-source-step .headerClass{
+    font-size: 16pt;
+}
+
+.fs_16pt .data-source-step .headerOptionsLine .iconHeaderOptions{
+        font-size: 18pt!important;
+        margin-right: 5px;
+}
+
+.fs_16pt .data-source-step .headerOptionsLine .divTabOptions{
+     font-size: 17pt;
+    margin: 0;
+    padding: 0;
+    top: 0!important;
+    left: 0!important;
+}
+
+.fs_16pt .data-source-step .headerOptionsLine .divTabOptions .optionsClass{
+    padding-left: 0;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16pt;
+}
+
+.fs_16pt .data-source-step .headerOptionsLine .divTabOptions .optionsClass .optionsLine {
+    float: left;
+    width: 300px;
+}
+
+.fs_16pt .data-source-step .headerOptionsLine .divTabOptions .optionsClass .selectClass {
+    width: 290px;
+    font-size: 15pt;
+}
+
+.fs_16pt .global_field_destination_container .tablsContainer .tabls_destination_container .subTableHead{
+    font-size: 15pt!important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+
+
+.fs_16pt #editor_powerbi_url_input.editor_powerbi_wizard_control{
+    font-size:15.5pt;
+    margin-left:0;
+}
+.fs_16pt .reportFinalize li, .reportInformation li{
+    height: 30px;
+    margin: 5px 0 10px 0;
+}
+.fs_16pt .editor_powerbi_wizard_label{
+    width: 250px;
+}
+.fs_16pt .editor_powerbi_url_input,
+.fs_16pt .editor_powerbi_date_input,
+.fs_16pt .editor_powerbi_user_input,
+.fs_16pt .editor_powerbi_executionmode_input,
+.fs_16pt .editor_powerbi_format_input,
+.fs_16pt .editor_powerbi_columnseparator_select,
+.fs_16pt .editor_powerbi_columnseparator_input,
+.fs_16pt .editor_powerbi_columnseparatorcustomvalue_input{
+    margin:0;
+    font-size: 15.5pt;
+    width: 196px;
+}
+.fs_16pt #editor_powerbi_url_button,
+.fs_16pt #editor_powerbi_date_button,
+.fs_16pt #editor_powerbi_user_button,
+.fs_16pt #editor_powerbi_executionmode_button,
+.fs_16pt #editor_powerbi_format_button,
+.fs_16pt #editor_powerbi_columnseparator_button{
+    font-size:15pt;
+}
+.fs_16pt .editor_powerbi_executionmode_select,
+.fs_16pt .editor_powerbi_format_select,
+.fs_16pt .editor_powerbi_columnseparator_select{
+    margin: 0;
+    font-size: 15.5pt;
+    margin-right:10px;
+    width: 202px;
+}
+.fs_16pt .editor_powerbi_columnseparator_label{
+    width: 460px;
+}
+.fs_16pt .reportFinalize ul{
+    margin: 0px 0 40px 0;
+}
+.fs_16pt #editor_powerbi_columnseparatorcustomvalue_input{
+     padding: 0;
+     text-align: center;
+     width: 30px;
+}
+.fs_16pt #OptViewFilterLink #LevelLst_View, .fs_16pt #OptUpdateFilterLink #LevelLst_Update, .fs_16pt #OptViewFilterLink #TxtUsers_View, .fs_16pt #OptUpdateFilterLink #TxtUsers_Update{
+    font-size:15.5pt;
+     position: relative;
+     top:3px;
+}
+.fs_16pt #OptViewFilterLink #UsersLink_View, .fs_16pt #OptUpdateFilterLink #UsersLink_Update{
+    font-size: 15pt;
+    position: relative;
+    top: 3px;
+}
+.fs_16pt .editor_powerbi_reportinformation_label{
+    width: 58%;
+}
+.fs_16pt .reportInformation ul{
+    padding-left: 0;
+}
+.fs_16pt .reportInformation ul li input{
+    width:290px;
+}
+
+
+
+.fs_16pt #combinedulWrappeur {
+    max-width: 770px;
+}
+
+.fs_16pt .selectFilter, .selectExpressFilter {
+    margin-bottom: 13px;
+}
+
+    .fs_16pt .selectExpressFilter select.editor_select, .selectExpressFilter input {
+        margin-bottom: 5px;
+    }
+
+.fs_16pt #combinedulWrappeur .filterExpressLabel {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.fs_16pt span.adminTileSubText {
+    font-size: 10pt;
+    line-height: 10pt;
+}
+
+.fs_16pt .paramStep .stepTitle {
+    line-height: 26px;
+    margin-left: 10px;
+    font-size: 17.5pt;
+}
+
+.fs_16pt .adminCntntParameters .divStep {
+    font-size: 15pt;
+}
+
+.fs_16pt .adminCntnt .field > select, .field > input, .adminCntnt .adminIPTable {
+    font-size: 15pt;
+}
+
+.fs_16pt .adminCntnt #textSectionsDelimiter, .fs_16pt .adminCntnt #textDecimalDelimiter, .fs_16pt .adminCntnt #textCalendarDayItemWidth{
+    font-size: 15pt;
+    text-align: center;
+}
+
+.fs_16pt .adminCntnt #txtHelpDeskCopy, .fs_16pt .adminCntnt #txtFeedbackMailAddress, .fs_16pt .adminCntnt #textUrlORM_URL, .fs_16pt .adminCntnt #textUrlORM_SPECIF{
+    font-size: 15pt;
+}
+.fs_16pt .stepContent .adminLDAPOptions .fieldInline {
+    margin-bottom: 5px;
+}
+
+
+.fs_16pt #adminAccessPref .paramStep span[class^='icon-'] {
+    font-size: 14pt;
+    vertical-align: baseline;
+}
+
+.fs_16pt #groupDuplicatePref{
+        white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fs_16pt ul.copyPrefSrcDslUL li span.rIco {
+    font-size: 19pt;
+    vertical-align: top;
+    padding-left: 2px;
+    line-height: 29pt;
+}
+
+
+@media screen and (max-width: 1160px) {
+
+    .fs_16pt .editor_select {
+        margin-right: 6px;
+        width: 125px;
+        min-width: 125px;
+    }
+
+    .fs_16pt .btnChart + span {
+        padding-right: 15pt;
+    }
+
+    .fs_16pt #dynGraphImageDiv, .fs_16pt #dynGraphImageFormat {
+        margin-right: -40px;
+        margin-top: 0;
+    }
+
+    .fs_16pt #wizardbody .editor_select {
+        margin-right: 6px;
+        width: 130px;
+        min-width: 130px;
+    }
+
+    .fs_16pt #wizardbody .fChartOptions select {
+        width: 125px;
+    }
+
+    .fs_16pt #wizardbody .fChartOptions {
+        width: 130px;
+    }
+
+    .fs_16pt #ulWrappeur #rbqDescContent {
+        height: auto;
+        width: 770px;
+    }
+}
+
+
+@media screen and (max-width: 1520px) {
+  .fs_16pt #listQuickFilters .QckUsrFltContainer .QckUsrFltContent li input{
+      white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100px;
+  }
+  .fs_16pt #listQuickFilters .QuickFilterCont td select{
+      white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100px;
+  }
+
+  .fs_16pt #histoFilterTxt{
+      white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+    .fs_16pt #AdvFltMenu {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .fs_16pt div.advFltMenu {
+        font: bold 16px verdana,sans-serif;
+        padding: 1px 8px;
+        margin: 4px 0 0 0;
+    }
+
+     .fs_16pt div.histoFilter {
+        font: bold 16px verdana,sans-serif;
+        float: inherit;
+        margin-right: 10px;
+        padding: 1px 8px;
+        margin-top: 4px;
+        line-height: 16px;
+        height:20px;
+    }
+    .fs_16pt #mainDiv .LnkTopOpt li:nth-child(3) div div{
+        font: bold 16px verdana,sans-serif;
+        white-space: inherit;
+        text-overflow: inherit;
+        overflow: inherit;
+        width: auto;
+        line-height:16px;
+    }
+}
+#listContent p.pInfo {
+    margin: 0 0 5px;
+    font-size: 16pt;
+}
+
+
+
+
+
+.fs_16pt #rightsAdminModalContent #headerFilters label{
+    font-size: 16pt!important;
+     width: auto;
+}
+
+.fs_16pt #rightsAdminModalContent #headerFilters select{
+    font-size: 16pt!important;
+    height:auto;
+}
+
+.fs_16pt #rightsAdminModalContent #rightsTabFilters #iconWrapper{
+    width: 20px;
+    height:31px;
+}
+
+
+.fs_16pt #rightsAdminModalContent #rightsTabFilters #content{
+    background-color: #A5A4AC;
+    height: 31px;
+    line-height:31px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16pt;
+    margin-bottom: 8px;
+}
+
+.fs_16pt #rightsAdminModalContent #rightsTabFilters #content label {
+    margin-right: 10px;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    line-height: 31px;
+}
+
+.fs_16pt #rightsAdminModalContent #rightsTabFilters #content select{
+    height:auto;
+    font-size: 15.5pt;
+}
+
+
+.fs_16pt #rightsAdminModalContent #treatmentsButton, .fs_16pt #rightsAdminModalContent #exportButton {
+    padding: 0 20px;
+    cursor: pointer;
+    line-height: 23px;
+}
+
+.fs_16pt #rightsAdminModalContent #tableFilters {
+    font-size: 16pt;
+    border: 1px solid #d3d4d6;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+}
+
+.fs_16pt #rightsAdminModalContent #tableFilters thead th {
+    border-right: 1px solid #B3A69E;
+    padding: 0 12px;
+    height: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fs_16pt #rightsAdminModalContent #tableFilters td {
+    vertical-align: middle;
+    height: 30px;
+    padding: 4px 10px;
+    line-height: 28px;
+}
+.fs_16pt #rightsAdminModalContent #tableFilters output {
+    text-align: center;
+    display: block;
+    font-size: 11pt;
+    margin-bottom: 7px;
+    margin-top: 0;
+    line-height: 17px;
+}
+
+
+.fs_16pt #conditionsAdminModalContent{
+    font-size: 16pt;
+}
+
+.fs_16pt #conditionsAdminModalContent #edaFormulaTitle{
+    font-size: 16pt;
+}
+
+.fs_16pt #conditionsAdminModalContent #stepTitle #SHOW_CHOICE{
+    font-size: 15pt;
+}
+
+.fs_16pt #conditionsAdminModalContent #stepTitle #SHOW_CHOICE  span{
+    font-size: 12pt;
+ }
+
+.fs_16pt #conditionsAdminModalContent #RULES_ALL_DEF_NORULES .stepRulesConditionalBloc{
+    font-size: 13pt;
+}
+
+
+
+
+.fs_16pt #conditionsAdminModalContent .stepRulesConditionalBloc {
+        color: #37A7DE;
+        font-size: 13pt;
+        font-weight: bold;
+    }
+
+.fs_16pt div#conditionsAdminModalContent span.stepRulesNewRulesBtn, .fs_16pt div#conditionsAdminModalContent span.stepRulesNewRulesBtn span.icon-add {
+    font-size: 13pt;
+}
+
+.fs_16pt div#conditionsAdminModalContent span.stepRulesNewRulesBtn.icon-delete {
+    margin-top: 3px;
+}
+
+
+
+
+
+
+
+.fs_16pt .edaFormulaField, .fs_16pt .edaFormulaField input, .fs_16pt .edaFormulaField select {
+    height: auto;
+    font-size: 16pt;
+}
+
+.fs_16pt .edaFormulaContent .divStep {
+    height: auto;
+    font-size: 16pt;
+}
+
+.fs_16pt #stepTitle2 #trigger_all_newCondition {
+    margin-top: 0;
+}
+
+    .fs_16pt #stepTitle2 #trigger_all_newCondition span {
+        font-size: 13pt!important;
+    }
+
+        .fs_16pt #stepTitle2 #trigger_all_newCondition span[class^='icon-'] {
+            font-size: 13pt !important;
+        }
+
+
+.fs_16pt #innerCases div.edaAllCases {
+    color: #37A7DE;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.fs_16pt #innerCases .inner-cases-line > div:first-child, .fs_16pt #innerCases .inner-cases-lineExM > div:first-child {
+    z-index: 0;
+    display: inline-block;
+    position: relative;
+    font-family: Verdana;
+    font-size: 16pt;
+    padding-top: 4px;
+}
+
+.fs_16pt #innerCases .inner-cases-line > div:first-child {
+    padding-left: 3px;
+    text-align: right;
+    width: 25%;
+    float: left;
+}
+
+.fs_16pt #innerCases .value-container {
+    width: 74%;
+    float: right;
+}
+
+.fs_16pt #innerCases .field-value {
+    height: 20px;
+    padding: 5px;
+    font-size: 16pt;
+}
+
+.fs_16pt #innerCases .field-btn, .fs_16pt #innerCases .field-catalog, .fs_16pt #innerCases .field-selector{
+    text-align: right;
+    top: -25px;
+    right: 8px;
+    font-size: 15pt;
+    position: relative;
+    height: auto;
+}
+
+.fs_16pt #innerCases .field-selector {
+    text-align: right;
+    top: -21px;
+    right: 10px;
+    font-size: 15pt;
+    position: relative;
+}
+
+.fs_16pt #innerCases .field-value-delete {
+    width: 148px !important;
+    float: left;
+    text-align: right;
+    margin-right: 8px !important;
+    font-size:16pt;
+}
+
+.fs_16pt .value-container #visualMenu li{
+    font-size:16pt;
+     height: auto;
+     width: 315px;
+}
+
+.fs_16pt .value-container #visualMenu li ul.menu-level-1{
+    left: -1px;
+    top: 36px;
+    z-index: 1;
+}
+
+.fs_16pt .value-container #visualMenu li ul.menu-level-2 {
+    left: 324px;
+    top: -1px;
+    z-index: 2;
+}
+
+.fs_16pt div.edaEnd {
+    font-size: 12pt;
+}
+
+
+
+.fs_16pt #adminContainer #header-filters .admin-field-filter {
+    width: 370px;
+}
+
+.fs_16pt #adminContainer #header-filters .admin-field-filter select{
+    height:auto;
+    font-size:16pt;
+}
+
+.fs_16pt #adminContainer #catDivHeadAdv{
+    float:left;
+}
+
+.fs_16pt #adminContainer #catDivHeadAdv .catToolAdd li{
+    float:left;
+}
+
+
+
+.fs_16pt #DivModeleName input{
+    font-size:16pt;
+    margin-left:0;
+    padding:3px;
+    margin-top:10px;
+}
+
+
+
+
+
+.fs_16pt #edaMpTtLeftDiv{
+    width:73%;
+}
+
+.fs_16pt div#mapTooltipAdminModalContent div.headerSection span.edaMpTtListTab, .fs_16pt div#mapTooltipAdminModalContent div.headerSection span.edaMpTtLibelle {
+    margin: 0px;
+    padding: 2px 0px;
+    font-size:16pt
+}
+
+.fs_16pt #edaMpTtRightDiv {
+    width: 25%;
+    float: right;
+    position: relative;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs_16pt #mapTooltipAdminModalContent {
+    font-size:16pt;
+}
+.fs_16pt #mapTooltipAdminModalContent select{
+    font-size:16pt;
+    height:auto;
+}
+
+.fs_16pt #mapTooltipAdminModalContent span.edaMpTtLabel {
+    width: 30%;
+    text-align: right;
+}
+
+.fs_16pt #mapTooltipAdminModalContent span.edaMpTtListTab, .fs_16pt #mapTooltipAdminModalContent span.edaMpTtListField {
+    width: 27%;
+    text-align: center;
+}
+
+
+
+
+
+
+.fs_16pt div#autocompleteAddressAdminModalContent div.title, .fs_16pt div#sireneAdminModalContent div.title {
+    margin-bottom: 10px;
+    font-size: 16pt;
+    color: #37A7DE;
+}
+
+.fs_16pt div#autocompleteAddressAdminModalContent {
+    font-size: 16pt;
+}
+
+.fs_16pt div#autocompleteAddressAdminModalContent select{
+    font-size: 16pt;
+    height:auto;
+}
+
+.fs_16pt div#autocompleteAddressAdminModalContent span.edaAcaLabel {
+    width:280px;
+    text-align: right;
+}
+
+
+
+
+.fs_16pt #sireneAdminModalContent{
+    font-size: 16pt;
+}
+
+.fs_16pt #sireneAdminModalContent select{
+    font-size: 16pt;
+    height:auto;
+}
+
+.fs_16pt #sireneAdminModalContent span.edaSireneLabel {
+    width: 300px;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.fs_16pt #formAdminAdvSearch input{
+    font-size: 16pt;
+}
+
+.fs_16pt #formAdminAdvSearch #availableFields .choiceTable, .fs_16pt #formAdminAdvSearch #selectedFields .choiceTable{
+    font-size: 16pt;
+}
+
+.fs_16pt #formAdminAdvSearch .btnSelectAll{
+    font-size: 16pt;
+}
+
+.fs_16pt #formAdminAdvSearch .icon-select_all, .fs_16pt #formAdminAdvSearch .icon-remove_all{
+    font-size: 25px;
+}
+
+
+
+.fs_16pt #DivDefaultFilterOpt #applyDefaultFilter, .fs_16pt #DivDefaultFilterOpt #disableDefaultFilter{
+    font-size: 14pt;
+}
+
+.fs_16pt div#FilterTabsContainer.default-filter-filtres {
+    height: 69%;
+}
+
+
+
+
+
+.fs_16pt .linkButton a {
+    font-size: 15pt !important;
+    line-height: 23px;
+}
+
+.fs_16pt #formAdminBelonging #pnlHeader {
+    margin: 0px 0 3px;
+}
+
+.fs_16pt .tableWithFixedHeader tr td input {
+    height: 25px;
+    border: none;
+    border-bottom: 1px dashed #b6b6b6;
+    font-size: 16pt;
+    text-overflow: ellipsis;
+    padding: 1px;
+    margin: 0;
+    background-color: #f0f0f0;
+    width: 90%;
+    cursor: pointer;
+    padding-left: 3px;
+}
+
+
+
+
+
+
+.fs_16pt #headerFilters label {
+    margin-right: 10px;
+    display: inline-block;
+    width: 100px;
+}
+
+.fs_16pt #headerFilters select {
+    margin-right: 10px;
+    display: inline-block;
+    height:auto;
+}
+
+
+
+
+
+
+
+.fs_16pt #rgpdConditionsAdminModalContent{
+    font-size: 16pt;
+}
+.fs_16pt #rgpdConditionsAdminModalContent .stepContent input{
+    font-size: 16pt;
+    width:40px;
+    text-align:center;
+}
+
+
+
+
+.fs_16pt div.edaFormulaHeader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 26px;
+    background-color: #ffffff;
+    font-size: 15pt;
+}
+.fs_16pt .edaFormulaSQLLabel {
+    width: 13%;
+    text-align: right;
+}
+.fs_16pt .paramBlock textarea {
+    font-family: Verdana;
+    color: #606266;
+     font-size: 18px;
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #DDD7D3;
+    height: auto;
+}
+
+.fs_16pt a.chk .icon-check-square-o, .fs_16pt a.chk .icon-square {
+    cursor: auto;
+    color: #828282 !important;
+}
+
+.fs_16pt a.chk .icon-check-square-o:hover {
+    cursor: auto;
+    color: #828282 !important;
+}
+
+.fs_16pt a.chk .icon-square {
+    cursor: auto;
+    color: #b1b1b1 !important;
+}
+
+
+
+
+/* Extensions */
+
+
+.fs_16pt .admin_cont .listfiltres select{
+    font-size:15pt;
+    height:auto;
+
+}
+.fs_16pt .mainPart .flagNew{
+    font-size:15pt;
+    width: 230px;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+.fs_16pt .mainPart .btnExt{
+    font-size:15pt;
+}
+.fs_16pt .mainPart .extensionTitle{
+    font-size:16pt;
+}
+.fs_16pt .mainPart .extensionCategory{
+    font-size:15.5pt;
+}
+.fs_16pt .mainPart .extensionInfoList{
+    font-size:14pt;
+}
+.fs_16pt .mainPart .extensionInfoList{
+    font-size:14pt;
+}
+.fs_16pt .mainPart .extensionAuthor{
+    font-size:14pt;
+}
+.fs_16pt .mainPart .extensionTarifs{
+    font-size:14pt;
+}
+.fs_16pt .mainPart .extensionDescriptionList {
+    height: 100px;
+    float: left;
+    width: 65%;
+}
+.fs_16pt .mainPart .extensionDescription{
+    font-size:14pt;
+}
+.fs_16pt .mainPart .btnMore {
+    font-size:13pt;
+    bottom:125px;
+}
+.fs_16pt .blockExtension .extensionFooter {
+    font-size:13pt;
+}
+.fs_16pt .blockExtension {
+    border: 1px solid #D9D9D9;
+    height: 340px;
+    flex: 0 1 48%;
+    position: relative;
+    overflow: hidden;
+}
+.fs_16pt .extensionFooter {
+    height: 120px;
+}
+.fs_16pt .mainPart .extensionBtnLong{
+    font-size:12pt;
+    width:145px;
+    line-height:12pt;
+    height:40px
+}
+.fs_16pt .extensionFooter .footerRight{
+    font-size: 14pt;
+}
+.fs_16pt .extensionButtonsFile .btnExt {
+    width: 50%;
+}
+.fs_16pt .extensionAuthorList {
+    bottom: 120px;
+}
+.fs_16pt .blockExtensionFile .extensionFooter .footerLeft, .fs_16pt .blockExtensionFile .extensionFooter .footerRight {
+    color: #757575;
+    float: none;
+    width: auto;
+    margin: 0 -37px 0px 0px;
+}
+/* FIN extensions */
+
+
+.fs_16pt .ulAdminTabs > li {
+    font-size: 15pt;
+}
+
+
+.fs_16pt #bkmRelationsSQLFiltersModalContent{
+    font-size: 15pt;
+}
+
+.fs_16pt #bkmRelationsSQLFiltersModalContent .field .divContainerLeft {
+    width: 40%;
+}
+
+.fs_16pt #bkmRelationsSQLFiltersModalContent .field .divContainerRight {
+    width: 60%;
+}
+
+
+
+/* Emailing 14/05/2019 - QUentin B */
+.fs_16pt #mailDiv .icnBkm{
+    font-size:15px;
+}
+.fs_16pt #mailDiv .table_labels, .fs_16pt #mailDiv .table_lab_pty{
+    font-size : 12pt;
+}
+.fs_16pt td.mailFrom {
+    min-width: 325px;
+}
+
+.fs_16pt select.mailFrom {
+    width: 49%;
+}
+.fs_16pt #mailDiv td.table_values.mailSubject [type="text"] {
+    width: 97%;
+}
+.fs_16pt div.mailSenderSubContainer {
+    min-width: 200px;
+}
+
+.fs_16pt #mailDiv td.table_values [type="text"], .fs_16pt #mailDiv td.table_values input[type="search"] {
+    width: 103px;
+    font-size: 17px;
+}
+
+.fs_16pt td.mailCc select, td.mailReplyTo select {
+    width: 120px;
+}
+
+
+.fs_16pt td.mailSubject input[type] {
+    width: 97%;
+}
+
+
+.fs_16pt ul.mailLinks {
+    max-width: 200px;
+}
+
+.fs_16pt ul.mailLinks {
+    font-size: 10pt;
+}
+
+    .fs_16pt ul.mailLinks li {
+        display: inline-block;
+        margin-right: 0px;
+        width: auto;
+    }
+
+.fs_16pt td.mailFrom input.mailDn, .fs_16pt td.mailSenderAliasDomain input.mailSenderAlias {
+    width: auto;
+}
+
+.fs_16pt #mailDiv .divDetailsBkmsMail .divFootInfo .table_labels, .fs_16pt #mailDiv td.table_labels {
+    padding-right: 5px;
+    width:40px;
+}
+
+td.mailFrom input, td.mailTo input[type], select.mailTo, td.mailCc input[type], select.mailCc, td.mailBcc input[type]{
+    width: 165px;
+}
+
+.fs_16pt td.mailCc, td.mailBcc, td.mailTo {
+    width: 210px;
+    display: inline-block;
+}
+@media only screen and (max-width: 1450px) {
+    .fs_16pt #mailDiv td.mailFrom input, .fs_16pt #mailDiv td.mailTo input[type], .fs_16pt #mailDiv select.mailTo, .fs_16pt #mailDiv td.mailCc input[type], .fs_16pt #mailDiv select.mailCc, .fs_16pt #mailDiv td.mailBcc input[type] {
+        width: 140px;
+    }
+
+    .fs_16pt td.mailCc, td.mailBcc, td.mailTo {
+        width: 175px;
+    }
+
+    .fs_16pt td.mailFrom input.mailDn, .fs_16pt td.mailSenderAliasDomain input.mailSenderAlias {
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 1328px) {
+    .fs_16pt #mailDiv td.mailFrom input, .fs_16pt #mailDiv td.mailTo input[type], .fs_16pt #mailDiv select.mailTo, .fs_16pt #mailDiv td.mailCc input[type], .fs_16pt #mailDiv select.mailCc, .fs_16pt #mailDiv td.mailBcc input[type] {
+        width: 120px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .fs_16pt td.mailCc, td.mailBcc, td.mailTo {
+        width: 150px;
+    }
+
+    .fs_16pt td.mailFrom input.mailDn, .fs_16pt td.mailSenderAliasDomain input.mailSenderAlias {
+        width: 135px;
+    }
+}
+
+
+@media only screen and (max-width: 1250px) {
+    #mailDiv td.table_labels {
+    }
+
+    #mailDiv .mailSubject {
+        width: 600px;
+        float : initial;
+    }
+
+    #mailDiv td.mailTo input[type] {
+        width: 600px;
+        margin-left: 0px;
+    }
+
+    #mailDiv td.mailSubject input[type], #mailDiv .divDetailsBkmsMail td, #mailDiv .divDetailsBkmsMail input[type] {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .fs_16pt ul.mailLinks {
+        position: absolute;
+        top: 0;
+    }
+
+    .fs_16pt td.mailCc {
+        width: auto;
+    }
+
+        .fs_16pt td.mailCc input, .fs_16pt td.mailBcc input {
+            width: 100%;
+        }
+
+    .fs_16pt td.mailCc, td.mailBcc, td.mailTo {
+        width: auto;
+    }
+
+    .fs_16pt #mailDiv td.mailFrom input, .fs_16pt #mailDiv td.mailTo input[type], .fs_16pt #mailDiv select.mailTo, .fs_16pt #mailDiv td.mailCc input[type], .fs_16pt #mailDiv select.mailCc, .fs_16pt #mailDiv td.mailBcc input[type] {
+        width: 500px!important;
+    }
+
+    @-moz-document url-prefix() {
+        .fs_16pt ul.mailLinks {
+            position: absolute;
+            top: 0;
+            right: auto;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        #mailDiv td.table_labels {
+            display: table-cell;
+            width: 90px !important;
+            position: relative;
+            top: 0;
+            float: inherit !important;
+        }
+    }
+}
+
+.fs_16pt div.switch-new-theme-wrap#dvSwitchErgo span,
+.fs_16pt div.switch-new-theme-wrap#dvSwitchErgoList span,
+.fs_16pt div.switch-new-theme-wrap#dvSwitchErgoGuided span,
+.fs_16pt div.switch-new-theme-wrap#dvSwitchErgoGuidedFromBookmark span,
+.fs_16pt div.switch-new-theme-wrap#dvSwitchErgoGuidedFromMenu span,
+.fs_16pt div.dvSwitchTabsListEudonetX span {
+    font-size: 15px;
+}
+
+.fs_16pt div#dvCntPref h3, .fs_16pt div#dvCntPref select {
+    font-size: 16px;
+}
+
+.fs_16pt div#dvCntPref textarea {
+    font-size: 16px;
+}
+
+.divStep {
+    font-size: 1rem;
+}
+
+input {
+    font: 400 1rem Arial;
+}
+
+.choiceTable {
+    font-size: 0.875rem;
+}
+
+.btnSelectAll {
+    font-size: 0.9375rem;
+}

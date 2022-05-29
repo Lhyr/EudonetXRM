@@ -1,0 +1,307 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Verdana;
+    font-size: 8pt;
+    height: 95%;
+}
+
+
+div.Global {
+    height: 100%;
+    /*background-color: #F8F8F8;
+    padding-top: 10px;*/
+}
+
+    div.Global #DivChart {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+.Logo_imp {
+    background-position: 0 -284px;
+    width: 22px;
+    height: 21px;
+    float: right;
+}
+
+    .Logo_imp:hover {
+        cursor: pointer;
+        background-position: 0 -355px;
+        width: 22px;
+        height: 21px;
+    }
+
+.ChartBord {
+    height: 280px;
+    width: 90%;
+    margin-left: 5%;
+}
+/*
+.Chart {
+	width: 100%;	
+	border: 1px solid black;
+	 float:right; 
+	margin: 0 auto;
+}
+    */
+.statsRenderSep {
+    margin-left: 5%;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: left;
+    color: #545454;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+    .statsRenderSep [class^="icon-"] {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+
+    .statsRenderSep span {
+        vertical-align: middle;
+    }
+
+div.data {
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+Table.data {
+    width: 90%;
+    margin-left: 5%;
+    border: #ccc;
+    border-collapse: collapse;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+    Table.data td {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+tr.data-head td {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    font-size: 9pt;
+    color: #636363;
+    font-weight: bold;
+    line-height: 23px;
+    background-color: #ccc;
+    vertical-align: middle;
+    cursor: default;
+}
+
+tr.dataLine td {
+    white-space: no-wrap;
+    vertical-align: middle;
+    background-color: #f6f6f6;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+tr.dataLine2 td {
+    vertical-align: middle;
+    background-color: white;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+tr.total {
+    font-weight: bold;
+    vertical-align: middle;
+    background-color: #5f5e5f;
+    color: white;
+    line-height: 25px;
+    border: 1px solid #5f5e5f;
+}
+
+td.dispVal {
+    text-align: left;
+}
+
+td.count {
+    text-align: right;
+}
+
+td.pct {
+    text-align: right;
+}
+
+.title_chart {
+    font-size: 10pt;
+    color: #545454;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+img.picto {
+    margin-left: 2px;
+}
+
+td.hdsort:hover {
+    cursor: pointer;
+}
+
+
+#divContainer {
+    padding: 5px;
+}
+
+.e-summaryrow {
+    background-color: #5f5e5f !important;
+    color: white;
+    text-align: left;
+}
+
+.e-headercell {
+    background-color: #ccc !important;
+}
+
+.Global .liAddLine {
+    text-align: left;
+    padding-left: 10px !important;
+}
+
+    .Global .liAddLine .editor_select {
+        margin-right: 20px !important;
+    }
+
+.emtyDataChart {
+    background: url(../images/emptyDataChart.jpg) no-repeat center top;
+    background-size: contain;
+    margin: 0.5%;
+}
+
+.block {
+    position: relative;
+    /*top: 88%;*/
+    font-size: 0.8vw;
+    /*margin-top: 25pt;*/
+    padding-top: 17pt;
+    color: #BD2C17;
+}
+
+
+#chartGrid__printGrid {
+    cursor: pointer;
+}
+
+.divChart {
+    margin: auto;
+}
+
+.exportChartMenu {
+    height: 90%;
+}
+
+g rect[id*="_svg_Series"][id^="DivChart"], g path[id*="_svg_Series"][id^="DivChart"] {
+    cursor: pointer;
+}
+
+div[hideElement='1'] {
+    display: none !important;
+}
+
+div[hideElement='0'] {
+    display: block !important;
+}
+
+div.advExportChartMenu {
+    color: #636363;
+    /*font: bold 11pt verdana,sans-serif;*/
+    height: 20pt;
+    padding: 0 8pt;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: right;
+    /*margin: 20pt 0pt;*/
+    display: block;
+    border-radius: 5pt;
+    line-height: 19pt;
+    /*background-color: #D8D8D8;*/
+}
+
+    div.advExportChartMenu:hover {
+        /*background-color: #2C2A2B;*/
+        /*color: #FFFFFF;*/
+    }
+
+#btnShowFilter {
+    float: right;
+    line-height: 23px;
+    font-size: 14pt;
+}
+
+.fEinnerText {
+    display: inline-block;
+    width: 365px;
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.filterExpress {
+    padding-bottom: 70pt;
+}
+
+.expressFilterButton {
+    float: left;
+    padding-bottom: 30pt;
+    /*position: absolute;
+    top: 45px;
+    left: 520px;*/
+}
+
+.divGlobalFiltreExpress {
+    width: auto;
+    float: left;
+}
+
+.exportChartMenu [class^="icon-"] {
+    font-size: 12pt;
+    vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+/*.advExportChartMenu .tooltiptext {
+    visibility: hidden;
+    width: 100pt;
+    min-height: 20pt;
+    background-color: #DADADA;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: -70pt;
+    font-family: Verdana, 'Trebuchet MS';
+    position: absolute;
+    font-size: x-small;
+    z-index: 1;
+}*/
+
+/*.advExportChartMenu:hover .tooltiptext {
+    visibility: visible;
+}*/
+
+
+
+

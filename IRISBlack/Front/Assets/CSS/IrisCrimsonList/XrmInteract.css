@@ -1,0 +1,21 @@
+﻿/****** Au besoin de surpasser le style de xrm pour Iris_Crimson ******/
+
+/* Une scrollBar apparait tout le temps sur la div 'HTML' on met en auto pour lui mettre quand elle en a besoin 'QBO' */
+html{
+    overflow : auto;
+}
+#container.contentMaster {
+    height: 100vh !important;
+}
+/* Un calcul est fait sur la div parent a celle ci, elle produit un ecart de quelques pixel nous le reglons comme ça 'QBO' */
+#mainListContent {
+    width: calc(100% + 12px);
+}
+
+/* Un calcul est fait sur cette div, elle produit un ecart de quelques pixel nous le reglons comme ça 'QBO' */
+#container #mainDiv {
+    margin-top: 79px;
+    margin-left: 0px;
+    height: calc(100% - 79px) !important;
+    overflow: inherit!important;
+}

@@ -1,0 +1,945 @@
+/* 8 PT */
+:root {
+    font-size: 13px;
+}
+
+body {
+    font-size: 8pt !important;
+}
+
+.fs_8pt .mTab, .fs_8pt .hdTable, .fs_8pt .table_labels, .fs_8pt .table_lab_pty, .fs_8pt input[type=\"text\"], .fs_8pt .mTab .table_values input[type='text'], .fs_8pt li div, .fs_8pt li.sbmBottom a, .fs_8pt .sbmBottom .icon-cog, .fs_8pt .Action_sMC, .fs_8pt .lib, .fs_8pt .helloMnu, .fs_8pt .nickMnu, .fs_8pt .rightMenuOption a, .fs_8pt .rightMenuModFile a, .fs_8pt .rightMenuSubMenuTitle, .fs_8pt .btnEscMnu, .fs_8pt .decBtn, .fs_8pt li.navLst, .fs_8pt .table_values, .fs_8pt .bkmBar, .fs_8pt .bkmHeadSel, .fs_8pt .navTitle, .fs_8pt .adminNav ul.Action_sMC .navAction, #defaultHpChkCol, .navTitleActive {
+    font-size: 9pt;
+}
+
+.fs_8pt [fstyle='MAIN_TITLE'], .fs_8pt [fstyle='MAIN_TITLE'] input[type=text],
+.fs_8pt [fstyle='MAIN_TITLE'] input[type=search] {
+    font-size: 15pt !important;
+}
+
+.fs_8pt [fstyle='SECONDARY_TITLE'], .fs_8pt [fstyle='SECONDARY_TITLE'] input[type=text] {
+    font-size: 13pt !important;
+}
+
+
+.fs_8pt #slidingArrow {
+    left: 193px;
+}
+
+.fs_8pt .rightMenuOption a, .fs_8pt .rightMenuModFile a {
+    font-size: 9pt;
+    display: block;
+    line-height: 34px;
+    height: 2.125rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.fs_8pt a.chk .icon-square-o, .fs_8pt a.chk .icon-check-square {
+    font-size: 11pt;
+}
+
+.fs_8pt .rightMenuWidth {
+}
+
+.fs_8pt #nav li div {
+    font-size: 10.5pt;
+}
+
+li.top-p div {
+    font-size: 16pt !important;
+}
+
+
+.fs_8pt .icnMnuVerBtn {
+    width: 41px;
+}
+
+
+.fs_8pt .choiceAdmin li {
+    font-size: 9pt;
+}
+
+.fs_8pt #blockUserProfile #userDisplayName {
+    font-size: 16pt !important;
+}
+
+.fs_8pt #blockUserProfile {
+    font-size: 9pt !important;
+}
+
+
+.fs_8pt #adminNav #navLeaveAdmin span:first-child {
+    width: auto;
+    margin-right: 5px;
+    margin-left: 45px;
+}
+
+.fs_8pt #adminNav #navLeaveAdmin span:last-child {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 60%;
+}
+
+
+/*Clandar 8pt */
+
+.fs_8pt .CalContainer table {
+    width: 100%;
+    margin: 0;
+}
+
+.fs_8pt .calendarselect {
+    width: auto;
+    margin: 0 10px 0 10px;
+    height: 40px;
+}
+
+.fs_8pt .calendarbody {
+    width: auto;
+    margin: 0 10px 0 10px;
+}
+
+.fs_8pt .calMonth select, .fs_8pt .calMonth {
+    width: 80px !important;
+}
+
+
+.fs_8pt .calYear {
+    width: 65px !important;
+    text-align: center !important;
+    margin-left: 0;
+    font-size: 14px;
+    height: auto;
+    margin-top: 0;
+}
+
+.fs_8pt .calMonth select {
+    width: 65px;
+    text-indent: 18px;
+    font-size: 14px;
+    height: auto;
+}
+
+.fs_8pt .labelWeek {
+    font-size: 15px;
+    border-bottom: 1px solid #16a5d7;
+    margin: 0px 0 5px 0;
+    line-height: 31px;
+    height: 30px;
+}
+
+.fs_8pt .calendardays tbody tr:first-child {
+    font-weight: 800;
+}
+
+.fs_8pt .calendardays {
+    padding: 5px !important;
+}
+
+    .fs_8pt .calendardays td {
+        font-size: 12px !important;
+    }
+
+.fs_8pt .day, .fs_8pt .day:hover {
+    border: 1px solid transparent;
+}
+
+.fs_8pt td.day.today {
+    border: 1px solid transparent;
+    background: #79be0b;
+    color: #fff;
+}
+
+.fs_8pt .calendarhourmin {
+    font-size: 14px;
+    text-align: center;
+}
+
+.fs_8pt .calendarmin, .fs_8pt .calendarhour {
+    color: #5e5e5e;
+    width: 72px;
+    text-align: center;
+    border: 1px solid #666;
+    font-size: 14px;
+}
+
+.fs_8pt .calendartoday {
+    width: 111px;
+    font-size: 13px;
+}
+
+.fs_8pt .encartProfil {
+    height: 70px;
+}
+
+.fs_8pt .tabeul {
+    height: 100%;
+}
+
+/* DEMANDE BUG 84121 */
+.fs_8pt .add-file .divmTab {
+    max-height: 100%;
+    width: 100%;
+    /*max-height: calc(100% - 145px);*/
+}
+
+ 
+
+.fs_8pt .add-file#mainDiv #listContent.tabeul {
+    height: calc(100% - 150px);
+}
+
+ 
+/* FIN DEMANDE BUG 84121 */
+
+.fs_8pt li.srchFld div.icon-magnifier {
+    font-size: 8pt;
+    position: relative;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    background-color: #636363;
+    color: white;
+    width: 22px;
+}
+
+.fs_8pt li.srchFld div.icon-edn-cross {
+    background-color: #bb1515;
+    position: relative;
+    font-size: 8pt;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    width: 22px;
+    color: white;
+}
+
+.fs_8pt .rightMenuModFile span.icon-item_rem {
+    vertical-align: -0.2rem; /*-4px;*/
+}
+
+.fs_8pt a.chk .icon-square, .fs_8pt a.chk .icon-check-square-o {
+    font-size: 11pt;
+}
+
+.fs_8pt .btnSelectUnselectAllIcon {
+    height: 20px;
+    width: 20px;
+}
+
+
+.fs_8pt div.catGlobalVal {
+    right: 5px;
+}
+
+.fs_8pt .mTab {
+    /*width: 100%;*/
+    font-size: 8pt !important;
+}
+
+    .fs_8pt .mTab tr.hdBgCol {
+        line-height: 20px;
+    }
+
+.fs_8pt div.histoFilter {
+    float: right;
+    margin-left: 10px;
+}
+
+.fs_8pt .rightMenuModFile .icon-buzz {
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+.fs_8pt .nickMnu {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px;
+}
+
+.fs_8pt .encartProfil {
+    height: 70px;
+}
+
+.fs_8pt #navTabs {
+    height: 30px;
+}
+
+
+.fs_8pt .navIcon span[class^="icon"] {
+    line-height: 29px;
+    font-size: 13.5pt;
+}
+
+.fs_8pt #slidingArrow {
+    top: 75px;
+}
+
+.fs_8pt .btnSelectUnselectAllText {
+    font-weight: bold;
+}
+
+.fs_8pt .ItemListSep .icon-item_add, .fs_8pt .ItemListSep .icon-item_rem, .fs_8pt .ItemListSep .icon-item_down, .fs_8pt .ItemListSep .icon-item_up {
+    font-size: 15pt;
+}
+
+.fs_8pt #DivSelectionList .DivOpen {
+    line-height: 22px;
+}
+
+.fs_8pt .navLst div {
+    font-size: 9pt !important;
+}
+
+.fs_8pt .rightMenuModFile span {
+    margin-left: 5px;
+}
+
+.fs_8pt .mTab td.LNKMAIL {
+    padding: 4px 3px 0px 6px;
+    line-height: 19px;
+}
+
+.fs_8pt div.inTDbtn {
+    margin-right: 0px;
+    margin-left: auto;
+    font-size: 9pt;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 0;
+}
+
+.fs_8pt #editor_DivButtonSelectAll .btnSelectUnselectAllText {
+    vertical-align: -2px !important;
+}
+
+.fs_8pt #editor_DivButtonUnselectAll .btnSelectUnselectAllText {
+    vertical-align: -2px !important;
+}
+
+.fs_8pt #editor_fieldoptions li a.rChk span {
+    margin: 3px;
+}
+
+.fs_8pt #editor_truncatechar {
+    position: relative;
+    top: 5px;
+}
+
+.fs_8pt #editor_popupdata {
+    position: relative;
+    top: -4px;
+}
+
+.fs_8pt #editor_bitlabeldisplayoption {
+    position: relative;
+    top: 4px;
+    margin-left: 5px !important;
+}
+
+
+.fs_8pt #ulWrappeur #choixSeriesLabel {
+    margin-top: 0px;
+}
+
+.fs_8pt #ulWrappeur .choixSeriesContent {
+    margin-left: 0px;
+}
+
+.fs_8pt #ulWrappeur .rdBtnChoisSeries {
+    max-width: 365px;
+}
+
+    .fs_8pt #ulWrappeur .rdBtnChoisSeries input[type="radio"] {
+        margin-right: 5px;
+    }
+
+.fs_8pt #ulWrappeur #rbqValsLabelX {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.fs_8pt #ulWrappeur #rbqSeriesLabel {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.fs_8pt #ulWrappeur #rbqValsLabelY {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.fs_8pt #ulWrappeur #rbqDescLabel {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    height: 20px;
+}
+
+.fs_8pt #ulWrappeur .filterLabel {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.fs_8pt #ulWrappeur .filterExpressLabel {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.fs_8pt #ulWrappeur #rbqDescContent {
+    height: auto;
+    width: 520px;
+}
+
+.fs_8pt .title_sep_page .icnFileBtn {
+    font-size: 7pt !important;
+    margin: -2px 0px 0px 7px;
+}
+
+.fs_8pt ul.ToolbarModalRight {
+    margin: 9px 50px 0px 0px;
+}
+
+.fs_8pt #ulToolbarButtons span {
+    font-size: 11pt;
+}
+
+    .fs_8pt #ulToolbarButtons span.iMnd {
+        font-size: 9pt;
+    }
+
+.fs_8pt .ToolbarModalLeft span {
+    font-size: 9pt !important;
+    position: relative;
+}
+
+.fs_8pt #btnSelectPicto {
+    font-size: 8px;
+    height: 24px;
+}
+
+.fs_8pt .btnEscMnu {
+    line-height: 36px;
+}
+
+.fs_8pt #myEudonet {
+    overflow: hidden;
+}
+
+.fs_8pt .ItemListTd {
+    max-width: 350px;
+}
+
+.fs_8pt .ItemList {
+    overflow-x: auto !important;
+}
+
+.fs_8pt #DivTargetList, .fs_8pt #DivSourceList {
+    overflow-x: auto !important;
+    display: grid;
+}
+
+.fs_8pt .window_iframe {
+    height: 90vh;
+}
+
+.fs_8pt #mainDiv .LnkTop li {
+    position: relative;
+    float: left;
+}
+
+
+.fs_8pt ul.LnkTopSecondSearchOptions {
+    font-size: 9pt;
+}
+
+.fs_8pt .LnkTopOpt {
+    font-size: 9pt;
+}
+
+.fs_8pt #notifHeader a {
+    font-size: 8pt;
+}
+
+.fs_8pt .notifInfoText {
+    font-size: 8pt;
+}
+
+.fs_8pt .notifNoItem {
+    font-size: 8pt;
+}
+
+.fs_8pt #formGeoloc #leftPart #intro {
+    font-size: 10.5pt;
+}
+
+.fs_8pt #formGeoloc #leftPart {
+    float: left;
+    width: 30%;
+    padding: 15px 10px;
+}
+
+.fs_8pt #formGeoloc #geolocMap {
+    width: 70%;
+    height: 630px;
+    float: left;
+}
+
+.fs_8pt #formGeoloc #leftPart .field input {
+    font-size: 9pt;
+    height: auto;
+    width: 100%;
+}
+
+.fs_8pt #formGeoloc #leftPart .field label {
+    font-size: 10.5pt;
+    text-align: left;
+}
+
+.fs_8pt #editor_configurablelist {
+    width: auto;
+}
+
+.fs_8pt .tbHtileModal .TitleModal {
+    font-size: 8pt;
+}
+
+.fs_8pt .MainModal[lierFichierIframe="true"] iframe {
+    height: 95% !important;
+}
+
+.fs_8pt .LinkFileResult div select {
+    width: 240px;
+    margin-top: 12px;
+    font-size: 9pt;
+}
+
+
+.fs_8pt .subFieldHeadImport, .fs_8pt .fieldcibleSpan {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fs_8pt .data-source-step .headerOptionsLine .iconHeaderOptions {
+    font-size: 10pt !important;
+    margin-right: 5px;
+}
+
+.fs_8pt .data-source-step .headerOptionsLine .divTabOptions {
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+    .fs_8pt .data-source-step .headerOptionsLine .divTabOptions .optionsClass {
+        padding-left: 0;
+        width: 100%;
+        padding-top: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+        .fs_8pt .data-source-step .headerOptionsLine .divTabOptions .optionsClass .optionsLine {
+            float: left;
+            width: 140px;
+        }
+
+        .fs_8pt .data-source-step .headerOptionsLine .divTabOptions .optionsClass .selectClass {
+            width: 200px;
+            font-size: 9pt;
+        }
+
+.fs_8pt .global_field_destination_container .tablsContainer .tabls_destination_container .subTableHead {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+.fs_8pt .selectFilter, .selectExpressFilter {
+    margin-bottom: 13px;
+}
+
+    .fs_8pt .selectExpressFilter select.editor_select, .selectExpressFilter input {
+        margin-bottom: 5px;
+    }
+
+
+
+
+.fs_8pt span.adminTileSubText {
+    font-size: 8pt;
+    line-height: 10pt;
+}
+
+.fs_8pt .paramStep .stepTitle {
+    line-height: 26px;
+    margin-left: 10px;
+    font-size: 10.5pt;
+}
+
+.fs_8pt .adminCntntParameters .divStep {
+    font-size: 9pt;
+}
+
+.fs_8pt .adminCntnt .field > select, .field > input, .adminCntnt .adminIPTable {
+    font-size: 9pt;
+}
+
+.fs_8pt .adminCntnt #textSectionsDelimiter, .fs_8pt .adminCntnt #textDecimalDelimiter, .fs_8pt .adminCntnt #textCalendarDayItemWidth {
+    font-size: 9pt;
+    text-align: center;
+}
+
+.fs_8pt .adminCntnt #txtHelpDeskCopy, .fs_8pt .adminCntnt #txtFeedbackMailAddress, .fs_8pt .adminCntnt #textUrlORM_URL, .fs_8pt .adminCntnt #textUrlORM_SPECIF {
+    font-size: 9pt;
+}
+
+.fs_8pt .linkButton a {
+    font-size: 9pt !important;
+}
+
+.fs_8pt #combinedulWrappeur {
+    max-width: 100%;
+}
+
+.fs_8pt .stepContent .adminLDAPOptions .fieldInline {
+    margin-bottom: 5px;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+
+    .fs_8pt #combinedulWrappeur {
+        max-width: 770px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+
+    .fs_8pt .btnChart + span {
+        padding-right: 90pt;
+    }
+
+    .fs_8pt #dynGraphImageDiv, .fs_8pt #dynGraphImageFormat {
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .fs_8pt #listQuickFilters .QckUsrFltContainer .QckUsrFltContent li input {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100px;
+    }
+
+    .fs_8pt #listQuickFilters .QuickFilterCont td select {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100px;
+    }
+
+    .fs_8pt #histoFilterTxt {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .fs_8pt #AdvFltMenu {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .fs_8pt #mainDiv .LnkTopOpt li:nth-child(3) div div {
+        width: auto;
+    }
+}
+
+
+.fs_8pt #mapTooltipAdminModalContent span.edaMpTtLabel {
+    width: 18%;
+    text-align: right;
+}
+
+
+
+
+.fs_8pt #adminContainer #header-filters .admin-field-filter {
+    width: 370px;
+}
+
+    .fs_8pt #adminContainer #header-filters .admin-field-filter select {
+        height: auto;
+    }
+
+.fs_8pt #adminContainer #catDivHeadAdv {
+    float: left;
+}
+
+    .fs_8pt #adminContainer #catDivHeadAdv .catToolAdd li {
+        float: left;
+    }
+
+
+.fs_8pt #DivModeleName input {
+    margin-left: 0;
+    padding: 3px;
+    margin-top: 10px;
+    width: 298px;
+    margin-bottom: 9px;
+}
+
+
+
+
+
+
+
+.fs_8pt #edaMpTtLeftDiv {
+    width: 73%;
+}
+
+.fs_8pt div#mapTooltipAdminModalContent div.headerSection span.edaMpTtListTab, .fs_8pt div#mapTooltipAdminModalContent div.headerSection span.edaMpTtLibelle {
+    margin: 0px;
+    padding: 2px 0px;
+}
+
+.fs_8pt #edaMpTtRightDiv {
+    width: 25%;
+    float: right;
+    position: relative;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs_8pt #mapTooltipAdminModalContent span.edaMpTtLabel {
+    width: 30%;
+    text-align: right;
+}
+
+.fs_8pt #mapTooltipAdminModalContent span.edaMpTtListTab, .fs_8pt #mapTooltipAdminModalContent span.edaMpTtListField {
+    width: 27%;
+    text-align: center;
+}
+
+
+
+
+.fs_8pt #sireneAdminModalContent select {
+    height: auto;
+}
+
+.fs_8pt #sireneAdminModalContent span.edaSireneLabel {
+    width: 270px;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.fs_8pt #DivDefaultFilterOpt #applyDefaultFilter, .fs_8pt #DivDefaultFilterOpt #disableDefaultFilter {
+    font-size: 9.5pt;
+}
+
+.fs_8pt div#FilterTabsContainer.default-filter-filtres {
+    height: 72%;
+}
+
+.fs_8pt .cell, .fs_8pt .cell2 {
+    line-height: 21px;
+}
+
+.fs_8pt a.chk .icon-check-square-o, .fs_8pt a.chk .icon-square {
+    cursor: auto;
+    color: #828282 !important;
+}
+
+    .fs_8pt a.chk .icon-check-square-o:hover {
+        cursor: auto;
+        color: #828282 !important;
+    }
+
+.fs_8pt a.chk .icon-square {
+    cursor: auto;
+    color: #b1b1b1 !important;
+}
+
+/* Emailing 14/05/2019 - QUentin B */
+.fs_8pt td.mailFrom {
+    min-width: 404px;
+}
+
+.fs_8pt select.mailFrom {
+    width: 41%;
+}
+
+.fs_8pt td.mailCc select, .fs_8pt td.mailReplyTo select {
+    width: 150px;
+}
+
+.fs_8pt div.mailSenderSubContainer {
+    min-width: 241px;
+}
+
+.fs_8pt td.mailSubject input[type] {
+    width: 380px
+}
+
+/*SHA : tâche #1 939*/
+.fs_8pt td.mailPreheader input[type] {
+    width: 147px;
+}
+
+.fs_8pt ul.mailLinks {
+    max-width: 200px;
+}
+
+.fs_8pt ul.mailLinks {
+    font-size: 10pt;
+}
+
+    .fs_8pt ul.mailLinks li {
+        display: inline-block;
+        margin-right: 0px;
+        width: 200px;
+    }
+
+.fs_8pt td.mailFrom input.mailDn, .fs_8pt td.mailSenderAliasDomain input.mailSenderAlias {
+    width: auto;
+}
+
+.fs_8pt #mailDiv .divDetailsBkmsMail .divFootInfo .table_labels, .fs_8pt #mailDiv td.table_labels {
+    padding-right: 5px;
+}
+
+td.mailFrom input, td.mailTo input[type], select.mailTo, td.mailCc input[type], select.mailCc, td.mailBcc input[type] {
+    width: 165px !important;
+}
+
+.fs_8pt td.mailCc, td.mailBcc, td.mailTo {
+    width: 210px !important;
+    display:inline-block;
+}
+
+@media only screen and (max-width: 1450px) {
+    .fs_8pt #mailDiv td.mailFrom input, .fs_8pt #mailDiv td.mailTo input[type], .fs_8pt #mailDiv select.mailTo, .fs_8pt #mailDiv td.mailCc input[type], .fs_8pt #mailDiv select.mailCc, .fs_8pt #mailDiv td.mailBcc input[type] {
+        width: 140px;
+    }
+
+    .fs_8pt td.mailCc, td.mailBcc, td.mailTo {
+        width: 175px;
+    }
+
+    .fs_8pt td.mailFrom input.mailDn, .fs_8pt td.mailSenderAliasDomain input.mailSenderAlias {
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 1328px) {
+    .fs_8pt #mailDiv td.mailFrom input, .fs_8pt #mailDiv td.mailTo input[type], .fs_8pt #mailDiv select.mailTo, .fs_8pt #mailDiv td.mailCc input[type], .fs_8pt #mailDiv select.mailCc, .fs_8pt #mailDiv td.mailBcc input[type] {
+        width: 125px;
+        padding: 0 0 0 0px;
+        margin: 0 10px 0 0px;
+    }
+
+    .fs_8pt td.mailCc, td.mailBcc, td.mailTo {
+        width: 150px;
+    }
+
+    .fs_8pt td.mailFrom input.mailDn, .fs_8pt td.mailSenderAliasDomain input.mailSenderAlias {
+        width: 135px;
+    }
+}
+
+
+@media only screen and (max-width: 1250px) {
+    #mailDiv td.table_labels {
+    }
+
+    #mailDiv .mailSubject {
+        width: 600px;
+        float: initial;
+    }
+
+    #mailDiv td.mailTo input[type] {
+        width: 600px;
+        margin-left: 0px;
+    }
+
+    #mailDiv td.mailSubject input[type], #mailDiv .divDetailsBkmsMail td, #mailDiv .divDetailsBkmsMail input[type] {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .fs_8pt ul.mailLinks {
+        position: absolute;
+        top: 0;
+    }
+
+    .fs_8pt td.mailCc {
+        width: auto;
+    }
+
+        .fs_8pt td.mailCc input, .fs_8pt td.mailBcc input {
+            width: 100%;
+        }
+
+    .fs_8pt td.mailCc, td.mailBcc, td.mailTo {
+        width: auto;
+    }
+
+    .fs_8pt #mailDiv td.mailFrom input, .fs_8pt #mailDiv td.mailTo input[type], .fs_8pt #mailDiv select.mailTo, .fs_8pt #mailDiv td.mailCc input[type], .fs_8pt #mailDiv select.mailCc, .fs_8pt #mailDiv td.mailBcc input[type] {
+        width: 500px;
+    }
+
+    @-moz-document url-prefix() {
+        .fs_8pt ul.mailLinks {
+            position: absolute;
+            top: 0;
+            right: auto;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        #mailDiv td.table_labels {
+            display: table-cell;
+            width: 90px !important;
+            position: relative;
+            top: 0;
+            float: inherit !important;
+        }
+    }
+}
+
+#tabInfos {
+    top: 9px;
+}
+
+#infos {
+    overflow: initial;
+}
+
+/*Request 90 778*/
+.edn--smsText > div > div > #mailDiv > div > #tablesms > tbody > tr > .table_labels {
+    width: 100% !important;
+}
+/*Request 90 778*/
+
+div.control_contextmenu.fs_8pt  ul li.actionItem {
+    font-size: 8pt;
+}

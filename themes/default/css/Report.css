@@ -1,0 +1,747 @@
+/* JFL */
+*
+{
+    font-size: 8pt;
+}
+
+thead {display: table-header-group;}
+
+@media print
+{
+    #menu, #footer, aside
+    {
+        display: none;
+    }
+
+    body
+    {
+        color: black;
+        margin: 0;
+    }
+    #tbody
+    {
+        width: 99% !important;
+    }
+    table {
+        width: 99%;
+    }
+        table tr.printformulagroup td {
+            white-space: nowrap;
+        }
+
+ 
+}
+
+
+
+body
+{
+    background-color: #ffffff;
+    width: 100%;
+}
+
+img
+{
+    border: none;
+}
+
+table
+{
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse; 
+}
+    table#TBODY > tbody {
+        border: 1px solid #666;
+    }
+a
+{
+    color: #0000ff;
+}
+
+
+.headrow
+{
+    font-weight: bold;
+}
+
+.row
+{
+    border-bottom: 1px solid #cccccc;
+}
+
+/* Impression */
+tr.logo img
+{
+}
+
+.reportinfos td
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 7pt;
+    text-transform: capitalize;
+    height: 17px;
+    color: #222222;
+    border-top: #dddddd 1px solid;
+    border-bottom: #dddddd 1px solid;
+    background-color: #eeeeee;
+}
+
+.reporttitle
+{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+tr.printcolumnheader
+{
+    height: 25px;
+    background-color: #B9B9B9;
+    border-bottom: 1px solid #666;
+}
+
+    tr.printcolumnheader td
+    {
+        padding: 2px 5px;
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid #666666;
+        border-right: 1px solid #666666;
+    }
+
+tr.printcell
+{
+    height: 18px;
+    background-color: #ffffff;
+    padding-left: 5px;
+}
+
+    tr.printcell.printcellalt
+    {
+        background-color: #eeeeee;
+    }
+
+    tr.printcell td
+    {
+        height: 20px;
+        border-left: 1px solid #666666;
+        border-right: 1px solid #666666;
+        padding: 1px 5px;
+    }
+
+tr.printgroup
+{
+    font-weight: bold;
+    height: 18px;
+}
+
+    tr.printgroup.printgroup_1
+    {
+        padding-left: 5px;
+    }
+
+    tr.printgroup.printgroup_2
+    {
+        padding-left: 7px;
+    }
+
+    tr.printgroup.printgroup_3
+    {
+        padding-left: 10px;
+    }
+
+    tr.printgroup.printgroup_1 td
+    {
+        border-top: 1px solid #999999;
+        background-color: #bbbbbb;
+    }
+
+    tr.printgroup.printgroup_2 td
+    {
+        border-top: 1px solid #aaaaaa;
+        background-color: #cccccc;
+    }
+
+    tr.printgroup.printgroup_3 td
+    {
+        border-top: 1px solid #bbbbbb;
+        background-color: #dddddd;
+    }
+
+tr.printformulagroup
+{
+    font-weight: bold;
+    height: 20px;
+}
+
+    tr.printformulagroup.printformulagroup_1
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    tr.printformulagroup.printformulagroup_2
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    tr.printformulagroup.printformulagroup_3
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    tr.printformulagroup.printformulagroup_1 td
+    {
+        background-color: #fbf4e7;
+        color: #d45d1c;
+        border-bottom: 1px solid #F6EBD8;
+    }
+
+    tr.printformulagroup.printformulagroup_2 td
+    {
+        background-color: #fbf4e7;
+        color: #d45d1c;
+        border-bottom: 1px solid #F6EBD8;
+    }
+
+    tr.printformulagroup.printformulagroup_3 td
+    {
+        background-color: #fbf4e7;
+        color: #d45d1c;
+        border-bottom: 1px solid #F6EBD8;
+    }
+
+tr.formulatitlegeneral
+{
+    font-weight: bold;
+    height: 18px;
+}
+
+    tr.formulatitlegeneral td
+    {
+        border-top: 1px solid #888888;
+        background-color: #aaaaaa;
+        white-space: nowrap;
+    }
+
+
+.G1H
+{
+    BORDER-TOP: #191970 3px solid;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    MARGIN: 0px;
+    FONT-FAMILY: verdana;
+    HEIGHT: 15px;
+    BACKGROUND-COLOR: #96b4d4;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+.G2H
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: #003399 2px solid;
+    MARGIN: 0px;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: verdana;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #b9cbe0;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+.G3H
+{
+    BORDER-TOP: #003399 1px solid;
+    MARGIN: 0px;
+    FONT-FAMILY: verdana;
+    HEIGHT: 10px;
+    BACKGROUND-COLOR: #cbd1e2;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+.RDH3
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 3px;
+    BORDER-LEFT: medium none;
+    COLOR: #000000;
+    TEXT-INDENT: 0px;
+    PADDING-TOP: 3px;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: Verdana;
+    HEIGHT: 15px;
+    TEXT-ALIGN: left;
+}
+
+.RDH2
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: 1px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 3px;
+    BORDER-LEFT: medium none;
+    COLOR: #000000;
+    PADDING-TOP: 3px;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: Verdana;
+    HEIGHT: 15px;
+    TEXT-ALIGN: left;
+}
+
+.RDM
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    MARGIN: 0px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+.RE
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 7pt;
+    TEXT-TRANSFORM: capitalize;
+    BORDER-LEFT: medium none;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Verdana;
+    HEIGHT: 17px;
+    BACKGROUND-COLOR: #336699;
+}
+
+.RCHK
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px;
+}
+
+.G0H
+{
+    BACKGROUND-POSITION: left top;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BACKGROUND-IMAGE: url(../../images/Print/PrintG2.gif);
+    COLOR: #000000;
+    BACKGROUND-REPEAT: repeat-x;
+    FONT-FAMILY: Verdana;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: transparent;
+    TEXT-ALIGN: left;
+}
+
+.RDH0
+{
+    PADDING-BOTTOM: 3px;
+    TEXT-INDENT: 2px;
+    PADDING-TOP: 3px;
+    HEIGHT: 15px;
+    TEXT-ALIGN: left;
+}
+
+.RDH1
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 3px;
+    COLOR: #000000;
+    PADDING-TOP: 3px;
+    FONT-FAMILY: verdana;
+    HEIGHT: 15px;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+.RDH
+{
+    PADDING-RIGHT: 2px;
+    BACKGROUND-POSITION: left top;
+    BORDER-TOP: #cbd1e2 1px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BACKGROUND-IMAGE: url(../../images/Print/Printcol.gif);
+    PADDING-BOTTOM: 2px;
+    MARGIN: 0px;
+    TEXT-TRANSFORM: none;
+    COLOR: #003399;
+    TEXT-INDENT: 0px;
+    PADDING-TOP: 2px;
+    BACKGROUND-REPEAT: repeat-y;
+    FONT-FAMILY: Verdana;
+    BACKGROUND-COLOR: transparent;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+.G1HM
+{
+    BORDER-TOP: #191970 3px;
+    FONT-SIZE: 8pt;
+    MARGIN: 0px;
+    FONT-FAMILY: verdana;
+    HEIGHT: 15px;
+    BACKGROUND-COLOR: #96b4d4;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+.G2HM
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: #003399 2px solid;
+    MARGIN: 0px;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: verdana;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #b9cbe0;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+.G3HM
+{
+    BORDER-TOP: #003399 1px solid;
+    MARGIN: 0px;
+    FONT-FAMILY: verdana;
+    HEIGHT: 10px;
+    BACKGROUND-COLOR: #cbd1e2;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+.PAGEBREAK
+{
+    PAGE-BREAK-AFTER: always;
+}
+
+table.HeaderReportPrint
+{
+    background-color: #bb1515;
+}
+
+tr.HeaderReportPrint
+{
+    background-color: #bb1515;
+}
+
+td.HeaderReportPrint
+{
+    /*RP*/
+    background-color: none;
+    color: white;
+    border-top: #000000 1px solid;
+    font-weight: bold;
+    font-size: 8pt;
+    border-bottom: #000000 1px solid;
+    font-family: Verdana;
+    height: 18px;
+}
+
+table.FooterReportPrint
+{
+    background-color: #bb1515;
+}
+
+tr.FooterReportPrint
+{
+    background-color: #bb1515;
+}
+
+td.FooterReportPrint
+{
+    background-color: none;
+    color: white;
+    border-top: #000000 1px solid;
+    font-weight: bold;
+    font-size: 8pt;
+    color: #ffffff;
+    border-bottom: #000000 1px solid;
+    font-family: Verdana;
+    height: 18px;
+}
+
+td.TitleReportPrint
+{
+    /*RH & RT*/
+    background-color: white;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    height: 30px;
+}
+
+td.HeaderReportUp
+{
+    font-size: 8pt;
+    background-color: #cccccc;
+    text-align: center;
+}
+
+td.HeaderReportDown
+{
+    font-size: 8pt;
+    background-color: #cccccc;
+    text-align: center;
+}
+
+td.SignetReportPrint
+{
+    /*RH & RT*/
+    border-top: 2px solid #630202;
+    background-color: #bb1515;
+    font-size: 8pt;
+    color: white;
+    font-weight: none;
+    padding-left: 10px;
+}
+
+td.UnderSignetReportPrint /* ligne vide sous entete signet*/
+{
+    height: 5px;
+    background-color: #bb1515;
+}
+
+table.ListReportPrint
+{
+    background-color: #ffffff;
+}
+
+td.ListHeaderEmptyReportPrint /* celule vide avant entete de colonne */
+{
+    width: 22px;
+    background-color: #cccccc;
+}
+
+td.ListHeaderReportPrint /* CT */
+{
+    background-color: #cccccc;
+    color: black;
+    font-size: 8pt;
+    font-weight: none;
+    text-decoration: underline;
+}
+
+td.ListIconReportPrint
+{
+    width: 22px;
+}
+
+td.ListContentReportPrint, .ListContentReportPrint /* LV */
+{
+    font-size: 8pt;
+    color: #000000;
+    vertical-align: middle;
+    overflow: hidden;
+    /*padding-right:8px;*/
+    text-overflow: ellipsis;
+    /*padding-top:8px;*/
+}
+
+.ListContentReportPrintTitle
+{
+    color: #bb1515;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+td.ListContentReportPrintLvl1
+{
+    color: #bb1515;
+    font-weight: bold;
+    font-size: 8pt;
+    padding-left: 8px;
+    background-color: #eeeeee;
+}
+
+td.ListContentReportPrintLvl2
+{
+    font-size: 8pt;
+    padding-left: 16px;
+}
+
+table.ListMemoReportPrint
+{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 8pt;
+}
+
+table.ListArboReportPrint
+{
+    /* Ne pas changer la police */
+    font-size: 8pt;
+}
+
+td.ListSepartorFieldReportPrint
+{
+    background-color: #CBD1E2;
+    height: 1px;
+}
+
+td.ListSpaceReportPrint
+{
+    height: 2px;
+    background-color: #ffffff;
+}
+
+td.ListMemoTitleReportPrint
+{
+    font-weight: bold;
+    color: #000000;
+    white-space: nowrap;
+}
+
+td.ListMemoContentReportPrint
+{
+    /*background-color: #f4f4f4;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;*/
+    padding: 5px;
+}
+
+td.ListSepartorReportPrint
+{
+    background-color: #bb1515;
+    height: 2px;
+}
+
+table.MemoReportPrint, td.MemoReportPrint
+{
+    font-size: 8pt;
+    background-color: #ffffff;
+    color: black;
+}
+
+table.FileReportPrint
+{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 8pt;
+}
+
+td.FileFieldReportPrint
+{
+    font-size: 8pt;
+    /* nom des rubriques */
+}
+
+td.FileFieldRightReportPrint
+{
+    /* nom des rubriques lorsqu'ils sont align�s � droite en administration*/
+    text-align: right;
+    padding-right: 5px;
+}
+
+td.FileFieldValueReportPrint
+{
+    /* valeur des rubriques */
+    border: 0px;
+}
+
+td.FileFieldValueReadOnlyReportPrint
+{
+    /* valeur des rubriques en lecture seule*/
+    border: 0px;
+    color: #e6e6e6;
+}
+
+table.FileMemoReportPrint
+{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 8pt;
+}
+
+td.FileMemoTitleReportPrint
+{
+    font-weight: bold;
+    color: #000000;
+    white-space: nowrap;
+}
+
+table.FileArboReportPrint
+{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 8pt;
+}
+
+table.FileMailReportPrint
+{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 8pt;
+}
+
+td.FileMailTitleReportPrint
+{
+    font-weight: bold;
+    color: #000000;
+    white-space: nowrap;
+}
+
+table.FileLinkReportPrint
+{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 8pt;
+}
+
+td.FileLinkTitleReportPrint
+{
+    font-weight: bold;
+    color: #000000;
+    white-space: nowrap;
+}
+
+table.FilePropReportPrint
+{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 8pt;
+}
+
+td.FilePropTitleReportPrint
+{
+    white-space: nowrap;
+}
+
+td.FileSpaceReportPrint
+{
+    height: 7px;
+    background-color: #ffffff;
+}
+
+td.FileMinSpaceReportPrint
+{
+    height: 5px;
+    background-color: #ffffff;
+}
+
+td.FileSepartorReportPrint
+{
+    background-color: #cccccc;
+    height: 1px;
+}

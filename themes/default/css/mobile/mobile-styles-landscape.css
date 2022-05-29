@@ -1,0 +1,9 @@
+.choix_filtres select
+{
+	width: 20%;
+	margin-left: 25px;
+}
+.options input
+{
+	width: 20%;
+}

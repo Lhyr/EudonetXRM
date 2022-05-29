@@ -1,0 +1,239 @@
+/* Mes préférences */
+#body_pref .list-unstyled li > a {
+    box-shadow: none!important;
+}
+
+.fichePref {
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+#accessPref {
+    display: flex;
+    float: right;
+    color: #777;
+    margin-right: 10px;
+}
+
+#accessPref i {
+    font-size: 25px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.text-label {
+    color: #777;
+    font-weight: normal!important; 
+}
+
+.contentPref {
+    min-height: 200px!important;
+}
+
+.list-unstyled .liPref {
+    width: 150px!important;
+}
+
+.choixPref {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 15px;
+}
+
+#choixLangue, #choixTailleCaractere {
+    display: flex;
+}
+
+#selectLangue , #newMdp label{
+    margin-left: 20px!important;
+    width: 160px;
+}
+
+#signaturePref:focus, #memoPref:focus {
+    outline: none;
+}
+
+#signaturePref, #memoPref {
+    max-height: 200px;
+    overflow: scroll;
+}
+
+#textSignature textarea, #textMemo textarea {
+    resize: none;
+    width: 100%
+}
+
+#body_pref  #submitSignature, #body_pref  #submitMemo, #body_pref  #submitMdp {
+    float: right;
+}
+
+#choixSuggestion label {
+    width: auto!important;
+    color: black;
+}
+
+#choixSuggestion .deuxPoint{
+    line-height: 40px;
+}
+
+#choixSuggestion .cbx  {
+    margin-left: 10px;
+    line-height: 35px;
+}
+
+#body_pref .input-group:focus, #body_pref .input-group input:focus {
+    outline: none!important;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #d2d6de;
+}
+
+#body_pref .with-borderMdp {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+}
+
+#body_pref #preference .input-group input {
+    width: 250px!important;
+}
+
+#body_pref #optionPlanning .input-group input {
+    width: 60px!important;
+}
+
+#body_pref #optionPlanning .clockpicker input:hover {
+    cursor: pointer;
+}
+/* Fin Mes Préférences */
+
+#body_pref .choixOffice {
+    border: 3px transparent solid;
+    width: 300px;
+    height: 70px;
+    margin: 20px;
+    background-color: #ecf0f5;
+    position: relative;
+    display: inherit;
+    box-shadow: 0 0 1px black;
+}
+
+#body_pref .choixOffice:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+}
+
+#body_pref .choixOffice .titreOffice {
+    padding: 15px 0;
+    height: 50%;
+    font-weight: 600;
+}
+
+#body_pref .choixOffice.active {
+    border: 3px #008d4c solid;
+    box-shadow: 0 0 1px transparent!important;
+}
+
+#body_pref .choixOffice .imgOffice {
+    padding: 15px;
+}
+
+#body_pref .choixOffice i  {
+    display: none;
+}
+
+#body_pref .choixOffice.active i {
+    display: block!important;
+    position: absolute;
+    top: -15px;
+    right: -11px;
+    font-size: 23px;
+    color: #008d4c;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#body_pref #listOffice,  #body_pref #joursSemaine {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#body_pref .jourSemaine {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    border: 1px black solid;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 8px
+}
+
+#body_pref .jourSemaine:hover {
+    cursor: pointer;
+}
+
+#body_pref #choixExportMode {
+    display: flex;
+}
+
+#body_pref .jourSemaine.active {
+    background-color: rgba(0, 141, 76, 0.8);
+    border-color: rgba(0, 141, 76, 1);
+    color: white;
+}
+
+#body_pref #optionPlanning .paramSemaineTravail {
+    margin-bottom: 15px;
+}
+
+#body_pref #optionPlanning .paramSemaineTravail label, #body_pref #optionPlanning #choixSemaineMode label {
+    width:  auto!important;
+}
+
+
+#body_pref #optionPlanning label.cbx {
+    width: 20px!important;
+}
+
+#body_pref #choixCouleurBordure label, #body_pref #choixTacheMode label, #body_pref #choixOptionsPlanning label {
+    width: auto!important;
+}
+
+.divColorInput {
+    display: inline-flex;
+}
+
+#body_pref .dropdown-colorselector {
+    position: unset;
+}
+
+#body_pref #choixOptionsPlanning .input-group[class*="col-"] {
+    float: left!important;
+}
+
+#body_pref .popover {
+    max-width: 250px!important;
+}
+
+#body_pref .input-group-addon, .input-group-btn {
+    width: 0!important;
+}
+
+#body_pref .btn-primary{
+    background-color: white!important;
+    border-color: #bdbcbc!important;
+    padding: 4px 10px!important;
+    color: black!important
+}
+
+#body_pref .bootstrap-touchspin-injected {
+    padding-top: 0!important;
+}
+
+@media (min-width: 1000px) {
+    #body_pref #choixTacheMode .col-md-3 {
+        width: 27%!important;
+    }
+    #body_pref #choixTacheMode .col-md-5 {
+        width: 39%!important;
+    }
+}

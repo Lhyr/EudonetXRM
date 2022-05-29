@@ -1,0 +1,93 @@
+﻿div.bkm-tab #listContent {
+    border-left: 0px solid var(--bkmTab-clsBkmFooterPosition);
+    border-right: 0px solid var(--bkmTab-clsBkmFooterPosition);
+    background: var(--detail-foreground-btn);
+}
+div[class*="fs_"] .dataTable {
+    font-size: 0.7813rem;
+}
+table.dataTable {
+    margin-top: 0 !important;
+    border-top: 0;
+    margin-bottom: 0 !important;
+}
+@-moz-document url-prefix() {
+    table .dataTable {
+      display: table-caption;
+      margin-top: 0px !important;
+      border-top: 0;
+      overflow: -moz-hidden-unscrollable;
+    }
+  }
+div.bkm-tab table {
+    font-family: var(--ffamily);
+    background: var(--detail-foreground-btn);
+}
+div.bkm-tab .table-bordered {
+    border: 0 solid #f4f4f4;
+}
+
+/* Td bloquée à droite */
+
+.dataTable td.icon-popup-cell {
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 !important;
+}
+
+div.bkm-tab .dataTable tr td:first-child.icon-popup-cell {
+    position: sticky;
+    left: 0;
+    z-index: 4;
+    background: var(--detail-foreground-btn);
+    height: var(--size-40);
+    width: 35px;
+    font-size: var(--size-20);
+}
+
+    div.bkm-tab .dataTable tr td:first-child.icon-popup-cell:hover {
+        z-index: 26;
+    }
+
+    div.bkm-tab .dataTable tr td:first-child.icon-popup-cell.IrisModeGuidDisabled {
+        border-right: 1px solid rgba(0,0,0,.12);
+    }
+
+    div.bkm-tab .dataTable tr td:first-child.icon-popup-cell + .icon-popup-cell {
+        position: sticky;
+        left: 35px;
+        z-index: 4;
+        background: var(--detail-foreground-btn);
+        border-right: 1px solid rgba(0,0,0,.12);
+        height: 40px;
+        width: 35px;
+    }
+
+        div.bkm-tab .dataTable tr td:first-child.icon-popup-cell + .icon-popup-cell i {
+            color: var(--main-color);
+            font-family: 'Font Awesome 5 Free' !important;
+        }
+
+/* Cellules du tableau */
+
+.tbody_asso tr td > div {
+    display: flex;
+    align-items: center;
+}
+
+div.bkm-tab .tbody_asso tr td > div {
+    height: var(--size-30);
+}
+
+table .globalDivComponent {
+    padding: 0;
+}
+
+.dataTable .globalDivComponent {
+    width: 100%;
+}
+
+div[class*=fs_] #mainDiv #listContent {
+    height: auto;
+}
+

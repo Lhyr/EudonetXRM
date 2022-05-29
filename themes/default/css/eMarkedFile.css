@@ -1,0 +1,242 @@
+﻿body
+{
+}
+
+
+.eMarkedFileEditor
+{
+	background-color: #f8f8f8;
+}
+
+body.eMarkedFileEditor
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+div.eMarkedFileEditor
+{
+	float: left;
+	position: relative;
+	margin: 10px;
+	width: 95%;
+	height: 95%; /* 	border: solid; 	border-color: Green; 	*/
+	font-size: 8pt;
+}
+
+div.eMarkedFileEditor table
+{
+	font-size: 8pt;
+	border: none;
+	border-collapse: collapse;
+}
+
+
+
+
+div.eMarkedFileEditValues
+{
+	border: solid;
+	width: 100%;
+	height: 300px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+	overflow: auto;
+	padding: 0px;
+	position: relative; /* permet le positionnement absolu d'éléments à l'intérieur de la liste des valeurs du catalogue (ex : éditeur du bouton Modifier) */
+	background-color: White;
+}
+
+table.eMarkedFileEditValues
+{
+	width: 100%;
+	border-bottom-width: 0;
+}
+
+
+tr.eMarkedFileEditValues
+{
+	background-color: #FFFFFF;
+}
+
+
+/*  Couleur de la ligne pair  */
+tr.eMarkedFileEditValues2
+{
+	background-color: #F6F6F6;
+}
+
+/*couleur de la ligne sélectionnée*/
+tr.eMarkedFileSelected, div.SelectedValue
+{
+	background-color: #CCCCCC;
+	text-decoration: none;
+	color: white;	
+}
+
+
+
+tr.eMarkedFileEditValues:hover, tr.eMarkedFileEditValues2:hover, tr.eMarkedFileSelected:hover
+{
+	background-color: #BCDCFB;
+}
+
+/* Taille des cellules du tableau généré*/
+td.eMarkedFilegEditValuesLbl
+{
+	width: 40%;
+	padding: 7px !important;
+	cursor: pointer;
+}
+
+
+
+
+td.eMarkedFileEditBtn
+{
+	width: 20%;
+}
+td.eMarkedFileEditBtn
+{
+	padding: 0 0 0 0;
+	text-align: center;
+}
+
+
+/* DIV contenant les boutons Modifier infobulle et supprimer*/
+div.eMarkedFileBtnValues
+{
+	position: relative;
+	float: right;
+	height: 21px;
+	display: none;
+}
+
+
+tr:hover div.eMarkedFileBtnValues
+{
+	display: block;
+}
+
+
+/* concerne Bountons Modifier infobulle et supprimer */
+ul.eMarkedFileEdiBtnUl
+{
+	height: 21px;
+	width: 85px;
+	float: left;
+	margin: 0;
+	padding: 0;
+
+}
+ul.eMarkedFileEdiBtnUl > li
+{
+	font-size:12pt;
+}
+/* concerne Bountons Modifier infobulle et supprimer */
+li.eMarkedFileEdiBtnUl
+{
+	background-repeat: no-repeat;
+	cursor: pointer;
+	width: 22px;
+	height: 21px;
+	display: inline-block;
+	float: left;
+	line-height: 21px;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.eMarkedFileBtnModif a
+{
+
+	background-position: 0 -639px;
+	width: 22px;
+	height: 21px;
+	display: block;
+	margin: 0;
+}
+.eMarkedFileBtnModif a:hover
+{
+	background-position: 0 -710px;
+	width: 22px;
+	height: 21px;
+}
+
+
+
+.eMarkedFileBtnDelete a
+{
+
+	background-position: 0 -852px;
+	width: 22px;
+	height: 21px;
+	display: block;
+	margin: 0;
+	margin-left: 17px;
+}
+.eMarkedFileBtnDelete a:hover
+{
+	background-position: 0 -923px;
+	width: 22px;
+	height: 21px;
+}
+
+
+
+td.eMarkedFileMenuItemNoRes
+{
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 8pt;
+	font-family: Verdana;
+	color: #bc1515;
+}
+
+
+
+/*DIV contenant les boutons imprimer et synchro*/
+div.eMarkedFileEdit /*Div d'édition de nouveau libellé*/
+{
+	width: 100%;
+}
+
+/* ID de l'input de recherche*/
+div.eMarkedFileEdit input
+{
+	width: 330px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: Gray;
+	height: 20px;
+}
+
+div.eMarkedFileEdit table td
+{
+	border: none;
+	border-collapse: collapse;
+	padding: 0px;
+}
+
+div.eMarkedFileEdit table
+{
+	width: 100%;
+}
+
+div.eMarkedFileEdit div, div.eMarkedFileEdit input
+{
+	float: left;
+}
+
+div.eMarkedFileEdit input
+{
+	height: 20px;
+}
+
+
+

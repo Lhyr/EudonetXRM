@@ -1,0 +1,24 @@
+if not exists (SELECT 1
+		FROM sys.tables INNER JOIN syscolumns on syscolumns.id = sys.tables.object_id
+		WHERE sys.tables.name LIKE 'PAYMENTTRANSACTION' AND syscolumns.name LIKE 'PAYTRANTOCHECK' )
+BEGIN
+	ALTER TABLE [PAYMENTTRANSACTION] ADD PAYTRANTOCHECK bit
+	exec('update PAYMENTTRANSACTION set PAYTRANTOCHECK = 0')
+END
+
+INSERT INTO [DESC](DescId, [File], Field, [Format], Length)
+SELECT 119513, 'PAYMENTTRANSACTION', 'PAYTRANTOCHECK', 3, 0
+WHERE NOT EXISTS (
+	SELECT DescId FROM [DESC] WHERE DescId = 119513
+)
+
+INSERT INTO [RES](ResId, LANG_00)
+SELECT 119513, 'A vérifier'
+WHERE NOT EXISTS (
+	SELECT ResId FROM [RES] WHERE ResId = 119513
+)
+
+
+ UPDATE [DESC] SET [DispOrder] = 13, [Rowspan] = 1, [Colspan] = 1 WHERE [DescId] = 119513 
+
+ 

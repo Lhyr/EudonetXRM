@@ -1,0 +1,252 @@
+.text-StartContain {
+    font-style: italic;
+}
+.text-Result {
+    color: black;
+    text-transform: capitalize;
+}
+.presets_FullEmpty {
+    font-style: italic;
+}
+.no_filters {
+    margin-left: 3px;
+    margin-top: 6px;
+    position: absolute;
+}
+.text-no_filters {
+    padding-left: 5px;
+}
+
+div.control_contextmenu {
+    background-color: #F8F8F8;
+    border: 1px solid #DEDEDE;
+    cursor: default;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 0.8125rem;
+    z-index: 3;
+    box-shadow: 8px 8px 12px #ccc;
+}
+div.control_contextmenu [class^="icon-"], div.control_contextmenu [class*=" icon-"] {
+    font-size: 9pt;
+    margin-right: 5px;
+}
+div.control_contextmenu .icon-edn-cross {
+    background-color:#bb1515;
+} 
+div.control_contextmenu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+div.control_contextmenu ul li.actionItem {
+    cursor: pointer;
+    text-align: left;
+    margin-left: 2px; /* CRU : Pour que le contenu ne bouge pas lors de l'ajout de la bordure gauche sur le hover */
+    font-size: 8pt;
+}
+
+div.control_contextmenu ul li.actionItem span {
+	font-family: Verdana,Geneva,sans-serif;
+}
+    div.control_contextmenu ul li.actionItem span[class^='icon-'] {
+        font-family: 'eudoFonts';
+        font-size: 10pt;
+    }
+    div.control_contextmenu ul li.actionItem:hover span[class^='icon-'] {
+        color: #fff;
+    }
+
+div.control_contextmenu ul li.qckGroupFlt
+{
+    font-weight:bold;
+}
+li.actionItem {
+    line-height: 30px;
+}
+.disabledItem {
+    color: #5F5E5F;
+    font-style: italic;
+}
+.specialItem {
+    color: #5F5E5F;
+    font-style: italic;
+}
+li.specialItem {
+    line-height: 30px;
+}
+.reloadMenu {
+    background-image: url("../images/Icon/reload.png");
+    background-position: 5px 8px;
+    background-repeat: no-repeat;
+    color: #333333;
+}
+ div.control_contextmenu li {   
+    -moz-user-select: none;
+    padding-left: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+  /* #40339 ajout MCR : filtre express pour IE, prise en compte text-overflow:ellipsis , et balise span */
+    div.control_contextmenu li span.ExpressFilterspan {
+    -moz-user-select: none;
+    padding-left: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: normal;      /* #40339 */
+    display: inline-block;  /* #40339 */
+    width: 250px;           /* #40339 */
+    float: right;           /* #40339 */
+}
+
+
+div.control_contextmenu li.itemAction:hover {
+    background-color: #BCDCFB;
+}
+div.control_contextmenu li .cMenuSep cMenuSep:hover {
+    color: #333333;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 8px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+}
+div.control_contextmenu li.selected, div.control_contextmenu li.actionItem:hover, div.control_contextmenu li.advFltItem:hover {
+    background-color: #BCDCFB;
+    cursor: pointer;
+}
+div.control_contextmenu li.noActItem:hover {
+    background-color: #BCDCFB;
+}
+div.control_contextmenu li.selected:hover {
+    background-color: #EEEEEE;
+    color: #333333;
+    cursor: pointer;
+}
+div.control_contextmenu li.disabled, div.control_contextmenu li.disabled:hover {
+    background-color: #EEEEEE;
+    color: #333333;
+    cursor: pointer;
+}
+.filterMenu:hover {
+    background-image: url("../images/Icon/iFilter.png");
+    background-position: 6px -124px;
+    background-repeat: no-repeat;
+    color: #333333;
+}
+.filterMenu {
+    background-image: url("../images/Icon/iFilter.png");  
+    background-position: 7px -41px;
+    background-repeat: no-repeat;
+    color: #333333;
+}
+li.filterMenu {
+    line-height: 30px;
+}
+.fltMenuNoAct {
+    color: #333333;
+}
+.filterCancelMenu {
+    color: #5F5E5F;
+}
+li.filterCancelMenu {
+    line-height: 30px;
+}
+div.control_contextmenu ul li  {
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.ActivFlt img {
+    height: 20px;  width: 24px;
+}
+
+.ModifFlt{
+    height: 30px;
+}
+
+
+.FltList img {
+    height: 20px;
+    width: 24px;
+}
+.NewFlt img {
+    height: 20px;  width: 24px;
+}
+.publicFilter {
+    color: #5F5E5F;
+}
+input.eCMSearch {
+    border: 1px solid #CCCCCC;
+    height: 19px;
+    margin-bottom: 4px;
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 85%;
+}
+div.eCMSearch {
+}
+.eCMSep {
+    border-bottom: 1px solid #CCCCCC;
+    height: 2px;
+    margin: -2px 0 0;
+    padding: 0;
+}
+.champ_filtre_fesn {
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 17px;
+    margin-left: 5px;
+    width: 85%;
+}
+.loadAllVal {
+    color: #5F5E5F;
+    cursor: default;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 8pt;
+    font-style: italic;
+}
+li.loadAllVal {
+    line-height: 30px;
+}
+.numericItem {
+    text-align: right;
+}
+
+#eBtnSrch {
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    height: 21px;
+    margin-left: -5px;
+    margin-right: 9px;
+    margin-top: -27px;
+    position: relative;
+    width: 20px;
+    font-size: 8pt;
+    text-align: center;
+    line-height: 23px;
+    color: white;
+    float:right;
+}
+#fidx_num {
+    width: 29px;
+}
+.actionUl {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.del_state {
+    color: #bb1515 !important;
+}
+li.advFltItem span.icon-edn-pen {
+    font-size: 10pt;
+}
+
+div.lastvalues_contextmenu {
+    z-index: 10001;
+}

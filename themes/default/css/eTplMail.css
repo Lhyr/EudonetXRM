@@ -1,0 +1,233 @@
+﻿
+.ObjectIput input {
+border: 1px solid #B9B5B5;
+width: 320px;
+text-indent: 5px;
+}
+
+.ObjectLabel {
+  text-align: right;
+  width: 8%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Demande #29 951 et Backlog #452 - Alignement spécifique du libellé "Objet" sur la droite */
+.memoTplMailDlgSubject {
+    text-align: right;
+}
+
+/*SHA : tâche #1 940*/
+.memoTplMailDlgPreheader {
+    text-align: right;
+}
+
+.memoTplMailDlg {
+    margin-left: 1%;
+    width: 98%;
+}
+
+.memoTplMailDlg #PermOptions {
+    text-align: left;
+    margin: 15px;
+}
+.memoTplMailDlg .OptTtlFilt {
+    margin-bottom: 5px;
+}
+.memoTplMailDlg .CheckPermOpt {
+    padding: 0;
+}
+.memoTplMailDlg .PermOpt {
+    margin-bottom: 3px;
+}
+
+#permTitle {
+    color: #636363;
+    font-size: 11px;
+    cursor: pointer;
+    text-align: left;
+}
+#permTitle span[class^='icon-'] {
+    font-size: 10pt;
+    margin-right: 5px;
+}
+#permTitle #label {
+    line-height: 11px;
+}
+
+#btnPJ {
+    font-size: 12pt;
+}
+
+
+.states_placement {
+    position: relative;
+    display: table;
+    width: auto;
+    text-align: center;
+    font-size: 13pt;
+    white-space: nowrap;
+    margin: 1% auto;
+}
+
+/*.stpPlcmtChrt {
+    margin-left: 116px !important;
+}*/
+
+.state_grp {
+    float: left;
+    display: table;
+    height: auto;
+    width: 121px;
+    margin-left: 26px;
+}
+
+.state_grp-current {
+    cursor: pointer;
+    float: left;
+    display: table;
+    height: auto;
+    width: 160px;
+    font-weight: bold;
+    margin-right: -27px;
+}
+
+.state_grp span {
+    font-size: 8pt;
+    color: #636363;
+}
+
+.state_grp div {
+    cursor: pointer;
+    margin-left: 52px;
+    height: 21px;
+    width: 21px;
+    border: 1px solid #636363;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.state_grp-current div {
+    cursor: pointer;
+    margin-left: 63px;
+    height: 21px;
+    width: 21px;
+    background-color: #ceef60;
+    border: 1px solid #a9d329;
+    color: #638402;
+    margin-bottom: 5px;
+}
+
+.state_grp-current div:hover {
+    border: 1px solid #29AAD2;
+    background-color: #B1DBF0;
+}
+
+.state_grp-current div:hover + span {
+    color: #29AAD2;
+}
+
+.state_grp-current span {
+    color: #8ab40b;
+    font-weight: normal;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.state_grp-validated {
+    float: left;
+    display: table;
+    height: auto;
+    width: 121px;
+    margin-left: 26px;
+}
+
+.state_grp-validated div {
+        cursor: pointer;
+        margin-left: 52px;
+        height: 21px;
+        width: 21px;
+        border: 1px solid black;
+        margin-bottom: 5px;
+        background-color: white;
+    }
+
+.state_grp-validated div:hover {
+            border: 1px solid #29AAD2;
+            background-color: #B1DBF0;
+        }
+
+.state_grp-validated span {
+        font-size: 8pt;
+        color: #636363;
+    }
+
+.state_grp-validated div:hover + span {
+        color: #29AAD2;
+    }
+
+.state_sep {
+    margin-right: -76px;
+    margin-left: -46px;
+    margin-top: 11px;
+    float: left;
+    width: 131px;
+    height: 1px;
+    border-bottom: 1px dashed #CCC;
+}
+
+/*KJE : tâche #2 334*/
+.value-container {
+    margin-top: 20px;
+    width: 100%;
+    float: right;
+}
+
+.field-value {
+    height: 17px;
+    padding: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-indent: 5px;
+}
+
+
+.field-value2 {
+    width: 8%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.field-btn {
+    text-align: right;
+    top: -22px;
+    right: 11px;
+    font-size: 14px;
+    position: relative;
+}
+
+.field-value {
+    width: 320px;
+    text-overflow: ellipsis;
+    background-color: #E3E3E3;
+    margin-right: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*font-size: 9pt;*/ /*for request 93 433*/
+    border-bottom: #cccbcb dashed 1px;
+}
+
+#COL_106000_106047_0_0_0{
+    padding-bottom: 8px !important;
+}
+
+#COL_106000_106005_0_0_0{
+    height: 27px;
+}
+
+/*for request 78 895*/
+#templateEditor_eTplMailDialogEditorObject {
+    height: 76vh !important;
+}
+/*for request 78 895*/

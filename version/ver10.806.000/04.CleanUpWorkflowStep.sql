@@ -1,0 +1,47 @@
+/*
+
+SPH :
+Suppression des champs de liaison STEP <=> EVT invalide
+
+
+*/
+SET NOCOUNT ON
+
+DECLARE @FIEDNAME as VARCHAR(MAX)
+DECLARE @DESCID as INT
+
+
+DECLARE CURS CURSOR FOR
+
+	 -- Champ sans ressources à supprimer
+	 SELECT  cc.name, descid  FROM [DESC]
+	 LEFT JOIN sys.tables tt on tt.name COLLATE FRENCH_CI_AI = [desc].[FILE] COLLATE FRENCH_CI_AI
+	 LEFT JOIN sys.all_columns cc ON [DESC].[Field] COLLATE FRENCH_CI_AI = cc.name COLLATE FRENCH_CI_AI AND cc.object_id = tt.object_id
+	 LEFT JOIN res on resid=descid
+	 WHERE DESCID between 119340 and 119369
+	 AND RESID IS NULL
+
+
+
+	 
+
+OPEN CURS
+FETCH NEXT FROM CURS INTO @FIEDNAME, @DESCID
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+
+	DELETE FROM FILEDATAPARAM WHERE descid = @DESCID
+	DELETE FROM [DESC] WHERE descid = @DESCID
+	DELETE FROM [DESCADV] WHERE descid = @DESCID
+	DELETE FROM [RESADV] WHERE descid = @DESCID
+
+	EXEC('ALTER TABLE [dbo].[WORKFLOWSTEP] DROP COLUMN ['+ @FIEDNAME +']')
+
+	FETCH NEXT FROM CURS INTO @FIEDNAME, @DESCID
+
+
+END
+
+CLOSE CURS
+DEALLOCATE CURS

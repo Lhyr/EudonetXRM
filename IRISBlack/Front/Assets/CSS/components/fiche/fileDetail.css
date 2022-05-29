@@ -1,0 +1,414 @@
+﻿
+.box-body.detailContent {
+    background: var(--box-body-color);
+}
+
+
+.detailContent .fa-lock,
+#box-step .fa-lock,
+#headFiche .fa-lock {
+    color: var(--detail-label);
+}
+
+#headFiche .container {
+    border-bottom: none;
+}
+
+.detailContent .left-label,
+#box-step .left-label,
+#headFiche .left-label {
+    color: var(--detail-label) !important;
+    font-family: var(--ffamily);
+    font-weight: 500;
+    padding: 0 5px 0 0 !important;
+    overflow: initial;
+    font-size: var(--size-12);
+}
+
+
+.detailContent .form-group,
+#box-step .form-group,
+#headFiche .form-group {
+    margin-bottom: 0;
+}
+
+.detailContent .fileInput,
+#box-step .fileInput,
+#headFiche .fileInput {
+    padding: var(--size-10) var(--size-24);
+}
+
+    .detailContent .fileInput.memoInput {
+        padding: var(--size-5) var(--size-24) var(--size-5) var(--size-24);
+    }
+
+.detailContent div[rowspan="1"] > .form-group.Numeric {
+    height: auto;
+    display:grid;
+}
+
+.detailContent.box-body {
+    padding: 10px 0 10px 0;
+}
+
+.detailContent .form-group,
+#box-step .form-group,
+#headFiche .form-group {
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+    .detailContent .form-group div.left + div,
+    #box-step .form-group div.left + div,
+    #headFiche .form-group div.left + div {
+        padding: 0 0 0 0;
+    }
+
+
+.detailContent .border-error input,
+#box-step .border-error input,
+#headFiche .border-error input,
+.detailContent .border-error span:not(.info-tooltip, .requiredRubrique, .cke_toolgroup, .cke_button_icon, .cke_toolbar, .multiple_choice_remove),
+#box-step .border-error span:not(.info-tooltip, .requiredRubrique, .cke_toolgroup, .cke_button_icon, .cke_toolbar, .multiple_choice_remove),
+#headFiche .border-error span:not(.info-tooltip, .requiredRubrique, .cke_toolgroup, .cke_button_icon, .cke_toolbar, .multiple_choice_remove) {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+/*BUTTON CLICKED*/
+.detailContent button.btn.btn_eudo.btn-default:not([disabled])[value="1"] {
+    opacity: 1;
+    color: var(--detail-foreground-btn) !important;
+    border-color: var(--checkbox-color) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    background: var(--btn-triangle) left top no-repeat !important;
+    transition: background 250ms;
+    background-color: var(--checkbox-color) !important;
+    background-size: 70px 28px !important;
+}
+
+/*BUTTON UNCLICKED*/
+.detailContent button.btn.btn_eudo.btn-default:not([disabled])[value="0"] {
+    opacity: 1;
+    color: var(--detail-label) !important;
+    border-color: var(--detail-label) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    background: url(../../../../themes/default/images/Store/btn-grey-triangle-bg.png) left top no-repeat !important;
+    transition: background 250ms;
+    background-color: var(--detail-background-btn) !important;
+    background-size: 70px 28px !important;
+}
+
+/*BUTTON DISABLED*/
+button.btn.btn_eudo.btn-default[disabled] {
+    color: var(--detail-foreground-btn-disabled) !important;
+    border-color: var(--btn-eudo-border-color) !important;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100% !important;
+    background: url(../../../../themes/default/images/Store/btn-grey-triangle-bg.png) left top no-repeat !important;
+    opacity: 1;
+    transition: background 250ms;
+    background-color: var(--btn-eudo-background-color) !important;
+    position: relative;
+    background-size: 70px 28px !important;
+}
+
+.detailContent .eAlertBox.alert-danger,
+#box-step .eAlertBox.alert-danger,
+#headFiche .eAlertBox.alert-danger {
+    color: var(--danger-color) !important;
+    background-color: transparent !important;
+    white-space: initial;
+    opacity: 1;
+    overflow: hidden;
+    height: auto;
+}
+
+    .detailContent .eAlertBox.alert-danger p,
+    #box-step .eAlertBox.alert-danger p,
+    #headFiche .eAlertBox.alert-danger p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: initial;
+        font-size: var(--size-13);
+        text-align: right;
+    }
+
+.detailContent .border-error .left-label,
+#box-step .border-error .left-label,
+#headFiche .border-error .left-label {
+    font-family: var(--ffamilyBold);
+    color: var(--main-color) !important;
+}
+
+
+.detailContent .input-group .catalog-val,
+#box-step .input-group .catalog-val,
+#headFiche .input-group .catalog-val {
+    overflow: initial !important;
+}
+
+.detailContent .headReadOnly .multiRenderer ul li,
+#box-step .headReadOnly .multiRenderer ul li,
+#headFiche .headReadOnly .multiRenderer ul li {
+    background-color: var(--detail-multirenderer-readonly) !important;
+    border-color: var(--detail-multirenderer-readonly-border) !important;
+    opacity: 1;
+}
+
+.detailContent span.multiple_choice_remove.fas.fa-lock,
+#box-step span.multiple_choice_remove.fas.fa-lock,
+#headFiche span.multiple_choice_remove.fas.fa-lock {
+    font-size: var(--size-9);
+    padding: 0 0 0 5px;
+    background: transparent !important;
+    color: var(--detail-Multiple-choice-remove);
+    line-height: 12px;
+    height: 12px;
+}
+
+
+
+.detailContent .clsDetailIndex[open] .clsBtnWrap,
+#box-step .clsDetailIndex[open] .clsBtnWrap,
+#headFiche .clsDetailIndex[open] .clsBtnWrap {
+    padding-top: 2px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.detailContent .clsDetailIndex[open] summary,
+#box-step .clsDetailIndex[open] summary,
+#headFiche .clsDetailIndex[open] summary,
+.detailContent .clsDetailIndex[open] summary + div,
+#box-step .clsDetailIndex[open] summary + div,
+#headFiche .clsDetailIndex[open] summary + div {
+    padding: 0 3px 0 3px;
+}
+
+.detailContent .multiRenderer .multiple_choice_remove,
+#box-step .multiRenderer .multiple_choice_remove,
+#headFiche .multiRenderer .multiple_choice_remove {
+    font-size: var(--size-11);
+}
+
+
+.detailContent .readOnlyComponent .input-group .clsDetailIndex[open] .clsBtnWrap,
+#box-step .readOnlyComponent .input-group .clsDetailIndex[open] .clsBtnWrap,
+#headFiche .readOnlyComponent .input-group .clsDetailIndex[open] .clsBtnWrap {
+    padding: 2px 0 0 0 !important;
+    margin: 0 0 0px 0px;
+    width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.detailContent .clsDetailIndex[open] .clsBtnWrap button,
+#box-step .clsDetailIndex[open] .clsBtnWrap button,
+#headFiche .clsDetailIndex[open] .clsBtnWrap button {
+    margin: 0px 0px -1px 0px;
+    border-top: 1px solid var(--detail-clsBtnWrap) !important;
+}
+
+.detailContent .readOnlyComponent summary:after,
+#box-step .readOnlyComponent summary:after,
+#headFiche .readOnlyComponent summary:after {
+    right: 11px;
+}
+
+/*.detailContent .readOnlyComponent .accordionOpened summary:after {
+    right: 11px;
+}*/
+
+.detailContent .clsDetailIndex[open],
+#box-step .clsDetailIndex[open],
+#headFiche .clsDetailIndex[open] {
+    background-color: var(--detail-foreground-btn);
+    z-index: 5;
+    border: 1px solid var(--detail-clsBtnWrap);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    position: relative;
+    top: 27px; /* pour positionner le bouton Modifier en dessous du champs */
+}
+
+.detailContent .readOnlyComponent .clsDetailIndex[open],
+#box-step .readOnlyComponent .clsDetailIndex[open],
+#headFiche .readOnlyComponent .clsDetailIndex[open] {
+    border: 1px solid var(--detail-clsBtnWrap);
+    background: var(--detail-Readonly-cpt);
+    padding: 2px 2px 4px 4px;
+}
+
+.detailContent span.cat-readonly-val,
+#box-step span.cat-readonly-val,
+#headFiche span.cat-readonly-val {
+    background: var(--detail-multirenderer-readonly);
+    color: var(--detail-multiRenderer-color);
+    font-family: var(--ffamily);
+    line-height: var(--size-14);
+}
+
+.detailContent .eAlertBox,
+#box-step .eAlertBox,
+#headFiche .eAlertBox {
+    top: 28px;
+}
+
+.detailContent .form-group.reverse label.left-label.text-muted,
+#box-step .form-group.reverse label.left-label.text-muted,
+#headFiche .form-group.reverse label.left-label.text-muted {
+    padding: 0 0px 0 5px !important;
+    line-height: 17px;
+}
+
+.detailContent .inp-cbx:checked + .cbx span:first-child,
+#box-step .inp-cbx:checked + .cbx span:first-child,
+#headFiche .inp-cbx:checked + .cbx span:first-child {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    animation: wave 0.4s ease;
+}
+
+.detailContent .cbx span:first-child:before,
+#box-step .cbx span:first-child:before,
+#headFiche .cbx span:first-child:before {
+    background: var(--main-color);
+}
+
+
+
+.detailContent .readOnlyComponent:not([tp="10"], [tp="20"], [tp="11"], [tp="16"]) .left,
+#box-step .readOnlyComponent:not([tp="10"], [tp="20"], [tp="11"], [tp="16"]) .left,
+#headFiche .readOnlyComponent:not([format="10"], [format="20"], [format="11"], [tp="16"]) .left {
+    background: var(--detail-Readonly-cpt);
+    padding: 1px 8px 0 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.detailContent .readOnlyComponent:not([tp="10"], [tp="20"], [tp="11"], [tp="16"]) .input-group + .divVerifEmail {
+    background: var(--detail-Readonly-cpt);
+    border-bottom: 1px dashed var(--detail-label);
+}
+
+#mainContentWrap .detailContent .separator-field, #mainContentWrap #box-step .separator-field, #mainContentWrap #headFiche .separator-field, #mainContentWrap .detailContent .separator-field:hover, #mainContentWrap #box-step .separator-field:hover, #mainContentWrap #headFiche .separator-field:hover {
+    border-bottom: 1px solid var(--detail-label);
+}
+
+.detailContent .separator-field span:first-of-type, #box-step .separator-field span:first-of-type, #headFiche .separator-field span:first-of-type {
+    font-family: var(--ffamilyBold);
+    padding: 0px 0 0px 0px;
+    color: var(--detail-label);
+    font-size: var(--size-17-5);
+    /*font-style: initial;*/
+    text-decoration: none;
+}
+
+.detailContent .separator-field .fas.fa-chevron-down, #box-step .separator-field .fas.fa-chevron-down, #headFiche .separator-field .fas.fa-chevron-down {
+    transform: rotate(0);
+    transition: 250ms all;
+    color: var(--detail-label);
+}
+
+.detailContent .closeSep .separator-field .fas.fa-chevron-down, #box-step .closeSep .separator-field .fas.fa-chevron-down, #headFiche .closeSep .separator-field .fas.fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.detailContent .fileInput[tp="15"] .label-field span:first-of-type, #box-step .fileInput[tp="15"] .label-field span:first-of-type, #headFiche .fileInput[tp="15"] .label-field span:first-of-type {
+    display: block;
+    border-bottom: solid 0px var(--detail-fileinput-label);
+    padding: 0 0 0px 0;
+    width: 100%;
+    font-size: var(--size-20);
+    /*text-decoration: none;*/
+    font-family: var(--ffamily);
+    /*font-style: normal;*/
+    color: var(--detail-label);
+    line-height: initial;
+}
+
+.detailContent .logicCompo {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+}
+
+
+
+    .detailContent .logicCompo .checkBoxRubrique {
+        width: 100%;
+    }
+
+.detailContent .form-group:not(.Logic) .left {
+    float: left;
+    margin-right: 5px !important;
+    width: 100%;
+    text-align: left;
+}
+
+.detailContent .form-group.Logic .left {
+    max-height: none;
+    line-height: 30px;
+    float: right;
+    width: calc(100% - 60px);
+}
+
+.detailContent .form-group.Separator .left {
+    width: auto;
+    margin: 0 5px 0 0;
+}
+
+.detailContent .form-group.Logic {
+    margin-top: 9px;
+}
+
+
+#MainWrapper .detailContent .read-only .catalogVal,
+#MainWrapper #box-step .read-only .catalogVal,
+#MainWrapper .detailContent .headReadOnly .userVal,
+#MainWrapper #box-step .headReadOnly .userVal {
+    display: flex;
+    align-items: center;
+}
+
+
+    #MainWrapper .detailContent .read-only .catalogVal .targetIsTrue,
+    #MainWrapper #box-step .read-only .catalogVal .targetIsTrue,
+    #MainWrapper .detailContent .headReadOnly .userVal .targetIsTrue,
+    #MainWrapper #box-step .headReadOnly .userVal .targetIsTrue {
+        background: var(--detail-multirenderer-readonly);
+        border: 1px solid var(--detail-multirenderer-readonly-border);
+        /*margin-top: 4px;*/
+    }
+
+
+#mainContentWrap .detailContent .separator-field,
+#mainContentWrap .detailContent .separator-field:hover {
+    border-bottom: 0px solid var(--detail-label);
+    display: inline-block;
+}
+
+div#details .rubriqueImage:not(.single-line) {
+    padding: var(--size-10) 0 0 0;
+}
+
+div#details .rubriqueImage img {
+    height: 100%;
+    width: auto;
+    border-radius: 3px;
+    max-width: 100%;
+}
+
+div#details .rubriqueImage:not(.default-img) img {
+    border: none;
+}

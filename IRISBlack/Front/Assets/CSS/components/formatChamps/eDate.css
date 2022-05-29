@@ -1,0 +1,16 @@
+﻿div.bkm-tab .listRubriqueDate span {
+    font-size: var(--size-15);
+    font-family: var(--ffamily);
+}
+
+tr:hover .listRubriqueDate .ellipsDiv {
+    background: transparent;
+}
+
+.selectedDate .globalDivComponent .input-group {
+    box-shadow: 0px 1.3px 0px 0px var(--main-color);
+}
+
+div.bkm-tab .listRubriqueDate span.readOnly {
+    padding: 0 0 0 6px
+}

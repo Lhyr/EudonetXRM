@@ -1,0 +1,354 @@
+﻿.detailContent .rubriqueEmemo {
+    border-bottom: none;
+    height: 100%;
+}
+
+    .detailContent .rubriqueEmemo:hover {
+        border: none;
+    }
+
+.detailContent .fileInput .rubriqueEmemo .textareaRubrique {
+    border-radius: 3px;
+    border-color: var(--detail-label);
+    padding: 5px 10px !important;
+    display: block;
+    float: none;
+    display: inline-block;
+    line-height: 23px !important;
+    overflow: auto;
+}
+
+@-moz-document url-prefix() {
+    .detailContent .fileInput .rubriqueEmemo .textareaRubrique {
+        overflow-x: hidden;
+    }
+}
+
+.detailContent .rubriqueEmemo .textareaRubrique,
+.detailContent .rubriqueEmemo .inlineMemoEditor {
+    background: white;
+}
+
+#prop-fiche .rubriqueEmemo span.fas {
+    color: var(--detail-label);
+    font-size: var(--size-14);
+}
+
+#aside-tabs .rubriqueEmemo {
+    padding: 0 !important;
+}
+
+.pinned-tab-content .rubriqueEmemo {
+    width: 100%;
+    height: inherit;
+    display: inline-flex !important;
+}
+
+div.bkm-tab .listRubriqueMemo span.textareaRubrique {
+    cursor: pointer;
+    line-height: 22px !important;
+    padding: 5px !important;
+    margin: 0px 0 0 0;
+}
+
+div.bkm-tab .textareaRubrique {
+    white-space: break-spaces !important;
+    text-overflow: ellipsis;
+}
+
+#aside-tabs .textareaRubrique {
+    background: white;
+    border: solid 1px #e2e2e2 !important;
+    border-radius: 3px;
+    border-top: solid 3px !important;
+    border-image: linear-gradient(to left, var(--main-color) 1%, var(--pj-gradient-over) 50%, var(--checkbox-color) 100%) 100% 0 100% 0/3px 0 0 0 stretch !important;
+    box-shadow: 1px 1px 2px 0px #d1d1d1;
+    color: var(--primary-font-color);
+    width: 100% !important;
+    height: inherit !important;
+    padding: 10px 15px !important;
+}
+
+#aside-tabs textarea.textareaRubrique {
+    min-width: 100%;
+    overflow: auto;
+    border-image: none !important;
+    border-top-color: var(--main-color) !important;
+}
+
+#aside-tabs .textareaRubrique + .ToolsBarCK {
+    color: var(--detail-foreground-btn-disabled);
+    position: absolute;
+    top: -20px;
+}
+
+#aside-tabs .textareaRubrique {
+    border: solid 0px #e2e2e2 !important;
+    border-top: solid 0px !important;
+}
+
+.memoInput.readOnlyComponent textarea.textareaRubrique {
+    border: none !important;
+}
+
+.detailContent .memoInput.readOnlyComponent .textareaRubrique {
+    padding: 0 !important;
+}
+
+.readOnlyComponent.memoInput .form-group textarea.textareaRubrique {
+    padding: 0 8px 0 8px !important;
+}
+
+#prop-fiche .ToolsBarCK .cke_top .cke_toolgroup,
+.detailContent .ToolsBarCK .cke_top .cke_toolgroup {
+    margin: 3px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    float: none;
+}
+
+#prop-fiche .ToolsBarCK,
+.detailContent .ToolsBarCK {
+    top: -38px;
+    left: -4px;
+    background: transparent;
+}
+
+#prop-fiche .cke_toolbar,
+.detailContent .cke_toolbar {
+    float: none;
+}
+
+#prop-fiche .ToolsBarCK *,
+.detailContent .ToolsBarCK * {
+    background: transparent;
+}
+
+#prop-fiche .cke_toolgroup,
+.detailContent .cke_toolgroup {
+    background: white;
+}
+
+#prop-fiche .cke_bottom,
+#prop-fiche .cke_contents,
+#prop-fiche .cke_top,
+.detailContent .cke_bottom,
+.detailContent .cke_contents,
+.detailContent .cke_top {
+    overflow: visible;
+}
+
+#aside-tabs .cke_float .cke_top,
+#aside-tabs .cke_chrome {
+    background: transparent;
+}
+
+#aside-tabs .cke_toolbar {
+    width: 100%;
+}
+
+#aside-tabs .cke_toolgroup {
+    width: 90%;
+}
+
+.eudo-modal .form-group .input-group .cke_editable {
+    max-height: 230px;
+    height: auto;
+    resize: vertical;
+    min-height: 70px;
+}
+
+
+@media only screen and (max-height: 800px) {
+    .eudo-modal .form-group .input-group .cke_editable {
+        max-height: 150px;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    .eudo-modal .form-group .input-group .cke_editable {
+        max-height: none;
+    }
+}
+
+#MotherOfAllModals .eMEFontEudoIRIS,
+#MotherOfAllModals .eMEFontEudoIRIS .cke_inner.cke_reset {
+    width: 100%;
+    height: 100%;
+}
+
+#MotherOfAllModals .eMEFontEudoIRIS {
+    overflow: hidden;
+}
+
+#MotherOfAllModals .eMEFontEudoIRIS .cke_inner.cke_reset {
+    display: flex;
+    flex-direction: column;
+}
+
+#MotherOfAllModals .eMEFontEudoIRIS .cke_contents.cke_reset {
+    flex: 1;
+}
+
+.modal-content-motherofAll.memo-modal {
+    padding: 10px;
+}
+
+
+#MotherOfAllModals .eMEFontEudoIRIS .cke_toolbar {
+    float: left;
+}
+
+#MotherOfAllModals .eMEFontEudoIRIS a.cke_button {
+    height: 22px;
+}
+
+#MotherOfAllModals .eMEFontEudoIRIS .cke_opacity,
+.cke_float.cke_opacity {
+    opacity: 0;
+}
+
+#MotherOfAllModals .eMEFontEudoIRIS .cke_contents {
+    border: none;
+}
+
+.memoInput.readOnlyComponent .cke_textarea_inline.cke_editable.cke_editable_inline.cke_contents_ltr.cke_show_borders.inlineMemoEditor.cke_focus,
+body.eMEFontEudoIRIS.cke_show_borders {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+.memoInput.readOnlyComponent .form-group {
+    background: var(--detail-Readonly-cpt);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    border-bottom: 1px dashed var(--detail-label);
+    overflow: hidden;
+}
+
+.memoInput.readOnlyComponent .left {
+    margin-right: 0 !important;
+}
+
+.memoInput.readOnlyComponent textarea.textareaRubrique {
+    border: none !important;
+}
+
+.detailContent .memoInput.readOnlyComponent .textareaRubrique,
+.readOnlyComponent.memoInput .form-group .input-group .cke_editable,
+#prop-fiche .memoProp.memoReadonly .form-group {
+    padding: 0 !important;
+}
+
+.memoInput.readOnlyComponent .cke_textarea_inline.cke_editable.cke_editable_inline.cke_contents_ltr.cke_show_borders.inlineMemoEditor.cke_focus,
+body.eMEFontEudoIRIS.cke_show_borders {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.readOnlyComponent.memoInput .form-group .input-group .cke_editable,
+.readOnlyComponent.memoInput .form-group textarea.textareaRubrique {
+    padding: 0 8px 0 8px !important;
+}
+
+.readOnlyComponent.memoInput .inlineMemoEditor {
+    margin-top: 0;
+}
+
+.readOnlyComponent.memoInput .cke_editable,
+.readOnlyComponent.memoInput textarea {
+    cursor: default;
+}
+
+.memoInput:not(.readOnlyComponent) .left-label {
+    padding: 0 0 0 5px !important;
+}
+
+#prop-fiche .memoProp.memoReadonly {
+    background: #eeeeee;
+    padding: 0;
+    margin: 8px 0 0 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+    #prop-fiche .memoProp.memoReadonly .modal-field-label {
+        padding: 5px 0 0 8px !important;
+    }
+
+.read-only-memo .cke_top {
+    display: none;
+}
+/** Remaniement du champs mémo en lecture seule*/
+
+.memo-modal div.cke_chrome {
+    width: 100% !important;
+}
+
+#aside-tabs div.inlineMemoEditor {
+    background: white;
+    border: solid 1px #e2e2e2 !important;
+    border-radius: 3px;
+    border-top: solid 3px !important;
+    border-image: linear-gradient(to left, var(--main-color) 1%, var(--pj-gradient-over) 50%, var(--checkbox-color) 100%) 100% 0 100% 0/3px 0 0 0 stretch !important;
+    color: var(--primary-font-color);
+    width: 100% !important;
+    height: inherit !important;
+    padding: 10px 0px !important;
+}
+
+.inlineMemoEditor img {
+    max-width: 100%;
+}
+
+#aside-tabs div.inlineMemoEditor {
+    border: solid 0px #e2e2e2 !important;
+    border-top: solid 0px !important;
+    display:table;
+}
+
+
+.pinned-tab-content div.inlineMemoEditor {
+    height: inherit;
+    border: solid 0px #e2e2e2 !important;
+    border-top: solid 0px;
+    background: white;
+    border-radius: 3px;
+    color: var(--primary-font-color);
+    width: 100% !important;
+    padding: 10px 15px;
+    line-height: normal;
+    margin: 0;
+}
+
+.detailContent .fileInput.memoInput {
+    padding: 10px 24px 5px 24px;
+}
+
+div.bkm-tab .listRubriqueMemo.ellips > div {
+    display: grid;
+}
+
+.polePositionFullScreen {
+    margin: 0 -10px 0 10px;
+}
+
+#mainContentWrap body.eMEFontEudoIRIS,
+#mainContentWrap div.eMEFontEudoIRIS {
+    font-size: var(--size-15);
+}
+
+div.bkm-tab .pinned-tab-content .form-control, 
+div.bkm-tab .pinned-tab-content .input-group.hover-input:hover .form-control {
+    height: 100%;
+    white-space: break-spaces !important;
+    overflow: auto;
+    border-right: solid 1px transparent !important;
+    border-bottom: solid 1px transparent !important;
+    border-left: solid 1px transparent !important;
+    border-top: solid 1px transparent !important;
+}

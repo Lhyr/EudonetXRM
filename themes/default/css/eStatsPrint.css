@@ -1,0 +1,12 @@
+﻿@page { size: portrait; }
+body {
+    overflow: hidden;
+}
+
+#DivChartBord {
+    display: none;
+}
+#StatsRendDtl {
+    display: block !important;
+    height: auto !important;
+}

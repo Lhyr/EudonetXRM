@@ -1,0 +1,20 @@
+﻿div.bkm-tab .input-group .multiRenderer .multiple-user-val,
+div.bkm-tab .input-group .multiRenderer .multiple-catalog-val {
+    font-size: var(--size-14);
+    font-size: var(--size-15);
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#MainWrapper div.bkm-tab .truncated-text.userVal .targetIsTrue {
+    background: transparent !important;
+}
+
+#MainWrapper #prop-fiche .userVal .targetIsTrue,
+#MainWrapper #prop-fiche .userVal {
+    height: 20px;
+}
+
+#headFiche .userVal {
+    max-width: 100%;
+}

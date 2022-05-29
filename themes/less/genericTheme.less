@@ -1,0 +1,166 @@
+/**
+	Theme : Generique
+	Couleurs XRM par défaut :
+		@bgBody: F8F8F8;
+		@bgFocus: #BCDCFB;
+		@borderNav: #B83A3A;
+		@bgNav: #AEABAB;
+		@colorNav: #FFFFFF;
+		@bgSelectedNavItem: #636363;
+		@bgLastFiles: #EAE8E9;
+		@colorNbFiles: #434343;
+		@bgFiltersList: #E0E0E0;
+		@bgTabHeader: #DFDFDF;
+		@colorTabHeader: #666666;
+		@bgAltRow: #F6F6F6;
+		@colorFileLink: #1155CC;
+		@bgSidebarBlockTitle: #F7F6F6;
+		@bgRightSidebar: #F8F8F8;
+		@colorSidebarBlockTitle: #666666;
+		@borderSidebarBlock: #DDDDDD;
+		@bgBkmTitle: #F7F6F6;
+		@bgFile: #FFFFFF;
+		@bgBkmTitle: #F7F6F6;
+		@bgModal: #F8F8F8;
+		@bgReadOnlyInput: #F0F0F0;
+		@bgBkm: #E3E3E3;
+		@colorLabels: #636363;
+		@colorTitleSep: #42A7DC;
+		@bgGreen: #CEEF60;
+**/
+
+body {
+	background-color: @bgBody;
+}
+
+/* Bloc user */
+.hUserBloc a {
+	color: @colorFileLink;
+}
+
+/* Barre de navigation */
+div.globalNav {
+	background-color: @bgNav;
+	border-bottom: none;
+}
+.navBar {
+    border-top: 3px solid @borderNav;
+	font-family: Calibri, Trebuchet MS;
+}
+.navTitleActive {
+	background-color: @bgSelectedNavItem;
+}
+li.navEntry  {
+	color: @colorNav;
+}
+li.navEntry:hover, div.navEntry:hover, li.navEntryActive, div.navEntryActive {
+	background-color: @bgFocus;
+}
+li.navLst:hover, li.navActiveElt {
+	background-color: @bgFocus;
+}
+ul.sbMenu, ul.sbMenuActive  {
+	background-color: @bgSelectedNavItem;
+	border-color: @bgFocus;
+}
+li.navLst {
+	background-color: @bgLastFiles; /* Liste des dernières fiches consultées */
+}
+li.navAction {
+	background-color: @bgNav; /* Actions sous-menu */
+	color: @colorNav;
+}
+li.sbmBottom 
+{
+	background-color: @bgSelectedNavItem; /* Bordure inférieure des sous-menus */
+}
+li.sbmBottom a {
+	color: @colorNav;
+}
+/* Colonnne de droite */
+.rightMenuSubMenuTitle {
+	background-color: @bgAltRow;
+	color: @colorSidebarBlockTitle;
+}
+.rightMenuOption {
+	border: 1px solid @borderSidebarBlock;
+}
+/* Mode liste */
+.listfiltres {
+	background-color: @bgFiltersList;
+}
+.hdResize {
+	background-color: #ffffff; /* Séparateur des entêtes colonnes */
+	width: 2px;
+}
+.mTab th.head, .hdTable {
+	height: 100%;
+}
+img.SumCols {
+	top: 0;
+	float: none;
+}
+.mTab tr.hdBgCol {
+	background-color: @bgTabHeader; /* Libellés colonnes */
+}
+.hdName a {
+    color: @colorTabHeader;
+}
+.line2 {
+	background-color: @bgAltRow; /* 2ème couleur d'alternance des lignes */
+}
+.gofile {
+	color: @colorFileLink; /* Couleur du lien vers la fiche */
+	font-weight: bold;
+}
+
+/* Mode fiche */
+.file99Label, .file99Value {
+	color: @colorFileLink !important;
+}
+.fileDiv {
+	background-color: @bgFile; /* Background de la fiche */
+}
+div.bkmTitle {
+	background-color: @bgAltRow; /* Background titre signet */
+}
+.bkmdiv .mTab tr.hdBgCol {
+    background-color: @bgTabHeader;
+}
+.table_labels, .table_labels_chk, .table_lab_pty {
+	color: @colorLabels;
+}
+input.readonly {
+	background-color: @bgReadOnlyInput;
+}
+.title_sep {
+	color: @colorTitleSep;
+}
+
+/* Signets */
+.divBkmCtner {
+	background-color: @bgBkm;
+}
+
+/* Focus */
+li.navAction:hover,
+li.navActiveElt,
+.rightMenuBottom a:hover,
+.rightMenuOption a:hover, .rightMenuOption a:focus, .rightMenuOption a:active, .rightMenuModFile a:hover, .rightMenuModFile a:focus, .rightMenuModFile a:active,
+.edit:hover,
+.fIOff:hover,
+.line1:hover,
+.line2:hover,
+.cell:hover,
+.cell2:hover ,
+.ButtonUnselectAll:hover,
+div.control_contextmenu li.selected, div.control_contextmenu li.actionItem:hover, div.control_contextmenu li.advFltItem:hover ,
+.bkmDtls a:focus, .bkmDtlsSel a:focus, .bkmHead a:focus, .bkmHeadSel a:focus, .bkmHeadPlus a:focus
+{
+	background-color: @bgFocus;
+}
+
+/* BG vert */
+.bar-now, td.day.selectedday {
+	background-color: @bgGreen;
+}

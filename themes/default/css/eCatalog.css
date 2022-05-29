@@ -1,0 +1,1692 @@
+.catEditVal ul, .catMultSelVal ul {
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+
+ul.catEditVal, .catMultSelVal {
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+/*
+li[bd], li[hd]
+{
+	width: 100%;
+}*/
+
+li[bd] > ul, li[hd] > ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed; /* optional */
+}
+
+    li[bd] > ul > li, li[hd] > ul > li {
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 7px;
+    }
+
+/*
+    Ne pas supprimer !!
+    ces classes sont mise à jour dynamiquement via js
+*/
+li.valwidth {
+    /*background-color: lightblue !important;*/
+}
+
+li.maskwidth {
+    /*background-color: lightcoral !important;*/
+}
+
+li.datawidth {
+    /*background-color: lightsalmon !important;*/
+}
+
+li.idwidth {
+    /*background-color: lightseagreen !important;*/
+}
+
+li.diswidth {
+    /*background-color: lightpink !important;*/
+}
+
+table.catEditVal tr th, table.catMultSelVal tr th, ul.catEditVal > li[hd], ul.catMultSelVal > li[hd] {
+    font-weight: bold;
+    color: #636363;
+    border-right: 1px solid #D5D5D5;
+    border-bottom: 1px solid #D5D5D5;
+    height: 32px;
+    line-height: 32px;
+    background-color: #DADADA;
+}
+
+    ul.catEditVal > li[hd] li, ul.catMultSelVal > li[hd] li {
+        height: 32px;
+        line-height: 32px;
+    }
+
+li[bd] *, li[hd] * {
+    display: inline-block;
+}
+
+li[bd] > ul, li[hd] > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li[bd], li[hd] {
+    list-style: none outside none;
+    height: 22px;
+    line-height: 22px;
+}
+
+    li[bd] > div, li[hd] > div {
+        display: inline-block;
+    }
+
+th.tdHBtn {
+    border-right-style: none;
+}
+
+tr.eCatalogUsersTh td {
+    vertical-align: middle;
+    color: #f8f8f8;
+    font-weight: bold;
+    background-color: #636363;
+    height: 22px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+/*****/
+/* reprise css eMain.css */
+/* MAB - KHA - NBA - GCH - Editeurs  Catalogue */
+
+.logo-search {
+    position: relative;
+    width: 20px;
+    height: 21px;
+    cursor: pointer;
+    background-color: #636363;
+}
+
+.logo-search-croix {
+    position: relative;
+    width: 20px;
+    height: 21px;
+    cursor: pointer;
+    background-color: #bb1515;
+}
+
+.catDlg {
+    background-color: #f8f8f8;
+}
+
+body.catDlg {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+div.catDlg {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 95%; /* 	border: solid; 	border-color: Green; 	*/
+    font-size: 8pt;
+}
+
+    div.catDlg table {
+        font-size: 8pt;
+        border: none;
+        border-collapse: collapse;
+    }
+
+.catDlg table th {
+    background-color: #DADADA;
+    height: 33px;
+    text-indent: 5px;
+    color: #585858;
+}
+
+    .catDlg table th img {
+        visibility: hidden;
+    }
+
+    .catDlg table th:hover img {
+        visibility: initial;
+    }
+
+.catDlg table td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.catDlg table.tbCatADVEdit th {
+    background: none;
+    text-indent: 0;
+    text-align: left;
+}
+
+    .catDlg table.tbCatADVEdit th.catAdvEditHlbl,
+    .catDlg table.tbCatADVEdit th.catAdvEditHTip {
+        width: 50%;
+    }
+
+    .catDlg table.tbCatADVEdit td.td_lbl,
+    .catDlg table.tbCatADVEdit th.td_tip {
+        width: 35%;
+    }
+
+div.catEditVal {
+    width: 100%;
+    height: 355px;
+    overflow: auto;
+    position: relative; /* permet le positionnement absolu d'elements e l'interieur de la liste des valeurs du catalogue (ex : editeur du bouton Modifier) */
+    background-color: White;
+    border: 1px solid #636363;
+}
+
+.addMailToList .catEditVal {
+    height: 550px;
+}
+
+table.catEditVal, table.catMultSelVal {
+    width: 100%;
+    background-image: url('../images/ui/background_cat.png');
+    table-layout: fixed;
+}
+
+ul.catEditVal, ul.catMultSelVal {
+    width:100%;
+    /*background-image: url('../images/ui/background_cat.png');*/
+    /*table-layout: fixed;*/
+    display: inline-block;
+}
+
+table.withHead {
+    background-position: 0px 6px;
+}
+
+/* Taille des cellules du tableau genere*/
+.catEditLbl {
+    /* padding-top: 6px; */
+    /* padding-bottom: 8px; */
+    padding-left: 7px;
+}
+
+.odd {
+    background-color: #f6f6f6;
+}
+/* EN TETE pour catalogue advance */
+.catEditRub {
+    padding-left: 7px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.system, div.SystemValue {
+    color: gray;
+    font-style: italic;
+}
+/*DIV contenant les boutons imprimer et synchro*/
+div.catDivHead, div.catDivSrch /*Div de recherche avec le libelle textbox et bouton*/ {
+    width: 100%;
+    margin-bottom: 5px;
+}
+/*bouton radio et zone de recherche dans le cas des Treeview*/
+div > div.catDivSrchTV {
+    width: 100%;
+    /*margin-left: 8px;*/
+    margin-bottom: 6px;
+}
+
+div.catDivHead {
+    overflow: hidden;
+}
+
+div.catDivSrch {
+    margin-bottom: 10px;
+}
+
+    div.catDivSrch table td {
+        border: none;
+        border-collapse: collapse;
+        padding: 0px;
+    }
+
+    /*#eBtnSrch {
+	background-color: #636363;
+	font-size: 8pt;
+	text-align: center;
+	line-height: 21px;
+	padding: 1px;
+	display: inline-block;
+	color: white;
+}*/
+    div.catDivSrch div, div.catDivSrch input {
+        /*float: left;*/ /*Casse affichage de la loupe sous IE8*/
+    }
+
+    div.catDivSrch input {
+        height: 22px;
+    }
+
+td.catDivHead {
+    text-align: right;
+}
+/* Bountons synchro et impression */
+ul.catTool {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-right: 6px;
+}
+
+    /* Bountons synchro et impression */
+    ul.catTool li {
+        background-repeat: no-repeat;
+        cursor: pointer;
+        width: 22px;
+        height: 21px;
+        display: inline-block;
+        float: left;
+        line-height: 21px;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+    }
+
+.catTool .icon-sync {
+    font-size: 10pt;
+}
+
+/* Bountons Ajouter */
+ul.catToolAdd {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    list-style-type: none;
+}
+
+    ul.catToolAdd:hover .addLinkImg {
+    }
+
+/*li.catToolAddLib span.catToolAddLibSp
+{
+	vertical-align: 5px;
+	padding-left: 5px;
+}*/
+.buttonAdd {
+    text-decoration: none;
+  
+}
+  
+
+.buttonExport {
+    color: #AEABAB;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+    .buttonExport span {
+        color: #AEABAB;
+        font-size: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 5px;
+      
+    }
+
+.buttonImport {
+    color: #AEABAB;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+    .buttonImport span {
+        color: #AEABAB;
+        font-size: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 5px;
+       
+    }
+
+.catToolAddLib {
+    display: block;
+    color: #636363;
+    padding-top: 0px;
+    cursor: pointer;
+}
+
+    .catToolAddLib:hover .catToolAddImg {
+        background-position: 0 -71px;
+        width: 22px;
+        height: 21px;
+    }
+    /*#catDivHead > ul.catToolAdd > li > a > span:nth-child(2) {
+	 vertical-align: 6px;
+
+	 margin-left: 10px;
+}*/
+    .catToolAddLib span {
+        vertical-align: middle;
+    }
+/*.catToolAddLib span:nth-child(2)
+    {
+        margin-left: 7px;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .catToolAddLib .icon-add {
+        font-size: 12pt;
+    }*/
+.catToolAddImg {
+    width: 22px;
+    height: 21px;
+}
+
+.catToolAddLib:hover a span {
+    color: #42a7dc;
+}
+
+.addLinkImg {
+    background-position: -25px -2px;
+    width: 22px;
+    line-height: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.catToolAdd a {
+    display: block;
+    cursor: pointer;
+    color: #636363;
+    vertical-align: middle;
+    padding-top: 0px;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+td.catBtn {
+    padding: 0 0 0 0;
+    text-align: center;
+    width: 20%;
+}
+
+tr.catEditVal {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    height: 22px;
+}
+
+/* DIV contenant les boutons Modifier infobulle et supprimer*/
+div.catBtnVal {
+    position: relative;
+    float: right;
+    /* display: block; */
+    visibility: hidden;
+    min-width: 56px;
+}
+
+span.eTVTB {
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+    margin-top: -4px;
+    height: 20px;
+    /* les 2 directives ci-dessous permettent d'afficher la barre par-dessus le texte sur les petites résolutions */
+    background-color: #bcdcfb; /* couleur de la surbrillance */
+    z-index: 1;
+}
+
+#eTVBLVCM_ROOT > span.eTVTB {
+    position: relative;
+    float: right;
+    /*
+		Marge permettant de caler la barre d'outils de l'élément <Racine> par rapport à celles des groupes affichés en-dessous, afin d'aligner les icônes d'ajout sous le curseur
+		Désactivé, car non compatible avec les très petites résolutions (1024 x 768)
+	*/
+    /*margin-right: 49px;*/
+    margin-top: 3px;
+    height: 20px;
+}
+
+tr.catEditVal:hover div.catBtnVal, tr.catEditVal2:hover div.catBtnVal,
+ul.catEditVal > li[id^='val']:hover div.catBtnVal, ul.catMultSelVal > li[id^='val']:hover div.catBtnVal,
+.eTVP:hover > span.eTVTB, .eTVPCustom:hover > span.eTVTB {
+    /* display: block; */
+    visibility: visible;
+}
+/*
+    Application d'une marge au survol sur le texte, pour autoriser l'affichage de la barre d'outils
+    Valeur à utiliser : 3 x width indiquée sur .eTVTB > ul > li
+*/
+.eTVP:hover > .usr_Gval, .eTVPCustom:hover > .usr_Gval {
+    margin-right: 64px;
+}
+
+/* concerne Bountons Modifier infobulle et supprimer */
+.catBtnUl {
+    height: 21px;
+    width: auto;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.catBtnVal > ul > li {
+    padding: 0px 3px !important;
+}
+
+span.eTVTB .catBtnUl {
+    width: auto;
+}
+
+/* concerne Bountons Modifier infobulle et supprimer */
+.catBtnUl li, .eTVTB > ul > li {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    float: left;
+    line-height: 21px;
+    list-style: none outside none;
+    padding: 0;
+}
+
+td.eCatalogEditorMenuItem:hover, 
+td.eCatalogMenuItemAddNew:hover, 
+tr.catEditVal:hover,
+tr.catEditVal2:hover, 
+td.eCatalogEditorMenuItemAdv:hover,
+ul.catEditVal > li[id^='val']:hover, 
+ul.catMultSelVal > li[id^='val']:hover {
+    background-color: #bcdcfb;
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+}
+
+ul.catEditVal > li[id^='val']:hover li {
+    background-color: #BB1515;
+    color: #FFFFFF;
+}
+
+ul.catEditVal > li .cell, ul.catMultSelVal > li .cell {
+    background-color: transparent;
+}
+
+td.eCatalogMenuSelected, div.SelectedValue {
+    background: #636363 url('../images/ui/check.png') right no-repeat;
+    color: white;
+}
+
+tr.catSelLine {
+    background-color: #636363;
+    color: white;
+}
+
+.CatUserTable {
+    width: 100%;
+}
+
+input.eCatalogEditorSearch {
+    width: 85%;
+    font-size: 8pt;
+    font-family: Verdana;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    float: left;
+    height: 11px;
+    border: 1px solid #ccc;
+}
+
+tr.eCatalogEditorAdvanced {
+    color: #666666;
+    height: 25px;
+    vertical-align: middle;
+}
+
+    tr.eCatalogEditorAdvanced td {
+        vertical-align: middle;
+    }
+
+div.ePopup tr.eCatalogEditorAdvanced td {
+    border-top: solid #afabac 1px;
+}
+
+div.ePopupRevert tr.eCatalogEditorAdvanced td {
+    border-bottom: solid #666666 1px;
+    border-top: none;
+}
+
+select.eCatalogEditorValues {
+    width: 100%;
+}
+
+input.eInlineEditor {
+    width: 100%;
+    font-family: Verdana;
+    height: 100%;
+    font-size: 8pt;
+    padding: 3px 0;
+}
+
+td.eCatalogEditorMenuItem {
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 8pt;
+    font-family: Verdana;
+    white-space: nowrap;
+}
+
+td.eCatalogEditorMenuItemAdv {
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 8pt;
+    font-family: Verdana;
+    white-space: nowrap;
+}
+
+.eCatalogEditorMenuItemAdvSpan {
+    padding-top: 5px;
+    display: inline;
+    line-height: 22px;
+}
+
+td.eCatalogMenuSelected {
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 8pt;
+    font-family: Verdana;
+}
+
+td.eCatalogMenuItemAddNew {
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 8pt;
+    font-family: Verdana;
+    color: gray;
+}
+
+td.eCatalogMenuItemNoRes {
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 8pt;
+    font-family: Verdana;
+    color: #bc1515;
+    font-style: italic;
+}
+
+/** SPRITE CATALOGUES   NBA 25-01-2012***/
+.sprite-Catalog {
+}
+
+.catToolAddBtn a {
+    background-position: 0 0;
+    width: 22px;
+    height: 21px;
+    display: block;
+    margin: 0;
+    margin-left: -10px;
+}
+
+    .catToolAddBtn a:hover {
+        background-position: 0 -71px;
+        width: 22px;
+        height: 21px;
+    }
+
+.catToolAddBtnDis {
+    background-position: 1px -144px;
+}
+
+    .catToolAddBtnDis a {
+        margin-right: 15px;
+    }
+
+.sprite-ajouter_inactif {
+    background-position: 0 -142px;
+    width: 22px;
+    height: 21px;
+}
+
+.sprite-croix-grise {
+    background-position: 0 -213px;
+    width: 20px;
+    height: 21px;
+}
+
+.sprite-no-valeur {
+    background-position: 0 -143px;
+    height: 21px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.catToolPrint a {
+    background-position: 45px -75px;
+    width: 25px;
+    height: 21px;
+    display: block;
+    float: right;
+}
+
+    .catToolPrint a:hover {
+    }
+
+.catBtnTool a {
+    width: 22px;
+    height: 21px;
+    display: block;
+    margin: 0;
+    float: left;
+    background-position: -73px -26px;
+}
+
+    .catBtnTool a:hover {
+    }
+
+.catBtnToolDis a {
+    background-position: -37px -425px;
+    width: 22px;
+    height: 21px;
+    display: inline-block;
+    float: left;
+    display: none;
+}
+
+tr.catEditVal:hover > td.catBtn > div.catBtnVal > ul.catBtnUl > li.catBtnModif a,
+ul.catEditVal > li[id^='val']:hover div.catBtnVal > ul.catBtnUl > li.catBtnModif a {
+    height: 22px;
+    width: 22px;
+    background-position: -121px -98px;
+    display: inline-block;
+}
+
+.catBtnModif a {
+    width: 22px;
+    height: 21px;
+    display: inline-block;
+}
+
+.catBtnModif:hover {
+}
+
+
+
+.catBtnModifDis, .catBtnDelDis {
+    background-position: -34px -639px;
+}
+
+.sprite-no-valeur {
+    background-position: 0 -781px;
+    width: 20px;
+    height: 21px;
+}
+
+tr.catEditVal:hover > td.catBtn > div.catBtnVal > ul.catBtnUl > li.catBtnDel a,
+ul.catEditVal > li[id^='val']:hover div.catBtnVal > ul.catBtnUl > li.catBtnDel a {
+    height: 22px;
+    width: 22px;
+    background-position: -141px -99px;
+    display: inline-block;
+}
+
+.catBtnDel a:hover {
+}
+
+.catBtnDelDis {
+    background-color: #bebebe;
+}
+
+.catToolSync a {
+    background-position: 68px 307px;
+    width: 22px;
+    height: 21px;
+    display: block;
+    margin: 0;
+}
+
+    .catToolSync a:hover {
+    }
+
+.catToolSyncDis a {
+    background-position: 68px 307px;
+    background-color: #BEBEBE;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.catBtnMailBody a {
+    background-position: 0 -852px;
+    width: 22px;
+    height: 21px;
+    display: block;
+    margin: 0;
+    margin-left: 17px;
+}
+
+    .catBtnMailBody a:hover {
+        background-position: 0 -923px;
+        width: 22px;
+        height: 21px;
+    }
+
+.catBtnMailBodyDis {
+    background: url('../images/iCatalog/memo_inactif.png');
+    background-repeat: no-repeat;
+}
+
+/*  FIN SPRITE CATALOGUES */
+
+/* MAB - catalogue arborescent */
+
+/* * Bountons Ajouter * */
+ul.catTVToolAdd {
+    height: 21px;
+    float: left;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+    ul.catTVToolAdd li {
+        background-repeat: no-repeat;
+        cursor: pointer;
+        width: 22px;
+        height: 21px;
+        display: inline-block;
+        line-height: 21px;
+        margin: 0 10px 0 0;
+    }
+
+.catTVToolAddBtn a {
+    background-position: 0 0;
+    width: 22px;
+    height: 21px;
+    display: block;
+    margin: 0;
+}
+
+    .catTVToolAddBtn a:hover {
+        background-position: 0 -71px;
+        width: 22px;
+        height: 21px;
+    }
+
+.catTVToolPrint a {
+    background-position: 0 -284px;
+    width: 22px;
+    height: 21px;
+    display: block;
+    float: right;
+}
+
+    .catTVToolPrint a:hover {
+        background-position: 0 -355px;
+        width: 22px;
+        height: 21px;
+    }
+
+.catTVBtnModif a {
+    background-position: 0 -639px;
+    width: 22px;
+    height: 21px;
+    display: block;
+    margin: 0;
+}
+
+    .catTVBtnModif a:hover {
+        background-position: 0 -710px;
+        width: 22px;
+        height: 21px;
+    }
+
+.catTVBtnDel a {
+    background-position: 0 -852px;
+    width: 22px;
+    height: 21px;
+    display: block;
+    margin: 0;
+}
+
+    .catTVBtnDel a:hover {
+        background-position: 0 -923px;
+        width: 22px;
+        height: 21px;
+    }
+
+.catTVToolAddBtnDis {
+    background-position: 1px -144px;
+}
+
+.catTVBtnDelDis {
+    background-position: -34px -854px;
+}
+
+.catTVBtnModifDis {
+    background-position: -34px -639px;
+}
+/* * * * * * */
+
+ul.eTVRoot, ul.eTVRoot ul {
+    list-style: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+
+    ul.eTVRoot li {
+        position: relative;
+        border-left: 1px dotted #FCFCFC; /* ligne guide des enfants au parent */
+        margin-left: 16px;
+        text-decoration: none;
+    }
+
+.eTVTB > ul > li {
+    font-size: 8pt;
+    width: 16px;
+    margin-left: 0px;
+    border-left: none;
+}
+
+
+.TVChk {
+    /*margin-top:4px;*/
+}
+
+/* Icene : I */
+/* Repertoire Branche*/
+.eTVFI {
+}
+
+    .eTVFI > span {
+    }
+
+.eTVcol .icon-signet-fiche {
+    position: absolute;
+    left: 24px;
+    font-size: 15px;
+    top: 5px;
+    color: #636363;
+    cursor: default;
+}
+
+    .eTVcol .icon-signet-fiche:hover {
+        color: #636363;
+    }
+
+/* Repertoire Branche ouverte : O = open */
+span.eTVOusr {
+    font-size: 9pt;
+    line-height: 24px;
+    width: 21px;
+}
+
+/* Repertoire Branche fermee : C = closed */
+span.eTVCusr {
+    font-size: 9pt;
+    line-height: 24px;
+    width: 21px;
+}
+
+/* Branche sans enfant (sous-branche) */
+span.eTVSBusr {
+    font-size: 10pt;
+    line-height: 25px;
+}
+
+span.eTVC, span.eTVO, span.eTVSB, span.eTVOusr, span.eTVCusr, span.eTVSBusr {
+    left: 16px;
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 1px;
+    height: 26px;
+}
+
+/* Branche selectionnee */
+span.eTVS {
+    background-color: #ccc;
+    color: White;
+}
+
+tr.eTVS, li.eTVS {
+    background-color: #ccc;
+    color: white;
+}
+/* Libelle de branche (page) : P = page */
+.eTVP {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 50px;
+    height: 14px;
+}
+
+    .eTVP:hover, .eTVPCustom:hover {
+        background-color: #BCDEFB;
+        cursor: pointer;
+    }
+
+/* Permet d'afficher des branches avec libellés multi-lignes sans chevauchement, en écrasant height: 14px de eTVP */
+.eTVPGroup {
+    height: auto;
+}
+
+/* Icene : I */
+.eTVI, .eTVI:hover {
+    position: absolute;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 5px;
+    font-size: small;
+}
+
+    .eTVI span.icon-develop,
+    .eTVI span.icon-unvelop {
+        font-size: 15px;
+    }
+
+span.eTVIC {
+    background-image: url('../images/iCatalog/TreeView/deplier.png');
+    background-repeat: no-repeat;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: 1px;
+    width: 16px;
+    height: 16px;
+    padding-bottom: 4px;
+}
+
+.CatalogValue:hover {
+    background-color: #bcdcfb;
+    text-decoration: none;
+    color: #222;
+}
+
+.eTV_LCL /*branche - ligne croisement gauche est une image unique*/ {
+    background-image: url('../images/iCatalog/TreeView/line3.png');
+    background-repeat: repeat-y;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.eTV_LBCL /*branche - ligne coin inf?rieur gauche est une image unique*/ {
+    background-image: url('../images/iCatalog/TreeView/line2.png');
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.eTV_MCL /*branche - ligne vertical est une image r?p?t?*/ {
+    background-image: url('../images/iCatalog/TreeView/line1.gif');
+    background-repeat: repeat-y;
+    position: absolute;
+}
+/**/
+/*Loupe de recherhe des catalogues*/
+
+div.catloupe {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    div.catloupe a {
+        text-decoration: none;
+    }
+/* Libelle Recherche catalogue*/
+td.txtsrch {
+    color: black;
+    font-size: 8pt;
+    float: left;
+    vertical-align: middle;
+    line-height: 21px;
+    cursor: default;
+}
+/* l'input de recherche */
+input.eTxtSrch {
+    border: 1px solid #CCCCCC;
+    height: 19px;
+    margin-left: 5px;
+    width: 340px;
+}
+
+/* tableau contenant l'input de recherche pour le Treeview */
+table.eTVTabSrch {
+    width: 100%;
+    text-align: left;
+}
+/* libell? l'input de recherche pour le Treeview */
+td.eTVLibSrch {
+    width: 100px;
+}
+/* cellule de la loupe de recherche pour le Treeview */
+td.eTVLoupe {
+    width: 21px;
+}
+
+/* l'input de recherche pour le Treeview */
+input.eTVTxtSrch {
+    border: 1px solid #CCCCCC;
+    height: 22px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+/* Edition des catalogues avances  */
+.lib_flag {
+    border: 1px solid gray;
+    height: 17px;
+    width: 90%;
+    font-size: 8pt;
+    font-family: verdana;
+}
+
+.lib_code {
+    font-weight: bold;
+    margin-left: 3px;
+    font-family: verdana;
+    font-size: 8pt;
+}
+
+.inp_code {
+    border: 1px solid gray;
+    height: 17px;
+    width: 30%;
+    margin-left: 10px;
+    font-family: verdana;
+    font-size: 9pt;
+}
+
+.chk_code {
+    color: #7b7b7b;
+    font-style: italic;
+    font-weight: normal;
+    white-space: nowrap;
+    margin-top: 15px;
+    margin-left: 44px;
+}
+
+.ulCatAdvEditFt {
+    list-style: none;
+    margin-left: -24px;
+    /*if ie8 et ie9*/
+    margin-left: -22px \0/IE8+9;
+    /*if ie7*/
+    margin-left: -18px;
+    font-family: verdana;
+    font-size: 10pt;
+}
+
+.catAdvEditTip {
+    font-size: 9pt;
+    width: 60px;
+    padding-left: 40px;
+    font-family: verdana;
+}
+
+.catAdvEditLbl {
+    font-size: 9pt;
+    text-indent: 15px;
+    width: 60px;
+    font-family: verdana;
+}
+
+.lib_right {
+    margin-left: 100px;
+}
+
+.tbCatADVEdit {
+    border-width: 0;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: verdana;
+    font-size: 8pt;
+    font-weight: bold;
+}
+/* Sprite des drapeaux catalogue avanc?*/
+.rFly {
+    /*background: url("../images/iCatalog/sprite_Drap.png") no-repeat top left;*/
+    padding-right: 15px;
+    text-align: right;
+}
+
+.flag_02 {
+    background-position: 24px 0;
+    width: 20px;
+    height: 20px;
+}
+
+.flag_01 {
+    background-position: 24px -70px;
+    width: 20px;
+    height: 20px;
+}
+
+.flag_04 {
+    background-position: 24px -140px;
+    width: 20px;
+    height: 20px;
+}
+
+.flag_00 {
+    background-position: 24px -210px;
+    width: 20px;
+    height: 20px;
+}
+
+.flag_05 {
+    background-position: 24px -280px;
+    width: 20px;
+    height: 20px;
+}
+
+.flag_03 {
+    background-position: 24px -350px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Div de l'adition du catalogue avance */
+.divCAtAdvEdit {
+    margin-left: 10px;
+}
+/* Infobulle pour les catalgues avanc?s */
+.divTTipcat {
+    white-space: nowrap;
+    padding: 4px;
+    padding-right: 7px;
+    border: 1px solid #666;
+    font-family: Verdana;
+    font-size: 8pt;
+    background-color: #f8f8f8;
+    /*background-position: left bottom;
+	background-image: url(../../../blank.png);*/
+    background-repeat: repeat;
+}
+/* td cat avanc? input libelle et tooltip pour modif ou ajout */
+.td_lbl {
+    width: 200px;
+}
+
+.td_tip {
+    width: 200px;
+}
+
+img.picto {
+    margin-left: 2px;
+}
+
+/*D?but Catalogue Utilisateur*/
+.usr_cat_body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    cursor: default;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 8pt;
+    background-color: #f8f8f8;
+}
+
+.usr_search-text {
+    color: black;
+    vertical-align: middle;
+    line-height: 21px;
+    margin-left: 14px;
+}
+
+.usr_search-inpt {
+    border: 1px solid gray;
+    width: 76%;
+    margin-left: 5px;
+    height: 19px;
+}
+
+.usr_logo-search-croix {
+    border: 1px solid gray;
+    position: relative;
+    background-position: 0 -213px;
+    width: 20px;
+    height: 21px;
+    cursor: pointer;
+    float: right;
+}
+
+.user_head-cat {
+    background-color: #636363;
+    width: auto;
+    line-height: 25px;
+    vertical-align: middle;
+    text-indent: 5px;
+    color: white;
+}
+
+.usr_text-head {
+}
+/*D?but custom value*/
+.usr_Gval {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.userTreeCustomValues {
+    width: 100%;
+    border-bottom: 1px dotted black;
+}
+
+    .userTreeCustomValues > span {
+        line-height: 23px;
+        vertical-align: middle;
+        display: block;
+        height: 23px;
+    }
+
+        .userTreeCustomValues > span > span {
+            margin-left: 4px;
+            vertical-align: middle;
+            display: inline-block;
+            height: 100%;
+        }
+/*Fin custom value*/
+.userTreeValues {
+    width: 100%;
+    height: 310px !important;
+    overflow: auto;
+    padding: 0px;
+    position: relative; /* permet le positionnement absolu d'elements e l'interieur de la liste des valeurs du catalogue (ex : editeur du bouton Modifier) */
+    background-color: White;
+}
+
+.userTree {
+    width: 100%;
+}
+
+.userDis {
+    color: #AAA;
+}
+
+.usrbt-select {
+    height: 20px;
+    margin-top: 10px;
+}
+
+.usrbt-all {
+    float: left;
+    vertical-align: middle;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    .usrbt-all:hover .usrbt-all_logo {
+    }
+
+    .usrbt-all:hover .usrtext-bt-all {
+        color: #42A7DC;
+    }
+
+div.usrbt-all div.usrbt-all_logo {
+    display: inline-block;
+    font-size: 18pt;
+    line-height: 20px;
+    /* margin-left: 20px; */
+}
+
+.usrtext-bt-all {
+    font-family: Verdana;
+    float: right;
+    display: inline-block;
+    color: #636363;
+    margin-left: 5px;
+}
+
+.usrbt-none {
+    float: right;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: right;
+    cursor: pointer;
+}
+
+    .usrbt-none:hover .usrbt-none_logo {
+    }
+
+div.usrbt-none div.usrbt-none_logo {
+    margin-left: 7px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    font-size: 18pt;
+    line-height: 20px;
+}
+
+.usrbt-none:hover .usrtext-bt-none {
+    color: #42A7DC;
+}
+
+.usrtext-bt-none {
+    font-family: Verdana;
+    display: inline-block;
+    color: #636363;
+    vertical-align: top;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.usrbt-radio {
+    /* float: left; */
+    display: inline-block;
+    margin: 6px -2px 0px;
+    width: 463px;
+}
+
+.usr_cat_body .usrbt-radio {
+    width: 100%;
+}
+
+.bt-left {
+    display: inline-block;
+    float: left;
+}
+
+    .bt-left label {
+        vertical-align: 3px;
+        margin-left: 5px;
+    }
+
+.bt-right {
+    display: inline-block;
+    float: right;
+}
+
+    .bt-right label {
+        vertical-align: 2px;
+        margin-left: 5px;
+    }
+
+    .bt-right #chkUnsel {
+        margin-top: 16px;
+    }
+
+/* Si premier li, coller ? droite.*/
+ul.eTVRoot > li {
+    margin-left: 0px;
+}
+
+.catMskUsr {
+    padding: 0;
+    margin: auto;
+}
+
+/* Boutons Utilisateur impression */
+div.usr_top_srch {
+    margin: 0px 30px 0px 10px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+    div.usr_top_srch > * {
+        display: inline-block;
+        float: left;
+    }
+
+    div.usr_top_srch div[class^='icon-'], div.usr_top_srch div[class*='icon-'] {
+        font-size: 8pt;
+        line-height: 24px;
+        text-align: center;
+        background-color: #636363;
+        margin-left: -4px;
+        height: 23px;
+        width: 23px;
+        color: white;
+    }
+
+    div.usr_top_srch .usr_search-inpt {
+        height: 23px;
+        box-sizing: border-box;
+    }
+
+div.usr_top_btn {
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+div.usr_btm {
+    margin: 6px 21px;
+    display: block;
+}
+
+div.usr_cat {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 20px 22px;
+}
+
+.catToolUsr {
+    margin: 0;
+    padding-top: 0;
+    padding-right: 2%;
+    padding-bottom: 0;
+    padding-left: 0;
+    float: right;
+}
+
+.catToolUsrPrint {
+    float: right;
+}
+
+    .catToolUsrPrint a {
+        background-position: 0 -284px;
+        width: 22px;
+        height: 21px;
+        display: block;
+    }
+
+        .catToolUsrPrint a:hover {
+            background-position: 0 -355px;
+            width: 22px;
+            height: 21px;
+        }
+/*Fin Catalogue Utilisateur*/
+
+/**** Catalogue Multiple *****/
+div.catMultTitle {
+    margin-bottom: 10px;
+}
+
+div.catGlobalVal {
+    width: 100%;
+    height: 376px;
+    position: relative;
+    float: left;
+    /*overflow: auto;*/
+    ;
+}
+
+div.catMultEditVal {
+    height: 320px;
+    /* width: 99%; */
+    background-color: White;
+    border: solid;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    overflow: auto;
+    -webkit-user-select: none;
+}
+
+tr.catMultLine {
+    height: 1px;
+}
+
+td.catMultHead {
+    width: 48%;
+}
+
+td.catMultHeadSep {
+}
+
+div.catMultSel {
+    background: url(../images/ui/iUiSprite.png) 0 -1355px;
+    background-repeat: repeat-x;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    color: White;
+}
+
+    div.catMultSel:hover {
+        background: url(../images/ui/iUiSprite.png) 0 -1425px;
+        background-repeat: repeat-x;
+    }
+
+div.catMultUnsel {
+    background: url(../images/ui/iUiSprite.png) 0 -1215px;
+    background-repeat: repeat-x;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    color: White;
+}
+
+    div.catMultUnsel:hover {
+        background: url(../images/ui/iUiSprite.png) 0 -1285px;
+        background-repeat: repeat-x;
+    }
+
+tr.catMultSelUnsel {
+    text-align: center;
+}
+
+div.catMultSelAll {
+    padding-left: 16px;
+    width: 125px;
+    padding-top: 4px;
+    background: url(../images/ui/iUiSprite.png) 0 -139px;
+    background-repeat: no-repeat;
+    height: 20px;
+    cursor: pointer;
+}
+
+    div.catMultSelAll:hover {
+        background: url(../images/ui/iUiSprite.png) 0 -209px;
+        background-repeat: no-repeat;
+        color: #42A7DC;
+    }
+
+div.catMultUnselAll {
+    padding-left: 22px;
+    width: 125px;
+    padding-top: 4px;
+    background: url(../images/ui/iUiSprite.png) 0 1px;
+    background-repeat: no-repeat;
+    height: 20px;
+    cursor: pointer;
+}
+
+    div.catMultUnselAll:hover {
+        background: url(../images/ui/iUiSprite.png) 0 -69px;
+        background-repeat: no-repeat;
+        color: #42A7DC;
+    }
+
+.catDragDrop {
+    height: 22px;
+    line-height: 22px;
+}
+/**** FIN catalogue Multiple ****/
+
+#catDivSrch * {
+    box-sizing: border-box;
+}
+
+div.catloupe {
+    background-color: #636363;
+    height: 22px;
+}
+
+    div.catloupe [class*='icon-'] {
+        font-size: 10pt;
+        text-decoration: none;
+        border: none;
+        line-height: 22px;
+        padding: 3px;
+        color: white;
+    }
+
+.logo-search {
+    width: auto;
+    vertical-align: middle;
+}
+
+.catDlg .icon-folder, .catDlg .icon-folder-open {
+    position: absolute;
+    left: 20px;
+    line-height: 24px;
+    cursor: default;
+}
+
+    .catDlg .icon-folder:hover, .catDlg .icon-folder-open:hover {
+        color: #636363 !important;
+    }
+
+div.catBtnVal ul.catBtnUl li {
+    font-size: 8pt;
+}
+/* for request 93548*/
+
+.eTVP span{
+    vertical-align: top;
+}

@@ -1,0 +1,194 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 8pt;
+    padding:5px;
+    margin:5px;
+    
+}
+
+input {
+     outline:none;
+}
+img {
+    border: 5px solid transparent;
+}
+img:hover,img:active {
+    border: 5px solid #BCDCFB;
+}
+img.avatar_dl-selected {
+    border: 5px solid #CEEF60;
+}
+.avatar-table td {
+    text-align:center;	
+    padding: 6px;
+}
+.avatar-table tr {
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+.avatar-search {
+    vertical-align:middle;
+}
+.avatar-search_mode input[type="radio"] {
+    vertical-align: -3px;
+}
+/* TODO: Sprite */
+.avatar-search input {
+    background: url("../images/Editors/Editors-Controls.png") no-repeat scroll 100% -115px;
+    width:400px;
+    background-repeat:no-repeat;
+    border: 1px;
+    border-style:solid;
+    border-color: #636363;
+    cursor: default;
+    margin-bottom: 15px;
+    background-color: white;
+}
+.avatar-nbr_rslt {
+    border: 1px;
+    border-style:solid;
+    border-color: #636363;
+    cursor: default;
+    width: 20px;
+    text-align: center;
+}
+.avatar-search_mode {
+    margin-left: -5px;
+    padding-top: 5px;
+    height: 30px;
+    color: gray;
+    font-weight: bold;
+    font-size: 8pt;
+}
+.avatar-search_mode span {
+    line-height: 20px;
+    height: 20px;
+    vertical-align: 3px;
+}
+.avatar-search_mode label {
+    font-size:10pt;
+    }
+.separateur_global {
+    width: 60%;
+    height:1px;
+    background-color:#5e5d5e;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.avatar-table-container {
+	background-color: white;
+	border: 1px solid #ccc;
+	height:270px;
+	overflow-y: auto;	
+	margin-top: 10px;
+	overflow-x: hidden;
+}
+
+#DivFromLocal {
+}
+#divfromlocal div {
+    padding-top:8px;
+    }
+    
+#DivFromGoogle div {
+    }
+
+.vcCadreFile {
+    width: 53px;
+    vertical-align: top;
+}
+
+
+/*VCARD IMAGE*/ 
+.vcImgPp{
+	background-image: url("../images/iVcard/unknown_pp.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+    background-size: contain;
+	height: 58px;
+	width: 60px;
+	border: 2px solid #b6b6b6;
+}
+.vcImgPm{
+	background-image: url("../images/iVCard/unknown_pm.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+    background-size: contain;
+	height: 52px;  width: 53px;
+	border: 2px solid #b6b6b6;
+}
+
+.divCurrentPicture {    
+    margin-bottom: 8px;  
+    height: 97px;
+    padding-bottom: 5px;
+    background-color: #f1eff0;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.divCurrentPicture span {
+    color: gray;
+    font-weight: bold;
+    font-size: 10pt;
+}
+.button-Google  {
+    float: none !important;
+}
+
+.divCurrentPicture ul
+{
+    list-style-type: none;
+    list-style-position: outside;
+    list-style-image: none;
+    padding-left:0px;
+}
+.divCurrentPicture ul>li
+{
+    text-decoration: none;
+    float: left;
+}
+.liBtnSuppr {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.eMainContainer{
+    overflow-y: auto;   /*GCH : Car si écran trop petit la fenêtre est coupé*/
+    height:95%;
+}
+.imgDlgHolder {
+	border: 1px dashed gray;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	overflow: auto;
+    margin-bottom: 10px;
+}
+.imgURL {
+	width: 100%;
+}
+#imageButtons > div {
+    padding: 0 25px;
+    height: 32px;
+    box-sizing: border-box;
+}
+#imageButtons > div a {
+    line-height: 32px;
+}
+
+#lblFile {
+    display: block;
+    font-size: 10pt;
+    margin-bottom: 5px;
+}
+form {
+    background-color: #fff;
+    padding: 10px 0;
+}

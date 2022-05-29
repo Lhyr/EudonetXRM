@@ -1,0 +1,81 @@
+﻿#selectionWizard {
+    padding: 0 25px;
+}
+
+/* CRITERES */
+#blockCriteria {
+    height: 94px;
+    background-color: #E0E0E0;
+    box-sizing: border-box;
+    color: #636363;
+    padding: 10px;
+    margin-bottom: 28px;
+}
+    #blockCriteria .critFilter {
+        display: inline-block;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+    #blockCriteria label {
+        margin-right: 10px;
+    }
+    #blockCriteria select {
+        width: 150px;
+    }
+    #blockCriteria input[type="text"].numField {
+        width: 50px;
+    }
+    #blockCriteria input[data-geodistance="1"] {
+        width: 150px;
+    }
+
+/* LISTE */
+#selectionWizard .tabeul {
+    margin: 0;
+}
+
+/* CARTE */
+#blockMap {
+    float: left;
+    position: relative;
+    border: 1px solid #5077bb;
+}
+#blockList {
+    width: 100%;
+    float: right;
+}
+.MicrosoftMap .Infobox .infobox-title {
+    padding: 5px 10px !important;
+    max-height: 55px;
+    overflow-y: auto;
+}
+.MicrosoftMap .Infobox .infobox-info {
+    max-height: 65px;
+    padding: 3px 10px !important;
+    overflow-y: auto;
+}
+#toolbarContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 30;
+}
+#mapMessage {
+    position: absolute;
+    top: 250px;
+    z-index: 50;
+    background-color: #fff;
+    padding: 5px 0px;
+    width: 100%;
+    text-align: center;
+}
+.labelDistance {
+    color: #BB1515;
+    font-weight: bold;
+}
+
+.CfmDest {
+    color: #636363;
+    margin-bottom: 3px;
+    width: auto;
+}

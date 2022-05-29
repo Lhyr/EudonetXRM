@@ -1,0 +1,268 @@
+/*?*/
+.handler1 {
+    font-size: 9pt;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: move;
+    background-color: #32426F;
+    background-image: url(../../../images/Homepage/bg_title2.png);
+}
+/*?*/
+td.TdPart {
+    text-align: center;
+    background: transparent url(../../../images/Homepage/bgr_part.png) repeat-x top left;
+    border: 1px solid #cccccc;
+}
+/*?*/
+.HpgThumb {
+    background: transparent url(../../../images/Homepage/bgr_main.png) no-repeat left top;
+    border: 1px solid #cccccc;
+}
+/*?*/
+.h1a {
+    text-decoration: none;
+    font-size: 12pt;
+    width: 100%;
+    height: 100%;
+}
+/*?*/
+.h2a {
+    text-decoration: none;
+    font-size: 11pt;
+    font-weight: bold;
+}
+/*Encadr� de la div temporaire lors du d�placement*/
+.dashedbox {
+    background-color: #F7F7F7;
+    border: 2px dashed #84B0C7;
+    width: 300px;
+    height: 100px;
+    z-index: 2;
+}
+/*Encadré d'une eudopart entiére*/
+.box {
+    z-index: 3;
+    overflow: hidden;
+}
+/*Encadré du contenu de l'eudopart*/
+.boxbody {
+    height: 90%;
+    border: 1px solid #DDD;
+    overflow: auto; /*Sera géré si besoin  lorsque les eudopart seront en places*/
+}
+
+.boxbodyFULL {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/*style de l'encadré pour un contenu de flux RSS*/
+.rss {
+    background-color: #f7f7f7;
+    font-size: 10pt;
+    width: 100%;
+}
+
+    .rss h1 {
+        color: #bb1515;
+        font-size: 14pt;
+    }
+
+    .rss h2 {
+        color: black;
+        font-size: 12pt;
+    }
+
+.RssDate {
+    font-size: 7pt;
+    color: #494848;
+    font-weight: bold;
+}
+/*Titre Milieu*/
+td.ClEudopartTitle {
+    font-size: 8pt;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none; /*notselectable;*/
+    cursor: move;
+    border-bottom: 1px solid #CCC;
+    background-color: #7E7E7E;
+    white-space: nowrap;
+    padding-left: 7px;
+}
+
+td.ClEudopartTitleSelected {
+    padding-left: 7px;
+    font-size: 8pt;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none; /*notselectable;*/
+    cursor: move;
+    background-color: #7E7E7E;
+    white-space: nowrap;
+}
+
+/*Titre Gauche*/
+.CornerTdLeft {
+    width: 7px;
+    height: 19px;
+    background-repeat: repeat-x;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #7e7e7e;
+}
+
+.CornerTdLeftSelected {
+    width: 7px;
+    height: 19px;
+    background-repeat: repeat-x;
+    /*border-top-left-radius: 10px;*/
+    background-color: #7e7e7e;
+}
+
+/*Titre Droite*/
+.CornerTdRight {
+    width: 5px;
+    height: 19px;
+    background-repeat: repeat-x;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    background-color: #7E7E7E;
+}
+
+.CornerTdRightSelected {
+    width: 5px;
+    height: 19px;
+    background-repeat: repeat-x;
+    /*border-top-right-radius: 10px;*/
+    background-color: #7E7E7E;
+}
+
+/*Titre Milieu derri�re logo*/
+.TypePart {
+    border-bottom: 1px solid #CCC;
+    background-color: #7e7e7e;
+}
+
+.TypePartSelected {
+    background-color: #7e7e7e;
+}
+
+.box span[class^='icon-'] {
+    font-size: 11pt;
+    color: #fff;
+    line-height: 20px;
+}
+/*Titre Milieu zone des boutons d'actions*/
+.controlbox {
+    text-align: right;
+    font-size: 9pt;
+    height: 19px;
+    vertical-align: top;
+    border-bottom: 1px solid #CCC;
+    background-color: #7E7E7E;
+}
+
+.controlboxSelected {
+    background-color: #7E7E7E;
+    text-align: right;
+    font-size: 9pt;
+    height: 19px;
+}
+
+    .controlbox span, .controlboxSelected span {
+        margin-left: 5px;
+    }
+
+        .controlbox span:hover, .controlboxSelected span:hover {
+            color: #BEDCFB;
+        }
+/*Formulaire*/
+.MergeSearchBtnLeft {
+    background-image: url(../images/iHomePage/RechercheLeft.png);
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 23px;
+}
+
+.MergeSearchBtnMid {
+    vertical-align: middle;
+    background-image: url(../images/iHomePage/RechercheFond.png);
+    background-repeat: repeat-x;
+}
+
+.MergeSearchBtnText {
+    color: #ffffff;
+    font-family: verdana;
+    font-size: 8pt;
+}
+
+.MergeSearchBtnRight {
+    background-image: url(../images/iHomePage/RechercheIcon.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 23px;
+}
+/*********/
+.DefaultHomePage {
+    background-image: url(../images/iLog/Ecran-Bienvenue.jpg);
+    width: 800px;
+    height: 600px;
+}
+
+
+/*SELECTION D UNE LIGNE*/
+.hpgline2 {
+    background-color: #F6F6F6;
+    cursor: pointer;
+}
+
+.hpgline1 {
+    cursor: pointer;
+}
+
+    .hpgline1 td {
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+.hpgline2 td {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.mTab td.caF {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+}
+/*PASSAGE SUR CHAQUES LIGNES*/
+tr.hpgline2:hover, tr.hpgline2:hover td.cell, tr.hpgline2:hover td.caF {
+    background-color: #BCDEFB !important;
+    cursor: pointer;
+    color: #000000 !important;
+}
+
+tr.hpgline1:hover, tr.hpgline1:hover td.cell, tr.hpgline1:hover td.caF {
+    background-color: #BCDEFB !important;
+    cursor: pointer;
+    color: #000000 !important;
+}
+
+.HpContainer {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.ExprMsg {
+    position: absolute;
+    width: 99.4%;
+    border: 1px solid #c3c3c3;
+    overflow: hidden;
+}
+
+div[id^='chartGrid'] {
+    text-align: left !important;
+}

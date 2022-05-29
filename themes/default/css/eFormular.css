@@ -1,0 +1,101 @@
+﻿#FormPanel {
+    margin: 10px 15px;
+}
+
+.bodyFormularAdv #FormPanel {
+    margin: 0px 0px;
+}
+
+#FormCopyright {
+    position: absolute;
+    right: 10px;
+    text-align: right;
+}
+
+    #FormCopyright a {
+        color: #666;
+    }
+
+#ErrPanel {
+    border: 1px solid #999;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: white;
+    color: #bb1515;
+    font-weight: bold;
+}
+
+.fldHid {
+    display: none;
+}
+
+
+.form_valid_ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+    .form_valid_ul > li {
+        margin-left: 0px;
+        list-style-type: none; /* #52064 */
+    }
+
+.form_Captcha_ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+    .form_Captcha_ul > li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
+
+        .form_Captcha_ul > li input {
+            width: 200px;
+        }
+
+.div_reload {
+    cursor: pointer;
+}
+
+.logo_reload {
+    background-image: url(../images/ilog/reload-captcha.png);
+    width: 16px;
+    padding-right: 5px;
+    background-repeat: no-repeat;
+    height: 16px;
+    display: inline-block;
+    vertical-align: -3px;
+}
+
+.txt_reload {
+    display: inline-block;
+}
+
+body.bodyFormular {
+    overflow: scroll;
+}
+
+body.bodyFormularAdv {
+}
+
+::-webkit-scrollbar {
+    /*display: none;*/
+}
+
+div#linkedin-share span {
+    vertical-align: middle;
+}
+
+div#linkedin-share a {
+    text-decoration: none;
+}
+
+div#linkedin-share .icon-linkedin-square {
+    margin-right: 5px;
+}

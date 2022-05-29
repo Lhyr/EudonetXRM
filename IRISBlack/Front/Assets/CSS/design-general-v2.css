@@ -1,0 +1,740 @@
+/*ZONE RESUME*/
+:root {
+    --box-body-color: #FAFAFA;
+    --detail-label: #52575B;
+    --detail-background-btn: #9e9e9e00;
+    --detail-background:#fafafa;
+    --detail-foreground-btn: #fff;
+    --detail-foreground-btn-disabled: black;
+    --btn-eudo-border-color: #e4e4e4;
+    --btn-eudo-background-color: #e8e8e8;
+    --detail-multirenderer-readonly: #b9b9b9;
+    --detail-multirenderer-readonly-border: #808080;
+    --detail-multiRenderer-color: #2F3336;
+    --detail-fileinput-label: #ccc;
+    --detail-Readonly-cpt: #E3E3E3;
+    --detail-Multiple-choice-remove: #333;
+    --detail-clsBtnWrap: #afafaf;
+    --bkmTab-clsBkmFooterPosition: #f5f5f5;
+    --grey-border-color: #dadada;
+    --default-font-size: 16px;
+    --input-border-color:rgba(0,0,0,.87);
+    --size-5: 0.3125rem;
+    --size-6: 0.3725rem;
+    --size-9: 0.5625rem;
+    --size-10: 0.625rem;
+    --size-11: 0.6875rem;
+    --size-12: 0.75rem;
+    --size-12-5: 0.781rem;
+    --size-13: 0.8125rem;
+    --size-14: 0.875rem;
+    --size-15: 0.9375rem;
+    --size-15-5: 0.969rem;
+    --size-16: 1rem;
+    --size-17-5: 1.094rem;
+    --size-17: 1.063rem;
+    --size-18: 1.125rem;
+    --size-19: 1.188rem;
+    --size-20: 1.25rem;
+    --size-21: 1.313rem;
+    --size-22: 1.375rem;
+    --size-24: 1.5rem;
+    --size-25: 1.563rem;
+    --size-27: 1.688rem;
+    --size-28: 1.75rem;
+    --size-30: 1.875rem;
+    --size-34: 2.125rem;
+    --size-35: 2.188rem;
+    --size-40: 2.5rem;
+    --size-45: 2.813rem;
+    --size-50:3.125rem;
+    --input-height:4.375rem;
+}
+
+/*GENERAL*/
+.v-application {
+    font-family: var(--ffamily) !important;
+}
+.col-md-12 {
+    font-family: var(--ffamily) !important;
+}
+.bold {
+    font-family: var(--ffamilyBold) !important;
+}
+.boldLabel {
+    font-family: var(--ffamilyBold) !important;
+}
+.signet_tabs {
+    background: #fbfbfb !important;
+}
+#MainWrapper .detailContent .read-only .catalogVal,
+#MainWrapper #box-step .read-only .catalogVal,
+#MainWrapper .detailContent .headReadOnly .userVal,
+#MainWrapper #box-step .headReadOnly .userVal {
+    display: flex;
+    align-items: center;
+}
+.progressbar li.complete.active {
+    color: var(--stepbar-completed-selected-textcolor);
+    font-size: var(--size-14) !important; /* surcharge de v-size--default qui utilise une taille relative au parent (.875rem) ne donnant donc pas satisfaction sur E17 */
+}
+.steps-footer-button.edn-group-left {
+    padding: 25px 10px 37px 40px;
+    left: 0;
+}
+.grid-stack-item-content .emptyDataInputContent #box-step .progressbar {
+    border-bottom: 0px solid #DADADA;
+}
+.grid-stack-item-content .emptyDataInputContent #box-step .steps-text {
+    height: 0;
+}
+    .grid-stack-item-content .emptyDataInputContent #box-step .steps-text .steps-footer-button {
+        border-bottom: 0px solid #DADADA;
+    }
+    .grid-stack-item-content .emptyDataInputContent #box-step .steps-text .steps-footer-button {
+        border-bottom: 0px solid #DADADA;
+    }
+/*SIGNETS*/
+
+#propertyFiche {
+    font-family: var(--ffamily);
+}
+div.bkm-tab .eudo-lock {
+    position: static;
+    padding: 0 0 0 7px;
+    cursor: default; /* 85 592 */
+}
+div.bkm-tab .web-page-input {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+div.bkm-tab .tbody_asso tr td > div {
+    max-height: var(--size-30);
+}
+/* Design de la modale d'édition du titre/sous-titre */
+.eudo-modal .form-group {
+    font-family: var(--ffamily);
+}
+.eudo-modal .fa-lock {
+    color: var(--detail-label);
+}
+.eudo-modal .modal-field-label {
+    color: var(--detail-label) !important;
+    font-family: var(--ffamily);
+    font-weight: 500;
+    padding: 0 0px 0 0px !important;
+    overflow: initial;
+}
+.eudo-modal .form-group {
+    margin-bottom: 0;
+}
+.eudo-modal .fileInput {
+    padding: 10px 24px 10px 24px;
+}
+.eudo-modal .detailContent.box-body {
+    padding: 10px 0 10px 0;
+}
+#modifHead .form-group div.modal-field-label + div {
+    padding: 0 0px;
+}
+.border-success input:not(.checkboxComponent),
+.border-success span:not(.requiredRubrique):not(.cke_toolgroup):not(.cke_button_icon):not(.cke_toolbar):not(.multiple_choice_remove):not(.checkboxComponentSpan):not(.catalog-val) {
+    background-color: transparent !important;
+}
+.eudo-modal .border-error .modal-field-label {
+    font-family: var(--ffamilyBold);
+    color: var(--main-color) !important;
+}
+.eudo-modal .readOnlyComponent summary:after {
+    right: 11px;
+}
+.eudo-modal .form-group.reverse .modal-field-label .text-muted {
+    padding: 0 0px 0 5px !important;
+    line-height: 17px;
+}
+.eudo-modal .readOnlyComponent:not([tp="10"]):not([tp="20"]):not([tp="11"]) .modal-field-label,
+.eudo-modal .read-only .modal-field-label {
+    background: var(--detail-Readonly-cpt);
+    padding: 1px 8px 0 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.eudo-modal .modal-field-label {
+    padding: 0 0 4px 0 !important;
+}
+.eudo-modal .readOnlyComponent .modal-field-label {
+    padding: 0 0 4px 8px !important;
+}
+.eudo-modal span.lib {
+    font-size: var(--size-20);
+}
+.eudo-modal .eudonetModal .form-group {
+    padding: 10px 0px 10px 10px;
+}
+.eudo-modal .alert-msg {
+    padding: 16px 0 0 0;
+}
+.eudo-modal .error-icon {
+    padding: 0 5px 0 0;
+}
+.eudo-modal .eudonetModal .titleModif {
+    padding: 0px 0 30px 0;
+}
+.eudo-modal .eudonetModal .StitleModif {
+    padding: 15px 0 10px 0;
+}
+.eudo-modal .modal-field-label.text-danger {
+    color: var(--tag-color) !important;
+}
+.eudonetModal .form-group {
+    display: block;
+}
+#prop-fiche .eudo-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+#grid-container {
+    height: auto !important;
+}
+/*zone résumé*/
+#headFiche .image-fiche-reduce {
+    max-height: 55px;
+}
+.contact-img .profile-user-img-zr {
+    object-fit: cover;
+}
+.resume-img .profile-user-img-zr {
+    object-fit: contain;
+}
+
+div.loaderHeader {
+    position: static;
+    transform: none;
+}
+#headFiche .boxResume .grp-respon.noAvatar {
+    margin: 0;
+}
+.isStickyHead + #headFiche .boxResume .grp-respon.noAvatar {
+    padding: 4px 8px 4px 24px;
+    margin: 0;
+}
+.isStickyHead + #headFiche .image-fiche {
+    height: 70px !important;
+    width: 70px;
+    top: -10px;
+    left: -20px;
+    margin: 0 5px;
+}
+.selectedDate > .group-inner > .left > .left-label,
+.selectedDate > .form-group > .left > .left-label,
+.selectedDate.form-group > .left > .left-label {
+    background: var(--main-color);
+    color: var(--light-font-color) !important;
+    padding: 0px 5px 0 5px !important;
+    border-radius: 3px;
+}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+    background: var(--hover-color-date-test);
+}
+.skin-red table tr td.active.active {
+    background-color: var(--main-color) !important;
+    color: var(--detail-foreground-btn) !important;
+    background-image: none !important;
+}
+.eudonetModal .eudo-modal {
+    overflow-y: hidden;
+}
+.eudonetModal .eudo-body {
+    overflow: auto;
+}
+@media only screen and (max-height: 750px) {
+    .eudonetModal .eudo-dialog {
+        max-height: 95%;
+    }
+    .eudonetModal .eudo-body {
+        overflow: auto;
+    }
+    .eudonetModal .eudo-footer {
+        min-height: 50px;
+    }
+    .eudonetModal .eudo-dialog {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .eudonetModal .eudo-header,
+    .eudonetModal .eudo-footer {
+        width: 100%;
+        margin: 0;
+        min-height: 50px;
+    }
+    .eudonetModal .eudo-commands {
+        margin: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        padding: 0 15px 0 0;
+    }
+    .eudonetModal.eudo-resizable .eudo-commands,
+    .eudonetModal.eudo-maximized .eudo-commands {
+        margin: 0;
+    }
+    .eudonetModal.eudo-resizable .eudo-body,
+    .eudonetModal.eudo-maximized .eudo-body {
+        height: 100%;
+        padding: 0 24px 50px 24px;
+    }
+        .eudonetModal.eudo-maximized .eudo-body .eudo-content {
+            right: unset;
+            left: 0;
+        }
+    #note-step-modal .eudonetModal.eudo-maximized .eudo-body .eudo-content {
+        right: 0;
+        left: 24px;
+    }
+}
+.requiredRubrique.labelHidden {
+    left: -5px;
+}
+.box-body.box_body_acc_not.box_body_acc_tabs {
+    background: transparent;
+    margin: 0;
+}
+#MainWrapper > .content-wrapper > .content > .row #mainContentWrap {
+    overflow-x: hidden;
+}
+/*ELAIZ - J'ai mis un !important car cet icône a un display block en inline, sauf qu'il ne sert à rien dans notre cas, on ne peut pas 
+    redimensionner la zone note
+*/
+/** Filtres XPress **/
+.filterContent .filter-stats ul li:hover,
+.filterContent .filter-adv-selection ul li:hover {
+    background: var(--xpressfilter-bgcolor);
+}
+.filterContent .data-button-footer li:hover {
+    background: var(--xpressfilter-bgcolor);
+}
+/** Progress Bar **/
+span.field-placeholder {
+    padding: 0 0 3px 0;
+    color: var(--placeholder-color);
+}
+.daterangepicker .drp-buttons > .btn-primary {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.daterangepicker td.in-range {
+    background-color: var(--hover-color);
+}
+/*ELAIZ - J'ai mis tous les z-index ici afin de ne pas aller sur chaque fichier pour trouver. 
+    Modification des z-index suite à un problème avec la liste déroulante des filtres qui passaient en dessous du bandeau de droite
+    Il faudra prévoir un fichier css ou centraliser les sélecteurs à un endroit précis comme ci-dessous pour pouvoir
+    éditer les z-index  plus aisément
+*/
+.wrapper {
+    z-index: auto;
+}
+.content-wrapper {
+    z-index: auto;
+}
+.filterContent {
+    z-index: 16;
+}
+div.globalNav,
+.rightMenu {
+    z-index: 21;
+}
+/* demande 86001 -  [REGRESSION][10.613][Nouveau mode fiche] Design - Bug d'affichage de la barre d'outil champ Mémo HTML*/
+@keyframes appearing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* ------------  Modification du nouveau mode fiche US 3282 ------------  */
+/* Général */
+#mainContentWrap .box-body {
+    border-top: none;
+}
+/* Espacements rubriques */
+.detailContent .fileInput,
+#box-step .fileInput,
+#headFiche .fileInput,
+.steps-footer-button #btnNext {
+    justify-content: right;
+}
+#box-step .steps-text .steps-footer-button i.steps-footer-button-left {
+    padding-right: 10px;
+    font-size: var(--size-14);
+}
+.box_body_acc_20 {
+    background-color: var(--main-bg-color) !important;
+}
+.box_body_acc_20 {
+    background-color: var(--main-bg-color) !important;
+}
+/*Tabs Bar */
+#top_nav_rech .has-feedback {
+    border-bottom: 1px solid #cbd6e2;
+}
+/* Zone résumer */
+@media (max-width: 1100px) {
+    .image-fiche {
+        height: auto;
+    }
+}
+@media (max-width: 900px) {
+    #MainWrapper #box-step .note-steps {
+        margin-bottom: 0;
+        min-height: auto;
+        overflow: unset;
+        max-height: initial !important;
+    }
+}
+@media (min-width: 960px) {
+    .col-md-6 {
+        float: left;
+    }
+    .col-md-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+#box-step .note-steps {
+    margin-bottom: 0;
+    min-height: 170px;
+    overflow: auto;
+}
+.NoDataTxtAssistant {
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+.isStickyHead + #headFiche.catalog-infos .image-fiche {
+    top: 0;
+}
+.isStickyHead + #headFiche.catalog-infos .image-fiche {
+    height: 50px !important;
+    width: 50px;
+}
+#headFiche.inputsEmpty .header-content, #headFiche.catalog-infos.inputsEmpty .header-content {
+    padding: 0px;
+    min-height: auto;
+}
+
+.image-fiche {
+    max-width: 10.625rem;
+    padding: 0;
+}
+.isStickyHead + #headFiche .image-fiche {
+    height: 100% !important;
+    width: 3.125rem;
+    top: 0;
+    left: 0;
+    position: absolute !important;
+    margin: 0 0 0 5px;
+}
+#MainWrapper #propertyFiche {
+    display: none;
+}
+#headFiche .boxResume > .loaderHeader .lds-roller {
+    width: 70px;
+    height: 70px;
+    top: 45px;
+}
+.isStickyHead + #headFiche .boxResume .grp-respon.noAvatar {
+    padding: 0px 0px 0px 24px;
+    margin: 0;
+}
+/* Sans inputs */
+#headFiche.box.box-primary.catalog-infos.inputsEmpty:not(.avatarEmpty) {
+    max-height: 90px;
+}
+#headFiche.box.box-primary.inputsEmpty:not(.avatarEmpty) {
+    height: 65px;
+}
+#headFiche.box.box-primary.inputsEmpty:not(.avatarEmpty) {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #ecf0f5;
+    margin: 0;
+    overflow: hidden;
+}
+#headFiche.catalog-infos.inputsEmpty:not(.avatarEmpty) .image-fiche {
+    height: 50px !important;
+    width: 50px;
+}
+#headFiche.catalog-infos.inputsEmpty:not(.avatarEmpty) .image-fiche {
+    top: 0;
+}
+#headFiche.inputsEmpty:not(.avatarEmpty) .image-fiche {
+    left: 0;
+    position: absolute !important;
+    margin: 0 0 0 5px;
+}
+#headFiche.inputsEmpty:not(.avatarEmpty) .image-fiche {
+    height: 58px !important;
+    width: 58px;
+    float: left;
+    margin: 0px 0px 0 0;
+    position: relative;
+    border: none;
+    padding: 8px 10px 0 0;
+    padding: 10px 20px 0 0;
+    display: block;
+    top: -13px;
+    display: flex;
+    padding: 0;
+}
+#headFiche.inputsEmpty:not(.avatarEmpty) .boxResume .lds-roller {
+    top: 20px;
+    left: -15px;
+    transform: scale(0.5);
+}
+/* Background APPLICATION */
+body {
+    background: var(--bkmTab-clsBkmFooterPosition) !important;
+}
+.contentMaster {
+    background-color: var(--bkmTab-clsBkmFooterPosition);
+}
+.content-wrapper {
+    background-color: var(--bkmTab-clsBkmFooterPosition);
+}
+
+.box-body.detailContent {
+    background: #fbfbfb;
+}
+.box {
+    box-shadow: none;
+}
+.displayNone {
+    display: none !important;
+}
+
+/*US 3 398 - Tâche 5 008 */
+
+/** tâche 5122 */
+.startTxtAssistantContent img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* TK #5140 - Redimensionnement des champs Date sans heure, pour calculer au plus juste la taille automatique d'une colonne
+Avec la police Lato à chasse fixe, les chiffres ont toutes la même taille ;
+Donc on considère qu'un champ Date sans heure fait la taille fixe de 75 pixels, pour un format type JJ/MM/AAAA.
+Avec un autre format, on aura alors un champ légèrement plus petit ou plus grand.
+On pourrait utiliser calc(100% - XXpx) mais ça donne un calcul variable */
+#resizeColumnsWidthContainer .globalDivComponent input {
+    min-width: 75px;
+}
+#resizeColumnsWidthContainer .left,
+#resizeColumnsWidthContainer .left-label,
+#resizeColumnsWidthContainer .globalDivComponent input,
+#resizeColumnsWidthContainer .input-group .ellipsDiv {
+    width: auto;
+}
+#resizeColumnsWidthContainer .form-group {
+    display: flex;
+    flex-direction: column;
+}
+#resizeColumnsWidthContainer .input-group span.input-value,
+#resizeColumnsWidthContainer .input-group > *,
+#resizeColumnsWidthContainer .input-group .input-line > *,
+#resizeColumnsWidthContainer .input-group .ellipsDiv a {
+    font-size: var(--size-15) !important;
+    font-family: var(--ffamily);
+}
+#resizeColumnsWidthContainer .input-group span.input-value,
+#resizeColumnsWidthContainer .input-line > span,
+#resizeColumnsWidthContainer .input-group a.linkHead {
+    padding: 0 6px 0 5px;
+}
+div#resizeColumnsWidthContainer .input-group > input,
+div#resizeColumnsWidthContainer .input-group > input > * {
+    white-space: nowrap;
+    text-overflow: unset;
+    overflow: visible;
+    width: auto !important;
+}
+/*request #88 182*/
+/*request #88 182*/
+/*Request 88 632*/
+.fab {
+    line-height: normal;
+}
+.progressbar-title {
+    color: var(--detail-multiRenderer-color) !important;
+    font-family: var(--ffamily);
+    font-weight: normal;
+    padding: 10px;
+    font-size: var(--size-20);
+    background: var(--detail-foreground-btn);
+    margin: 0;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 2px;
+}
+    .progressbar-title .icon-info-circle {
+        padding-left: 10px;
+        display: inline-block;
+    }
+#tabsBar .tabs-nav--container {
+    border-bottom: 1px solid #dadada;
+    background: var(--detail-foreground-btn);
+}
+#tabsBar ul#tabsNav {
+    border: none;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    padding: 0;
+}
+    #tabsBar ul#tabsNav li.active a {
+        background-color: var(--main-color-hover) !important;
+    }
+#tabsBar .nav-arrow {
+    color: var(--icon-dark-color);
+    cursor: pointer;
+}
+    #tabsBar .nav-arrow.nav-next {
+        padding: 0 35px 0 20px;
+    }
+    #tabsBar .nav-arrow.disabled {
+        color: var(--v-secondary-lighten4) !important;
+        cursor: initial;
+    }
+    #tabsBar .nav-arrow.nav-prev {
+        padding: 0 20px 0 15px;
+    }
+.close-pinned-bkm {
+    margin: 0 -10px 0 10px;
+}
+i.fas.fa-times-circle:hover {
+    color: var(--main-color--hover);
+}
+/* Request 91 548 */
+/* Request 91 548 */
+div.tabs-nav--container {
+    background: var(--detail-foreground-btn);
+}
+/* Request 91 548 */
+.dropzone a {
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+    -webkit-user-drag: none;
+}
+div#tabContent {
+    z-index: 5;
+    position: relative;
+}
+div.eMEFontEudoIRIS {
+    font-family: var(--ffamily);
+}
+/* la zone Notes de fiche incrustée - debut */
+
+/* Pagination Action Fiche incruster */
+/* la zone Notes de fiche incrustée - finir   */
+
+.detailContent .logicCompo {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+}
+#mainContentWrap .no-transition {
+    transition: none;
+}
+
+/* theme hover - vuetify */
+.theme--light.v-list-item:hover {
+    background-color: var(--hover-color);
+}
+
+
+/* Button floating settings */
+.btn-group-settings {
+    position: fixed;
+    bottom: 30vh;
+}
+
+.btn-group-settings.floatingLeft {
+    transition: left 250ms, opacity 150ms;
+    opacity: 0.3
+}
+
+    .btn-group-settings.floatingLeft:hover {
+        left: 0 !important;
+        transition-delay: 0.5s, 4ms;
+        opacity: 1;
+    }
+
+.btn-group-settings.floatingLeft button:first-child {
+    border-top-right-radius: 5px;
+}
+
+.btn-group-settings.floatingLeft button:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+.btn-group-settings.floatingRight {
+    transition: right 250ms;
+}
+
+.btn-group-settings.floatingRight:hover {
+    right: 0 !important;
+}
+
+.btn-group-settings.floatingRight button:first-child {
+    border-top-left-radius: 5px;
+}
+
+.btn-group-settings.floatingRight button:last-child {
+    border-bottom-left-radius: 5px;
+}
+
+.v-application .title {
+    font-size: var(--size-15) !important;
+    letter-spacing: normal !important;
+    font-weight: 400;
+}    
+
+.v-application .file-settings__stitle{
+    letter-spacing: 1px !important;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: var(--size-13) !important;
+}
+
+[class*=fs_] .cke_textarea_inline.eMEFontEudoIRIS{
+    min-height:auto;
+}
+
+.form-group.Memo {
+    gap: 5px;
+}
+
+.container {
+    margin: 0;
+}
+
+.v-tooltip__content {
+    z-index: 28 !important;
+}
+
+.two-lines{
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+

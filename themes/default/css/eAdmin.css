@@ -1,0 +1,2789 @@
+ul, span, div, li {
+    margin: 0;
+    padding: 0;
+}
+
+.admintabtoken {
+    width: 100%;
+    text-align: center;
+}
+
+td.admincelltoken {
+    cursor: pointer;
+    text-align: center;
+}
+
+.icon-left-spacing {
+    margin-left: 10px;
+}
+
+
+td.admincelltoken:before {
+    font-family: 'eudoFonts';
+    content: "\f0c5";
+    font-size: 13pt;
+}
+
+td[ednval='1'].adminHiddenTabProduct.icon-square:before {
+    content: "\f046";
+}
+
+td[ednval='0'].adminHiddenTabProduct.icon-square:before {
+    content: "\f096";
+}
+
+body {
+    font-family: 'Verdana';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*background-color: rgb(238, 238, 238);*/
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+}
+
+.fieldInline {
+    display: inline-block !important;
+}
+
+#pass-status_NewPassword {
+    top: 0px;
+    color: #666666;
+}
+
+#pass-status_ConfirmNewPassword {
+    top: 1px;
+    color: #666666;
+}
+
+#pass-status_OldPassword {
+    top: 1px;
+    color: #666666;
+}
+
+i#pass-status_NewPassword.icon-eye-blocked,
+i#pass-status_ConfirmNewPassword.icon-eye-blocked,
+i#pass-status_OldPassword.icon-eye-blocked {
+    font-size: 18px;
+    top: 3px;
+    right: 25px;
+}
+
+div.adminCntnt > ul.valueMdpCntnt > li > i {
+    font-size: 13px;
+    right: 26px;
+    position: relative;
+    top: 26px;
+}
+
+div.otherBlock > ul > li:hover {
+    cursor: pointer;
+    color: #42a7dc;
+}
+
+.admin_cont {
+    vertical-align: top;
+    text-align: center;
+    height: inherit;
+    overflow-y: auto;
+}
+
+    .admin_cont [class*=" icon-"] {
+        color: red; /* Où est-ce utilisé ?? */
+    }
+
+    .admin_cont > div {
+        display: inline-block;
+    }
+
+        .admin_cont > div.twoblocks {
+            width: 49%;
+        }
+
+        .admin_cont > div.threeblocks {
+            width: 33%;
+        }
+
+        .admin_cont > div.extensionblocks {
+            width: 95%;
+        }
+
+/* ADMIN ONGLETS */
+.ulAdminTabs {
+    width: auto;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+    .ulAdminTabs > li {
+        height: 30px;
+        display: inline-block;
+        padding: 0 23px;
+        line-height: 30px;
+        margin-right: 10px;
+        border-radius: 5px;
+        background-color: rgba(215, 227, 234, 0.4);
+        color: #37a7de;
+        cursor: default;
+        position: relative;
+        font-size: 8pt;
+    }
+
+    .ulAdminTabs li.selectedTab {
+        color: #37a7de;
+        border: solid 1px #37a7de;
+    }
+
+    .ulAdminTabs ul.webTabOptions {
+        display: none;
+    }
+
+    .ulAdminTabs li:hover ul.webTabOptions {
+        display: inline-block;
+        margin-top: -1px;
+        margin-right: -6px;
+        right: 5px;
+        top: 0;
+        position: absolute;
+        color: #fff;
+    }
+
+    .ulAdminTabs ul.webTabOptions li {
+        display: inline-block;
+        font-size: 11pt;
+        padding: 0px 0px;
+        margin: 0;
+        height: 30px;
+        border-radius: 0px;
+        margin-right: 0px;
+        width: 22px;
+        vertical-align: middle;
+        background-color: #37a7de;
+        color: #fff;
+        cursor: pointer;
+        line-height: 30px;
+    }
+
+        .ulAdminTabs ul.webTabOptions li.icon-delete {
+            background-color: #bb2526;
+            color: #fff;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+    .ulAdminTabs ul.webTabOptions:last-child {
+        border-radius: 0px 5px 5px 0px;
+    }
+
+/* MON EUDONET */
+#myEudonet {
+    height: 430px;
+}
+
+#blockUserProfile {
+    width: 49%;
+    height: 100%;
+    background-color: #EAE8E9;
+    box-sizing: border-box;
+    font-family: Verdana, 'Trebuchet MS', Arial;
+    font-size: 10pt;
+    color: #666666;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    margin-right: 15px;
+}
+
+    #blockUserProfile #infosWrapper {
+        float: left;
+    }
+
+    #blockUserProfile .hAvatar, #blockUserProfile .hAvatarFromMyEudonet {
+        float: left;
+        width: 30%;
+        overflow: hidden;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+        #blockUserProfile .hAvatar img,
+        #blockUserProfile .hAvatarFromMyEudonet img {
+            width: 100%;
+            height: auto;
+        }
+
+    #blockUserProfile p {
+        margin: 0 0 5px 0;
+    }
+
+        #blockUserProfile p.phoneInfo span {
+            margin-right: 5px;
+            vertical-align: middle;
+            display: inline-block;
+            width: 15px;
+            text-align: center;
+        }
+
+    #blockUserProfile #userDisplayName {
+        font-size: 16pt;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    #blockUserProfile #userFunction {
+        margin-bottom: 25px;
+    }
+
+    #blockUserProfile #blockUserFooter {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+    }
+
+        #blockUserProfile #blockUserFooter .icon-lock2 {
+            float: left;
+            font-size: 24pt;
+            margin-right: 20px;
+        }
+
+    #blockUserProfile .emptyPictureArea {
+        font-size: 100pt;
+    }
+
+@media screen and (max-width: 1280px) {
+    #blockUserProfile .emptyPictureArea {
+        font-size: 75pt;
+    }
+}
+
+
+#myEudonet div.blockRight {
+    height: 100%;
+    position: relative;
+    width: 49%;
+}
+
+    #myEudonet div.blockRight .myBlockPrefs {
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    #myEudonet div.blockRight > div:first-child {
+        top: 0;
+    }
+
+    #myEudonet div.blockRight > div:last-child {
+        bottom: 0;
+    }
+
+
+.divStep {
+    font-size: 10pt;
+}
+
+    .divStep .info {
+        font-weight: bold;
+    }
+
+    .divStep label.labelAdminNoBold {
+        font-weight: normal;
+    }
+
+    .divStep input.optionFieldAdminInputText {
+        font-size: 10pt;
+    }
+
+
+
+    .divStep p.info {
+        margin-bottom: 5px;
+    }
+
+    .divStep label.info {
+        margin-right: 10px;
+    }
+
+    .divStep .field ul.listRB {
+        margin-left: 30px;
+    }
+
+.field select option:disabled {
+    background-color: #DFDFDF;
+}
+
+@media screen and (max-width: 1024px) {
+    .divStep .field ul.listRB {
+        margin-left: 15px;
+    }
+}
+
+.divStep .field * {
+    vertical-align: middle;
+}
+
+div.adminModalTitle {
+    padding: 15px;
+}
+
+    div.adminModalTitle div {
+        display: inline;
+        color: #636363;
+    }
+
+        div.adminModalTitle div:nth-child(1) {
+            font-size: 30pt;
+        }
+
+        div.adminModalTitle div:nth-child(2) {
+            vertical-align: 6px;
+            font-size: 17pt;
+            margin-left: 15px;
+        }
+
+.adminModalMiddleTitle {
+    color: #696969;
+    font-size: 9pt;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px 0px;
+    text-indent: 10px;
+    border-top: 1px solid #BABABA;
+    border-bottom: 1px solid #BABABA;
+    margin-top: 30px;
+}
+
+.bottomBorder {
+    border-bottom: 1px dashed #636363;
+}
+
+.eFSInput, .eFSContainer {
+    border: none;
+    font-family: Verdana, 'Trebuchet MS';
+}
+
+#eFSContainerAdminTabs, #eFSContainerAdminHomepages {
+    float: right;
+    padding-left: 20px;
+    padding-top: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 16px;
+}
+
+    #eFSContainerAdminTabs input[type='text'].eFSInput,
+    #eFSContainerAdminHomepages input[type='text'].eFSInput {
+        margin-left: 5px;
+        margin-top: -2px;
+    }
+
+#eFSContainerBelongings .eFSReset {
+    margin-top: -13px;
+}
+
+.adminCntnt {
+    margin: 10px;
+    width: 97%;
+    padding-bottom: 10px;
+}
+
+    .adminCntnt .actionsBar {
+        float: right;
+        visibility: hidden;
+    }
+
+        .adminCntnt .actionsBar span {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+    .adminCntnt tr:hover .actionsBar {
+        visibility: visible;
+    }
+
+.adminCntntTabs, .adminCntntAccess, .adminCntntParameters {
+    overflow-y: auto;
+}
+
+    .adminCntntParameters .linkButton {
+        margin-top: 20px;
+        margin-right: 100px;
+    }
+
+        .adminCntntParameters .linkButton a {
+            width: 175px;
+        }
+
+    .adminCntntParameters .field {
+        margin-bottom: 7px;
+    }
+
+.adminTabsList {
+    border-collapse: collapse;
+}
+
+
+#tableHomepages {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    #tableHomepages .hpUsers {
+        cursor: pointer;
+    }
+
+#TranslationsList table.mTab th,
+.adminCntnt table.mTab th {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #dfdfdf;
+    /*border-right: solid 1px #9F9F9F;
+    border-left: solid 1px #9F9F9F;*/
+    color: #666666;
+    font-weight: bold;
+    cursor: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-clip: padding-box;
+}
+
+    .adminCntnt table.mTab th div.sortdiv {
+        float: right;
+    }
+
+.adminCntnt table.mTab td.cell {
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 22px;
+}
+
+.adminTabsList th {
+    cursor: default !important;
+}
+
+.adminTabsList tr[deleted='1'] td.cell {
+    color: red;
+}
+
+.adminTabsList td.adminTabsLabel {
+    color: #1155cc;
+    width: 25%;
+}
+
+    .adminTabsList td.adminTabsLabel:hover {
+        text-decoration: underline;
+    }
+
+.adminTabsList td.adminTabsLabel,
+.adminTabsList td.adminTabsTabType,
+.adminTabsList td.adminTabsCategory,
+.adminTabsList td.adminTabsCreatedBy {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.adminTabsList td.adminTabsLabel,
+.adminTabsList td.adminTabsIcon {
+    cursor: pointer;
+}
+
+.adminTabsList td.adminTabsTooltip {
+    white-space: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+
+.adminCntnt table.mTab [class^="icon-"], .adminCntnt table.mTab [class*=" icon-"] {
+    font-size: 11pt;
+}
+
+.adminCntnt table.adminTabsList td .icon-delete {
+    float: right;
+    line-height: 22px;
+    visibility: hidden;
+}
+
+.adminCntnt table.mTab tr:hover .icon-delete {
+    visibility: visible;
+}
+
+.adminCntntTtl {
+    font-size: 11pt;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: #434343;
+    font-family: Verdana, 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.adminCntntCheck {
+    float: left;
+    margin-bottom: 10px;
+    color: #434343;
+    font-family: Verdana, 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.adminCntntCheck {
+    margin-left: 16px;
+}
+
+    .adminCntntCheck .field {
+        margin-bottom: 5px;
+    }
+
+        .adminCntntCheck .field ul.listRB {
+            margin-left: 15px;
+            display: block;
+        }
+
+            .adminCntntCheck .field ul.listRB li {
+                display: block;
+                float: none;
+                margin-bottom: 3px;
+            }
+
+
+
+.adminExpressMessage {
+    margin-left: 15px;
+}
+
+.adminCntntTtlTabs, .adminCntntTtlHomepages {
+    /*font-size: 9pt;*/
+    margin-left: 10px;
+    float: left;
+}
+
+div.adminCntntTtl select {
+    margin-left: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #5e5e5e;
+}
+
+.adminBtnPart {
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+div.adminTitle span[class*="icon-"] {
+    font-size: 30pt;
+    line-height: 35px;
+    vertical-align: -10px;
+    margin-left: 10px;
+}
+
+div.adminTitle span {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+span.adminTileText {
+    text-transform: uppercase;
+    font-size: 19pt;
+    display: block;
+    text-align: center;
+    color: #42A7DC;
+    font-weight: bold;
+    font-family: Verdana, 'Trebuchet MS', 'Times New Roman';
+    height: 30px;
+    line-height: 30px;
+}
+
+/* #51650 */
+@media screen and (max-width: 1280px) {
+    span.adminTileText {
+        font-size: 15pt;
+    }
+}
+
+span.adminTileSubText {
+    text-transform: uppercase;
+    font-size: 8pt;
+    display: block;
+    text-align: center;
+}
+
+div.tilePart span.adminTileIcon {
+    display: block;
+    font-size: 90pt;
+    text-align: center;
+}
+
+div.tilePart div.extensionIcon > span {
+    display: block;
+    font-size: 70pt;
+    text-align: center;
+}
+
+div.extensionblocks .extensionIcon, div.extensionblocks .extensionText {
+    float: left;
+}
+
+div.extensionblocks .extensionSwitch {
+    float: right;
+}
+
+div.extensionblocks .extensionIcon, div.extensionblocks .extensionSwitch {
+    width: 15%;
+}
+
+div.extensionblocks .extensionText {
+    width: 70%;
+}
+
+    div.extensionblocks .extensionText > span {
+        text-align: left;
+    }
+
+div.extensionblocks .extensionSwitch > a > span {
+    display: block;
+    font-size: 70pt !important;
+    text-align: center;
+    min-width: 150px;
+}
+
+span.extensionDisabled {
+    /*
+    margin-top: 10px;
+    margin-left: 10px;
+        */
+}
+
+.admin_cont > div > div {
+    margin: 0.5%;
+}
+
+.myBlockPrefs {
+    background-color: #636363;
+    color: white;
+}
+
+.otherBlock {
+    background-color: #ebebeb;
+    color: #636363;
+    height: 177px;
+    width: 31%;
+    float: left;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.adminTitle {
+    height: 35px;
+    line-height: 25px;
+    color: #636363;
+}
+
+.titlePart, .tilePart {
+    padding: 7px 2px;
+    cursor: pointer;
+}
+
+    .titlePart:hover, .tilePart:hover {
+        color: #42A7DC;
+    }
+
+div.tilePart:hover > span[class^="icon-"] {
+    color: #42A7DC;
+}
+
+.titlePart {
+    font-size: 15pt;
+}
+
+.choiceAdmin {
+    margin-left: 45px;
+    padding-bottom: 15px;
+}
+
+    .choiceAdmin li {
+        font-size: 10pt;
+        height: 23px;
+    }
+
+    .choiceAdmin input {
+        height: 18px;
+        margin-bottom: 1px;
+        padding: 0;
+        text-transform: uppercase;
+        width: 188px;
+        border: 1px solid #CCC;
+        text-indent: 5px;
+    }
+
+div.titlePart span[class^="icon-"] {
+    font-size: 25pt;
+    vertical-align: -7px;
+    margin-right: 15px;
+    display: inline-flex;
+}
+
+.addTemplate {
+    display: inline-block;
+    float: right;
+    font-size: 9pt;
+    line-height: 35px;
+}
+
+    .addTemplate span {
+        padding-right: 15px;
+    }
+
+    .addTemplate select {
+        min-width: 100px;
+    }
+/* eMain.css */
+.fieldSearch > * {
+    display: inline-block;
+}
+
+.choiceAdmin .srchFldImg {
+    font-size: 8pt;
+    text-align: center;
+    background-color: #636363;
+    color: white;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.getScroll {
+    height: 257px;
+    overflow-y: auto;
+}
+/* eMain.css */
+
+.containerAdmin {
+    line-height: 60px;
+    color: white;
+    margin-bottom: 0px;
+}
+/* GESTION DU MENU ADMIN XTRANET*/
+div.headPart {
+    height: 59px;
+    background-color: rgb(250, 250, 250);
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+    z-index: 100;
+}
+
+    div.headPart > div {
+        display: inline-block;
+    }
+
+.containerAdmin ul {
+    padding: 0;
+}
+
+ul.leftMenu span.icon-administrafion {
+    font-size: 21pt;
+    vertical-align: -6px;
+}
+
+ul.leftMenu span[class^="icon-"] {
+    padding: 0px 10px;
+}
+
+ul.leftMenu {
+    width: 15%;
+    font-size: 0.9em;
+    position: absolute;
+    background-color: #30363e;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 15;
+}
+
+    ul.leftMenu > li {
+        background-color: #30363e;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    ul.leftMenu li:hover {
+        background-color: #42a7dc;
+        cursor: pointer;
+    }
+
+    ul.leftMenu > li > ul > li {
+        background-color: #282d33;
+        padding-left: 30px;
+    }
+
+.chevronPuce {
+    font-size: 13pt;
+    padding: 0px 6px;
+    font-weight: bold;
+}
+
+li.last-item {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+}
+
+li.pageHead {
+    position: relative;
+}
+
+/*span.icon-title_sep {
+    font-size: 6pt;
+    position: absolute;
+    top: 23px;
+    right: 5px;
+    transform: rotate(180deg);
+    color: #4a89dc;
+}*/
+
+.active {
+    color: #42a7dc;
+}
+/* GESTION DU MENU XTRANET */
+
+.rightMenuXtrAdmin {
+    position: absolute;
+    width: 17%;
+    height: 100%;
+    top: 80px;
+    right: 0px;
+    background-position: 0px 17px;
+    background-image: url("../../../xtranet/img/leftMenu.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    z-index: 5;
+}
+
+.rightMenuXtrAdminHTML {
+    position: absolute;
+    width: 17%;
+    height: 100%;
+    top: 80px;
+    right: 0px;
+    z-index: 5;
+}
+
+    .rightMenuXtrAdminHTML > * {
+        display: block;
+    }
+
+        .rightMenuXtrAdminHTML > * > div:first-child {
+        }
+
+    .rightMenuXtrAdminHTML > .titlePage {
+    }
+
+    .rightMenuXtrAdminHTML > .templatePart {
+    }
+
+    .rightMenuXtrAdminHTML > .bkmPart {
+    }
+
+    .rightMenuXtrAdminHTML > .displayPart {
+    }
+
+.headPart div.Hright_part {
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgb(250, 250, 250);
+    line-height: 0;
+}
+
+.gloablAddListe {
+    background-image: url("../../../xtranet/img/addListGlobal.png");
+    background-size: contain;
+    width: 64%;
+    height: 86%;
+    left: 17%;
+    top: 105px;
+    background-position: 2px 1px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.globalApparence {
+    background-image: url("../../../xtranet/img/apparenceGlobal.jpg");
+    background-size: contain;
+    width: 65%;
+    height: 92%;
+    top: 104px;
+    display: inline-block;
+    background-position: -1px -2px;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 25%;
+    border: 1px solid #efefef;
+}
+
+.subHeadPart {
+    width: 100%;
+    left: 15%;
+    position: absolute;
+    height: 23px;
+    line-height: 23px;
+    border: 6px solid rgb(250, 250, 250);
+    color: #636363;
+    background-color: white;
+    z-index: 10;
+}
+
+li.active:hover {
+    color: white;
+}
+
+hr {
+    width: 80%;
+    top: 88px;
+    height: 2px;
+    border-style: none;
+    background-color: rgb(234, 234, 234);
+    position: absolute;
+}
+/* MODALE */
+.modalPopCont {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 150;
+    height: 100%;
+    width: 100%;
+}
+
+.modalPop {
+    width: 50%;
+    /* height: 33%; */
+    margin: 15% auto;
+    background-color: #fafafa;
+}
+
+    .modalPop > ul {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+        .modalPop > ul > li {
+            margin-left: 20px;
+            line-height: 25px;
+        }
+
+.modalPopHead {
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: #42a7dc;
+    text-indent: 15px;
+    margin-left: inherit;
+}
+
+    .modalPopHead span {
+        line-height: 40px;
+        font-size: 12pt;
+    }
+
+div.modalPop > ul > li.headTitle {
+    color: #42a7dc;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-bottom: 10px;
+    margin-left: inherit;
+}
+
+.actBtn {
+    text-align: right;
+    padding-right: 4%;
+    margin-top: 10%;
+    height: 50px;
+}
+
+    .actBtn > * {
+        display: inline;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+.acceptBtn {
+    background-color: #42a7dc;
+    color: white;
+    margin-left: 10px;
+}
+
+/* MODALE */
+
+div.modalPopCont > div > ul > li > select {
+    min-width: 200px;
+}
+
+/* MODALE */
+
+/* TEMPLATE CREATION */
+
+.adminTemplateCont {
+    width: 800px;
+    position: relative;
+    background-color: rgb(248, 248, 248);
+}
+
+div.adminTemplateLeft > div {
+    margin: 10px;
+}
+
+    div.adminTemplateLeft > div > input[type="text"] {
+        width: 80%;
+        margin-top: 5px;
+    }
+
+div.adminTemplateRight, div.adminTemplateLeft {
+    width: 49%;
+    display: inline-block;
+}
+
+div.adminTemplateRight {
+    height: 100%;
+    position: absolute;
+}
+
+    div.adminTemplateRight > div {
+        width: 50%;
+    }
+
+        div.adminTemplateRight > div.imgAgenda, div.adminTemplateRight > div.imgMails {
+            width: 100%;
+            height: 100%;
+            margin-top: 40%;
+        }
+
+        div.adminTemplateRight > div.imgTable, div.adminTemplateRight > div.imgCible {
+            width: 100%;
+            margin-top: 20%;
+        }
+
+        div.adminTemplateRight > div.imgSignets {
+            width: 100%;
+            margin-top: 35%;
+        }
+
+            div.adminTemplateRight > div.imgAgenda > img, div.adminTemplateRight > div.imgMails > img, div.adminTemplateRight > div.imgTable > img, div.adminTemplateRight > div.imgCible > img, div.adminTemplateRight > div.imgSignets > img {
+                display: block;
+                margin: 0 auto;
+            }
+
+div.adminTemplateSep {
+    width: 2px;
+    display: inline-block;
+    background-color: #d3d3d3;
+    position: absolute;
+    height: 80%;
+    margin-top: 5%;
+}
+
+div.adminTemplateIndent > div {
+    width: 50%;
+    margin: 10px 30px;
+}
+
+div.adminTemplateIndent > * {
+    display: inline-block;
+}
+
+div.adminTemplateIndent > span {
+    width: 50%;
+}
+
+div.adminTemplateLeft > div.adminTemplateTitleSep {
+    margin: 20px 10px;
+}
+/* TEMPLATE CREATION */
+div.adminBlock {
+    padding: 10px;
+    border: 1px solid #BABABA;
+    background-color: #EBEBEB;
+    margin-bottom: 30px;
+}
+
+body > div.adminMenu > ul > li.firstElmentMenu > div:nth-child(1) {
+    font-size: 20pt;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+body > div.adminMenu > div > div.icon-administrafion {
+    color: #696a65;
+    font-size: 24pt;
+    margin: 0px 7px;
+}
+
+body > div.adminMenu > div > div:nth-child(2) {
+    vertical-align: 7px;
+}
+
+body > div.adminMenu > ul > li.firstElmentMenu > div:nth-child(2) {
+    font-size: 10pt;
+    font-weight: bold;
+    vertical-align: 6px;
+}
+
+body > div.adminMenu > div > div, body > div.adminMenu > ul > li > div {
+    display: inline-block;
+}
+
+    body > div.adminMenu > ul > li > div.icon-edn-next {
+        font-size: 8pt;
+        margin-right: 10px;
+        visibility: hidden;
+        color: #9d9d9d;
+    }
+
+body > div.adminMenu > ul > li:hover {
+    background-color: #c6c6c6;
+    cursor: pointer;
+}
+
+body > div.adminMenu > ul > li.firstElmentMenu:hover {
+    background-color: #636363;
+    ;
+}
+
+body > div.adminMenu > ul > li:hover > div.icon-edn-next {
+    font-size: 8pt;
+    margin-right: 10px;
+    visibility: visible;
+}
+
+body > div.adminMenu > ul > li > div:nth-child(2) {
+    font-size: 9pt;
+}
+
+body > div.adminMenu > ul > li {
+    height: 30px;
+    line-height: 30px;
+}
+
+div.adminModal {
+    position: absolute;
+    display: inline-block;
+    width: 87%;
+    background-color: white;
+    margin: 10px 5px 5px 0;
+}
+
+ul.adminBreadCrumbs {
+    background-color: #d6d6d6;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+    ul.adminBreadCrumbs > li {
+        display: inline-block;
+        height: 25px;
+        line-height: 25px;
+        font-size: 10pt;
+    }
+
+.adminMenu {
+    display: inline-block;
+    float: right;
+    margin: 10px 15px 0 0;
+}
+
+ul.adminSndBlock {
+    background-color: white;
+    border: 1px solid #BABABA;
+}
+
+ul.adminThrdBlock {
+    background-color: white;
+    border: 1px solid #BABABA;
+    margin-top: 30px;
+}
+
+li.firstElmentMenu {
+    padding: 10px;
+    background-color: #636363;
+    color: white;
+}
+
+li.onClick {
+    color: #ebebeb;
+    cursor: pointer;
+}
+
+li.ariane {
+    color: #42a7dc;
+    cursor: pointer;
+}
+
+li.no-ariane {
+    color: #636363;
+}
+
+.versionChoice {
+    width: 105%;
+    overflow-y: auto;
+    min-height: 185px;
+    margin-left: -44px;
+}
+
+div.actived {
+    border: 7px solid #ceef60;
+    margin: 20px 45px 20px;
+}
+
+.versionChoiceElmnt {
+    height: 150px;
+    width: 155px;
+    display: inline-block;
+    border: 2px solid #82888c;
+    margin: 25px 50px 25px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.versionChoiceElemntCtnt {
+    position: relative;
+    height: 73%;
+}
+
+.versionTitle {
+    position: relative;
+    height: 27%;
+    background-color: #82888c;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .versionTitle p {
+        color: white;
+        font-size: 9pt;
+        display: inline-block;
+    }
+
+div.adminBtnPart input[type="button"].validBtn {
+    background-color: #7FBE23;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div.adminBtnPart input[type="button"].cancelBtn {
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 40px;
+    background-color: #cccccc;
+    color: #636363;
+}
+
+/* MOT DE PASSE */
+div.adminCntnt > ul.labelMdpCntnt {
+    display: inline-block;
+    width: 130px;
+    font-size: 8pt;
+}
+
+div.adminCntnt > ul.valueMdpCntnt {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+    div.adminCntnt > ul.valueMdpCntnt > li {
+        height: 30px;
+        line-height: 30px;
+    }
+
+div.adminCntnt > ul.labelMdpCntnt > li {
+    height: 30px;
+    text-align: right;
+    line-height: 30px;
+    color: #636363;
+}
+
+div.adminCntnt > ul.valueMdpCntnt > li > input {
+    width: 300px;
+}
+
+div.adminInfo > * {
+    display: inline-block;
+}
+
+div.adminInfo {
+    background-color: #f8ede7;
+    margin: 1%;
+}
+
+div.adminInfTxt {
+    color: #d74300;
+    vertical-align: top;
+    width: 95%;
+    padding: 1% 0;
+}
+
+div.iconPart {
+    width: 30px;
+    margin-top: 1%;
+}
+
+div.checkPart {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+    div.checkPart > input {
+        margin-right: 10px;
+        vertical-align: 0px;
+    }
+
+div.signCheck {
+}
+/* MOT DE PASSE */
+
+/* PLANNING */
+.adminPlanningCntnt {
+    margin: 20px 10px;
+}
+
+div.adminPlanningCntnt > div.panelCntnt {
+    width: 450px;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+
+div.panelCntnt {
+    border: 1px solid #82888c;
+}
+
+div.txtTitle {
+    color: white;
+    font-weight: bold;
+    text-indent: 10px;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+div.panelCntntBottom {
+}
+
+div.titlePlanningCntnt {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    background-color: #82888c;
+}
+
+    div.titlePlanningCntnt > div {
+        display: inline-block;
+    }
+
+    div.titlePlanningCntnt > [class^="icon-"] {
+        position: absolute;
+        right: 0;
+        height: 30px;
+        line-height: 30px;
+        color: white;
+        font-size: 12pt;
+    }
+
+    div.titlePlanningCntnt > .icon-all_select {
+        font-size: 18pt;
+        right: 5px;
+    }
+
+.panelCntntWeek {
+    padding: 15px;
+    font-size: 10pt;
+}
+
+    .panelCntntWeek > div {
+        display: inline-block;
+    }
+
+div.panelCntntWeek > div.dayChoice {
+    margin-right: 80px;
+}
+
+    div.panelCntntWeek > div.dayChoice > select {
+        margin: 8px;
+    }
+
+.panelCntntBottom > div > div > select {
+    margin: 5px;
+}
+
+.labelCntntTxt {
+    padding: 4px;
+}
+
+.panelCntntBottom > ul {
+    display: inline-block;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 3px;
+}
+
+    .panelCntntBottom > ul > li {
+        height: 30px;
+        line-height: 30px;
+    }
+
+ul.panelCntntLeft {
+    text-align: right;
+    padding-left: 20px;
+}
+
+.panelCntntRight {
+}
+
+.taskChoice {
+    margin: 19px;
+}
+
+    .taskChoice > li > input[type="radio"] {
+        vertical-align: -1px;
+        margin-right: 7px;
+    }
+
+    .taskChoice > li {
+    }
+
+ul.workingWeek {
+    margin-left: 5px;
+}
+
+    ul.workingWeek > li.selected {
+        background-color: #cdef5f;
+        border: 1px solid #aad229;
+    }
+
+    ul.workingWeek > li {
+        background-color: #eeeeee;
+        border: 1px solid #c9c9c9;
+        margin: 5px;
+        display: inline-block;
+        padding: 2px 15px;
+        font-size: 11pt;
+        color: #696969;
+        cursor: pointer;
+    }
+
+div.colorElemnt {
+    display: inline-block;
+    width: 520px;
+    font-size: 11pt;
+    vertical-align: top;
+    height: 30px;
+    line-height: 30px;
+}
+
+    div.colorElemnt > div.colorBlock {
+        height: 18px;
+        width: 18px;
+        background-color: red;
+        margin: 8px;
+        vertical-align: -13px;
+    }
+
+.colorBlock {
+    display: inline-block;
+}
+
+div.colorElemnt > span {
+}
+/* PLANNING */
+
+div.listAdminGroup {
+    float: left;
+    width: 25%;
+}
+
+div.listAdminUser {
+    margin-left: 25%;
+    width: 75%;
+}
+
+/*ALISTER Demande #64 862*/
+
+div.listAdminUserHidden {
+    margin-left: 0%;
+    width: 100%;
+}
+
+div[ednadmin='1'].usr_cat_body {
+    background-color: white;
+    margin-top: 5px;
+}
+
+    div[ednadmin='1'].usr_cat_body input.usr_search-inpt {
+        border: 1px solid gray;
+        margin-left: 5px;
+        height: 19px;
+        width: calc(100% - 75px - 24px); /* 75px et 24px : tailles du libellé "Recherche" + icône Loupe avec marge de 3 pixels */
+    }
+
+    div[ednadmin='1'].usr_cat_body div#eBtnSrch {
+        margin-right: 0px;
+    }
+
+    div[ednadmin='1'].usr_cat_body div.usr_cat {
+        margin-top: 4px;
+    }
+
+    div[ednadmin='1'].usr_cat_body table.catEditVal tr th {
+        line-height: 21px;
+        height: 21px;
+    }
+
+#mainListContent[ednadmin='1'] {
+    margin-right: 4px;
+}
+
+#txtEmailSeparator {
+    width: 15px;
+}
+
+#imgLogo {
+    margin-right: 20px;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 1px;
+}
+
+input[type='text'][disabled].optionField {
+    background-color: #F0F0F0;
+}
+
+#txtEmailSeparator, #textSectionsDelimiter, #textDecimalDelimiter, #textCalendarDayItemWidth {
+    width: 30px;
+}
+
+#textDefaultCurrency {
+    width: 50px;
+}
+
+.pnCurrency {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+    .pnCurrency .linkButton {
+        margin: 0px;
+    }
+
+#fieldLogo {
+    display: inline-block;
+}
+
+#inputGroupName {
+    width: 226px;
+}
+
+#ddlParentGroup {
+    width: 230px;
+}
+
+#ddlIPLevel {
+    width: 184px;
+}
+
+#bodyAdminGroup .labelField, #bodyAdminGroup .checkboxField {
+    width: 175px;
+}
+
+#bodyAccessSecurityIP .labelField, #bodyAccessSecurityIP .checkboxField {
+    width: 260px;
+}
+
+#bodyAdminGroup .labelField, #bodyAdminGroup .checkboxField,
+#bodyAccessSecurityIP .labelField, #bodyAccessSecurityIP .checkboxField {
+    text-align: right;
+    margin-right: 10px;
+    vertical-align: bottom;
+    line-height: 10px;
+    color: #7A716E;
+}
+
+.field > select, .field > input, .adminIPTable {
+    font-family: Verdana, 'Trebuchet MS';
+    font-size: 10pt;
+    color: #7A716E;
+}
+
+.adminIPTable {
+    width: 100%;
+}
+
+#groupPolicyOptions .field:nth-child(2) {
+    margin-left: 165px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    #groupPolicyOptions .field:nth-child(2) {
+        margin-left: 45px;
+    }
+}
+
+#chkIPAccessEnabled > span.optionField {
+    width: 425px;
+}
+
+#newIPRestriction, #newIPRestriction > span {
+    color: #47A7DC;
+}
+
+    #newIPRestriction .icon-plus {
+        font-size: 9pt;
+        margin-right: 3px;
+    }
+
+/* SWITCHES */
+.onoffswitch {
+    position: relative;
+    width: 40px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    height: 15px;
+    padding: 0;
+    line-height: 15px;
+    border: 2px solid #CCCCCC;
+    border-radius: 15px;
+    background-color: #A5A4A8;
+    transition: background-color 0.3s ease-in;
+}
+
+    .onoffswitch-label:before {
+        content: "";
+        display: block;
+        width: 15px;
+        margin: 0px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 23px;
+        border: 2px solid #CCCCCC;
+        border-radius: 15px;
+        transition: all 0.3s ease-in 0s;
+    }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #37A7DE;
+}
+
+    .onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+        border-color: #37A7DE;
+    }
+
+        .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+            right: 0px;
+        }
+/* RANGE SLIDERS */
+
+.nouislider.noUi-horizontal {
+    height: 10px;
+    width: 90%;
+    margin: 8px auto;
+}
+
+    .nouislider.noUi-horizontal .noUi-handle {
+        width: 20px;
+        height: 20px;
+        left: -10px;
+        top: -6px;
+    }
+
+.nouislider .noUi-handle:after, .nouislider .noUi-handle:before {
+    height: 7px;
+    width: 1px;
+    left: 7px;
+    top: 6px;
+}
+
+.nouislider .noUi-handle:after {
+    left: 10px;
+}
+
+.rangeSlider .noUi-connect {
+    background-color: #AB3732;
+}
+
+.rangeSlider .noUi-base {
+    background-color: #BACA53;
+}
+
+output {
+    text-align: center;
+    display: block;
+    font-size: 8pt;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+}
+
+/*****/
+.admin-container {
+    text-align: left;
+}
+
+    .admin-container .catDivHeadAdv {
+        margin-top: 15px;
+    }
+
+.header-filters {
+    display: inline-block;
+    margin: 15px;
+}
+
+.header-admin {
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.content-list-admin {
+    margin: 15px;
+}
+
+.admin-field-filter {
+    width: 300px;
+    float: left;
+}
+
+    .admin-field-filter select {
+        width: 200px;
+    }
+
+.file-content {
+    margin: 0 20px;
+}
+
+.adminModal .file-content .adminModalContent {
+    padding: 0;
+}
+
+.inner-cases, .inner-casesExM {
+    background-color: white;
+}
+
+.inner-cases {
+    display: inline-block;
+    padding-left: 63px;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-right: 12px;
+}
+
+
+.inner-cases-line {
+    display: block;
+}
+
+.inner-cases-line {
+    margin-left: 24px;
+    width: 95%;
+    float: left;
+    padding-top: 8px;
+    margin-bottom: 24px;
+}
+
+.inner-cases-lineExM {
+    /*width: 70%;*/
+    padding: 15px 0px 5px 0px;
+    height: 2px;
+    display: block;
+}
+
+.innerCasesTextArea {
+    padding-bottom: 16%;
+}
+
+.inner-txtArea {
+    padding: 0px 0px 15px 105px !important;
+}
+
+
+.bottom-space {
+    padding-bottom: 6px;
+}
+
+.inner-cases-line > div:first-child, .inner-cases-lineExM > div:first-child {
+    z-index: 0;
+    display: inline-block;
+    position: relative;
+    font-family: Verdana;
+    font-size: 9pt;
+    padding-top: 4px;
+}
+
+.inner-cases-line > div:first-child {
+    padding-left: 3px;
+    text-align: right;
+    width: 18%;
+    float: left;
+}
+
+.inner-cases-lineUserExM > div:first-child {
+    float: left;
+}
+
+.inner-cases-lineUserExM .value-containerExM .field {
+    margin-right: 22px !important;
+}
+
+    .inner-cases-lineUserExM .value-containerExM .field p {
+        margin-bottom: 5px !important;
+    }
+
+.value-containerExM {
+    background-color: white;
+    width: 100%;
+}
+
+    .value-containerExM .field {
+        margin-bottom: 5px;
+    }
+
+        .value-containerExM .field ul.listRB {
+            margin-left: 15px;
+            display: block;
+        }
+
+            .value-containerExM .field ul.listRB li {
+                display: block;
+                float: none;
+                margin-bottom: 3px;
+            }
+
+
+#filterNameBlock {
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.inner-filter-line {
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.labelFieldExM {
+    width: 85px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.inner-cases-lineGlobaleExM {
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+
+.value-container, .value-containerExM {
+    position: relative;
+}
+
+.selectionField {
+    padding-left: 2px;
+}
+
+.contentCellLAb {
+    float: left;
+}
+
+.value-container {
+    width: 81%;
+    float: right;
+}
+
+.field-value, .field-valueExM {
+    background-color: #f6f6f6;
+    margin-right: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 9pt;
+    border-bottom: #cccbcb dashed 1px;
+}
+
+.field-valueExM {
+    height: 13px;
+    padding: 3px;
+    margin-left: 20px;
+}
+
+.field-value {
+    height: 17px;
+    padding: 3px;
+}
+
+.field-value-delete {
+    width: 148px !important;
+    float: left;
+    text-align: right;
+    margin-right: 8px !important;
+}
+
+.field-btn {
+    text-align: right;
+    top: -17px;
+    right: 11px;
+    font-size: 14px;
+    position: relative;
+}
+
+.field-btn-second {
+    right: -15px;
+    top: -33px;
+    float: right;
+    width: 16px;
+    text-align: right;
+}
+
+.field-catalog {
+    text-align: right;
+    top: -17px;
+    right: 3px;
+    font-size: 14px !important;
+    position: relative;
+}
+
+.field-selector {
+    text-align: right;
+    top: -17px;
+    right: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+.field-picto {
+    left: 7px;
+    position: relative;
+    top: 1px;
+}
+
+.menu-level-0 {
+    display: inline-block;
+    border: solid 1px #cccccc;
+    float: left;
+}
+
+    .menu-level-0 ul {
+        border: solid 1px blue;
+        display: none;
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid #37a7de;
+    }
+
+.inner-cases-line li {
+    font-size: 12px;
+    list-style-type: none;
+    position: relative;
+    width: 214px;
+    background-color: #FFF;
+    height: 18px;
+    padding: 4px;
+    padding-top: 4px;
+    vertical-align: middle;
+}
+
+    .inner-cases-line li:hover {
+        cursor: pointer;
+    }
+
+    .inner-cases-line li > span:first-child {
+        padding: 5px;
+        vertical-align: middle;
+    }
+
+.menu-level-1 li {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+ul.menu-level-1 li,
+ul.menu-level-2 li,
+ul.menu-level-3 li {
+    background-color: #f6f6f6;
+    color: #636363;
+}
+
+    ul.menu-level-1 li:hover,
+    ul.menu-level-2 li:hover,
+    ul.menu-level-3 li:hover {
+        background-color: #37a7de;
+        color: #FFF;
+    }
+
+/* Positionne les items*/
+ul.menu-level-1 {
+    left: -1px;
+    top: 26px;
+    z-index: 1;
+}
+
+ul.menu-level-2 {
+    left: 222px;
+    top: -1px;
+    z-index: 2;
+}
+
+ul.menu-level-3 {
+    left: 222px;
+    top: -1px;
+    z-index: 3;
+}
+
+/* Masque le menu */
+ul.menu-level-1,
+ul.menu-level-2,
+ul.menu-level-3 {
+    display: none;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Déplie le menu*/
+.menu-level-1 > li:hover ul.menu-level-2,
+.menu-level-2 > li:hover ul.menu-level-3 {
+    display: block;
+}
+
+.menu-level-0[display=on] ul.menu-level-1 {
+    display: block;
+}
+
+.menu-level-0[display=off] ul.menu-level-1 {
+    display: none;
+}
+
+.menu-level-0[picto-picker=on] + .picto-ctn {
+    display: inline-block;
+}
+
+.menu-level-0[picto-picker=off] + .picto-ctn {
+    display: none;
+}
+
+.menu-item-arrow, .menu-item-arrow:hover {
+    font-size: 12px !important;
+    margin-top: 4px;
+    float: right;
+    margin-right: 4px;
+    color: inherit !important;
+}
+
+.picto-container {
+    margin: 12px;
+}
+
+.autoButtonAdd {
+    float: right;
+    margin-right: 31px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+    .autoButtonAdd span {
+        font-size: 9pt !important;
+        color: rgb(66, 167, 220) !important;
+        margin-left: 3px;
+    }
+
+.inner-cases[others='1'] .others,
+.inner-cases[describe='1'] .describe,
+.inner-cases[others='1'] .mail,
+.inner-cases[mail='1'] .mail {
+    display: block;
+}
+
+.inner-cases .describe,
+.inner-cases .others,
+.inner-cases .mail {
+    display: none;
+}
+
+.automation-text {
+    width: 406px;
+    height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+/* Appartenances */
+#pnlHeader {
+    margin: 5px 0 10px;
+}
+
+    #pnlHeader .linkButton a {
+        font-size: 9pt;
+    }
+
+.tableWithFixedHeader {
+    border-collapse: collapse;
+}
+
+    .tableWithFixedHeader tbody, .tableWithFixedHeader thead {
+        display: block;
+    }
+
+    .tableWithFixedHeader tbody {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .tableWithFixedHeader th, .tableWithFixedHeader td {
+        padding: 3px 10px;
+    }
+
+    .tableWithFixedHeader tr th {
+        background-color: #DFDFDF;
+        color: #666666;
+    }
+
+    .tableWithFixedHeader tr td {
+        border: none;
+        border-bottom: 1px solid #AEABAB;
+    }
+
+        .tableWithFixedHeader tr td input {
+            height: 14px;
+            border: none;
+            border-bottom: 1px dashed #b6b6b6;
+            font-size: 8pt;
+            text-overflow: ellipsis;
+            padding: 1px;
+            margin: 0;
+            background-color: #f0f0f0;
+            width: 90%;
+            cursor: pointer;
+            padding-left: 3px;
+        }
+
+/* Liste des rubriques */
+#fieldsListContainer {
+    height: 405px;
+    overflow-y: scroll;
+    margin: 0;
+    min-width: 100%;
+    margin-top: 10px;
+}
+
+    #fieldsListContainer table {
+        border-collapse: collapse;
+        min-width: 100%;
+    }
+
+        #fieldsListContainer table li {
+            margin-bottom: 3px;
+            list-style-type: disc;
+            /* list-style-position: outside; */
+            margin-left: 12px;
+        }
+
+        #fieldsListContainer table tr th {
+            background-color: #DFDFDF;
+            color: #666666;
+            line-height: 16px;
+            padding: 0;
+            position: relative;
+            box-sizing: border-box;
+            white-space: nowrap;
+        }
+
+            #fieldsListContainer table tr th > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 3px;
+                word-wrap: break-word;
+            }
+
+            #fieldsListContainer table tr th .buttonsSort {
+                margin-left: 3px;
+                display: none;
+            }
+
+            #fieldsListContainer table tr th:hover div > .buttonsSort {
+                display: inline-block;
+            }
+
+            #fieldsListContainer table tr th .btnSort {
+                font-size: 14pt;
+                margin-right: 2px;
+            }
+
+        #fieldsListContainer table tr td {
+            padding: 2px 5px;
+            line-height: 14px;
+            height: 24px;
+            position: relative;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+            #fieldsListContainer table tr td.edited {
+                color: #8eba3a;
+            }
+
+            #fieldsListContainer table tr td.center {
+                text-align: center;
+            }
+
+            #fieldsListContainer table tr td .btnEdit {
+                font-size: 9pt !important;
+                margin-left: 5px;
+                display: none;
+            }
+
+            #fieldsListContainer table tr td:hover .btnEdit {
+                display: inline-block;
+            }
+
+    #fieldsListContainer .txtValueEdit {
+        width: 100%;
+        box-sizing: border-box;
+        display: none;
+        font-size: 8pt;
+    }
+
+        #fieldsListContainer .txtValueEdit.visible {
+            display: block;
+        }
+
+#bodyAdminFieldsList .eFSContainer {
+    margin-right: 0;
+}
+
+@media print {
+    @page {
+        size: landscape;
+        margin: 5mm 5mm 5mm 5mm;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    #fieldsListContainer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+
+        #fieldsListContainer table {
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 6pt;
+            width: 99%;
+            height: 100%;
+        }
+
+            #fieldsListContainer table tr th {
+                width: auto !important;
+                height: auto;
+                border-color: #000000;
+                border-left: 1px solid;
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+            }
+
+                #fieldsListContainer table tr th.chkCol {
+                    width: 30px !important;
+                }
+
+                #fieldsListContainer table tr th.numCol {
+                    width: 40px !important;
+                }
+
+            #fieldsListContainer table tr {
+                border-color: #000000;
+                border-style: none;
+                border-width: 0;
+            }
+
+                #fieldsListContainer table tr td {
+                    border-color: #000000;
+                    border-left: 1px solid;
+                    border-bottom: 1px solid;
+                    height: auto;
+                    padding: 0 2px;
+                }
+
+                #fieldsListContainer table tr .hiddenForPrint {
+                    display: none;
+                }
+}
+
+
+/*************** END Liste des rubriques *******************/
+
+div.divDescConditionsList {
+    float: none;
+}
+
+div.divActionConditionsList {
+    float: right;
+}
+
+#tableFilters tr.lineEven div.divActionConditionsList.logo_modifs [class^="icon-"] {
+    color: transparent;
+    cursor: default;
+}
+
+#tableFilters tr.lineOdd div.divActionConditionsList.logo_modifs [class^="icon-"] {
+    cursor: default;
+    color: transparent;
+}
+
+#tableFilters tr.lineEven:hover div.divActionConditionsList.logo_modifs [class^="icon-"] {
+    cursor: pointer;
+    color: inherit;
+}
+
+#tableFilters tr.lineOdd:hover div.divActionConditionsList.logo_modifs [class^="icon-"] {
+    cursor: pointer;
+    color: inherit;
+}
+
+#tableFilters tr.lineEven:hover {
+    cursor: pointer;
+    background-color: #A0CFEA;
+}
+
+#tableFilters tr.lineOdd:hover {
+    cursor: pointer;
+    background-color: #A0CFEA;
+}
+
+#formAdminRelations {
+    font-family: Verdana, 'Trebuchet MS';
+}
+
+    #formAdminRelations .choiceTable {
+        height: 385px;
+    }
+
+        #formAdminRelations .choiceTable ul {
+            height: 350px;
+        }
+
+.formulaAst {
+    color: #79BE0B;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+.formulaAstORM {
+    color: hotpink;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+.formulaExternalAst {
+    color: blue;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+.MndAst {
+    color: #bb1515;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+.labelWithAst {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.withAst > span:not(.labelWithAst) {
+    float: right;
+}
+/* Admin de la partie Accès>sécurité */
+#adminAccessSecurity .linkButton {
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+    #adminAccessSecurity .linkButton a {
+        width: 100%;
+    }
+
+/* Admin des preferences */
+#adminAccessPref .linkButton, #adminAccessSecurity .linkButton {
+    width: 350px;
+    margin-top: 20px;
+}
+
+    #adminAccessPref .linkButton a {
+        width: 100%;
+    }
+
+
+/* Admin des langues */
+
+#tableLang {
+    margin: auto;
+}
+
+    #tableLang th, #tableLang td {
+        /*vertical-align: middle;*/
+        text-align: center;
+        padding: 5px;
+    }
+
+    #tableLang select {
+        width: auto;
+        font-family: Verdana, 'Trebuchet MS';
+    }
+
+    #tableLang input[type='text'] {
+        font-family: Verdana, 'Trebuchet MS';
+        padding-left: 3px;
+    }
+
+    #tableLang .txtCode {
+        width: 80px;
+    }
+
+    #tableLang .icon-delete {
+        font-size: 12pt;
+    }
+
+div[id^="mobileTabList_"], div[id^="mobileFieldList_"], div[id^="sireneFieldList_"] {
+    width: 100%;
+}
+
+
+div.fieldinfosection > label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+div.fieldinfosection > input {
+    display: inline-block;
+    width: 35%;
+    text-align: left;
+    margin-left: 10px;
+    -webkit-touch-callout: initial;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    cursor: pointer;
+    background-color: #dedede;
+}
+
+
+div[id^="mobileTabList_"] > label, div[id^="mobileFieldList_"] > label, div[id^="sireneFieldList_"] > label,
+div.DropDownMapping > label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+div[id^="mobileTabList_"] > a, div[id^="mobileFieldList_"] > a, div[id^="sireneFieldList_"] > a {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+div[id^="mobileTabList_"] > select, div[id^="mobileFieldList_"] > select, div[id^="sireneFieldList_"] > select,
+div.DropDownMapping > select {
+    display: inline-block;
+    width: 35%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+div[id^="mobileTabList_"][disabled=disabled] > *, div[id^="mobileFieldList_"][disabled=disabled] > *, div[id^="sireneFieldList_"][disabled=disabled] > * {
+    color: #A5A4A8;
+}
+
+div[id^="mobileTabList_"] {
+    font-weight: bold;
+}
+
+
+ul.copyPrefLabelUl {
+    list-style-type: none;
+}
+
+    ul.copyPrefLabelUl li.copyPrefLabelLI:before {
+        content: "- ";
+        margin-left: 50px;
+    }
+
+    ul.copyPrefLabelUl li {
+        margin-top: 5px;
+    }
+
+li.copyPref input.edaPrefInputField {
+    width: 220px;
+    font-size: 8pt;
+}
+
+
+div.adminModal div#adminAccessPref .divStep {
+    font-size: 8pt;
+}
+
+
+li.copyPref span.copyPrefLabelField {
+    padding-right: 5px;
+    padding-bottom: 14px;
+    text-align: right;
+}
+
+    li.copyPref span.copyPrefLabelField::after {
+        content: "* ";
+        color: red;
+    }
+
+ul.copyPrefSrcDslUL {
+    display: table;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+    ul.copyPrefSrcDslUL li {
+        display: table-row;
+    }
+
+        ul.copyPrefSrcDslUL li span,
+        ul.copyPrefSrcDslUL li input {
+            display: table-cell;
+        }
+
+        ul.copyPrefSrcDslUL li span.rIco {
+            font-size: 9pt;
+            vertical-align: top;
+            padding-left: 2px;
+        }
+
+        ul.copyPrefSrcDslUL li span.rUsr {
+            font-size: 10pt;
+            vertical-align: middle;
+            padding-left: 4px;
+        }
+
+            ul.copyPrefSrcDslUL li span.rUsr {
+                font-size: 12pt;
+                vertical-align: middle;
+                padding-left: 4px;
+            }
+
+#txtLicenseKey {
+    width: 400px;
+    margin-right: 25px;
+}
+
+/* TABLEAU DE BORD */
+.adminCntntDashboard {
+    overflow: auto;
+}
+
+    .adminCntntDashboard .divStep .panelOffer {
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+#labelOfferInfo {
+    float: left;
+}
+
+#btnDiscover {
+    padding: 7px 20px;
+    margin-left: 40px;
+}
+
+/* RGOD */
+#rgpdConditionsAdminModalContent .stepContent .stepTitle {
+    font-weight: bold;
+}
+
+.txtNbMonths {
+    width: 30px;
+    margin: 0 7px;
+    text-align: right;
+}
+
+.cell.adminTabsDescId span {
+    color: #37A7DE;
+}
+
+/* tabs pour saml2 config */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+    }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+#blockThousandsSep .field {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.feature-beta {
+    background: #794297;
+    color: #FFFFFF;
+    padding: 1px 2px 1px 2px;
+    letter-spacing: 0.1em;
+    position: relative;
+    font-style: italic;
+    left: 12px;
+    font-size: 9px;
+    font-family: Oxygen, sans-serif;
+    font-weight: bold;
+}
+
+
+.xnetTOML {
+    width: 800px;
+    height: 300px;
+}
+
+
+/* US 932 */
+#adminFontSizeWarning {
+    border-radius: 3px;
+    margin: 10px 0px 0px 0px;
+    padding: 5px 10px 5px 10px;
+    border-left: 5px solid #bb1614;
+    border-left-color: rgb(187, 22, 20);
+    background-color: #ffffff !important;
+    border-color: #bb1614;
+    color: #333;
+    font-size: 13px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+/* US 3206 */
+#generateJsonWizardSourceContainer {
+    padding: 10px;
+}
+
+    #generateJsonWizardSourceContainer select {
+        margin-top: 10px;
+        width: 400px;
+    }
+
+#includeOldMailAdress, #mailStatusVerifPlannified {
+    margin-top: 20px;
+    font-size: 10pt;
+}
+
+#launchVerificationMailAdress {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.usr_cat_body input {
+    width: 69%;
+}
+
+@-moz-document url-prefix() {
+    div [ednadmin="1"].usr_cat_body input.usr_search-inpt {
+        width: calc(98% - 75px - 24px);
+    }
+}
+
+select {
+    appearance: auto;
+    font: 400 13.3333px Arial;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+input {
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}

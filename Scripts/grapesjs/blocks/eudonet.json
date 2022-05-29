@@ -1,0 +1,1933 @@
+﻿[
+  {
+    "id": "section1Col",
+    "opts": {
+      "label": "<eudoRes>block1Col</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-b1",
+        "title": "<eudoRes>block1Col</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "Col1", "deviceWidth", "column1" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse"
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "classes": [ "Column" ],
+                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                "style": {
+                  "height": "40px",
+                  "padding": "5px 0px 5px 0px"
+                },
+                "attributes": {
+                  "width": "100%"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "section2Col",
+    "opts": {
+      "label": "<eudoRes>block2Col</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-b2",
+        "title": "<eudoRes>block2Col</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "Col2", "deviceWidth", "column2" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse"
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "classes": [ "Col340", "Column" ],
+                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                "style": {
+                  "height": "48px"
+                },
+                "attributes": {
+                  "valign": "top",
+                  "width": "50%"
+                }
+              },
+              {
+                "type": "cell",
+                "tagName": "td",
+                "classes": [ "Col340", "Column" ],
+                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                "style": {
+                  "height": "48px"
+                },
+                "attributes": {
+                  "valign": "top",
+                  "width": "50%"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "section2Col37",
+    "opts": {
+      "label": "<eudoRes>block2Col37</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-b37",
+        "title": "<eudoRes>block2Col37</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "Col2", "deviceWidth", "column37" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse"
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "classes": [ "Col3070", "Column" ],
+                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                "style": {
+                  "height": "48px"
+                },
+                "attributes": {
+                  "valign": "top",
+                  "width": "30%"
+                }
+              },
+              {
+                "type": "cell",
+                "tagName": "td",
+                "classes": [ "Col3070", "Column" ],
+                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                "style": {
+                  "height": "48px"
+                },
+                "attributes": {
+                  "valign": "top",
+                  "width": "70%"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "SimpleText",
+    "opts": {
+      "label": "<eudoRes>blockSimpleText</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-text",
+        "title": "<eudoRes>blockSimpleText</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "simpleText", "deviceWidth", "texte" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse"
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "classes": [ "NonDroppableCell" ],
+                "droppable": false,
+                "style": {
+                  "padding": "10px"
+                },
+                "attributes": {
+                  "width": "100%"
+                },
+                "components": [
+                  {
+                    "type": "text",
+                    "tagName": "div",
+                    "classes": [ "DivTxt" ],
+                    "content": "<eudoRes>contentSimpleText</eudoRes>",
+                    "style": {
+                      "padding": "5px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "ButtonItem",
+    "opts": {
+      "label": "<eudoRes>blockButton</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-button",
+        "title": "<eudoRes>blockButton</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "Col1", "deviceWidth", "button" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse"
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "classes": [ "NonDroppableCell" ],
+                "droppable": false,
+                "style": {
+                  "height": "39px",
+                  "padding": "5px 0 5px 0"
+                },
+                "attributes": {},
+                "components": {
+                  "type": "table",
+                  "classes": [ "btnEudonetTable" ],
+                  "attributes": {
+                    "align": "center",
+                    "st-button": "edit",
+                    "border": "0",
+                    "cellpadding": "0",
+                    "cellspacing": "0"
+                  },
+                  "style": {
+                    "border-collapse": "collapse"
+                  },
+                  "components": [
+                    {
+                      "type": "row",
+                      "tagName": "tr",
+                      "attributes": {
+                        "align": "center"
+                      },
+                      "components": [
+                        {
+                          "type": "cell",
+                          "tagName": "td",
+                          "classes": [ "NonDroppableCell" ],
+                          "droppable": false,
+                          "attributes": {
+                            "st-content": "read-more-button",
+                            "align": "center"
+                          },
+                          "style": {
+                            "background-color": "#fff",
+                            "width": "100%",
+                            "padding": "10px",
+                            "border": "1px solid #a2a2a2",
+                            "display": "block"
+                          },
+                          "components": [
+                            {
+                              "name": "<eudoRes>blockButton</eudoRes>",
+                              "type": "text",
+                              "activeOnRender": 1,
+                              "editable": true,
+                              "tagName": "div",
+                              "classes": [ "eudonet-extended-container-button" ],
+                              "childTagName": "button",
+                              "style": {
+                                "text-align": "center",
+                                "color": "#444"
+                              },
+                              "attributes": {
+                                "contenteditable": true,
+                                "align": "center"
+                              },
+                              "components": [
+                                {
+                                  "type": "link",
+                                  "tagName": "a",
+                                  "activeOnRender": 1,
+                                  "editable": true,
+                                  "content": "<eudoRes>contentButton</eudoRes>",
+                                  "attributes": {
+                                    "href": "#!",
+                                    "contenteditable": true,
+                                    "align": "center"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "ImageEudo",
+    "opts": {
+      "label": "<eudoRes>blockImage</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-image",
+        "title": "<eudoRes>blockImage</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "Col1", "deviceWidth", "image" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse"
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "classes": [ "NonDroppableCell" ],
+                "droppable": false,
+                "style": {
+                  "height": "39px",
+                  "padding": "5px 0 5px 0",
+                  "text-align": "center"
+                },
+                "components": {
+                  "tagName": "div",
+                  "type": "eudonet-extended-image",
+                  "activeOnRender": 1,
+                  "editable": true,
+                  "content": "",
+                  "classes": [ "ImageSimple", "eudonet-extended-container-image" ],
+                  "childTagName": "image",
+                  "extendedComponentParameters": {
+                    "src": "_eudoServerUrl_/themes/default/images/image_GrapesJS_150.jpg",
+                    "style": {
+                      "height": "auto"
+                    }
+                  },
+                  "style": {
+                    "text-align": "center",
+                    "display": "inline-block"
+                  },
+                  "attributes": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "section1ColList",
+    "opts": {
+      "label": "<eudoRes>blockList1Col</eudoRes>",
+      "attributes": {
+        "class": "icon-eudofont icon-article",
+        "title": "<eudoRes>blockList1Col</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "Col2", "deviceWidth", "article" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse"
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "droppable": false,
+                "classes": [ "Col3070", "NonDroppableCell" ],
+                "style": {
+                  "height": "48px"
+                },
+                "attributes": {
+                  "valign": "top",
+                  "width": "30%"
+                },
+                "components": [
+                  {
+                    "type": "table",
+                    "classes": [ "Col1", "deviceWidth" ],
+                    "attributes": {
+                      "border": "0",
+                      "cellpadding": "0",
+                      "cellspacing": "0",
+                      "width": "100%"
+                    },
+                    "style": {
+                      "border-collapse": "collapse"
+                    },
+                    "components": [
+                      {
+                        "type": "row",
+                        "tagName": "tr",
+                        "components": [
+                          {
+                            "type": "cell",
+                            "tagName": "td",
+                            "droppable": false,
+                            "classes": [ "NonDroppableCell" ],
+                            "style": {
+                              "height": "39px",
+                              "padding": "5px 0 5px 0",
+                              "text-align": "center"
+                            },
+                            "components": {
+                              "tagName": "div",
+                              "type": "eudonet-extended-image",
+                              "activeOnRender": 1,
+                              "content": "",
+                              "editable": true,
+                              "classes": [ "ImageSimple", "eudonet-extended-container-image" ],
+                              "childTagName": "image",
+                              "extendedComponentParameters": {
+                                "src": "_eudoServerUrl_/themes/default/images/image_GrapesJS_150.jpg",
+                                "style": {
+                                  "height": "auto"
+                                }
+                              },
+                              "style": {
+                                "text-align": "center",
+                                "display": "inline-block"
+                              },
+                              "attributes": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "cell",
+                "tagName": "td",
+                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.separator",
+                "classes": [ "Col3070" ],
+                "style": {
+                  "height": "48px"
+                },
+                "attributes": {
+                  "valign": "top",
+                  "width": "70%"
+                },
+                "components": [
+                  {
+                    "type": "table",
+                    "classes": [ "simpleText", "deviceWidth" ],
+                    "attributes": {
+                      "border": "0",
+                      "cellpadding": "0",
+                      "cellspacing": "0",
+                      "width": "100%"
+                    },
+                    "style": {
+                      "border-collapse": "collapse"
+
+                    },
+                    "components": [
+                      {
+                        "type": "row",
+                        "tagName": "tr",
+                        "components": [
+                          {
+                            "type": "cell",
+                            "tagName": "td",
+                            "droppable": false,
+                            "classes": [ "NonDroppableCell" ],
+                            "style": {
+                              "padding": "5px 10px 5px 10px"
+                            },
+                            "attributes": {
+                              "width": "100%"
+                            },
+                            "components": [
+                              {
+                                "type": "text",
+                                "tagName": "div",
+                                "content": "<eudoRes>contentList1Col</eudoRes>",
+                                "style": {
+                                  "padding": "0 5px 0px 5px",
+                                  "font-size": "20px"
+                                },
+                                "classes": [ "DivTxt" ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "table",
+                    "classes": [ "simpleText", "deviceWidth" ],
+                    "attributes": {
+                      "border": "0",
+                      "cellpadding": "0",
+                      "cellspacing": "0",
+                      "width": "100%"
+                    },
+                    "style": {
+                      "border-collapse": "collapse"
+
+                    },
+                    "components": [
+                      {
+                        "type": "row",
+                        "tagName": "tr",
+                        "components": [
+                          {
+                            "type": "cell",
+                            "tagName": "td",
+                            "droppable": false,
+                            "classes": [ "NonDroppableCell" ],
+                            "style": {
+                              "padding": "5px 10px 5px 10px"
+                            },
+                            "attributes": {
+                              "width": "100%"
+                            },
+                            "components": [
+                              {
+                                "type": "text",
+                                "tagName": "div",
+                                "classes": [ "DivTxt" ],
+                                "content": "Et Eusebius Epigonum Emissa sint concitatus intepesceret Epigonus intepesceret intepesceret quaerebatur et insimulasset Lycia quia.",
+                                "style": {
+                                  "padding": "0 5px 0px 5px"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "table",
+                    "copyable": false,
+                    "classes": [ "Col1", "deviceWidth" ],
+                    "attributes": {
+                      "border": "0",
+                      "cellpadding": "0",
+                      "cellspacing": "0",
+                      "width": "100%"
+                    },
+                    "style": {
+                      "border-collapse": "collapse"
+
+                    },
+                    "components": [
+                      {
+                        "type": "row",
+                        "tagName": "tr",
+                        "components": [
+                          {
+                            "type": "cell",
+                            "tagName": "td",
+                            "droppable": false,
+                            "classes": [ "NonDroppableCell" ],
+                            "style": {
+                              "height": "39px",
+                              "padding": "5px 10px 5px 10px"
+                            },
+                            "attributes": {},
+                            "components": {
+                              "type": "table",
+                              "classes": [ "btnEudonetTable" ],
+                              "attributes": {
+                                "align": "left",
+                                "st-button": "edit",
+                                "border": "0",
+                                "cellpadding": "0",
+                                "cellspacing": "0"
+                              },
+                              "style": {
+                                "border-collapse": "collapse"
+                              },
+                              "components": [
+                                {
+                                  "type": "row",
+                                  "tagName": "tr",
+                                  "attributes": {
+                                    "align": "center"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "cell",
+                                      "tagName": "td",
+                                      "droppable": false,
+                                      "classes": [ "NonDroppableCell" ],
+                                      "attributes": {
+                                        "st-content": "read-more-button",
+                                        "align": "center"
+                                      },
+                                      "style": {
+                                        "background-color": "#fff",
+                                        "width": "100%",
+                                        "padding": "10px",
+                                        "border": "1px solid #a2a2a2",
+                                        "display": "block"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "text",
+                                          "tagName": "div",
+                                          "editable": true,
+                                          "components": [
+                                            {
+                                              "type": "eudonet-extended-button",
+                                              "activeOnRender": 1,
+                                              "editable": true,
+                                              "tagName": "div",
+                                              "classes": [ "eudonet-extended-container-button" ],
+                                              "childTagName": "button",
+                                              "extendedComponentParameters": {
+                                                "href": "#!",
+                                                "content": "<eudoRes>contentButton</eudoRes>",
+                                                "editable": true,
+                                                "droppable": false
+                                              },
+                                              "style": {
+                                                "text-align": "center",
+                                                "color": "#444"
+                                              },
+                                              "attributes": {
+                                                "href": "#!",
+                                                "align": "center"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "sectionSeparateur",
+    "opts": {
+      "label": "<eudoRes>blockDivider</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-divider",
+        "title": "<eudoRes>blockDivider</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "Col1", "deviceWidth", "separator" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse"
+
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "classes": [ "NonDroppableCell" ],
+                "droppable": false,
+                "style": {
+                  "height": "5px",
+                  "padding": "5px 5px 0px 0px",
+                  "font-size": "0px",
+                  "background": "#f1f1f1"
+                },
+                "attributes": {
+                  "width": "100%"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "sectionHeader",
+    "opts": {
+      "label": "<eudoRes>blockHeader</eudoRes>",
+      "attributes": {
+        "class": "icon-eudofont icon-windowHeader",
+        "title": "<eudoRes>blockHeader</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "Col1", "deviceWidth", "header" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "border-collapse": "collapse"
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                "classes": [ "Column" ],
+                "style": {
+                },
+                "attributes": {
+                  "width": "100%"
+                },
+                "components": {
+                  "type": "table",
+                  "classes": [ "deviceWidth" ],
+                  "attributes": {
+                    "border": "0",
+                    "cellpadding": "0",
+                    "cellspacing": "0",
+                    "align": "center"
+                  },
+                  "style": {
+                    "border-collapse": "collapse"
+                  },
+                  "components": [
+                    {
+                      "type": "row",
+                      "tagName": "tr",
+                      "components": [
+                        {
+                          "type": "cell",
+                          "tagName": "td",
+                          "classes": [ "Column" ],
+                          "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                          "style": {
+                            "padding": "10px 0px 10px 0px"
+                          },
+                          "attributes": {
+                            "width": "100%"
+                          },
+                          "components": {
+                            "type": "table",
+                            "classes": [ "simpleText", "deviceWidth" ],
+                            "attributes": {
+                              "border": "0",
+                              "cellpadding": "0",
+                              "cellspacing": "0",
+                              "align": "center"
+                            },
+                            "style": {
+                              "border-collapse": "collapse"
+                            },
+                            "components": [
+                              {
+                                "type": "row",
+                                "tagName": "tr",
+                                "components": [
+                                  {
+                                    "type": "cell",
+                                    "tagName": "td",
+                                    "classes": [ "NonDroppableCell" ],
+                                    "droppable": false,
+                                    "style": {
+                                      "padding": "10px 0px 10px 0px",
+                                      "width": "680px"
+                                    },
+                                    "attributes": {
+                                      "width": "100%"
+                                    },
+                                    "components": [
+                                      {
+                                        "type": "text",
+                                        "tagName": "div",
+                                        "classes": [ "DivTxt" ],
+                                        "content": "<span style=\"font-size:10pt\"><eudoRes>contentLinkLeftHeader</eudoRes> <a data-cke-saved-href='#' ednt='' ednn='' ednd='' ednc='visu' href='#'><eudoRes>contentLinkRightHeader</eudoRes>.</a></span>",
+                                        "style": {
+                                          "margin": "3px 0 0 0",
+                                          "padding": "0 5px 0px 5px",
+                                          "text-align": "center"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "sectionBody",
+    "opts": {
+      "label": "<eudoRes>blockBody</eudoRes>",
+      "attributes": {
+        "class": "icon-eudofont icon-windowBody",
+        "title": "<eudoRes>blockBody</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "Col1", "deviceWidth", "body" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "border-collapse": "collapse"
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                "classes": [ "Column" ],
+                "style": {
+                },
+                "attributes": {
+                  "width": "100%"
+                },
+                "components": {
+                  "type": "table",
+                  "classes": [ "deviceWidth" ],
+                  "attributes": {
+                    "border": "0",
+                    "cellpadding": "0",
+                    "cellspacing": "0",
+                    "align": "center"
+                  },
+                  "style": {
+                    "border-collapse": "collapse"
+                  },
+                  "components": [
+                    {
+                      "type": "row",
+                      "tagName": "tr",
+                      "components": [
+                        {
+                          "type": "cell",
+                          "tagName": "td",
+                          "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                          "classes": [ "Column" ],
+                          "style": {
+                            "padding": "10px 0px 10px 0px",
+                            "width": "680px"
+                          },
+                          "attributes": {
+                            "width": "100%"
+                          },
+                          "components": {
+                            "type": "table",
+                            "classes": [ "simpleText", "deviceWidth" ],
+                            "attributes": {
+                              "border": "0",
+                              "cellpadding": "0",
+                              "cellspacing": "0",
+                              "width": "100%"
+                            },
+                            "style": {
+                              "margin": "5px 0 0 0",
+                              "border-collapse": "collapse"
+
+                            },
+                            "components": [
+                              {
+                                "type": "row",
+                                "tagName": "tr",
+                                "components": [
+                                  {
+                                    "type": "cell",
+                                    "tagName": "td",
+                                    "classes": [ "NonDroppableCell" ],
+                                    "droppable": false,
+                                    "style": {
+                                      "padding": "10px"
+                                    },
+                                    "attributes": {
+                                      "width": "100%"
+                                    },
+                                    "components": [
+                                      {
+                                        "type": "text",
+                                        "tagName": "div",
+                                        "classes": [ "DivTxt" ],
+                                        "content": "<eudoRes>contentSimpleText</eudoRes>",
+                                        "style": {
+                                          "padding": "5px"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "sectionFooter",
+    "opts": {
+      "label": "<eudoRes>blockFooter</eudoRes>",
+      "attributes": {
+        "class": "icon-eudofont icon-windowFooter",
+        "title": "<eudoRes>blockFooter</eudoRes>"
+      },
+      "content": {
+        "type": "table",
+        "classes": [ "Col1", "deviceWidth", "footer" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "border-collapse": "collapse"
+        },
+        "components": [
+          {
+            "type": "row",
+            "tagName": "tr",
+            "components": [
+              {
+                "type": "cell",
+                "tagName": "td",
+                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                "classes": [ "Column" ],
+                "style": {
+                },
+                "attributes": {
+                  "width": "100%"
+                },
+                "components": {
+                  "type": "table",
+                  "classes": [ "Col1", "deviceWidth" ],
+                  "attributes": {
+                    "border": "0",
+                    "cellpadding": "0",
+                    "cellspacing": "0",
+                    "width": "100%"
+                  },
+                  "style": {
+                    "border-collapse": "collapse"
+
+                  },
+                  "components": [
+                    {
+                      "type": "row",
+                      "tagName": "tr",
+                      "components": [
+                        {
+                          "type": "cell",
+                          "tagName": "td",
+                          "classes": [ "Column" ],
+                          "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                          "style": {
+                          },
+                          "attributes": {
+                            "width": "100%"
+                          },
+                          "components": {
+                            "type": "table",
+                            "classes": [ "simpleText", "deviceWidth" ],
+                            "attributes": {
+                              "border": "0",
+                              "cellpadding": "0",
+                              "cellspacing": "0",
+                              "align": "center"
+                            },
+                            "style": {
+                              "border-collapse": "collapse"
+                            },
+                            "components": [
+                              {
+                                "type": "row",
+                                "tagName": "tr",
+                                "components": [
+                                  {
+                                    "type": "cell",
+                                    "tagName": "td",
+                                    "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                                    "classes": [ "Column" ],
+                                    "style": {
+                                      "padding": "10px 0px 10px 0px",
+                                      "width": "680px"
+                                    },
+                                    "attributes": {
+                                      "width": "100%"
+                                    },
+                                    "components": [
+                                      {
+                                        "type": "table",
+                                        "classes": [ "Col2", "deviceWidth" ],
+                                        "attributes": {
+                                          "border": "0",
+                                          "cellpadding": "0",
+                                          "cellspacing": "0",
+                                          "width": "100%"
+                                        },
+                                        "style": {
+                                          "margin": "3px 0 0 0",
+                                          "border-collapse": "collapse"
+
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "row",
+                                            "tagName": "tr",
+                                            "components": [
+                                              {
+                                                "type": "cell",
+                                                "tagName": "td",
+                                                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                                                "classes": [ "Col340", "Column" ],
+                                                "style": {
+                                                  "padding": "10px"
+                                                },
+                                                "attributes": {
+                                                  "valign": "top",
+                                                  "width": "50%"
+                                                },
+                                                "components": [
+                                                  {
+                                                    "type": "table",
+                                                    "classes": [ "Col2", "deviceWidth" ],
+                                                    "attributes": {
+                                                      "border": "0",
+                                                      "cellpadding": "0",
+                                                      "cellspacing": "0",
+                                                      "width": "100%"
+
+                                                    },
+                                                    "style": {
+                                                      "margin": "3px 0 0 0",
+                                                      "border-collapse": "collapse"
+
+                                                    },
+                                                    "components": [
+                                                      {
+                                                        "type": "row",
+                                                        "tagName": "tr",
+                                                        "components": [
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                                                            "classes": [ "Col1585", "Column" ],
+                                                            "style": {
+                                                            },
+                                                            "attributes": {
+                                                              "valign": "top",
+                                                              "width": "15%"
+                                                            },
+                                                            "components": {
+                                                              "type": "table",
+                                                              "classes": [ "Col1", "deviceWidth" ],
+                                                              "attributes": {
+                                                                "border": "0",
+                                                                "cellpadding": "0",
+                                                                "cellspacing": "0",
+                                                                "width": "100%"
+                                                              },
+                                                              "style": {
+                                                                "border-collapse": "collapse"
+
+                                                              },
+                                                              "components": [
+                                                                {
+                                                                  "type": "row",
+                                                                  "tagName": "tr",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "cell",
+                                                                      "tagName": "td",
+                                                                      "classes": [ "NonDroppableCell" ],
+                                                                      "droppable": false,
+                                                                      "style": {
+                                                                        "height": "57px",
+                                                                        "text-align": "center"
+                                                                      },
+                                                                      "components": {
+                                                                        "tagName": "div",
+                                                                        "type": "eudonet-extended-image",
+                                                                        "activeOnRender": 1,
+                                                                        "content": "",
+                                                                        "editable": true,
+                                                                        "classes": [ "ImageSimple", "eudonet-extended-container-image" ],
+                                                                        "childTagName": "image",
+                                                                        "extendedComponentParameters": {
+                                                                          "src": "_eudoServerUrl_/themes/default/images/simpleIcon/black-map.png",
+                                                                          "style": {
+                                                                          }
+                                                                        },
+                                                                        "style": {
+                                                                          "text-align": "center",
+                                                                          "display": "inline-block"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          },
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                                                            "classes": [ "Col1585", "Column" ],
+                                                            "style": {
+                                                            },
+                                                            "attributes": {
+                                                              "valign": "top",
+                                                              "width": "85%"
+                                                            },
+                                                            "components": {
+                                                              "type": "table",
+                                                              "classes": [ "simpleText", "deviceWidth" ],
+                                                              "attributes": {
+                                                                "border": "0",
+                                                                "cellpadding": "0",
+                                                                "cellspacing": "0",
+                                                                "width": "100%"
+                                                              },
+                                                              "style": {
+                                                                "border-collapse": "collapse"
+
+                                                              },
+                                                              "components": [
+                                                                {
+                                                                  "type": "row",
+                                                                  "tagName": "tr",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "cell",
+                                                                      "tagName": "td",
+                                                                      "classes": [ "NonDroppableCell" ],
+                                                                      "droppable": false,
+                                                                      "style": {
+                                                                        "height": "57px"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "width": "100%"
+                                                                      },
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "text",
+                                                                          "tagName": "div",
+                                                                          "classes": [ "DivTxt" ],
+                                                                          "content": "<span style=\"color:#444\">21 Revolution Street<br><strong>​​​​​​​Paris, France</strong></span>",
+                                                                          "style": {
+                                                                            "padding": "3px",
+                                                                            "text-align": "left"
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "type": "table",
+                                                    "classes": [ "Col2", "deviceWidth" ],
+                                                    "attributes": {
+                                                      "border": "0",
+                                                      "cellpadding": "0",
+                                                      "cellspacing": "0",
+                                                      "width": "100%"
+
+                                                    },
+                                                    "style": {
+                                                      "margin": "3px 0 0px 0",
+                                                      "border-collapse": "collapse"
+
+                                                    },
+                                                    "components": [
+                                                      {
+                                                        "type": "row",
+                                                        "tagName": "tr",
+                                                        "components": [
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                                                            "classes": [ "Col1585", "Column" ],
+                                                            "style": {
+                                                            },
+                                                            "attributes": {
+                                                              "valign": "top",
+                                                              "width": "15%"
+                                                            },
+                                                            "components": {
+                                                              "type": "table",
+                                                              "classes": [ "Col1", "deviceWidth" ],
+                                                              "attributes": {
+                                                                "border": "0",
+                                                                "cellpadding": "0",
+                                                                "cellspacing": "0",
+                                                                "width": "100%"
+                                                              },
+                                                              "style": {
+                                                                "border-collapse": "collapse"
+
+                                                              },
+                                                              "components": [
+                                                                {
+                                                                  "type": "row",
+                                                                  "tagName": "tr",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "cell",
+                                                                      "tagName": "td",
+                                                                      "classes": [ "NonDroppableCell" ],
+                                                                      "droppable": false,
+                                                                      "style": {
+                                                                        "height": "50px",
+                                                                        "text-align": "center"
+                                                                      },
+                                                                      "components": {
+                                                                        "tagName": "div",
+                                                                        "type": "eudonet-extended-image",
+                                                                        "activeOnRender": 1,
+                                                                        "content": "",
+                                                                        "editable": true,
+                                                                        "classes": [ "ImageSimple", "eudonet-extended-container-image" ],
+                                                                        "childTagName": "image",
+                                                                        "extendedComponentParameters": {
+                                                                          "src": "_eudoServerUrl_/themes/default/images/simpleIcon/black-tel.png",
+                                                                          "style": {
+                                                                          }
+                                                                        },
+                                                                        "style": {
+                                                                          "text-align": "center",
+                                                                          "display": "inline-block"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          },
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                                                            "classes": [ "Col1585", "Column" ],
+                                                            "style": {
+                                                            },
+                                                            "attributes": {
+                                                              "valign": "top",
+                                                              "width": "85%"
+                                                            },
+                                                            "components": {
+                                                              "type": "table",
+                                                              "classes": [ "simpleText", "deviceWidth" ],
+                                                              "attributes": {
+                                                                "border": "0",
+                                                                "cellpadding": "0",
+                                                                "cellspacing": "0",
+                                                                "width": "100%"
+                                                              },
+                                                              "style": {
+                                                                "border-collapse": "collapse"
+
+                                                              },
+                                                              "components": [
+                                                                {
+                                                                  "type": "row",
+                                                                  "tagName": "tr",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "cell",
+                                                                      "tagName": "td",
+                                                                      "classes": [ "NonDroppableCell" ],
+                                                                      "droppable": false,
+                                                                      "style": {
+                                                                        "height": "50px"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "width": "100%"
+                                                                      },
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "text",
+                                                                          "tagName": "div",
+                                                                          "classes": [ "DivTxt" ],
+                                                                          "content": "<span style=\"color:#444\"><strong>01 00 00 00 00</strong></span>",
+                                                                          "style": {
+                                                                            "padding": "3px",
+                                                                            "text-align": "left"
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "type": "table",
+                                                    "classes": [ "Col2", "deviceWidth" ],
+                                                    "attributes": {
+                                                      "border": "0",
+                                                      "cellpadding": "0",
+                                                      "cellspacing": "0",
+                                                      "width": "100%"
+
+                                                    },
+                                                    "style": {
+                                                      "margin": "3px 0 0 0",
+                                                      "border-collapse": "collapse"
+
+                                                    },
+                                                    "components": [
+                                                      {
+                                                        "type": "row",
+                                                        "tagName": "tr",
+                                                        "components": [
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                                                            "classes": [ "Col1585", "Column" ],
+                                                            "style": {
+                                                            },
+                                                            "attributes": {
+                                                              "valign": "top",
+                                                              "width": "15%"
+                                                            },
+                                                            "components": {
+                                                              "type": "table",
+                                                              "classes": [ "column1", "deviceWidth" ],
+                                                              "attributes": {
+                                                                "border": "0",
+                                                                "cellpadding": "0",
+                                                                "cellspacing": "0",
+                                                                "width": "100%"
+                                                              },
+                                                              "style": {
+                                                                "border-collapse": "collapse"
+
+                                                              },
+                                                              "components": [
+                                                                {
+                                                                  "type": "row",
+                                                                  "tagName": "tr",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "cell",
+                                                                      "tagName": "td",
+                                                                      "classes": [ "NonDroppableCell" ],
+                                                                      "droppable": false,
+                                                                      "style": {
+                                                                        "height": "50px",
+                                                                        "text-align": "center"
+                                                                      },
+                                                                      "components": {
+                                                                        "tagName": "div",
+                                                                        "type": "eudonet-extended-image",
+                                                                        "activeOnRender": 1,
+                                                                        "content": "",
+                                                                        "editable": true,
+                                                                        "classes": [ "ImageSimple", "eudonet-extended-container-image" ],
+                                                                        "childTagName": "image",
+                                                                        "extendedComponentParameters": {
+                                                                          "src": "_eudoServerUrl_/themes/default/images/simpleIcon/black-letter.png",
+                                                                          "style": {
+                                                                          }
+                                                                        },
+                                                                        "style": {
+                                                                          "text-align": "center",
+                                                                          "display": "inline-block"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          },
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                                                            "classes": [ "Col1585", "Column" ],
+                                                            "style": {
+                                                            },
+                                                            "attributes": {
+                                                              "valign": "top",
+                                                              "width": "85%"
+                                                            },
+                                                            "components": {
+                                                              "type": "table",
+                                                              "classes": [ "simpleText", "deviceWidth" ],
+                                                              "attributes": {
+                                                                "border": "0",
+                                                                "cellpadding": "0",
+                                                                "cellspacing": "0",
+                                                                "width": "100%"
+                                                              },
+                                                              "style": {
+                                                                "border-collapse": "collapse"
+
+                                                              },
+                                                              "components": [
+                                                                {
+                                                                  "type": "row",
+                                                                  "tagName": "tr",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "cell",
+                                                                      "tagName": "td",
+                                                                      "classes": [ "NonDroppableCell" ],
+                                                                      "droppable": false,
+                                                                      "style": {
+                                                                        "height": "50px"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "width": "100%"
+                                                                      },
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "text",
+                                                                          "tagName": "div",
+                                                                          "classes": [ "DivTxt" ],
+                                                                          "content": "<a data-cke-saved-href=\"mailto:monemail@votresociete.com?subject=Mon%20sujet&amp;body=Mon%20message\" ednt=\"on\" ednn=\"\" ednd=\"0\" ednc=\"lnk\" href=\"mailto:monemail@votresociete.com?subject=Mon%20sujet&amp;body=Mon%20message\"><span style=\"color:#444\"><strong>monemail@votresociete.com</strong></span></a>",
+                                                                          "style": {
+                                                                            "padding": "3px",
+                                                                            "text-align": "left"
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "type": "cell",
+                                                "tagName": "td",
+                                                "droppable": ".column1,.column2,.column37,.texte,.button,.image,.article,.separator",
+                                                "classes": [ "Col340", "Column" ],
+                                                "style": {
+                                                  "padding": "10px",
+                                                  "height": "48px"
+                                                },
+                                                "attributes": {
+                                                  "valign": "top",
+                                                  "width": "50%"
+                                                },
+                                                "components": [
+                                                  {
+                                                    "type": "table",
+                                                    "classes": [ "simpleText", "deviceWidth" ],
+                                                    "attributes": {
+                                                      "border": "0",
+                                                      "cellpadding": "0",
+                                                      "cellspacing": "0",
+                                                      "width": "100%"
+                                                    },
+                                                    "style": {
+                                                      "margin": "3px 0 0 0",
+                                                      "border-collapse": "collapse"
+
+                                                    },
+                                                    "components": [
+                                                      {
+                                                        "type": "row",
+                                                        "tagName": "tr",
+                                                        "components": [
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "classes": [ "NonDroppableCell" ],
+                                                            "droppable": false,
+                                                            "style": {
+                                                              "padding": "5px"
+                                                            },
+                                                            "attributes": {
+                                                              "width": "100%"
+                                                            },
+                                                            "components": [
+                                                              {
+                                                                "type": "text",
+                                                                "tagName": "div",
+                                                                "classes": [ "DivTxt" ],
+                                                                "content": "<strong><eudoRes>contentTitreFooter</eudoRes></strong>",
+                                                                "style": {
+                                                                  "padding": "5px"
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "type": "table",
+                                                    "classes": [ "simpleText", "deviceWidth" ],
+                                                    "attributes": {
+                                                      "border": "0",
+                                                      "cellpadding": "0",
+                                                      "cellspacing": "0",
+                                                      "width": "100%"
+                                                    },
+                                                    "style": {
+                                                      "margin": "3px 0 0 0",
+                                                      "border-collapse": "collapse"
+
+                                                    },
+                                                    "components": [
+                                                      {
+                                                        "type": "row",
+                                                        "tagName": "tr",
+                                                        "components": [
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "classes": [ "NonDroppableCell" ],
+                                                            "droppable": false,
+                                                            "style": {
+                                                              "padding": "5px 5px 5px 5px"
+                                                            },
+                                                            "attributes": {
+                                                              "width": "100%"
+                                                            },
+                                                            "components": [
+                                                              {
+                                                                "type": "text",
+                                                                "tagName": "div",
+                                                                "classes": [ "DivTxt" ],
+                                                                "content": "<span style=\"color:#808080;font-size:10pt\"><eudoRes>contentTextFooter</eudoRes></span>",
+                                                                "style": {
+                                                                  "padding": "5px"
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "type": "table",
+                                                    "classes": [ "Col2", "deviceWidth" ],
+                                                    "attributes": {
+                                                      "border": "0",
+                                                      "cellpadding": "0",
+                                                      "cellspacing": "0",
+                                                      "width": "100%"
+                                                    },
+                                                    "style": {
+                                                      "margin": "3px 0 0 0",
+                                                      "border-collapse": "collapse"
+
+                                                    },
+                                                    "components": [
+                                                      {
+                                                        "type": "row",
+                                                        "tagName": "tr",
+                                                        "components": [
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "classes": ["ColAuto","NonDroppableCell" ],
+                                                              "droppable": false,
+                                                              "style": {
+                                                                "width": "auto",
+                                                                "padding": "10px"
+                                                              },
+                                                              "attributes":
+                                                              {
+                                                                "valign": "top",
+                                                                "width": "auto"
+                                                              },
+                                                              "components":
+                                                              {
+                                                                "tagName": "div",
+                                                                "type": "eudonet-extended-image",
+                                                                "activeOnRender": 1,
+                                                                "content": "",
+                                                                "editable": true,
+                                                                "classes": [ "ImageSimple", "eudonet-extended-container-image" ],
+                                                                "childTagName": "image",
+                                                                "extendedComponentParameters": {
+                                                                  "src": "_eudoServerUrl_/themes/default/images/social/gjs-facebook.png",
+                                                                  "style": {}
+                                                                },
+                                                                "style": {
+                                                                  "text-align": "center"
+                                                                }
+                                                              }
+                                                          },
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "classes": [ "ColAuto", "NonDroppableCell" ],
+                                                            "droppable": false,
+                                                            "style": {
+                                                              "width": "auto",
+                                                              "padding": "10px"
+                                                            },
+                                                            "attributes": {
+                                                              "valign": "top",
+                                                              "width": "auto"
+                                                            },
+                                                            "components": {
+                                                              "tagName": "div",
+                                                              "type": "eudonet-extended-image",
+                                                              "activeOnRender": 1,
+                                                              "content": "",
+                                                              "editable": true,
+                                                              "classes": [ "ImageSimple", "eudonet-extended-container-image" ],
+                                                              "childTagName": "image",
+                                                              "extendedComponentParameters": {
+                                                                "src": "_eudoServerUrl_/themes/default/images/social/gjs-twiter.png",
+                                                                "style": {
+                                                                }
+                                                              },
+                                                              "style": {
+                                                                "text-align": "center"
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "classes": [ "ColAuto", "NonDroppableCell" ],
+                                                            "droppable": false,
+                                                            "style": {
+                                                              "width": "auto",
+                                                              "padding": "10px"
+                                                            },
+                                                            "attributes": {
+                                                              "valign": "top",
+                                                              "width": "auto"
+                                                            },
+                                                            "components": {
+                                                              "tagName": "div",
+                                                              "type": "eudonet-extended-image",
+                                                              "activeOnRender": 1,
+                                                              "content": "",
+                                                              "editable": true,
+                                                              "classes": [ "ImageSimple", "eudonet-extended-container-image" ],
+                                                              "childTagName": "image",
+                                                              "extendedComponentParameters": {
+                                                                "src": "_eudoServerUrl_/themes/default/images/social/gjs-linkedin.png",
+                                                                "style": {
+                                                                }
+                                                              },
+                                                              "style": {
+                                                                "text-align": "center"
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "classes": [ "ColAuto", "NonDroppableCell" ],
+                                                            "droppable": false,
+                                                            "style": {
+                                                              "width": "auto",
+                                                              "padding": "10px"
+                                                            },
+                                                            "attributes": {
+                                                              "valign": "top",
+                                                              "width": "auto"
+                                                            },
+                                                            "components": {
+                                                              "tagName": "div",
+                                                              "type": "eudonet-extended-image",
+                                                              "activeOnRender": 1,
+                                                              "content": "",
+                                                              "editable": true,
+                                                              "classes": [ "ImageSimple", "eudonet-extended-container-image" ],
+                                                              "childTagName": "image",
+                                                              "extendedComponentParameters": {
+                                                                "src": "_eudoServerUrl_/themes/default/images/social/gjs-pinterest.png",
+                                                                "style": {
+                                                                }
+                                                              },
+                                                              "style": {
+                                                                "text-align": "center"
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "type": "cell",
+                                                            "tagName": "td",
+                                                            "classes": [ "ColAuto", "NonDroppableCell" ],
+                                                            "droppable": false,
+                                                            "style": {
+                                                              "width": "auto",
+                                                              "padding": "10px"
+                                                            },
+                                                            "attributes": {
+                                                              "valign": "top",
+                                                              "width": "auto"
+                                                            },
+                                                            "components": {
+                                                              "tagName": "div",
+                                                              "type": "eudonet-extended-image",
+                                                              "activeOnRender": 1,
+                                                              "content": "",
+                                                              "editable": true,
+                                                              "classes": [ "ImageSimple", "eudonet-extended-container-image" ],
+                                                              "childTagName": "image",
+                                                              "extendedComponentParameters": {
+                                                                "src": "_eudoServerUrl_/themes/default/images/social/gjs-youtube.png",
+                                                                "style": {
+                                                                }
+                                                              },
+                                                              "style": {
+                                                                "text-align": "center"
+                                                              }
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "table",
+                                        "classes": [ "simpleText", "deviceWidth" ],
+                                        "attributes": {
+                                          "border": "0",
+                                          "cellpadding": "0",
+                                          "cellspacing": "0",
+                                          "align": "center"
+                                        },
+                                        "style": {
+                                          "margin": "3px 0 0 0",
+                                          "border-collapse": "collapse"
+
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "row",
+                                            "tagName": "tr",
+                                            "components": [
+                                              {
+                                                "type": "cell",
+                                                "tagName": "td",
+                                                "classes": [ "NonDroppableCell" ],
+                                                "droppable": false,
+                                                "style": {
+                                                  "padding": "10px 0px 10px 0px",
+                                                  "width": "680px"
+                                                },
+                                                "attributes": {
+                                                  "width": "100%"
+                                                },
+                                                "components": [
+                                                  {
+                                                    "type": "text",
+                                                    "tagName": "div",
+                                                    "classes": [ "DivTxt" ],
+                                                    "content": "<span style=\"font-size:10pt\"><eudoRes>contentLinkLeftFooter</eudoRes>, <a data-cke-saved-href='#' ednt='' ednn='' ednd='' ednc='unsub' href='#'><eudoRes>contentLinkRightFooter</eudoRes></a></span>",
+                                                    "style": {
+                                                      "margin": "3px 0 0 0",
+                                                      "padding": "0 5px 0px 5px",
+                                                      "text-align": "center"
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>categoryBlocks</eudoRes>"
+    }
+  }
+]

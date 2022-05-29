@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="../Scripts/eTools.js"></script>
+    <script src="../Scripts/eGrapesJSEditor.js"></script>
+    <script src="../Scripts/eMemoEditor.js"></script>
+    <script src="../Scripts/ckeditor/ckeditor.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eCatalog.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eMain.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eButtons.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eModalDialog.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eContextMenu.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eControl.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eList.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eHomepage.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eTitle.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eIcon.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/ePlanning.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eCalendar.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eMemoEditor.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/Fushia/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/eudoFont.css" />
+    <link type="text/css" rel="stylesheet" href="../themes/default/css/eFile.css" />
+    <link type="text/css" rel="stylesheet" href="../themes/default/css/eEditFile.css" />
+
+</head>
+<body>
+
+    <textarea id="eMemoDialogEditorValue"></textarea>
+    <div id="eMemoDialogEditorContainer"></div>
+    <script>
+        var eMemoDialogEditorObject = null;
+        function onload() {
+            var objContainer = document.getElementById('eMemoDialogEditorContainer');
+            var objValue = document.getElementById('eMemoDialogEditorValue');
+            eMemoDialogEditorObject = new eMemoEditor("eMemoDialogEditor", true
+                , objContainer
+                , null
+                , objValue.innerHTML
+                , false, 'eMemoDialogEditorObject');
+            eMemoDialogEditorObject.inlineMode = true;
+            eMemoDialogEditorObject.setSkin('eudonet');
+            eMemoDialogEditorObject.config.width = "100%";
+            eMemoDialogEditorObject.config.height = "150px";
+            eMemoDialogEditorObject.show();
+        }
+        onload();
+    </script>
+</body>
+</html>

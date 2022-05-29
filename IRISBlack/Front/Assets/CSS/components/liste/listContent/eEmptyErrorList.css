@@ -1,0 +1,11 @@
+﻿div.bkm-tab .NoDataTxtAssistant {
+    color: #333;
+    top: 2.5rem !important; ;
+    padding: 0 !important;
+    background: var(--bkmTab-clsBkmFooterPosition);
+    z-index: 0;
+}
+
+    div.bkm-tab .NoDataTxtAssistant h3 {
+        font-size: var(--size-19);
+    }

@@ -1,0 +1,665 @@
+/* ANIMATIONS MODALES */
+@keyframes StartTrans {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes StartTrans {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes StartTrans {
+    from {
+        -moz-transform: scale(0);
+    }
+
+    to {
+        -moz-transform: scale(1);
+    }
+}
+
+@keyframes StartTrans {
+    from {
+        -o-transform: scale(0);
+    }
+
+    to {
+        -o-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes CloseTrans {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+.openTransition {
+    /*animation*/
+    -webkit-animation: StartTrans 0.7s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    -moz-animation: StartTrans 0.7s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    -ms-animation: StartTrans 0.7s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    -o-animation: StartTrans 0.7s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    animation: StartTrans 0.7s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+.closeTransition {
+    /*animation*/
+    -webkit-animation: CloseTrans 0.2s ease-out;
+    -moz-animation: CloseTrans 0.2s ease-out;
+    -ms-animation: CloseTrans 0.2s ease-out;
+    -o-animation: CloseTrans 0.2s ease-out;
+    animation: CloseTrans 0.2s ease-out;
+}
+
+.msg_infos, .msg_success, .msg_question, .msg_critical, .msg_exclam {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    border: 0px solid;
+    margin: 0px 0px; /*padding: 15px 10px 15px 50px;*/
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.msg_infos {
+    color: #00529b;
+    background-color: #BDE5F8;
+}
+
+.msg_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+
+.msg_question {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+
+.msg_critical {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.msg_exclam {
+    color: #D63301;
+    background-color: #FFCCBA;
+}
+
+.msg_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.tbHtileModal * {
+    background-image: none;
+    background-color: #7C8894;
+}
+
+.TitleModal {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-indent: 10px;
+    cursor: move;   
+}
+
+.ControlBox {    
+    height: 25px;
+    width: 60px;
+    white-space: nowrap;
+}
+
+    .ControlBox div {
+        float: right;
+        color: white;
+        margin-right: 7px;
+        font-size: 10pt;       
+    }
+
+.msg_close {
+    float: right;
+    width: 20px;
+    height: 25px;
+    background-image: url(../images/msg_close.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.msg_right_corner {
+}
+
+.msg_left_corner {
+    width: 5px;
+    height: 25px;
+    background-image: url(../images/msg_title.png);
+    background-repeat: repeat-x;
+}
+
+.promptText {
+    width: 99%;
+    height: 21px;
+    border-style: solid;
+    border-width: thin;
+    border-color: Gray;
+    margin-right: -35px;
+    font-family: Verdana;
+}
+
+.promptLabel {
+    font-family: Verdana;
+    font-size: 8pt;
+    text-indent: 0px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    list-style-type: none;
+}
+
+.prompt-container {
+    padding: 20px;
+    padding-top: 40px;
+    list-style-type: none;
+}
+
+.MainModal {
+    background-color: #f8f8f8;
+}
+
+.VCardTT {
+    background-color: transparent;
+}
+
+.ButtonModal {
+    background-color: #f8f8f8;
+    /*padding-right: 20px;*/
+}
+
+.ToolbarModal {
+    background-color: #f8f8f8;
+    display: block;
+    padding: 0;
+}
+
+.ToolbarModalRight {
+    float: right;
+}
+
+.ToolbarModalLeft {
+    float: left;
+}
+
+ul.ToolbarModalLeft {
+    padding-left: 25px;
+}
+
+ul.ToolbarModalRight {
+    margin-right: 35px;
+}
+
+.ToolbarModalRight .icon-delete {
+    font-size: 13pt;
+    text-align: center;
+    line-height: 20px;
+}
+
+.ToolbarModal li {
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+    .ToolbarModal li a {
+        cursor: pointer;
+    }
+
+        .ToolbarModal li a:hover {
+            cursor: pointer;
+            color: #42A7DC;
+        }
+
+        .ToolbarModal li a img {
+            cursor: pointer;
+        }
+
+        .ToolbarModal li a span {
+            cursor: pointer;
+            margin-left: 2px;
+        }
+
+/*
+.ToolbarModal li.iDel {
+	cursor: pointer;
+
+	background-position: 0px -851px;
+	width: 23px;
+	height: 23px;
+}
+.ToolbarModal li.iDel:hover {
+    cursor: pointer;
+
+	background-position: 0px -922px;
+	width: 23px;
+	height: 23px;
+}
+*/
+img.iProp {
+    height: 23px;
+    width: 23px;
+    vertical-align: top;
+}
+
+span.iProp {
+    line-height: 18px;
+    color: #42A7DC;
+    vertical-align: middle;
+}
+
+    span.iProp:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+.iMl {
+    background-image: url("../images/iFile/iFileSprite.png"); /* TODO: EudoFont */
+    background-position: -2px -482px;
+    width: 23px;
+    height: 23px;
+}
+
+    .iMl:hover {
+        background-image: url("../images/iFile/iFileSprite.png"); /* TODO: EudoFont */
+        background-position: -2px -408px;
+        width: 23px;
+        height: 23px;
+    }
+
+.iPrnt {
+    background-position: 0 -284px;
+    margin-right: 15px;
+    width: 23px;
+    height: 23px;
+}
+
+    .iPrnt:hover {
+        background-position: 0 -355px;
+        width: 23px;
+        height: 23px;
+    }
+
+.iModPj img {
+    width: 18px;
+    height: 19px;
+    background-position: -3px -3px;
+}
+
+.iModPj:hover img {
+}
+
+li.iModPj {
+}
+
+.iMnd {
+    vertical-align: middle;
+    margin-right: 0px;
+    color: #bb1515;
+    font-size: 8pt;
+    font-weight: normal;
+    cursor: default;
+    margin-right: 6px;
+}
+
+.tbHtileModal {
+    width: 100%;
+    height: 26px;
+}
+
+.actBtnLstAdv {
+    width: 4%;
+}
+
+.actBtnLst {
+    width: 25px;
+}
+
+.actBtnLstCal {
+    /*width: 22px;*/
+}
+
+/*******************************************************************************************/
+/** boites de dialogue                                                                   ***/
+/*******************************************************************************************/
+.msg-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+    .msg-container table {
+        padding-left: 31px;
+        width: 100%;
+    }
+
+.tab-spacing {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.td-logo-info {
+    vertical-align: top;
+    width: 25px;
+}
+
+.logo-info,
+.logo-info:hover {
+    color: #006CC9 !important;
+}
+
+.text-alert-info {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 18px;
+    color: #006CC9;
+    font-weight: bold;
+}
+
+.text-msg-info {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #006CC9;
+    line-height: 18px;
+    font-size: 8pt;
+}
+/*exclamation*/
+.logo-error,
+.logo-error:hover {
+    color: #d50019 !important;
+}
+
+.text-alert-error {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #d50019;
+    font-weight: bold;
+}
+
+.text-msg-error {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #d50019;
+}
+
+    .text-msg-error span.link {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+.logo-success,
+.logo-success:hover {
+    color: #0f9400 !important;
+}
+
+.text-alert-success {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #0f9400;
+    font-weight: bold;
+}
+
+.text-msg-success {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #0f9400;
+}
+
+.logo-warn,
+.logo-warn:hover {
+    color: #d74300 !important;
+}
+
+.text-alert-warn {
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #d74300;
+    font-weight: bold;
+    z-index: 99999;
+}
+
+.text-msg-warn {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #d74300;
+}
+
+.td-logo {
+    vertical-align: middle;
+    text-align: center;
+    padding-right: 14px;
+}
+
+.logo-quote,
+.logo-quote:hover {
+    color: #006cc9 !important;
+}
+
+.text-alert-quote {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #006cc9;
+    font-weight: bold;
+}
+
+.text-msg-quote {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #006cc9;
+}
+
+.logo-error, .logo-error:hover,
+.logo-info, .logo-info:hover,
+.logo-quote, .logo-quote:hover,
+.logo-success, .logo-success:hover,
+.logo-warn, .logo-warn:hover {
+    font-size: 40px;
+    cursor: default;
+}
+
+.confirm-msg {
+    line-height: 18px;
+    text-align: left;
+}
+
+.ResizeModal {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/ui/resize.png);
+    cursor: nw-resize;
+}
+
+/********************************************/
+/* Modal de type toolTip                    */
+/********************************************/
+table.tt_background_bulle {
+    height: 100%;
+    width: 100%;
+}
+
+.tt_arrow_td {
+    width: 7px;
+}
+
+.tt_arrow_right {
+    background-image: url(../images/ui/arrow_details_right.png);
+    background-position: -1px 0px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 19px;
+    height: 46px;
+    margin-left: -11px;
+    margin-top: 40px;
+}
+
+.tt_arrow_left {
+    margin-left: -1px;
+    background-image: url(../images/ui/arrow_details_left.png);
+    background-position: -1px 0px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 19px;
+    height: 46px;
+    /*	margin-left: -12px;*/
+    margin-top: 40px;
+}
+
+.tt_mid_tab {
+    border-top: 1px solid #757678;
+    border-left: 1px solid #757678;
+    border-right: 1px solid #757678;
+    border-bottom: 1px solid #757678;
+    /*IE9+, FX4+, chrome10+, SAF 5.1+,Op 10.5+*/
+    box-shadow: 2px 2px 2px #ddd;
+    /*-FX4*/
+    -moz-box-shadow: 2px 2px 2px #ddd;
+    /*-SAF 5.1*/
+    -webkit-box-shadow: 2px 2px 2px #ddd;
+}
+/*TOOLTIP - OMBRE*/
+.tt_head_table {
+    /*IE9+, FX4+, chrome10+, SAF 5.1+,Op 10.5+*/
+    box-shadow: 2px 0px 2px #ddd;
+    /*-FX4*/
+    -moz-box-shadow: 2px 0px 2px #ddd;
+    /*-SAF 5.1*/
+    -webkit-box-shadow: 2px 0px 2px #ddd;
+}
+
+/********************************************/
+/* FIN DE Modal de type toolTip             */
+/********************************************/
+
+/***Progress bar***/
+.divMainProgressContainer {
+    /*margin-right: auto;
+    margin-top: auto;
+    height: 20px;
+    line-height: 20px;*/
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+}
+
+.divProgressContainer {
+    width: 98%;
+    height: 20px;
+    background-color: #B3B3B3;
+    text-align: center;
+    border: 1px solid;
+    margin: 1% auto;
+    position: relative;
+}
+
+.divProgress {
+    width: 0%; /*Par d?faut la progression d?but ? 0%*/
+    height: 100%;
+    background-color: #797979;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.spanProgressText {
+    color: White;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 8pt;
+    vertical-align: middle;
+    line-height: 20px;
+    z-index: 2;
+    position: absolute;
+}
+
+div.IWSelType, div.IWAdrToKeepGbl, div.IWAdrNoDbl {
+    margin: 10px 25px;
+}
+
+div.IWAdrToKeepGbl {
+    height: 20px;
+}
+
+div.IWAdrToKeep {
+    float: left;
+}
+
+div.IWAdrNoDbl {
+}
+
+div.selFldsCal {
+    margin-left: 100px;
+}
+
+.waiting-image {
+    background-image: url(../images/wait.gif);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.waiting-label {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 18px;
+    color: #006CC9;
+    font-weight: bold;
+    position: relative;
+    margin-left: 130px;
+    margin-top: -42px;
+}
+/* Alignement des boutons */
+#tdButtons {
+    padding: 10px; /*ALISTER => Demande #83 136*/
+}
+
+
+.divSelectRadio {
+    margin-bottom: 6px;
+}
+
+.lstHmnm {
+    margin: 4px;
+    text-indent: 20px;
+    line-height: 17px;
+}
+
+#pjCheckerContent {
+    font-family: Verdana, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px 40px;
+}
+.titleQuestion {
+    font-size: 9pt;
+    color: #D63301;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+    .titleQuestion * {
+        vertical-align: middle;
+    }
+    .titleQuestion .icon {
+        font-size: 20pt;
+        margin-right: 5px;
+        color: #D63301;
+    }
+
+input.infosDebugURL {
+    width: 200px;
+    font-size: 10pt;
+}

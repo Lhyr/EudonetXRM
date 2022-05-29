@@ -1,0 +1,1 @@
+UPDATE NotificationTrigger SET STATUS = 1 WHERE STATUS IS NULL

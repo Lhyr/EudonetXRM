@@ -1,0 +1,1009 @@
+﻿[
+  {
+    "id": "sectionCanvas",
+    "opts": {
+      "label": "<eudoRes>blockCanvas</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-b1",
+        "title": "<eudoRes>blockCanvas</eudoRes>"
+      },
+      "content": {
+        "type": "cell",
+        "droppable": false,
+        "tagName": "div",
+        "classes": [ "canvas", "deviceWidth", "row" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse",
+          "padding": "10px;"
+        },
+        "components": [
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell" ],
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>basicBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "section1Col",
+    "opts": {
+      "label": "<eudoRes>block1Col</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-b1",
+        "title": "<eudoRes>block1Col</eudoRes>"
+      },
+      "content": {
+        "type": "cell",
+        "tagName": "div",
+        "droppable": false,
+        "classes": [ "Col1", "deviceWidth", "row", "struct" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse",
+          "padding": "10px;"
+        },
+        "components": [
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell" ],
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>basicBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "section2Col",
+    "opts": {
+      "label": "<eudoRes>block2Col</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-b2",
+        "title": "<eudoRes>block2Col</eudoRes>"
+      },
+      "content": {
+        "type": "cell",
+        "tagName": "div",
+        "droppable": false,
+        "classes": [ "Col2", "deviceWidth", "row", "struct" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse",
+          "padding": "10px;"
+        },
+        "components": [
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell" ,"c50"],
+            "components": [
+            ]
+          },
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell", "c50" ],
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>basicBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "section2Col37",
+    "opts": {
+      "label": "<eudoRes>block2Col37</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-b37",
+        "title": "<eudoRes>block2Col37</eudoRes>"
+      },
+      "content": {
+        "type": "cell",
+        "tagName": "div",
+        "droppable": false,
+        "classes": [ "Col2", "deviceWidth", "row", "struct" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse",
+          "padding": "10px;"
+        },
+        "components": [
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell", "c30" ],
+            "components": [
+            ]
+          },
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell", "c70" ],
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>basicBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "section2Col73",
+    "opts": {
+      "label": "<eudoRes>block2Col73</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-b37 transform-rotate-180",
+        "title": "<eudoRes>block2Col73</eudoRes>"
+      },
+      "content": {
+        "type": "cell",
+        "tagName": "div",
+        "droppable": false,
+        "classes": [ "Col2", "deviceWidth", "row", "struct" ],
+        "attributes": {
+          "class": "gjs-fonts gjs-f-b37",
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse",
+          "padding": "10px;"
+        },
+        "components": [
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell", "c70" ],
+            "components": [
+            ]
+          },
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell", "c30" ],
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>basicBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "section3Col",
+    "opts": {
+      "label": "<eudoRes>block3Col</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-b3",
+        "title": "<eudoRes>block3Col</eudoRes>"
+      },
+      "content": {
+        "type": "cell",
+        "tagName": "div",
+        "droppable": false,
+        "classes": [ "Col3", "deviceWidth", "row", "struct" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse",
+          "padding": "10px;"
+        },
+        "components": [
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell", "c30" ],
+            "components": [
+            ]
+          },
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell", "c30" ],
+            "components": [
+            ]
+          },
+          {
+            "type": "cell",
+            "tagName": "div",
+            "classes": [ "cell", "c30" ],
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>basicBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "SimpleText",
+    "opts": {
+      "label": "<eudoRes>blockSimpleText</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-text",
+        "title": "<eudoRes>blockSimpleText</eudoRes>"
+      },
+      "content": {
+        "type": "text",
+        "tagName": "div",
+        "classes": [ "simpleText", "deviceWidth", "basic", "text"],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse",
+          "padding": "5px"
+        },
+        "content": "<eudoRes>contentSimpleText</eudoRes>"
+      },
+      "category": "<eudoRes>basicBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "ImageEudo",
+    "opts": {
+      "label": "<eudoRes>blockImage</eudoRes>",
+      "attributes": {
+        "class": "gjs-fonts gjs-f-image",
+        "title": "<eudoRes>blockImage</eudoRes>"
+      },
+      "content": {
+        "style": { "color": "black" },
+        "type": "image",
+        "classes": [ "deviceWidth", "image" ],
+        "attributes": {
+          "src": ""
+        },
+        "activeOnRender": "1"
+      },
+      "category": "<eudoRes>basicBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "eudonet-form",
+    "opts": {
+      "label": "<eudoRes>blocForm</eudoRes>",
+      "attributes": {
+        "title": "<eudoRes>blocForm</eudoRes>",
+        "class": "icon-eudofont icon-form"
+      },
+      "content": {
+        "type": "cell",
+        "droppable": ".inputCanvas, .worldlinePaiment, .struct,.basic",
+        "name": "<eudoRes>blocForm</eudoRes>",
+        "tagName": "form",
+        "classes": [ "formCanvas", "deviceWidth" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "border-collapse": "collapse",
+          "display": "bloc",
+          "min-height": "100px",
+          "position": "relative",
+          "max-width": "800px",
+          "width": "100%"
+        },
+        "components": [
+          {
+            "type": "cell",
+            "droppable": ".inputCanvas, .worldlinePaiment, .struct,.basic",
+            "tagName": "div",
+            "classes": [ "cell", "champsSaisies" ],
+            "style": {
+              "height": "auto",
+              "width": "100%"
+            },
+            "components": [
+            ]
+          },
+          {
+            "type": "cell",
+            "tagName": "div",
+            "copyable": false,
+            "droppable": false,
+            "classes": [ "label", "eudonet-extended-label", "eudonet-extended-btn" ],
+            "attributes": {
+              "contenteditable": "false"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0, 0 0 10px",
+              "cellpadding": "0",
+              "cellspacing": "0",
+              "width": "100%",
+              "display": "flex;",
+              "align-self": "flex-end",
+              "align-items": "center;",
+              "justify-content": "center;",
+              "height": "25px"
+            },
+            "components": [
+              {
+                "type": "button",
+                "tagName": "button",
+                "copyable": false,
+                "droppable": false,
+                "classes": [ "label", "eudonet-extended-label" ],
+                "content": "<eudoRes>blockButtonSubmit</eudoRes>",
+                "attributes": {
+                  "contenteditable": "false"
+                },
+                "style": {
+                  "border": "0",
+                  "padding": "0, 0 0 10px",
+                  "cellpadding": "0",
+                  "cellspacing": "0",
+                  "display": "block",
+                  "height": "25px",
+                  "min-width": "100px",
+                  "background-color": "rgb(187, 21, 21)",
+                  "color": "white",
+                  "border-radius": "4px"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "eudonet-extended-input",
+    "opts": {
+      "label": "<eudoRes>blockExtendedInput</eudoRes>",
+      "attributes": {
+        "title": "<eudoRes>blockExtendedInput</eudoRes>",
+        "class": "icon-eudofont icon-gjs-input"
+      },
+      "content": {
+        "type": "eudonet-extended-input",
+        "label": "<eudoRes>blockExtendedInput</eudoRes>",
+        "name": "<eudoRes>blockExtendedInput</eudoRes>",
+        "droppable": false,
+        "tagName": "eudonet-extended-input",
+        "classes": [ "inputCanvas", "deviceWidth", "champSaisie" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "padding-left": "0px;",
+          "padding-right": "0px;",
+          "border-collapse": "collapse",
+          "display": "block"
+        },
+        "components": [
+          {
+            "type": "label",
+            "tagName": "div",
+            "classes": [ "label", "eudonet-extended-label" ],
+            "content": "<eudoRes>blockExtendedInputText</eudoRes>",
+            "attributes": {
+              "contenteditable": "true"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0, 0 0 10px",
+              "cellpadding": "0",
+              "cellspacing": "0",
+              "display": "block",
+              "width": "100%",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          },
+          {
+            "type": "input",
+            "tagName": "input",
+            "classes": [ "input" ],
+            "style": {
+              "width": "100%;",
+              "margin-bottom": "15px;",
+              "padding": "7px 10px",
+              "border-radius": "2px;",
+              "color": "#fff;",
+              "border": "none;",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "eudonet-email-input",
+    "opts": {
+      "label": "<eudoRes>blockMailInput</eudoRes>",
+      "attributes": {
+        "class": "icon-eudofont icon-email",
+        "title": "<eudoRes>blockMailInput</eudoRes>"
+      },
+      "content": {
+        "type": "eudonet-extended-input",
+        "name": "<eudoRes>blockMailInput</eudoRes>",
+        "droppable": false,
+        "tagName": "eudonet-extended-input",
+        "classes": [ "inputCanvas", "deviceWidth", "email" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "padding-left": "0px;",
+          "padding-right": "0px;",
+          "border-collapse": "collapse",
+          "display": "block"
+        },
+        "components": [
+          {
+            "type": "label",
+            "tagName": "div",
+            "classes": [ "label", "eudonet-extended-label" ],
+            "content": "<eudoRes>blockExtendedInputText</eudoRes>",
+            "attributes": {
+              "contenteditable": "true"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0, 0 0 10px",
+              "cellpadding": "0",
+              "cellspacing": "0",
+              "display": "block",
+              "width": "100%",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          },
+          {
+            "type": "input",
+            "tagName": "input",
+            "classes": [ "input" ],
+            "style": {
+              "width": "100%;",
+              "margin-bottom": "15px;",
+              "padding": "7px 10px",
+              "border-radius": "2px;",
+              "color": "#fff;",
+              "border": "none;",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "eudonet-phone-input",
+    "opts": {
+      "label": "<eudoRes>blockPhoneInput</eudoRes>",
+      "attributes": {
+        "class": "icon-eudofont icon-phone3",
+        "title": "<eudoRes>blockPhoneInput</eudoRes>"
+      },
+      "content": {
+        "type": "eudonet-extended-input",
+        "name": "<eudoRes>blockPhoneInput</eudoRes>",
+        "droppable": false,
+        "tagName": "eudonet-extended-input",
+        "classes": [ "inputCanvas", "deviceWidth", "phone" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "padding-left": "0px;",
+          "padding-right": "0px;",
+          "border-collapse": "collapse",
+          "display": "block"
+        },
+        "components": [
+          {
+            "type": "label",
+            "tagName": "div",
+            "classes": [ "label", "eudonet-extended-label" ],
+            "content": "<eudoRes>blockExtendedInputText</eudoRes>",
+            "attributes": {
+              "contenteditable": "true"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0, 0 0 10px",
+              "cellpadding": "0",
+              "cellspacing": "0",
+              "display": "block",
+              "width": "100%",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          },
+          {
+            "type": "input",
+            "tagName": "input",
+            "classes": [ "input" ],
+            "style": {
+              "width": "100%;",
+              "margin-bottom": "15px;",
+              "padding": "7px 10px",
+              "border-radius": "2px;",
+              "color": "#fff;",
+              "border": "none;",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "eudonet-checkbox-input",
+    "opts": {
+      "label": "<eudoRes>blockCheckboxInput</eudoRes>",
+      "attributes": {
+        "class": "icon-eudofont icon-gjs-check",
+        "title": "<eudoRes>blockCheckboxInput</eudoRes>"
+      },
+      "content": {
+        "type": "eudonet-extended-input",
+        "name": "<eudoRes>blockCheckboxInput</eudoRes>",
+        "droppable": false,
+        "tagName": "eudonet-extended-input",
+        "classes": [ "inputCanvas", "deviceWidth", "checkbox" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "padding-left": "0px;",
+          "padding-right": "0px;",
+          "border-collapse": "collapse",
+          "display": "flex"
+        },
+        "components": [
+          {
+            "type": "checkbox",
+            "tagName": "input",
+            "name": "<eudoRes>blockCheckboxInput</eudoRes>",
+            "attributes": {
+              "type": "checkbox"
+            },
+            "style": {
+              "margin-bottom": "15px;",
+              "padding": "7px 10px",
+              "border-radius": "2px;",
+              "color": "#fff;",
+              "border": "none;"
+            },
+            "components": [
+            ]
+          },
+          {
+            "type": "label",
+            "tagName": "div",
+            "classes": [ "label", "eudonet-extended-label" ],
+            "content": "<eudoRes>blockExtendedInputText</eudoRes>",
+            "attributes": {
+              "contenteditable": "true"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0, 0 0 10px",
+              "cellpadding": "0",
+              "cellspacing": "0",
+              "width": "95%",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "eudonet-extended-input-num",
+    "opts": {
+      "label": "<eudoRes>blockExtendedInputNum</eudoRes>",
+      "attributes": {
+        "title": "<eudoRes>blockExtendedInputNum</eudoRes>",
+        "class": "icon-eudofont gjs-input-num"
+      },
+      "content": {
+        "type": "eudonet-extended-input",
+        "label": "<eudoRes>blockExtendedInputNum</eudoRes>",
+        "name": "<eudoRes>blockExtendedInputNum</eudoRes>",
+        "droppable": false,
+        "tagName": "eudonet-extended-input",
+        "classes": [ "inputCanvas", "deviceWidth", "champSaisie-num" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "padding-left": "0px;",
+          "padding-right": "0px;",
+          "border-collapse": "collapse",
+          "display": "block"
+        },
+        "components": [
+          {
+            "type": "label",
+            "tagName": "div",
+            "classes": [ "label", "eudonet-extended-label" ],
+            "content": "<eudoRes>blockExtendedInputText</eudoRes>",
+            "attributes": {
+              "contenteditable": "true"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0, 0 0 10px",
+              "cellpadding": "0",
+              "cellspacing": "0",
+              "display": "block",
+              "width": "100%",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          },
+          {
+            "type": "input",
+            "tagName": "input",
+            "classes": [ "input" ],
+            "style": {
+              "width": "100%;",
+              "margin-bottom": "15px;",
+              "padding": "7px 10px",
+              "border-radius": "2px;",
+              "color": "#fff;",
+              "border": "none;",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "eudonet-extended-input-date",
+    "opts": {
+      "label": "<eudoRes>blockExtendedInputDate</eudoRes>",
+      "attributes": {
+        "title": "<eudoRes>blockExtendedInputDate</eudoRes>",
+        "class": "icon-eudofont icon-calendar"
+      },
+      "content": {
+        "type": "eudonet-extended-input",
+        "label": "<eudoRes>blockExtendedInputDate</eudoRes>",
+        "name": "<eudoRes>blockExtendedInputDate</eudoRes>",
+        "droppable": false,
+        "tagName": "eudonet-extended-input",
+        "classes": [ "inputCanvas", "deviceWidth", "champSaisie-date" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "padding-left": "0px;",
+          "padding-right": "0px;",
+          "border-collapse": "collapse",
+          "display": "block"
+        },
+        "components": [
+          {
+            "type": "label",
+            "tagName": "div",
+            "classes": [ "label", "eudonet-extended-label" ],
+            "content": "<eudoRes>blockExtendedInputText</eudoRes>",
+            "attributes": {
+              "contenteditable": "true"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0, 0 0 10px",
+              "cellpadding": "0",
+              "cellspacing": "0",
+              "display": "block",
+              "width": "100%",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          },
+          {
+            "type": "input",
+            "tagName": "input",
+            "classes": [ "input", "date" ],
+            "style": {
+              "width": "100%;",
+              "margin-bottom": "15px;",
+              "padding": "7px 10px",
+              "border-radius": "2px;",
+              "color": "#fff;",
+              "border": "none;",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "eudonet-extended-input-memo",
+    "opts": {
+      "label": "<eudoRes>blockExtendedInputMemo</eudoRes>",
+      "attributes": {
+        "title": "<eudoRes>blockExtendedInputMemo</eudoRes>",
+        "class": "icon-eudofont icon-pencil-square-o"
+      },
+      "content": {
+        "type": "eudonet-extended-input",
+        "label": "<eudoRes>blockExtendedInputMemo</eudoRes>",
+        "name": "<eudoRes>blockExtendedInputMemo</eudoRes>",
+        "droppable": false,
+        "tagName": "eudonet-extended-input",
+        "classes": [ "inputCanvas", "deviceWidth", "champSaisie-memo" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "padding-left": "0px;",
+          "padding-right": "0px;",
+          "border-collapse": "collapse",
+          "display": "block"
+        },
+        "components": [
+          {
+            "type": "label",
+            "tagName": "div",
+            "classes": [ "label", "eudonet-extended-label" ],
+            "content": "<eudoRes>blockExtendedInputText</eudoRes>",
+            "attributes": {
+              "contenteditable": "true"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0, 0 0 10px",
+              "cellpadding": "0",
+              "cellspacing": "0",
+              "display": "block",
+              "width": "100%",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          },
+          {
+            "type": "input",
+            "tagName": "textarea",
+            "classes": [ "input", "memo" ],
+            "attributes": {
+              "rows": "5"
+            },
+            "style": {
+              "width": "100%;",
+              "margin-bottom": "15px;",
+              "padding": "7px 10px",
+              "border-radius": "2px;",
+              "color": "#fff;",
+              "border": "none;"
+            },
+            "components": [
+            ]
+          }
+        ]
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "eudonet-extended-dropdown",
+    "opts": {
+      "label": "<eudoRes>blockExtendedDropdown</eudoRes>",
+      "attributes": {
+        "title": "<eudoRes>blockExtendedDropdown</eudoRes>",
+        "class": "icon-eudofont icon-gjs-dropdown"
+      },
+      "content": {
+        "type": "eudonet-extended-input",
+        "label": "<eudoRes>blockExtendedDropdown</eudoRes>",
+        "name": "<eudoRes>blockExtendedDropdown</eudoRes>",
+        "droppable": false,
+        "tagName": "eudonet-extended-input",
+        "classes": [ "inputCanvas", "deviceWidth", "champSaisie-dropdown", "champSaisie-dropdown-simple" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "padding-left": "0px;",
+          "padding-right": "0px;",
+          "border-collapse": "collapse",
+          "display": "block"
+        },
+        "components": [
+          {
+            "type": "label",
+            "tagName": "div",
+            "classes": [ "label", "eudonet-extended-label" ],
+            "content": "<eudoRes>blockExtendedInputText</eudoRes>",
+            "attributes": {
+              "contenteditable": "true"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0, 0 0 10px",
+              "cellpadding": "0",
+              "cellspacing": "0",
+              "display": "block",
+              "width": "100%",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          },
+          {
+            "type": "eudonet-extended-select",
+            "classes": [ "eudonet-extended-cat", "eudonet-extended-catSimple" ],
+            "content": "<div class='v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-select'><div class='v-input__control'><div role='button' aria-haspopup='listbox' aria-expanded='false' aria-owns='list-35' class='v-input__slot'><div class='v-select__slot'><div class='v-select__selections'><div class='v-select__selection v-select__selection--comma'></div></div><div class='v-input__append-inner'><div class='v-input__icon v-input__icon--append'><i aria-hidden='true' class='v-icon notranslate mdi mdi-menu-down theme--light'></i></div></div><input type='hidden' value='0'></div><div class='v-menu'></div></div></div></div>"
+          }
+        ]
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  },
+  {
+    "id": "eudonet-extended-multiselect",
+    "opts": {
+      "label": "<eudoRes>blockExtendedMultiselect</eudoRes>",
+      "attributes": {
+        "title": "<eudoRes>blockExtendedMultiselect</eudoRes>",
+        "class": "icon-eudofont icon-gjs-catalog_muliple"
+      },
+      "content": {
+        "type": "eudonet-extended-input",
+        "label": "<eudoRes>blockExtendedMultiselect</eudoRes>",
+        "name": "<eudoRes>blockExtendedMultiselect</eudoRes>",
+        "droppable": false,
+        "tagName": "eudonet-extended-input",
+        "classes": [ "inputCanvas", "deviceWidth", "champSaisie-dropdown", "champSaisie-dropdown-multiple" ],
+        "attributes": {
+          "border": "0",
+          "cellpadding": "0",
+          "cellspacing": "0",
+          "width": "100%"
+        },
+        "style": {
+          "margin": "3px 0 0 0",
+          "padding-left": "0px;",
+          "padding-right": "0px;",
+          "border-collapse": "collapse",
+          "display": "block"
+        },
+        "components": [
+          {
+            "type": "label",
+            "tagName": "div",
+            "classes": [ "label", "eudonet-extended-label" ],
+            "content": "<eudoRes>blockExtendedInputText</eudoRes>",
+            "attributes": {
+              "contenteditable": "true"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0, 0 0 10px",
+              "cellpadding": "0",
+              "cellspacing": "0",
+              "display": "block",
+              "width": "100%",
+              "height": "25px"
+            },
+            "components": [
+            ]
+          },
+          {
+            "type": "eudonet-extended-select",
+            "classes": [ "eudonet-extended-cat", "eudonet-extended-catMultiple" ],
+            "content": "<div class='v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-select'><div class='v-input__control'><div role='button' aria-haspopup='listbox' aria-expanded='false' aria-owns='list-35' class='v-input__slot'><div class='v-select__slot'><div class='v-select__selections'><div class='v-select__selection v-select__selection--comma'></div></div><div class='v-input__append-inner'><div class='v-input__icon v-input__icon--append'><i aria-hidden='true' class='v-icon notranslate mdi mdi-menu-down theme--light'></i></div></div><input type='hidden' value='0'></div><div class='v-menu'></div></div></div></div>"
+          }
+        ]
+      },
+      "category": "<eudoRes>formBlocks</eudoRes>"
+    }
+  }
+]

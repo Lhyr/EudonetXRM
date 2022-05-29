@@ -1,0 +1,242 @@
+:root {
+    --fore-color: white;
+    --icon-width: 35px;
+}
+
+/* le volet de navigation à droite (zone activité) */
+.DrawerAside {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    left: 350px;
+    margin: 10px;
+    border-radius: 5px 0px 0px 5px;
+    z-index: 9;
+    background-color: var(--main-color);
+    color: var(--fore-color);
+}
+    /* quand on survole le drawer */
+    .DrawerAside:hover {
+        position: absolute;
+        left: 270px;
+        width: 100px;
+    }
+
+        /* on affiche le texte du bouton en cas de survole */
+        .DrawerAside:hover > .btnDrawerAside > span {
+            display: inline;
+        }
+
+    /* Sinon on masquer le texte du bouton */
+    .DrawerAside > .btnDrawerAside > span {
+        display: none;
+    }
+
+/* chaque bouton dans le drawer.*/
+.btnDrawerAside {
+    display: flex;
+    margin: 5px;
+    color: var(--fore-color);
+    margin: 0;
+    height:100%;
+}
+
+/*coup de pinceau*/
+
+ul.nav.nav-tabs#nav-tabs-ul > li.btnDrawerAsideClose{
+    display:flex;
+    padding:0;
+}
+
+/*lorsque la zone note est fermée et que les boutons passent devant le mode fiche*/
+
+#aside-tabs.is-sticky .btnDrawerContainer {
+    z-index: 25;
+}
+
+#aside-tabs-children {
+    height: 100%;
+}
+
+#aside-tabs .polePositionFullScreen {
+    position: static;
+    padding: 0px; /*for request 93 192*/
+}
+
+#aside-tabs #nav-tabs-ul {
+    /*position: absolute;*/
+    top: 0px;
+    width: 100%;
+    /*border-top: 5px solid #ecf0f5;*/
+    z-index: 50;
+    background: #fff;
+}
+
+#aside-tabs .tab-content {
+    top: 50px;
+    position: relative;
+}
+
+#aside-tabs .tab-content {
+    height: calc(100% - var(--size-10));
+}
+
+.btnDrawerContainer > .btnDrawerAside {
+    color: #fff;
+    white-space: nowrap;
+}
+
+/*en dessous de 1200px la zone note passe en dessous des signet et on enlève le bouton de retrait/ajout*/
+    @media only screen and (max-width: 991px) {
+        #aside-tabs .btnDrawerAsideClose {
+            display: none
+        }
+    }
+    /*Contenu du volet : tab + mémo */
+    .drawerContainer {
+    height: 100%;
+    overflow: hidden;
+}
+
+.btnDrawerContainer {
+    border-radius: 5px 0 0 5px;
+    background: var(--main-color);
+    transform: translateX(calc(100% - 35px));
+    position: fixed;
+    bottom: 30vh;
+    right: -125px;
+    border-top: none;
+    z-index:1;
+}
+
+/*Permet de décaler les boutons car sur Firefox le positionnement n'est pas équivalent à Chrome*/
+
+
+@-moz-document url-prefix() {
+    .btnDrawerContainer {
+        margin: 0 16px 0 0;
+    }
+
+    #aside-tabs.is-sticky #nav-tabs-ul {
+        top: -2px;
+    }
+}
+
+
+.activityComponent .btnDrawerContainer,
+.activityComponent.activity-expanded .btnDrawerContainer {
+    transform: translateX(135px);
+}
+
+.btnDrawerAsideClose > .btnDrawerAside {
+    color: var(--icon-dark-color);
+}
+
+
+div#aside-tabs-children.activity-expanded > .btnDrawerContainer:not(.slide-fade-button-leave-active) {
+    transform: translateX(-100%);
+    transform: translateX(calc(-100% + 35px));
+    transform: translateX(0);
+    transition: transform .5s;
+}
+
+/*Icônes des boutons*/
+
+.btnDrawerAside > i {
+    padding: 10px; /* for request 93 192*/
+    font-size: 18px;
+}
+
+/*Titre des boutons*/
+
+.btnDrawerAsideTitle {
+    padding: 0 8px;
+}
+
+#aside-tabs ul > li.btnDrawer,
+#aside-tabs ul > li.btnDrawer > a,
+#aside-tabs ul > li.btnDrawer > a:hover {
+    color: var(--primary-font-color);
+    background: #fff;
+}
+
+    /* #aside-tabs ul > li.btnDrawer > a {
+        border-top: 3px solid transparent;
+    } */
+
+
+    /* #aside-tabs ul > li.btnDrawer.active > a {
+        border-top: solid 3px var(--main-color) !important;
+        background: var(--main-bg-color);
+    } */
+
+/*********** sans transition contenu drawer ***************/
+div#grid-tabs {
+    transition: width .8s ease .2s;
+}
+
+div#aside-tabs {
+    transition: all .8s ease 0s;
+    transition-property: left,min-width;
+    transition-duration: .8s,.1s;
+    transition-delay: .2s,.8s;
+}
+
+.slide-fade-enter-active {
+    transition: all .3s ease;
+    transition: transform .6s ease .2s;
+}
+
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0) .2s;
+    transition: transform 2s linear .2s;
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(400px);
+}
+
+/*****************************************/
+
+/*********** sans transition bouton ***************/
+.slide-fade-button-enter-active,
+.slide-fade-button-leave-active {
+    transition: transform .8s linear;
+}
+
+.slide-fade-button-enter,
+.slide-fade-button-enter-to,
+.slide-fade-button-leave,
+.slide-fade-button-leave-to {
+    z-index: 15;
+}
+
+.slide-fade-button-enter-to {
+    transform: translateX(calc(100% - var(--icon-width)));
+}
+
+.slide-fade-button-enter,
+.slide-fade-button-leave,
+.slide-fade-button-leave-to {
+    transform: translateX(100%);
+}
+
+#MainWrapper .nav-tabs-custom .nav-tabs#nav-tabs-ul > li.btnDrawerAsideClose {
+    display: flex;
+    padding:0;
+}
+
+/* pour l'écran qui moin que 1100 px */
+@media (max-width: 1100px) {
+    .nav-tabs-custom .nav-tabs li a {
+        max-width: 100%;
+    }
+
+    .nav-tabs-custom .nav-tabs li a .text-truncate {
+        font-size: var(--size-9);
+    }
+
+    #aside-tabs .polePositionFullScreen {
+        margin: 0;
+    }
+}

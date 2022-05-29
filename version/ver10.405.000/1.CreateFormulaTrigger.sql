@@ -1,0 +1,39 @@
+	SET ANSI_NULLS ON
+	 
+
+	SET QUOTED_IDENTIFIER ON
+	 
+
+	SET ANSI_PADDING ON
+	 
+
+IF NOT EXISTS(SELECT * FROM SYSOBJECTS where id = object_id(N'[dbo].[FORMULATRIGGER]') and OBJECTPROPERTY(id, N'IsUserTable') = 1 )
+BEGIN
+	/*
+
+	 Création de la table FORMULATRIGGER
+
+	*/
+
+
+	CREATE TABLE [dbo].[FORMULATRIGGER](
+		[triggerDescId] [numeric](18, 0) NOT NULL,
+		[formulaDescId] [numeric](18, 0) NOT NULL,
+		[Formula] [varchar](1024) NULL
+	) ON [PRIMARY]
+ 
+	
+	
+	CREATE NONCLUSTERED INDEX [IX_FORMULATRIGGER] ON [dbo].[FORMULATRIGGER]
+	(
+		[triggerDescId] ASC
+	)
+	INCLUDE ( 	[formulaDescId],
+	[Formula]) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+ 
+END
+
+
+
+
+

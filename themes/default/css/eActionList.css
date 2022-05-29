@@ -1,0 +1,446 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 8pt;
+    background-color: #F8F8F8;
+}
+
+:focus {
+    outline-style: none;
+}
+
+.window_iframe {
+    text-align: left;
+}
+
+    .window_iframe ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+.logos_left {
+    float: left;
+}
+
+.logos_right {
+    float: right;
+}
+
+.add {
+    width: 80px;
+    padding-left: 15px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.add-text {
+    float: right;
+    padding-top: 3px;
+}
+
+.options {
+    margin-right: 40px;
+    margin-top: 15px;
+}
+
+.listHeader {
+    margin-left: 18px;
+    margin-top: 30px;
+}
+
+.tabeul {
+    cursor: default;
+    border: 1px solid #8A8A8A;
+    text-align: left;
+    color: black;
+    overflow: auto;
+    clear: both;
+    height: 375px;
+    background-color: White;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+    .tabeul div.divmTab {
+        overflow: visible !important;
+    }
+
+
+.tabeul-separateur {
+    width: 3px;
+    background-color: #666666;
+}
+
+/*Gestion icones*/
+.logo_modifs {
+    /*  float: right;
+    visibility: hidden;*/
+    float: right;
+    display: none;
+}
+
+div.divlstPJ div.logo_modifs  {
+    background: transparent;
+}
+
+    .logo_modifs .icon-abc {
+        font-size: 8pt !important;
+    }
+
+    .logo_modifs [class^="icon-"] {
+        font-size: 10pt;
+        display: inline-block;
+        line-height: 21px;
+        text-align: center;
+    }
+
+    div.divlstPJ div.logo_modifs [class^="icon-"] {
+        color: #293038;
+    }
+
+.list_head {
+    color: #666;
+    font-weight: bold;
+    background-color: #dfdfdf;
+    line-height: 10px;
+    font-size: 9pt;
+}
+
+.list_even {
+    background: #f6f6f6;
+    height: 21px;
+    padding: 6px;
+    text-indent: 5px;
+    cursor: pointer;
+}
+
+    .list_even .divct {
+        float: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .list_even:hover {
+        background: #BEDCFB;
+    }
+
+.content-txt {
+    overflow: visible;
+    text-overflow: inherit;
+}
+
+
+
+.list_even:hover .logo_modifs {
+    /*visibility: visible;*/
+    display: block;
+}
+
+.list_odd {
+    height: 22px;
+    padding: 6px;
+    text-indent: 5px;
+    background-color: white;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+    .list_odd .divct {
+        float: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .list_odd:hover {
+        background: #BEDCFB;
+    }
+
+
+        .list_odd:hover .logo_modifs {
+            /*visibility: visible;*/
+            display: block;
+        }
+
+    .list_odd.divFldFile:hover * {
+        background-color: #BEDCFB !important;
+    }
+
+.w {
+    width: 104px;
+}
+
+/*Gestion icones*/
+.w_pj {
+    width: 56px;
+}
+
+.logo_pen {
+    background-position: -121px -264px;
+    float: left;
+    width: 22px;
+    height: 21px;
+}
+
+    .logo_pen:hover {
+    }
+
+.logo_copy {
+    float: left;
+    width: 22px;
+    height: 21px;
+    background-position: 3px -214px;
+    display: none;
+}
+
+    .logo_copy:hover {
+        float: left;
+        width: 22px;
+        height: 21px;
+    }
+
+
+.logo_abc {
+    float: left;
+    width: 22px;
+    height: 21px;
+    background-position: 43px -147px;
+}
+
+    .logo_abc:hover {
+        background-color: #636363;
+    }
+
+.logo_info {
+    float: left;
+    width: 22px;
+    height: 21px;
+    background-position: -73px -26px;
+}
+
+    .logo_info:hover {
+    }
+
+.logo_info_inactif {
+    float: left;
+    width: 22px;
+    height: 21px;
+    background-position: -33px -427px;
+}
+
+.logo_trash {
+    float: left;
+    width: 22px;
+    height: 21px;
+    margin-left: 8px;
+    background-position: -145px -98px;
+}
+
+    .logo_trash:hover {
+    }
+
+.logo_open {
+    float: left;
+    width: 22px;
+    height: 21px;
+}
+
+    .logo_open:hover {
+        background-position: 81px -424px;
+    }
+
+
+.eSel {
+    background-color: #ccc;
+}
+
+.filterToolTip, .importTemplateToolTip {
+    width: 400px;
+    text-align: left;
+    z-index: 200;
+}
+
+.catDivHeadAdv {
+    width: 96%;
+    padding: 5px 2%;
+    display: inline-block;
+}
+
+
+.newFilterDiv {
+    /*padding-left: 2%;
+	padding-right: 2%;*/ /*supprim par KHA suite demande MPI du 14/01/2014*/
+    color: #666;
+    font-weight: bold;
+    font-size: 8pt;
+    line-height: 25px;
+    vertical-align: middle;
+    background-color: #f7f6f6;
+    height: 25px;
+    width: 918px;
+    margin: 0 auto;
+}
+
+.paggingPopUpList {
+    color: #666;
+    font-weight: bold;
+    font-size: 8pt;
+    line-height: 25px;
+    vertical-align: middle;
+    height: 25px;
+    width: 60%;
+}
+
+div.paggingFilterWizardList > div {
+    margin: 0 5px;
+}
+
+    div.paggingFilterWizardList > div.ivtMaxNumRows {
+        margin: 0px -22px 0px 40%;
+    }
+/* /* Css des listes de filtres avanc?s pagin?s dans un wizard */
+.paggingFilterWizardList {
+    color: #666;
+    font-weight: bold;
+    font-size: 8pt;
+    line-height: 20px;
+    vertical-align: middle;
+    height: 20px;
+    width: 99%;
+}
+
+    .paggingFilterWizardList > div {
+    }
+
+/* Css des listes de filtres avanc?s pagin?s */
+.paggingFilterPopupList, .paggingImportPopupList {
+    color: #666;
+    font-weight: bold;
+    font-size: 8pt;
+    display: inline-block;
+    vertical-align: -2px;
+    margin-left: 33%;
+}
+
+.paggingImportPopupList {
+    margin-left: 45%;
+}
+
+.paggingFilterPopupList {
+    margin-left: 33%;
+}
+
+.nbrowsPlsPls {
+    display: none; /* #56 188 - champ de saisie du nombre de lignes par page. Masqué à la demande de MJO, mais conservé sur la page pour le fonctionnement du script */
+}
+
+    .numpagePlsPls input.pagInput, .nbrowsPlsPls input.pagInput {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nbrowsPlsPls input.pagNbRowsInput {
+        margin-left: 5px;
+    }
+
+#InvitListFilter {
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+    #InvitListFilter span {
+        padding: 0;
+        margin-left: 5px;
+    }
+
+#InvitListFilterFrequency {
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+/*div#InvitListFilter a.chk > span:nth-child(2) {*/
+div#InvitListFilter a.chk span:not([class*="icon-"]) {
+    vertical-align: 0px;
+}
+
+.FilterAdrActivPrinc input[type="checkbox"] {
+    margin-left: 23px;
+    margin-right: 9px;
+}
+
+.FilterGreyDbl {
+    margin-top: 5px;
+}
+
+div#FilterGreyDbl span {
+    vertical-align: 0px;
+}
+
+.FilterCmpt {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+div.FilterMediaType, div.FilterCampaignType {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+    div.FilterMediaType > select, div.FilterCampaignType > select {
+        width: 150px;
+    }
+
+.FilterConsentStatus {
+    margin-top: 5px;
+}
+
+span.FilterConsentStatusChbx {
+    display: inline-block;
+    width: 30%;
+}
+
+    span.FilterConsentStatusChbx.hidden {
+        display: none;
+    }
+
+
+/************Champs de type fichier**************/
+.divFldFile {
+    width: 99%;
+}
+
+.divFName {
+    float: left;
+}
+
+/************Pièces jointes**************/
+.dspchk, .dspall {
+    cursor: pointer;
+    margin-left: 20px !important;
+}
+
+    .dspchk > li, .dspall > li {
+        display: inline-block;
+    }
+
+#listOptions {
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.list-container {
+    margin-top: 29px;
+}
+
+#listOptions {
+    line-height: 26px !important;
+}

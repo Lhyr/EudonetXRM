@@ -1,0 +1,25 @@
+/* Tooltips */
+.divShowTitle
+{
+    color: #666;
+	padding: 4px 6px;
+	border: 1px solid #DEDEDE;
+	font-family: Verdana, 'Trebuchet MS', Arial;
+	font-size: 8pt;
+	background-color: #f8f8f8;
+	z-index: 900;
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+    line-height: 16px;
+}
+
+.divShowColResize
+{
+	white-space: nowrap;
+	padding: 4px;
+	padding-right: 7px;
+	border: solid #BB1515 1px;
+	font-family: verdana;
+	font-size: 8pt;
+	background-color: #DFDFDE;
+}

@@ -1,0 +1,31 @@
+﻿{
+  "panelBlockTrigger": [
+    {
+      "index": 1,
+      "icon": "fas fa-user-plus",
+      "title": 8793,
+      "description": 8792
+    },
+    {
+      "index": 3,
+      "icon": "fas fa-calendar",
+      "title": 8899,
+      "description": 8900
+    }
+  ],
+  "panelBlockAction": [
+    {
+      "index": 2,
+      "icon": "far fa-envelope",
+      "title": 8807,
+      "description": 8808
+    },
+    {
+      "index": 4,
+      "icon": "fas fa-hourglass-half",
+      "title": 8938,
+      "description": 8939
+    }
+  ]
+}
+

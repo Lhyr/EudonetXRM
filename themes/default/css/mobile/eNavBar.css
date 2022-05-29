@@ -1,0 +1,53 @@
+/* CLASSE CSS UTILISEE POUR LA BARRE DE NAVIGATION SUR TABLETTES */
+
+.animTransition
+{
+    -webkit-transition: margin-left 500ms ease-out;
+}
+ul.sbMenu, ul.sbMenuActive
+{
+    /* background: none repeat scroll 0 0 #636363; */
+    display: none;
+    font-size: 10pt;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+    position: absolute;
+    top: 35px;
+    width: 200px;
+
+}
+
+.navBar *:hover ul.sbMenu, .navBar *:hover ul.sbMenuActive, .subPLUSFixedVisible
+{
+    display: block;
+    top: 35px;
+}
+.navBar li.tab-hidden
+{
+    display: block;
+}
+
+div.HomeFixed {
+	color: white;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 10pt;
+	position: fixed;
+	border-top: 3px solid #282D2B;
+}
+
+.PlusFixed 
+{
+    color: white;
+	
+    background-color: #afabac;	
+    height: 34px;
+	width: 35px;
+	line-height: 35px;
+	float: right;
+	font-size: 10pt;
+    position: fixed;
+	right: 0;
+    top: 43px;
+}

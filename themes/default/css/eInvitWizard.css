@@ -1,0 +1,23 @@
+﻿div#invitWizardListDiv[edninvitdbl="400"] tr[ednadrdbl="1"]
+{
+	background-color:Gray;
+}
+
+
+div#invitWizardListDiv[edninvitdbl="200"] tr[ednppdbl="1"]
+{
+	background-color:Gray;
+}
+
+/*SHA*/
+/*Ajout destinataires filtre*/
+.RecipFilter li {
+    padding: 5px 10px 5px 17px !important;
+    margin: 0 0 0 17px !important;
+    height: 15px;
+    list-style-type: none;
+}
+
+#rbAddImmediateRecipFilter, #rbAddRecurrentRecipFilter{
+  margin: 0 10px 0 0 !important;
+}

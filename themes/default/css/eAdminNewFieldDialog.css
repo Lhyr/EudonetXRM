@@ -1,0 +1,9 @@
+﻿
+.field {
+    margin-bottom: 5px;
+}
+
+    .field label {
+        width: 175px;
+        display: inline-block;
+    }
